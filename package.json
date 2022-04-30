@@ -4,8 +4,8 @@
   "description": "Data generator for Linacess app",
   "main": "index.js",
   "scripts": {
-    "contents:dev": "ts-node src/contents.ts --type dev",
-    "contents:prod": "ts-node src/contents.ts --type prod"
+    "contents:dev": "ts-node gen/contents.ts --type dev",
+    "contents:prod": "ts-node gen/contents.ts --type prod"
   },
   "repository": {
     "type": "git",

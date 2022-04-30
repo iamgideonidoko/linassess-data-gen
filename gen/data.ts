@@ -1,6 +1,6 @@
 import readline from 'readline';
 import fs from 'fs';
-// import prodContents from '';
+import prodContents from '../output/contents-prod.json';
 
 async function processLineByLine() {
     const fileStream = fs.createReadStream('src/test.md');

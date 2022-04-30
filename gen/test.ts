@@ -43,3 +43,8 @@ const getQuestions = async () => {
     });
     return questions;
 };
+
+fs.writeFile('output/newfile.txt', 'Learn Node FS module', function (err) {
+    if (err) throw err;
+    console.log('File is created successfully.');
+});
