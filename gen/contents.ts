@@ -1,4 +1,4 @@
-import * as fs from 'fs';
+import fs from 'fs-extra';
 import axios from 'axios';
 import { argv } from 'process';
 import { constants } from '../helper';
@@ -41,20 +41,24 @@ const contentsProd = 'output/contents-prod.json';
         });
     }
 
-    /** @type {AxiosResponse<any, any>} */
-    const res = await axios.get(`${constants.baseUrl}/contents`, {
-        headers: {
-            Accept: 'application/vnd.github.v3+json',
-        },
-    });
-    const data: string = JSON.stringify(res.data, null, 4);
-
-    if (data) {
-        fs.writeFile(contentsDev, data, (err) => {
-            if (err) {
-                console.log('\x1b[41m%s\x1b[0m', 'contents.ts line:55 err', err);
-            }
-            console.log('\x1b[42m%s\x1b[0m', 'contents.ts line:58 Content fetched & written to file successfully');
+    try {
+        /** @type {AxiosResponse<any, any>} */
+        const res = await axios.get(`${constants.dirBaseUrl}/contents`, {
+            headers: {
+                Accept: 'application/vnd.github.v3+json',
+            },
         });
+        const data: string = JSON.stringify(res.data, null, 4);
+
+        if (data) {
+            fs.writeFile(contentsDev, data, (err) => {
+                if (err) {
+                    console.log('\x1b[41m%s\x1b[0m', 'contents.ts line:55 err', err);
+                }
+                console.log('\x1b[42m%s\x1b[0m', 'contents.ts line:58 Content fetched & written to file successfully');
+            });
+        }
+    } catch (err) {
+        console.log('\x1b[41m%s\x1b[0m', 'contents.ts line:62 err', err);
     }
 })();

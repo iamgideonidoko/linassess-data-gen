@@ -3,9 +3,11 @@ import { config } from 'dotenv';
 config();
 
 type Constant = {
-    baseUrl: string;
+    fileBaseUrl: string;
+    dirBaseUrl: string;
 };
 
 export const constants: Constant = {
-    baseUrl: process.env.BASE_URL as string,
+    fileBaseUrl: process.env.FILE_BASE_URL as string,
+    dirBaseUrl: process.env.DIR_BASE_URL as string,
 };

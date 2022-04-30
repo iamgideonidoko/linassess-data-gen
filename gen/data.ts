@@ -1,9 +1,12 @@
 import readline from 'readline';
 import fs from 'fs';
-import prodContents from '../output/contents-prod.json';
+import prodContents from '../output/contents-prod.json'; // auto parsed to an object
+import { constants } from '../helper';
+import axios from 'axios';
+import stringToStream from 'string-to-stream';
 
-async function processLineByLine() {
-    const fileStream = fs.createReadStream('src/test.md');
+async function processLineByLine(str: string) {
+    const fileStream = stringToStream(str);
 
     const rl = readline.createInterface({
         input: fileStream,
@@ -29,9 +32,9 @@ interface Question {
     _ps: number;
 }
 
-const getQuestions = async () => {
+const getQuestions = async (str: string) => {
     const questions: Question[] = [];
-    const fileLines = await processLineByLine();
+    const fileLines = await processLineByLine(str);
     fileLines.forEach((item, idx) => {
         if (item.startsWith('####')) {
             const options = [fileLines[idx + 1], fileLines[idx + 2], fileLines[idx + 3], fileLines[idx + 4]];
@@ -44,3 +47,26 @@ const getQuestions = async () => {
     });
     return questions;
 };
+
+(async () => {
+    const dirs = prodContents.filter((item) => item.type === 'dir');
+    dirs.forEach(async (item) => {
+        try {
+            const fileName = (() => {
+                if (item.path === 'c++') return `c++quiz`;
+                return item.path.replace('#', 'sharp').replace('-(programming-language)', '') + '-quiz';
+            })();
+            const res = await axios.get(`${constants.fileBaseUrl}/${item.path.replace('#', '0%23')}/${fileName}.md`);
+
+            if (res.data) {
+                const questions = await getQuestions(res.data as string);
+                fs.writeFile(`output/data-dev/${fileName}.json`, JSON.stringify(questions, null, 4), function (err) {
+                    if (err) throw err;
+                    console.log('\x1b[42m%s\x1b[0m', 'data.ts line:67 Content fetched & written to file successfully');
+                });
+            }
+        } catch (err) {
+            console.log('\x1b[41m%s\x1b[0m', 'data.ts line:55 err', err);
+        }
+    });
+})();
