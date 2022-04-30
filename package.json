@@ -4,7 +4,7 @@
   "description": "Data generator for Linacess app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "get-contents": "ts-node src/get-contents.ts"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
-    "axios": "^0.27.2"
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.0"
   }
 }
