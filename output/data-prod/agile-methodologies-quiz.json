@@ -75,7 +75,7 @@
             "to maximize the return on investment",
             "to determine the economic sequencing of the backlog",
             "to visualize queue length",
-            "to fulfill a commitment to quality"
+            "to fulfill a commitment to quality\n[Source](https://www.scaledagileframework.com/wsjf/) `Weighted Shortest Job First (WSJF) is a prioritization model used to sequence jobs (eg., Features, Capabilities, and Epics) to produce the maximum economic benefit. In a flow-based system, priorities are updated continuously to provide the best economic outcomes. Job sequencing, rather than individual job return on investment, produces the best result. To that end, WSJF is used to prioritize backlogs by calculating the relative CoD and job size (a proxy for the duration).`"
         ],
         "_ps": 1
     },
@@ -85,7 +85,7 @@
             "low-value and high-risk",
             "high-value and high-risk",
             "high-value and low-risk",
-            "low-value and low-risk"
+            "low-value and low-risk\n[Source](https://agilescrumguide.com/blog/files/tag-product-backlog---business-value-and-risk.html) `It is suggested that high business value, high-risk items are worked on first. While that may seem counterintuitive, the earlier this work is done, the sooner the team will move to mitigate the issues and unknowns—leading to a higher quality product. If there's a failure, it will occur early and relatively inexpensively.`"
         ],
         "_ps": 1
     },
@@ -185,7 +185,7 @@
             "A Kanban has an explicit rule to limit WIP.",
             "A Kanban shows the backlog of work.",
             "A Kanban does not use a Definition of Done.",
-            "A Kanban shows the status of the work items."
+            "A Kanban shows the status of the work items.\n[Source](https://www.lucidchart.com/blog/kanban-vs-scrum#:~:text=Kanban%20vs%20scrum) `Explicit rule applies to scrum team's task board: tasks cannot be added to the scrum board in the middle of a sprint.`"
         ],
         "_ps": 0
     },
@@ -295,7 +295,7 @@
             "Optimize for most work done.",
             "Maximize output and maximize outcome.",
             "Maximize outcome while minimizing output.",
-            "Optimize for resource utilization."
+            "Optimize for resource utilization.\n`“…your job is to minimize output, and maximize outcome and impact.” - Jeff Patton`"
         ],
         "_ps": 2
     },
@@ -665,7 +665,7 @@
             "Sprint Retrospective",
             "Sprint Review",
             "Next-Sprint Planning",
-            "Velocity Confirmation"
+            "Velocity Confirmation\n`Sprint Retrospective: Reflect on the previous sprint, discuss what’s working well, what could be improved, and how to improve it to be more productive.`\n[Source](https://startinfinity.com/product-management-framework/scrum-sprint/sprint-review-vs-sprint-retrospective) `Sprint Review: Discuss what has been accomplished during the sprint and whether the sprint goal has been met.`"
         ],
         "_ps": 1
     },
@@ -715,7 +715,7 @@
             "The story has been tested end is ready for release to production.",
             "The story is ready to be brought into a sprint.",
             "The stakeholders are ready to discuss their requirements for story.",
-            "The team has completed sprint 0 and is ready to work."
+            "The team has completed sprint 0 and is ready to work.\n[Source](https://www.scruminc.com/definition-of-ready/) `Definition of Ready means that stories must be immediately actionable. The Team must be able to determine what needs to be done and the amount of work required to complete the User Story.`"
         ],
         "_ps": 1
     },
@@ -725,7 +725,7 @@
             "Centralize decision-making",
             "Apply systems thinking",
             "Take an economic view",
-            "Unlock the intrinsic motivation of knowledge workers"
+            "Unlock the intrinsic motivation of knowledge workers\n[Source: Underlying principles of SAFe](https://en.wikipedia.org/wiki/Scaled_agile_framework#Underlying_principles_of_SAFe)"
         ],
         "_ps": 0
     },
@@ -775,7 +775,7 @@
             "Frequent delivery of working software",
             "Respect for people and culture",
             "Courage",
-            "Sustainable pace"
+            "Sustainable pace\n[Source](https://www.planview.com/resources/guide/lean-principles-101/what-is-lean/#:~:text=The%20Pillars%20of%20Lean) `Two pillars are (1) Continuous Improvement, and (2) Respect for People.`"
         ],
         "_ps": 1
     },
@@ -825,7 +825,7 @@
             "The budget for the product.",
             "The underlying technology of the product.",
             "The development team's strengths and weaknesses.",
-            "The business context for the product."
+            "The business context for the product.\n[Source](https://premieragile.com/how-does-a-product-owner-measure-value) `A Scrum Team has 3 roles - Product Owner, Scrum Master and Developers. All 3 roles generate Value in their own contexts; however, it is the Product Owner who maximizes the Value from a product or business context.`"
         ],
         "_ps": 3
     },
@@ -905,7 +905,7 @@
             "cross-functional",
             "jack-of-all-trades",
             "apprentice developer",
-            "generalizing specialist"
+            "generalizing specialist\n### Q92. Which statement is _not_ true about pair programming?"
         ],
         "_ps": -1
     }

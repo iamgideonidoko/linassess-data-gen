@@ -464,9 +464,8 @@
         "options": [
             "from the billable costs uploaded from an Excel workbook",
             "from the billable time entered on timesheets",
-            "from you manually entering the line items on the invoice",
-            "from the billable time entered on timesheets and/or billable costs entered through checks and bills"
+            "from you manually entering the line items on the invoice"
         ],
-        "_ps": 3
+        "_ps": -1
     }
 ]

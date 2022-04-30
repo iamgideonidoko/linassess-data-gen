@@ -2,12 +2,12 @@
     {
         "question": "Q1. You need to create a file share for your company that must be accessible from all branch offices and its share path must have the name Work Share. Which server role do you install?\n![Windows Server Q01](images/windows-server_Q01.jpg)",
         "options": [
-            "ows Server Q01](images/windows-server_Q01.jpg)",
             "BranchCache for Network Files",
             "File Server",
-            "Work Folders"
+            "Work Folders",
+            "DFS Namespaces"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q2. You support an IT infrastructure for an organization that has physical locations and WAN connections from the main office to each branch. You are designing a network where users at all locations have access to shared files, both online and offline. Which Windows technology is best for your design?",
@@ -80,14 +80,14 @@
         "_ps": 1
     },
     {
-        "question": "Q9. You deployed a Windows Server 2012 R2 virtual machine and configured the File and Storage Services server role. Where do you begin configuring the use of Previous Versions for restoring files?\n![Windows Server Q10A](images/windows-server_Q10A.jpg)\n![Windows Server Q10B](images/windows-server_Q10B.jpg)\n![Windows Server Q10C](images/windows-server_Q10C.jpg)",
+        "question": "Q9. You deployed a Windows Server 2012 R2 virtual machine and configured the File and Storage Services server role. Where do you begin configuring the use of Previous Versions for restoring files?",
         "options": [
-            "A",
-            "ows Server Q10A](images/windows-server_Q10A.jpg)",
-            "B",
-            "ows Server Q10B](images/windows-server_Q10B.jpg)"
+            "A\n![Windows Server Q10A](images/windows-server_Q10A.jpg)",
+            "B\n![Windows Server Q10B](images/windows-server_Q10B.jpg)",
+            "C\n![Windows Server Q10C](images/windows-server_Q10C.jpg)",
+            "D\n![Windows Server Q10D](images/windows-server_Q10D.jpg)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q10. You have installed the Remote Desktop Services role. Which remote desktop mode comes with two built-in licenses?",
@@ -125,7 +125,7 @@
             "Print Services",
             "File Services",
             "Print and Document Services",
-            "Print Server"
+            "Print Server\n[Reference](https://www.faqforge.com/windows-server-2012-r2/install-configure-print-server-windows-server-2012-r2/)"
         ],
         "_ps": 2
     },
@@ -305,19 +305,19 @@
             "Trusted Root Certification Authorities under Local Computer",
             "Trusted Root Certification Authorities under Current User",
             "Personal under Local Computer",
-            "Client Authentication Computer"
+            "Client Authentication Computer\n![Windows Server Q32](images/windows-server_Q32.jpg)"
         ],
         "_ps": 2
     },
     {
         "question": "Q32. You are preparing a Windows Server 2016 server image for deployment. You want to further customize your server by adding applications and device drivers, and to test your computer in Windows environment. What sysprep.exe parameters would you select when customizing your server image?\n![Windows Server Q32](images/windows-server_Q32.jpg)",
         "options": [
-            "ows Server Q32](images/windows-server_Q32.jpg)",
             "A",
             "B",
-            "C"
+            "C",
+            "D"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q33. A domain GPO must apply to users based on the location of the computer to which they are logging in. You set up this ability by using which group policy feature?",
@@ -335,19 +335,19 @@
             "Network Load Balancing",
             "EnhancedStorage",
             "iSNS",
-            "Multipath IO"
+            "Multipath IO\n![Windows Server Q35](images/windows-server_Q35.jpg)"
         ],
         "_ps": 2
     },
     {
         "question": "Q35. As you create a new share, you are unable to configure the default classification of data on the folder. Why would the New Share Wizard prevent this configuration?\n![Windows Server Q35](images/windows-server_Q35.jpg)",
         "options": [
-            "ows Server Q35](images/windows-server_Q35.jpg)",
             "The File Resource Manager must be installed.",
             "The Distributed File System server must also be installed.",
-            "The Windows server license is not compatible with the feature."
+            "The Windows server license is not compatible with the feature.",
+            "The file share groups must be configured first."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q36. When installing the AD DS server role, which will NOT be installed as part of the requited features and services for AD DS to run?",
@@ -395,19 +395,19 @@
             "Click Next and review the Features section.",
             "Click Previous choose a different server.",
             "Click Cancel and restart the server.",
-            "Click Cancel and open the Remove Roles and Features Wizard."
+            "Click Cancel and open the Remove Roles and Features Wizard.\n![Windows Server Q41](images/windows-server_Q41.jpg)"
         ],
         "_ps": 3
     },
     {
         "question": "Q41. In the image below, what is being installed on the server?\n![Windows Server Q41](images/windows-server_Q41.jpg)",
         "options": [
-            "ows Server Q41](images/windows-server_Q41.jpg)",
             "AD CS",
             "AD FS",
-            "AD DS"
+            "AD DS",
+            "AD LDS"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q42. The first ot root server in a PKI must have the Active Directory Certificate Services installed running which role service?",
@@ -535,7 +535,7 @@
             "dcgpofix.exe",
             "dcdiagfix.exe",
             "ntdsutil.exe",
-            "dcpromo.exe"
+            "dcpromo.exe\n[Ref](https://www.sourceonetechnology.com/my-default-domain-policy-and-default-domain-controller-policy-are-broke/)"
         ],
         "_ps": 0
     },
@@ -565,7 +565,7 @@
             "create new multicast scope",
             "create new superscope",
             "replicate failover scopes",
-            "configure failover"
+            "configure failover\n[ref](https://biztechmagazine.com/article/2013/03/4-solutions-ensuring-dhcp-availability)"
         ],
         "_ps": 3
     },
@@ -575,7 +575,7 @@
             "DNS conditional forwarder",
             "DNS secondary zone",
             "DNS forward lookup zone",
-            "DNS reverse lookup zone"
+            "DNS reverse lookup zone\n[reference](https://medium.com/tech-jobs-academy/dns-forwarding-and-conditional-forwarding-f3118bc93984)"
         ],
         "_ps": 0
     },
@@ -585,7 +585,7 @@
             "RDA Administration Mode",
             "RDS Session Mode",
             "RDS User Mode",
-            "RDA Application Mode"
+            "RDA Application Mode\n[reference](https://www.dell.com/support/kbdoc/en-si/000136576/windows-server-an-overview-of-windows-remote-desktop-services-licensing)"
         ],
         "_ps": 0
     },
@@ -595,7 +595,7 @@
             "The issuing CA servers are placed in different geographical locations.",
             "The intermediate or policy CA server is offline.",
             "The root CA server is offline.",
-            "Only FIPS-compliant hardware security modules are used."
+            "Only FIPS-compliant hardware security modules are used.\n[reference](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn786436(v=ws.11)>)"
         ],
         "_ps": 2
     },
@@ -605,7 +605,7 @@
             "the Terminal Services Manager console",
             "the Group Manager console",
             "the Remote Desktop Manager console",
-            "the Server Manager console"
+            "the Server Manager console\n[reference](https://wiki.unify.com/wiki/How_to_configure_NLB_for_Windows_Server)"
         ],
         "_ps": 3
     },
@@ -615,17 +615,17 @@
             "to provide discovery services of iSCSI devices",
             "to view information about host bus adapters",
             "to manage RAID storage volumes",
-            "to set up storage Fibre Channels"
+            "to set up storage Fibre Channels\n[reference](https://thesolving.com/storage/how-to-install-and-configure-a-isns-server-on-windows-2012-r2/#)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q60. What type of CAs must be domain members and are typically online to issue certificates or certificate policies?\n[reference](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn786436(v=ws.11)>)\n#### Q58. Windows Server 2012 R2 server has two network adapters. You are required to configure load balancing on a pair of network adapters. Which management console would you use to accomplish this task?",
+        "question": "Q60. What type of CAs must be domain members and are typically online to issue certificates or certificate policies?",
         "options": [
             "Enterprise",
             "Root",
-            "Client",
-            "ence](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn786436(v=ws.11)>)"
+            "Client\n[reference](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn786436(v=ws.11)>)",
+            "the Terminal Services Manager console"
         ],
         "_ps": 0
     },
@@ -635,7 +635,7 @@
             "the Terminal Services Manager console",
             "the Group Manager console",
             "the Remote Desktop Manager console",
-            "the Server Manager console"
+            "the Server Manager console\n[reference](https://wiki.unify.com/wiki/How_to_configure_NLB_for_Windows_Server)"
         ],
         "_ps": 3
     },
@@ -645,7 +645,7 @@
             "to provide discovery services of iSCSI devices",
             "to view information about host bus adapters",
             "to manage RAID storage volumes",
-            "to set up storage Fibre Channels"
+            "to set up storage Fibre Channels\n[reference](https://thesolving.com/storage/how-to-install-and-configure-a-isns-server-on-windows-2012-r2/#)"
         ],
         "_ps": 0
     },
@@ -655,7 +655,7 @@
             "Enterprise",
             "Root",
             "Client",
-            "Standalone"
+            "Standalone\n[reference](https://itfreetraining.com/lesson/catypes/)"
         ],
         "_ps": 0
     },
@@ -665,17 +665,17 @@
             "multitenancy volumes",
             "storage pools",
             "parity volumes",
-            "storage spaces"
+            "storage spaces\n[reference](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/storage-spaces-how-to-configure-storage-tiers-with-windows/ba-p/256700)\n![Q62](images/windows-server_Q62.png)"
         ],
         "_ps": 3
     },
     {
         "question": "Q62. In the Server Manager window shown, how can you manage more servers?\n![Q62](images/windows-server_Q62.png)",
         "options": [
-            "(images/windows-server_Q62.png)",
             "Click **Server**, above **Volumes**.",
             "Click **Tools**.",
-            "Type a computer name in the filter text box."
+            "Type a computer name in the filter text box.",
+            "Click **Manage**."
         ],
         "_ps": -1
     },
@@ -704,8 +704,7 @@
         "options": [
             "Run the `printbrm -b` command on PRT02",
             "Run the `printbrm -b` command on PRT01",
-            "Run the `printbrm -r` command on PRT01",
-            "Run the `printbrm -q` command on PRT02"
+            "Run the `printbrm -r` command on PRT01"
         ],
         "_ps": -1
     }

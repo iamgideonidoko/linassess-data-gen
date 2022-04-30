@@ -43,27 +43,30 @@ const getQuestions = async (str: string) => {
         // get questions, questions begin with ####
         if (item.startsWith('####')) {
             let question = item.substring(5);
-            const options = [fileLines[idx + 1], fileLines[idx + 2], fileLines[idx + 3], fileLines[idx + 4]];
+            const options = [];
             let currentOption = '';
-            for (let i = 1; i <= fileLines.length; i++) {
+            for (let i = 1; i < fileLines.length; i++) {
                 if (fileLines[idx + i] && fileLines[idx + i].startsWith('- [')) {
+                    // if first option after question is reached, stop loop
                     break;
                 } else {
                     question += `\n${fileLines[idx + i]}`;
                 }
             }
-            for (let i = 1; i <= fileLines.length; i++) {
+            for (let i = 1; i < fileLines.length; i++) {
                 if (options.length >= 4) break;
+                // at the point, if the next line is a new question end loop
+                if (fileLines[idx + i] && fileLines[idx + i].startsWith('####')) continue;
                 if (fileLines[idx + i] && fileLines[idx + i].startsWith('- [')) {
                     if (currentOption) {
-                        options.push(fileLines[idx + 1]);
-                        currentOption = '';
+                        options.push(currentOption);
+                        currentOption = fileLines[idx + i];
                     } else {
-                        currentOption = fileLines[idx + 1];
+                        currentOption = fileLines[idx + i];
                     }
                 } else {
                     if (currentOption) {
-                        currentOption += `\n${fileLines[idx + 1]}`;
+                        currentOption += `\n${fileLines[idx + i]}`;
                     }
                 }
             }
@@ -100,7 +103,7 @@ const getQuestions = async (str: string) => {
             console.log('\x1b[42m%s\x1b[0m', 'data.ts: Moved data to prod successfully');
         });
     }
-    const dirs = prodContents.filter((item) => item.type === 'dir');
+    const dirs = prodContents.filter((item) => item.type === 'dir' && item.name !== '.github');
     dirs.forEach(async (item) => {
         try {
             const fileName = (() => {
@@ -114,11 +117,17 @@ const getQuestions = async (str: string) => {
                         return 'search-engine-optimization-quiz';
                     case 'microsoft-access':
                         return 'microsoft-access';
+                    case 'oop':
+                        return 'object-oriented-programming-quiz';
+                    case 'linux':
+                        return 'linux-assessment';
+                    case 'google-cloud-platform':
+                        return 'gcp-quiz';
                     default:
                         return item.path.replace('#', '-sharp').replace('-(programming-language)', '') + '-quiz';
                 }
             })();
-            const res = await axios.get(`${constants.fileBaseUrl}/${item.path.replace('#', '0%23')}/${fileName}.md`);
+            const res = await axios.get(`${constants.fileBaseUrl}/${item.path.replace('#', '%23')}/${fileName}.md`);
 
             if (res.data) {
                 const questions = await getQuestions(res.data as string);

@@ -395,7 +395,7 @@
             "`db.vehicle.distinct(\"category\")`",
             "`db.vehicle.unique(\"category\")`",
             "`db.vehicle.distinct(\"category\").count()`",
-            "`db.vehicle.distinct(\"category\").length`"
+            "`db.vehicle.distinct(\"category\").length`\nNote: count() works with find(...) but length works with distinct"
         ],
         "_ps": 3
     },
@@ -695,7 +695,7 @@
             "index",
             "Name",
             "`_id`",
-            "row number"
+            "row number\n[Reference](https://docs.mongodb.com/manual/reference/operator/aggregation/project/#definition)"
         ],
         "_ps": 2
     },
@@ -705,7 +705,7 @@
             "Create a user account.",
             "Register online.",
             "Create a data directory.",
-            "Establish security credentials."
+            "Establish security credentials.\n[mongodb site](https://docs.mongodb.com/manual/tutorial/verify-mongodb-packages/#verify-integrity-of-mongodb-packages)"
         ],
         "_ps": 3
     },
@@ -715,7 +715,7 @@
             "as a properly formatted JSON array",
             "as YAML",
             "as plain text",
-            "as a BSON object"
+            "as a BSON object\n[Section blog](https://www.section.io/engineering-education/handling-json-in-mongodb/)"
         ],
         "_ps": 0
     },
@@ -735,7 +735,7 @@
             "db.createUser({})",
             "db.insert({user: 1})",
             "db.customers.newUser({})",
-            "db.newUser({})"
+            "db.newUser({})\n[MongoDB documentation](https://docs.mongodb.com/manual/tutorial/create-users/)"
         ],
         "_ps": 0
     },
@@ -745,7 +745,7 @@
             "JSON (JavaScript Object Notation)",
             "BSON (Binary JSON)",
             "ORM (object relational mode)",
-            "MBF (MongoDB binary format)"
+            "MBF (MongoDB binary format)\n[MongoDB documentation](https://docs.mongodb.com/guides/server/introduction/)"
         ],
         "_ps": 0
     },
@@ -765,7 +765,7 @@
             "database",
             "field",
             "no",
-            "document"
+            "document\n[MongoDB reference](https://www.mongodb.com/docs/manual/core/write-operations-atomicity/#:~:text=In%20MongoDB%2C%20a%20write%20operation,documents%20within%20a%20single%20document.)"
         ],
         "_ps": 3
     },
@@ -775,7 +775,7 @@
             "1",
             "null",
             "0",
-            "-1"
+            "-1\n[MongoDB reference](https://www.mongodb.com/docs/manual/tutorial/configure-secondary-only-replica-set-member/#assign-priority-value-of-0)"
         ],
         "_ps": 2
     },
@@ -785,7 +785,7 @@
             "Use the reIndex() command to add the index quickly.",
             "Use the createIndex() command with the option background = true.",
             "Use the createIndex() command.",
-            "Use the createIndex() command with the option parallel = true."
+            "Use the createIndex() command with the option parallel = true.\n[MongoDB reference](https://www.mongodb.com/docs/v4.0/reference/method/db.collection.createIndex/#options)"
         ],
         "_ps": 1
     },
@@ -794,8 +794,7 @@
         "options": [
             "input",
             "output",
-            "to",
-            "onError"
+            "to"
         ],
         "_ps": 1
     }

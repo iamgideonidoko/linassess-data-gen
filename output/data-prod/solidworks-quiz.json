@@ -5,7 +5,7 @@
             "SOLIDWORKS drawing template",
             "SOLIDWORKS composer file",
             "SOLIDWORKS part file",
-            "SOLIDWORKS sheet format"
+            "SOLIDWORKS sheet format\n[Reference : drawing template](https://www.cati.com/blog/2017/07/tech-tip-the-difference-between-a-sheet-format-and-a-drawing-template-in-solidworks/#:~:text=The%20drawing%20template%20has%20the,pre%2Ddefined%20views%2C%20etc.)"
         ],
         "_ps": 0
     },
@@ -15,19 +15,19 @@
             "Create a new sketch of a circle with a diameter of 1 inch. Then use the Helix/Spiral curve command and define a height of 10 inches and pitch of 3 inches.",
             "Create a new sketch of a circle with a diameter of 3 inches. Then use the Helix/Spiral curve command to define a height of 10 inches and pitch of 1 inch.",
             "First, create a new sketch of a circle of 10 inches. Then use the Helix/Spiral curve command and define by pitch of 1 inch and 3 revolutions.",
-            "Use the Helix/Spiral curve command and define a diameter of 3 inches, height of 10 inches, and pitch of 1 inch."
+            "Use the Helix/Spiral curve command and define a diameter of 3 inches, height of 10 inches, and pitch of 1 inch.\n![solidworks image](images/solidworks_q3.jpg)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q3. Which single feature could you use to create this image?",
+        "question": "Q3. Which single feature could you use to create this image?\n![solidworks image](images/solidworks_q3.jpg)",
         "options": [
-            "dworks image](images/solidworks_q3.jpg)",
             "Loft",
             "Extruded Boss/Base",
-            "Sweep"
+            "Sweep",
+            "Revolved Boss/Base"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q4. Which choice is NOT a fillet type in SOLIDWORKS?",
@@ -45,7 +45,7 @@
             "Quick Snaps",
             "Rebuild",
             "Repair Sketch",
-            "Show Error"
+            "Show Error\n[reference](https://blogs.solidworks.com/tech/2016/12/solidworks-fix-sketch-repair-sketch.html)"
         ],
         "_ps": 2
     },
@@ -55,7 +55,7 @@
             "chamfer",
             "extrusion",
             "fillet",
-            "shell"
+            "shell\n[Reference](https://help.solidworks.com/2016/English/SolidWorks/acadhelp/c_Feature_based_Models.htm)"
         ],
         "_ps": 1
     },
@@ -75,7 +75,7 @@
             "sphere",
             "plane",
             "point",
-            "axis"
+            "axis\n[Reference](https://www.cati.com/blog/2020/02/solidworks-basics-of-reference-geometry-axis/)"
         ],
         "_ps": 0
     },
@@ -85,7 +85,7 @@
             "feature",
             "relation",
             "extrude",
-            "dimension"
+            "dimension\n[Solidworks: Sketch Relations](https://help.solidworks.com/2022/english/SolidWorks/sldworks/c_Description_of_Sketch_Relations.htm)"
         ],
         "_ps": 1
     },
@@ -95,7 +95,7 @@
             "Right-click the component you want to focus on and select Change Transparency",
             "Right-click the component you want to focus on and select Hide",
             "Right-click the component you want to focus on and select Isolate",
-            "Right-click the component you want to focus on and select Suppress"
+            "Right-click the component you want to focus on and select Suppress\n[Solidworks: Isolate](https://help.solidworks.com/2022/english/SolidWorks/sldworks/hidd_comp_isolate_dlg.htm?verRedirect=1)"
         ],
         "_ps": 2
     },
@@ -105,7 +105,7 @@
             "It will delete the original part and save the current part with a new name",
             "It will keep the original part and save the current path with a new name",
             "It will save both the original part and the new part in the current state",
-            "It will rename the original part"
+            "It will rename the original part\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/AFX_HIDD_FILESAVE.htm)"
         ],
         "_ps": 1
     },
@@ -115,7 +115,7 @@
             "bill of material",
             "isometric view",
             "exploded view",
-            "hole list"
+            "hole list\n[Reference](https://en.wikipedia.org/wiki/Bill_of_materials)"
         ],
         "_ps": 0
     },
@@ -125,7 +125,7 @@
             "Freezing the features helps to show only the critical features of the model",
             "Freezing the features helps to show the internal features of the model",
             "Freezing the features helps to reduce the rebuild time and prevent unintentional changes to the model",
-            "Freezing the features helps to show the external features of the model"
+            "Freezing the features helps to show the external features of the model\n[Reference](https://help.solidworks.com/2021/English/SolidWorks/sldworks/c_Feature_Freeze.htm)"
         ],
         "_ps": 2
     },
@@ -145,7 +145,7 @@
             "parallel",
             "coindicent",
             "equal",
-            "concentric"
+            "concentric\n[Reference](https://help.solidworks.com/2019/English/SolidWorks/sldworks/r_Types_of_Mates_SWassy.htm)"
         ],
         "_ps": 2
     },
@@ -155,7 +155,7 @@
             "Click the feature in the FeatureManager design tree or graphics area, then select Suppress",
             "Drag the feature to the Suppression folder, located at the top of the FeatureManager design tree",
             "You cannot remove features temporarily-you can only delete them completely",
-            "Drag the feature to the bottom of the FeatureManager design tree, then drag the Suppression bar above it"
+            "Drag the feature to the bottom of the FeatureManager design tree, then drag the Suppression bar above it\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/c_Suppress_and_Unsuppress_Features.htm)"
         ],
         "_ps": 0
     },
@@ -165,7 +165,7 @@
             "Use Assembly Visualization",
             "Use a bill of materials",
             "Use isometric view",
-            "Use exploded view"
+            "Use exploded view\n[Reference](https://help.solidworks.com/2018/english/solidworks/sldworks/c_Exploded_Views_in_Assemblies.htm)"
         ],
         "_ps": 3
     },
@@ -175,7 +175,7 @@
             "Drag the loft connectors to the correct position, or use guide curves",
             "Reduce the spacing between the loft profiles, then scale the loft body as required",
             "Loft shapes are driven entirely by the loft profiles, adjust the skecthes to remove any ambiguity in the loft path",
-            "Ensure that the Twist Along Path option is not selected"
+            "Ensure that the Twist Along Path option is not selected\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/c_Recommendations_Lofts_Guide_Curves.htm)"
         ],
         "_ps": 0
     },
@@ -205,7 +205,7 @@
             "DFMXpress",
             "SpeedPak",
             "a flexible subassembly",
-            "Design Checker"
+            "Design Checker\n[reference](https://help.solidworks.com/2014/english/SolidWorks/sldworks/c_Improving_Large_Assembly_Performance_SWassy.htm"
         ],
         "_ps": 1
     },
@@ -215,7 +215,7 @@
             "second angle projection",
             "fourth angle projection",
             "first angle projection",
-            "third angle projection"
+            "third angle projection\n[Reference](https://www.mcadcafe.com/nbc/articles/1/1551676/Which-standard-should-you-adopt-2D-Drawing-ISO-ASME)"
         ],
         "_ps": 2
     },
@@ -235,7 +235,7 @@
             "inflection point",
             "control point",
             "spline point",
-            "spline handle"
+            "spline handle\n[Reference](https://www.cati.com/blog/2016/06/creating-splines-in-solidworks-made-easy/)"
         ],
         "_ps": 3
     },
@@ -245,7 +245,7 @@
             "Under Insert Component, select Part to create a new in-context part. Right-click the new part and select isolate",
             "Select Insert Component to create a new in-context part. Right-click te new part and select Save Part (in External File)",
             "Under Insert Components, select New Part to create a new in-context part. Right-click the new part and select Save Selection",
-            "Under Insert Components, select New Part to create a new in-context part. Right-click the new part and select Save Part (in External File)"
+            "Under Insert Components, select New Part to create a new in-context part. Right-click the new part and select Save Part (in External File)\n[Reference](https://help.solidworks.com/2018/english/SolidWorks/sldworks/t_Creating_a_Part_in_an_Assembly.htm)"
         ],
         "_ps": 3
     },
@@ -255,7 +255,7 @@
             "Click View > Toolbars > CommandManager",
             "Click View > Toolbars > FeatureManager",
             "Click View > Toolbars > MotionManager",
-            "Click View > Toolbars > Task Pane"
+            "Click View > Toolbars > Task Pane\n[reference](https://www.javelin-tech.com/blog/2017/02/solidworks-task-pane-missing/)"
         ],
         "_ps": 3
     },
@@ -265,7 +265,7 @@
             "isometric projection",
             "oblique projection",
             "object projection",
-            "orthographic projection"
+            "orthographic projection\n[Reference](https://www.britannica.com/technology/orthographic-projection-engineering)"
         ],
         "_ps": 3
     },
@@ -275,7 +275,7 @@
             "Select the feature name and press F2, or slow-double-click the feature name",
             "Select the feature name and press F3 key, or right-click the feature name",
             "Select the feature name and press F7, or quick-double-click the feature name",
-            "Select the feature name and press F5 key, or double-click the feature name"
+            "Select the feature name and press F5 key, or double-click the feature name\n[reference](http://support.ptc.com/help/creo/creo_pma/usascii/index.html#page/part_modeling/part_modeling/part_five_sub/To_Rename_a_Feature.html)"
         ],
         "_ps": 0
     },
@@ -285,7 +285,7 @@
             "It creates a fillet that is tanget to the direction of view",
             "It creates a fillet that varies in size, depending on lcoal tangency",
             "It creates a constant-size fillet around all selections",
-            "It extends the fillet to all faces that are tangent to the selected face"
+            "It extends the fillet to all faces that are tangent to the selected face\n[Reference](https://help.solidworks.com/2022/english/swconnected/swdotworks/c_example_tangent_propagation.htm)"
         ],
         "_ps": 3
     },
@@ -295,7 +295,7 @@
             "Select the subassembly and then select **Make Subassembly Flexible** from the context menu",
             "Select the subassembly and then select **Set Resolved from LightWeight** from the context menu",
             "Select the subassembly and then select **Edit Assembly** from the context menu",
-            "Select the subassembly and then select **Make Independent** from the context menu"
+            "Select the subassembly and then select **Make Independent** from the context menu\n[Reference](https://help.solidworks.com/2018/english/solidworks/sldworks/c_flexible_sub-assemblies.htm)"
         ],
         "_ps": 0
     },
@@ -305,79 +305,79 @@
             "On the **Leaders** tab, select **Diameter**",
             "On the **Other** tab, select **Diameter**",
             "On the **Value** tab, and select **Diameter**",
-            "On the **Value** tab, seect **Override Value**"
+            "On the **Value** tab, seect **Override Value**\n![solidworks image](images/solidworks_q32.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q32. In the image below, which are the parents and children of the Vertical Boss Feature?",
+        "question": "Q32. In the image below, which are the parents and children of the Vertical Boss Feature?\n![solidworks image](images/solidworks_q32.png)",
         "options": [
-            "dworks image](images/solidworks_q32.png)",
             "The parent is Base Feature; the children are Slot Cutout, Sketch3, CBORE Hole, and Fillet2",
             "The parent is Vertical Boss; the childre are Base Feature, Slot Cutout, Sketch3, CBORE Hole, and Fillet2",
-            "The parent is Base Feature; the children are Vertical Boss, Slot Cutout, Sketch3, CBORE Holde, and Fillet2"
+            "The parent is Base Feature; the children are Vertical Boss, Slot Cutout, Sketch3, CBORE Holde, and Fillet2",
+            "The parents are Vertical Boss and Base Feature; the children are Slot Cutout, Sketch3, CBORE Hole, and Fillet2\n![solidworks image](images/solidworks_q33.png)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
-        "question": "Q33. In this image, which parts are fixed?",
+        "question": "Q33. In this image, which parts are fixed?\n![solidworks image](images/solidworks_q33.png)",
         "options": [
-            "dworks image](images/solidworks_q33.png)",
             "BASE",
             "LINK 3",
-            "LINK 5"
-        ],
-        "_ps": 3
-    },
-    {
-        "question": "Q34. What is this image an example of?",
-        "options": [
-            "dworks image](images/solidworks_q34.png)",
-            "a hole table",
-            "a revision table",
-            "a tolerance table"
-        ],
-        "_ps": 1
-    },
-    {
-        "question": "Q35. What type of dimensioning is shown here?",
-        "options": [
-            "dworks image](images/solidworks_q35.png)",
-            "smart dimensioning",
-            "angular running dimensioning",
-            "ordinate dimensioning"
-        ],
-        "_ps": 3
-    },
-    {
-        "question": "Q36. In the image below, what types of hole are A1 and B1 respectively?",
-        "options": [
-            "dworks image](images/solidworks_q36.png)",
-            "countersink and counterbore",
-            "counterbore and countersink",
-            "standard and threaded/tapped"
+            "LINK 5",
+            "LINK 1\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/t_Fixing_the_Position_of_a_Component.htm)\n![solidworks image](images/solidworks_q34.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q37. What is this sketch an example of?",
+        "question": "Q34. What is this image an example of?\n![solidworks image](images/solidworks_q34.png)",
         "options": [
-            "dworks image](images/solidworks_q37.png)",
-            "an open contour sketch",
-            "a multi-contour or intersecting sketch",
-            "a triple contour sketch"
+            "a hole table",
+            "a revision table",
+            "a tolerance table",
+            "a punch table\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/c_hole_tables.htm)\n![solidworks image](images/solidworks_q35.png)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q35. What type of dimensioning is shown here?\n![solidworks image](images/solidworks_q35.png)",
+        "options": [
+            "smart dimensioning",
+            "angular running dimensioning",
+            "ordinate dimensioning",
+            "chain dimensioning\n![solidworks image](images/solidworks_q36.png)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q36. In the image below, what types of hole are A1 and B1 respectively?\n![solidworks image](images/solidworks_q36.png)",
+        "options": [
+            "countersink and counterbore",
+            "counterbore and countersink",
+            "standard and threaded/tapped",
+            "threaded/tapped and standard\n![solidworks image](images/solidworks_q37.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q38. Can this skecth be extruded?",
+        "question": "Q37. What is this sketch an example of?\n![solidworks image](images/solidworks_q37.png)",
         "options": [
-            "dworks image](images/solidworks_q37.png)",
+            "an open contour sketch",
+            "a multi-contour or intersecting sketch",
+            "a triple contour sketch",
+            "a closed contour sketch\n![solidworks image](images/solidworks_q37.png)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q38. Can this skecth be extruded?\n![solidworks image](images/solidworks_q37.png)",
+        "options": [
             "Yes, you can extrude it using the standard extrude boss option",
             "Yes, you can extrude it using the Selected Contours option",
-            "No, the sketch is an open contour and this cannot be extruded"
+            "No, the sketch is an open contour and this cannot be extruded",
+            "Yes, you can extrude it using the Thin Feature option"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q39. Why is it useful to suppress a feature?",
@@ -495,7 +495,7 @@
             "Right-click the filename at the top of the FeatureManager design tree and select Relink Stock Part.",
             "Once derived part references are broken, they cannot be readded. Consider resplitting the part.",
             "Locate the child part using SOLIDWORKS Explorer and select Relink Parent.",
-            "Edit the stock feature at the start of the FeatureManager design tree, then adjust the Defining Stock Part option."
+            "Edit the stock feature at the start of the FeatureManager design tree, then adjust the Defining Stock Part option.\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/HIDD_FEAT_EDIT_SPLIT_FEAT_BODY.htm)"
         ],
         "_ps": 3
     },
@@ -564,8 +564,7 @@
         "options": [
             "coincident",
             "collinear",
-            "concentric",
-            "fix"
+            "concentric"
         ],
         "_ps": 2
     }

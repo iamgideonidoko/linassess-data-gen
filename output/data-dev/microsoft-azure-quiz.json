@@ -5,7 +5,7 @@
             "`bash az ad app permission grant -display-name $appName \\ ...`",
             "`bash az ad app credential create -display-name $appName \\ ...`",
             "`bash az ad app create -display-name $appName \\ ...`",
-            "`bash az ad app permission ass -display-name $appName \\ ...`"
+            "`bash az ad app permission ass -display-name $appName \\ ...`\n[Ref](https://docs.microsoft.com/en-us/cli/azure/ad/app?view=azure-cli-latest)"
         ],
         "_ps": 2
     },
@@ -15,7 +15,7 @@
             "Notification Hub",
             "Event Grid",
             "Twilio",
-            "Service Bus"
+            "Service Bus\n**Explanation:** Twilio is an SMS notification app, also not from Microsoft. Event Grid can be techincally used for this purpose but it's a more generic event-broadcasting service. Service Bus is another generic publish-subscribe solution. Finally [Notification Hubs](https://docs.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-overview) are specifically designed for push-notifications."
         ],
         "_ps": 0
     },
@@ -25,7 +25,7 @@
             "service principal and a certificate",
             "managed identity",
             "service principal and a secret",
-            "shared access key"
+            "shared access key\n[Azure Key Vault Developer's Guide](https://docs.microsoft.com/en-us/azure/key-vault/general/developers-guide#authenticate-to-key-vault-in-code) lists 3 available methods. The _shared access key_ does not exist in Azure at all, the closest term is _shared access signature (SAS)_ but it's used to access Azure Storage only."
         ],
         "_ps": 3
     },
@@ -55,7 +55,7 @@
             "Add the assets to a git repository",
             "Add the assets in Key Vault",
             "Add the assets to an encrypted volume",
-            "Add the assets to a library"
+            "Add the assets to a library\n[Ref](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/?view=azure-devops)"
         ],
         "_ps": 3
     },
@@ -65,7 +65,7 @@
             "Azure AD user account",
             "Shared access signature",
             "Shared key",
-            "Certificate"
+            "Certificate\n[Shared access signature](https://docs.microsoft.com/en-us/azure/storage/common/storage-sas-overview) exists exactly for the purpose of giving a temporary access. Azure AD user account is not temporary so it needs to be managed. Creating/revoking Certificates for temporary access is just too much hassle."
         ],
         "_ps": 1
     },
@@ -75,7 +75,7 @@
             "Configure application insights cohort",
             "Install the Log Analytics agent and configure Azure Monitor for Containers",
             "Install the App Insights on AKS nodes",
-            "Add instrumentation to your app to send usage analytics with Application Insights."
+            "Add instrumentation to your app to send usage analytics with Application Insights.\n[Container Monitoring doc](https://docs.microsoft.com/en-us/azure/azure-monitor/containers/containers) explicitly mentions that it's not for AKS. 3 and 4 look right"
         ],
         "_ps": -1
     },
@@ -85,7 +85,7 @@
             "based on a time (schedule)",
             "another Azure service (cosmos, service bus)",
             "threshold alert in Azure App insights",
-            "third party services (GitHub)"
+            "third party services (GitHub)\n[Ref](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings?tabs=csharp)"
         ],
         "_ps": 2
     },
@@ -95,7 +95,7 @@
             "Service Bus",
             "Event Hub",
             "Notification Hub",
-            "Event Grid"
+            "Event Grid\n[Ref](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services)"
         ],
         "_ps": 3
     },
@@ -125,7 +125,7 @@
             "Front door",
             "API Management",
             "Traffic manager",
-            "Application Gateway"
+            "Application Gateway\n**Hint:** If you see the words REST and throttling - the answer is almost always API Management. It's the most expensive solution but is specifically designed to proxy the REST API."
         ],
         "_ps": 1
     },
@@ -165,7 +165,7 @@
             "Network File System (NFS)",
             "HTTPS",
             "REST API",
-            "Server Message Block(SMB)"
+            "Server Message Block(SMB)\n[What is Azure Files?](https://docs.microsoft.com/en-us/azure/storage/files/storage-files-introduction) page mentions the supported protocols."
         ],
         "_ps": 1
     },
@@ -285,19 +285,19 @@
             "managed identity (shared)",
             "X.509 certificate",
             "managed service identity (per device)",
-            "SAS key"
+            "SAS key\n```json\n{\n    \"type\": \"Microsoft.Compute/virtualMachines\",\n    \"name\": \"[concat('myvm', `______`)]\",\n    \"apiVersion\": \"2016-04-30-preview\",\n    \"location\": \"[parameters('location')]\",\n    \"copy\": \" \",\n    \"name\": \"virtualMachineLoop\",\n    \"count\": \"[parameters('numberOfInstances')]\"\n},\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q30. You are deploying three Azure VMS with an Azure Resource Manager (ARM) template. Which ARM function implements the iteration loop to provision the right number of VMs?\n```json\n{\n    \"type\": \"Microsoft.Compute/virtualMachines\",\n    \"name\": \"[concat('myvm', `______`)]\",\n    \"apiVersion\": \"2016-04-30-preview\",\n    \"location\": \"[parameters('location')]\",\n    \"copy\": \" \",\n    \"name\": \"virtualMachineLoop\",\n    \"count\": \"[parameters('numberOfInstances')]\"\n},\n```",
         "options": [
-            "n",
-            "",
-            "ype\": \"Microsoft.Compute/virtualMachines\",",
-            "ame\": \"[concat('myvm', `______`)]\","
+            "max()",
+            "copyIndex()",
+            "createArray()",
+            "indexOf()"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q31. The Kineteco web app runs in an Azure Kubernetes Service. You need to monitor feature use and user navigation paths to identify where improvements are needed. What should you do?",
@@ -350,12 +350,12 @@
         "_ps": 2
     },
     {
-        "question": "Q36. You need to update the data within an existing database in Azure SQL with your changes. You want to test this process from your development workstation before incorporating the update into your CI/CD process. Which command will you run to update the schema on the target database?\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"",
+        "question": "Q36. You need to update the data within an existing database in Azure SQL with your changes. You want to test this process from your development workstation before incorporating the update into your CI/CD process. Which command will you run to update the schema on the target database?",
         "options": [
-            "SqlPackage.exe /TargetFile:\" myapp.bacpac \" /Action:**Export**",
-            "/SourceServerName:\"kinetecosql.database.windows.net\"",
-            "/SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"",
-            "SqlPackage.exe /TargetFile:\" myapp.bacpac \" /Action:**Import**"
+            "SqlPackage.exe /TargetFile:\" myapp.bacpac \" /Action:**Export**\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"",
+            "SqlPackage.exe /TargetFile:\" myapp.bacpac \" /Action:**Import**\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"",
+            "SqlPackage.exe /TargetFile:\"./myapp.bacpac\" /Action:**Publish**\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"",
+            "SqlPackage.exe /TargetFile:\"./myapp.bacpac\" /Action:**Extract**\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\""
         ],
         "_ps": 0
     },
@@ -455,7 +455,7 @@
             "Implement dynamic data masking and include the managers group.",
             "Implement transparent data encryption and include the managers group.",
             "Implement dynamic data masking and exclude the managers group.",
-            "Implement transparent data encryption and exclude the managers group."
+            "Implement transparent data encryption and exclude the managers group.\n`Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to designate how much of the sensitive data to reveal with minimal impact on the application layer.`\n[Reference](https://docs.microsoft.com/en-us/powershell/module/azurerm.sql/new-azurermsqldatabasedatamaskingrule?view=azurermps-6.13.0)"
         ],
         "_ps": 2
     },
@@ -525,7 +525,7 @@
             "`CORS`",
             "`deployment slots`",
             "`WebJobs`",
-            "`custom domains`"
+            "`custom domains`\nAs described in [Microsoft Docs: Hosting a Restful-API with CORS in AAS](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-tutorial-rest-api): The Answer should be CORS (Cross Origin Ressource Sharing)"
         ],
         "_ps": 0
     },
@@ -544,8 +544,7 @@
         "options": [
             "Event Grid",
             "Service Bus",
-            "Event Hub",
-            "Queue Storage"
+            "Event Hub"
         ],
         "_ps": -1
     }

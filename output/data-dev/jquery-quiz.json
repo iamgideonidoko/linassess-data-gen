@@ -2,82 +2,82 @@
     {
         "question": "Q1. What's the difference between these two snippets?\n```js\n$('button').on('click', function () {\n  alert('you clicked the button!');\n});\n$('button').click(function () {\n  alert('you clicked the button!');\n});\n```",
         "options": [
-            "",
-            "ton').on('click', function () {",
-            "t('you clicked the button!');",
-            ""
+            "Only the second one will work; jQuery does not have a function called `.on`.",
+            "The second snippet will not function.",
+            "Nothing `.click(function)` is shorter way to write `.on('click', function)`.",
+            "The first snippet will execute for every button on the page, the second will only apply to the first button.\n`jQuery('p')`"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q2. What does the following line of code do?\n`jQuery('p')`",
         "options": [
-            "y('p')`",
             "Loads a paragraph tag from a remote server using AJAX",
             "Aliases jQuery to a variable p",
-            "Selects all paragraphs on the page"
+            "Selects all paragraphs on the page",
+            "Creates a new paragraph tag and inserts it into the body tag\n```html\n<button class=\"btn btn-primary\" type=\"submit\">Continue to checkout</button>\n```"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q3. Given the following HTML, how could we use one line to hide or show the button?\n```html\n<button class=\"btn btn-primary\" type=\"submit\">Continue to checkout</button>\n```",
         "options": [
-            "l",
-            "n class=\"btn btn-primary\" type=\"submit\">Continue to checkout</button>",
-            "",
-            "`$('.btn-primary').toggle();`"
+            "`$('.btn-primary').toggle();`",
+            "`$('.btn-primary').showHide();`",
+            "`$('.btn-primary').not(':visible').show();`",
+            "`$('.btn-primary').css({ display: 'block'});`\n`https://example.com/json-api/students`  \n`https://example.com/json-api/classes`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q4. Working with AJAX, we may run into situations where a piece of code should not be run until after multiple AJAX calls have completed successfully. Say we need to call two external services for JSON data (a list of students, and a list of classes). And only after retrieving those data will we perform some manipulations on a page. What is the preferred way for dealing with this scenario?\n`https://example.com/json-api/students`  \n`https://example.com/json-api/classes`",
+        "options": [
+            "A\n```js\n$.get(\n  ['https://example.com/json-api/students', 'https://example.com/json-api/classes'],\n  function (studentRequest, classRequest) {\n    // the rest of the code goes here\n  },\n);\n```",
+            "B\n```js\n$.when(\n  $.get('https://example.com/json-api/students'),\n  $.get('https://example.com/json-api/classes'),\n).done(function (studentRequest, classRequest) {\n  // the rest of the code goes here\n});\n```",
+            "C\n```js\n$.bind(\n  $.get('https://example.com/json-api/students'),\n  $.get('https://example.com/json-api/classes'),\n).done(function (studentRequest, classRequest) {\n  // the rest of the code goes here\n});\n```",
+            "D\n```js\n$.ajax('https://example.com/json-api/students', {\n  success: function (studentRequest) {\n    $.ajax('https://example.com/json-api/classes', {\n      success: function (classRequest) {\n        // the rest of the code goes here\n      },\n    });\n  },\n});\n```\n```html\n<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n</ul>\n```\n```js\n$('ul').find('li').get(2);\n$('ul').find('li').eq(2);\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q4. Working with AJAX, we may run into situations where a piece of code should not be run until after multiple AJAX calls have completed successfully. Say we need to call two external services for JSON data (a list of students, and a list of classes). And only after retrieving those data will we perform some manipulations on a page. What is the preferred way for dealing with this scenario?\n`https://example.com/json-api/students`  \n`https://example.com/json-api/classes`\n```js\n$.get(\n  ['https://example.com/json-api/students', 'https://example.com/json-api/classes'],\n  function (studentRequest, classRequest) {\n    // the rest of the code goes here\n  },\n);\n```\n```js\n$.when(\n  $.get('https://example.com/json-api/students'),\n  $.get('https://example.com/json-api/classes'),\n).done(function (studentRequest, classRequest) {\n  // the rest of the code goes here\n});\n```\n```js\n$.bind(\n  $.get('https://example.com/json-api/students'),\n  $.get('https://example.com/json-api/classes'),\n).done(function (studentRequest, classRequest) {\n  // the rest of the code goes here\n});\n```",
-        "options": [
-            "://example.com/json-api/students`  ",
-            "://example.com/json-api/classes`",
-            "A",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
         "question": "Q5. Given the snippet of HTML below, what is the difference between the two lines that follow it?\n```html\n<ul>\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n</ul>\n```\n```js\n$('ul').find('li').get(2);\n$('ul').find('li').eq(2);\n```",
         "options": [
-            "l",
-            "",
-            "Item 1</li>",
-            "Item 2</li>"
+            ".get() retrieves a DOM element, and can't be chained, eq() retrieves a jQuery object, and can be chained.",
+            ".get() retrieves a jQuery object, and can't be chained, eq() retrieves a DOM element, and can be chained.",
+            ".get() retrieves a jQuery object, and is zero-indexed, eq() retrieves a DOM element, and is 1-indexed.",
+            ".get() retrieves a DOM element, and is zero-indexed, eq() retrieves a jQuery object, and is 1-indexed.\n```js\n$('#ball').click(function () {\n  // Our code goes here\n});\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q6. Suppose we want to have a ball created from an HTML element (id=ball) move down and to the right from its original location when clicked, and move back into its original place when finished. Given a starting point of this, which of these snippets would accomplish that goal?\n```js\n$('#ball').click(function () {\n  // Our code goes here\n});\n```\n```js\n$(this).animate(\n  { top: '+=100', left: '+=100' },\n  {\n    duration: 600,\n    complete: function () {\n      $(this).animate({ top: '-=100', left: '-=100' }, 600);\n    },\n  },\n);\n```\n```js\n$(this).animate({ top: '-=100', left: '-=100' }, 600, function () {\n  $(this).animate({ top: '+=100', left: '+=100' }, 600);\n});\n```\n```js\n$(this).animate(\n  { top: '=100', left: '=100' },\n  {\n    duration: 600,\n    complete: function () {\n      $(this).animate({ top: 0, left: 0 }, 600);\n    },\n  },\n);\n```",
+        "question": "Q6. Suppose we want to have a ball created from an HTML element (id=ball) move down and to the right from its original location when clicked, and move back into its original place when finished. Given a starting point of this, which of these snippets would accomplish that goal?\n```js\n$('#ball').click(function () {\n  // Our code goes here\n});\n```",
         "options": [
-            "",
-            "ll').click(function () {",
-            "ur code goes here",
-            ""
+            "A\n```js\n$(this).animate(\n  { top: '+=100', left: '+=100' },\n  {\n    duration: 600,\n    complete: function () {\n      $(this).animate({ top: '-=100', left: '-=100' }, 600);\n    },\n  },\n);\n```",
+            "B\n```js\n$(this).animate({ top: '-=100', left: '-=100' }, 600, function () {\n  $(this).animate({ top: '+=100', left: '+=100' }, 600);\n});\n```",
+            "C\n```js\n$(this).animate(\n  { top: '=100', left: '=100' },\n  {\n    duration: 600,\n    complete: function () {\n      $(this).animate({ top: 0, left: 0 }, 600);\n    },\n  },\n);\n```",
+            "D\n```js\n$(this).animate({ top: '100', left: '100' }, 600, function () {\n  $(this).animate({ top: 0, left: 0 }, 600);\n});\n```\n```css\n.success {\n  color: green;\n  background: #ddffdd;\n}\n```\n```html\n<div class=\"feedback\">Thank you for answering this survey.</div>\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q7. Given the following CSS and HTML codes below, how could you apply the success class to the feedback div?\n```css\n.success {\n  color: green;\n  background: #ddffdd;\n}\n```\n```html\n<div class=\"feedback\">Thank you for answering this survey.</div>\n```",
         "options": [
-            "",
-            "ss {",
-            "r: green;",
-            "ground: #ddffdd;"
+            "`$('.feedback').hasClass('.success');`",
+            "`$.css('.feedback', '.success')`;",
+            "`$('.feedback').addClass('success');`",
+            "`$('.feedback').css('.success');`\n```html\n<div class=\"message-area\">\n  <ul class=\"message-area--list\">\n    <li>Existing message 1</li>\n    <li>Existing message 2</li>\n  </ul>\n</div>\n$.get('//example.com/api/v1/message').done(function (data) { var tonsOfItems = data.messages; // add\nall these messages to a large page });\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q8. The following page snippet includes a couple of messages in a list, and a code snippet that retrieves a few hundred messages from an API endpoint using AJAX. How can you add these new items to the .message-area--list element in the most performant way?\n```html\n<div class=\"message-area\">\n  <ul class=\"message-area--list\">\n    <li>Existing message 1</li>\n    <li>Existing message 2</li>\n  </ul>\n</div>\n$.get('//example.com/api/v1/message').done(function (data) { var tonsOfItems = data.messages; // add\nall these messages to a large page });\n```\n```js\ntonsOfItems.map(function (item) {\n  $('.message-area--list').append('<li>' + item + '</li>');\n});\n```\n```js\nvar tonsOfListItems = tonsOfItems.map(function (item) {\n  return '<li>' + item + '</li>';\n});\n$('.message-area--list').append(tonsOfListItems.join(''));\n```\n```js\nCSS.$messageList = $('.message-area--list');\n$.each(tonsOfItems, function (idx, item) {\n  $('<li>' + item + '</li>').appendTo($messageList);\n});\n```",
+        "question": "Q8. The following page snippet includes a couple of messages in a list, and a code snippet that retrieves a few hundred messages from an API endpoint using AJAX. How can you add these new items to the .message-area--list element in the most performant way?\n```html\n<div class=\"message-area\">\n  <ul class=\"message-area--list\">\n    <li>Existing message 1</li>\n    <li>Existing message 2</li>\n  </ul>\n</div>\n$.get('//example.com/api/v1/message').done(function (data) { var tonsOfItems = data.messages; // add\nall these messages to a large page });\n```",
         "options": [
-            "l",
-            "lass=\"message-area\">",
-            "class=\"message-area--list\">",
-            "i>Existing message 1</li>"
+            "A\n```js\ntonsOfItems.map(function (item) {\n  $('.message-area--list').append('<li>' + item + '</li>');\n});\n```",
+            "B\n```js\nvar tonsOfListItems = tonsOfItems.map(function (item) {\n  return '<li>' + item + '</li>';\n});\n$('.message-area--list').append(tonsOfListItems.join(''));\n```",
+            "C\n```js\nCSS.$messageList = $('.message-area--list');\n$.each(tonsOfItems, function (idx, item) {\n  $('<li>' + item + '</li>').appendTo($messageList);\n});\n```",
+            "D\n```js\n$.each(tonsOfItems, function (idx, item) {\n  $('.message-area--list').append('<li>' + item + '</li>');\n});\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q9. What is jQuery?",
@@ -85,19 +85,19 @@
             "jQuery is a bridge between Java and Javascript that makes native apps easier to write.",
             "jQuery is a plugin for JavaScript that makes database queries easier to write.",
             "jQuery is a collection of JavaScript functions that makes finding and manipulating elements on a page, AJAX, and other things easier.",
-            "jQuery is a Chrome extension that allows users to create their own extensions with just a few lines of JavaScript."
+            "jQuery is a Chrome extension that allows users to create their own extensions with just a few lines of JavaScript.\n```js\n'user strict';\n($.linkUpdater = function () {\n  this.find('a').attr('target', '_blank');\n})(jQuery);\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q10. We want to create a new jQuery plugin called linkUpdater that can be chained onto other jQuery selector like a normal plugin. It should update all the links in the referenced collection so they open in new windows or tabs. Below is the first cut. What is one problem with this plugin?\n```js\n'user strict';\n($.linkUpdater = function () {\n  this.find('a').attr('target', '_blank');\n})(jQuery);\n```",
         "options": [
-            "",
-            "strict';",
-            "kUpdater = function () {",
-            ".find('a').attr('target', '_blank');"
+            "this needs to be wrapped, like `$(this)`, in order to be chained in a plugin.",
+            "jQuery plugins can't be safely authored in strict mode.",
+            "In order to be used by other code, plugins need to be added to the global namespace, not wrapped in a function expression.",
+            "Our plugin should extend jQuery.fn, not jQuery itself."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q11. Generally speaking, when used on a web page, how should jQuery be installed, and why?",
@@ -105,19 +105,19 @@
             "Just before the closing body tag, because we want to avoid blocking other resources from loading, and we use the ready method to make sure our code fires after the DOM is ready",
             "Using the highest version number possible because only jQuery 3 and up are compatible with Internet Explorer 7",
             "In the head tag because we want jQuery available as soon as possible",
-            "From a CDN because we want to be able to use jQuery online or offline"
+            "From a CDN because we want to be able to use jQuery online or offline\n```html\n<button class=\"btn btn-primary\" type=\"submit\">Continue to checkout</button>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q12. Given the following HTML, how could we make this button disappear from the page using jQuery?\n```html\n<button class=\"btn btn-primary\" type=\"submit\">Continue to checkout</button>\n```",
         "options": [
-            "l",
-            "n class=\"btn btn-primary\" type=\"submit\">Continue to checkout</button>",
-            "",
-            "`$('.btn-primary').hide();`"
+            "`$('.btn-primary').hide();`",
+            "`$('.btn-primary:visible').not();`",
+            "`$('.btn-primary').visibility(false);`",
+            "`$('.btn-primary').show(false);`"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q13. What is the difference between `$('header').html()` and `$('header').text()`?",
@@ -135,29 +135,29 @@
             "\\$.extend",
             "\\$.clone",
             "\\$.fn.extend",
-            "\\$.merge"
+            "\\$.merge\n```html\n<article>\n  <div>Here's a button you can click: <button class=\"btn\">Click Me</button></div>\n  <form>\n    <p>Further down the page, there's a select box.</p>\n    <select>\n      <option value=\"1\">One</option>\n      <option value=\"2\">One</option>\n      <option value=\"3\">One</option>\n      <option value=\"4\">One</option>\n    </select>\n  </form>\n</article>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q15. There are times when you might want to programmatically trigger an event, instead of simply reacting to user input directly. Given this markup, Which choice will NOT cause a click event to the select box when the button is clicked?\n```html\n<article>\n  <div>Here's a button you can click: <button class=\"btn\">Click Me</button></div>\n  <form>\n    <p>Further down the page, there's a select box.</p>\n    <select>\n      <option value=\"1\">One</option>\n      <option value=\"2\">One</option>\n      <option value=\"3\">One</option>\n      <option value=\"4\">One</option>\n    </select>\n  </form>\n</article>\n```",
         "options": [
-            "l",
-            "le>",
-            ">Here's a button you can click: <button class=\"btn\">Click Me</button></div>",
-            "m>"
+            "`$('button').on('click.myApp', (function() { $('input[type=select]').trigger('click'); });`",
+            "`$('button').on('click', (function() { $('input[type=select]').click()); });`",
+            "`$('button').trigger(function() { $('input[type=select]').click(); });`",
+            "`$('button').click(function() { $('input[type=select]').click(); });`\n```html\n<style>\n  .parent {\n    position: relative;\n    top: 3em;\n    width: 50%;\n    min-height: 50vh;\n    margin: 0 auto;\n  }\n  .animate-me {\n    position: absolute;\n    top: 40px;\n    right: 30px;\n  }\n</style>\n<div class=\"parent\">\n  <div class=\"animate-me\">This box will move!</div>\n</div>\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q16. You have an absolutely positioned element inside a relatively positioned parent element, and you want to animate that element within its parent element. What jQuery function is most useful for finding the initial coordinates of the `.animate-me`?\n```html\n<style>\n  .parent {\n    position: relative;\n    top: 3em;\n    width: 50%;\n    min-height: 50vh;\n    margin: 0 auto;\n  }\n  .animate-me {\n    position: absolute;\n    top: 40px;\n    right: 30px;\n  }\n</style>\n<div class=\"parent\">\n  <div class=\"animate-me\">This box will move!</div>\n</div>\n```",
         "options": [
-            "l",
-            ">",
-            "ent {",
-            "sition: relative;"
+            "`$('.animate-me').offset();`",
+            "`$('.animate-me').each();`",
+            "`$('.animate-me').position();`",
+            "`$('.animate-me').offsetParent();`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q17. You want to work with AJAX using a Promise-like interface instead of nested callback functions. What jQuery API should you use?",
@@ -180,44 +180,44 @@
         "_ps": 0
     },
     {
-        "question": "Q19. jQuery's AJAX functions return objects that implement the Promise API. As a result, you can chain promises and avoid nested callbacks. What does that look like?\n```js\n$.get('hhttp://httpbin.org/delay/2')\n  .then(function (response) {\n    // Data from first GET is here as 'response'\n    return $.get('http://httpbin.org/delay/2');\n  })\n  .then(function (response) {\n    // Data from second GET is here as 'response'\n  });\n```\n```js\n$.get('hhttp://httpbin.org/delay/2')\n  .catch(function (response) {\n    // Data from first GET is here as 'response'\n    return $.get('http://httpbin.org/delay/2');\n  })\n  .done(function (response) {\n    // Data from second GET is here as 'response'\n  });\n```\n```js\n$.get('hhttp://httpbin.org/delay/2', function (response1) {\n  // Data from first GET is here as 'response1'\n  $.get('http://httpbin.org/delay/2', function (response2) {\n    // Data from second GET is here as 'response2'\n  });\n});\n```",
+        "question": "Q19. jQuery's AJAX functions return objects that implement the Promise API. As a result, you can chain promises and avoid nested callbacks. What does that look like?",
         "options": [
-            "A",
-            "",
-            "'hhttp://httpbin.org/delay/2')",
-            "n(function (response) {"
+            "A\n```js\n$.get('hhttp://httpbin.org/delay/2')\n  .then(function (response) {\n    // Data from first GET is here as 'response'\n    return $.get('http://httpbin.org/delay/2');\n  })\n  .then(function (response) {\n    // Data from second GET is here as 'response'\n  });\n```",
+            "B\n```js\n$.get('hhttp://httpbin.org/delay/2')\n  .catch(function (response) {\n    // Data from first GET is here as 'response'\n    return $.get('http://httpbin.org/delay/2');\n  })\n  .done(function (response) {\n    // Data from second GET is here as 'response'\n  });\n```",
+            "C\n```js\n$.get('hhttp://httpbin.org/delay/2', function (response1) {\n  // Data from first GET is here as 'response1'\n  $.get('http://httpbin.org/delay/2', function (response2) {\n    // Data from second GET is here as 'response2'\n  });\n});\n```",
+            "D\n```js\n$.get('hhttp://httpbin.org/delay/2')\n  .then(function (response) {\n    // Data from first GET is here as 'response'\n    return response;\n  })\n  .get('http://httpbin.org/delay/2', function (response) {\n    // Data from second GET is here as 'response'\n  });\n```\n```js\n$('#ball').click(function () {\n  // Our code goes here\n});\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q20. You want to have a ball that is created from an HTML element (id=ball) move down and to the right of its original location when clicked, and move back to its original place when finished. What snippet, added to the code below, would do this?\n```js\n$('#ball').click(function () {\n  // Our code goes here\n});\n```\n```js\n$(this).animate(\n  {\n    top: '-=100',\n    left: '-=100',\n  },\n  600,\n  function () {\n    $(this).animate(\n      {\n        top: '+=100',\n        left: '+=100',\n      },\n      600,\n    );\n  },\n);\n```\n```js\n$(this).animate(\n  {\n    top: '+=100',\n    left: '+=100',\n  },\n  {\n    duration: 600,\n    complete: function () {\n      $(this).animate(\n        {\n          top: '-=100',\n          left: '-=100',\n        },\n        600,\n      );\n    },\n  },\n);\n```\n```js\n$(this).animate(\n  {\n    top: 100,\n    left: 100,\n  },\n  600,\n  function () {\n    $(this).animate(\n      {\n        top: 0,\n        left: 0,\n      },\n      600,\n    );\n  },\n);\n```",
+        "question": "Q20. You want to have a ball that is created from an HTML element (id=ball) move down and to the right of its original location when clicked, and move back to its original place when finished. What snippet, added to the code below, would do this?\n```js\n$('#ball').click(function () {\n  // Our code goes here\n});\n```",
         "options": [
-            "",
-            "ll').click(function () {",
-            "ur code goes here",
-            ""
+            "A\n```js\n$(this).animate(\n  {\n    top: '-=100',\n    left: '-=100',\n  },\n  600,\n  function () {\n    $(this).animate(\n      {\n        top: '+=100',\n        left: '+=100',\n      },\n      600,\n    );\n  },\n);\n```",
+            "B\n```js\n$(this).animate(\n  {\n    top: '+=100',\n    left: '+=100',\n  },\n  {\n    duration: 600,\n    complete: function () {\n      $(this).animate(\n        {\n          top: '-=100',\n          left: '-=100',\n        },\n        600,\n      );\n    },\n  },\n);\n```",
+            "C\n```js\n$(this).animate(\n  {\n    top: 100,\n    left: 100,\n  },\n  600,\n  function () {\n    $(this).animate(\n      {\n        top: 0,\n        left: 0,\n      },\n      600,\n    );\n  },\n);\n```",
+            "D\n```js\n$(this).animate(\n  {\n    top: 100,\n    left: 100,\n  },\n  {\n    duration: 600,\n    complete: function () {\n      $(this).animate(\n        {\n          top: 0,\n          left: 0,\n        },\n        600,\n      );\n    },\n  },\n);\n```\n```html\n<div id=\"container\">\n  <div class=\"item\">Here's an item</div>\n</div>\n```\n```js\n$('#container').wrap('<div class=\"wrapper\"></div>').css('border', '2px solid red');\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q21. The way `.wrap()` works is sometimes misunderstood. Given the DOM and jQuery snippets below, what does the modified DOM snippet look like?\n```html\n<div id=\"container\">\n  <div class=\"item\">Here's an item</div>\n</div>\n```\n```js\n$('#container').wrap('<div class=\"wrapper\"></div>').css('border', '2px solid red');\n```\n```html\n<div class=\"wrapper\" style=\"border: 2px solid red;\">\n  <div id=\"container\">\n    <div class=\"item\">Here's an item</div>\n  </div>\n</div>\n```\n```html\n<div class=\"wrapper\">\n  <div id=\"container\" style=\"border: 2px solid red;\">\n    <div class=\"item\">Here's an item</div>\n  </div>\n</div>\n```\n```html\n<div id=\"container\" style=\"border: 2px solid red;\">\n  <div class=\"wrapper\">\n    <div class=\"item\">Here's an item</div>\n  </div>\n</div>\n```",
+        "question": "Q21. The way `.wrap()` works is sometimes misunderstood. Given the DOM and jQuery snippets below, what does the modified DOM snippet look like?\n```html\n<div id=\"container\">\n  <div class=\"item\">Here's an item</div>\n</div>\n```\n```js\n$('#container').wrap('<div class=\"wrapper\"></div>').css('border', '2px solid red');\n```",
         "options": [
-            "l",
-            "d=\"container\">",
-            " class=\"item\">Here's an item</div>",
-            ""
+            "A\n```html\n<div class=\"wrapper\" style=\"border: 2px solid red;\">\n  <div id=\"container\">\n    <div class=\"item\">Here's an item</div>\n  </div>\n</div>\n```",
+            "B\n```html\n<div class=\"wrapper\">\n  <div id=\"container\" style=\"border: 2px solid red;\">\n    <div class=\"item\">Here's an item</div>\n  </div>\n</div>\n```",
+            "C\n```html\n<div id=\"container\" style=\"border: 2px solid red;\">\n  <div class=\"wrapper\">\n    <div class=\"item\">Here's an item</div>\n  </div>\n</div>\n```",
+            "D\n```html\n<div id=\"container\">\n  <div class=\"wrapper\" style=\"border: 2px solid red;\">\n    <div class=\"item\">Here's an item</div>\n  </div>\n</div>\n```\n```html\n<div class=\"quotes\">\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"true\">A favorite quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n</div>\n<ul class=\"menu-first\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n</ul>\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q22. How can you select the following blockquote AND the list in a single call to jQuery() without chaining?\n```html\n<div class=\"quotes\">\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"true\">A favorite quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n</div>\n<ul class=\"menu-first\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n</ul>\n```",
         "options": [
-            "l",
-            "lass=\"quotes\">",
-            "ckquote data-favorite=\"false\">A quote</blockquote>",
-            "ckquote data-favorite=\"true\">A favorite quote</blockquote>"
+            "`$('.quotes + .menu-first')`",
+            "`$('.quotes .menu-first')`",
+            "`$('.quotes, .menu-first')`",
+            "`$('.quotes' + '.menu-first')`"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q23. Effects like show, hide, fadIn, and fadeOut can be called with no arguments, but can also take arguments for how long they should last. Which is NOT a duration argument supported by these functions?",
@@ -265,29 +265,29 @@
             "`$('p').count()`",
             "`$('p').length`",
             "`$('*').find('p')`",
-            "`$('p').length()`"
+            "`$('p').length()`\n```js\n$.fn.customPlugin = function () {\n  // Point 1\n  return this.each(function () {\n    // Point 2\n  });\n};\n$(document).customPlugin();\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q28. As with many areas of JavaScript, keeping track of the meaning of **this** is important and sometimes tricky. What does **this** mean at each of the two points in this custom plugin snippet?\n```js\n$.fn.customPlugin = function () {\n  // Point 1\n  return this.each(function () {\n    // Point 2\n  });\n};\n$(document).customPlugin();\n```",
         "options": [
-            "",
-            "ustomPlugin = function () {",
-            "oint 1",
-            "rn this.each(function () {"
+            "At Point 1, `this` means a jQuery object. At Point 2, it means a DOM element.",
+            "In this case, they mean the same thing: a jQuery object.",
+            "In this case, they mean the same thing: a DOM element.",
+            "At Point 1, `this` means a DOM element. At Point 2, it means a jQuery object.\n```html\n<ul class=\"menu-first\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n</ul>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q29. How can you make the first list item bold and the next item oblique, in a single statement chain?\n```html\n<ul class=\"menu-first\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n</ul>\n```\n```js\n$('.menu-first > li').eq(0).css('font-weight', 'bold').eq(1).css('font-style', 'oblique');\n```\n```js\n$('.menu-first > li').first().css('font-weight', 'bold').after().css('font-style', 'oblique');\n```\n```js\n$('.menu-first > li').first().css('font-weight', 'bold').second().css('font-style', 'oblique');\n```",
+        "question": "Q29. How can you make the first list item bold and the next item oblique, in a single statement chain?\n```html\n<ul class=\"menu-first\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li>Item 4</li>\n</ul>\n```",
         "options": [
-            "l",
-            "ass=\"menu-first\">",
-            "Item 1</li>",
-            "Item 2</li>"
+            "A\n```js\n$('.menu-first > li').eq(0).css('font-weight', 'bold').eq(1).css('font-style', 'oblique');\n```",
+            "B\n```js\n$('.menu-first > li').first().css('font-weight', 'bold').after().css('font-style', 'oblique');\n```",
+            "C\n```js\n$('.menu-first > li').first().css('font-weight', 'bold').second().css('font-style', 'oblique');\n```",
+            "D\n```js\n$('.menu-first > li').eq(0).css('font-weight', 'bold').next().css('font-style', 'oblique');\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q30. Which CSS selectors can you NOT use in jQuery?",
@@ -295,49 +295,49 @@
             "You cannot use multiple class selectors such as `.class1.class2`.",
             "You cannot use pseudo-classes such as `:not` or `:last-of-type`.",
             "You cannot use IDs and classes together, such as `#element.class`.",
-            "None. All CSS selectors are compatible in jQuery."
+            "None. All CSS selectors are compatible in jQuery.\n```html\n<ul class=\"items\" id=\"main-menu\">\n  <li>\n    Item 1\n    <ul>\n      <li class=\"leaf\">Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n```js\n$('.leaf').click(function (event) {\n  console.log('Sub Item 1 got a click');\n});\n$('#main-menu').click(function (event) {\n  console.log('Main menu got a click');\n});\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q31. Starting with some DOM elements in the nested structure below, you assign listeners for the same event to a child element and one of the parents using the JavaScript that follows. You want to ensure that when `.leaf` is clicked, only its event handler will be fired, instead of the click bubbling up and also firing the parent's click handler. What do you need to add to its handler function?\n```html\n<ul class=\"items\" id=\"main-menu\">\n  <li>\n    Item 1\n    <ul>\n      <li class=\"leaf\">Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n```js\n$('.leaf').click(function (event) {\n  console.log('Sub Item 1 got a click');\n});\n$('#main-menu').click(function (event) {\n  console.log('Main menu got a click');\n});\n```",
         "options": [
-            "l",
-            "ass=\"items\" id=\"main-menu\">",
-            "",
-            "em 1"
+            "`event.capture();`",
+            "`event.stopPropagation();`",
+            "`event.preventDefault();`",
+            "`event.stop();`\n```html\n<div id=\"sidebar\">\n  <img src=\"fancy-button.png\" alt=\"Pick Me\" />\n  <input type=\"text\" placeholder=\"Fill in something\" />\n</div>\n```\n```js\n$('#sidebar').click(function (evt) {\n  var $target = $(evt.target);\n  // What goes here?\n});\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q32. Using event delegation, you can listen for events on a lot of different items without having to attach separate listeners to each one. But there are times when you may want to check the type of item receiving the event before doing anything, such as checking if an image was clicked versus a text field. Given the starter code below, which choice shows what jQuery provides to help with that process?\n```html\n<div id=\"sidebar\">\n  <img src=\"fancy-button.png\" alt=\"Pick Me\" />\n  <input type=\"text\" placeholder=\"Fill in something\" />\n</div>\n```\n```js\n$('#sidebar').click(function (evt) {\n  var $target = $(evt.target);\n  // What goes here?\n});\n```",
         "options": [
-            "l",
-            "d=\"sidebar\">",
-            " src=\"fancy-button.png\" alt=\"Pick Me\" />",
-            "ut type=\"text\" placeholder=\"Fill in something\" />"
+            "`$($target.get(0) + ':image')`",
+            "`$('img').is($target)`",
+            "`$target.filter('img')`",
+            "`$target.is('img')`\n```html\n<div id=\"elements\"></div>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q33. There are many ways to create elements that can be added to the page. Which answer is NOT one of those ways, assuming you have the following on the page?\n```html\n<div id=\"elements\"></div>\n```\n```js\n$('#elements').append($('<p class=\"appended\">As an HTML string</p>'));\n```\n```js\nvar p = document.createElement('p');\nvar text = document.createTextNode('As a DOM element');\np.appendChild(text);\n$('#elements').append(p);\n```\n```js\n$('#elements').append(<p class=\"appended\">As a JSX object</p>);\n```",
+        "question": "Q33. There are many ways to create elements that can be added to the page. Which answer is NOT one of those ways, assuming you have the following on the page?\n```html\n<div id=\"elements\"></div>\n```",
         "options": [
-            "l",
-            "d=\"elements\"></div>",
-            "",
-            "A"
+            "A\n```js\n$('#elements').append($('<p class=\"appended\">As an HTML string</p>'));\n```",
+            "B\n```js\nvar p = document.createElement('p');\nvar text = document.createTextNode('As a DOM element');\np.appendChild(text);\n$('#elements').append(p);\n```",
+            "C\n```js\n$('#elements').append(<p class=\"appended\">As a JSX object</p>);\n```",
+            "D\n```js\n$('#elements').append(\n  $('<p>', {\n    class: 'appended',\n    text: 'As an attribute object',\n  }),\n);\n```\n```js\n$('#menu').addClass(function () {\n  return $('body').attr('class');\n});\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q34. The `.addClass()` and `.removeClass()` methods can accept functions as arguments. What does this function do?\n```js\n$('#menu').addClass(function () {\n  return $('body').attr('class');\n});\n```",
         "options": [
-            "",
-            "nu').addClass(function () {",
-            "rn $('body').attr('class');",
-            ""
+            "It adds the first class found on the body element to the #menu element.",
+            "It adds all classes found on the #menu element to the body tag.",
+            "It replaces any classes on the #menu element with all classes from the body tag.",
+            "It adds all classes found on the body element to the #menu element."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q35. You're working on a site that uses an old version of jQuery, and you want to update to a newer version. What's the most efficient way to do so?",
@@ -375,19 +375,19 @@
             "`jQuery.each`, a general purpose iterator for looping over arrays or objects",
             "`jQuery.isNumeric`, which can check whether its argument is, or looks like, a number",
             "`jQuery.extend`, which can merge objects and make complete deep copies of objects",
-            "`jQuery.isMobile`, which can tell whether the user is using a mobile browser"
+            "`jQuery.isMobile`, which can tell whether the user is using a mobile browser\n```html\n<input type=\"checkbox\" name=\"artists[]\" value=\"sun-ra\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"otis-redding\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"captain-beefheart\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"king-sunny-ade\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"weather-report\" />\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q39. Given this set of checkboxes, how can you select the ones that have the phrase \"sun\" as part of the value?\n```html\n<input type=\"checkbox\" name=\"artists[]\" value=\"sun-ra\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"otis-redding\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"captain-beefheart\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"king-sunny-ade\" />\n<input type=\"checkbox\" name=\"artists[]\" value=\"weather-report\" />\n```",
         "options": [
-            "l",
-            " type=\"checkbox\" name=\"artists[]\" value=\"sun-ra\" />",
-            " type=\"checkbox\" name=\"artists[]\" value=\"otis-redding\" />",
-            " type=\"checkbox\" name=\"artists[]\" value=\"captain-beefheart\" />"
+            "`$('checkbox').val(/sun/);`",
+            "`$('input[value*=\"sun\"]');`",
+            "`$('input[value|=\"sun\"]');`",
+            "`$('input:checkbox').attr('value', '*sun*');`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q40. How can you get an AJAX request to go through without triggering any of jQuery's AJAX events?",
@@ -415,39 +415,39 @@
             "`$('body').ajaxComplete(function() { console.count('An AJAX request completed'); });`",
             "`$(document).on('ajax-complete', function() { console.count('An AJAX request completed'); });`",
             "`$('body').on('ajaxComplete', function() { console.count('An AJAX request completed'); });`",
-            "`$(document).ajaxComplete(function() { console.count('An AJAX request completed'); });`"
+            "`$(document).ajaxComplete(function() { console.count('An AJAX request completed'); });`\n```html\n<input type=\"checkbox\" name=\"songs[]\" value=\"satisfaction\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"respect\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"blimp\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"saturn\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"penguins\" />\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q43. Given this set of checkboxes, how can you select the one with the value \"blimp\"?\n```html\n<input type=\"checkbox\" name=\"songs[]\" value=\"satisfaction\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"respect\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"blimp\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"saturn\" />\n<input type=\"checkbox\" name=\"songs[]\" value=\"penguins\" />\n```",
         "options": [
-            "l",
-            " type=\"checkbox\" name=\"songs[]\" value=\"satisfaction\" />",
-            " type=\"checkbox\" name=\"songs[]\" value=\"respect\" />",
-            " type=\"checkbox\" name=\"songs[]\" value=\"blimp\" />"
+            "`$('input[value=\"blimp\"]');`",
+            "`$('input[value!=\"blimp\"]');`",
+            "`$('checkbox').val('blimp');`",
+            "`$('input:checkbox').attr('value', 'blimp');`\n```html\n<ul class=\"menu\">\n  <li><a href=\"#\" class=\"active\">Home</a></li>\n  <li><a href=\"#\">Page 2</a></li>\n</ul>\n<ul class=\"active submenu\">\n  <li><a href=\"#\">Subpage 1</a></li>\n  <li><a href=\"#\">Subpage 2</a></li>\n</ul>\n```\n```js\nvar m = $('.menu'),\n  sm = $('.submenu');\nm.add(sm);\nm.css('font-weight', 'bold');\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q44. Given this snippet of HTML and jQuery code, what does the jQuery do?\n```html\n<ul class=\"menu\">\n  <li><a href=\"#\" class=\"active\">Home</a></li>\n  <li><a href=\"#\">Page 2</a></li>\n</ul>\n<ul class=\"active submenu\">\n  <li><a href=\"#\">Subpage 1</a></li>\n  <li><a href=\"#\">Subpage 2</a></li>\n</ul>\n```\n```js\nvar m = $('.menu'),\n  sm = $('.submenu');\nm.add(sm);\nm.css('font-weight', 'bold');\n```",
         "options": [
-            "l",
-            "ass=\"menu\">",
-            "<a href=\"#\" class=\"active\">Home</a></li>",
-            "<a href=\"#\">Page 2</a></li>"
+            "It makes all the menu items bold.",
+            "It throws an exception on line 3.",
+            "It makes the first set of menu items, not the second, bold.",
+            "It makes the second set of menu items, not the first, bold.\n```html\n<div id=\"type\" style=\"font: 1em/1.5 helvetica, arial, sans-serif; background: #ffc; padding: 0\">\n  Animate me!\n</div>\n```\n```js\n$('#type').animate(\n  {\n    fontSize: '+=1em',\n  },\n  3000,\n);\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q45. You want to take a block of type and animate it to a larger size with jQuery. The following HTML and JavaScript behaves strangely. What is the issue?\n```html\n<div id=\"type\" style=\"font: 1em/1.5 helvetica, arial, sans-serif; background: #ffc; padding: 0\">\n  Animate me!\n</div>\n```\n```js\n$('#type').animate(\n  {\n    fontSize: '+=1em',\n  },\n  3000,\n);\n```",
         "options": [
-            "l",
-            "d=\"type\" style=\"font: 1em/1.5 helvetica, arial, sans-serif; background: #ffc; padding: 0\">",
-            "ate me!",
-            ""
+            "jQuery does not support ems and will make the type 1 pixel larger instead of 1 em larger.",
+            "jQuery cannot override CSS in a style attribute, so the font size will not change.",
+            "The font size was set with a shorthand property, so jQuery will not animate the font size at all.",
+            "The font size was set with a shorthand property, so jQuery will start the animation from 0 instead of from 1 em."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q46. When using the `clone()` function to duplicate an element, what is one of the main concerns your code needs to watch out for?",
@@ -465,19 +465,19 @@
             "The jQuery script tag must come first, followed by the plugin, followed by your custom scripts, all preferably at or near the bottom of the page.",
             "Your custom scripts must appear first in the document `<head>`, followed by jQuery, followed by the plugin.",
             "The jQuery script tag and the plugin script tag must appear in the document `<head>`, and your custom scripts can follow anywhere on the page.",
-            "The jQuery script tag must appear in the document `<head>`, but the plugin and your custom scripts can appear anywhere else in any order."
+            "The jQuery script tag must appear in the document `<head>`, but the plugin and your custom scripts can appear anywhere else in any order.\n```js\n<script>\n  $(function() {\n    // The rest of my code goes here\n  });\n</script>\n<script>\n  jQuery(document).ready(function($) {\n    // The rest of my code goes here\n  });\n</script>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q48. These two script tags show different ways of using jQuery's `ready()` method. What is true about both approaches?\n```js\n<script>\n  $(function() {\n    // The rest of my code goes here\n  });\n</script>\n<script>\n  jQuery(document).ready(function($) {\n    // The rest of my code goes here\n  });\n</script>\n```",
         "options": [
-            "",
-            "t>",
-            "nction() {",
-            " The rest of my code goes here"
+            "The code inside them can manipulate the DOM safely, knowing the browser has loaded it fully.",
+            "The code inside them can manipulate images on the page safely, knowing they have fully downloaded to the browser.",
+            "The code inside them will be run exactly once per user session.",
+            "The code inside them is not aware of the DOM."
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q49. Which property of the jQuery event object references the DOM object that dispatched an event?",
@@ -495,19 +495,19 @@
             "jQuery optimizes the DOM in a background thread, making updates faster.",
             "jQuery avoids using the DOM at all.",
             "jQuery uses a virtual DOM that batches updates, making inserts and deletes faster.",
-            "jQuery code to perform DOM manipulation is shorter and easier to write, but does not make DOM operations faster."
+            "jQuery code to perform DOM manipulation is shorter and easier to write, but does not make DOM operations faster.\n```js\n$('.item').css('background-color', 'red');\n// some other code here\nvar firstSubItem = $('.item').find('.sub-item').get(0);\n// some other code here too\n$('.item').parents('.navigation').css('font-weight', 'bold');\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q51. There are some issues with this snippet of jQuery. First, it is manipulating CSS directly, rather than manipulating classes and leaving the CSS in stylesheets. What else in this code is best to avoid?\n```js\n$('.item').css('background-color', 'red');\n// some other code here\nvar firstSubItem = $('.item').find('.sub-item').get(0);\n// some other code here too\n$('.item').parents('.navigation').css('font-weight', 'bold');\n```",
         "options": [
-            "",
-            "em').css('background-color', 'red');",
-            "e other code here",
-            "rstSubItem = $('.item').find('.sub-item').get(0);"
+            "The `.css()` method accepts only an object, not two separate arguments. This will trigger an exception that should be caught.",
+            "The `$('.item')` selection is being made several times. This should be cached in a variable for (however slightly) better performance and easier maintainability.",
+            "The call to `.parents()` is in an inefficient place.",
+            "All the calls to `$('.item')` should be chained together as a single executable line for better performance."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q52. Which choice is an example of statement chaining?",
@@ -525,49 +525,49 @@
             "`$('.element').attr('class', 'active')`",
             "`$('.element').with('.active')`",
             "`$('.element').hasClass('active')`",
-            "`$('.active').then()`"
+            "`$('.active').then()`\n```html\n<div id=\"load-me\">This area will be replaced with AJAX loaded content.</div>\n<div id=\"one\">\n  <h1>First Piece</h1>\n  <p>Lorem ipsum duis maximus quam condimentum dolor eleifend scelerisque.</p>\n</div>\n<div id=\"two\">\n  <h1>Second Piece</h1>\n  <p>Lorem ipsum proin facilisis augue in risus interdum ornare.</p>\n</div>\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q54. jQuery has a main function for handling AJAX, and several shorthand function including `load()` that make calling that main function easier. Given this HTML snippet, how can you insert only the second snippet from the source.html file (`div#one`) into the `#load-me` div on-demand via AJAX?\n```html\n<div id=\"load-me\">This area will be replaced with AJAX loaded content.</div>\n<div id=\"one\">\n  <h1>First Piece</h1>\n  <p>Lorem ipsum duis maximus quam condimentum dolor eleifend scelerisque.</p>\n</div>\n<div id=\"two\">\n  <h1>Second Piece</h1>\n  <p>Lorem ipsum proin facilisis augue in risus interdum ornare.</p>\n</div>\n```",
         "options": [
-            "l",
-            "d=\"load-me\">This area will be replaced with AJAX loaded content.</div>",
-            "d=\"one\">",
-            "First Piece</h1>"
+            "`$('#load-me').get('source.html#one');`",
+            "`$('#load-me').get('source.html #one');`",
+            "`$('#load-me').load('source.html #one');`",
+            "`$('#load-me').load('source.html', '#one');`\n```html\n<ul class=\"items\" id=\"main-menu\">\n  <li>\n    Item 1\n    <ul id=\"sub-menu\">\n      <li class=\"leaf\">Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n```js\n$('.leaf').closest('.items');\n$('.leaf').parents('.items');\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q55. Given this HTML list and subsequent two lines of jQuery, what is the difference in the behavior of `.closest()` and `.parents()`?\n```html\n<ul class=\"items\" id=\"main-menu\">\n  <li>\n    Item 1\n    <ul id=\"sub-menu\">\n      <li class=\"leaf\">Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n```js\n$('.leaf').closest('.items');\n$('.leaf').parents('.items');\n```",
         "options": [
-            "l",
-            "ass=\"items\" id=\"main-menu\">",
-            "",
-            "em 1"
+            "`.closest()` returns `.leaf` and `#main-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.",
+            "`.closest()` returns `.leaf` and `#sub-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.",
+            "`.closest()` returns only `#main-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.",
+            "`.closest()` returns only `#sub-menu`; `.parents()` returns `#main-menu` and `#sub-menu`.\n```js\n$('ul > li:first-child');\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q56. What does this line of code do?\n```js\n$('ul > li:first-child');\n```",
         "options": [
-            "",
-            "> li:first-child');",
-            "",
-            "selects the first list item inside all unordered lists on the page"
+            "selects the first list item inside all unordered lists on the page",
+            "selects the first list item inside the first unordered list on the page",
+            "selects the first element inside any list items on the page",
+            "creates a predefined CSS selector that can be reused later\n```html\n<ul class=\"clickable-list\">\n  <li>First Item</li>\n  <li>Second Item</li>\n  <li>Third Item</li>\n  <li>Fourth Item</li>\n  <li>Fifth Item</li>\n</ul>\n```\n```js\nfunction listResponder(evt) {\n  console.log('You clicked a list item that says', evt.target.innerText);\n}\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q57. Below is a list of items that you want to be clickable and an event handler function. How can you assign the event handler to every item in the list in a way that is most performant, and also that ensures that the handler is called even if more items are added to the list programmatically?\n```html\n<ul class=\"clickable-list\">\n  <li>First Item</li>\n  <li>Second Item</li>\n  <li>Third Item</li>\n  <li>Fourth Item</li>\n  <li>Fifth Item</li>\n</ul>\n```\n```js\nfunction listResponder(evt) {\n  console.log('You clicked a list item that says', evt.target.innerText);\n}\n```",
         "options": [
-            "l",
-            "ass=\"clickable-list\">",
-            "First Item</li>",
-            "Second Item</li>"
+            "`$('.clickable-list').click(listResponder);`",
+            "`$('.clickable-list').on('click', 'li', listResponder);`",
+            "`$('.clickable-list').on('click, append', listResponder);`",
+            "`$('.clickable-list').each(function() { $(this).click(listResponder); });`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q58. What is the difference between $('p').find('a') and $('p').children('a')?",
@@ -575,49 +575,49 @@
             "`find() traverses only one level down, whereas children() selects anything inside the original element`",
             "`$('p').find('a') finds all paragraphs inside links, whereas $('p').children('a') finds links within paragraph tags`",
             "`.find() always searches the entire DOM tree, regardless of the original selection .children() searches only the immediate childern of an element`",
-            "`children() traverses only one level down, whereas find() selects anything inside the original element`"
+            "`children() traverses only one level down, whereas find() selects anything inside the original element`\n[Source: https://api.jquery.com/find/](https://api.jquery.com/find/)\n**Explanation**:`Given a jQuery object that represents a set of DOM elements, the .find() method allows us to search through the descendants of these elements in the DOM tree and construct a new jQuery object from the matching elements. The .find() and .children() methods are similar, except that the latter only travels a single level down the DOM tree.`\n```html\n<div class=\"balls\">\n  <div class=\"ball ball--red\" style=\"display: none\"></div>\n  <div class=\"ball ball--green\" style=\"display: none\"></div>\n  <div class=\"ball ball--blue\" style=\"display: none\"></div>\n</div>\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q59. Consider the following markup, used to lay out three balls on the page, all hidden. How can you select the green ball, make it faded in over the course of three seconds, and log a console message when the animation has finished?\n```html\n<div class=\"balls\">\n  <div class=\"ball ball--red\" style=\"display: none\"></div>\n  <div class=\"ball ball--green\" style=\"display: none\"></div>\n  <div class=\"ball ball--blue\" style=\"display: none\"></div>\n</div>\n```\n```JavaScript\n$('.ball--green').fadeIn(3000, function(){\n    console.log(\"Animation is done!\");\n});\n```\n```JavaScript\n$('.ball--green').fade('in',3000).done(function(){\n    console.log(\"Animation is done!\");\n});\n```\n```JavaScript\n$('.ball--green').fadeIn(3).console().log(\"Animation is done!\");\n```",
+        "question": "Q59. Consider the following markup, used to lay out three balls on the page, all hidden. How can you select the green ball, make it faded in over the course of three seconds, and log a console message when the animation has finished?\n```html\n<div class=\"balls\">\n  <div class=\"ball ball--red\" style=\"display: none\"></div>\n  <div class=\"ball ball--green\" style=\"display: none\"></div>\n  <div class=\"ball ball--blue\" style=\"display: none\"></div>\n</div>\n```",
         "options": [
-            "l",
-            "lass=\"balls\">",
-            " class=\"ball ball--red\" style=\"display: none\"></div>",
-            " class=\"ball ball--green\" style=\"display: none\"></div>"
+            "A\n```JavaScript\n$('.ball--green').fadeIn(3000, function(){\n    console.log(\"Animation is done!\");\n});\n```",
+            "B\n```JavaScript\n$('.ball--green').fade('in',3000).done(function(){\n    console.log(\"Animation is done!\");\n});\n```",
+            "C\n```JavaScript\n$('.ball--green').fadeIn(3).console().log(\"Animation is done!\");\n```",
+            "D\n```JavaScript\n$('.ball--green').fadeIn(\"3s\", function(){\n    console.log(\"Animation is done!\");\n});\n```\n[Source: jQuery Docs: fadeIn](https://api.jquery.com/fadeIn/)\n`Durations are given in milliseconds; higher values indicate slower animations, not faster ones. The strings 'fast' and 'slow' can be supplied to indicate durations of 200 and 600 milliseconds, respectively. If any other string is supplied, or if the duration parameter is omitted, the default duration of 400 milliseconds is used.`\n```JavaScript\n$(document).on('myCustomEvent', function(){\n    // act on my custom event\n});\n//and later...\n$(document).trigger('myCustomEvent');\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q60. Why might you use custom events instead of shared helper functions? For example\n```JavaScript\n$(document).on('myCustomEvent', function(){\n    // act on my custom event\n});\n//and later...\n$(document).trigger('myCustomEvent');\n```",
         "options": [
-            "aScript",
-            "ment).on('myCustomEvent', function(){",
-            " act on my custom event",
-            ""
+            "`Custom events are at least an order of magnitude faster than helper functions`",
+            "`Custom events can be listened for and acted upon across one or more scripts without needing to keep helper functions in scope`",
+            "`Handler functions for custom events are less likely to be mangled by minification and obfuscation build tools`",
+            "`It is easier to write documentation for custom events than it is for helper functions`\n[Source: learn.jquery.com](https://learn.jquery.com/events/introduction-to-custom-events/)\n`Instead of focusing on the element that triggers an action, custom events put the spotlight on the element being acted upon. This brings a bevy of benefits, including: Behaviors of the target element can easily be triggered by different elements using the same code. Behaviors can be triggered across multiple, similar, target elements at once. Behaviors are more clearly associated with the target element in code, making code easier to read and maintain.`\n```html\n<div id=\"element-1\" class=\"animel\"></div>\n<div id=\"element-2\" class=\"animel\"></div>\n<div id=\"element-3\" class=\"animel\"></div>\n$('#element-1').animate({ top: '+=100' }); $('#element-2').animate({ top: '+=100' });\n$('#element-3').animate({ top: '+=100' });\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q61. In the HTML and JavaScript below, the animations will all fire at once. How can you make them fire in sequence instead?\n```html\n<div id=\"element-1\" class=\"animel\"></div>\n<div id=\"element-2\" class=\"animel\"></div>\n<div id=\"element-3\" class=\"animel\"></div>\n$('#element-1').animate({ top: '+=100' }); $('#element-2').animate({ top: '+=100' });\n$('#element-3').animate({ top: '+=100' });\n```\n```JavaScript\n$('#element-1').animate({ top: '+=100' })\n    .pushStack('#element-2')\n    .animate({ top: '+=100' })\n    .pushStack('#element-3').animate({ top: '+=100' })\n```\n```JavaScript\n$('#element-1').animate({ top: '+=100' }, function() {\n    $('#element-2').animate({ top: '+=100' }, function() {\n        $('#element-3').animate({ top: '+=100' });\n    })\n});\n```\n```JavaScript\n$('#element-1').animate({ top: '+=100' })\n    .add('#element-2').animate({ top: '+=100' })\n    .add('#element-3').animate({ top: '+=100' })\n```",
+        "question": "Q61. In the HTML and JavaScript below, the animations will all fire at once. How can you make them fire in sequence instead?\n```html\n<div id=\"element-1\" class=\"animel\"></div>\n<div id=\"element-2\" class=\"animel\"></div>\n<div id=\"element-3\" class=\"animel\"></div>\n$('#element-1').animate({ top: '+=100' }); $('#element-2').animate({ top: '+=100' });\n$('#element-3').animate({ top: '+=100' });\n```",
         "options": [
-            "l",
-            "d=\"element-1\" class=\"animel\"></div>",
-            "d=\"element-2\" class=\"animel\"></div>",
-            "d=\"element-3\" class=\"animel\"></div>"
+            "A\n```JavaScript\n$('#element-1').animate({ top: '+=100' })\n    .pushStack('#element-2')\n    .animate({ top: '+=100' })\n    .pushStack('#element-3').animate({ top: '+=100' })\n```",
+            "B\n```JavaScript\n$('#element-1').animate({ top: '+=100' }, function() {\n    $('#element-2').animate({ top: '+=100' }, function() {\n        $('#element-3').animate({ top: '+=100' });\n    })\n});\n```",
+            "C\n```JavaScript\n$('#element-1').animate({ top: '+=100' })\n    .add('#element-2').animate({ top: '+=100' })\n    .add('#element-3').animate({ top: '+=100' })\n```",
+            "D\n```JavaScript\n$('#element-1').animate({ top: '+=100' }, {queue: 'custom'});\n$('#element-2').animate({ top: '+=100' }, {queue: 'custom'});\n$('#element-3').animate({ top: '+=100' }, {queue: 'custom'});\n$('custom').dequeue();\n```\n[Source: jQuery Docs: animate](https://api.jquery.com/animate/)\n`the .animate() method can take in a function to call once the animation is complete, called once per matched element. Which is called the complete option for the animate method`\n`<input type=\"checkbox\" id=\"same-address\" checked>`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q62. Given this checkbox, how can you determine whether a user has selected or cleared the checkbox?\n`<input type=\"checkbox\" id=\"same-address\" checked>`",
         "options": [
-            "t type=\"checkbox\" id=\"same-address\" checked>`",
             "by checking the value of `$('#same-address').val()`",
             "by checking the value of `$('#same-address').prop('checked')`",
-            "by checking the value of `$('#same-address').attr('checked')`"
+            "by checking the value of `$('#same-address').attr('checked')`",
+            "by checking the value of `$('#same-address').checked`"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q63. In some projects, jQuery is not included as a file with an obvious version number (if it has been run through a minifier or other code bundler, for example). How can you detect programmatically what version of jQuery is active?",
@@ -625,19 +625,19 @@
             "`jQuery.version()`",
             "`jQuery.jquery`",
             "`jQuery.prototype.version`",
-            "`jQuery.fn.jquery`"
+            "`jQuery.fn.jquery`\n`<input type=\"text\" class=\"form-control\" id=\"firstName\" placeholder=\"\" value=\"\" required=\"\">`"
         ],
         "_ps": 3
     },
     {
         "question": "Q64. Given this snippet of HTML, how can you get the value of the text field using jQuery?\n`<input type=\"text\" class=\"form-control\" id=\"firstName\" placeholder=\"\" value=\"\" required=\"\">`",
         "options": [
-            "t type=\"text\" class=\"form-control\" id=\"firstName\" placeholder=\"\" value=\"\" required=\"\">`",
             "`$('input[type=text]').val()`",
             "`$('.form-control').val()`",
-            "`all of these answers`"
+            "`all of these answers`",
+            "`$('#firstName').val()`\n`all the listed selectors will target the text field since it has a type=text, a class=form-control, and an id=firstName`"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q65. Which property of the jQuery event object references the DOM object that dispatched an event?",
@@ -645,49 +645,49 @@
             "target",
             "self",
             "source",
-            "object"
+            "object\n[Source: jQuery Docs: event.target](https://api.jquery.com/event.target/)\n`The target property can be the element that registered for the event or a descendant of it. It is often useful to compare event.target to this in order to determine if the event is being handled due to event bubbling.`\n```JavaScript\n$.fn.myTraverse = function() {\n   // ... setup\n   var additionalItems = [ /* some additional items for jQuery */ ];\n   return // return what?\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q66. You want to write a plugin that creates a new traversal function—such as parent() and children()—and behaves like the ones jQuery includes out of the box. It needs to correctly modify the list of selections jQuery tracks internally, build up a list of additional items, and return the merged collection. What do you need to return on the last line of the function in order for this plugin to work correctly?\n```JavaScript\n$.fn.myTraverse = function() {\n   // ... setup\n   var additionalItems = [ /* some additional items for jQuery */ ];\n   return // return what?\n}\n```",
         "options": [
-            "aScript",
-            "yTraverse = function() {",
-            "... setup",
-            " additionalItems = [ /* some additional items for jQuery */ ];"
+            "`return this.append(additionalItems);`",
+            "`return additionalItems.appendTo(this);`",
+            "`return this.pushStack(additionalItems);`",
+            "`return this.add(additionalItems);`\n[Source: jQuery Docs](https://api.jquery.com/pushStack/)\n`When you call pushStack() off of the current collection, it will take the given collection and associate it to the current collection such that calling the end() method (after the plugin exits) will return the programmer to the current collection.`\n[Extra Reading: bennadel.com](https://www.bennadel.com/blog/1739-using-pushstack-in-jquery-plugins-to-create-new-collections.htm)\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li>Item 2</li>\n  <li>\n    Item 3\n    <ul>\n      <li>Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n`$('.items').find('.active').nextAll().addClass('after-active');`"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q67. Given this snippet of HTML and jQuery code, what will the result look like?\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li>Item 2</li>\n  <li>\n    Item 3\n    <ul>\n      <li>Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n`$('.items').find('.active').nextAll().addClass('after-active');`\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li class=\"after-active\">Item 2</li>\n  <li class=\"after-active\">\n    Item 3\n    <ul>\n      <li>Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li class=\"after-active\">Item 2</li>\n  <li class=\"after-active\">\n    Item 3\n    <ul class=\"after-active\">\n      <li>Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li class=\"after-active\">Item 2</li>\n  <li class=\"after-active\">\n    Item 3\n    <ul>\n      <li class=\"after-active\">Sub Item 1</li>\n      <li class=\"after-active\">Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```",
+        "question": "Q67. Given this snippet of HTML and jQuery code, what will the result look like?\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li>Item 2</li>\n  <li>\n    Item 3\n    <ul>\n      <li>Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n`$('.items').find('.active').nextAll().addClass('after-active');`",
         "options": [
-            "l",
-            "ass=\"items\">",
-            "class=\"active\">Item 1</li>",
-            "Item 2</li>"
+            "A\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li class=\"after-active\">Item 2</li>\n  <li class=\"after-active\">\n    Item 3\n    <ul>\n      <li>Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```",
+            "B\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li class=\"after-active\">Item 2</li>\n  <li class=\"after-active\">\n    Item 3\n    <ul class=\"after-active\">\n      <li>Sub Item 1</li>\n      <li>Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```",
+            "C\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li class=\"after-active\">Item 2</li>\n  <li class=\"after-active\">\n    Item 3\n    <ul>\n      <li class=\"after-active\">Sub Item 1</li>\n      <li class=\"after-active\">Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```",
+            "D\n```html\n<ul class=\"items\">\n  <li class=\"active\">Item 1</li>\n  <li class=\"after-active\">Item 2</li>\n  <li class=\"after-active\">\n    Item 3\n    <ul class=\"after-active\">\n      <li class=\"after-active\">Sub Item 1</li>\n      <li class=\"after-active\">Sub Item 2</li>\n    </ul>\n  </li>\n</ul>\n```\n[Source: jQuery Docs](https://api.jquery.com/nextall/)\n**.nextAll([selector]) method**\n`Gets all following siblings of each element in the set of matched elements, optionally filtered by a selector.`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q68. You have an element with a series of code (not CSS) animations applied to it that could be triggered by code you control, or other code elsewhere (such as plugins). How can you fire some code when all those animations have completed?\n```js\n$('#element').on('animationend', function () {\n  console.log('Finally, everything is done!');\n});\n```\n```js\n$('#element')\n  .on('promise')\n  .then(function () {\n    console.log('Finally, everything is done!');\n  });\n```\n```js\n$('#element')\n  .promise()\n  .catch(function () {\n    console.log('Finally, everything is done!');\n  });\n```",
+        "question": "Q68. You have an element with a series of code (not CSS) animations applied to it that could be triggered by code you control, or other code elsewhere (such as plugins). How can you fire some code when all those animations have completed?",
         "options": [
-            "A",
-            "",
-            "ement').on('animationend', function () {",
-            "ole.log('Finally, everything is done!');"
+            "A\n```js\n$('#element').on('animationend', function () {\n  console.log('Finally, everything is done!');\n});\n```",
+            "B\n```js\n$('#element')\n  .on('promise')\n  .then(function () {\n    console.log('Finally, everything is done!');\n  });\n```",
+            "C\n```js\n$('#element')\n  .promise()\n  .catch(function () {\n    console.log('Finally, everything is done!');\n  });\n```",
+            "D\n```js\n$('#element')\n  .promise()\n  .then(function () {\n    console.log('Finally, everything is done!');\n  });\n```\n1. [Source: HTMLElement: animationend event | MDN ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event)\n2. [Example: Stackoverflow](https://stackoverflow.com/questions/49580666/check-if-an-css-animation-is-completed-with-jquery-or-js)\n```html\n<div class=\"quotes\">\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"false\">A favorite quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n</div>\n```"
         ],
         "_ps": -1
     },
     {
         "question": "Q69. HTML5 data attributes allow you to create valid custom attributes to store arbitrary data within DOM elements. jQuery has an API to interface with custom data such as the series of quotes below. How can you mark the second quote as your favorite?\n```html\n<div class=\"quotes\">\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"false\">A favorite quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n  <blockquote data-favorite=\"false\">A quote</blockquote>\n</div>\n```",
         "options": [
-            "l",
-            "lass=\"quotes\">",
-            "ckquote data-favorite=\"false\">A quote</blockquote>",
-            "ckquote data-favorite=\"false\">A favorite quote</blockquote>"
+            "`$('blockquote'):second().attr('favorite', true);`",
+            "`$('blockquote:nth-child(2)').data('favorite', true);`",
+            "`$('blockquote').second().data('favorite', true);`",
+            "`$('blockquote:nth-child(2)').attr('favorite', true);`\n1. [Source: .data() | jQuery API Documentation](https://api.jquery.com/data/)\n2. [Source: :nth-child() | MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q70. jQuery can create event handlers that execute exactly once. How is this done?",
@@ -695,7 +695,7 @@
             "`$('button').click(function() { console.log('this will only happen once'); }, false);`",
             "`$('button').on('click', function() { console.log('this will only happen once'); }).off('click');`",
             "`$('button').once('click', function() { console.log('this will only happen once'); });`",
-            "`$('button').one('click', function() { console.log('this will only happen once'); });`"
+            "`$('button').one('click', function() { console.log('this will only happen once'); });`\n[Source: .one() | jQuery API Documentation](https://api.jquery.com/one/)"
         ],
         "_ps": 3
     },
@@ -705,7 +705,7 @@
             "`slideDown()` requires animating the background color; doing so with `animate()` requires the jQuery Color plugin.",
             "`slideDown()` includes toggling visibility automatically. `animate()` does not automatically set any properties.",
             "`slideDown()` requires the element to have a height set in pixels. `animate()` does not.",
-            "Effects created with `animate()` must be run over at least 100 milliseconds, where `slideDown()` can run as quickly as 50ms."
+            "Effects created with `animate()` must be run over at least 100 milliseconds, where `slideDown()` can run as quickly as 50ms.\n[Source: .slideDown() | jQuery API Documentation](https://api.jquery.com/slidedown/)\n[Source: .animate() | jQuery API Documentation](https://api.jquery.com/animate/)\\"
         ],
         "_ps": 1
     },
@@ -715,7 +715,7 @@
             "They both return the content of selected nodes, but `children()` also includes text and comment nodes.",
             "The `contents()` function only includes text nodes of the selected elements.",
             "The `children()` function only includes text nodes of the selected elements.",
-            "They both return the content of selected nodes, but `contents()` also includes text and comment nodes."
+            "They both return the content of selected nodes, but `contents()` also includes text and comment nodes.\n1. [Source: .children() | jQuery API Documentation](https://api.jquery.com/children/)\n2. [Source: .contents() | jQuery API Documentation](https://api.jquery.com/contents/)"
         ],
         "_ps": 3
     },
@@ -730,42 +730,41 @@
         "_ps": 3
     },
     {
-        "question": "Q74. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?\n```js\n$(function({\n    getData : $.get('http://httpbin.org/get'),\n    delayedData : $.get('http://httpbin.org/delay/3')\n})  {\n    //DOM is ready, getData and delayedData are available\n});\n```\n```js\n$(\n    $.get('http://httpbin.org/get'),\n    $.get('http://httpbin.org/delay/3')\n ).then(function(getData, delayedData)  {\n    //DOM is ready, getData and delayedData are available\n});\n```\n```js\n$.when(\n    $.get('http://httpbin.org/get'),\n    $.get('http://httpbin.org/delay/3')\n ).then(function(getData, delayedData)  {\n    //DOM is ready, getData and delayedData are available\n});\n```",
+        "question": "Q74. The `.ready()` function is one of the most basic parts of jQuery, but jQuery also provides a mechanism for executing code when both one or more Promises have resolved and the DOM is ready. Which code snippet accomplishes this?",
         "options": [
-            "A",
-            "",
-            "tion({",
-            "tData : $.get('http://httpbin.org/get'),"
+            "A\n```js\n$(function({\n    getData : $.get('http://httpbin.org/get'),\n    delayedData : $.get('http://httpbin.org/delay/3')\n})  {\n    //DOM is ready, getData and delayedData are available\n});\n```",
+            "B\n```js\n$(\n    $.get('http://httpbin.org/get'),\n    $.get('http://httpbin.org/delay/3')\n ).then(function(getData, delayedData)  {\n    //DOM is ready, getData and delayedData are available\n});\n```",
+            "C\n```js\n$.when(\n    $.get('http://httpbin.org/get'),\n    $.get('http://httpbin.org/delay/3')\n ).then(function(getData, delayedData)  {\n    //DOM is ready, getData and delayedData are available\n});\n```",
+            "D\n```js\n$.ready(\n    $.get('http://httpbin.org/get'),\n    $.get('http://httpbin.org/delay/3')\n ).then(function(getData, delayedData)  {\n    //DOM is ready, getData and delayedData are available\n});\n```\n```js\n// what goes here?\n// ... do some other hidden work on $example\n$example.prependTo(document.body);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q75. You want to take an element and any event handlers that go with it out of the DOM to do some work—without the changes affecting the rest of the page—and then move it somewhere else in the DOM, like right after the opening tag. What should go on the first line of this code snippet?\n```js\n// what goes here?\n// ... do some other hidden work on $example\n$example.prependTo(document.body);\n```",
         "options": [
-            "",
-            "t goes here?",
-            " do some other hidden work on $example",
-            "le.prependTo(document.body);"
+            "`var $example = $('#example').remove();`",
+            "`var $example = $('#example').clone();`",
+            "`var $example = $('#example').detach();`",
+            "`var $example = $('#example').addBack().empty();`\nhttps://api.jquery.com/detach/\n```html\n<ul class=\"items\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li class=\"active\">Item 4</li>\n  <li>Item 5</li>\n  <li>Item 6</li>\n</ul>\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q76. Review the HTML below. You want to select the first item in the list and fade it out, then select the subsequent items up to (but not including) the active item, and fade them out halfway. How can you set up a single chain to do this?\n```html\n<ul class=\"items\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li class=\"active\">Item 4</li>\n  <li>Item 5</li>\n  <li>Item 6</li>\n</ul>\n```\n```js\n$('.items > li')\n  .first().fadeOut()\n  .nextUntil('.active').fadeTo('fast', 0.5);\n```\n```js\n$('.items')\n  .children(':first-child').fadeOut()\n  .filter('.active').fadeTo('fast', 0.5);\n```\n```js\n$('.items > li')\n  .first().fadeOut()\n  .nextAll('.active').fadeOut(50);\n```",
+        "question": "Q76. Review the HTML below. You want to select the first item in the list and fade it out, then select the subsequent items up to (but not including) the active item, and fade them out halfway. How can you set up a single chain to do this?\n```html\n<ul class=\"items\">\n  <li>Item 1</li>\n  <li>Item 2</li>\n  <li>Item 3</li>\n  <li class=\"active\">Item 4</li>\n  <li>Item 5</li>\n  <li>Item 6</li>\n</ul>\n```",
         "options": [
-            "l",
-            "ass=\"items\">",
-            "Item 1</li>",
-            "Item 2</li>"
+            "A\n```js\n$('.items > li')\n  .first().fadeOut()\n  .nextUntil('.active').fadeTo('fast', 0.5);\n```",
+            "B\n```js\n$('.items')\n  .children(':first-child').fadeOut()\n  .filter('.active').fadeTo('fast', 0.5);\n```",
+            "C\n```js\n$('.items > li')\n  .first().fadeOut()\n  .nextAll('.active').fadeOut(50);\n```",
+            "D\n```js\n$('.items')\n  .find('li:first-child').fadeOut()\n  .next('.active').fadeTo('fast', 0.5);\n```\n1. https://api.jquery.com/fadeTo/\n2. https://api.jquery.com/fadeOut/\n3. https://api.jquery.com/nextUntil/"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q77. What is a particular performance concern when dealing with event handlers, and how can you cope with it?",
         "options": [
             "Finding which element an event occurred on is expensive. Assign most events to document.body and use .is() to act on the element of interest.",
             "Some events, such as mousemove and scroll, happen a lot on a typical page. Debounce or throttle their handlers to make sure the handlers are not called more than you actually need.",
-            "Listening for an event that does not exist can create serious memory leaks. Be careful to spell event names correctly to avoid consuming too much memory.",
-            "DOM elements with an ID wil fire events more efficiently than with classes. Always use IDs instead of classes where possible."
+            "Listening for an event that does not exist can create serious memory leaks. Be careful to spell event names correctly to avoid consuming too much memory."
         ],
         "_ps": 1
     }

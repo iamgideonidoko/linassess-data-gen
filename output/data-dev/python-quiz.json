@@ -5,7 +5,7 @@
             "An abstract class is the name for any class from which you can instantiate an object.",
             "Abstract classes must be redefined any time an object is instantiated from them.",
             "Abstract classes must inherit from concrete classes.",
-            "An abstract class exists only so that other \"concrete\" classes can inherit from the abstract class."
+            "An abstract class exists only so that other \"concrete\" classes can inherit from the abstract class.\n[reference](https://www.geeksforgeeks.org/abstract-classes-in-python/)"
         ],
         "_ps": 3
     },
@@ -15,7 +15,7 @@
             "The `any()` function will randomly return any item from the list.",
             "The `any()` function returns True if any item in the list evaluates to True. Otherwise, it returns False.",
             "The `any()` function takes as arguments the list to check inside, and the item to check for. If \"any\" of the items in the list match the item to check for, the function returns True.",
-            "The `any()` function returns a Boolean value that answers the question \"Are there any items in this list?\""
+            "The `any()` function returns a Boolean value that answers the question \"Are there any items in this list?\"\n**example**\n```python\nif any([True, False, False, False]) == True:\n    print('Yes, there is True')\n>>> 'Yes, there is True'\n```"
         ],
         "_ps": 1
     },
@@ -35,7 +35,7 @@
             "Static methods are called static because they always return `None`.",
             "Static methods can be bound to either a class or an instance of a class.",
             "Static methods serve mostly as utility methods or helper methods, since they can't access or modify a class's state.",
-            "Static methods can access and modify the state of a class or an instance of a class."
+            "Static methods can access and modify the state of a class or an instance of a class.\n[reference](https://www.geeksforgeeks.org/class-method-vs-static-method-python)"
         ],
         "_ps": 2
     },
@@ -45,19 +45,19 @@
             "Attributes are long-form version of an `if/else` statement, used when testing for equality between objects.",
             "Attributes are a way to hold data or describe a state for a class or an instance of a class.",
             "Attributes are strings that describe characteristics of a class.",
-            "Function arguments are called \"attributes\" in the context of class methods and instance methods."
+            "Function arguments are called \"attributes\" in the context of class methods and instance methods.\n**Explanation**\nAttributes defined under the class, arguments goes under the functions. arguments usually refer as parameter, whereas attributes are the constructor of the class or an instance of a class.\n`count, fruit, price = (2, 'apple', 3.5)`"
         ],
         "_ps": 1
     },
     {
         "question": "Q6. What is the term to describe this code?\n`count, fruit, price = (2, 'apple', 3.5)`",
         "options": [
-            ", fruit, price = (2, 'apple', 3.5)`",
             "`tuple assignment`",
             "`tuple unpacking`",
-            "`tuple matching`"
+            "`tuple matching`",
+            "`tuple duplication`"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q7. What built-in list method would you use to remove items from a list?",
@@ -65,7 +65,7 @@
             "`.delete()` method",
             "`pop(my_list)`",
             "`del(my_list)`",
-            "`.pop()` method"
+            "`.pop()` method\n**example**\n```python\nmy_list = [1,2,3]\nmy_list.pop(0)\nmy_list\n>>>[2,3]\n```"
         ],
         "_ps": 3
     },
@@ -95,19 +95,19 @@
             "`class Game(LogicGame): pass`",
             "`def Game(LogicGame): pass`",
             "`def Game.LogicGame(): pass`",
-            "`class Game.LogicGame(): pass`"
+            "`class Game.LogicGame(): pass`\n**Explanation:** `The parent class which is inherited is passed as an argument to the child class. Therefore, here the first option is the right answer.`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q11. What is the correct way to write a doctest?\n```python\ndef sum(a, b):\n    \"\"\"\n    sum(4, 3)\n    7\n    sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    >>> sum(4, 3)\n    7\n    >>> sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    # >>> sum(4, 3)\n    # 7\n    # >>> sum(-4, 5)\n    # 1\n    \"\"\"\n    return a + b\n```",
+        "question": "Q11. What is the correct way to write a doctest?",
         "options": [
-            "A",
-            "hon",
-            "m(a, b):",
-            "\""
+            "A\n```python\ndef sum(a, b):\n    \"\"\"\n    sum(4, 3)\n    7\n    sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n```",
+            "B\n```python\ndef sum(a, b):\n    \"\"\"\n    >>> sum(4, 3)\n    7\n    >>> sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n```",
+            "C\n```python\ndef sum(a, b):\n    \"\"\"\n    # >>> sum(4, 3)\n    # 7\n    # >>> sum(-4, 5)\n    # 1\n    \"\"\"\n    return a + b\n```",
+            "D\n```python\ndef sum(a, b):\n    ###\n    >>> sum(4, 3)\n    7\n    >>> sum(-4, 5)\n    1\n    ###\n    return a + b\n```\n**Explanation** - use `'''` to start the doc and add output of the cell after `>>>`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q12. What built-in Python data type is commonly used to represent a stack?",
@@ -122,12 +122,12 @@
     {
         "question": "Q13. What would this expression return?\n```python\ncollege_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']\nreturn list(enumerate(college_years, 2019))\n```",
         "options": [
-            "hon",
-            "e_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']",
-            " list(enumerate(college_years, 2019))",
-            ""
+            "`[('Freshman', 2019), ('Sophomore', 2020), ('Junior', 2021), ('Senior', 2022)]`",
+            "`[(2019, 2020, 2021, 2022), ('Freshman', 'Sophomore', 'Junior', 'Senior')]`",
+            "`[('Freshman', 'Sophomore', 'Junior', 'Senior'), (2019, 2020, 2021, 2022)]`",
+            "`[(2019, 'Freshman'), (2020, 'Sophomore'), (2021, 'Junior'), (2022, 'Senior')]`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q14. What is the purpose of the \"self\" keyword when defining or calling instance methods?",
@@ -135,7 +135,7 @@
             "`self` means that no other arguments are required to be passed into the method.",
             "There is no real purpose for the `self` method; it's just historic computer science jargon that Python keeps to stay consistent with other programming languages.",
             "`self` refers to the instance whose method was called.",
-            "`self` refers to the class that was inherited from to create the object using `self`."
+            "`self` refers to the class that was inherited from to create the object using `self`.\n**Simple example**\n```python\nclass my_secrets:\n    def __init__(self, password):\n        self.password = password\n        pass\ninstance = my_secrets('1234')\ninstance.password\n>>>'1234'\n```"
         ],
         "_ps": 2
     },
@@ -145,7 +145,7 @@
             "You can assign a name to each of the `namedtuple` members and refer to them that way, similarly to how you would access keys in `dictionary`.",
             "Each member of a namedtuple object can be indexed to directly, just like in a regular `tuple`.",
             "`namedtuples` are just as memory efficient as regular `tuples`.",
-            "No import is needed to use `namedtuples` because they are available in the standard library."
+            "No import is needed to use `namedtuples` because they are available in the standard library.\n**We need to import it using**:`from collections import namedtuple`"
         ],
         "_ps": 3
     },
@@ -205,7 +205,7 @@
             "It creates a path from multiple values in an iterable to a single value.",
             "It applies a function to each item in an iterable and returns the value of that function.",
             "It converts a complex value type into simpler value types.",
-            "It creates a mapping between two different elements of different iterables."
+            "It creates a mapping between two different elements of different iterables.\n**Explanation:** - The synax for `map()` function is `list(map(function,iterable))`. The simple area finder using map would be like this\n```python\nimport math\nradius = [1,2,3]\narea = list(map(lambda x: round(math.pi*(x**2), 2), radius))\narea\n>>> [3.14, 12.57, 28.27]\n```"
         ],
         "_ps": 1
     },
@@ -265,19 +265,19 @@
             "The runtime is O(n) because in the worst case, the node you are searching for is the last node, and every node in the linked list must be visited.",
             "The runtime is O(nk), with n representing the number of nodes and k representing the amount of time it takes to access each node in memory.",
             "The runtime cannot be determined unless you know how many nodes are in the singly linked list.",
-            "The runtime is O(1) because you can index directly to a node in a singly linked list."
+            "The runtime is O(1) because you can index directly to a node in a singly linked list.\n```python\nfruits = ['Apples', 'Oranges', 'Bananas']\nquantities = [5, 3, 4]\nprices = [1.50, 2.25, 0.89]\n#Desired output\n[('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)]\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q28. Given the following three list, how would you create a new list that matches the desired output printed below?\n```python\nfruits = ['Apples', 'Oranges', 'Bananas']\nquantities = [5, 3, 4]\nprices = [1.50, 2.25, 0.89]\n#Desired output\n[('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)]\n```\n```python\noutput = []\nfruit_tuple_0 = (first[0], quantities[0], price[0])\noutput.append(fruit_tuple)\nfruit_tuple_1 = (first[1], quantities[1], price[1])\noutput.append(fruit_tuple)\nfruit_tuple_2 = (first[2], quantities[2], price[2])\noutput.append(fruit_tuple)\nreturn output\n```\n```python\ni = 0\noutput = []\nfor fruit in fruits:\n    temp_qty = quantities[i]\n    temp_price = prices[i]\n    output.append((fruit, temp_qty, temp_price))\n    i += 1\nreturn output\n```\n```python\ngroceries = zip(fruits, quantities, prices)\nreturn groceries\n>>> [\n('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)\n]\n```",
+        "question": "Q28. Given the following three list, how would you create a new list that matches the desired output printed below?\n```python\nfruits = ['Apples', 'Oranges', 'Bananas']\nquantities = [5, 3, 4]\nprices = [1.50, 2.25, 0.89]\n#Desired output\n[('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)]\n```",
         "options": [
-            "hon",
-            " = ['Apples', 'Oranges', 'Bananas']",
-            "ties = [5, 3, 4]",
-            " = [1.50, 2.25, 0.89]"
+            "<br>\n```python\noutput = []\nfruit_tuple_0 = (first[0], quantities[0], price[0])\noutput.append(fruit_tuple)\nfruit_tuple_1 = (first[1], quantities[1], price[1])\noutput.append(fruit_tuple)\nfruit_tuple_2 = (first[2], quantities[2], price[2])\noutput.append(fruit_tuple)\nreturn output\n```",
+            "<br>\n```python\ni = 0\noutput = []\nfor fruit in fruits:\n    temp_qty = quantities[i]\n    temp_price = prices[i]\n    output.append((fruit, temp_qty, temp_price))\n    i += 1\nreturn output\n```",
+            "<br>\n```python\ngroceries = zip(fruits, quantities, prices)\nreturn groceries\n>>> [\n('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)\n]\n```",
+            " <br>\n```python\ni = 0\noutput = []\nfor fruit in fruits:\n    for qty in quantities:\n        for price in prices:\n            output.append((fruit, qty, price))\n    i += 1\nreturn output\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q29. What happens when you use the built-in function all() on a list?",
@@ -285,19 +285,19 @@
             "The `all()` function returns a Boolean value that answers the question \"Are all the items in this list the same?",
             "The `all()` function returns True if all the items in the list can be converted to strings. Otherwise, it returns False.",
             "The `all()` function will return all the values in the list.",
-            "The `all()` function returns True if all items in the list evaluate to True. Otherwise, it returns False."
+            "The `all()` function returns True if all items in the list evaluate to True. Otherwise, it returns False.\n**Explanation** - `all()` returns true if all in the list are True, see example below\n```python\ntest = [True,False,False,False]\nif all(test) is True:\n    print('Yeah all are True')\nelse:\n    print('There is an imposter')\n>>> 'There is an imposter'\n```\n_(Answer format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_"
         ],
         "_ps": 3
     },
     {
-        "question": "Q30. What is the correct syntax for calling an instance method on a class named Game?\n_(Answer format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_\n```python\n>>> dice = Game()\n>>> dice.roll()\n```\n```python\n>>> dice = Game(self)\n>>> dice.roll(self)\n```\n```python\n>>> dice = Game()\n>>> dice.roll(self)\n```",
+        "question": "Q30. What is the correct syntax for calling an instance method on a class named Game?\n_(Answer format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_",
         "options": [
-            "er format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_",
-            "<br>",
-            "hon",
-            "ce = Game()"
+            "<br>\n```python\n>>> dice = Game()\n>>> dice.roll()\n```",
+            "<br>\n```python\n>>> dice = Game(self)\n>>> dice.roll(self)\n```",
+            "<br>\n```python\n>>> dice = Game()\n>>> dice.roll(self)\n```",
+            "<br>\n```python\n>>> dice = Game(self)\n>>> dice.roll()\n```"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q31. What is the algorithmic paradigm of quick sort?",
@@ -335,29 +335,29 @@
             "Abstraction means that a different style of code can be used, since many details are already known to the program behind the scenes.",
             "Abstraction means the implementation is hidden from the user, and only the relevant data or information is shown.",
             "Abstraction means that the data and the functionality of a class are combined into one entity.",
-            "Abstraction means that a class can inherit from more than one parent class."
+            "Abstraction means that a class can inherit from more than one parent class.\n```python\ndef print_alpha_nums(abc_list, num_list):\n    for char in abc_list:\n        for num in num_list:\n            print(char, num)\n    return\nprint_alpha_nums(['a', 'b', 'c'], [1, 2, 3])\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q35. What does this function print?\n```python\ndef print_alpha_nums(abc_list, num_list):\n    for char in abc_list:\n        for num in num_list:\n            print(char, num)\n    return\nprint_alpha_nums(['a', 'b', 'c'], [1, 2, 3])\n```\n```python\na 1\na 2\na 3\nb 1\nb 2\nb 3\nc 1\nc 2\nc 3\n```\n```python\n['a', 'b', 'c'], [1, 2, 3]\n```\n```python\naaa\nbbb\nccc\n111\n222\n333\n```",
+        "question": "Q35. What does this function print?\n```python\ndef print_alpha_nums(abc_list, num_list):\n    for char in abc_list:\n        for num in num_list:\n            print(char, num)\n    return\nprint_alpha_nums(['a', 'b', 'c'], [1, 2, 3])\n```",
         "options": [
-            "hon",
-            "int_alpha_nums(abc_list, num_list):",
-            "r char in abc_list:",
-            "  for num in num_list:"
+            "<br>\n```python\na 1\na 2\na 3\nb 1\nb 2\nb 3\nc 1\nc 2\nc 3\n```",
+            "<br>\n```python\n['a', 'b', 'c'], [1, 2, 3]\n```",
+            "<br>\n```python\naaa\nbbb\nccc\n111\n222\n333\n```",
+            "<br>\n```python\na 1 2 3\nb 1 2 3\nc 1 2 3\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q36. Pick correct representation of doctest for function in Python.\n```python\ndef sum(a, b):\n    # a = 1\n    # b = 2\n    # sum(a, b) = 3\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    a = 1\n    b = 2\n    sum(a, b) = 3\n    \"\"\"\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    >>> a = 1\n    >>> b = 2\n    >>> sum(a, b)\n    3\n    \"\"\"\n    return a + b\n```",
+        "question": "Q36. Pick correct representation of doctest for function in Python.",
         "options": [
-            "<br>",
-            "hon",
-            "m(a, b):",
-            "a = 1"
+            "<br>\n```python\ndef sum(a, b):\n    # a = 1\n    # b = 2\n    # sum(a, b) = 3\n    return a + b\n```",
+            "<br>\n```python\ndef sum(a, b):\n    \"\"\"\n    a = 1\n    b = 2\n    sum(a, b) = 3\n    \"\"\"\n    return a + b\n```",
+            "<br>\n```python\ndef sum(a, b):\n    \"\"\"\n    >>> a = 1\n    >>> b = 2\n    >>> sum(a, b)\n    3\n    \"\"\"\n    return a + b\n```",
+            "<br>\n```python\ndef sum(a, b):\n    '''\n    a = 1\n    b = 2\n    sum(a, b) = 3\n    '''\n    return a + b\n```\n**Explanation:** Use `\"\"\"` to start and end the docstring and use `>>>` to represent the output. If you write this correctly you can also run the doctest using build-in doctest module"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q37. Suppose a Game class inherits from two parent classes: BoardGame and LogicGame. Which statement is true about the methods of an object instantiated from the Game class?",
@@ -375,7 +375,7 @@
             "a generic object class with iterable parameter fields",
             "a generic object class with non-iterable named fields",
             "a tuple subclass with non-iterable parameter fields",
-            "a tuple subclass with iterable named fields"
+            "a tuple subclass with iterable named fields\n**Example**\n```python\nimport math\nradius = [1,2,3]\narea = list(map(lambda x: round(math.pi*(x**2), 2), radius))\narea\n>>> [3.14, 12.57, 28.27]\n```"
         ],
         "_ps": 3
     },
@@ -385,29 +385,29 @@
             "`&&`",
             "`=`",
             "`==`",
-            "`||`"
+            "`||`\n```python\nfruit_info = {\n  'fruit': 'apple',\n  'count': 2,\n  'price': 3.5\n}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q40. Review the code below. What is the correct syntax for changing the price to 1.5?\n```python\nfruit_info = {\n  'fruit': 'apple',\n  'count': 2,\n  'price': 3.5\n}\n```",
         "options": [
-            "hon",
-            "info = {",
-            "it': 'apple',",
-            "nt': 2,"
+            "`fruit_info ['price'] = 1.5`",
+            "`my_list [3.5] = 1.5`",
+            "`1.5 = fruit_info ['price]`",
+            "`my_list['price'] == 1.5`\n`5 != 6`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q41. What value would be returned by this check for equality?\n`5 != 6`",
         "options": [
-            "6`",
             "`yes`",
             "`False`",
-            "`True`"
+            "`True`",
+            "`None`\n**Explanation** - `!=` is equivalent to **not equal to** in python"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q42. What does a class's `__init__()` method do?",
@@ -415,7 +415,7 @@
             "It makes classes aware of each other if more than one class is defined in a single code file.",
             "It is included to preserve backwards compatibility from Python 3 to Python 2, but no longer needs to be used in Python 3.",
             "It is a method that acts as a constructor and is called automatically whenever a new object is created from a class. It sets the initial state of a new object.",
-            "It initializes any imports you may have included at the top of your file."
+            "It initializes any imports you may have included at the top of your file.\n**Example:**\n```python\nclass test:\n    def __init__(self):\n        print('I came here without your permission lol')\n        pass\nt1 = test()\n>>> 'I came here without your permission lol'\n```"
         ],
         "_ps": 2
     },
@@ -435,19 +435,19 @@
             "`fruit_info = {'fruit': 'apple', 'count': 2, 'price': 3.5}`",
             "`fruit_info =('fruit': 'apple', 'count': 2,'price': 3.5 ).dict()`",
             "`fruit_info = ['fruit': 'apple', 'count': 2,'price': 3.5 ].dict()`",
-            "`fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)`"
+            "`fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)`\n`fruits = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}`"
         ],
         "_ps": 0
     },
     {
         "question": "Q45. What is the proper way to write a list comprehension that represents all the keys in this dictionary?\n`fruits = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}`",
         "options": [
-            "s = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}`",
             "`fruit_names = [x in fruits.keys() for x]`",
             "`fruit_names = for x in fruits.keys() *`",
-            "`fruit_names = [x for x in fruits.keys()]`"
+            "`fruit_names = [x for x in fruits.keys()]`",
+            "`fruit_names = x for x in fruits.keys()`"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q46. What is the purpose of the `self` keyword when defining or calling methods on an instance of an object?",
@@ -455,7 +455,7 @@
             "`self` refers to the class that was inherited from to create the object using `self`.",
             "There is no real purpose for the `self` method. It's just legacy computer science jargon that Python keeps to stay consistent with other programming languages.",
             "`self` means that no other arguments are required to be passed into the method.",
-            "`self` refers to the instance whose method was called."
+            "`self` refers to the instance whose method was called.\n**Explanation:** - Try running the example of the Q42 without passing `self` argument inside the `__init__`, you'll understand the reason. You'll get the error like this `__init__() takes 0 positional arguments but 1 was given`, this means that something is going inside even if haven't specified, which is instance itself."
         ],
         "_ps": 3
     },
@@ -485,7 +485,7 @@
             "`def getMaxNum(list_of_nums): # body of function goes here`",
             "`func get_max_num(list_of_nums): # body of function goes here`",
             "`func getMaxNum(list_of_nums): # body of function goes here`",
-            "`def get_max_num(list_of_nums): # body of function goes here`"
+            "`def get_max_num(list_of_nums): # body of function goes here`\n[explanation for 52 & 53](https://www.python.org/dev/peps/pep-0008/)"
         ],
         "_ps": 3
     },
@@ -505,7 +505,7 @@
             "A deque adds items to one side and remove items from the other side.",
             "A deque adds items to either or both sides, but only removes items from the top.",
             "A deque adds items at either or both ends, and remove items at either or both ends.",
-            "A deque adds items only to the top, but remove from either or both sides."
+            "A deque adds items only to the top, but remove from either or both sides.\n**Explanation** - `deque` is used to create block chanin and in that there is _first in first out_ approch, which means the last element to enter will be the first to leave."
         ],
         "_ps": 2
     },
@@ -520,14 +520,14 @@
         "_ps": 0
     },
     {
-        "question": "Q53. What is the correct syntax for defining an `__init__()` method that takes no parameters?\n```python\nclass __init__(self):\n    pass\n```\n```python\ndef __init__():\n    pass\n```\n```python\nclass __init__():\n    pass\n```",
+        "question": "Q53. What is the correct syntax for defining an `__init__()` method that takes no parameters?",
         "options": [
-            "<br>",
-            "hon",
-            "__init__(self):",
-            "ss"
+            "<br>\n```python\nclass __init__(self):\n    pass\n```",
+            "<br>\n```python\ndef __init__():\n    pass\n```",
+            "<br>\n```python\nclass __init__():\n    pass\n```",
+            "<br>\n```python\ndef __init__(self):\n    pass\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q54. Which of the following is TRUE About how numeric data would be organised in a binary Search tree?",
@@ -560,14 +560,14 @@
         "_ps": 1
     },
     {
-        "question": "Q57. What is the most self-descriptive way to define a function that calculates sales tax on a purchase?\n```python\ndef tax(my_float):\n    '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n    pass\n```\n```python\ndef tx(amt):\n    '''Gets the tax on an amount.'''\n```\n```python\ndef sales_tax(amount):\n    '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n```",
+        "question": "Q57. What is the most self-descriptive way to define a function that calculates sales tax on a purchase?",
         "options": [
-            "<br>",
-            "hon",
-            "x(my_float):",
-            "'Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''"
+            "<br>\n```python\ndef tax(my_float):\n    '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n    pass\n```",
+            "<br>\n```python\ndef tx(amt):\n    '''Gets the tax on an amount.'''\n```",
+            "<br>\n```python\ndef sales_tax(amount):\n    '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n```",
+            "<br>\n```python\ndef calculate_sales_tax(subtotal):\n    pass\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q58. What would happen if you did not alter the state of the element that an algorithm is operating on recursively?",
@@ -575,7 +575,7 @@
             "You do not have to alter the state of the element the algorithm is recursing on.",
             "You would eventually get a KeyError when the recursive portion of the code ran out of items to recurse on.",
             "You would get a RuntimeError: maximum recursion depth exceeded.",
-            "The function using recursion would return None."
+            "The function using recursion would return None.\n[explanation](https://www.python-course.eu/python3_recursive_functions.php#Definition-of-Recursion)"
         ],
         "_ps": 2
     },
@@ -585,7 +585,7 @@
             "The runtime for searching in a binary search tree is O(1) because each node acts as a key, similar to a dictionary.",
             "The runtime for searching in a binary search tree is O(n!) because every node must be compared to every other node.",
             "The runtime for searching in a binary search tree is generally O(h), where h is the height of the tree.",
-            "The runtime for searching in a binary search tree is O(n) because every node in the tree must be visited."
+            "The runtime for searching in a binary search tree is O(n) because every node in the tree must be visited.\n[explanation](https://www.geeksforgeeks.org/binary-search-tree-data-structure/)"
         ],
         "_ps": 2
     },
@@ -595,7 +595,7 @@
             "You use a `mixin` to force a function to accept an argument at runtime even if the argument wasn't included in the function's definition.",
             "You use a `mixin` to allow a decorator to accept keyword arguments.",
             "You use a `mixin` to make sure that a class's attributes and methods don't interfere with global variables and functions.",
-            "If you have many classes that all need to have the same functionality, you'd use a `mixin` to define that functionality."
+            "If you have many classes that all need to have the same functionality, you'd use a `mixin` to define that functionality.\n[explanation](https://www.youtube.com/watch?v=zVFLBfqV-q0)"
         ],
         "_ps": 3
     },
@@ -615,7 +615,7 @@
             "a stacks adds items to one side and removes items from the other side.",
             "a stacks adds items to the top and removes items from the top.",
             "a stacks adds items to the top and removes items from anywhere in the stack.",
-            "a stacks adds items to either end and removes items from either end."
+            "a stacks adds items to either end and removes items from either end.\n**Explanation** Stack uses the _last in first out_ approach"
         ],
         "_ps": 1
     },
@@ -635,7 +635,7 @@
             "The `with` keyword lets you choose which application to open the file in.",
             "The `with` keyword acts like a `for` loop, and lets you access each line in the file one by one.",
             "There is no benefit to using the `with` keyword for opening a file in Python.",
-            "When you open a file using the `with` keyword in Python, Python will make sure the file gets closed, even if an exception or error is thrown."
+            "When you open a file using the `with` keyword in Python, Python will make sure the file gets closed, even if an exception or error is thrown.\n[explanation](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)"
         ],
         "_ps": 3
     },
@@ -655,7 +655,7 @@
             "`python3 -m doctest <_filename_>`",
             "`python3 <_filename_>`",
             "`python3 <_filename_> rundoctests`",
-            "`python3 doctest`"
+            "`python3 doctest`\n[tutorial video](https://www.youtube.com/watch?v=P8qm0VAbbww&t=180s)"
         ],
         "_ps": 0
     },
@@ -665,7 +665,7 @@
             "any function that makes use of scientific or mathematical constants, often represented by Greek letters in academic writing",
             "a function that get executed when decorators are used",
             "any function whose definition is contained within five lines of code or fewer",
-            "a small, anonymous function that can take any number of arguments but has only expression to evaluate"
+            "a small, anonymous function that can take any number of arguments but has only expression to evaluate\n[Reference](https://www.guru99.com/python-lambda-function.html)\n**Explanation:**\n> The lambda notation is basically an anonymous function that can take any number of arguments with only single expression (i.e, cannot be overloaded). It has been introducted in other programming languages, such as C++ and Java. The lambda notation allows programmers to \"bypass\" function declaration."
         ],
         "_ps": 3
     },
@@ -710,14 +710,14 @@
         "_ps": 1
     },
     {
-        "question": "Q72. What is the correct syntax of creating an instance method?\n```python\ndef get_next_card():\n  # method body goes here\n```\n```python\ndef get_next_card(self):\n  # method body goes here\n```\n```python\ndef self.get_next_card():\n  # method body goes here\n```",
+        "question": "Q72. What is the correct syntax of creating an instance method?",
         "options": [
-            "<br>",
-            "hon",
-            "t_next_card():",
-            "thod body goes here"
+            "<br>\n```python\ndef get_next_card():\n  # method body goes here\n```",
+            "<br>\n```python\ndef get_next_card(self):\n  # method body goes here\n```",
+            "<br>\n```python\ndef self.get_next_card():\n  # method body goes here\n```",
+            "<br>\n```python\ndef self.get_next_card(self):\n  # method body goes here\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q73. What is the correct way to call a function?",
@@ -735,19 +735,19 @@
             "`-- This is a comment`",
             "`# This is a comment`",
             "`/_ This is a comment _\\`",
-            "`// This is a comment`"
+            "`// This is a comment`\n```python\nmy_list = ['kiwi', 'apple', 'banana']\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q75. What is the correct syntax for replacing the string apple in the list with the string orange?\n```python\nmy_list = ['kiwi', 'apple', 'banana']\n```",
         "options": [
-            "hon",
-            "t = ['kiwi', 'apple', 'banana']",
-            "",
-            "`orange = my_list[1]`"
+            "`orange = my_list[1]`",
+            "`my_list[1] = 'orange'`",
+            "`my_list['orange'] = 1`",
+            "`my_list[1] == orange`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q76. What will happen if you use a while loop and forget to include logic that eventually causes the while loop to stop?",
@@ -770,12 +770,12 @@
         "_ps": 0
     },
     {
-        "question": "Q78. Which choice is the most syntactically correct example of the conditional branching?\n```python\nnum_people = 5\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n```\n```python\nnum_people = 5\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n```\n```python\nnum_people = 5\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n```",
+        "question": "Q78. Which choice is the most syntactically correct example of the conditional branching?",
         "options": [
-            "<br>",
-            "hon",
-            "ople = 5",
-            "_people > 10:"
+            "<br>\n```python\nnum_people = 5\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n```",
+            "<br>\n```python\nnum_people = 5\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n```",
+            "<br>\n```python\nnum_people = 5\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n```",
+            "<br>\n```python\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n```"
         ],
         "_ps": 0
     },
@@ -805,29 +805,29 @@
             "when you want to minimize the use of strings in your code",
             "when you want to run code in one file while code in another file is also running",
             "when you want some code to continue running as long as some condition is true",
-            "when you need to run two or more chunks of code at once within the same file"
+            "when you need to run two or more chunks of code at once within the same file\n**Simple Example**\n```python\ni = 1\nwhile i<6:\n    print('Countdown:',i)\n    i = i + 1\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q82. What is the correct syntax for defining an `__init__()` method that sets instance-specific attributes upon creation of a new class instance?\n```python\ndef __init__(self, attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```\n```python\ndef __init__(attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```\n```python\ndef __init__(self, attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n```",
+        "question": "Q82. What is the correct syntax for defining an `__init__()` method that sets instance-specific attributes upon creation of a new class instance?",
         "options": [
-            "<br>",
-            "hon",
-            "init__(self, attr1, attr2):",
-            "tr1 = attr1"
+            "<br>\n```python\ndef __init__(self, attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```",
+            "<br>\n```python\ndef __init__(attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```",
+            "<br>\n```python\ndef __init__(self, attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n```",
+            "<br>\n```python\ndef __init__(attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n```\n**Explanation**: When instantiating a new object from a given class, the `__init__()` method will take both `attr1` and `attr2`, and set its values to their corresponding object attribute, that's why the need of using `self.attr1 = attr1` instead of `attr1 = attr1`.\n```python\ndef count_recursive(n=1):\n    if n > 3:\n        return\n    print(n)\n    count_recursive(n + 1)\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q83. What would this recursive function print if it is called with no parameters?\n```python\ndef count_recursive(n=1):\n    if n > 3:\n        return\n    print(n)\n    count_recursive(n + 1)\n```\n```python\n1\n1\n2\n2\n3\n3\n```\n```python\n3\n2\n1\n```\n```python\n3\n3\n2\n2\n1\n1\n```",
+        "question": "Q83. What would this recursive function print if it is called with no parameters?\n```python\ndef count_recursive(n=1):\n    if n > 3:\n        return\n    print(n)\n    count_recursive(n + 1)\n```",
         "options": [
-            "hon",
-            "unt_recursive(n=1):",
-            " n > 3:",
-            "  return"
+            "<br>\n```python\n1\n1\n2\n2\n3\n3\n```",
+            "<br>\n```python\n3\n2\n1\n```",
+            "<br>\n```python\n3\n3\n2\n2\n1\n1\n```",
+            "<br>\n```python\n1\n2\n3\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q84. In Python, when using sets, you use **\\_** to calculate the intersection between two sets and **\\_** to calculate the union.",
@@ -835,19 +835,19 @@
             "`Intersect`; `union`",
             "`|`; `&`",
             "`&`; `|`",
-            "`&&`; `||`"
+            "`&&`; `||`\n```python\nimport numpy as np\nnp.ones([1,2,3,4,5])\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q85. What will this code fragment return?\n```python\nimport numpy as np\nnp.ones([1,2,3,4,5])\n```",
         "options": [
-            "hon",
-            " numpy as np",
-            "s([1,2,3,4,5])",
-            ""
+            "It returns a 5x5 matric; each row will have the values 1,2,3,4,5.",
+            "It returns an array with the values 1,2,3,4,5",
+            "It returns five different square matrices filled with ones. The first is 1x1, the second 2x2, and so on to 5x5",
+            "It returns a 5-dimensional array of size 1x2x3x4x5 filled with 1s.\n[Reference](https://www.geeksforgeeks.org/numpy-ones-python/)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q86. You encounter a FileNotFoundException while using just the filename in the `open` function. What might be the easiest solution?",
@@ -855,19 +855,19 @@
             "Make sure the file is on the system PATH",
             "Create a symbolic link to allow better access to the file",
             "Copy the file to the same directory as where the script is running from",
-            "Add the path to the file to the PYTHONPATH environment variable"
+            "Add the path to the file to the PYTHONPATH environment variable\n```python\n{x for x in range(100) if x%3 == 0}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q87. what will this command return?\n```python\n{x for x in range(100) if x%3 == 0}\n```",
         "options": [
-            "hon",
-            " x in range(100) if x%3 == 0}",
-            "",
-            "a set of all the multiples of 3 less then 100"
+            "a set of all the multiples of 3 less then 100",
+            "a set of all the number from 0 to 100 multiplied by 3",
+            "a list of all the multiples of 3 less then 100",
+            "a set of all the multiples of 3 less then 100 excluding 0"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q88. What does the // operator in Python 3 allow you to do?",
@@ -875,19 +875,19 @@
             "Perform integer division",
             "Perform operations on exponents",
             "Find the remainder of a division operation",
-            "Perform floating point division"
+            "Perform floating point division\n```python\nnum_list = [21,13,19,3,11,5,18]\nnum_list.sort()\nnum_list[len(num_list)//2]\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q89. This code provides the \\_ of the list of numbers\n```python\nnum_list = [21,13,19,3,11,5,18]\nnum_list.sort()\nnum_list[len(num_list)//2]\n```",
         "options": [
-            "hon",
-            "st = [21,13,19,3,11,5,18]",
-            "st.sort()",
-            "st[len(num_list)//2]"
+            "mean",
+            "mode",
+            "median",
+            "average"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q90. What file is imported to use dates in python?",
@@ -905,7 +905,7 @@
             "`def Game(): pass`",
             "`def Game: pass`",
             "`class Game: pass`",
-            "`class Game(): pass`"
+            "`class Game(): pass`\n[reference here](https://docs.python.org/3/tutorial/classes.html)"
         ],
         "_ps": 2
     },
@@ -915,7 +915,7 @@
             "The **init** method makes classes aware of each other if more than one class is defined in a single code file.",
             "The **init** method is included to preserve backward compatibility from Python 3 to Python 2, but no longer needs to be used in Python 3.",
             "The **init** method is a constructor method that is called automatically whenever a new object is created from a class. It sets the initial state of a new object.",
-            "The **init** method initializes any imports you may have included at the top of your file."
+            "The **init** method initializes any imports you may have included at the top of your file.\n[reference here](https://stackoverflow.com/questions/625083/what-init-and-self-do-in-python)"
         ],
         "_ps": 2
     },
@@ -925,39 +925,39 @@
             "`my_game = Game(self) self.my_game.roll_dice()`",
             "`my_game = Game() self.my_game.roll_dice()`",
             "`my_game = Game() my_game.roll_dice()`",
-            "`my_game = Game(self) my_game.roll_dice(self)`"
+            "`my_game = Game(self) my_game.roll_dice(self)`\n```python\na = np.array([1,2,3,4])\nprint(a[[False, True, False, False]])\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q94. What is the output of this code? (NumPy has been imported as np.)?\n```python\na = np.array([1,2,3,4])\nprint(a[[False, True, False, False]])\n```",
         "options": [
-            "hon",
-            ".array([1,2,3,4])",
-            "a[[False, True, False, False]])",
-            ""
+            "`{0,2}`",
+            "`[2]`",
+            "`{2}`",
+            "`[0,2,0,0]`\n```python\nz = y.split(‘;’)\nlen(z)\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q95. Suppose you have a string variable defined as y=”stuff;thing;junk;”. What would be the output from this code?\n```python\nz = y.split(‘;’)\nlen(z)\n```",
         "options": [
-            "hon",
-            "split(‘;’)",
-            "",
-            ""
+            "17",
+            "4",
+            "0",
+            "3\n**Explanation**:\n```\ny=”stuff;thing;junk”\n\tlen(z) ==> 3\ny=”stuff;thing;junk;”\n\tlen(z) ==> 4\n```\n```python\nnum_list = [1,2,3,4,5]\nnum_list.remove(2)\nprint(num_list)\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q96. What is the output of this code?\n```python\nnum_list = [1,2,3,4,5]\nnum_list.remove(2)\nprint(num_list)\n```",
         "options": [
-            "hon",
-            "st = [1,2,3,4,5]",
-            "st.remove(2)",
-            "num_list)"
+            "`[1,2,4,5]`",
+            "`[1,3,4,5]`",
+            "`[3,4,5]`",
+            "`[1,2,3]`\n**Explanation**:\n```python\nnum_list = [1,2,3,4,5]\nnum_list.pop(3)\n>>> [1,2,4,5]\nnum_list.remove(2)\n>>> [1,3,4,5]\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q97. What is the correct syntax for creating an instance method?",
@@ -965,29 +965,29 @@
             "def get_next_card(): # method body goes here",
             "def self.get_next_card(): # method body goes here",
             "def get_next_card(self): # method body goes here",
-            "def self.get_next_card(self): # method body goes here"
+            "def self.get_next_card(self): # method body goes here\n`[10,9,8,7,6,5,4,3,2,1]`"
         ],
         "_ps": 2
     },
     {
         "question": "Q98. Which command will create a list from 10 down to 1? Example:\n`[10,9,8,7,6,5,4,3,2,1]`",
         "options": [
-            ",8,7,6,5,4,3,2,1]`",
             "`reversed(list(range(1,11)))`",
             "`list(reversed(range(1,10)))`",
-            "`list(range(10,1,-1))`"
+            "`list(range(10,1,-1))`",
+            "`list(reversed(range(1,11)))`\n[Reference](https://www.w3schools.com/python/python_tuples.asp)\n```python\nimport math\nprint(math.pow(2,10)) # prints 2 elevated to the 10th power\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q99. Which fragment of code will print exactly the same output as this fragment?\n```python\nimport math\nprint(math.pow(2,10)) # prints 2 elevated to the 10th power\n```\n```python\nprint(2^10)\n```\n```python\nprint(2**10)\n```\n```python\ny = [x*2 for x in range(1,10)]\nprint(y)\n```",
+        "question": "Q99. Which fragment of code will print exactly the same output as this fragment?\n```python\nimport math\nprint(math.pow(2,10)) # prints 2 elevated to the 10th power\n```",
         "options": [
-            "hon",
-            " math",
-            "math.pow(2,10)) # prints 2 elevated to the 10th power",
-            ""
+            "<br>\n```python\nprint(2^10)\n```",
+            "<br>\n```python\nprint(2**10)\n```",
+            "<br>\n```python\ny = [x*2 for x in range(1,10)]\nprint(y)\n```",
+            "<br>\n```python\ny = 1\nfor i in range(1,10):\n    y = y * 2\nprint(y)\n```\n[Reference](https://www.digitalocean.com/community/tutorials/how-to-do-math-in-python-3-with-operators#:~:text=The%20**%20operator%20in%20Python,multiplied%20by%20itself%203%20times.)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q100. Elements surrounded by `[]` are **\\_**, `{}` are **\\_**, and `()` are **\\_**.",
@@ -995,29 +995,29 @@
             "sets only; lists or dictionaries; tuples",
             "lists; sets only; tuples",
             "tuples; sets or lists; dictionaries",
-            "lists; dictionaries or sets; tuples"
+            "lists; dictionaries or sets; tuples\n[Reference](https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/)\n```python\ntable = np.array([\n    [1,3],\n    [2,4]])\nprint(table.max(axis=1))\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q101. What is the output of this code? (NumPy has been imported as np.)\n```python\ntable = np.array([\n    [1,3],\n    [2,4]])\nprint(table.max(axis=1))\n```",
         "options": [
-            "hon",
-            "= np.array([",
-            ",3],",
-            ",4]])"
+            "`[2, 4]`",
+            "`[3, 4]`",
+            "`[4]`",
+            "`[1,2]`\n[Reference](https://colab.research.google.com/drive/1PRGf7Wgcr_gQk7snnxxuc5rL9O1ky9Xg?usp=sharing)\n```python\nnumber = 3\nprint (f\"The number is {number}\")\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q102. What will this code print?\n```python\nnumber = 3\nprint (f\"The number is {number}\")\n```",
         "options": [
-            "hon",
-            " = 3",
-            "(f\"The number is {number}\")",
-            ""
+            "`The number is 3`",
+            "`the number is 3`",
+            "`THE NUMBER IS 3`",
+            "It throws a TypeError because the integer must be cast to a string.\n[Reference](https://colab.research.google.com/drive/1PRGf7Wgcr_gQk7snnxxuc5rL9O1ky9Xg?usp=sharing)"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q103. Which syntax correctly creates a variable that is bound to a tuple?",
@@ -1025,7 +1025,7 @@
             "`my_tuple tup(2, 'apple', 3.5) %D`",
             "`my_tuple [2, 'apple', 3.5].tuple() %D`",
             "`my_tuple = (2, 'apple', 3.5)`",
-            "`my_tuple = [2, 'apple', 3.5]`"
+            "`my_tuple = [2, 'apple', 3.5]`\n[Reference](https://beginnersbook.com/2018/02/python-tuple/)"
         ],
         "_ps": 2
     },
@@ -1035,7 +1035,7 @@
             "`write('w')`",
             "`scan('s')`",
             "`append('a')`",
-            "`read('r')`"
+            "`read('r')`\n[Reference](https://docs.python.org/3/library/functions.html#open)\n[Reference](https://www.w3schools.com/python/ref_list_append.asp)"
         ],
         "_ps": 1
     },
@@ -1045,7 +1045,7 @@
             "`matrix = matrix(vector,100,100)`",
             "`matrix = vector.to_matrix(100,100)`",
             "`matrix = (vector.shape = (100,100))`",
-            "`matrix = vector.reshape(100,100)`"
+            "`matrix = vector.reshape(100,100)`\n**Example**\n```python\nimport numpy as np\nvector = np.random.rand(10000)\nmatrix = a.reshape(100, 100)\nprint(matrix.shape)\n>>> (100, 100)\n```"
         ],
         "_ps": 3
     },
@@ -1075,19 +1075,19 @@
             "`sys.exc_info()`",
             "`os.system()`",
             "`os.getcwd()`",
-            "`sys.executable`"
+            "`sys.executable`\n```python\nmy_dictionary = {\n    'A': 1,\n    'B': 2,\n    'C': 3,\n    'D': 4,\n    'E': 5\n}\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q109. Suppose you have the following code snippet and want to extract a list with only the letters. Which fragment of code will _not_ achieve that goal?\n```python\nmy_dictionary = {\n    'A': 1,\n    'B': 2,\n    'C': 3,\n    'D': 4,\n    'E': 5\n}\n```\n```python\nletters = []\nfor letter in my_dictionary.values():\n    letters.append(letter)\n```",
+        "question": "Q109. Suppose you have the following code snippet and want to extract a list with only the letters. Which fragment of code will _not_ achieve that goal?\n```python\nmy_dictionary = {\n    'A': 1,\n    'B': 2,\n    'C': 3,\n    'D': 4,\n    'E': 5\n}\n```",
         "options": [
-            "hon",
-            "tionary = {",
-            "': 1,",
-            "': 2,"
+            "<br>\n```python\nletters = []\nfor letter in my_dictionary.values():\n    letters.append(letter)\n```",
+            "`letters = my_dictionary.keys()`",
+            "`letters = [letter for (letter, number) in my_dictionary.items()]`",
+            "`letters4 = list(my_dictionary)`\n**Explanation:** The first one (the correct option) returns the list of the values (the letters). The rest of the options return a list of the keys."
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q110. When an array is large, NumPy will not print the entire array when given the built-in `print` function. What function can you use within NumPy to force it to print the entire array?",
@@ -1105,7 +1105,7 @@
             "You use `try/except` blocks when you want to run some code, but need a way to execute different code if an exception is raised.",
             "You use `try/except` blocks inside of unit tests so that the unit testes will always pass.",
             "You use `try/except` blocks so that you can demonstrate to your code reviewers that you tried a new approach, but if the new approach is not what they were looking for, they can leave comments under the `except` keyword.",
-            "You use `try/except` blocks so that none of your functions or methods return `None`."
+            "You use `try/except` blocks so that none of your functions or methods return `None`.\n[Reference](https://runestone.academy/ns/books/published/fopp/Exceptions/using-exceptions.html#:~:text=The%20reason%20to%20use%20try,you're%20writing%20the%20code)"
         ],
         "_ps": 0
     },
@@ -1125,19 +1125,19 @@
             "sys.stdout",
             "traceback",
             "warnings",
-            "exceptions"
+            "exceptions\n```python\nx = {1,2,3,4,5}\nx.add(5)\nx.add(6)\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q114. What will be the value of x after running this code?\n```python\nx = {1,2,3,4,5}\nx.add(5)\nx.add(6)\n```",
         "options": [
-            "hon",
-            ",2,3,4,5}",
-            "5)",
-            "6)"
+            "`{1, 2, 3, 4, 5, 5, 6}`",
+            "`{5, 6, 1, 2, 3, 4, 5, 6}`",
+            "`{6, 1, 2, 3, 4, 5}`",
+            "`{1, 2, 3, 4, 5, 6}`\n**Explanation:** The `.add()` method adds the element to the set only if it doesn't exist."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q115. If you do not explicitly return a value from a function, what happens?",
@@ -1145,37 +1145,37 @@
             "The function will enter an infinite loop because it will not know when to stop executing its code.",
             "If `return` keyword is absent, the function will return `True`.",
             "If `return` keyword is absent, the function will return `None`.",
-            "The function will return a `RuntimeError` if you do not return a value."
+            "The function will return a `RuntimeError` if you do not return a value.\n```python\nfruit_info = {\n    'fruit': 'apple',\n    'count': 2,\n    'price': 3.5\n}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q116. How would you access and store all of the keys in this dictionary at once?\n```python\nfruit_info = {\n    'fruit': 'apple',\n    'count': 2,\n    'price': 3.5\n}\n```",
         "options": [
-            "hon",
-            "info = {",
-            "ruit': 'apple',",
-            "ount': 2,"
+            "`my_keys = fruit_info.to_keys()`",
+            "`my_keys = fruit_info.all_keys()`",
+            "`my_keys = fruit_info.keys`",
+            "`my_keys = fruit_info.keys()`\n```python\ndef be_friendly(greet = \"How are you!\", name):\n    pass\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q117. What is wrong with this function definition?\n```python\ndef be_friendly(greet = \"How are you!\", name):\n    pass\n```",
         "options": [
-            "hon",
-            "_friendly(greet = \"How are you!\", name):",
-            "ss",
-            ""
+            "`name` is a reserved word.",
+            "Underscores are not allowed in function names.",
+            "A non-default argument follows a default argument.",
+            "There is nothing wrong with this function definition."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q118. Given that NumPy is imported as `np`, which choice will return `True`?\n```python\na = np.zeros([3,4])\nb = a.copy()\nnp.array_equal(a,b)\n```\n```python\na = np.empty([3,4])\nb = np.empty([3,4])\nnp.array_equal(a,b)\n```\n```python\na = np.zeros([3,4])\nb = np.zeros([4,3])\nnp.array_equal(a,b)\n```",
+        "question": "Q118. Given that NumPy is imported as `np`, which choice will return `True`?",
         "options": [
-            "<br>",
-            "hon",
-            ".zeros([3,4])",
-            "copy()"
+            "<br>\n```python\na = np.zeros([3,4])\nb = a.copy()\nnp.array_equal(a,b)\n```",
+            "<br>\n```python\na = np.empty([3,4])\nb = np.empty([3,4])\nnp.array_equal(a,b)\n```",
+            "<br>\n```python\na = np.zeros([3,4])\nb = np.zeros([4,3])\nnp.array_equal(a,b)\n```",
+            "<br>\n```python\na = np.array([1, np.nan])\nnp.array_equal(a,a)\n```"
         ],
         "_ps": 0
     },
@@ -1185,19 +1185,19 @@
             "`// This is a comment`",
             "`# This is a comment`",
             "`-- This is a comment`",
-            "`/* This is a comment *\\`"
+            "`/* This is a comment *\\`\n```python\nimport numpy as np\na = np.array([1,2,3])\nb = np.array([4,5,6])\nc = a*b\nd = np.dot(a,b)\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q120. In this code fragment, what will the values of c and d be equivalent to?\n```python\nimport numpy as np\na = np.array([1,2,3])\nb = np.array([4,5,6])\nc = a*b\nd = np.dot(a,b)\n```\n```python\nc = [ a[1] * b[1], a[2] * b[2], a[3] * b[3] ]\nd = sum(c)\n```\n```python\nc = a[0] * b[0], a[1] * b[1], a[2] * b[2]\nd = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n```\n```python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\nd = sum(a) + sum(b)\n```",
+        "question": "Q120. In this code fragment, what will the values of c and d be equivalent to?\n```python\nimport numpy as np\na = np.array([1,2,3])\nb = np.array([4,5,6])\nc = a*b\nd = np.dot(a,b)\n```",
         "options": [
-            "hon",
-            " numpy as np",
-            ".array([1,2,3])",
-            ".array([4,5,6])"
+            "A\n```python\nc = [ a[1] * b[1], a[2] * b[2], a[3] * b[3] ]\nd = sum(c)\n```",
+            "B\n```python\nc = a[0] * b[0], a[1] * b[1], a[2] * b[2]\nd = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n```",
+            "C\n```python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\nd = sum(a) + sum(b)\n```",
+            "D\n```python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\nd = sum(c)\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q121. What two functions within the NumPy library could you use to solve a system of linear equations?",
@@ -1215,19 +1215,19 @@
             "`my_list = (2, 'apple', 3.5)`",
             "`my_list = [2, 'apple', 3.5]`",
             "`my_list = [2, 'apple', 3.5].to_list()`",
-            "`my_list = to_list(2, 'apple', 3.5)`"
+            "`my_list = to_list(2, 'apple', 3.5)`\n[Reference](https://www.tutorialspoint.com/python/python_lists.htm)\n```python\nnum_list = [21, 13, 19, 3, 11, 5, 18]\nnum_list.sort()\nnum_list[len(num_list) // 2]\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q123. This code provides the **\\_** of the list of numbers.\n```python\nnum_list = [21, 13, 19, 3, 11, 5, 18]\nnum_list.sort()\nnum_list[len(num_list) // 2]\n```",
         "options": [
-            "hon",
-            "st = [21, 13, 19, 3, 11, 5, 18]",
-            "st.sort()",
-            "st[len(num_list) // 2]"
+            "mode",
+            "average",
+            "mean",
+            "median\n**Explanation:** The median is the value separating the higher half from the lower half of a data sample. Here it is 13."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q124. What are the two main data structures in the Pandas library?",
@@ -1235,7 +1235,7 @@
             "Arrays and DataFrames",
             "Series and Matrixes",
             "Matrixes and DataFrames",
-            "Series and DataFrames"
+            "Series and DataFrames\n[Reference](https://pandas.pydata.org/docs/user_guide/dsintro.html)"
         ],
         "_ps": 3
     },
@@ -1245,7 +1245,7 @@
             "`matrix = (vector.shape = (100,100))`",
             "`matrix = vector.to_matrix(100,100)`",
             "`matrix = matrix(vector,100,100)`",
-            "`matrix = vector.reshape(100, 100)`"
+            "`matrix = vector.reshape(100, 100)`\n[Reference](https://www.w3schools.com/python/numpy/numpy_array_reshape.asp)"
         ],
         "_ps": 3
     },
@@ -1255,7 +1255,7 @@
             "dictionnary",
             "list",
             "set",
-            "string"
+            "string\n[Reference](https://www.tutorialspoint.com/python_text_processing/python_string_immutability.htm)\n### Q127. What is the output of this code?\n```python\ndef myFunction(country = \"France\"):\n    print(\"Hello, I am from\", country)\nmyFunction(\"Spain\")\nmyFunction(\"\")\nmyFunction()\n```"
         ],
         "_ps": 3
     },
@@ -1265,49 +1265,49 @@
             "Anonymous Class",
             "Parent Class",
             "Nested Class",
-            "Abstract Class"
+            "Abstract Class\n[Reference](https://www.scaler.com/topics/python/data-abstraction-in-python/)\n![Q129](images/Q129.png)"
         ],
         "_ps": 3
     },
     {
         "question": "Q129. Using Pandas, we load a data set from Kaggle, as structured in the image below. Which command will return the total number of survivors?\n![Q129](images/Q129.png)",
         "options": [
-            "](images/Q129.png)",
             "`sum(titanic['Survived'])`",
             "`[x for x in titanic['Survived'] if x == 1]`",
-            "`len(titanic[\"Survived\"])`"
+            "`len(titanic[\"Survived\"])`",
+            "`sum(titanic['Survived']==0)`\n**Explanation:** The `titanic['Survived']` returns a `pandas.Series` object, which contains the `Survived` column of the `DataFrame`.\nAdding the values of this column (i.e. `sum(titanic['Survived'])`) returns the total number of survivors since a survivor is represented by a 1 and a loss by 0.\n```python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n# example output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q130. How would you create a list of tuples matching these lists of characters and actors?\n```python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n# example output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n```",
+        "options": [
+            "`[(x,y)] for x in characters for y in actors]`",
+            "`list(zip(characters, actors))`",
+            "<br>\n```python\nd = {}\nfor x in range(1, len(characters)):\n    d[x] = actors[x]\n```",
+            "`{x:y for x in characters for y in actors}`\n```python\n{x : x*x for x in range(1,100)}\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q130. How would you create a list of tuples matching these lists of characters and actors?\n```python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n# example output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n```\n```python\nd = {}\nfor x in range(1, len(characters)):\n    d[x] = actors[x]\n```",
-        "options": [
-            "hon",
-            "ters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]",
-            " = [\"Downey\", \"Holland\", \"Evans\"]",
-            "ple output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]"
-        ],
-        "_ps": -1
-    },
-    {
         "question": "Q131. What will this statement return?\n```python\n{x : x*x for x in range(1,100)}\n```",
         "options": [
-            "hon",
-            "*x for x in range(1,100)}",
-            "",
-            "a dictionary with x as a key, and x squared as its value; from 1 to 100"
+            "a dictionary with x as a key, and x squared as its value; from 1 to 100",
+            "a dictionary with x as a key, and x squared as its value; from 1 to 99",
+            "a set of tuples, consisting of (x, x squared); from 1 to 99",
+            "a list with all numbers squared from 1 to 99\n![Q132](images/Q132.png)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q132. Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?\n![Q132](images/Q132.png)",
         "options": [
-            "](images/Q132.png)",
             "`def jaccard(a, b): return len (a | b) / len (a & b)`",
             "`def jaccard(a, b): return len (a & b) / len (a | b)`",
-            "`def jaccard(a, b): return len (a && b) / len (a || b)`"
+            "`def jaccard(a, b): return len (a && b) / len (a || b)`",
+            "`def jaccard(a, b): return a.intersection(b) / a.union(b)`\n[Reference](https://docs.python.org/3/tutorial/datastructures.html?highlight=set#sets.)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q133. Which choice is not a native numerical type in Python?",
@@ -1315,7 +1315,7 @@
             "Long",
             "Int",
             "Float",
-            "Double"
+            "Double\n### Q134. What will be the output of this code?\n```python\n[1,2,3] * 3\n```"
         ],
         "_ps": 3
     },
@@ -1334,8 +1334,7 @@
         "options": [
             "Strings can be enclosed by double quotes (\") or single quotes (').",
             "Strings can only be enclosed in single quotes (').",
-            "Single character strings must be enclosed in single quotes ('), and the rest must be enclosed in double quotes (\").",
-            "Strings can only be enclosed in double quotes (\")."
+            "Single character strings must be enclosed in single quotes ('), and the rest must be enclosed in double quotes (\")."
         ],
         "_ps": 0
     }

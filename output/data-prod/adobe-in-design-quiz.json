@@ -5,7 +5,7 @@
             "to change the number of columns in a text frame",
             "to apply a drop shadow to the frame",
             "to change the corners of a frame from corner to rounded",
-            "to change the fill and stroke of a text frame"
+            "to change the fill and stroke of a text frame\n[Ref.](https://www.agitraining.com/adobe/indesign/tutorials/text-frame-options-in-indesign?page=4#:~:text=You%20can%20have%20InDesign%20determine,choosing%20Object%20%3E%20Text%20Frame%20Options.)"
         ],
         "_ps": 0
     },
@@ -15,19 +15,19 @@
             "Effects",
             "Stroke",
             "Transform",
-            "Pathfinder"
+            "Pathfinder\n[Ref.](https://helpx.adobe.com/in/indesign/using/applying-line-stroke-settings.html#:~:text=Use%20the%20Start%20and%20End,the%20Start%20and%20End%20menus.)\n![Q3](images/Q3.jpg)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q3. In the image shown, what do you know about the Body Text paragraph style?",
+        "question": "Q3. In the image shown, what do you know about the Body Text paragraph style?\n![Q3](images/Q3.jpg)",
         "options": [
-            "images/Q3.jpg)",
             "The selected text was not formatted using the style definition.",
             "The selected text is in overset text outside the boundaries of the current frame.",
-            "The style has been applied to two or more paragraphs."
+            "The style has been applied to two or more paragraphs.",
+            "The style has been added since the master styles were created.\n[Ref.](https://helpx.adobe.com/indesign/using/paragraph-character-styles.html)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q4. You want to ensure that an image on your page is exactly 25% of its original size. How can you determine whether the image is set to the desired size?",
@@ -85,19 +85,19 @@
             "Objects on master page A are not visible.",
             "Objects on master page A must always appear behind objects from master page B.",
             "Objects on master page A cannot be selected unless you override the objects.",
-            "Objects on master page A cannot be selected or changed."
+            "Objects on master page A cannot be selected or changed.\n![Q10](images/q10.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q10. In the image shown, the text is on a path. You want to move the text farther to the right along the path. How can you accomplish this?",
+        "question": "Q10. In the image shown, the text is on a path. You want to move the text farther to the right along the path. How can you accomplish this?\n![Q10](images/q10.png)",
         "options": [
-            "(images/q10.png)",
             "Drag the blue square D.",
             "Drag the side handle B",
-            "Drag the slanted line A."
+            "Drag the slanted line A.",
+            "Drag the center tick mark C."
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q11. When you select a rectangular frame on the page, InDesign displays a yellow square near the frame's upper-right corner. What does this allow you to do?",
@@ -135,27 +135,27 @@
             "Tables are always anchored in a story in a text frame.",
             "To edit text in a table, you should first click **Table>Convert Table to Text**",
             "Tables must contain more than one cell.",
-            "Tables cannot be anchored in a story in a text frame"
+            "Tables cannot be anchored in a story in a text frame\n![Q15](images/Q15.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q15. Which feature would you use to create the effect shown, where the grouped circles blend with each other but not the object behind them?",
+        "question": "Q15. Which feature would you use to create the effect shown, where the grouped circles blend with each other but not the object behind them?\n![Q15](images/Q15.png)",
         "options": [
-            "(images/Q15.png)",
             "Global Light",
             "the Screen blending mode",
-            "Isolate Blending"
+            "Isolate Blending",
+            "Knockout Group\n![Q16](images/Q16.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q16. In the image shown, what do the colored frame edges indicate?",
+        "question": "Q16. In the image shown, what do the colored frame edges indicate?\n![Q16](images/Q16.png)",
         "options": [
-            "(images/Q16.png)",
             "which layer each object is on",
             "which master page each object is on",
-            "which object style is applied to the frame"
+            "which object style is applied to the frame",
+            "that the red frame is locked"
         ],
         "_ps": -1
     },
@@ -165,17 +165,17 @@
             "Ctrl (Windows) or Command (Mac)",
             "Alt+Shift (Windows) or Option+Shift (Mac)",
             "Ctrl+Shift (Windows) or Command+Shift (Mac)",
-            "Alt+Spacebar (Windows) or Options+Spacebar (Mac)"
+            "Alt+Spacebar (Windows) or Options+Spacebar (Mac)\n![Q18](images/Q18.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q18. In the image shown, what can you infer about how this document will print?",
+        "question": "Q18. In the image shown, what can you infer about how this document will print?\n![Q18](images/Q18.png)",
         "options": [
-            "(images/Q18.png)",
             "The page wil be scaled to fit the paper.",
             "All document layers will be visible",
-            "Some of the InDesign page will be cropped off."
+            "Some of the InDesign page will be cropped off.",
+            "The master page P is applied to the document pages."
         ],
         "_ps": -1
     },
@@ -184,8 +184,7 @@
         "options": [
             "Double-click the swatch.",
             "Option-click (Mac) or Alt-click (Windows) the swatch.",
-            "You cannot apply a color swatch to a color stop in the **Gradient** panel.",
-            "Drag the color stop over the color in the **Swatches** panel."
+            "You cannot apply a color swatch to a color stop in the **Gradient** panel."
         ],
         "_ps": -1
     }

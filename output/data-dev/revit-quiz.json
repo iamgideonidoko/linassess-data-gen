@@ -134,8 +134,7 @@
         "options": [
             "Sort Sheets Descending Order",
             "Reverse Print Order",
-            "Last Sheet to Bottom",
-            "Set Sheets to Plot in Reverse"
+            "Last Sheet to Bottom"
         ],
         "_ps": 1
     }

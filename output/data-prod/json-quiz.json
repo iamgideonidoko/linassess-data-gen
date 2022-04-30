@@ -5,19 +5,19 @@
             "schema",
             "\\$schema",
             "JsonSchema",
-            "JSONschema"
+            "JSONschema\n```\n[\n    'red',\n    'blue',\n    'green'\n]\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q2. Which code is the closest JSON equivalent of the data shown?",
+        "question": "Q2. Which code is the closest JSON equivalent of the data shown?\n```\n[\n    'red',\n    'blue',\n    'green'\n]\n```",
         "options": [
-            "",
-            "",
-            "ed',",
-            "lue',"
+            "```json\n[\"red\", \"blue\", \"green\"]\n```",
+            "```json\n[\"red\", \"blue\", \"green\"]\n```",
+            "```json\n{\n  \"color\": \"red\",\n  \"color\": \"blue\",\n  \"color\": \"green\"\n}\n```",
+            "```json\n{\n  \"red\": \"red\",\n  \"blue\": \"blue\"\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q3. Which JavaScript method converts a JavaScript value to Json?",
@@ -45,19 +45,19 @@
             "unpacking",
             "serialization",
             "deserialization",
-            "parsing"
+            "parsing\n`accountNum: '000605802'`"
         ],
         "_ps": 1
     },
     {
-        "question": "Q6. Which code uses the correct JSON syntax to encode the key/value pair shown?",
+        "question": "Q6. Which code uses the correct JSON syntax to encode the key/value pair shown?\n`accountNum: '000605802'`",
         "options": [
-            "ntNum: '000605802'`",
             "\"accountNum\": \"000605802\"",
             "accountNum: \"000605802\"",
-            "\"accountNum\": 000605802"
+            "\"accountNum\": 000605802",
+            "accountNum: 000605802"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q7. What character do you specify before a JSON control character when you want to use that control characters as a literal part of a string?",
@@ -85,19 +85,19 @@
             "important",
             "base",
             "core",
-            "required"
+            "required\n```\n{\n\tphoto: {\n\twidth: 1600,\n\theight: 900,\n\tbinaries: {\n\turl: 'https://www.example.com/images/34097349843',\n\tthumbnail: 'https://www.example.com/images/thumbs/34097349843'\n\t},\n\tanimated: false,\n\ttags: [116, 943, 234, 38793],\n\t}\n}\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q10. Which is the valid JSON equivalent of the data shown?",
+        "question": "Q10. Which is the valid JSON equivalent of the data shown?\n```\n{\n\tphoto: {\n\twidth: 1600,\n\theight: 900,\n\tbinaries: {\n\turl: 'https://www.example.com/images/34097349843',\n\tthumbnail: 'https://www.example.com/images/thumbs/34097349843'\n\t},\n\tanimated: false,\n\ttags: [116, 943, 234, 38793],\n\t}\n}\n```",
         "options": [
-            "",
-            "",
-            ": {",
-            ": 1600,"
+            "```json\n{\n  \"photo\": {\n    \"width\": 1600,\n    \"height\": 900,\n    \"binaries\": {\n      \"url\": \"https://www.example.com/images/34097349843\",\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\n    },\n    \"animated\": \"false\",\n    \"tags\": [116, 943, 234, 38793]\n  }\n}\n```",
+            "```json\n{\n  \"photo\": {\n    \"width\": 1600,\n    \"height\": 900,\n    \"binaries\": {\n      \"url\": \"https://www.example.com/images/34097349843\",\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\n    },\n    \"animated\": false,\n    \"tags\": [116, 943, 234, 38793]\n  }\n}\n```",
+            "```json\n{\n  \"photo\": {\n    \"width\": 1600,\n    \"height\": 900,\n    \"binaries\": {\n      \"url\": \"https://www.example.com/images/34097349843\",\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\n    },\n    \"animated\": false,\n    \"tags\": [116, 943, 234, 38793]\n  }\n}\n```",
+            "```json\n{\n  \"photo\": {\n    \"width\": \"1600\",\n    \"height\": \"900\",\n    \"binaries\": {\n      \"url\": \"https://www.example.com/images/34097349843\",\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\n    },\n    \"animated\": \"false\",\n    \"tags\": [\"116\", \"943\", \"234\", \"38793\"]\n  }\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q11. How do you store several paragraphs of text as a string in JSON?",
@@ -105,19 +105,19 @@
             "Escape all whitespaces expect space characters.",
             "Escape line breaks.",
             "Escape paragraphs.",
-            "Remove all whitespaces"
+            "Remove all whitespaces\n`loggedIn: true`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q12. What data type is represented by the value of the key/value pair shown?",
+        "question": "Q12. What data type is represented by the value of the key/value pair shown?\n`loggedIn: true`",
         "options": [
-            "dIn: true`",
             "string",
             "Boolean",
-            "number"
+            "number",
+            "object"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q13. If you need to store the loggedIn status of a user in JSON as a boolean, what is the correct syntax?",
@@ -155,29 +155,29 @@
             "JSON.parse()",
             "JSON.stringify()",
             "JSON.toString()",
-            "JSON.objectify()"
+            "JSON.objectify()\n    1.Sends data to specific server to create or update information.\n    2.Sends data to specific server to create or update information without the risk of creating the resource more than once.\n    3.Previews what the GET request response might be without the body of the text.\n    4.Learns the communication channels used by the target source.\n    5.Requests information from a specific source.\n    6.Removes information."
         ],
         "_ps": 0
     },
     {
-        "question": "Q17. Transferring JSON information from client to server and back again often includes HTTP requests. Match each method with the best choice describing its use.",
+        "question": "Q17. Transferring JSON information from client to server and back again often includes HTTP requests. Match each method with the best choice describing its use.\n    1.Sends data to specific server to create or update information.\n    2.Sends data to specific server to create or update information without the risk of creating the resource more than once.\n    3.Previews what the GET request response might be without the body of the text.\n    4.Learns the communication channels used by the target source.\n    5.Requests information from a specific source.\n    6.Removes information.",
         "options": [
-            "Sends data to specific server to create or update information.",
-            "Sends data to specific server to create or update information without the risk of creating the resource more than once.",
-            "Previews what the GET request response might be without the body of the text.",
-            "Learns the communication channels used by the target source."
+            "1.POST 2.DELETE 3.OPTIONS 4.HEADER 5.GET 6.PUT",
+            "1.POST 2.PUT 3.HEADER 4.OPTIONS 5.GET 6.DELETE",
+            "1.POST 2.DELETE 3.OPTIONS 4.HEADER 5.GET 6.PUT",
+            "1.POST 2.PUT 3.HEADER 4.OPTIONS 5.GET 6.DELETE"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q18. Which code uses valid JSON syntax for the text \"Centennial Olympics?",
         "options": [
-            "",
-            "n",
-            "",
-            ": \"Atlanta\","
+            "```json\n{\n\"host\": \"Atlanta\",\n\"year\": 1996\n/_ Centennial Olympics _/\n}\n```",
+            "```json\n{\n\"host\": \"Atlanta\",\n\"year\": 1996,\n/_ Centennial Olympics _/\n}\n```",
+            "```json\n{\n  \"host\": \"Atlanta\",\n  \"year\": 1996\n  // Centennial Olympics\n}\n```",
+            "```json\n{\n  \"host\": \"Atlanta\",\n  \"year\": 1996,\n  \"comments\": \"Centennial Olympics\"\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q19. Can trailing commas be used in objects and arrays?",
@@ -225,29 +225,29 @@
             "Convert the date to UTC and enclose in quotes.",
             "Encode the date as string using the ISO-8601 date format.",
             "Wrap the date in double quotes.",
-            "Add a \"date\" key to your object and include the date as string."
+            "Add a \"date\" key to your object and include the date as string.\n`JSON.parse({\"first\": \"Sarah\", \"last\": \"Connor\"}) ;`"
         ],
         "_ps": 1
     },
     {
-        "question": "Q24. What’s wrong with this JavaScript?",
+        "question": "Q24. What’s wrong with this JavaScript?\n`JSON.parse({\"first\": \"Sarah\", \"last\": \"Connor\"}) ;`",
         "options": [
-            "parse({\"first\": \"Sarah\", \"last\": \"Connor\"}) ;`",
             "JSON should be wrapped with curly braces.",
             "JSON.parse() is missing an argument.",
-            "The value supplied to JSON.parse() is not a string."
+            "The value supplied to JSON.parse() is not a string.",
+            "Nothing is wrong with it.\n```js\nprintNullness(JSON.parse('{ \"lemmings\": [] }'));\nprintNullness(JSON.parse('{ \"lemmings\": null }'));\nprintNullness(JSON.parse('{ \"lemmings\": \"null\" }'));\nfunction printNullness(testMe) {\n  if (testMe.lemmings == null) console.log('null');\n  else console.log('not null');\n}\n```"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
-        "question": "Q25. What does this JavaScript code print?",
+        "question": "Q25. What does this JavaScript code print?\n```js\nprintNullness(JSON.parse('{ \"lemmings\": [] }'));\nprintNullness(JSON.parse('{ \"lemmings\": null }'));\nprintNullness(JSON.parse('{ \"lemmings\": \"null\" }'));\nfunction printNullness(testMe) {\n  if (testMe.lemmings == null) console.log('null');\n  else console.log('not null');\n}\n```",
         "options": [
-            "",
-            "ullness(JSON.parse('{ \"lemmings\": [] }'));",
-            "ullness(JSON.parse('{ \"lemmings\": null }'));",
-            "ullness(JSON.parse('{ \"lemmings\": \"null\" }'));"
+            "A\n```\nnot null\nnull\nnot null\n```",
+            "B\n```\nnull\nnull\nnot null\n```",
+            "C\n```\nnot null\nnull\nnull\n```",
+            "D\n```\nnull\nnull\nnull\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q26. What tool might you use to validate your JSON?",
@@ -275,7 +275,7 @@
             "`\"constant\": \"6.022E23\"`",
             "`\"constant\": \"6\\.022\\E23\"`",
             "`constant: 6.022E23`",
-            "`constant: \"6.022E23\"`"
+            "`constant: \"6.022E23\"`\n[Reference](https://json-schema.org/understanding-json-schema/reference/numeric.html) **Explanation**: Scientific Notation is a valid JSON number. You can use `e` or `E`."
         ],
         "_ps": 0
     },
@@ -295,19 +295,19 @@
             "Because it's object-based.",
             "Because it's a simple and adaptable format for sharing data.",
             "Because it's based on JavaScript.",
-            "Because it is derived from SGML."
+            "Because it is derived from SGML.\n```\n{\n  \"avengers\": [\n    \"iron man\",\n    \"hulk\",\n    \"thor\",\n    \"black widow\",\n    \"ant man\",\n    \"spider man'\n  ]\n}\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q31. You need to assemble a list of members, but your JSON is not parsing correctly. How do you change it?",
+        "question": "Q31. You need to assemble a list of members, but your JSON is not parsing correctly. How do you change it?\n```\n{\n  \"avengers\": [\n    \"iron man\",\n    \"hulk\",\n    \"thor\",\n    \"black widow\",\n    \"ant man\",\n    \"spider man'\n  ]\n}\n```",
         "options": [
-            "",
-            "",
-            "ngers\": [",
-            "ron man\","
+            "A\n```json\n{\n  \"avengers\": [\"iron man\", \"hulk\", \"thor\", \"black widow\", \"ant man\", \"spider man\"]\n}\n```",
+            "B\n```json\n{\n  'avengers': [\n  {'iron man',\n  'hulk',\n  'thor',\n  'black widow',\n  'ant man',\n  'spider man'}\n  ]\n}\n```",
+            "C\n```json\n{\n  \"avengers\": [\"iron man\", \"hulk\", \"thor\", \"black widow\", \"ant man\", \"spider man\"]\n}\n```",
+            "D\n```json\n{\n  \"avengers\": {[\n    \"iron man\",\n    \"hulk\",\n    \"thor\",\n    \"black widow\",\n    \"ant man\",\n    \"spider man\"\n  ]}\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q32. When building dynamic web applications using AJAX, developers originally used the \\_ data format, which has since been replaced by JSON.",
@@ -335,19 +335,19 @@
             "['tatooine', 'hoth', 'dagobah']",
             "[tatooine, hoth, dagobah]",
             "[\"tatooine\", \"hoth\", \"dagobah\",]",
-            "[\"tatooine\", \"hoth\", \"dagobah\"]"
+            "[\"tatooine\", \"hoth\", \"dagobah\"]\n```json\n[\n  {\n    \"year\": 2024\n  },\n  {\n    \"location\": \"unknown\"\n  }\n]\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q35. What data type is encoded in the outermost component of the JSON shown?",
+        "question": "Q35. What data type is encoded in the outermost component of the JSON shown?\n```json\n[\n  {\n    \"year\": 2024\n  },\n  {\n    \"location\": \"unknown\"\n  }\n]\n```",
         "options": [
-            "n",
-            "",
-            "",
-            "ear\": 2024"
+            "object",
+            "array",
+            "number",
+            "string"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q36. Which is ignored by JSON but treated as significant by YAML?",
@@ -355,7 +355,7 @@
             "trailing commas",
             "trailing decimals",
             "whitespace",
-            "leading zeroes"
+            "leading zeroes\n[Reference](https://www.geeksforgeeks.org/what-is-the-difference-between-yaml-and-json/)"
         ],
         "_ps": 2
     },
@@ -385,7 +385,7 @@
             "\"lastVisit\": \"null\"",
             "lastVisit: null",
             "\"lastVisit\": 0",
-            "\"lastVisit\": undefined"
+            "\"lastVisit\": undefined\nNote: None of the above options appear to be correct. A correct answer would be `\"lastVisit\": null`"
         ],
         "_ps": 0
     },
@@ -425,7 +425,7 @@
             "\"UPC\": \\043875",
             "UPC: \"043875\"",
             "\"UPC\": 043875",
-            "UPC: '043875'"
+            "UPC: '043875'\n**NONE OF THESE ARE CORRECT A CORRECT ANSWER WOULD LOOK LIKE `\"UPC\": \"043875\"`**"
         ],
         "_ps": -1
     },
@@ -495,19 +495,19 @@
             "As a string with quotes",
             "As a string without quotes",
             "As a string in ISO 8583 format",
-            "As a string in ISO 8601 format"
+            "As a string in ISO 8601 format\n![JSON object with key \"Vehicles\" containing an array of emojis](images/Q51/Q51.jpeg)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q51. Is the JSON code shown here valid?",
+        "question": "Q51. Is the JSON code shown here valid?\n![JSON object with key \"Vehicles\" containing an array of emojis](images/Q51/Q51.jpeg)",
         "options": [
-            " object with key \"Vehicles\" containing an array of emojis](images/Q51/Q51.jpeg)",
             "No, emojis must be escaped with a backslash.",
             "No, JSON strings are not allowed to use emojis.",
-            "No, emojis should never be enclosed with double quotes."
+            "No, emojis should never be enclosed with double quotes.",
+            "Yes, emojis are valid characters because JSON strings are unicode."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q52. What data structure do you use to encode ordered information?",
@@ -535,29 +535,29 @@
             "key: \"value\"",
             "\"key\": \"value\"",
             "key, \"value\"",
-            "'key': 'value'"
+            "'key': 'value'\n```json\n{\n  \"result\": [\n    {\n      \"year\": 2024\n    },\n    {\n      \"location\": \"unknown\"\n    }\n  ]\n}\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q55. What data type is encoded in the outermost component of the JSON shown?",
+        "question": "Q55. What data type is encoded in the outermost component of the JSON shown?\n```json\n{\n  \"result\": [\n    {\n      \"year\": 2024\n    },\n    {\n      \"location\": \"unknown\"\n    }\n  ]\n}\n```",
         "options": [
-            "n",
-            "",
-            "ult\": [",
-            ""
+            "number",
+            "array",
+            "string",
+            "object\n```json\n{\n  \"series\": \"Star Trek\",\n  \"episodes\": \"The Trouble with Tribbles\"\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q56. What's wrong with this JSON object?",
+        "question": "Q56. What's wrong with this JSON object?\n```json\n{\n  \"series\": \"Star Trek\",\n  \"episodes\": \"The Trouble with Tribbles\"\n}\n```",
         "options": [
-            "n",
-            "",
-            "ies\": \"Star Trek\",",
-            "sodes\": \"The Trouble with Tribbles\""
+            "Key/value pairs should be separated by semicolons.",
+            "Keys should be enclosed with double quotes.",
+            "Key/value pairs should always have a trailing comma.",
+            "Keys and values should be enclosed with single quotes."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q57. How should comments be formatted in JSON?",
@@ -565,19 +565,19 @@
             "Wrap the comments in single quotes and place it at the bottom of the file.",
             "Wrap the comments in double parentheses.",
             "Escape comments by placing two slashes at the start of the comment.",
-            "JSON does not support comments."
+            "JSON does not support comments.\n```json\n\"name\": 'bb-8'\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q58. How would you make the following string valid in JSON?",
+        "question": "Q58. How would you make the following string valid in JSON?\n```json\n\"name\": 'bb-8'\n```",
         "options": [
-            "n",
-            ": 'bb-8'",
-            "",
-            "name: \"bb-8\""
+            "name: \"bb-8\"",
+            "\"name\": \\'bb-8\\'",
+            "\"name\": \"bb-8\"",
+            "\"name\": bb-8"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q59. How are values separated in JSON?",
@@ -795,7 +795,7 @@
             "true, false, null",
             "true, false",
             "TRUE, FALSE, NULL",
-            "true, false, null"
+            "true, false, null\n### Q81. Which character _cannot_ be part of string data within JSON without additional formatting?"
         ],
         "_ps": 0
     },
@@ -804,8 +804,7 @@
         "options": [
             "It has a flat architecture.",
             "It has a rewritable structure.",
-            "It has an array-only structure.",
-            "It has a table structure."
+            "It has an array-only structure."
         ],
         "_ps": 2
     }

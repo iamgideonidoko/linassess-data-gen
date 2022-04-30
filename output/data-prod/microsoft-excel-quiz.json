@@ -15,19 +15,19 @@
             "ISNUMBER and ISTEXT",
             "ISNUMBER and ISALPHA",
             "ISVALUE AND ISNUMBER",
-            "ISVALUE and ISTEXT"
+            "ISVALUE and ISTEXT\n![Jan](images/003.png?raw=true)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q3. If you drag the fill handle (lower-right corner) of cell A2 downward into cells A3, A4, and A5, what contents will appear in those cells?",
+        "question": "Q3. If you drag the fill handle (lower-right corner) of cell A2 downward into cells A3, A4, and A5, what contents will appear in those cells?\n![Jan](images/003.png?raw=true)",
         "options": [
-            "(images/003.png?raw=true)",
             "Jan, Jan, Jan",
             "Feb, Mar, blank cell",
-            "Feb, Mar, Apr"
+            "Feb, Mar, Apr",
+            "FEB, MAB, APR"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q4. If cell A3 contains the text THE DEATH OF CHIVALRY, what will the function =PROPER(A3) return?",
@@ -35,19 +35,19 @@
             "the death of chivalry",
             "The death of Chivalry",
             "THE DEATH OF CHIVALRY",
-            "The Death Of Chivalry"
+            "The Death Of Chivalry\n![Subtotal](images/001.png?raw=true)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q5. In the worksheet below, you want to use Data > Subtotal to show a subtotal value per sport. What must you do BEFORE applying the Subtotal function?",
+        "question": "Q5. In the worksheet below, you want to use Data > Subtotal to show a subtotal value per sport. What must you do BEFORE applying the Subtotal function?\n![Subtotal](images/001.png?raw=true)",
         "options": [
-            "otal](images/001.png?raw=true)",
             "Sort by the data in Column E.",
             "Format the data in Column D.",
-            "Sort by the data in Column D."
+            "Sort by the data in Column D.",
+            "Format the data in Column E."
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q6. When editing a cell, what do you press to cycle between relative, mixed, and absolute cell references?",
@@ -95,19 +95,19 @@
             "three inputs",
             "four inputs",
             "two inputs",
-            "one input"
+            "one input\n![Tabular form](images/004.png?raw=true)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q11. In the image below, which option(s) can you select so that the appropriate field headers appear in cells A4 and B3 instead of the terms Row Labels and Column Labels, respectively?",
+        "question": "Q11. In the image below, which option(s) can you select so that the appropriate field headers appear in cells A4 and B3 instead of the terms Row Labels and Column Labels, respectively?\n![Tabular form](images/004.png?raw=true)",
         "options": [
-            "lar form](images/004.png?raw=true)",
             "Show in Tabular Form",
             "Show in Compact Form",
-            "Show in Compact For or Show in Outline Form"
+            "Show in Compact For or Show in Outline Form",
+            "Show in Tabular Form or Show in Outline Form"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q12. A cell contains the value 7.877 and you want it to display as 7.9. How can you accomplish this?",
@@ -165,29 +165,29 @@
             "pie chart",
             "line chart",
             "XY scatter chart",
-            "bar chart"
+            "bar chart\n![AutoSum formula](images/006.png?raw=true)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q18. The AutoSum formulas in the range C9:F9 below return unexpected values. Why is this?",
+        "question": "Q18. The AutoSum formulas in the range C9:F9 below return unexpected values. Why is this?\n![AutoSum formula](images/006.png?raw=true)",
         "options": [
-            "Sum formula](images/006.png?raw=true)",
             "The AutoSum formulas refer to the column to the left of their cells.",
             "The AutoSum formulas exclude the bottom row of data.",
-            "The AutoSum formulas include the year at the top of each column in the calculation."
+            "The AutoSum formulas include the year at the top of each column in the calculation.\n      `The formula bar clearly shows it's the dates (top row) included, along with the total (bottom) row. Thus, the bottom row of data is not excluded.`",
+            "The AutoSum formulas include their own cells, creating a circular reference.\n![text filter](images/007.png?raw=true)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
-        "question": "Q19. The text filter in column A is designed to display only those rows where column A entry has a particular attribute. What is this attribute?",
+        "question": "Q19. The text filter in column A is designed to display only those rows where column A entry has a particular attribute. What is this attribute?\n![text filter](images/007.png?raw=true)",
         "options": [
-            " filter](images/007.png?raw=true)",
             "The second character in the cell is 9.",
             "The number 9 appears one or more times within the cell.",
-            "The cell is comprised of 9 characters."
+            "The cell is comprised of 9 characters.",
+            "The number 9 appears once and only once within the cell."
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q20. To ensure shapes and other objects are an equal left-to-right distance apart, select the shapes, click Page Layout > Align, and then click \\_.",
@@ -245,19 +245,19 @@
             "XY chart",
             "clustered column",
             "bubble chart",
-            "combo chart"
+            "combo chart\n![Select all](images/008.png?raw=true)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q26. In the image below, what does clicking the button indicated by the green arrow do?",
+        "question": "Q26. In the image below, what does clicking the button indicated by the green arrow do?\n![Select all](images/008.png?raw=true)",
         "options": [
-            "ct all](images/008.png?raw=true)",
             "Hides or shows the formula bar.",
             "Selects all.",
-            "Hides or shows the ribbon."
+            "Hides or shows the ribbon.",
+            "Selects objects."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q27. Which formula returns the value in cell A1 of the worksheet named MySheet?",
@@ -265,19 +265,19 @@
             "=MySheet!A1",
             "=MySheet_A1",
             "=MySheet&A1",
-            "=MySheet@A1"
+            "=MySheet@A1\n![Copy formatting](images/005.png?raw=true)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q28. In the worksheet below, you want to copy the formatting of cell A1 into cells B1:D1. Which approach (see arrows) accomplishes this the most efficiently?",
+        "question": "Q28. In the worksheet below, you want to copy the formatting of cell A1 into cells B1:D1. Which approach (see arrows) accomplishes this the most efficiently?\n![Copy formatting](images/005.png?raw=true)",
         "options": [
-            " formatting](images/005.png?raw=true)",
             "B",
             "C",
-            "A"
+            "A",
+            "D"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q29. Which formula correctly counts the number of numeric values in both B4:E4 and G4:I4?",
@@ -315,19 +315,19 @@
             "Protect Workbook",
             "Watch Window",
             "Data Validation",
-            "Filter"
+            "Filter\n![Subtotal](images/001.png?raw=true)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q33. You want to apply subtotals per sport in the data below. What should you do before applying subtotals?",
+        "question": "Q33. You want to apply subtotals per sport in the data below. What should you do before applying subtotals?\n![Subtotal](images/001.png?raw=true)",
         "options": [
-            "otal](images/001.png?raw=true)",
             "Format the data in column E.",
             "Format the data in column D.",
-            "Sort the data in column D."
+            "Sort the data in column D.",
+            "Sort the data in column E."
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q34. When you sort a list of numerical value into ascending or descending order, the value in the middle of the list is the \\_.",
@@ -355,19 +355,19 @@
             ":",
             "=",
             "(",
-            "-"
+            "-\n|     | A              | B               | C                 |\n| --- | -------------- | --------------- | ----------------- |\n| 1   | 8.5%           | 2018 Commission |                   |\n| 2   | Sales Rep      | 2018 Sales      | Commission Earned |\n| 3   | Jordan Hinton  | \\$123,938.00    |                   |\n| 4   | Lilah Douglas  | \\$5594,810.00   |                   |\n| 5   | Karyn Reese    | \\$235,954.00    |                   |\n| 6   | Chiquita Walsh | \\$684,760.00    |                   |"
         ],
         "_ps": 1
     },
     {
-        "question": "Q37. You need to determine the commission earned by each Sales Rep, based on the Sales amounts in B3:B50 and the Commission rate specified in cell A1. You want to enter a formula in C3 and copy it down to C50. Which formula should you use?",
+        "question": "Q37. You need to determine the commission earned by each Sales Rep, based on the Sales amounts in B3:B50 and the Commission rate specified in cell A1. You want to enter a formula in C3 and copy it down to C50. Which formula should you use?\n|     | A              | B               | C                 |\n| --- | -------------- | --------------- | ----------------- |\n| 1   | 8.5%           | 2018 Commission |                   |\n| 2   | Sales Rep      | 2018 Sales      | Commission Earned |\n| 3   | Jordan Hinton  | \\$123,938.00    |                   |\n| 4   | Lilah Douglas  | \\$5594,810.00   |                   |\n| 5   | Karyn Reese    | \\$235,954.00    |                   |\n| 6   | Chiquita Walsh | \\$684,760.00    |                   |",
         "options": [
-            "| A              | B               | C                 |",
-            "| -------------- | --------------- | ----------------- |",
-            "| 8.5%           | 2018 Commission |                   |",
-            "| Sales Rep      | 2018 Sales      | Commission Earned |"
+            "=\\$A1\\*B3",
+            "=$A$1\\*B3",
+            "=A1\\*\\$B3",
+            "=A1\\*B3"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q38. If you start a date series by dragging down the fill handle of a single cell that contains the date 12/1/19, what will you get?",
@@ -415,19 +415,19 @@
             "Fill color",
             "Font Color",
             "Pattern Style",
-            "Cell Style"
+            "Cell Style\n![Charts](images/002.png?raw=true)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q43. The charts below are based on the data in cells A3:G5. The chart on the right was created by copying the one on the left. Which ribbon button was clicked to change the layout of the chart on the right?",
+        "question": "Q43. The charts below are based on the data in cells A3:G5. The chart on the right was created by copying the one on the left. Which ribbon button was clicked to change the layout of the chart on the right?\n![Charts](images/002.png?raw=true)",
         "options": [
-            "ts](images/002.png?raw=true)",
             "Move Chart",
             "Switch Row/Column",
-            "Quick Layout"
+            "Quick Layout",
+            "Change Chart Type"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q44. Cell A20 displays an orange background when its value is 5. Changing the value to 6 changes the background color to green. What type of formatting is applied to cell A20?",
@@ -525,29 +525,29 @@
             "Cut and Fill",
             "Cut and Paste",
             "Copy and Transpose",
-            "Copy and Paste"
+            "Copy and Paste\n![image](images/Q54.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q54. You want to add a column to the PivotTable below that shows a 5% bonus for each sales rep. That data does not exists in the original data table. How can you do this without adding more data to the table?",
+        "question": "Q54. You want to add a column to the PivotTable below that shows a 5% bonus for each sales rep. That data does not exists in the original data table. How can you do this without adding more data to the table?\n![image](images/Q54.png)",
         "options": [
-            "e](images/Q54.png)",
             "Add a new PivotTable field.",
             "Add a calculated item",
-            "Add a new Summarize Value By field."
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q55. You need to determine the commission earned by each Sales rep, based on the Sales amount in B3:B50 and the Commission rate specified in cell A1. You want to enter a formula in C3 and copy it down to C50. Which formula should you use?",
-        "options": [
-            "e](images/Q55.png)",
-            "=A1\\*$B3",
-            "=A1\\*B3",
-            "=$A$1\\*B3"
+            "Add a new Summarize Value By field.",
+            "Add a calculated field.\n![image](images/Q55.png)"
         ],
         "_ps": 3
+    },
+    {
+        "question": "Q55. You need to determine the commission earned by each Sales rep, based on the Sales amount in B3:B50 and the Commission rate specified in cell A1. You want to enter a formula in C3 and copy it down to C50. Which formula should you use?\n![image](images/Q55.png)",
+        "options": [
+            "=A1\\*$B3",
+            "=A1\\*B3",
+            "=$A$1\\*B3",
+            "=$A1\\*B3"
+        ],
+        "_ps": 2
     },
     {
         "question": "Q56. The NOW() function returns the current date and time as 43740.665218. Which part of this value indicates the time?",
@@ -585,49 +585,49 @@
             "cell values only",
             "cell values and formats",
             "cell values and formulas",
-            "cell value, formats, and formulas"
+            "cell value, formats, and formulas\n![image](images/Q60.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q60. Which function, when entered into cell G7, allows you to determine the sum total of annual sles for market regions 18 and greater?",
+        "question": "Q60. Which function, when entered into cell G7, allows you to determine the sum total of annual sles for market regions 18 and greater?\n![image](images/Q60.png)",
         "options": [
-            "e](images/Q60.png)",
             "`=SUMIF(G2:G6,\">17\",F2:F6)`",
             "`=SUM(G2:G6,\">=18,F2:F6)`",
-            "`=SUMIF(F2:F6,\">=18\",G2:G6)`"
-        ],
-        "_ps": 3
-    },
-    {
-        "question": "Q61. Which function, when entered into cell F2 and then dragged to cell F6, returns the performance rating text (e.g., \"Good\", \"Poor\") for each representative?",
-        "options": [
-            "e](images/Q61.png)",
-            "`=RIGHT(E2,LEN(E2)-27)`",
-            "`=LEN(E2,MID(E2)-27)`",
-            "`=LEFT(E2,LEN(E2)-27)`"
-        ],
-        "_ps": 1
-    },
-    {
-        "question": "Q62. What is `Colors[Inventory]` referring to here?",
-        "options": [
-            "FS(Colors[Inventory],Colors[Colors],\"Orange\")`",
-            "the Inventory worksheet in the Colors workbook",
-            "the Inventory column in the Colors table",
-            "the Colors worksheet in the Inventory workbook"
+            "`=SUMIF(F2:F6,\">=18\",G2:G6)`",
+            "`=SUM(F2:F6,\"18+\",G2:G6)`\n![image](images/Q61.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q63. Which VLOOKUP function, when entered into cell L2 and then dragged to cell L5, returns the average number of calls for the representative IDs listed in column J?",
+        "question": "Q61. Which function, when entered into cell F2 and then dragged to cell F6, returns the performance rating text (e.g., \"Good\", \"Poor\") for each representative?\n![image](images/Q61.png)",
         "options": [
-            "e](images/Q63.png)",
+            "`=RIGHT(E2,LEN(E2)-27)`",
+            "`=LEN(E2,MID(E2)-27)`",
+            "`=LEFT(E2,LEN(E2)-27)`",
+            "`=RIGHT(E2,MID(E2)-27)`\n`=SUMIFS(Colors[Inventory],Colors[Colors],\"Orange\")`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q62. What is `Colors[Inventory]` referring to here?\n`=SUMIFS(Colors[Inventory],Colors[Colors],\"Orange\")`",
+        "options": [
+            "the Inventory worksheet in the Colors workbook",
+            "the Inventory column in the Colors table",
+            "the Colors worksheet in the Inventory workbook",
+            "the named range Colors[Inventory], which does not use Format as Table Feature\nTable[Column] can be used instead of cell references (C2:C7).\n[Reference](https://support.microsoft.com/en-us/office/using-structured-references-with-excel-tables-f5ed2452-2337-4f71-bed3-c8ae6d2b276e)\n![image](images/Q63.png)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q63. Which VLOOKUP function, when entered into cell L2 and then dragged to cell L5, returns the average number of calls for the representative IDs listed in column J?\n![image](images/Q63.png)",
+        "options": [
             "`=VLOOKUP(A2,J2:L5,1,FALSE)`",
             "`=VLOOKUP(J2,A$2:C$7,1,FALSE)`",
-            "`=VLOOKUP(J2,A$2:C$7,3,FALSE)`"
+            "`=VLOOKUP(J2,A$2:C$7,3,FALSE)`",
+            "`=VLOOKUP(J2,A2:C7,3,FALSE)`\n`because we are interested in the value of the 3rd column of the table`"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q64. Which formula calculates the total value of a single row of cells across a range of columns?",
@@ -635,29 +635,29 @@
             "`=SUBTOTAL(C1:Y15)`",
             "`=SUM(15L:15Z)`",
             "`=SUM(C15:Y15)`",
-            "`=SUM(C11:C35)`"
+            "`=SUM(C11:C35)`\n`the sum of columns C to Y for the same row 15`\n![image](images/Q65.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q65. Which value is returned when you enter `=LEN(C3)` into cell F3?",
+        "question": "Q65. Which value is returned when you enter `=LEN(C3)` into cell F3?\n![image](images/Q65.png)",
         "options": [
-            "e](images/Q65.png)",
             "4",
             "5",
-            "3"
+            "3",
+            "2\n![image](images/Q66.png)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
-        "question": "Q66. How can you create the lower table from the top one when the tables are `not` linked?",
+        "question": "Q66. How can you create the lower table from the top one when the tables are `not` linked?\n![image](images/Q66.png)",
         "options": [
-            "e](images/Q66.png)",
             "Select `Paste Special > Values.`",
             "Select `Paste Special > Transpose.`",
-            "Use the `TRANSPOSE` function"
+            "Use the `TRANSPOSE` function",
+            "Click `Switch Rows & Columns`\n`because it needs to be transposed without creating a reference`"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q67. Which function returns the number of characters in a text string in cell A1?",
@@ -665,39 +665,39 @@
             "`=RIGHT(A1)-LEFT(A1)+1`",
             "`=LEN(A1)`",
             "`=EXACT(A1)`",
-            "`=CHARS(A1)`"
+            "`=CHARS(A1)`\n![image](images/Q68.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q68. Which formula, when entered into cell D2 and then dragged to cell D6, calculates the average total number of minutes spent on phone calls for each representative?",
+        "question": "Q68. Which formula, when entered into cell D2 and then dragged to cell D6, calculates the average total number of minutes spent on phone calls for each representative?\n![image](images/Q68.png)",
         "options": [
-            "e](images/Q68.png)",
             "`=B$2*C$2`",
             "`=$C$2/$B$2`",
-            "`=C2/B2`"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q69. The PivotTable below has one row field and two column fields. How can you pivot this table to show the column fields as subtotals of each value in the row field?",
-        "options": [
-            "e](images/Q69.png)",
-            "On the PivotTable itself, drag each `Average` field into the row fields area.",
-            "Right-click a cell in the PivotTable and select `PivotTable Options > Classic PivotTable layout`.",
-            "In the `PivotTable Fields` pane, drag `Sum Values` from the `Columns` section to a location below the field in the `Rows` section."
+            "`=C2/B2`",
+            "`=B2*C2`\n![image](images/Q69.png)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q71. Monthly revenues of 2019 are entered in B2:M2, as shown below, To get year-to-date running total revenues, what formula should you enter in B3 and autofill through M3?",
+        "question": "Q69. The PivotTable below has one row field and two column fields. How can you pivot this table to show the column fields as subtotals of each value in the row field?\n![image](images/Q69.png)",
         "options": [
-            "e](images/Q71.png)",
-            "`=SUMIF($B$2:$M$2,\"COLUMN($B$2:$M$2)<=COLUMN())\")`",
-            "`=SUM($B2:B2)`",
-            "`=SUM(OFFSET($A1,0,0,1,COLUMN()))`"
+            "On the PivotTable itself, drag each `Average` field into the row fields area.",
+            "Right-click a cell in the PivotTable and select `PivotTable Options > Classic PivotTable layout`.",
+            "In the `PivotTable Fields` pane, drag `Sum Values` from the `Columns` section to a location below the field in the `Rows` section.",
+            "In the `PivotTable Fields` pane, drag each field from the `Sum Values` section to the `Rows` section.\n[Reference](https://devexpress.github.io/dotnet-eud/interface-elements-for-desktop/articles/spreadsheet/pivot-tables/group-items-in-a-pivot-table.html)\n### Q70. Which Excel feature allows you to hide rows or columns with an easily visible expand/collapse?\n![image](images/Q70.png)"
         ],
         "_ps": 2
+    },
+    {
+        "question": "Q71. Monthly revenues of 2019 are entered in B2:M2, as shown below, To get year-to-date running total revenues, what formula should you enter in B3 and autofill through M3?\n![image](images/Q71.png)",
+        "options": [
+            "`=SUMIF($B$2:$M$2,\"COLUMN($B$2:$M$2)<=COLUMN())\")`",
+            "`=SUM($B2:B2)`",
+            "`=SUM(OFFSET($A1,0,0,1,COLUMN()))`",
+            "`=B2+B3`\n`we are calculating the running total here`"
+        ],
+        "_ps": 1
     },
     {
         "question": "Q72. If a worksheet has the value 27 in cell B3, what value is returned by the `function =MOD(B3,6)`?",
@@ -745,19 +745,19 @@
             "cell",
             "selection",
             "element",
-            "scalar"
+            "scalar\n![Excel-Q77](images/Q77.png?raw=true)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q77. In this PivotTable, the continuous variable weight is shown in the _Row_ field. Another continuous variable is in the _Sum Values_ field. It is important to reduce a long list of body weights to a smaller set of weight categories. How do you do this?",
+        "question": "Q77. In this PivotTable, the continuous variable weight is shown in the _Row_ field. Another continuous variable is in the _Sum Values_ field. It is important to reduce a long list of body weights to a smaller set of weight categories. How do you do this?\n![Excel-Q77](images/Q77.png?raw=true)",
         "options": [
-            "l-Q77](images/Q77.png?raw=true)",
             "Use weight as a filter field as well as a row field in the PivotTable.",
             "Use `IF()` to show weight by categories instead of by pounds.",
-            "Click the _Row Labels_ arrow and select _Group_."
+            "Click the _Row Labels_ arrow and select _Group_.",
+            "Right-click any row field value in the PivotTable and select _Group_."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q78. How can you drill down into a PivotTable to show details?",
@@ -765,49 +765,49 @@
             "Select the cell into which you want to drill down, right-click, and select _Show Summary_.",
             "Select the cell into which you want to drill down, right-click and select _Drill-down_.",
             "Select the cell into which you want to drill down and double-click.",
-            "Select the cell into which you want to drill down, right-click and select _Show Details > Summary Page_"
+            "Select the cell into which you want to drill down, right-click and select _Show Details > Summary Page_\n![Excel-Q79](images/Q79.png?raw=true)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q79. To ensure the VLOOKUP function returns the value of an exact match, what do you need to enter into the Range_lookup field?",
+        "question": "Q79. To ensure the VLOOKUP function returns the value of an exact match, what do you need to enter into the Range_lookup field?\n![Excel-Q79](images/Q79.png?raw=true)",
         "options": [
-            "l-Q79](images/Q79.png?raw=true)",
             "0",
             "1",
-            "FALSE"
+            "FALSE",
+            "TRUE\n![Excel-Q80](images/Q80.png?raw=true)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q80. Cell D2 contains the formula =B2-C2. What is the fastest way to copy that formula into cells D3:D501 (the bottom of the data set)?\n![Excel-Q80](images/Q80.png?raw=true)",
+        "options": [
+            "Right-click D2 and select _Fill Down_.",
+            "Click D2's fill handle and drag it down to D501.",
+            "On the ribbon's _Data_ tab, select _Flash fill_.",
+            "Double-click D2's fill handle.\n![Excel-Q81](images/Q81.png?raw=true)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q80. Cell D2 contains the formula =B2-C2. What is the fastest way to copy that formula into cells D3:D501 (the bottom of the data set)?",
+        "question": "Q81. This data needs to be sorted by Group, then by Last Name, then by First Name. How do you accomplish this?\n![Excel-Q81](images/Q81.png?raw=true)",
         "options": [
-            "l-Q80](images/Q80.png?raw=true)",
-            "Right-click D2 and select _Fill Down_.",
-            "Click D2's fill handle and drag it down to D501.",
-            "On the ribbon's _Data_ tab, select _Flash fill_."
+            "A\n1. Rearrange the columns in this order: Group, Last Name, First Name.\n2. Right-click any of the headers.\n3. Select _Sort All_.",
+            "B\n1. Select any cell in the dataset.\n2. In the _Data_ tab, click the _Sort_ button.\n3. Add two levels to the default level.\n4. Populate the _Sort-by_ fields in this order: Group, Last Name, First Name.",
+            "C\n1. Highlight the entire dataset.\n2. In the _Data_ tab, click the _Sort_ button. The headers appear.\n3. Drag the headers into this order: Group, Last Name, First Name.",
+            "D\n1. Select a cell in the Group column, then sort.\n2. Select a cell in the Last Name column, then sort.\n3. Select a cell in the FIrst Name column, then sort."
         ],
-        "_ps": -1
-    },
-    {
-        "question": "Q81. This data needs to be sorted by Group, then by Last Name, then by First Name. How do you accomplish this?",
-        "options": [
-            "l-Q81](images/Q81.png?raw=true)",
-            "A",
-            "rrange the columns in this order: Group, Last Name, First Name.",
-            "ht-click any of the headers."
-        ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q82. How can you use Format Painter to apply the format of a single source cell to several nonadjacent destination cells?",
         "options": [
-            "A",
-            "ight-click the source cell.",
-            "lick the Format Painter.",
-            "ight-click each destination cell."
+            "A\n  1. Right-click the source cell.\n  2. Click the Format Painter.\n  3. Right-click each destination cell.\n  4. Press Esc.",
+            "B\n  1. Ctrl-click (Windows) or Command-click (Mac) each destination cell to select it.\n  2. Click the Format Painter.\n  3. Click the source cell.",
+            "C\n  1. Select the source cell.\n  2. Double-click the Format Painter.\n  3. Click each destination cell.\n  4. Press Esc.",
+            "D\n  1. Select the source cell.\n  2. Right-click the Format Painter.\n  3. Click each destination cell.\n  4. Press Esc."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q83. Which is a valid Excel formula?",
@@ -885,19 +885,19 @@
             "An Excel file is a workbook. A workbook contains one or more worksheets.",
             "Nothing-these two terms mean the same thing.",
             "A workbook contains only data. A worksheet contains both data and formulas.",
-            "An Excel file is a worksheet. A worksheet contains one or more workbooks."
+            "An Excel file is a worksheet. A worksheet contains one or more workbooks.\n![PivotTable](images/Q92.png?raw=true)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q91. How would you connect the slicer to both PivotTables?",
+        "question": "Q91. How would you connect the slicer to both PivotTables?\n![PivotTable](images/Q92.png?raw=true)",
         "options": [
-            "tTable](images/Q92.png?raw=true)",
             "You cannot use one slicer for two PivotTables.",
             "Right-click the slicer and select Slicer Settings.",
-            "Merge the two PivotTables, right-click the merged PivotTable, and select Combine Slicer."
+            "Merge the two PivotTables, right-click the merged PivotTable, and select Combine Slicer.",
+            "Right-click the slicer and select Report Connections, or click Report Connections on the Slicer tab.\nhttps://sfmagazine.com/post-entry/may-2020-excel-sharing-a-pivot-table-slicer-between-multiple-data-sets/"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q92. Which formula contains a valid absolute reference?",
@@ -905,29 +905,29 @@
             "`=B7*$G$3`",
             "`=(B7)*G3`",
             "`=B7*$[G3]`",
-            "`=B7$*G3`"
+            "`=B7$*G3`\n![image](images/Q94.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q93. What happens if you use the **AutoSum** button in cell H4?",
+        "question": "Q93. What happens if you use the **AutoSum** button in cell H4?\n![image](images/Q94.png)",
         "options": [
-            "e](images/Q94.png)",
             "AutoSum shows the total in the bottom-right of the page",
             "AutoSum will total the numbers in cells B4:G8",
-            "AutoSum will total the numbers in cells B4:G4"
+            "AutoSum will total the numbers in cells B4:G4",
+            "AutoSum will return a **#VALUE!** error.\n![image](images/Q95.png)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
-        "question": "Q94. To create this PivotTable, drag the _ field to the Rows area and the _ field to the Values area?",
+        "question": "Q94. To create this PivotTable, drag the _ field to the Rows area and the _ field to the Values area?\n![image](images/Q95.png)",
         "options": [
-            "e](images/Q95.png)",
             "Total Sales This Year; Total Sales This Year",
             "Total Sales This Year; Market Region",
-            "Representative ID Number; Total Sales This Year"
+            "Representative ID Number; Total Sales This Year",
+            "Market Region; Total Sales This Year\n-"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q95. Cell A1 contains the number 3. Which formula returns the text Apple?",
@@ -935,19 +935,19 @@
             "`=SELECT(A1, \"Banana\", \"Orange\", \"Apple\", \"Mango\")`",
             "`=CHOOSE(A1, \"Banana\", \"Orange\", \"Apple\", \"Mango\")`",
             "`=CHOOSE(A1,\"Banana\",\"Orange\",\"Apple\",\"Mango\")`",
-            "`=MATCH(A1,{\"Banana\",\"Orange\",\"Apple\",\"Mango\"})`"
+            "`=MATCH(A1,{\"Banana\",\"Orange\",\"Apple\",\"Mango\"})`\n![image](images/Q97.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q96. Which value is calculated when the formula **=AVERAGE(G2:G6)/AVERAGE(C2:C6)** is entered into cell H7?",
+        "question": "Q96. Which value is calculated when the formula **=AVERAGE(G2:G6)/AVERAGE(C2:C6)** is entered into cell H7?\n![image](images/Q97.png)",
         "options": [
-            "e](images/Q97.png)",
             "average number of minutes per call",
             "average annual sales per minute",
-            "average number sales"
+            "average number sales",
+            "average annual sales per call"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q97. How would you search an entire workbook with **Find & Select**?",
@@ -955,19 +955,19 @@
             "On the **Home** tab, click **Find & Select > Find > Options** (Windows) or **Find & Select > Find** (Mac). Change the **Within** drop-down to **Workbook**.",
             "On the **Home** tab, click **Find & Select > Find > Options** (Windows) or **Find & Select > Find** (Mac). Change the **Look in** drop-down to **Workbook**.",
             "On the **Home** tab, click **Find & Select > Find > Options** (Windows) or **Find & Select > Find** (Mac). Change the **Search** drop-down to **All**.",
-            "You cannot search an entire workbook - you must search the worksheets individually."
+            "You cannot search an entire workbook - you must search the worksheets individually.\n![image](images/Q99.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q98. How do you create a heatmap in a table, such as this one, which is responsive to the values?",
+        "question": "Q98. How do you create a heatmap in a table, such as this one, which is responsive to the values?\n![image](images/Q99.png)",
         "options": [
-            "e](images/Q99.png)",
             "map chart",
             "color scales (within conditional formatting)",
-            "manual highlighting"
+            "manual highlighting",
+            "data bars (within conditional formatting)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q99. To split text across cells without using Merge & Center, click **Formt Cells**. The, on **Alignment** tab, click**\\_**.",
@@ -975,29 +975,29 @@
             "Text control > Merge cells",
             "Horizontal > Center across selection",
             "Vertical > Center across selection",
-            "Data tab > Text to columns"
+            "Data tab > Text to columns\n![image](images/Q101.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q100. In the worksheet below, what do the symbols in rows 4, 6, 7, and 11 indicate?",
+        "question": "Q100. In the worksheet below, what do the symbols in rows 4, 6, 7, and 11 indicate?\n![image](images/Q101.png)",
         "options": [
-            "e](images/Q101.png)",
             "The dates are erroneous, such as October 39, 2015.",
             "The columns aren't wide enough to show the full date.",
-            "The time are incorrectly formatted as dates."
-        ],
-        "_ps": 2
-    },
-    {
-        "question": "Q101. You are determining `%` growth by dividing Growth by Sales. Which Excel function would you use to avoid #DIV/0! errors?",
-        "options": [
-            "e](images/Q102.png)",
-            "IFERROR",
-            "ROUND",
-            "ISERROR"
+            "The time are incorrectly formatted as dates.",
+            "The text is incorrectly formatted as dates.\n![image](images/Q102.png)"
         ],
         "_ps": 1
+    },
+    {
+        "question": "Q101. You are determining `%` growth by dividing Growth by Sales. Which Excel function would you use to avoid #DIV/0! errors?\n![image](images/Q102.png)",
+        "options": [
+            "IFERROR",
+            "ROUND",
+            "ISERROR",
+            "DIVIDE"
+        ],
+        "_ps": 0
     },
     {
         "question": "Q103. You have a worksheet in Excel that will print as 10 pages. How can you ensure that the header row is printed at the top of each page?",
@@ -1005,19 +1005,19 @@
             "Use Print Titles on the Page Layout tab.",
             "Use Page Setup from the Backstage View.",
             "Use Freeze Panes on the View tab.",
-            "Format your data as a table; the header prints automatically."
+            "Format your data as a table; the header prints automatically.\nhttps://support.microsoft.com/en-us/office/print-headings-or-titles-on-every-page-96719bd4-b93e-4237-8f97-d2cabb1b196a\n![Shift Code](images/Q104.jpg)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q104. Which value is returned when you enter this function into cell G2? `=IF(SUM(F2:F6)>12,\"Too Many Tardy Days\",\"No Tardiness Issue\")`",
+        "question": "Q104. Which value is returned when you enter this function into cell G2? `=IF(SUM(F2:F6)>12,\"Too Many Tardy Days\",\"No Tardiness Issue\")`\n![Shift Code](images/Q104.jpg)",
         "options": [
-            "t Code](images/Q104.jpg)",
             "Too Many Tardy Days",
             "#NUM!",
-            "No Tardiness Issue"
+            "No Tardiness Issue",
+            "#REF!\n0 + 0 + 3 + 6 + 3 = 12. The formula only dislays \"Too Many Tardy Days\" when it is more than 12."
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q105. What ribbon command on the Home tab can you use to change a cell's fill color automatically, based on the value of the cell?",
@@ -1025,29 +1025,29 @@
             "Conditional Formatting",
             "Format",
             "Cell Styles",
-            "Fill"
+            "Fill\n![image](images/Q106.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q106. In this worksheet, how are cells A2:D2 related to cell C4?",
+        "question": "Q106. In this worksheet, how are cells A2:D2 related to cell C4?\n![image](images/Q106.png)",
         "options": [
-            "e](images/Q106.png)",
             "Cells A2:D2 are comments relating to the formula in cell C4.",
             "Cells A2:D2 are the source of an error in the formula in cell C4.",
-            "Cells A2:D2 are precedents of the formula in cell C4."
+            "Cells A2:D2 are precedents of the formula in cell C4.",
+            "Cells A2:D2 are dependents of the formula in cell C4.\n![image](images/Q107.png)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
-        "question": "Q107. What is the name given to the numbers in or above each bar in a column chart, as shown?",
+        "question": "Q107. What is the name given to the numbers in or above each bar in a column chart, as shown?\n![image](images/Q107.png)",
         "options": [
-            "e](images/Q107.png)",
             "data table",
             "data numbers",
-            "data labels"
+            "data labels",
+            "data values"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q108. Which chart type provides the best visual display of the releationship between two numeric variables?",
@@ -1095,7 +1095,7 @@
             "The formula display a warning but the actual cell address is substituted for the deleted name.",
             "The formula becomes invalid and displays a #NAME? error.",
             "The actual cell addresses replace the original range name in the formula.",
-            "The formula becomes invalid and displays a #N/A error"
+            "The formula becomes invalid and displays a #N/A error\n[Reference](https://bettersolutions.com/excel/named-ranges/name-manager-deleting.htm#:~:text=If%20you%20delete%20a%20named,named%20ranges%20will%20become%20invalid.)"
         ],
         "_ps": 1
     },
@@ -1115,19 +1115,19 @@
             "input range",
             "list",
             "custom",
-            "database"
+            "database\n[reference](https://www.extendoffice.com/documents/excel/3830-excel-only-allow-certain-values.html)\n![image](https://user-images.githubusercontent.com/1056999/159387628-9f960f22-9b50-4764-b4d9-31b5914b164a.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q115. Given the image below, what happens if you type \"P\" in cell A6?",
+        "question": "Q115. Given the image below, what happens if you type \"P\" in cell A6?\n![image](https://user-images.githubusercontent.com/1056999/159387628-9f960f22-9b50-4764-b4d9-31b5914b164a.png)",
         "options": [
-            "e](https://user-images.githubusercontent.com/1056999/159387628-9f960f22-9b50-4764-b4d9-31b5914b164a.png)",
             "The letter \"P\" appears.",
             "The word \"Perez\" appears and the active cell remains in Edit mode.",
-            "A pop-up list appears with the previous four names."
+            "A pop-up list appears with the previous four names.",
+            "The word \"Perez\" appears and immediately the active cell moves down."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q116. You want to find the second-largest invoice in a column containing all the invoices in a given month. What function would you use?",
@@ -1135,39 +1135,39 @@
             "NEXT",
             "MAX",
             "LARGE",
-            "MATCH"
+            "MATCH\n![image](https://user-images.githubusercontent.com/1056999/159387970-6ff9d57c-adb2-452b-83af-66d9f3fdc908.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q117. How can you see the data in column E?",
+        "question": "Q117. How can you see the data in column E?\n![image](https://user-images.githubusercontent.com/1056999/159387970-6ff9d57c-adb2-452b-83af-66d9f3fdc908.png)",
         "options": [
-            "e](https://user-images.githubusercontent.com/1056999/159387970-6ff9d57c-adb2-452b-83af-66d9f3fdc908.png)",
             "Close the workbook without saving and reopen it.",
             "Turn off conditional formatting.",
-            "On the Home tab of the ribbon, select Fit to Column."
+            "On the Home tab of the ribbon, select Fit to Column.",
+            "Expand the width of its column.\n![image](https://user-images.githubusercontent.com/1056999/159388193-743a1393-d61f-47b1-a4ae-346f36fb3160.png)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
-        "question": "Q118. In the worksheet below, a table called Projects extends from cell A1 to D10. Cell D1 contains the text Status. Cell E12 contains the formula =Projects[@Status]. What does this formula return?",
+        "question": "Q118. In the worksheet below, a table called Projects extends from cell A1 to D10. Cell D1 contains the text Status. Cell E12 contains the formula =Projects[@Status]. What does this formula return?\n![image](https://user-images.githubusercontent.com/1056999/159388193-743a1393-d61f-47b1-a4ae-346f36fb3160.png)",
         "options": [
-            "e](https://user-images.githubusercontent.com/1056999/159388193-743a1393-d61f-47b1-a4ae-346f36fb3160.png)",
             "#VALUE!",
             "a blank cell",
-            "#REF!"
+            "#REF!",
+            "0\n![image](https://user-images.githubusercontent.com/1056999/159388456-054ba0ae-c595-4aaa-8d38-351f726885ca.png)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
-        "question": "Q119. Which Excel feature allows you to select all cells in the column with inconsistent formulas compared to the rest of the column?",
+        "question": "Q119. Which Excel feature allows you to select all cells in the column with inconsistent formulas compared to the rest of the column?\n![image](https://user-images.githubusercontent.com/1056999/159388456-054ba0ae-c595-4aaa-8d38-351f726885ca.png)",
         "options": [
-            "e](https://user-images.githubusercontent.com/1056999/159388456-054ba0ae-c595-4aaa-8d38-351f726885ca.png)",
             "On the Home tab, click Go To > Special > Column differences.",
             "On the Formulas tab, click Trace precedents.",
-            "On the Formulas tab, click Trace errors."
+            "On the Formulas tab, click Trace errors.",
+            "On the Formulas tab, click show formulas"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q120. What is one way to center text in a cell?",
@@ -1175,7 +1175,7 @@
             "Right-click the cell and select **Center** (Windows) or **Center Text** (Mac).",
             "Seletct the cell and, on the **View** tab in the **Cells** section, click **Alignment** and select **Center** (Windows) or **Center Text** (Mac).",
             "Select the cell and, on the **Home** tab in the **Alignment** section, click **Center** (Windows) or **Center Text** (Mac).",
-            "Change the width of the cell until the **text** is centered."
+            "Change the width of the cell until the **text** is centered.\n[Reference](https://support.microsoft.com/en-us/office/align-text-in-a-cell-b2489a1f-6c89-45b7-9562-bbc287aa71ea)"
         ],
         "_ps": 2
     },
@@ -1185,19 +1185,19 @@
             "Click the **Decrease Decimal** button once.",
             "Click the **Decrease Decimal** button twice.",
             "Use the ROUND() function.",
-            "In the **Cells** group on the **Home** tab, click **Format > Format Cells**. Then click the **Alignment** tab and select **Right Indent**."
+            "In the **Cells** group on the **Home** tab, click **Format > Format Cells**. Then click the **Alignment** tab and select **Right Indent**.\n[Reference](https://support.microsoft.com/en-us/office/round-a-number-to-the-decimal-places-i-want-49b936f9-6904-425d-aa98-02ffb7f9a17b)\n![image](https://user-images.githubusercontent.com/35125965/161691848-4c888572-c649-457c-b7a0-58c64947ff7f.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q122. Given the image below, what happens if you type \"P\"in cell A6?",
+        "question": "Q122. Given the image below, what happens if you type \"P\"in cell A6?\n![image](https://user-images.githubusercontent.com/35125965/161691848-4c888572-c649-457c-b7a0-58c64947ff7f.png)",
         "options": [
-            "e](https://user-images.githubusercontent.com/35125965/161691848-4c888572-c649-457c-b7a0-58c64947ff7f.png)",
             "The word \"Perez\" appears and immediately the active cell moves down.",
             "The word \"Perez\" appears and the active cell remains in Edit mode.",
-            "A pop-up list appears with the previous four names."
+            "A pop-up list appears with the previous four names.",
+            "The letter \"P\" appears."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q123. To insert a new column to the left of a specific column, right-click the header containing the column's letter and select **\\_**.",
@@ -1205,7 +1205,7 @@
             "Insert Column",
             "Paste Special",
             "Insert",
-            "Insert Column Left"
+            "Insert Column Left\n[Reference](https://support.microsoft.com/en-us/office/insert-or-delete-rows-and-columns-6f40e6e4-85af-45e0-b39d-65dd504a3246#:~:text=To%20insert%20a%20single%20column,and%20then%20select%20Insert%20Columns.)"
         ],
         "_ps": 2
     },
@@ -1215,7 +1215,7 @@
             "Filter the relevant column, right-click the column head, and select **Remove Duplicates**.",
             "This is possible only with Power Query.",
             "With your cursors in the data range, on **Data** tab click **Remove Duplicates**.",
-            "This is possible only using formulas."
+            "This is possible only using formulas.\n[Reference](https://support.microsoft.com/en-us/office/filter-for-unique-values-or-remove-duplicate-values-ccf664b0-81d6-449b-bbe1-8daaec1e83c2)"
         ],
         "_ps": 2
     },
@@ -1225,7 +1225,7 @@
             "On the **Home** tab, click **Unhide**.",
             "On the **Review** tab, click **Unhide Sheet**.",
             "On the **View** tab, click **New Window**.",
-            "Right-click on any worksheet tab and select **Unhide**"
+            "Right-click on any worksheet tab and select **Unhide**\n[Reference](https://support.microsoft.com/en-us/office/hide-or-unhide-worksheets-69f2701a-21f5-4186-87d7-341a8cf53344)"
         ],
         "_ps": 3
     },
@@ -1234,8 +1234,7 @@
         "options": [
             "Sentence",
             "Upper",
-            "Titlecase",
-            "Proper"
+            "Titlecase"
         ],
         "_ps": -1
     }

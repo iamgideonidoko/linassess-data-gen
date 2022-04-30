@@ -65,19 +65,19 @@
             "`<button><input><form>`",
             "`<input><label><meter>`",
             "`<input><option><textarea>`",
-            "`<li><input><option>`"
+            "`<li><input><option>`\n```html\n<address ______ _____>\n  <span itemprop=\"streetAddress\">6410 Via Real</span><br />\n  <span itemprop=\"addressLocality\">Carpinteria</span>,\n  <span itemprop=\"addressRegion\">CA</span>\n  <span itemprop=\"addressCode\">93013</span>\n</address>\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q8. What should fill the two blanks in the HTML code below?",
+        "question": "Q8. What should fill the two blanks in the HTML code below?\n```html\n<address ______ _____>\n  <span itemprop=\"streetAddress\">6410 Via Real</span><br />\n  <span itemprop=\"addressLocality\">Carpinteria</span>,\n  <span itemprop=\"addressRegion\">CA</span>\n  <span itemprop=\"addressCode\">93013</span>\n</address>\n```",
         "options": [
-            "l",
-            "ss ______ _____>",
-            "n itemprop=\"streetAddress\">6410 Via Real</span><br />",
-            "n itemprop=\"addressLocality\">Carpinteria</span>,"
+            "`itemscope` `itemtype=\"http://schema.org/PostalAddress\"`",
+            "`itemsref=\"http://schema.org/PostalAddress\"` `itemid=\"address\"`",
+            "`itemscope` `itemref=\"http://schema.org/PostalAddress\"`",
+            "`itemid=\"address\"` `itemtype=\"http://schema.org/PostalAddress\"`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q9. When should you use the `<aside>` element?",
@@ -105,19 +105,19 @@
             "readonly",
             "max",
             "form",
-            "spellcheck"
+            "spellcheck\n![Sample text](images/ss-2.png?raw=true)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q12. What is the best way to code the sample shown?",
+        "question": "Q12. What is the best way to code the sample shown?\n![Sample text](images/ss-2.png?raw=true)",
         "options": [
-            "le text](images/ss-2.png?raw=true)",
-            "A",
-            "l",
-            "ls>"
+            "A\n```html\n<details>\n  <summary>Parmesan Deviled Eggs</summary>\n  <p>\n    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n  </p>\n</details>\n```",
+            "B\n```html\n<h4>▸ Parmesan Deviled Eggs</h4>\n<p>\n  These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n</p>\n```",
+            "C\n```html\n<details open>\n  <summary>Parmesan Deviled Eggs</summary>\n  <p>\n    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n  </p>\n</details>\n```",
+            "D\n```html\n<details>\n  <h4>▸ Parmesan Deviled Eggs</h4>\n  <p>\n    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n  </p>\n</details>\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q13. What is the purpose of the `<samp>` element?",
@@ -155,79 +155,79 @@
             "`<div>` is used where a generic block-level tag is needed, while `<span>` is used where a generic inline tag is needed.",
             "`<div>` is used for major divisions on a page, while `<span>` is used to span across columns.",
             "`<div>` is the industry-standard default tag, but you could use `<span>` if you prefer.",
-            "`<div>` is used where a generic inline tag is needed, while `<span>` is used where a generic block-level tag is needed."
+            "`<div>` is used where a generic inline tag is needed, while `<span>` is used where a generic block-level tag is needed.\n```html\n<form method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q17. What should fill the blank in the HTML code bellow?",
+        "question": "Q17. What should fill the blank in the HTML code bellow?\n```html\n<form method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>\n```",
         "options": [
-            "l",
-            "method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>",
-            "",
-            "enctype"
+            "enctype",
+            "media",
+            "type",
+            "rel"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q18. What is the correct markup for `alt` attribute of an image?",
         "options": [
-            "A",
-            "l",
-            "rc=\"cubism.jpg\" alt=\"Version of \"\"Whistler's Mother\"\" in cubist style\">",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q19. In the code below, what is the purpose of the **id** attribute?",
-        "options": [
-            "l",
-            "\"warning\">Be careful when installing this product.</p>",
-            "",
-            "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage."
-        ],
-        "_ps": 3
-    },
-    {
-        "question": "Q20. What is the best semantic markup for the sentence shown?",
-        "options": [
-            "kdown",
-            "y 21, 1969, Neil Armstrong said, \"One small step for man, one giant leap for mankind.\"",
-            "",
-            "A"
-        ],
-        "_ps": 3
-    },
-    {
-        "question": "Q21. What should fill the blank in this HTML code?",
-        "options": [
-            "l",
-            "f=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>",
-            "",
-            "es"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q22. Review the text in the red box in the image shown. What is the best way to code this in HTML?",
-        "options": [
-            "e of footer](images/ss-3.png?raw=true)",
-            "ordered list",
-            "unordered list inside a nav element",
-            "ordered list inside a nav element"
+            "A\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \"\"Whistler's Mother\"\" in cubist style\">\n```",
+            "B\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \"Whistler's Mother\" in cubist style\">\n```",
+            "C\n```html\n<img src=\"cubism.jpg\" alt='Version of \"Whistler\\'s Mother\" in cubist style'>\n```",
+            "D\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \\\"Whistler's Mother\\\" in cubist style\">\n```\n```html\n<p id=\"warning\">Be careful when installing this product.</p>\n```"
         ],
         "_ps": 2
     },
     {
+        "question": "Q19. In the code below, what is the purpose of the **id** attribute?\n```html\n<p id=\"warning\">Be careful when installing this product.</p>\n```",
+        "options": [
+            "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage.",
+            "It establishes that id is a unique identifier in the document, used for styling CSS and with Javascript code.",
+            "It establishes that id may be used for styling CSS several times per page.",
+            "It establishes that id is a unique identifier in the website, used for styling CSS, scripting, and linking within a webpage.\n```markdown\nOn July 21, 1969, Neil Armstrong said, \"One small step for man, one giant leap for mankind.\"\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q20. What is the best semantic markup for the sentence shown?\n```markdown\nOn July 21, 1969, Neil Armstrong said, \"One small step for man, one giant leap for mankind.\"\n```",
+        "options": [
+            "A\n```markdown\n<p>\n  On <time datetime=\"1969-07-21\">July 21, 1969</time>, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```",
+            "B\n```markdown\n<p>\n  On July 21, 1969, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```",
+            "C\n```markdown\n<p>\n  On July 21, 1969, Neil Armstrong said, <q>One small step for man, one giant leap for mankind.</q>\n</p>\n```",
+            "D\n```markdown\n<p>\n  On <time datetime=\"07-21-1969\">July 21, 1969</time>, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```\n```html\n<a href=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q21. What should fill the blank in this HTML code?\n```html\n<a href=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>\n```",
+        "options": [
+            "es",
+            "es-spanish",
+            "es-es",
+            "spanish\n![Image of footer](images/ss-3.png?raw=true)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q22. Review the text in the red box in the image shown. What is the best way to code this in HTML?\n![Image of footer](images/ss-3.png?raw=true)",
+        "options": [
+            "ordered list",
+            "unordered list inside a nav element",
+            "ordered list inside a nav element",
+            "unordered list"
+        ],
+        "_ps": 1
+    },
+    {
         "question": "Q23. What is the best way to code three choices within a form so that the user can select only one item?",
         "options": [
-            "A",
-            "kdown",
-            " for=\"example\">Make a choice:</label>",
-            "ist id=\"example\">"
+            "A\n```markdown\n<label for=\"example\">Make a choice:</label>\n<datalist id=\"example\">\n  <option value=\"Choice 1\"></option>\n  <option value=\"Choice 2\"></option>\n  <option value=\"Choice 3\"></option>\n</datalist>\n```",
+            "B\n```markdown\n<p>Make a choice:</p>\n<input id=\"choices\" name=\"example\" />\n<datalist value=\"choices\">\n  <option value=\"Choice 1\"></option>\n  <option value=\"Choice 2\"></option>\n  <option value=\"Choice 3\"></option>\n</datalist>\n```",
+            "C\n```markdown\n<label for=\"example\">Make a choice:</label>\n<input list=\"example\" id=\"choices\" name=\"choices\" />\n<datalist id=\"choices\">\n  <option value=\"Choice 1\">Choice 1</option>\n  <option value=\"Choice 2\">Choice 2</option>\n  <option value=\"Choice 3\">Choice 3</option>\n</datalist>\n```",
+            "D\n```markdown\n<label for=\"example\">Make a choice:</label>\n<input list=\"choices\" id=\"example\" name=\"example\" />\n<datalist id=\"choices\">\n  <option value=\"Choice 1\"></option>\n  <option value=\"Choice 2\"></option>\n  <option value=\"Choice 3\"></option>\n</datalist>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q24. How do you confirm that a document is written in HTML5?",
@@ -235,29 +235,29 @@
             "The server wraps the webpage in an HTML5 wrapper.",
             "Use the `<!DOCTYPE html>` declaration that starts the document.",
             "The browser receives encoding from the server to display the document with HTML5.",
-            "It is enclosed in a `<html>` tag."
+            "It is enclosed in a `<html>` tag.\n```html\n<picture>\n  <source srcset=\"image1.jpg\" media=\"(min-width: 1000px)\" />\n  <source srcset=\"image2.jpg\" media=\"(min-width: 750px)\" />\n  <img src=\"image3.jpg\" />\n</picture>\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q25. What does the code shown below accomplish?",
+        "question": "Q25. What does the code shown below accomplish?\n```html\n<picture>\n  <source srcset=\"image1.jpg\" media=\"(min-width: 1000px)\" />\n  <source srcset=\"image2.jpg\" media=\"(min-width: 750px)\" />\n  <img src=\"image3.jpg\" />\n</picture>\n```",
         "options": [
-            "l",
-            "re>",
-            "rce srcset=\"image1.jpg\" media=\"(min-width: 1000px)\" />",
-            "rce srcset=\"image2.jpg\" media=\"(min-width: 750px)\" />"
+            "It displays image1.jpg at 1000px and higher, image2.jpg at 750-999px, and image3.jpg at 749px and lower.",
+            "It displays image1.jps at 1000px and higher and image2.jpg at 750-999px, image3.jpg is a default in case `<picture>` is not supported.",
+            "It displays image1.jpg at 1000px and higher and image2.jpg at 750px and higher, image3.jpg is a default in case `<picture>` is not supported.",
+            "It displays image1.jpg, image2.jpg and image3.jpg at 1000px and higher.\n[Source: HTML &lt;picture> Tag](https://www.w3schools.com/tags/tag_picture.asp)\n![Table with yellow background](images/ss-4.png?raw=true)"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q26. What code will produce this table?",
+        "question": "Q26. What code will produce this table?\n![Table with yellow background](images/ss-4.png?raw=true)",
         "options": [
-            "e with yellow background](images/ss-4.png?raw=true)",
-            "A",
-            "kdown",
-            ">"
+            "A\n```markdown\n<table>\n  <scope cols=\"2\" style=\"background-color: yellow\">\n  <tr>\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr>\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n```",
+            "B\n```markdown\n<table>\n  <colgroup span=\"2\" style=\"background-color: yellow\">\n  <tr>\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr>\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n```",
+            "C\n```markdown\n<table>\n  <group cols=\"2\" style=\"background-color: yellow\">\n  <tr scope=\"row\">\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr scope=\"row\">\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n```",
+            "D\n```markdown\n<table>\n  <columns colspan=\"2\" style=\"background-color: yellow\">\n  <tr>\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr>\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q27. What is the `<hr>`tag typically used for?",
@@ -265,27 +265,27 @@
             "This tag is depreciated and should not be used.",
             "It designates a topic shift within a section at the paragraph level.",
             "It draws a horizontal line.",
-            "It designates a shift of topic at the section level."
+            "It designates a shift of topic at the section level.\nThis is a confusing question and there can be an arguments for both the second and the third options being correct.\n[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HTML `<hr>` element represents a thematic break between paragraph-level elements. Historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS.\n```markdown\n<section itemscope itemtype=\"http://schema.org/Restaurant\">\n  <h1 itemprop=\"name\">Nadia's Garden</h1>\n  <p itemscope ______ ______>\n    <span itemprop=\"ratingValue\">4.5</span> stars - based on\n    <span itemprop=\"reviewCount\">120</span> reviews\n  </p>\n</section>\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q28. What should fill the two blanks in the HTML code below?",
+        "question": "Q28. What should fill the two blanks in the HTML code below?\n```markdown\n<section itemscope itemtype=\"http://schema.org/Restaurant\">\n  <h1 itemprop=\"name\">Nadia's Garden</h1>\n  <p itemscope ______ ______>\n    <span itemprop=\"ratingValue\">4.5</span> stars - based on\n    <span itemprop=\"reviewCount\">120</span> reviews\n  </p>\n</section>\n```",
         "options": [
-            "kdown",
-            "on itemscope itemtype=\"http://schema.org/Restaurant\">",
-            "itemprop=\"name\">Nadia's Garden</h1>",
-            "temscope ______ ______>"
+            "`itemprop=\"aggregateRating\" itemref=\"http://schema.org/AggregateRating\"`",
+            "`itemprop=\"aggregateRating\" itemtype=\"http://schema.org/AggregateRating\"`",
+            "`itemid=\"aggregateRating\" itemtype=\"http://schema.org/AggregateRating\"`",
+            "`itemid=\"aggregateRating\" itemref=\"http://schema.org/AggregateRating\"`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q29. Which HTML snippet links back to the very top of a webpage?",
         "options": [
-            "A",
-            "kdown",
-            "\"top\"></a>",
-            "laced at the top of the page -->"
+            "A\n```markdown\n<a id=\"top\"></a>\n<!-- placed at the top of the page -->\n<a href=\"#top\">back to top</a>\n```",
+            "B\n```markdown\n<a name=\"top\"></a>\n<!-- placed at the top of the page -->\n<a href=\"#top\">back to top</a>\n```",
+            "C\n```markdown\n<a href=\"#\">back to top</a> <a href=\"#top\">back to top</a>\n```",
+            "D\n```markdown\n<button href=\"#\">back to top</button> <button href=\"#top\">back to top</button>\n```"
         ],
         "_ps": 0
     },
@@ -305,7 +305,7 @@
             "`<kdb>`, `<pre>`",
             "`<pre>`, `<code>`",
             "`<kdb>`, `<mark>`",
-            "`<code>`, `<pre>`"
+            "`<code>`, `<pre>`\n[Source: MDN Web Docs code](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code)\n[Source: MDN Web Docs pre](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre)"
         ],
         "_ps": 3
     },
@@ -325,49 +325,49 @@
             "`_blank`",
             "`_self`",
             "`_new`",
-            "`_parent`"
+            "`_parent`\n**We are fond of our TLAs in web design.**"
         ],
         "_ps": 0
     },
     {
-        "question": "Q34. What is the most semantically accurate way to mark up the sentence shown below? Note: \"TLAs\" stands for \"three-letter acronyms.\"",
+        "question": "Q34. What is the most semantically accurate way to mark up the sentence shown below? Note: \"TLAs\" stands for \"three-letter acronyms.\"\n**We are fond of our TLAs in web design.**",
         "options": [
-            "re fond of our TLAs in web design.**",
-            "A",
-            "l",
-            "are fond of our <span title=\"three-letter acronyms\">TLAs</span> in web design.</p>"
+            "A\n```html\n<p>We are fond of our <span title=\"three-letter acronyms\">TLAs</span> in web design.</p>\n```",
+            "B\n```html\n<p>We are fond of our TLAs in web design.</p>\n```",
+            "C\n```html\n<p>we are fond of our <abbr title=\"three-letter acronyms\">TLAs</abbr> in web design.</p>\n```",
+            "D\n```html\n<p>we are fond of our <acronym title=\"three-letter acronym\">TLAs</acronym> in web design.</p>\n```\n`<acronym>` has been removed in HTML5 and shouldn't be used anymore. Instead web developers should use the `<abbr>` element.\n![Sample list](images/ss-6.png?raw=true)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q35. What is the correctly nested markup for this list?",
+        "question": "Q35. What is the correctly nested markup for this list?\n![Sample list](images/ss-6.png?raw=true)",
         "options": [
-            "le list](images/ss-6.png?raw=true)",
-            "A",
-            "kdown",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q37. What should fill the blank below?",
-        "options": [
-            "l",
-            "href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />",
-            "",
+            "A\n```markdown\n<ul>\n  <li>\n    office\n    <ol style=\"circle\">\n      <li>staple</li>\n      <li>paper</li>\n    </ol>\n  </li>\n  <li>\n    groceries\n    <ol style=\"circle\">\n      <li>milk</li>\n    </ol>\n  </li>\n</ul>\n```",
+            "B\n```markdown\n<ul>\n  <li>Office Supplies\n    <ul>\n      <li>Stapler</li>\n      <li>Paper clips</li>\n    </ul>\n  </li>\n  <li>Groceries\n    <ul>\n      <li>Milk</li>\n    </ul>\n  </li>\n</ul>\n```",
+            "C\n```markdown\n<ul>\n  <li>office</li>\n  <li>staple</li>\n  <li>paper</li>\n  <li>groceries</li>\n  <li>milk</li>\n</ul>\n```\n```html\n<link href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />\n```",
             "title"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q38. What is the semantically correct way to mark up this layout?",
+        "question": "Q37. What should fill the blank below?\n```html\n<link href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />\n```",
         "options": [
-            "e](images/ss-5.png?raw=true)",
-            "A",
-            "kdown",
-            ""
+            "title",
+            "type",
+            "device",
+            "media\n![quote](images/ss-5.png?raw=true)"
         ],
-        "_ps": -1
+        "_ps": 3
+    },
+    {
+        "question": "Q38. What is the semantically correct way to mark up this layout?\n![quote](images/ss-5.png?raw=true)",
+        "options": [
+            "A\n```markdown\n<p>\n  \"Making money is what you have to do to sustain a business—being driven to make something of value\n  and purpose is much more powerful.\"\n</p>\n<p><em>Lynda Weinman</em></p>\n```",
+            "B\n```markdown\n<blockquote>\n  <q\n    >\"Making money is what you have to do to sustain a business—being driven to make something of\n    value and purpose is much more powerful.\"</q\n  >\n  <cite><em>Lynda Weinman</em></cite>\n</blockquote>\n```",
+            "C\n```markdown\n<blockquote>\n  <p>\n    \"Making money is what you have to do to sustain a business—being driven to make something of\n    value and purpose is much more powerful.\"\n  </p>\n  <cite>Lynda Weinman</cite>\n</blockquote>\n```",
+            "D\n```markdown\n<section>\n  <q\n    >\"Making money is what you have to do to sustain a business—being driven to make something of\n    value and purpose is much more powerful.\"</q\n  >\n  <cite>Lynda Weinman</cite>\n</section>\n```"
+        ],
+        "_ps": 2
     },
     {
         "question": "Q39. Which choice uses the correct terminology in describing this markup: `<p>info</p>`?",
@@ -395,19 +395,19 @@
             "`<p>Press the <tt>Enter</tt> key to proceed.</p>`",
             "`<p>Press the <kbd>Enter</kbd> key to proceed.</p>`",
             "`<p>Press the <samp>Enter</samp> key to proceed.</p>`",
-            "`<p>Press the Enter key to proceed.</p>`"
+            "`<p>Press the Enter key to proceed.</p>`\n```markdown\n<audio controls>\n  <source src=\"sound.mp3\" type=\"audio/mpeg\" />\n  <source src=\"sound.ogg\" type=\"audio/ogg\" />\n  <source src=\"sound.wav\" type=\"audio/wav\" />\n</audio>\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q42. What does this code do?",
+        "question": "Q42. What does this code do?\n```markdown\n<audio controls>\n  <source src=\"sound.mp3\" type=\"audio/mpeg\" />\n  <source src=\"sound.ogg\" type=\"audio/ogg\" />\n  <source src=\"sound.wav\" type=\"audio/wav\" />\n</audio>\n```",
         "options": [
-            "kdown",
-            " controls>",
-            "rce src=\"sound.mp3\" type=\"audio/mpeg\" />",
-            "rce src=\"sound.ogg\" type=\"audio/ogg\" />"
+            "The browser chooses the first supported format to play with the browser's default controls.",
+            "The browser chooses the best audio format to play with JavaScript-provided controls.",
+            "The browser plays each sound file in order automatically. The user has controls to stop playback.",
+            "The browser chooses the first supported sound file and will loop the sound until the user stops it."
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q43. What attribute applies a keyboard shortcut hint to the current element?",
@@ -435,19 +435,19 @@
             "`<DOCTYPE html>`",
             "`<html>`",
             "`<body>`",
-            "`<root>`"
+            "`<root>`\n![Table](images/ss-1.png?raw=true 'table')"
         ],
         "_ps": 1
     },
     {
-        "question": "Q46. Which code snippet creates the layout shown, starting at `<table>` and ending at `</table>`?",
+        "question": "Q46. Which code snippet creates the layout shown, starting at `<table>` and ending at `</table>`?\n![Table](images/ss-1.png?raw=true 'table')",
         "options": [
-            "e](images/ss-1.png?raw=true 'table')",
-            "A",
-            "kdown",
-            ""
+            "A\n```markdown\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n</tr>\n<tr>\n  <td rowspan=\"2\">Table cell 3</td>\n</tr>\n```",
+            "B\n```markdown\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n  <td>Table cell 3</td>\n</tr>\n```",
+            "C\n```markdown\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n</tr>\n<tr>\n  <td colspan=\"2\">Table cell 3</td>\n</tr>\n```",
+            "D\n```markdown\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n</tr>\n<tr>\n  <td>Table cell 3</td>\n</tr>\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q47. Which choice is NOT a legal value for the **name** attribute within a `<meta>` tag?",
@@ -462,12 +462,12 @@
     {
         "question": "Q48. Which form is coded correctly?",
         "options": [
-            "A",
-            "kdown",
-            "",
-            "end>Title</legend>"
+            "A\n```markdown\n<form>\n  <legend>Title</legend>\n  <fieldset>\n    <label for=\"name\">Your name:</label>\n    <input type=\"text\" name=\"name\" id=\"name\" />\n    <button type=\"submit\">Submit</button>\n  </fieldset>\n</form>\n```",
+            "B\n```markdown\n<form>\n  <fieldset>\n    <legend>Title</legend>\n    <p>Your name:</p>\n    <input type=\"text\" name=\"name\" id=\"name\" />\n    <input type=\"submit\" value=\"Submit\" />\n  </fieldset>\n</form>\n```",
+            "C\n```markdown\n<form>\n  <fieldset>\n    <legend>Title</legend>\n    <label for=\"name\">Your name:</label>\n    <input type=\"text\" name=\"name\" id=\"name\" />\n    <button type=\"submit\">Submit</button>\n  </fieldset>\n</form>\n```",
+            "D\n```markdown\n<form>\n  <legend>Title</legend>\n  <label for=\"name\">Your name:</label>\n  <input type=\"text\" name=\"name\" id=\"name\" />\n  <input type=\"submit\" value=\"Submit\" />\n</form>\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q49. What does the **poster** attribute do in the `<video>` tag?",
@@ -475,19 +475,19 @@
             "It specifies an image that should display while the video downloads and until the video is played.",
             "It specifies an image that only displays if there is a problem with the video.",
             "It specifies an image that should display until the video is played.",
-            "It specifies an image that should display while the video downloads."
+            "It specifies an image that should display while the video downloads.\n```html\n<audio controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q50. What does this code do?",
+        "question": "Q50. What does this code do?\n```html\n<audio controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>\n```",
         "options": [
-            "l",
-            " controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>",
-            "",
-            "The text displays over the audio controls, unless CSS is used to position it elsewhere."
+            "The text displays over the audio controls, unless CSS is used to position it elsewhere.",
+            "The text displays under the audio controls.",
+            "The text displays when the browser cannot play the sound.",
+            "The text never displays."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q51. What is the primary purpose of the `<canvas>` tag?",
@@ -505,19 +505,19 @@
             "`<details> <abbr> <figcaption>`",
             "`<canvas> <select> <noscript>`",
             "`<dt> <table> <pre>`",
-            "`<kbd> <p> <main>`"
+            "`<kbd> <p> <main>`\n```html\n<p lang=\"en-GB\">Welcome to our wonderful website.</p>\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q53. In the code below, what is the purpose of the **lang** attribute?",
+        "question": "Q53. In the code below, what is the purpose of the **lang** attribute?\n```html\n<p lang=\"en-GB\">Welcome to our wonderful website.</p>\n```",
         "options": [
-            "l",
-            "g=\"en-GB\">Welcome to our wonderful website.</p>",
-            "",
-            "It establishes the language for the website—in this case, English."
+            "It establishes the language for the website—in this case, English.",
+            "It establishes the language and dialect for the website—in this case, British English.",
+            "It establishes the language and dialect for the paragraph—in this case, British English.",
+            "It establishes the language for the paragraph—in this case, English."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q54. Which image formats can be displayed by all web browsers?",
@@ -525,19 +525,19 @@
             "JPG, GIF, TIF",
             "JPG, TIF, BMP",
             "TIF, BMP, GIF",
-            "PNG, GIF, JPG"
+            "PNG, GIF, JPG\n```html\n<base href=\"http://www.linkedin.com/dir/\" />\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q55. Review the code below. What is the absolute URL for a page called **page.html**?",
+        "question": "Q55. Review the code below. What is the absolute URL for a page called **page.html**?\n```html\n<base href=\"http://www.linkedin.com/dir/\" />\n```",
         "options": [
-            "l",
-            "href=\"http://www.linkedin.com/dir/\" />",
-            "",
-            "`http://www.linkedin.com/dir/page.html`"
+            "`http://www.linkedin.com/dir/page.html`",
+            "`page.html`",
+            "`http://www.linkedin.com/page.html`",
+            "`dir/page.html`"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q56. What is the correct way to include a stylesheet named **style.css** in the `<head>` of your document?",
@@ -565,19 +565,19 @@
             "It requires the browser to wrap the current line at that point.",
             "It breaks a word into two pieces, using a hyphen to connect the words.",
             "It formats a sentence to be easily breakable.",
-            "It presents an opportunity for a break in a very long word, if needed for proper page display."
+            "It presents an opportunity for a break in a very long word, if needed for proper page display.\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a></li>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?",
+        "question": "Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a></li>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```",
         "options": [
-            "kdown",
-            "ul>",
-            "<a href=\"#\">Link 1</a></li>",
-            "<a href=\"#\">Link 2</a></li>"
+            "A\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a></li>\n    <ul>\n      <li><a href=\"#\">Link 2a</a></li>\n    </ul>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```",
+            "B\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a>\n    <ul>\n      <li><a href=\"#\">Link 2a</a></li>\n    </ul>\n  </li>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```",
+            "C\n```markdown\n<ul><nav>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a>\n    <ul><nav>\n      <li><a href=\"#\">Link 2a</a></li>\n    </nav></ul>\n  </li>\n  <li><a href=\"#\">Link 3</a></li>\n</nav></ul>\n```",
+            "D\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a></li>\n  <nav><ul>\n    <li><a href=\"#\">Link 2a</a></li>\n  </ul></nav>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q60. What is the correct way to code a comment in HTML?",
@@ -595,19 +595,19 @@
             "Inline elements can be nested inside inline elements.",
             "Block elements can be nested inside block elements.",
             "Inline elements can be nested inside block elements.",
-            "Block elements can be nested inside inline elements."
+            "Block elements can be nested inside inline elements.\n`Steve Kruz Said: \"He will Win\"`"
         ],
         "_ps": 3
     },
     {
-        "question": "Q62. What is the best semantic to use Quotes in HTML?",
+        "question": "Q62. What is the best semantic to use Quotes in HTML?\n`Steve Kruz Said: \"He will Win\"`",
         "options": [
-            " Kruz Said: \"He will Win\"`",
             "`<q>`",
             "`<quote>`",
-            "`<blockquote>`"
+            "`<blockquote>`",
+            "`<notation>`\n[Reference (w3schools)](https://www.w3schools.com/html/html_quotation_elements.asp)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q63. What is the semantic meaning of the `<hr>` tag?",
@@ -625,7 +625,7 @@
             "It will display a random frame from a video, unless the **poster** attribute is set.",
             "It will display the first frame of the video, unless the **poster** attribute is set.",
             "It will display nothing unless the **poster** attribute is set.",
-            "It will display a black window unless the **poster** attribute is set."
+            "It will display a black window unless the **poster** attribute is set.\n[Reference (w3schools)](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_video)"
         ],
         "_ps": 1
     },
@@ -635,29 +635,29 @@
             "It has opening and closing tags but no child content.",
             "It display nothing on a website.",
             "It has no child content and no closing tag.",
-            "It has child content but no closing tag."
+            "It has child content but no closing tag.\n[Reference (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element)\n`<script async src=\"myscript.js\"></script>`"
         ],
         "_ps": 2
     },
     {
-        "question": "Q66. What is the purpose of async in this code?",
+        "question": "Q66. What is the purpose of async in this code?\n`<script async src=\"myscript.js\"></script>`",
         "options": [
-            "pt async src=\"myscript.js\"></script>`",
             "It downloads the script from the server when resources allow.",
             "It runs the script after HTML parsing is complete.",
-            "It runs the script when the script is ready."
+            "It runs the script when the script is ready.",
+            "It pauses the parsing of HTML code while the script runs.\n`<audio autoplay loop src=\"sound.mp3\" type=\"audio/mpeg\"></audio>`"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
-        "question": "Q67. What does this code?",
+        "question": "Q67. What does this code?\n`<audio autoplay loop src=\"sound.mp3\" type=\"audio/mpeg\"></audio>`",
         "options": [
-            "o autoplay loop src=\"sound.mp3\" type=\"audio/mpeg\"></audio>`",
             "When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.",
             "The browser plays the sound once automatically in the background. The user has no control over the sound.",
-            "The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune."
+            "The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune.",
+            "The browser plays the sound automatically and continuously in the background. The user has no control over the sound.\n[Reference(MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q68. What is the difference between the `<head>` and `<header>` tags?",
@@ -665,39 +665,39 @@
             "There is only one `<head>` tag per page, while there may be many `<header>` tags.",
             "The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.",
             "all of these answers",
-            "The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content."
+            "The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content.\n`<script defer src=\"myscript.js\"></script>`"
         ],
         "_ps": 2
     },
     {
-        "question": "Q69. In this code, what is the purpose of defer?",
+        "question": "Q69. In this code, what is the purpose of defer?\n`<script defer src=\"myscript.js\"></script>`",
         "options": [
-            "pt defer src=\"myscript.js\"></script>`",
             "It downloads the script from the server when resources allow.",
             "It runs the script after HTML parsing is complete.",
-            "It runs the script when the script is ready."
+            "It runs the script when the script is ready.",
+            "It pauses the parsing of HTML code while the script runs.\n```html\n<table>\n  <tr>\n    Cell 1\n  </tr>\n  <td>Cell 2</td>\n  <caption>\n    A table\n  </caption>\n</table>\n```"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q70. The code below contains some errors. Which choice corrects all of the errors?\n```html\n<table>\n  <tr>\n    Cell 1\n  </tr>\n  <td>Cell 2</td>\n  <caption>\n    A table\n  </caption>\n</table>\n```",
+        "options": [
+            "A\n```HTML\n<caption>A table</caption>\n  <table>\n    <td>\n      <tr>Cell 1</tr>\n      <tr>Cell 2</tr>\n    </td>\n  </table>\n```",
+            "B\n```HTML\n<caption>A table</caption>\n<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>\n```",
+            "C\n```HTML\n<table>\n  <caption>A table</caption>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>\n```",
+            "D\n```HTML\n<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n  <caption>A table</caption>\n</table>\n```\n![Image of footer](images/ss-7.png?raw=true)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q70. The code below contains some errors. Which choice corrects all of the errors?",
+        "question": "Q71. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?\n![Image of footer](images/ss-7.png?raw=true)",
         "options": [
-            "l",
-            ">",
-            "",
-            "ll 1"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q71. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?",
-        "options": [
-            "e of footer](images/ss-7.png?raw=true)",
             "`<a href=\"../work/info.html\">See Information </a>`",
             "`<a href=\"../info.html\">See Information </a>`",
-            "`<a href=\"../../info.html\">See Information </a>`"
+            "`<a href=\"../../info.html\">See Information </a>`",
+            "`<a href=\"info.html\">See Information </a>`"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q72. When should you use the `<article>` element?",
@@ -705,19 +705,19 @@
             "For blog posts and other social media items",
             "For the main content area of your website",
             "When the content stands alone as a unit, is suitable for syndication, or is reusable",
-            "To associate comments with a blog post"
+            "To associate comments with a blog post\n[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)"
         ],
         "_ps": 2
     },
     {
         "question": "Q73. Which list comprises three empty elements?",
         "options": [
-            "A",
-            "L",
-            "",
-            ">"
+            "A\n```HTML\n<area>\n<embed>\n<strong>\n```",
+            "B\n```HTML\n<input>\n<br>\n<p>\n```",
+            "C\n```HTML\n<link>\n<meta>\n<title>\n```",
+            "D\n```HTML\n<wbr>\n<base>\n<source>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q74. Which snippet of HTML, when clicked, makes a phone call on a mobile device?",
@@ -732,12 +732,12 @@
     {
         "question": "Q75. What is the purpose of the `class` attribute?",
         "options": [
-            "Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,",
-            "separated by spaces.",
+            "Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,\n      separated by spaces.",
             "Classes allow CSS and JavaScript to select specific elements on the page. You may list only one class name per class attribute.",
-            "Classes allow CSS to select specific elements on the page. You may list only one class name per class attribute."
+            "Classes allow CSS to select specific elements on the page. You may list only one class name per class attribute.",
+            "Classes allow CSS and JavaScript to select specific elements on the page. You may list as many class names within the class attribute\n      as you wish, separated by spaces.\n[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q76. Which choice is not a legal type attribute for the `<input>` tag?",
@@ -745,39 +745,39 @@
             "`<input type=\"color\">`",
             "`<input type=\"tel\">`",
             "`<input type=\"week\">`",
-            "`<input type=\"num\">`"
+            "`<input type=\"num\">`\n[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)\nAs Steve Krug once said, happy talk must die."
         ],
         "_ps": 3
     },
     {
-        "question": "Q77. What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?",
+        "question": "Q77. What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?\nAs Steve Krug once said, happy talk must die.",
         "options": [
-            "ve Krug once said, happy talk must die.",
             "`<p>`As Steve Krug once said, `<b>`happy talk must die.`</b>` `</p>`",
             "`<p>`As Steve Krug once said, `<i>`happy talk must die.`</i>` `</p>`",
-            "`<p>`As Steve Krug once said, `<blockquote>`happy talk must die.`</blockquote>` `</p>`"
+            "`<p>`As Steve Krug once said, `<blockquote>`happy talk must die.`</blockquote>` `</p>`",
+            "`<p>`As Steve Krug once said, `<q>`happy talk must die.`</q>` `</p>`\n[Source: W3Schools](https://www.w3schools.com/tags/tag_q.asp)\n**`<q>` tag**\n`Most browsers will display q tags as inline elements with quotes`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?",
         "options": [
-            "A",
-            "kdown",
-            "",
-            "ref=\"index.html\">Home</a>"
+            "A\n```markdown\n<p>\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"contact.html\">Contact</a>\n</p>\n```",
+            "B\n```markdown\n<nav>\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"contact.html\">Contact</a>\n</nav>\n```",
+            "C\n```markdown\n <nav>\n    <ol>\n      <li><a href=\"index.html\">Home</a></li>\n      <li><a href=\"about.html\">About</a></li>\n      <li><a href=\"contact.html\">Contact</a></li>\n     </ol>\n  </nav>\n```",
+            "D\n```markdown\n <nav>\n   <ul>\n     <li><a href=\"index.html\">Home</a></li>\n     <li><a href=\"about.html\">About</a></li>\n     <li><a href=\"contact.html\">Contact</a></li>\n    </ul>\n  </nav>\n```\n![Image of footer](images/ss-8.png?raw=true)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q79. Which choice is the best way to mark up this layout?",
+        "question": "Q79. Which choice is the best way to mark up this layout?\n![Image of footer](images/ss-8.png?raw=true)",
         "options": [
-            "e of footer](images/ss-8.png?raw=true)",
-            "A",
-            "kdown",
-            "iling Address</h4>"
+            "A\n```markdown\n<h4>Mailing Address</h4>\n<address>\n  6410 Via Real <br>\n  Carpinteria, CA 93013<br>\n  <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n</address>\n```",
+            "B\n```markdown\n<h4><strong>Mailing Address</h4>\n<address><em>\n  6410 Via Real <br>\n  Carpinteria, CA 93013<br>\n  <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n</em></address>\n```",
+            "C\n```markdown\n<h4>Mailing Address</h4>\n<p><em>\n  6410 Via Real <br>\n  Carpinteria, CA 93013<br>\n  <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n</em></p>\n```",
+            "D\n```markdown\n<p><strong>Mailing Address</strong></p>\n<p><em>\n  6410 Via Real <br>\n  Carpinteria, CA 93013<br>\n  <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n</em></p>\n```\n[Source: W3Schools](https://www.w3schools.com/tags/tag_address.asp)\n`The <address> tag defines the contact information for the author/owner of a document or an article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc. The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element.`"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q80. What is the primary purpose of HTML?",
@@ -795,29 +795,29 @@
             "It displays nothing on a website.",
             "It has opening and closing tags but no child content.",
             "It has child content but no closing tag.",
-            "It has no child content and no closing tag."
+            "It has no child content and no closing tag.\n```markdown\n<noscript>Sample Text</noscript>\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q82. For the HTML code below, when will \"Sample Text\" display to the browser?",
+        "question": "Q82. For the HTML code below, when will \"Sample Text\" display to the browser?\n```markdown\n<noscript>Sample Text</noscript>\n```",
         "options": [
-            "kdown",
-            "ipt>Sample Text</noscript>",
-            "",
-            "when there is no JavaScript used on this webpage"
+            "when there is no JavaScript used on this webpage",
+            "when JavaScript is not supported by the browser or if JavaScript is disabled in the browser",
+            "when JavaScript is disabled in the web browser",
+            "when JavaScript is not supported by the web browser\n[Reference (MDN)](https://www.w3schools.com/tags/tag_noscript.asp)\n```markdown\n<details>\n  <h4>Mixed Berry Tart.</h4>\n  <p4>Raspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.</p4>\n</details>\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q83. How will this code render by default in most web browsers?",
+        "question": "Q83. How will this code render by default in most web browsers?\n```markdown\n<details>\n  <h4>Mixed Berry Tart.</h4>\n  <p4>Raspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.</p4>\n</details>\n```",
         "options": [
-            "kdown",
-            "ls>",
-            "Mixed Berry Tart.</h4>",
-            "Raspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.</p4>"
+            "A\n      ![A](images/Q84-1.jpg)",
+            "B\n      ![B](images/Q84-2.jpg)",
+            "C\n      ![C](images/Q84-3.jpg)",
+            "D\n      ![D](images/Q84-4.jpg)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q84. In this code, what is _target_?",
@@ -845,49 +845,49 @@
             "_readonly_ allows clicking in the `<textarea>` element. _disabled_ prevents all interaction with the control.",
             "_readonly_ is invalid attribute for `<textarea>`, while _disabled_ is a valid attribute.",
             "_disabled_ allows clicking in the `<textarea>` element. _readonly_ prevents all interaction with the control.",
-            "_disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute."
+            "_disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute.\n[Source: readonly](https://www.w3schools.com/tags/att_readonly.asp)\n[Source: disabled](https://www.w3schools.com/tags/att_disabled.asp)\n`<a target=\"_blank\">...</a>`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q87. In this code, what is _target_?",
+        "question": "Q87. In this code, what is _target_?\n`<a target=\"_blank\">...</a>`",
         "options": [
-            "rget=\"_blank\">...</a>`",
             "an attribute",
             "a tag",
-            "content"
+            "content",
+            "an element"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q88. What is the correct way to add a submit URL to a `button` element?",
         "options": [
-            "A",
-            "L",
-            "n submit=\"http://example.com/process\">",
-            "ess data"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q89. Which is the best markup to produce this text?",
-        "options": [
-            ">w`",
-            "`<p>x<y&z>w</p>`",
-            "`<p>x\\<y&z\\>w</p>`",
-            "`<p>x<<y&&z>>w`"
+            "A\n```HTML\n<button submit=\"http://example.com/process\">\n  Process data\n</button>\n```",
+            "B\n```HTML\n<button action=\"http://example.com/process\">\n  Process data\n</button>\n```",
+            "C\n```HTML\n<button formaction=\"http://example.com/process\">\n  Process data\n</button>\n```",
+            "D\n```HTML\n<button method=\"http://example.com/process\">\n  Process data\n</button>\n```\n`formaction — The URL that processes the information submitted by the button. Overrides the action attribute of the button's form owner. Does nothing if there is no form owner.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-formaction)\n`x<y&z>w`"
         ],
         "_ps": 2
     },
     {
-        "question": "Q90. What is wrong with this code snippet?",
+        "question": "Q89. Which is the best markup to produce this text?\n`x<y&z>w`",
         "options": [
-            "L",
-            ">Address:</label>",
-            " type=\"text\" name=\"address\" id=\"address-input\" />",
-            ""
+            "`<p>x<y&z>w</p>`",
+            "`<p>x\\<y&z\\>w</p>`",
+            "`<p>x<<y&&z>>w`",
+            "`<p>x<y&z>w</p>`\n`This question has an issue, however this answer will count as correct`\n`It's too strange question because all of that methods doesn't work. The good method is &amp, &lt, &gt using.`\n```HTML\n<label>Address:</label>\n<input type=\"text\" name=\"address\" id=\"address-input\" />\n```"
         ],
-        "_ps": -1
+        "_ps": 1
+    },
+    {
+        "question": "Q90. What is wrong with this code snippet?\n```HTML\n<label>Address:</label>\n<input type=\"text\" name=\"address\" id=\"address-input\" />\n```",
+        "options": [
+            "The `<label>` and `<input>` should be nested inside of a `<fieldset>` element.",
+            "**\"address\"** is not a valid value for the attribute **name** on an `<input>` element.",
+            "The `<label>` element is missing an **id** set to \"address-input\".",
+            "The `<label>` element is missing a **for** attribute set to \"address-input\"."
+        ],
+        "_ps": 3
     },
     {
         "question": "Q91. What is the default method for form submission?",
@@ -932,22 +932,22 @@
     {
         "question": "Q95. The value attribute is associated with which set of tags ?",
         "options": [
-            "A",
-            "L",
-            "",
-            ">"
+            "A\n```HTML\n<li>\n<input>\n<option>\n```",
+            "B\n```HTML\n<input>\n<option>\n<textarea>\n```",
+            "C\n```HTML\n<button>\n<input>\n<form>\n```",
+            "D\n```HTML\n<input>\n<label>\n<meter>\n```\n`<img src=\"https://source.unsplash.com/random\">`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q96. What is wrong with this code?",
+        "question": "Q96. What is wrong with this code?\n`<img src=\"https://source.unsplash.com/random\">`",
         "options": [
-            "src=\"https://source.unsplash.com/random\">`",
             "`<img>` should be paired with a `<caption>` tag.",
             "The `<img>` element is missing an alt attribute.",
-            "`<img>` is not a valid HTML element. Instead, use `<image src=\"...\"/>`."
+            "`<img>` is not a valid HTML element. Instead, use `<image src=\"...\"/>`.",
+            "`<img>` should be nested within a `<figure>` tag."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q97. Which choice is the most semantically correct markup for specifying the first definition of a term?",
@@ -955,19 +955,19 @@
             "`<p>`The `<dl>`focal length`</dl>` of a lens gives the distance from the lens to the image sensor.`</p>`",
             "`<p>`The `<dfn>`focal length`<dfn>` of a lens gives the distance from the lens to the image sensor.`</p>`",
             "`<p>`The `<dt>`focal length`</dt>` of a lens gives the distance from the lens to the image sensor.`</p>`",
-            "`<p>`The `<dd>`focal length`</dd>` of a lens gives the distance from the lens to the image sensor.`</p>`"
+            "`<p>`The `<dd>`focal length`</dd>` of a lens gives the distance from the lens to the image sensor.`</p>`\n`**Definition element => The <dfn> HTML element is used to indicate the term being defined within the context of a definition phrase or sentence. `<br>`**Description Term element => The <dt> HTML element specifies a term in a description or definition list, and as such must be used inside a <dl> element.`<br>` **Description Details element =>The <dd> HTML element provides the description, definition, or value for the preceding term (<dt>) in a description list (<dl>).`\n[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn)"
         ],
         "_ps": 1
     },
     {
         "question": "Q98. Which choice is the best way to code three choices within a form so that the user can select multiple items?",
         "options": [
-            "<input type=\"radio\" name=\"example\"> Choice 1 <br/>",
-            "<input type=\"radio\" name=\"example\"> Choice 2 <br/>",
-            "<input type=\"radio\" name=\"example\"> Choice 3",
-            "<input type=\"checkbox\" name=\"example\"> Choice 1 <br/>"
+            "<input type=\"radio\" name=\"example\"> Choice 1 <br/>\n      <input type=\"radio\" name=\"example\"> Choice 2 <br/>\n      <input type=\"radio\" name=\"example\"> Choice 3",
+            "<input type=\"checkbox\" name=\"example\"> Choice 1 <br/>\n      <input type=\"checkbox\" name=\"example\"> Choice 2 <br/>\n      <input type=\"checkbox\" name=\"example\"> Choice 3",
+            "<label><input type=\"checkbox\" name=\"example\"> Choice 1</label><br/>\n      <label><input type=\"checkbox\" name=\"example\"> Choice 2</label><br/>\n      <label><input type=\"checkbox\" name=\"example\"> Choice 3</label>",
+            "<label><input type=\"radio\" name=\"example\"> Choice 1</label><br/>\n      <label><input type=\"radio\" name=\"example\"> Choice 2</label><br/>\n      <label><input type=\"radio\" name=\"example\"> Choice 3</label>\n`<input> elements of type checkbox are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form. The exact appearance depends upon the operating system configuration under which the browser is running. Generally this is a square but it may have rounded corners.`\n[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)"
         ],
-        "_ps": 3
+        "_ps": 1
     },
     {
         "question": "Q99. How would you mark up a piece of ASCII art (an emoticon) in an accessible way?",
@@ -995,7 +995,7 @@
             "`<input type=\"range\" min=\"0\" max=\"100\" by=\"5\" />`",
             "`<input type=\"range\" min=\"0\" max=\"100\" step=\"5\" />`",
             "`<input type=\"number\" min=\"0\" max=\"100\" step=\"5\" />`",
-            "`<input type=\"number\" min=\"0\" max=\"100\" by=\"5\" />`"
+            "`<input type=\"number\" min=\"0\" max=\"100\" by=\"5\" />`\n`<input> elements of type range let the user specify a numeric value which must be no less than a given value, and no more than another given value. The step attribute is a number that specifies the granularity that the value must adhere to.`\n[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/range)"
         ],
         "_ps": 1
     },
@@ -1005,17 +1005,17 @@
             "`<head class=\"Page Section Information\" id=\"head\"><title>Page Title</title></head>`",
             "`<head><title>Page Title</title> <img src=\"favicon.icon\" alt=\"\"></head>`",
             "`<head><title>Page Title</title> <data value=\"email\">email@example.com</data></head>`",
-            "`<head><title>Page Title</title><address>email@example.com</address></head>`"
+            "`<head><title>Page Title</title><address>email@example.com</address></head>`\n`The <head> HTML element contains machine-readable information (metadata) about the document, like its title.The <data> tag is used to add a machine-readable translation of a given content.`\n[Source 1](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)/\n[Source 2](https://www.w3schools.com/tags/tag_data.asp)"
         ],
         "_ps": 2
     },
     {
         "question": "Q103. You need to add comments to the company blog. What is the most semantic markup for a list of comments?",
         "options": [
-            "A",
-            "L",
-            ">",
-            "Comments</h3>"
+            "A\n```HTML\n<aside>\n  <h3>Comments</h3>\n  <article> First comment.</article>\n  <article> Second comment.</article>\n</aside>\n```",
+            "B\n```HTML\n<div aria=\"dpub-comments\">\n  <h3>Comments</h3>\n  <div aria=\"dpub-comment\"> First comment.</div>\n  <div aria=\"dpub-comment\"> Second comment.</div>\n</div>\n```",
+            "C\n```HTML\n<aside>\n  <h3>Comments</h3>\n  <aside> First comment.</aside>\n  <aside> Second comment.</aside>\n</aside>\n```",
+            "D\n```HTML\n<div typeof=\"comments\">\n  <h3>Comments</h3>\n  <div typeof=\"comment\"> First comment.</div>\n  <div typeof=\"comment\"> Second comment.</div>\n</div>\n```\n`The <article> HTML element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Example:a user-submitted comment.`\n[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article)"
         ],
         "_ps": 0
     },
@@ -1025,7 +1025,7 @@
             "`access`; allow",
             "`designMode`; true",
             "`contenteditable`; true",
-            "`contenteditable`; yes"
+            "`contenteditable`; yes\n`The contenteditable global attribute is an enumerated attribute indicating if the element should be editable by the user. If so, the browser modifies its widget to allow editing. The attribute must take one of the following values: true or an empty string, which indicates that the element is editable; false, which indicates that the element is not editable.`\n[Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable)"
         ],
         "_ps": 2
     },
@@ -1035,7 +1035,7 @@
             "`<input type=\"invisible\" name=\"important\" value=\"information\">`",
             "`<input type=\"text\" style=\"display: none;\" name=\"important\" value=\"information\">`",
             "`<input type=\"hidden\" name=\"important\" value=\"information\">`",
-            "`<input type=\"text\" hidden name=\"important\" value=\"information\">`"
+            "`<input type=\"text\" hidden name=\"important\" value=\"information\">`\n`<input> elements of type hidden let web developers include data that cannot be seen or modified by users when a form is submitted. For example, the ID of the content that is currently being ordered or edited, or a unique security token. Hidden inputs are completely invisible in the rendered page, and there is no way to make it visible in the page's content.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden)"
         ],
         "_ps": 2
     },
@@ -1045,39 +1045,39 @@
             "`<table><label>Heading</label>...</table>`",
             "`<table><title>Heading</title>...</table>`",
             "`<table><legend>Heading</legend>...</table>`",
-            "`<table><caption>Heading</caption>...</table>`"
+            "`<table><caption>Heading</caption>...</table>`\n`The <caption> HTML element specifies the caption (or title) of a table.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)\n```html\n<img\n  srcset=\"medium.jpg 320w, large.jpg 1280w\"\n  src=\"small.jpg\"\n  alt=\"Our favorite image\"\n  sizes=\"(min-width: 1200px) 640px, 100vw\"\n/>\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q107. Which image file referenced in this `img` element's `srcset` attribute should a browser on a small mobile phone load?",
+        "question": "Q107. Which image file referenced in this `img` element's `srcset` attribute should a browser on a small mobile phone load?\n```html\n<img\n  srcset=\"medium.jpg 320w, large.jpg 1280w\"\n  src=\"small.jpg\"\n  alt=\"Our favorite image\"\n  sizes=\"(min-width: 1200px) 640px, 100vw\"\n/>\n```",
         "options": [
-            "l",
-            "",
-            "et=\"medium.jpg 320w, large.jpg 1280w\"",
-            "\"small.jpg\""
+            "small.jpg",
+            "medium.jpg",
+            "none of them",
+            "large.jpg\n`The browser will: 1. Look at its device width. 2. Work out which media condition in the sizes list is the first one to be true. 3. Look at the slot size given to that media query. 4. Load the image referenced in the srcset list that has the same size as the slot or, if there isn't one, the first image that is bigger than the chosen slot size.` [Source](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q108. Which description is coded correctly?",
         "options": [
-            "A",
-            "L",
-            "",
-            "Server</dt>"
+            "A\n```HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dd> Hardware used to provide data to other computers.</dd>\n  <!-- Other terms and descriptions -->\n</dl>\n```",
+            "B\n```HTML\n<dt>\n  <dl>Server</dl>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dd> Hardware used to provide data to other computers.</dd>\n  <!-- Other terms and descriptions -->\n</dt>\n```",
+            "C\n```HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dt> Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n```",
+            "D\n```HTML\n<dl>\n  <dd>Server</dd>\n  <dt>Software used to serve webpages, like Apache.</dt>\n  <dt> Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n```\n[Source 1](https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element)\n[Source 2](https://www.w3schools.com/tags/tag_dl.asp)\n```HTML\n<ul>\n  <h2>Espresso Drinks</h2>\n  <li>Espresso</li>\n  <li>Latte</li>\n  <li>Cappuccino</li>\n  <li>Mocha</li>\n</ul>\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q109. What is wrong with this code?",
+        "question": "Q109. What is wrong with this code?\n```HTML\n<ul>\n  <h2>Espresso Drinks</h2>\n  <li>Espresso</li>\n  <li>Latte</li>\n  <li>Cappuccino</li>\n  <li>Mocha</li>\n</ul>\n```",
         "options": [
-            "L",
-            "",
-            "Espresso Drinks</h2>",
-            "Espresso</li>"
+            "Nothing is wrong.",
+            "`<ul>` cannot contain a heading element as a direct child.",
+            "An `<h1>` should be used here instead of an `<h2>` tag.",
+            "Only `<ol>` allows direct descendants to contain elements other than an `<li>`, so use an `<ol>` here instead.\n`ul content model only accepts \"Zero or more li and script-supporting elements\".` [Source](https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q110. A designer gave you CSS code that should run only when the device rendering the page is in dark mode. How would you embed that code?",
@@ -1092,10 +1092,9 @@
     {
         "question": "Q111. How would you mark up a header for a table row?",
         "options": [
-            "A",
-            "L",
-            ">",
-            "ad scope=\"row\"><th row=\"1\">Header</th></thead>"
+            "A\n```HTML\n<table>\n  <thead scope=\"row\"><th row=\"1\">Header</th></thead>\n  <tr>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n```",
+            "B\n```HTML\n<table>\n  <tr>\n  <th scope=\"row\">Header</th>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n```",
+            "C\n```HTML\n<table>\n  <tr>\n    <thead scope=\"row\">Header</thead>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n```"
         ],
         "_ps": 0
     }

@@ -5,7 +5,7 @@
             "Double-click the file",
             "Choose File > Edit in Photoshop",
             "Choose File > Save to Photoshop",
-            "Press Cmd/Ctrl+E"
+            "Press Cmd/Ctrl+E\n[Reference](https://helpx.adobe.com/lightroom-cc/how-to/lightroom-photoshop-edit-photos.html#choose_a_photo_from_lightroom)"
         ],
         "_ps": 1
     },
@@ -15,7 +15,7 @@
             "Use the keyboard shortcut Cmd/Ctrl+Z",
             "Click a state in the history panel",
             "Choose File > Undo",
-            "Press Cmd/Ctrl+U"
+            "Press Cmd/Ctrl+U\n[Reference](https://helpx.adobe.com/uk/photoshop/using/undo-history.html#using_the_history_panel)"
         ],
         "_ps": 1
     },
@@ -25,19 +25,19 @@
             "Click the eye icon in the layers panel",
             "Use the Move tool with auto-select enabled",
             "Right-click the image and select layer",
-            "Press Cmd/Ctrl and click the layer"
+            "Press Cmd/Ctrl and click the layer\n[Reference](https://helpx.adobe.com/uk/photoshop/using/selecting-grouping-linking-layers.html#select_layers_in_the_document_window)\n![How can you avoid having transparent edges along the edge of a panoramic photo while retaining the largest image size?](images/007.png?raw=true)"
         ],
         "_ps": 1
     },
     {
         "question": "Q4. How can you avoid having transparent edges along the edge of a panoramic photo while retaining the largest image size?\n![How can you avoid having transparent edges along the edge of a panoramic photo while retaining the largest image size?](images/007.png?raw=true)",
         "options": [
-            "can you avoid having transparent edges along the edge of a panoramic photo while retaining the largest image size?](images/007.png?raw=true)",
             "Choose the Cylindrical method.",
             "Choose the Perspective method.",
-            "Adjust the Boundary Warp slider."
+            "Adjust the Boundary Warp slider.",
+            "Select Auto Crop.\n[Reference](https://helpx.adobe.com/uk/lightroom-classic/help/panorama.html)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q5. How do you crop a document without permanently discarding pixels along the edge?",
@@ -75,19 +75,19 @@
             "Select Image > Auto Tone.",
             "Select Image > Auto Color.",
             "Alt-click (Option-click) the Auto button in the Properties panel when you have a Levels or Curves adjustment layer targeted in the Layers panel.",
-            "Hold down the Alt (Option) key and select Image > Auto Color."
+            "Hold down the Alt (Option) key and select Image > Auto Color.\n    A. Content-Aware Scale\n    B. Scale\n    C. Warp\n    D. Distort\n    E. Perspective Warp"
         ],
         "_ps": 1
     },
     {
         "question": "Q9. Which options are available when using the Free Transform command on a Smart Object?\n    A. Content-Aware Scale\n    B. Scale\n    C. Warp\n    D. Distort\n    E. Perspective Warp",
         "options": [
-            " Content-Aware Scale",
-            " Scale",
-            " Warp",
-            " Distort"
+            "C,D",
+            "D,E",
+            "B,C",
+            "C,E\n[Reference](https://helpx.adobe.com/photoshop/using/free-transformations-images-shapes-paths.html#:~:text=The%20Free%20Transform%20command%20lets,to%20switch%20between%20transformation%20types)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q10. What is considered the minimum DPI for photographic-quality inkjet printing?",
@@ -145,39 +145,39 @@
             "It allows you to use the Pen tool to edit a selection",
             "It allows you to use the Brush tool to create or refine a selection",
             "It allows you to duplicate a mask quickly.",
-            "It allows you to convert a vector mask to a layer mask."
+            "It allows you to convert a vector mask to a layer mask.\n![What Photoshop feature was used to convert this image to black and white?](images/008.png?raw=true)"
         ],
         "_ps": 1
     },
     {
         "question": "Q16. What Photoshop feature was used to convert this image to black and white?\n![What Photoshop feature was used to convert this image to black and white?](images/008.png?raw=true)",
         "options": [
-            " Photoshop feature was used to convert this image to black and white?](images/008.png?raw=true)",
             "Black and White adjustment layer",
             "Posterize",
-            "Threshold"
+            "Threshold",
+            "Image > Mode > Grayscale\n![In the image shown, why is Sharpen Edges grayed out?](images/009.png?raw=true)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q17. In the image shown, why is Sharpen Edges grayed out?\n![In the image shown, why is Sharpen Edges grayed out?](images/009.png?raw=true)",
         "options": [
-            "he image shown, why is Sharpen Edges grayed out?](images/009.png?raw=true)",
             "The filter doesn't work on a 16-bit image.",
             "The filer is not correctly installed.",
-            "The filter doesn't work on a 32-bit image."
+            "The filter doesn't work on a 32-bit image.",
+            "The filter requires a selection to be made first.\n![In the image shown, which Camera Raw feature was used to restrict the graduated filter to avoid the statue?](images/010.png?raw=true)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q18. In the image shown, which Camera Raw feature was used to restrict the graduated filter to avoid the statue?\n![In the image shown, which Camera Raw feature was used to restrict the graduated filter to avoid the statue?](images/010.png?raw=true)",
         "options": [
-            "he image shown, which Camera Raw feature was used to restrict the graduated filter to avoid the statue?](images/010.png?raw=true)",
             "Adjustment Brush",
             "Depth Range Mask",
-            "Luminance Range Mask"
+            "Luminance Range Mask",
+            "Color Range Mask"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q19. What can you use to save a common crop size?",
@@ -185,19 +185,19 @@
             "tool sets",
             "preferences",
             "modifier keys",
-            "tool presets"
+            "tool presets\n![Which Camera Raw Transform method is being used in the example shown?](images/011.png?raw=true)"
         ],
         "_ps": 3
     },
     {
         "question": "Q20. Which Camera Raw Transform method is being used in the example shown?\n![Which Camera Raw Transform method is being used in the example shown?](images/011.png?raw=true)",
         "options": [
-            "h Camera Raw Transform method is being used in the example shown?](images/011.png?raw=true)",
             "Guided",
             "Vertical",
-            "Level"
+            "Level",
+            "Full"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q21. To reduce the file size of a PDF, what should you do?",
@@ -225,29 +225,29 @@
             "grouped with the Eyedropper tool",
             "Image > Mode > Red Eye",
             "Edit > Red Eye",
-            "grouped with the Spot Healing Brush tool"
+            "grouped with the Spot Healing Brush tool\n![Which option was not selected in the Magic Wand tool to create a selection like the one shown below?](images/012.png?raw=true)"
         ],
         "_ps": 3
     },
     {
         "question": "Q24. Which option was **not** selected in the Magic Wand tool to create a selection like the one shown below?\n![Which option was not selected in the Magic Wand tool to create a selection like the one shown below?](images/012.png?raw=true)",
         "options": [
-            "h option was not selected in the Magic Wand tool to create a selection like the one shown below?](images/012.png?raw=true)",
             "Contiguous",
             "Anti-alias",
-            "Auto-Enhance"
+            "Auto-Enhance",
+            "Sample All Layers\n![Where should you click to open a dialog box in which you can then choose to open a raw file as a Smart Object?](images/013.png?raw=true)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q25. Where should you click to open a dialog box in which you can then choose to open a raw file as a Smart Object?\n![Where should you click to open a dialog box in which you can then choose to open a raw file as a Smart Object?](images/013.png?raw=true)",
         "options": [
-            "e should you click to open a dialog box in which you can then choose to open a raw file as a Smart Object?](images/013.png?raw=true)",
             "A",
             "B",
-            "C"
+            "C",
+            "D"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q26. Which option would you use to clone while respecting perspective planes?",
@@ -335,7 +335,7 @@
             "Refine Edge",
             "Quick Select",
             "Magic Wand",
-            "Lasso"
+            "Lasso\n[Reference](https://helpx.adobe.com/photoshop/using/select-mask.html#tools)"
         ],
         "_ps": 2
     },
@@ -355,19 +355,19 @@
             "Exposure",
             "Color Lookup",
             "Brightness/Contrast",
-            "Curves"
+            "Curves\n![To hide the white borders around pixels that are viewed at a high magnification, which option do you disable?](images/005.png?raw=true)"
         ],
         "_ps": 1
     },
     {
         "question": "Q37. To hide the white borders around pixels that are viewed at a high magnification, which option do you disable?\n![To hide the white borders around pixels that are viewed at a high magnification, which option do you disable?](images/005.png?raw=true)",
         "options": [
-            "ide the white borders around pixels that are viewed at a high magnification, which option do you disable?](images/005.png?raw=true)",
             "Window > Workspace > Grid",
             "View > Show > Slices",
-            "View > Show > Selection Edges"
+            "View > Show > Selection Edges",
+            "View > Show > Pixel Grid"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q38. To save a panel layout arrangement, what should you create?",
@@ -435,19 +435,19 @@
             "GIF",
             "PNG-8",
             "PNG-24",
-            "JPEG"
+            "JPEG\n[Reference](https://helpx.adobe.com/photoshop-elements/using/optimizing-images-png-24-format.html)\n![You're trying to use the Healing Brush tool, but don't see results. What is the problem?](images/006.png?raw=true)"
         ],
         "_ps": 2
     },
     {
         "question": "Q45. You're trying to use the Healing Brush tool, but don't see results. What is the problem?\n![You're trying to use the Healing Brush tool, but don't see results. What is the problem?](images/006.png?raw=true)",
         "options": [
-            "re trying to use the Healing Brush tool, but don't see results. What is the problem?](images/006.png?raw=true)",
             "You forgot to Shift-click to set the source point for the tool",
             "You forgot to Alt-click (Windows) or Option-click (Mac) to set the source point for the tool",
-            "You forgot to double-click to set the source point for the tool"
+            "You forgot to double-click to set the source point for the tool",
+            "You forgot to Ctrl-click (Windows) or Command-click (Mac) to set the source point for the tool"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q46. Which color space is best for web graphics?",
@@ -455,69 +455,69 @@
             "Adobe RGB",
             "ProPhoto RGB",
             "RGB",
-            "sRGB"
+            "sRGB\n[Reference](https://helpx.adobe.com/ca/photoshop/using/color-settings.html#:~:text=sRGB%20is%20recommended%20when%20you,as%20their%20default%20color%20space.)\n![Which option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?](images/001.png?raw=true)"
         ],
         "_ps": 3
     },
     {
         "question": "Q47. Which option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?\n![Which option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?](images/001.png?raw=true)",
         "options": [
-            "h option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?](images/001.png?raw=true)",
             "Sample All Layers",
             "Protect Tones",
-            "Use Pressure for Size"
-        ],
-        "_ps": 2
-    },
-    {
-        "question": "Q48. Which command in the **Smart Objects** submenu would you see to save the original file for the selected layer?\n![Which command in the Smart Objects submenu would you see to save the original file for the selected layer?](images/002.png?raw=true)",
-        "options": [
-            "h command in the Smart Objects submenu would you see to save the original file for the selected layer?](images/002.png?raw=true)",
-            "Edit Contents",
-            "Replace Contents",
-            "Relink to File"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q49. In the image shown, which Blur method is being used to control focus with a series of pins?\n![In the image shown, which Blur method is being used to control focus with a series of pins?](images/003.png?raw=true)",
-        "options": [
-            "he image shown, which Blur method is being used to control focus with a series of pins?](images/003.png?raw=true)",
-            "Path Blur",
-            "Tilt-Shift Blur",
-            "Iris Blur"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q50. In the image shown, what do the blue areas represent?\n![In the image shown, what do the blue areas represent?](images/004.png?raw=true)",
-        "options": [
-            "he image shown, what do the blue areas represent?](images/004.png?raw=true)",
-            "Color cast",
-            "Clipped shadow detail",
-            "Overexposed details"
-        ],
-        "_ps": 3
-    },
-    {
-        "question": "Q51. What does the grayscale image in this figure show?\n![What does the grayscale image in this figure show?](images/014.png?raw=true)",
-        "options": [
-            " does the grayscale image in this figure show?](images/014.png?raw=true)",
-            "the edges affected by the Sharpen command as refined by the Masking slider",
-            "the edges affected by the Sharpen command as refined by the Radius slider",
-            "the edges affected by the Sharpen command as refined by the Detail slider"
+            "Use Pressure for Size",
+            "Protect Colors\n[Reference](https://helpx.adobe.com/photoshop/using/dodge-burn-image-areas.html)\n![Which command in the Smart Objects submenu would you see to save the original file for the selected layer?](images/002.png?raw=true)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q52. Where do you click to adjust the blending mode for a Smart Filter?\n![Where do you click to adjust the blending mode for a Smart Filter?](images/015.png?raw=true)",
+        "question": "Q48. Which command in the **Smart Objects** submenu would you see to save the original file for the selected layer?\n![Which command in the Smart Objects submenu would you see to save the original file for the selected layer?](images/002.png?raw=true)",
         "options": [
-            "e do you click to adjust the blending mode for a Smart Filter?](images/015.png?raw=true)",
-            "A",
-            "C",
-            "D"
+            "Edit Contents",
+            "Replace Contents",
+            "Relink to File",
+            "Export Contents\n![In the image shown, which Blur method is being used to control focus with a series of pins?](images/003.png?raw=true)"
         ],
         "_ps": 3
+    },
+    {
+        "question": "Q49. In the image shown, which Blur method is being used to control focus with a series of pins?\n![In the image shown, which Blur method is being used to control focus with a series of pins?](images/003.png?raw=true)",
+        "options": [
+            "Path Blur",
+            "Tilt-Shift Blur",
+            "Iris Blur",
+            "Field Blur\n![In the image shown, what do the blue areas represent?](images/004.png?raw=true)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q50. In the image shown, what do the blue areas represent?\n![In the image shown, what do the blue areas represent?](images/004.png?raw=true)",
+        "options": [
+            "Color cast",
+            "Clipped shadow detail",
+            "Overexposed details",
+            "Clipped highlight detail\n![What does the grayscale image in this figure show?](images/014.png?raw=true)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q51. What does the grayscale image in this figure show?\n![What does the grayscale image in this figure show?](images/014.png?raw=true)",
+        "options": [
+            "the edges affected by the Sharpen command as refined by the Masking slider",
+            "the edges affected by the Sharpen command as refined by the Radius slider",
+            "the edges affected by the Sharpen command as refined by the Detail slider",
+            "the edges affected by the Sharpen command as refined by the Amount slider\n![Where do you click to adjust the blending mode for a Smart Filter?](images/015.png?raw=true)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q52. Where do you click to adjust the blending mode for a Smart Filter?\n![Where do you click to adjust the blending mode for a Smart Filter?](images/015.png?raw=true)",
+        "options": [
+            "A",
+            "C",
+            "D",
+            "B"
+        ],
+        "_ps": 2
     },
     {
         "question": "Q53. Where do you find natural media brushes?",
@@ -565,7 +565,7 @@
             "Flatten",
             "Calculations",
             "Multiply",
-            "Merge"
+            "Merge\n[Answer found at:](https://helpx.adobe.com/photoshop/using/channel-calculations.html)"
         ],
         "_ps": 1
     },
@@ -614,8 +614,7 @@
         "options": [
             "Brush",
             "Object Selection",
-            "Refine Edge",
-            "Quick selection"
+            "Refine Edge"
         ],
         "_ps": -1
     }

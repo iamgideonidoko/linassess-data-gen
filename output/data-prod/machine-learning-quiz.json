@@ -45,7 +45,7 @@
             "It was consistently wrong.",
             "It was inconsistently wrong.",
             "It was consistently right.",
-            "It was equally right end wrong."
+            "It was equally right end wrong.\n[Reference](https://medium.com/datadriveninvestor/bias-and-variance-in-machine-learning-51fdd38d1f86)"
         ],
         "_ps": 0
     },
@@ -85,19 +85,19 @@
             "a data entry system",
             "a data warehouse system",
             "a massive data repository",
-            "a product recommendation system"
+            "a product recommendation system\n![Machine Learning Q10](images/machine-learning_Q10.jpg)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q10. What does this image illustrate?",
+        "question": "Q10. What does this image illustrate?\n![Machine Learning Q10](images/machine-learning_Q10.jpg)",
         "options": [
-            "ine Learning Q10](images/machine-learning_Q10.jpg)",
             "a decision tree",
             "reinforcement learning",
-            "K-nearest neighbor"
+            "K-nearest neighbor",
+            "a clear trendline"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q11. You work for a power company that owns hundreds of thousands of electric meters. These meters are connected to the internet and transmit energy usage data in real-time. Your supervisor asks you to direct project to use machine learning to analyze this usage data. Why are machine learning algorithms ideal in this scenario?",
@@ -125,19 +125,19 @@
             "It naively assumes that you will have no data.",
             "It does not even try to create accurate predictions.",
             "It naively assumes that the predictors are independent from one another.",
-            "It naively assumes that all the predictors depend on one another."
+            "It naively assumes that all the predictors depend on one another.\n![Machine Learning Q14](images/machine-learning_Q14.jpg)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q14. You work for an ice cream shop and created the chart below, which shows the relationship between the outside temperature and ice cream sales. What is the best description of this chart?",
+        "question": "Q14. You work for an ice cream shop and created the chart below, which shows the relationship between the outside temperature and ice cream sales. What is the best description of this chart?\n![Machine Learning Q14](images/machine-learning_Q14.jpg)",
         "options": [
-            "ine Learning Q14](images/machine-learning_Q14.jpg)",
             "It is a linear regression chart.",
             "It is a supervised trendline chart.",
-            "It is a decision tree."
+            "It is a decision tree.",
+            "It is a clustering trend chart."
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q15. How is machine learning related to artificial intelligence?",
@@ -165,19 +165,19 @@
             "Create an artificial neural network that would host the company directory.",
             "Use machine learning to better predict risk.",
             "Create an algorithm that consolidates all of your Excel spreadsheets into one data lake.",
-            "Use machine learning and big data to research salary requirements."
+            "Use machine learning and big data to research salary requirements.\n![Machine Learning Q18](images/machine-learning_Q18.jpg)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q18. What is the missing information in this diagram?",
+        "question": "Q18. What is the missing information in this diagram?\n![Machine Learning Q18](images/machine-learning_Q18.jpg)",
         "options": [
-            "ine Learning Q18](images/machine-learning_Q18.jpg)",
             "Training Set",
             "Unsupervised Data",
-            "Supervised Learning"
+            "Supervised Learning",
+            "Binary Classification"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q19. What is one reason not to use the same data for both your training set and your testing set?",
@@ -195,7 +195,7 @@
             "Machine learning algorithms are based on math and statistics, and so by definition will be unbiased.",
             "There is no way to identify bias in the data.",
             "Machine learning algorithms are powerful enough to eliminate bias from the data.",
-            "All human-created data is biased, and data scientists need to account for that."
+            "All human-created data is biased, and data scientists need to account for that.\n**Explanation**: While machine learning algorithms don't have bias, the data can have them."
         ],
         "_ps": 3
     },
@@ -225,7 +225,7 @@
             "centroid reinforcement",
             "K-nearest neighbor",
             "binary classification",
-            "K-means clustering"
+            "K-means clustering\n**Explanation**: The problem explicitly states \"clustering\"."
         ],
         "_ps": 3
     },
@@ -245,19 +245,19 @@
             "unsupervised machine learning",
             "binary classification",
             "supervised machine learning",
-            "reinforcement learning"
+            "reinforcement learning\n![Machine Learning Q26](images/machine-learning_Q26.jpg)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q26. What is this diagram a good example of?",
+        "question": "Q26. What is this diagram a good example of?\n![Machine Learning Q26](images/machine-learning_Q26.jpg)",
         "options": [
-            "ine Learning Q26](images/machine-learning_Q26.jpg)",
             "K-nearest neighbor",
             "a decision tree",
-            "a linear regression"
+            "a linear regression",
+            "a K-means cluster\nNote: there are centres of clusters (C0, C1, C2)."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q27. Random forest is modified and improved version of which earlier technique?",
@@ -365,7 +365,7 @@
             "K-means",
             "Logistic regression",
             "Linear regression",
-            "Principal Component Analysis (PCA)"
+            "Principal Component Analysis (PCA)\n**Explanation:** Logistic regression is far better than linear regression at binary classification since it biases the result toward one extreme or the other. K-means clustering can be used for classification but is not as accurate in most scenarios.\n[Source:](https://www.kaggle.com/minc33/k-means-clustering-vs-logistic-regression)"
         ],
         "_ps": 1
     },
@@ -375,7 +375,7 @@
             "supervised learning",
             "data",
             "unsupervised learning",
-            "algorithms"
+            "algorithms\n**Explanation**: This one is pretty straight forward and a fundamental concept.\n[Source:](https://towardsdatascience.com/machine-learning-for-beginners-d247a9420dab)"
         ],
         "_ps": 1
     },
@@ -415,7 +415,7 @@
             "You will be able to prioritize different classes of drugs, such as antibiotics.",
             "You can create a training set of drugs you would like to discover.",
             "The algorithms will cluster together drugs that have similar traits.",
-            "Human experts can create classes of drugs to help guide discovery."
+            "Human experts can create classes of drugs to help guide discovery.\n**Explanation**: This one is similar to an example talked about in the Stanford Machine Learning course.\n[Source:](https://www.coursera.org/learn/machine-learning/home/welcome)"
         ],
         "_ps": 2
     },
@@ -455,19 +455,19 @@
             "statistics",
             "structured data",
             "availability",
-            "algorithms"
+            "algorithms\n![Machine Learning Q45](images/machine-learning_Q45.jpg)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q47. What is this diagram a good example of?",
+        "question": "Q47. What is this diagram a good example of?\n![Machine Learning Q45](images/machine-learning_Q45.jpg)",
         "options": [
-            "ine Learning Q45](images/machine-learning_Q45.jpg)",
             "unsupervised learning",
             "complex cluster",
-            "multiclass classification"
+            "multiclass classification",
+            "k-nearest neighbour"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q48. Naive Bayes looks at each **\\_** predictor and creates a probability that belongs in each class.",
@@ -475,7 +475,7 @@
             "conditional",
             "multiclass",
             "independent",
-            "binary"
+            "binary\n[Reference](https://towardsdatascience.com/all-about-naive-bayes-8e13cef044cf)"
         ],
         "_ps": 2
     },
@@ -595,19 +595,19 @@
             "good fitting",
             "overfitting",
             "underfitting",
-            "all of the above"
+            "all of the above\n![Machine Learning Q58](images/machine-learning_Q58.jpg)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q61. How would you describe this type of classification challenge?",
+        "question": "Q61. How would you describe this type of classification challenge?\n![Machine Learning Q58](images/machine-learning_Q58.jpg)",
         "options": [
-            "ine Learning Q58](images/machine-learning_Q58.jpg)",
             "This is a multiclass classification challenge.",
             "This is a multi-binary classification challenge.",
-            "This is a binary classification challenge."
+            "This is a binary classification challenge.",
+            "This is a reinforcement classification challenge.\n  **Explanation**: Shows data being classified into more than two categories or classes. Thus, this is a multi-class classification challenge."
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q62. What does it mean to underfit your data model?",
@@ -615,7 +615,7 @@
             "There is too little data in your training set.",
             "There is too much data in your training set.",
             "There is not a lot of variance but there is a high bias.",
-            "Your model has low bias but high variance."
+            "Your model has low bias but high variance.\n  `Underfitted data models usually have high bias and low variance. Overfitted data models have low bias and high variance.`"
         ],
         "_ps": 2
     },
@@ -625,7 +625,7 @@
             "Include Asian faces in your test data and retrain your model.",
             "Retrain your model with updated hyperparameter values.",
             "Retrain your model with smaller batch sizes.",
-            "Include Asian faces in your training data and retrain your model."
+            "Include Asian faces in your training data and retrain your model.\n`The answer is self-explanatory: if Asian users are the only group of people making the complaint, then the training data should have more Asian faces.`"
         ],
         "_ps": 3
     },
@@ -635,7 +635,7 @@
             "Your training set is too large.",
             "You are underfitting the model to the data.",
             "You are overfitting the model to the data.",
-            "Your machine is creating inaccurate clusters."
+            "Your machine is creating inaccurate clusters.\n**Explanation**: // This question is very similar to Q49 but involves a polar opposite scenario.\n`that answer somewhat vague and unsettled. Small number of matchings does not necessarily implies that the model overfits, especially given 500 (!) independent variables. To me, it sounds more reasonable that the threshold (matching) criterion might be too tight, thus allowing only a small number of matching to occur. So a solution can be either softening the threshold criterion or increasing the number of candidates.`"
         ],
         "_ps": 2
     },
@@ -645,7 +645,7 @@
             "What kernels extract",
             "Feature Maps",
             "How kernels Look",
-            "66. The activations for class A, B and C before softmax were 10,8 and 3. The different in softmax values for class A and class B would be :"
+            "76%"
         ],
         "_ps": 0
     },
@@ -655,7 +655,7 @@
             "76%",
             "88%",
             "12%",
-            "0.0008%"
+            "0.0008%\n![image](images/machine-learning_Q62.png)"
         ],
         "_ps": 0
     },
@@ -695,19 +695,19 @@
             "kullback-leibler (KL) loss",
             "Binary Crossentropy",
             "Mean Squared Error (MSE)",
-            "Any L2 loss"
+            "Any L2 loss\n![image](images/machine-learning_Q67.png)\n| no. | Red | Blue | Green |\n| --- | --- | --- | --- |\n| **1.** | Validation error | Training error | Test error |\n| **2.** | Training error | Test error | Validation error |\n| **3.** | Optimal error | Validation error | Test error |\n| **4.** | Validation error | Training error | Optimal error |"
         ],
         "_ps": 1
     },
     {
-        "question": "Q71. What is the correct option?",
+        "question": "Q71. What is the correct option?\n![image](images/machine-learning_Q67.png)\n| no. | Red | Blue | Green |\n| --- | --- | --- | --- |\n| **1.** | Validation error | Training error | Test error |\n| **2.** | Training error | Test error | Validation error |\n| **3.** | Optimal error | Validation error | Test error |\n| **4.** | Validation error | Training error | Optimal error |",
         "options": [
-            "e](images/machine-learning_Q67.png)",
-            "| Red | Blue | Green |",
-            "| --- | --- | --- |",
-            "** | Validation error | Training error | Test error |"
+            "1",
+            "2",
+            "3",
+            "4"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q72. You create a decision tree to show whether someone decides to go to the beach. There are three factors in this decision: rainy, overcast, and sunny. What are these three factors called?",
@@ -715,7 +715,7 @@
             "tree nodes",
             "predictors",
             "root nodes",
-            "deciders"
+            "deciders\n`// these nodes decide whether the someone decides to go to beach or not, for example if its rainy people will mostly refrain from going to beach`"
         ],
         "_ps": 1
     },
@@ -725,19 +725,19 @@
             "Set up a cluster of machines to label the images",
             "Create a subset of the images and label then yourself",
             "Use naive Bayes to automatically generate labels.",
-            "Hire people to manually label the images"
+            "Hire people to manually label the images\n![image](images/machine-learning_Q70.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q74. The fit line and data in the figure exhibits which pattern?",
+        "question": "Q74. The fit line and data in the figure exhibits which pattern?\n![image](images/machine-learning_Q70.png)",
         "options": [
-            "e](images/machine-learning_Q70.png)",
             "low bias, high variance",
             "high bias, low variance",
-            "high bias, high variance"
+            "high bias, high variance",
+            "low bias, low variance\n  `// since the data is accurately classified and is neither overfitting or underfitting the dataset`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q75. Many of the advances in machine learning have come from improved?",
@@ -805,7 +805,7 @@
             "supervised machine learning with rewards",
             "a type of unsupervised learning that relies heavily on a well-established model",
             "a type of reinforcement learning where accuracy degrades over time",
-            "a type of reinforcement learning that focuses on rewards"
+            "a type of reinforcement learning that focuses on rewards\n**Explanation**:Q-learning is a model-free reinforcement learning algorithm.Q-learning is a values-based learning algorithm. Value based algorithms updates the value function based on an equation(particularly Bellman equation).\n[Reference](<https://towardsdatascience.com/a-beginners-guide-to-q-learning-c3e2a30a653c#:~:text=Q%2Dlearning%20is%20a%20model,equation(particularly%20Bellman%20equation).&text=Means%20it%20learns%20the%20value,independently%20of%20the%20agent's%20actions.>)"
         ],
         "_ps": 3
     },
@@ -815,7 +815,7 @@
             "They would be grouped tightly together in the predicted outcome.",
             "They would be grouped tightly together but far from the predicted.",
             "They would be scattered around the predict outcome.",
-            "They would be scattered far away from the predicted outcome."
+            "They would be scattered far away from the predicted outcome.\n[Reference](https://medium.com/30-days-of-machine-learning/day-3-k-nearest-neighbors-and-bias-variance-tradeoff-75f84d515bdb)"
         ],
         "_ps": 0
     },
@@ -825,7 +825,7 @@
             "unsupervised learning",
             "semi-supervised learning",
             "supervised learning",
-            "semi-reinforcement learning"
+            "semi-reinforcement learning\n[Reference](https://www.expert.ai/blog/machine-learning-definition/)"
         ],
         "_ps": 2
     },
@@ -835,7 +835,7 @@
             "binary learning",
             "supervised learning",
             "unsupervised learning",
-            "reinforcement learning"
+            "reinforcement learning\n[Reference](https://venturebeat.com/2016/03/16/heres-what-alphagos-historic-win-means-for-the-enterprise/)"
         ],
         "_ps": 3
     },
@@ -845,7 +845,7 @@
             "multiclass binary classification",
             "naive Bayes",
             "unsupervised classification",
-            "decision tree analysis"
+            "decision tree analysis\n`//You could use a naïve Bayes algorithm, to differentiate three classes of dog breeds — terrier, hound, and sport dogs. Each class has three predictors — hair length, height, and weight. The algorithm does something called class predictor probability.`\n[Reference](https://www.linkedin.com/pulse/machine-learning-algorithms-doug-rose/)"
         ],
         "_ps": 1
     },
@@ -934,8 +934,7 @@
         "options": [
             "Bias is when your predicted values are scattered.",
             "Bias is the gap between your predicted value and the outcome.",
-            "Bias is when your data is wrong for differnet reasons.",
-            "Bias is when your values are always off by the same percentage."
+            "Bias is when your data is wrong for differnet reasons."
         ],
         "_ps": 1
     }

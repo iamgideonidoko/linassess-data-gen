@@ -1,13 +1,13 @@
 [
     {
-        "question": "Q1. Which image matches the flex layout defined in this style rule?\n```css\n.container {\n  display: flex;\n}\n.container div:last-child {\n  margin-left: auto;\n}\n```\n  ![B](images/Q1-B.jpg)",
+        "question": "Q1. Which image matches the flex layout defined in this style rule?\n```css\n.container {\n  display: flex;\n}\n.container div:last-child {\n  margin-left: auto;\n}\n```",
         "options": [
-            "",
-            "iner {",
-            "lay: flex;",
-            ""
+            "![A](images/Q1-A.jpg)",
+            "  ![B](images/Q1-B.jpg)",
+            "![C](images/Q1-C.jpg)",
+            "![D](images/Q1-D.jpg)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q2. Variables declared with the let keyword have what type of scope?",
@@ -55,19 +55,19 @@
             "top",
             "opacity",
             "width",
-            "height"
+            "height\n```javascript\nlet pocket = ['turnip', 'stone', 'log', 'apple'];\nlet selected = pocket[1];\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q7. What will be the value of selected?\n```javascript\nlet pocket = ['turnip', 'stone', 'log', 'apple'];\nlet selected = pocket[1];\n```",
         "options": [
-            "ascript",
-            "cket = ['turnip', 'stone', 'log', 'apple'];",
-            "lected = pocket[1];",
-            ""
+            "log",
+            "apple",
+            "stone",
+            "turnip"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q8. What does the `===` comparison operator do?",
@@ -75,19 +75,19 @@
             "It sets one variable equal to another in both value and type",
             "It tests for equality of type only",
             "It tests for equality of value only",
-            "It tests for equality of value and type"
+            "It tests for equality of value and type\n```javascript\nlet fruit = 'apple';\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q9. In the following code, the variable `fruit` has been assigned a value of apple. How would you change the value to plum?\n```javascript\nlet fruit = 'apple';\n```",
         "options": [
-            "ascript",
-            "uit = 'apple';",
-            "",
-            "`let fruit = 'plum'`"
+            "`let fruit = 'plum'`",
+            "`var fruit = 'plum'`",
+            "`const fruit = 'plum'`",
+            "`fruit = 'plum'`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q10. What is the `<label>` element used for?",
@@ -105,29 +105,29 @@
             "The page will not display",
             "An error message will be displayed",
             "The browser will not load the stylesheet",
-            "The browser will ignore the unknown CSS"
+            "The browser will ignore the unknown CSS\n```css\nh1 {\n  color: red;\n  font-size: 5em;\n}\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q12. In this code, what is the term for the h1?\n```css\nh1 {\n  color: red;\n  font-size: 5em;\n}\n```",
         "options": [
-            "",
-            "",
-            "r: red;",
-            "-size: 5em;"
+            "selector",
+            "combinator",
+            "declarator",
+            "markup\n```css\n.highlight {\n  background-color: yellow;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q13. Which HTML will result in text being highlighted in yellow?\n```css\n.highlight {\n  background-color: yellow;\n}\n```",
         "options": [
-            "",
-            "ight {",
-            "ground-color: yellow;",
-            ""
+            "`<span class=\"highlight\">#BLM</span>`",
+            "`<span style=\"highlight\">#BLM</span>`",
+            "`<highlight\">#BLM</span>`",
+            "`<div id=\"highlight\">#BLM</span>`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q14. Which choice is not a value of the type attribute of the `<input>` element?",
@@ -215,39 +215,39 @@
             "sharing JavaScript code with other people",
             "making JavaScript-reliant sites accessible to users who do not have JavaScript turned on",
             "bundling individual JavaScript files for use in your website",
-            "source control"
+            "source control\n```css\n.container {\n  width: 600px;\n  column-width: 200px;\n  column-gap: 50px;\n}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q23. How many columns will there be, given this code?\n```css\n.container {\n  width: 600px;\n  column-width: 200px;\n  column-gap: 50px;\n}\n```",
         "options": [
-            "",
-            "iner {",
-            "h: 600px;",
-            "mn-width: 200px;"
+            "one",
+            "three",
+            "four",
+            "two\n![A](images/Q24.png)\n```html\n<cite>Noam Chomsky</cite>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q24. Which style will change the color of the text?\n![A](images/Q24.png)\n```html\n<cite>Noam Chomsky</cite>\n```\n```css\ncite {\n  text-color: cyan;\n}\n```\n```css\ncite {\n  font-color: cyan;\n}\n```\n```css\ncite {\n  color: cyan;\n}\n```",
+        "question": "Q24. Which style will change the color of the text?\n![A](images/Q24.png)\n```html\n<cite>Noam Chomsky</cite>\n```",
         "options": [
-            "mages/Q24.png)",
-            "l",
-            "Noam Chomsky</cite>",
-            ""
+            "A\n```css\ncite {\n  text-color: cyan;\n}\n```",
+            "B\n```css\ncite {\n  font-color: cyan;\n}\n```",
+            "C\n```css\ncite {\n  color: cyan;\n}\n```",
+            "D\n```css\ncite {\n  text: cyan;\n}\n```\n```css\n.cf::after {\n  content: '';\n  display: block;\n  clear: both;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q25. You find this code in a stylesheet. What is it being used for?\n```css\n.cf::after {\n  content: '';\n  display: block;\n  clear: both;\n}\n```",
         "options": [
-            "",
-            "fter {",
-            "ent: '';",
-            "lay: block;"
+            "inserting content that cannot be seen by screen readers",
+            "fixing an Internet Explorer 11 bug",
+            "clearing floats in float-based layouts",
+            "creating a new block formatting context"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q26. What is the correct way to initialize an array of galaxies in JavaScript?",
@@ -285,19 +285,19 @@
             "The webapge is using a DOCTYPE, which renders it incapable of displayed video in addition to other web content.",
             "Your browser does not support HTML5 video.",
             "The video is from a source that cannot be displayed in your location for legal reasons.",
-            "The page is loaded via HTTPS, but the video is being served insecurely as HTTP and the browser is blocking it."
+            "The page is loaded via HTTPS, but the video is being served insecurely as HTTP and the browser is blocking it.\n          let max = 3;\n          for (i = 0; i > max; i++) {\n            document.write(\"skrt \");\n          }"
         ],
         "_ps": 3
     },
     {
         "question": "Q30. What will this loop print?\n          let max = 3;\n          for (i = 0; i > max; i++) {\n            document.write(\"skrt \");\n          }",
         "options": [
-            "    let max = 3;",
-            "    for (i = 0; i > max; i++) {",
-            "      document.write(\"skrt \");",
-            "    }"
+            "skrt skrt skrt",
+            "skrt skrt",
+            "skrt skrt skrt skrt",
+            "nothing"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q31. You have placed an image in a directory named images and want to reference it from a page located in the root of your site. Which choice would correctly display the image on the page?",
@@ -335,29 +335,29 @@
             "performance",
             "UX design",
             "accessibility",
-            "SEO"
+            "SEO\n```\nconst user = {\n  given_name: 'Joe',\n  family_name: 'Bloggs',\n  age: 40,\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q35. In the context of this code, how would you describe user?\n```\nconst user = {\n  given_name: 'Joe',\n  family_name: 'Bloggs',\n  age: 40,\n}\n```",
         "options": [
-            "",
-            "user = {",
-            "n_name: 'Joe',",
-            "ly_name: 'Bloggs',"
+            "function",
+            "array",
+            "variable",
+            "object\n```\n<link rel=\"preconnect\" href=\"https://example.com\">\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q36. A webpage has `rel=\"preconnect\"` added to a link resource. What will this do?\n```\n<link rel=\"preconnect\" href=\"https://example.com\">\n```",
         "options": [
-            "",
-            "rel=\"preconnect\" href=\"https://example.com\">",
-            "",
-            "It will tell the browser that this link is a site belonging to the current domain."
+            "It will tell the browser that this link is a site belonging to the current domain.",
+            "It will do nothing a because this is a deprecated attribute that browsers do not support.",
+            "It will tell the browser that a connection will be made to another origin and to start getting ready as soon as possible.",
+            "It will tell the browser that a resource is needed, and that it should start getting fetched as soon as possible.\n[web.dev](https://web.dev/preconnect-and-dns-prefetch/)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q37. Which choice is _not_ a render blocking resource?",
@@ -365,7 +365,7 @@
             "images",
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript\n[blog.logrocket](https://blog.logrocket.com/5-tricks-to-eliminate-render-blocking-resources/)"
         ],
         "_ps": 0
     },
@@ -375,7 +375,7 @@
             "the \"Can I Use\" website",
             "the Web Platform Tests Suite",
             "the CSS specification",
-            "MDN property pages"
+            "MDN property pages\n[Web platform tests site](https://web-platform-tests.org/)"
         ],
         "_ps": 1
     },
@@ -405,7 +405,7 @@
             "it eliminates some JavaScript silent errors by changing them to throw errors.",
             "it prohibits some syntax likely to be defined in future versions of ECMAScript.",
             "it forces the writing of valid HTML and CSS.",
-            "it fixes mistakes that make it difficult for JavaScript engines to perform optimizations."
+            "it fixes mistakes that make it difficult for JavaScript engines to perform optimizations.\n[MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)"
         ],
         "_ps": 2
     },
@@ -415,29 +415,29 @@
             "ul, li, a",
             "p, b, h3",
             "div, p, em",
-            "div, main, h1"
+            "div, main, h1\n```javascript\nvar currencies = ['Bitcoin', 'Ethereum'];\n/* Missing line */\nconsole.log(currencies);\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q43. Which line would you add to this code to add \"Cosmos\" to the list of currencies using JavaScript?\n```javascript\nvar currencies = ['Bitcoin', 'Ethereum'];\n/* Missing line */\nconsole.log(currencies);\n```",
         "options": [
-            "ascript",
-            "rrencies = ['Bitcoin', 'Ethereum'];",
-            "sing line */",
-            "e.log(currencies);"
+            "`currencies.push(\"Cosmos\");`",
+            "`Array.append(\"Cosmos\", currencies);`",
+            "`currencies.add(\"Cosmos\");`",
+            "`currencies(2) = \"Cosmos\";`\n```javascript\n<input type=\"radio\" value=\"strawberry\">Strawberry\n<input type=\"radio\" value=\"vanilla\">Vanilla\n<input type=\"radio\" value=\"chocolate\">Chocolate\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q44. How would you change this code to make Vanilla selected by default?\n```javascript\n<input type=\"radio\" value=\"strawberry\">Strawberry\n<input type=\"radio\" value=\"vanilla\">Vanilla\n<input type=\"radio\" value=\"chocolate\">Chocolate\n```",
         "options": [
-            "ascript",
-            " type=\"radio\" value=\"strawberry\">Strawberry",
-            " type=\"radio\" value=\"vanilla\">Vanilla",
-            " type=\"radio\" value=\"chocolate\">Chocolate"
+            "`<input type=\"radio\" value=\"vanilla\" checked>`",
+            "`<input type=\"radio\" value=\"vanilla\" check>`",
+            "`<input type=\"radio\" value=\"vanilla\" selected>`",
+            "`<input type=\"radio\" value=\"vanilla\" on>`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q45. **\\_** moves an element completely out of the page's normal layout flow, like it is sitting on its own separate layer. From there, you can fix it in a position relative to the edges of the page's `<html>` element (or its nearest positioned ancestor element)?",
@@ -445,7 +445,7 @@
             "Sticky positioning",
             "Absolute positioning",
             "Relative positioning",
-            "Fixed positioning"
+            "Fixed positioning\n[Source: W3Schools](https://www.w3schools.com/css/css_positioning.asp)\n**position: absolute;**\n`An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.`"
         ],
         "_ps": 1
     },
@@ -465,19 +465,19 @@
             "every()",
             "map()",
             "forEach()",
-            "filter()"
+            "filter()\n![CSS clear](images/Q48.png?raw=true)"
         ],
         "_ps": 3
     },
     {
         "question": "Q48. The image below has float: left applied. Text wraps the float on the right and bottom. How would you force the second paragraph to start underneath the float, leaving a gap after the preceding paragraph?\n![CSS clear](images/Q48.png?raw=true)",
         "options": [
-            "clear](images/Q48.png?raw=true)",
             "Apply `float: left` to the second paragraph.",
             "Apply `clear: right` to the floated item.",
-            "Apply `clear: left` to the second paragraph."
+            "Apply `clear: left` to the second paragraph.",
+            "Apply `clear: left` to the floated item.\n[Source: W3Schools](https://www.w3schools.com/css/css_float_clear.asp)\n**clear: left;**\n`When we use the float property, and we want the next element below (not on right or left), we will have to use the clear property. When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.`"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q49. You want to create striped table rows using CSS without adding a class to any element. Which CSS would correctly apply the background color to every odd row in your table?",
@@ -485,7 +485,7 @@
             "`tr:nth-child(2) { background-color: #ccc; }`",
             "`tr:nth-child(2n+1) { background-color: #ccc; }`",
             "`tr:nth-child(2+1) { background-color: #ccc; }`",
-            "`tr:nth-child(2n) { background-color: #ccc; }`"
+            "`tr:nth-child(2n) { background-color: #ccc; }`\n[Source: W3Schools](https://www.w3schools.com/cssref/sel_nth-child.asp)"
         ],
         "_ps": 1
     },
@@ -495,19 +495,19 @@
             "`<nav>`",
             "`<navigation>`",
             "`<main>`",
-            "`<ul>`"
+            "`<ul>`\n[Source: W3Schools](https://www.w3schools.com/tags/tag_nav.asp)\n`<link rel=\"preload\" href=\"styles.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><noscript><link rel=\"stylesheet\" href=\"style.css\"></noscript>`"
         ],
         "_ps": 0
     },
     {
         "question": "Q51. You discover that CSS is being loaded on a website using the following code. Why might a web developer have done this?\n`<link rel=\"preload\" href=\"styles.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><noscript><link rel=\"stylesheet\" href=\"style.css\"></noscript>`",
         "options": [
-            " rel=\"preload\" href=\"styles.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><noscript><link rel=\"stylesheet\" href=\"style.css\"></noscript>`",
             "The CSS is being loaded asynchronously in order to prevent render blocking.",
             "This will stop the CSS being loaded for old browsers that do not support the techniques in use.",
-            "This is part of a stylesheet-switching script to load different themes for the site."
+            "This is part of a stylesheet-switching script to load different themes for the site.",
+            "This will stop the CCS being loaded on slow data connections.\n[Source: StackOverflow](https://stackoverflow.com/a/46750893)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q52. The flex property is often applied to flex items with a value of 1. Using flex: 1 is a shorthand - what does it unpack to?",
@@ -515,7 +515,7 @@
             "flex: 0 0 100;",
             "flex: 1 0 0;",
             "flex: 0 0 auto;",
-            "flex: 1 1 auto;"
+            "flex: 1 1 auto;\n[Source: stackoverflow](https://stackoverflow.com/questions/37386244/what-does-flex-1-mean)"
         ],
         "_ps": 1
     },
@@ -525,7 +525,7 @@
             "only using code that is supported by the newest browsers, and serving the site without JavaScript to old browsers",
             "removing unused code from the JavaScript files",
             "splitting code into various bundles so that decisions can be made on loading priority",
-            "allowing the browser to ignore code it believes will perform badly"
+            "allowing the browser to ignore code it believes will perform badly\n[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking)"
         ],
         "_ps": 1
     },
@@ -535,7 +535,7 @@
             "a method of auditing performance that gives your site a score, which is then used for Google ranking",
             "a next-generation image format offering a smaller file size than equivalent PNG or JPEG images",
             "a new font format that allows a single font to display at different styles and weights",
-            "a next-generation PDF format that offers a smaller file size and better accessibility than standard PDF documents"
+            "a next-generation PDF format that offers a smaller file size and better accessibility than standard PDF documents\n[Source: Google Developers](https://developers.google.com/speed/webp)"
         ],
         "_ps": 1
     },
@@ -545,7 +545,7 @@
             "The visitor's browser does not have full support for CSS Grid Layout.",
             "Items have been positioned in such a way that they are in a different order to the source.",
             "The browser has a keyboard navigation bug.",
-            "You need to add the tabindex attribute to elements."
+            "You need to add the tabindex attribute to elements.\n[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility)"
         ],
         "_ps": 1
     },
@@ -555,7 +555,7 @@
             "when the browser displays the first bit of content from the DOM",
             "when the user can consistently interact with all of the page elements",
             "when HTML has loaded, but not necessarily JavaScript, CSS, or images",
-            "when the user can see the webpage on the screen"
+            "when the user can see the webpage on the screen\n[Source: Web.dev](https://web.dev/interactive/)"
         ],
         "_ps": 1
     },
@@ -565,7 +565,7 @@
             "a JavaScript framework that is leaner than React",
             "a JavaScript bundler",
             "a testing framework",
-            "a JavaScript package manager"
+            "a JavaScript package manager\n[Source: Yarn Docs](https://yarnpkg.com/)"
         ],
         "_ps": 3
     },
@@ -575,7 +575,7 @@
             "load",
             "mouseover",
             "hover",
-            "focus"
+            "focus\n[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event)"
         ],
         "_ps": 1
     },
@@ -585,7 +585,7 @@
             "It is a piece of code that provides modern functionality in browsers that do not support it.",
             "It is a piece of code that hides broken content from old browsers.",
             "It is a term for languages such as Saas that compliles to CSS.",
-            "It is a script that runs to add vendor prefixes to modern CSS."
+            "It is a script that runs to add vendor prefixes to modern CSS.\n[Source: Polyfill](https://developer.mozilla.org/en-US/docs/Glossary/Polyfill)"
         ],
         "_ps": 0
     },
@@ -595,7 +595,7 @@
             "Angular",
             "Laravel",
             "Vue",
-            "React"
+            "React\n[Source: Laravel](https://laravel.com/)"
         ],
         "_ps": 1
     },
@@ -605,19 +605,19 @@
             "The screen reader will not notify the user of changes to live regions.",
             "The screen reader will wait until there is a pause to announce changes.",
             "The screen reader will announce all changes immediately.",
-            "The screen reader will use a polite voice when announcing changes."
+            "The screen reader will use a polite voice when announcing changes.\n[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live)\n```css\n.box {\n  background-color: blue;\n  background: url(images/star.png) no-repeat left top;\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q62. Review the CSS below. What color would you expect the background color of the element with a class of .box to be?\n```css\n.box {\n  background-color: blue;\n  background: url(images/star.png) no-repeat left top;\n}\n```",
         "options": [
-            "",
-            "",
-            "ground-color: blue;",
-            "ground: url(images/star.png) no-repeat left top;"
+            "black",
+            "blue",
+            "transparent",
+            "white"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q63. Which CSS property and value would correctly remove the bullets from a list item?",
@@ -625,19 +625,19 @@
             "`list-tem: none`",
             "`bullets: hidden`",
             "`list-style-type: none`",
-            "`list-bullet: none`"
+            "`list-bullet: none`\n```hmtl\n<div class=\"container\">\n    <div class=\"box\">what a lovely box, very centered\n    </div>\n</div>\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q64. Which code example would center `.box` inside `.container`?\n```hmtl\n<div class=\"container\">\n    <div class=\"box\">what a lovely box, very centered\n    </div>\n</div>\n```\n  ```css\n  .container {\n    display: flex;\n    align-items: center;\n  }\n  ```\n  ```css\n  .container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  ```\n  ```css\n  .box {\n    align-items: center;\n    justify-content: center;\n  }\n  ```",
+        "question": "Q64. Which code example would center `.box` inside `.container`?\n```hmtl\n<div class=\"container\">\n    <div class=\"box\">what a lovely box, very centered\n    </div>\n</div>\n```",
         "options": [
-            "l",
-            "lass=\"container\">",
-            "iv class=\"box\">what a lovely box, very centered",
-            "div>"
+            "A\n  ```css\n  .container {\n    display: flex;\n    align-items: center;\n  }\n  ```",
+            "B\n  ```css\n  .container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  ```",
+            "C\n  ```css\n  .box {\n    align-items: center;\n    justify-content: center;\n  }\n  ```",
+            "D\n  ```css\n  .container {\n    display: flex;\n    align: center;\n  }\n  ```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q65. CSS Logical Properties and Values now have wide-ranging support in browsers. If you wanted to use the logical version of `width`, which property name would you choose?",
@@ -645,7 +645,7 @@
             "`block-width`",
             "`inline-size`",
             "`inline-width`",
-            "`block-size`"
+            "`block-size`\n[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Sizing)"
         ],
         "_ps": 1
     },
@@ -675,18 +675,17 @@
             "Set `object-fit: contain` on the images.",
             "Set `max-width: 100%` on the images.",
             "Set `width: 100%` on the images.",
-            "Set `resize: true` on the images."
+            "Set `resize: true` on the images.\n```css\nbox {\n  width: 200px;\n  padding: 10px;\n  margin: 0 15px;\n  border: 2px 5px;\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q69. The CSS box model describes how the parts of a CSS box fit together and the size of the box. What is the actual width of the following box's visible part under the standard box model?\n```css\nbox {\n  width: 200px;\n  padding: 10px;\n  margin: 0 15px;\n  border: 2px 5px;\n}\n```",
         "options": [
-            "",
-            "",
-            "h: 200px;",
-            "ing: 10px;"
+            "230px",
+            "220px",
+            "200px"
         ],
-        "_ps": -1
+        "_ps": 1
     }
 ]

@@ -15,19 +15,19 @@
             "git remote add new",
             "git remote add origin",
             "git remote new origin",
-            "git remote origin"
+            "git remote origin\nThe command is git remote add. The new added connection can be named origin or new. The only constraints, although it is not documented AFAIK, is that the connection name needs to be acceptable to git-check-ref-format, and it cannot be repeated.\nIf the LinkedIn assessment asks this and you can choose just one option, then leave feedback.\n```bash\ngit reset --hard HEAD~5\ngit merge --squash HEAD@{1}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q3. Describe what these Git commands do to the commit history:\n```bash\ngit reset --hard HEAD~5\ngit merge --squash HEAD@{1}\n```",
         "options": [
-            "h",
-            "set --hard HEAD~5",
-            "rge --squash HEAD@{1}",
-            ""
+            "They reset the HEAD to the fifth commit in the repo, then merge to the master branch.",
+            "The current branch's HEAD is reset back five commits, then prior commits are squashed into a single commit.",
+            "They delete the last five commits.",
+            "They merge the last five commits into a new branch.\n**Explanation:**\n- `git reset --hard HEAD~5` resets the current branch to the commit just before the last 5 (see `man gitrevisions` for details about this notation and other cool alternatives like `HEAD@{2 days ago}`). As it is a hard reset, it will also overwrite every change in the working tree as well. See `man git-reset`.\n- `git merge --squash HEAD@{1}` HEAD@{1} is where the branch was just before the previous command (again, see `man gitrevisions`). This command sets the state of the index to be as it would just after a merge from that commit. This whole operation could be a way to take 5 commits from a branch in which you started a new feature and squash them to a single commit, a meaningful one."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q4. Your current project has several branches; master, beta, and push-notifications. You've just finished the notification feature in the push-notification branch, and you want to commit it to beta branch. How can you accomplish this?",
@@ -35,49 +35,49 @@
             "Checkout the push-notifications branch and run git merge beta",
             "Checkout the master branch and run git merge beta -> push-notification",
             "Delete the push-notification branch and it will be committed to the master branch automatically",
-            "Checkout the beta branch and run git merge push-notification"
+            "Checkout the beta branch and run git merge push-notification\n`git add -A`"
         ],
         "_ps": 3
     },
     {
         "question": "Q5. Which of the following is true you when you use the following command?\n`git add -A`",
         "options": [
-            "dd -A`",
             "All new and updated files are staged",
             "Files are staged in alphabetical order.",
-            "All new files are staged"
+            "All new files are staged",
+            "Only updated files are staged\n`git remote -v`"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q6. What will the following command print to the Terminal?\n`git remote -v`",
         "options": [
-            "emote -v`",
             "A list of remote repositories and their URLs",
             "The current git version you're running",
-            "An inline editor for modifying remote repositories"
+            "An inline editor for modifying remote repositories",
+            "The last 5 git versions you've installed\n```bash\ngit checkout feature-user-location\ngit cherry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231\n```"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q7. Looking at the following commands, describe what is happening.\n```bash\ngit checkout feature-user-location\ngit cherry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231\n```",
         "options": [
-            "h",
-            "eckout feature-user-location",
-            "erry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231",
-            ""
+            "The commit is being tagged for release on the feature-user-location branch",
+            "A commit is being copied from its original branch over to the feature-user-location branch",
+            "The commit is being cherry picked as the new HEAD of the commit history",
+            "A commit is being copied from the feature-user-location branch to the master branch"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q8. What does the following command do to the git repository?\n`git reset --soft HEAD^`",
         "options": [
-            "eset --soft HEAD^`",
             "It deletes all previous commits and reset the repository history back to its initial state.",
             "It resets the working branch to the first commit.",
-            "It keeps the HEAD at the current commit, but clears all previous commits."
+            "It keeps the HEAD at the current commit, but clears all previous commits.",
+            "It sets HEAD to the previous commit and leaves changes from the undone commit in the stage/index."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q9. You find a bug in your project, but can't locate where it was introduced in the commit history. How would you diagnose this problem?",
@@ -85,19 +85,19 @@
             "Manually backtrack through your commit history.",
             "Use git search -diff to compare all commits in your repository history.",
             "Run a git rebase to find the buggy commit.",
-            "Use git bisect to compare the buggy commit to an early commit that works as expected."
+            "Use git bisect to compare the buggy commit to an early commit that works as expected.\n`git rebase -i HEAD~10`"
         ],
         "_ps": 3
     },
     {
         "question": "Q10. Why would the following command be used?\n`git rebase -i HEAD~10`",
         "options": [
-            "ebase -i HEAD~10`",
             "To run a comparative search of the last 10 commits for differences",
             "To list the last 10 commits and modify them with either the squash or fixup command",
-            "To delete the last 10 commits and reset the HEAD"
+            "To delete the last 10 commits and reset the HEAD",
+            "In order to locally cache the last 10 commits"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q11. Why would you use a pre-receive hook in your remote repository?",
@@ -145,39 +145,39 @@
             "Find the commit in the remote repository, as that's the only place that kind of information is stored.",
             "Use the `diff-tree` command with the commit hash.",
             "Run `git commit --info` with the commit hash.",
-            "Access the commit stash data with `git stash`."
+            "Access the commit stash data with `git stash`.\n```shell\n#.swift\nbuild/\n*.txt\n*.metadata\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q16. What files is this .gitignore programmed to leave out?\n```shell\n#.swift\nbuild/\n*.txt\n*.metadata\n```",
         "options": [
-            "ll",
-            "t",
-            "",
-            ""
+            "All files with a .swift, .txt, or metadata file extension, as well as the entire build directory",
+            "Only the build directory",
+            "All files in the build directory, as well as files ending with .txt or .metadata",
+            "Only files with .swift and .txt extensions.\nA line starting with `#` serves as a comment. Hence `# .swift` does not do anything. See `man gitignore`.\n`git commit -a -m \"Refactor code base\"`"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q17. After you make changes to a local repository, you run the following command. What will this do?\n`git commit -a -m \"Refactor code base\"`",
         "options": [
-            "ommit -a -m \"Refactor code base\"`",
             "Nothing, you can't use multiple options in the same command",
             "Adds all new files to the staging area",
-            "Commits all new files with a message"
+            "Commits all new files with a message",
+            "Adds all modified files to the staging area, then commits them with a message\n```shell\nChange to be committed:\n(use \"git reset HEAD <file>...\" to unstage)\nmodified: beta-notes.js\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout --<file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q18. After checking your git status you get the following output, which shows the file beta-notes.js in the commit but also unstaged. How can this situation occur?\n```shell\nChange to be committed:\n(use \"git reset HEAD <file>...\" to unstage)\nmodified: beta-notes.js\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout --<file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```",
         "options": [
-            "ll",
-            " to be committed:",
-            "git reset HEAD <file>...\" to unstage)",
-            "ed: beta-notes.js"
+            "There were two copies of beta-notes.js but one was deleted",
+            "beta-notes.js was staged, then modified afterwards, creating two different versions of the file",
+            "Two copies of beta-notes.js were created, but only one is being tracked",
+            "There are two tracked copies of beta-notes.js, but one was removed from the commit"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q19. Where are files stored before they are committed to the local repository?",
@@ -190,14 +190,14 @@
         "_ps": 2
     },
     {
-        "question": "Q20. What commands would you use to force an overwrite of your local files with the master branch?\n  ```bash\n  git pull --all\n  git reset --hard origin/master\n  ```\n  ```bash\n  git pull -u origin master\n  git reset --hard master\n  ```\n  ```bash\n  git pull origin master\n  git reset --hard origin/myCurrentBranch\n  ```",
+        "question": "Q20. What commands would you use to force an overwrite of your local files with the master branch?",
         "options": [
-            "⠀",
-            "ash",
-            "pull --all",
-            "reset --hard origin/master"
+            "⠀\n  ```bash\n  git pull --all\n  git reset --hard origin/master\n  ```",
+            "⠀\n  ```bash\n  git pull -u origin master\n  git reset --hard master\n  ```",
+            "⠀\n  ```bash\n  git pull origin master\n  git reset --hard origin/myCurrentBranch\n  ```",
+            "⠀\n  ```bash\n  git fetch --all\n  git reset --hard origin/master\n  ```\n- The command `pull` is `fetch` followed by either `merge` or `rebase` (in this case, `merge`). We don't want to merge. Merge would be an action to our **repository**. We just want to overwrite our **local files**."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q21. Which statement is true when you use the git add -A command?",
@@ -215,7 +215,7 @@
             "use git show refs/push-notifications",
             "use git show push-notifications",
             "use git show heads/refs/push-notifications",
-            "use git show refs/heads/push-notifications"
+            "use git show refs/heads/push-notifications\n[Reference](https://geedew.com/fixing-git-branch-and-tag-name-collision/)"
         ],
         "_ps": 3
     },
@@ -225,19 +225,19 @@
             "git rebase -log",
             "git rebase -i",
             "git rebase -verbose",
-            "git rebase -all"
+            "git rebase -all\n```\ngit bisect start\ngit bisect bad 5d41402abc4b2a76b9719d911017c592\ngit bisect good 69faab6268350295550de7d587bc323d\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q24. What is the operation doing given the Git commands below?\n```\ngit bisect start\ngit bisect bad 5d41402abc4b2a76b9719d911017c592\ngit bisect good 69faab6268350295550de7d587bc323d\n```",
         "options": [
-            "",
-            "sect start",
-            "sect bad 5d41402abc4b2a76b9719d911017c592",
-            "sect good 69faab6268350295550de7d587bc323d"
+            "It runs a merge of a good commit that is discovered using a known bad commit and known good commit",
+            "It marks a commit for deletion using a known bad commit and known good commit to determine which commit introduced a bug",
+            "It defines a bad commit and resets the HEAD using a known bad commit and known good commit",
+            "It performs a binary search using a known bad commit and known good commit to determine which commit introduced a bug"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q25. In a situation where you have several commits for a single task, what is the most efficient way to restructure your commit history?",
@@ -255,19 +255,19 @@
             "By default a push doesn't send tags to the remote repository.",
             "Commits can only be tagged when they are created.",
             "Tags are pushed to the remote repository with their respective commits.",
-            "Only annotated tags are automatically pushed to the remote repository with a commit."
+            "Only annotated tags are automatically pushed to the remote repository with a commit.\n[Reference](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_sharing_tags)\n```bash\ngit push -u origin master\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q27. After pushing commits to the remote repository for the first time using the command below, what shorthand command can you use in future?\n```bash\ngit push -u origin master\n```",
         "options": [
-            "h",
-            "sh -u origin master",
-            "",
-            "git push master"
+            "git push master",
+            "git push origin",
+            "Same as before, git push -u origin master",
+            "git push"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q28. How would you create a custom shortcut or command across your git environment?",
@@ -275,19 +275,19 @@
             "Run git hotfix with the shortcut name.",
             "Assign a shortcut or command using git options file.",
             "Use the git custom-key command.",
-            "Create an alias usin the git config command."
+            "Create an alias usin the git config command.\n```shell\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout -- <file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q29. What is the status of the beta-notes.js file in the following output?\n```shell\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout -- <file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```",
         "options": [
-            "ll",
-            "s not staged for commit:",
-            "git add <file>...\" to update what will be committed)",
-            "git checkout -- <file>...\" to discard changes in working directory)"
+            "beta-notes.js is untracked and has been modified.",
+            "beta-notes.js is a tracked file and has been modified, but has not been added to the current commit.",
+            "beta-notes.js is untracked but has been added to the current commit.",
+            "beta-notes.js is tracked, and the modified file has been added to the current commit."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q30. What command would let you modify your previous commit?",
@@ -305,19 +305,19 @@
             "Data array",
             "Data log",
             "Data snapshot",
-            "Data dictionary"
+            "Data dictionary\n`git rm --cached testfile.js`"
         ],
         "_ps": 1
     },
     {
         "question": "Q32. What change will the following command make to the staging area files?\n`git rm --cached testfile.js`",
         "options": [
-            "m --cached testfile.js`",
             "testfile.js will be removed from the staging area and its changes no longer tracked.",
             "testfile.js will be removed from the staging area but its changes will still be tracked.",
-            "A copy of testfile.js will be cached on your desktop."
+            "A copy of testfile.js will be cached on your desktop.",
+            "The current copy of testfile.js will be saved in the staging area."
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q33. After you've successfully merged two branches and committed the changes, what is the next step in keeping your git structure organized?",
@@ -370,12 +370,12 @@
         "_ps": 3
     },
     {
-        "question": "Q38. What does commit object contain?\n#### Q39. Which option enables inclusion of committer name in custom log format?",
+        "question": "Q38. What does commit object contain?",
         "options": [
             "A set of files, representing the state of a project at a given point of time.",
             "Reference to parent commit objects.",
             "An SHA1 name, a 40-character string that uniquely identifies the commit object.",
-            "39. Which option enables inclusion of committer name in custom log format?"
+            "%ce"
         ],
         "_ps": 2
     },
@@ -395,7 +395,7 @@
             "3",
             "5",
             "2",
-            "4"
+            "4\n[Reference link](https://git-scm.com/book/en/v2/Git-Branching-Rebasing)\n`In Git, there are two main ways to integrate changes from one branch into another: the merge and the rebase.`"
         ],
         "_ps": 2
     },
@@ -615,19 +615,19 @@
             "Use git reset HEAD^.",
             "Use git reset myFile.txt.",
             "Use git -rm myFile.txt.",
-            "Use git reset."
+            "Use git reset.\n```bash\ngit checkout -b beta-test\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q63. What happens if you run this command from your master branch?\n```bash\ngit checkout -b beta-test\n```",
         "options": [
-            "h",
-            "eckout -b beta-test",
-            "",
-            "The beta-test branch will be checked out of the current commit."
+            "The beta-test branch will be checked out of the current commit.",
+            "The beta-test branch will be checked out and deleted.",
+            "A new branch called beta-test will be created and switched to.",
+            "The beta-test branch will be merged with the master branch."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q64. How does Git internally manage branches?",
@@ -745,19 +745,19 @@
             "The remote master branch could have existing changes overwritten.",
             "The origin URL will be reset to its default value.",
             "The current HEAD will be deleted and can't be reinstated.",
-            "Nothing, it's common practice to force a push after rebasing."
+            "Nothing, it's common practice to force a push after rebasing.\n`git reset --soft HEAD^`"
         ],
         "_ps": 0
     },
     {
         "question": "Q76. How does this command alter the currently checked-out branch?\n`git reset --soft HEAD^`",
         "options": [
-            "eset --soft HEAD^`",
             "It resets the working branch to the first commit.",
             "It sets HEAD to previous commit and leaves changes from the undone commit in the stage/index.",
-            "It deletes all previous commits and resets the repository history back to its initial state."
+            "It deletes all previous commits and resets the repository history back to its initial state.",
+            "It keeps the HEAD at the current commit, but clears all previous commits."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q77. What is the difference between Git and SVN?",
@@ -765,19 +765,19 @@
             "Git works only on Linux, while SVN works on all operating systems.",
             "SVN works only on Linux, while Git works on all operating systems.",
             "SVN is a centralized system, while Git is a distributed system.",
-            "Git a centralized system, while SVN is a distributed system."
+            "Git a centralized system, while SVN is a distributed system.\n`git tag -a v1.4 -m \"ABCD v1.5\"`"
         ],
         "_ps": 2
     },
     {
         "question": "Q78. This command is an example of what kind of tag?\n`git tag -a v1.4 -m \"ABCD v1.5\"`",
         "options": [
-            "ag -a v1.4 -m \"ABCD v1.5\"`",
             "verbose",
             "annotated",
-            "lightweight"
+            "lightweight",
+            "deferred"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q79. What is the difference between a soft reset (`git reset --soft`) and a hard reset (`git reset –hard`) ?",
@@ -785,19 +785,19 @@
             "A soft reset only changes the commit that HEAD points to, while a hard reset resets the index and working tree to match the specified commit, discarding any changes.",
             "A soft reset caches the old HEAD pointer, while a hard reset deletes it entirely.",
             "A hard reset changes only where the HEAD is pointing, while a soft reset changes the HEAD and index.",
-            "A hard reset caches the old HEAD pointer, while a soft reset deletes it entirely."
+            "A hard reset caches the old HEAD pointer, while a soft reset deletes it entirely.\n![image](images/Git-WorkFlow.png)\nWhich of the following options is correct ?"
         ],
         "_ps": 0
     },
     {
         "question": "Q80. Consider the following Git workflow:\n![image](images/Git-WorkFlow.png)\nWhich of the following options is correct ?",
         "options": [
-            "e](images/Git-WorkFlow.png)",
-            "of the following options is correct ?",
             "`1. Develop 2. Release 3. Hotfix 4. Feature 5. Master`",
-            "`1. Master 2. Release 3. Hotfix 4. Feature 5. Develop`"
+            "`1. Master 2. Release 3. Hotfix 4. Feature 5. Develop`",
+            "`1. Develop 2. Master 3. Hotfix 4. Feature 5. Develop`",
+            "`1. Master 2. Hotfix 3. Develop 4. Feature 5. Release`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q81. What information does the git config file store?",
@@ -805,7 +805,7 @@
             "shell scripts and flags",
             "keychain and account information",
             "local and global repository options",
-            "pre-compile scripts and settings"
+            "pre-compile scripts and settings\n[Reference](https://www.atlassian.com/git/tutorials/setting-up-a-repository/git-config#:~:text=The%20git%20config%20command%20is,modify%20a%20configuration%20text%20file.)"
         ],
         "_ps": 2
     },
@@ -925,7 +925,7 @@
             "Use `git branch <stash hash>`.",
             "Add the stashed commits to the current commit, then create a new branch.",
             "Use `git checkout -b`.",
-            "Run `git stash branch <branch name>`."
+            "Run `git stash branch <branch name>`.\n[reference here](https://stackoverflow.com/questions/6925099/git-stash-changes-apply-to-new-branch)"
         ],
         "_ps": 3
     },
@@ -945,7 +945,7 @@
             "git stash show -p stash@{2}",
             "git stash list",
             "git stash show -p stash@{1}",
-            "git stash show -p"
+            "git stash show -p\n[reference here](https://stackoverflow.com/questions/10725729/see-whats-in-a-stash-without-applying-it)"
         ],
         "_ps": 0
     },
@@ -955,7 +955,7 @@
             "By default, a push doesn't send tags to the remote repository.",
             "Only annotated tags are automatically pushed to the remote repository with a commit.",
             "Tags are pushed to the remote repository with their respective commits.",
-            "Commits can be tagged only when they are created."
+            "Commits can be tagged only when they are created.\n[reference here](https://git-scm.com/book/en/v2/Git-Basics-Tagging)"
         ],
         "_ps": 0
     },
@@ -965,7 +965,7 @@
             "Use `git --delete <branch_name>`.",
             "Use `git push <remote_name> --d <branch_name>`.",
             "Use `git push <remote_name> --D`.",
-            "Use `git push <remote_name> --delete <branch_name>`."
+            "Use `git push <remote_name> --delete <branch_name>`.\n[reference here](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)"
         ],
         "_ps": 3
     },
@@ -975,7 +975,7 @@
             "delete",
             "expire",
             "show",
-            "update"
+            "update\n[reference here](https://git-scm.com/docs/git-reflog)"
         ],
         "_ps": 2
     },
@@ -985,7 +985,7 @@
             "It causes tracked files in the parent directory to be included in the staged files.",
             "It allows developers to interactively choose which changes to tracked files are staged and outputs the differences for review.",
             "It automatically pushes changes to the corresponding branch on the remote repository.",
-            "It allows developers to interactively choose which files are committed and outputs the differences for review."
+            "It allows developers to interactively choose which files are committed and outputs the differences for review.\n[reference here](https://git-scm.com/docs/git-add#Documentation/git-add.txt--p)"
         ],
         "_ps": 1
     },
@@ -995,7 +995,7 @@
             "You are not working on the most recent commit of a branch.",
             "A teammate has flagged the code with an issue.",
             "The commit does not have a parent.",
-            "The branch has not been pushed to the remote repository."
+            "The branch has not been pushed to the remote repository.\n[reference here](https://www.git-tower.com/learn/git/faq/detached-head-when-checkout-commit)"
         ],
         "_ps": 0
     },
@@ -1005,19 +1005,19 @@
             "It cannot be recovered.",
             "Find the hash of the branch with the `log` command, then execute `git checkout -b <branchname> <hash>`.",
             "Find the hash of the branch with the `reflog` command, then execute `git checkout -b <branchname> <hash>`.",
-            "Execute `git checkout -b <branchname>`."
+            "Execute `git checkout -b <branchname>`.\n[Reference](https://stackoverflow.com/questions/1992364/git-recover-deleted-remote-branch)\n```bash\nChanges to be committed:\n (use \"git reset HEAD <file>...\" to unstage)\n  modified: beta-notes.js\nChanges not staged for commit:\n (use \"git add <file>...\" to update what will be committed)\n (use \"git checkout -- <file>...\" to discard changes in working directory)\n  modified: beta-notes.js\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q102. After checking your Git status, you get the following output, which shows the file beta-notes.js in the commit but also unstaged. How can this situation occur?\n```bash\nChanges to be committed:\n (use \"git reset HEAD <file>...\" to unstage)\n  modified: beta-notes.js\nChanges not staged for commit:\n (use \"git add <file>...\" to update what will be committed)\n (use \"git checkout -- <file>...\" to discard changes in working directory)\n  modified: beta-notes.js\n```",
         "options": [
-            "h",
-            "s to be committed:",
-            "\"git reset HEAD <file>...\" to unstage)",
-            "fied: beta-notes.js"
+            "There were two copies of beta-notes.js but one was deleted.",
+            "There are two tracked copies of beta-notes.js but one was removed from the commit.",
+            "Two copies of beta-notes.js were created, but only one is being tracked.",
+            "beta-notes.js was staged, then modified afterwards, creating two different versions of the file.\n[Reference](https://stackoverflow.com/questions/24837841/can-a-file-be-both-staged-and-unstaged-in-git)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q103. How would you display a histogram showing inserts, deletion, and modifications per file for a specific commit along with its general commit information?",
@@ -1025,7 +1025,7 @@
             "Use `git stat`.",
             "Use `git debug --prettyprint`.",
             "Query the remote repository with the commit hash.",
-            "Use `git show <commit> --stat`."
+            "Use `git show <commit> --stat`.\n[Reference](https://git-scm.com/docs/git-show#Documentation/git-show.txt---statltwidthgtltname-widthgtltcountgt)"
         ],
         "_ps": 3
     },
@@ -1035,7 +1035,7 @@
             "Repository managers are proprietary versions of Git that do not include enhanced features.",
             "Repository managers provide an enhanced command-line tool that is used to manage multiple local repositories.",
             "Repository managers provide an online service for hosting Git repositories that include collaboration features such as pull requests, issue tracking, and peer reviews.",
-            "Repository managers distribute repositories across multiple locations on a user's workstation, providing redundant storage that allows for quick backup and recovery."
+            "Repository managers distribute repositories across multiple locations on a user's workstation, providing redundant storage that allows for quick backup and recovery.\n[reference](https://www.theserverside.com/video/Git-vs-GitHub-What-is-the-difference-between-them)"
         ],
         "_ps": 2
     },
@@ -1045,7 +1045,7 @@
             "`git head --verify`",
             "`git log --head`",
             "`git hash --head`",
-            "`git show-ref --head`"
+            "`git show-ref --head`\n[reference](https://git-scm.com/docs/git-show-ref)"
         ],
         "_ps": 3
     },
@@ -1065,19 +1065,19 @@
             "`git commit -u origin`",
             "`git checkout origin`",
             "`git pull origin master`",
-            "`git push origin master`"
+            "`git push origin master`\n```bash\nerror: failed to push some refs to 'https://github.com/myrepo/simple.git'\nhint: Updates were rejected because the remote contains work that you do not hint: not have locally.\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q108. While pushing changes to a remote repository, you receive the following message. How do you resolve this issue?\n```bash\nerror: failed to push some refs to 'https://github.com/myrepo/simple.git'\nhint: Updates were rejected because the remote contains work that you do not hint: not have locally.\n```",
         "options": [
-            "h",
-            " failed to push some refs to 'https://github.com/myrepo/simple.git'",
-            "Updates were rejected because the remote contains work that you do not hint: not have locally.",
-            ""
+            "Use the --atomic option with the push command.",
+            "Execute a pull, then resolve any merge conflicts and execute another push.",
+            "Execute a fetch, then execute another push.",
+            "Use the --force option with the push command."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q109. What does the -p option add to the output of the `git log` command?",
@@ -1174,8 +1174,7 @@
         "options": [
             "git reset HEAD^ -- config.properties",
             "git rm config.properties",
-            "git rf config.properties",
-            "git checkout HEAD -- config.properties"
+            "git rf config.properties"
         ],
         "_ps": 1
     }

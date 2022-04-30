@@ -425,7 +425,7 @@
             "dimension report",
             "geographic report",
             "distance report",
-            "user location report"
+            "user location report\n[Reference](https://support.google.com/google-ads/answer/2453994)"
         ],
         "_ps": 2
     },
@@ -444,8 +444,7 @@
         "options": [
             "last position",
             "last search",
-            "linear",
-            "last click"
+            "linear"
         ],
         "_ps": -1
     }

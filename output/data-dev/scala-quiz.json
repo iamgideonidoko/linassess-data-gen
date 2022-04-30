@@ -5,19 +5,19 @@
             "One is a Java object, the other is a Scala object.",
             "clone() will copy class structures but not the data, while copy() will also copy data into new objects.",
             "There is no difference.",
-            "copy() allows you to change values during the copying process; clone() does not."
+            "copy() allows you to change values during the copying process; clone() does not.\n```scala\nval m1 = Map(\"a\"->1,\"b\"->2,\"c\"->3)\nm1(\"a\")\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q2. What value does this code return?\n```scala\nval m1 = Map(\"a\"->1,\"b\"->2,\"c\"->3)\nm1(\"a\")\n```",
         "options": [
-            "la",
-            " = Map(\"a\"->1,\"b\"->2,\"c\"->3)",
-            ")",
-            ""
+            "a",
+            "2",
+            "b",
+            "1"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q3. What is one way to avoid low-level parallelization details?",
@@ -45,19 +45,19 @@
             "Array",
             "ImmutableCollection",
             "List",
-            "Tuple"
+            "Tuple\n```\nmyfnc: ()Unit\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q6. After defining a function in the interpreter, Scala returns the following. What does the `()` indicate?\n```\nmyfnc: ()Unit\n```",
         "options": [
-            "",
-            " ()Unit",
-            "",
-            "The function has no side effects."
+            "The function has no side effects.",
+            "The function takes no parameters.",
+            "The function returns no value.",
+            "Returning unit types to the function is a closures."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q7. What type of number is 1234.e5?",
@@ -75,19 +75,19 @@
             "`List[(String, String)]`",
             "`List[(Array, Array)]`",
             "`List[(Collection, Collection)]`",
-            "`List`"
+            "`List`\n```\nval x = (1234, \"Active\")\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q9. What type of object does this code create?\n```\nval x = (1234, \"Active\")\n```",
         "options": [
-            "",
-            "= (1234, \"Active\")",
-            "",
-            "List"
+            "List",
+            "Map",
+            "Tuple",
+            "Array"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q10. Which is a subclass of all classes?",
@@ -95,7 +95,7 @@
             "AnyVal",
             "AnyRef",
             "Method",
-            "Null"
+            "Null\n[Null in Scala Standard library](https://www.scala-lang.org/api/current/scala/Null.html). The question is a bit incorrect - Null is a subtype of every type _except those of value classes_"
         ],
         "_ps": 3
     },
@@ -105,7 +105,7 @@
             "Yes and no. It is different depending on the for construct and what it does.",
             "Yes, because the for section does not expose its scope.",
             "No, because for-yield shares the same scope, even though they are within separate curly braces.",
-            "Yes, because they are within different curly braces."
+            "Yes, because they are within different curly braces.\n**Example**: yield-body has access to the `e` variable from the for-body\n```scala\nval a = Array(1, 2, 3, 4, 5)\nfor {\n     e <- a if e > 2\n} yield e\n```"
         ],
         "_ps": 2
     },
@@ -115,19 +115,19 @@
             "using regex",
             "using monads",
             "using string matching",
-            "using case classes"
+            "using case classes\nNote: ambiguous question, it's not clear what kind of [pattern matching](https://docs.scala-lang.org/tour/pattern-matching.html) is meant here.\n```\nval y = List('a','b')\nval z = y::List('c')\n```"
         ],
         "_ps": -1
     },
     {
         "question": "Q13. What is the value of z after executing this code?\n```\nval y = List('a','b')\nval z = y::List('c')\n```",
         "options": [
-            "",
-            "= List('a','b')",
-            "= y::List('c')",
-            ""
+            "List(a,b,c)",
+            "List(List(a, b), c)",
+            "List(c,a,b)",
+            "List(c,List(a,b))"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q14. What term is used to specify a precondition?",
@@ -145,19 +145,19 @@
             "`scala.util.ExceptionHandling`",
             "`scala.Catch.Throw`",
             "`scala.exception.TryFinally`",
-            "`scala.util.Try`"
+            "`scala.util.Try`\n[scala.util.Try](https://www.scala-lang.org/api/current/scala/util/Try.html)\n```\nval y = (math floor 3.1415 * 2)\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q16. What is the data type of y after this code is executed?\n```\nval y = (math floor 3.1415 * 2)\n```",
         "options": [
-            "",
-            "= (math floor 3.1415 * 2)",
-            "",
-            "short"
+            "short",
+            "double",
+            "int",
+            "bigInt"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q17. When using pattern matching, which character matches on any object?",
@@ -165,7 +165,7 @@
             "`%`",
             "`_`",
             "`^`",
-            "`-`"
+            "`-`\n[Pattern Matching](https://docs.scala-lang.org/tour/pattern-matching.html)"
         ],
         "_ps": 1
     },
@@ -175,19 +175,19 @@
             "Yes, the reference to the array is immutable, so the location that the array points to is immutable. The values in the array are mutable.",
             "The 0th element is immutable and cannot be modified. All other elements can be modified.",
             "Yes, val does not make arrays immutable.",
-            "No, val makes the array and values of the array immutable."
+            "No, val makes the array and values of the array immutable.\n**Explanation**:\n```scala\nval a1 = Array(1, 2, 3)\na1{1} = 3 // OK\na1 = Array(1, 3, 3) // error: reassignment to val\n```\n```scala\ndef main () {\n     var a = 0\n     for (a<-1 until 5){println(a)}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q19. What is the output of this function?\n```scala\ndef main () {\n     var a = 0\n     for (a<-1 until 5){println(a)}\n```",
         "options": [
-            "la",
-            "in () {",
-            "ar a = 0",
-            "or (a<-1 until 5){println(a)}"
+            "1,2,3,4,5",
+            "0,1,2,3,4",
+            "1,2,3,4",
+            "2,3,4,5"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q20. What do you call objects with immutable state?",
@@ -195,7 +195,7 @@
             "singletons",
             "stationary objects",
             "functional objects",
-            "fixed objects"
+            "fixed objects\n**Note:** singletons may have mutable state"
         ],
         "_ps": 2
     },
@@ -215,19 +215,19 @@
             "4",
             "an error",
             "6",
-            "3"
+            "3\n`val MyFuture = Future {runBackgroundFunction() }`"
         ],
         "_ps": 1
     },
     {
         "question": "Q23. Which statement returns a success or a failure indicator when you execute this code?\n`val MyFuture = Future {runBackgroundFunction() }`",
         "options": [
-            "yFuture = Future {runBackgroundFunction() }`",
             "myFuture.onComplete",
             "myFuture(status)",
-            "myFuture.Finished"
+            "myFuture.Finished",
+            "complete(myFuture)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q24. To denote a parameter that may be repeated, what should you place after type?",
@@ -285,19 +285,19 @@
             "`_`",
             "`*`",
             "`%`",
-            "`&`"
+            "`&`\n[Repeated Parameters in Scala](https://www.baeldung.com/scala/repeated-parameters)\n```scala\nmyClass.foreach(println _)\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q30. What is the code below equivalent to?\n```scala\nmyClass.foreach(println _)\n```",
         "options": [
-            "la",
-            "s.foreach(println _)",
-            "",
-            "`myClass.foreach(println ())`"
+            "`myClass.foreach(println ())`",
+            "`myClass.foreach(print NIL)`",
+            "`myClass.loop(println ())`",
+            "`myClass.foreach(x => println(x))`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q31. What is an advantage of an immutable object?",
@@ -325,7 +325,7 @@
             "database driver",
             "connection",
             "prepared statement",
-            "SQL view"
+            "SQL view\n[PreparedStatement from Java](https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html) which is also used in Scala"
         ],
         "_ps": 2
     },
@@ -405,7 +405,7 @@
             "They do the exact same thing",
             "`==` won't work on objects",
             "`==` cannot be applied to `String`",
-            "`==` is a wrapper of `.equals()` and checks for nulls"
+            "`==` is a wrapper of `.equals()` and checks for nulls\n[Source:](https://www.programmersought.com/article/3717957705/)"
         ],
         "_ps": 3
     },
@@ -415,7 +415,7 @@
             "||",
             "&&",
             "&",
-            "%"
+            "%\n[Source:](https://docs.scala-lang.org/overviews/collections/sets.html)"
         ],
         "_ps": 2
     },
@@ -465,19 +465,19 @@
             "a constraint on where a method may be called from",
             "a constraint on values passed to a methode constructor",
             "a class of predifined error messages",
-            "a class of Boolean operators"
+            "a class of Boolean operators\n```\n val myNums = (1 to 500).toList\n list.map(_ + 1)\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q48. What would you change in this code to make it execute in parallel?\n```\n val myNums = (1 to 500).toList\n list.map(_ + 1)\n```",
         "options": [
-            "",
-            "yNums = (1 to 500).toList",
-            "map(_ + 1)",
-            ""
+            "Change **list.map** to **list.par.map.**",
+            "Change **toList** to **toListPar**",
+            "Change **val** to **val.par**",
+            "Change **toList** to **toParallelList**"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q49. What is a free variable?",
@@ -505,17 +505,16 @@
             "AltThread",
             "AltFuture",
             "AltProcess",
-            "Future"
+            "Future\n```scala\nx= List(1,2,4); x(1)?\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q53. What value does this code return?\n```scala\nx= List(1,2,4); x(1)?\n```",
         "options": [
-            "la",
-            "t(1,2,4); x(1)?",
-            "",
-            "(1,2,4)"
+            "(1,2,4)",
+            "1",
+            "Nil"
         ],
         "_ps": -1
     }

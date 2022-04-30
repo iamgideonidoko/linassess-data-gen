@@ -295,7 +295,7 @@
             "a relational table",
             "an update to the input file",
             "a single, combined list",
-            "a set of <key, value> pairs"
+            "a set of <key, value> pairs\n`map function processes a certain key-value pair and emits a certain number of key-value pairs and the Reduce function processes values grouped by the same key and emits another set of key-value pairs as output.`"
         ],
         "_ps": 3
     },
@@ -325,7 +325,7 @@
             "data mode",
             "safe mode",
             "single-user mode",
-            "pseudo-distributed mode"
+            "pseudo-distributed mode\n### Q34. In what format does RecordWriter write an output file?"
         ],
         "_ps": 1
     },
@@ -334,8 +334,7 @@
         "options": [
             "hadoop fs -copy <fromDir> <toDir>",
             "hadoop fs -copy <toDir> <fromDir>",
-            "hadoop fs -copyFromLocal <fromDir> <toDir>",
-            "hadoop fs -copyFromLocal <toDir> <fromDir>"
+            "hadoop fs -copyFromLocal <fromDir> <toDir>"
         ],
         "_ps": 2
     }

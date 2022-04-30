@@ -5,7 +5,7 @@
             "the call stack",
             "the event loop",
             "the poll phase",
-            "the events queue"
+            "the events queue\n**Explanation:** From javascripttutorial: [reference](https://www.javascripttutorial.net/javascript-call-stack/#:~:text=If%20a%20function%20calls%20another,top%20of%20the%20call%20stack.)"
         ],
         "_ps": 0
     },
@@ -15,7 +15,7 @@
             "webpack",
             "crypto",
             "request",
-            "chalk"
+            "chalk\n**Explanation:** From flaviocopes docs: [reference](https://flaviocopes.com/node-core-modules/)"
         ],
         "_ps": 1
     },
@@ -25,7 +25,7 @@
             "allocUnsafe",
             "concat",
             "from",
-            "alloc"
+            "alloc\n**Explanation:** From official docs: [reference](https://nodejs.org/dist/latest-v13.x/docs/api/buffer.html#buffer_class_method_buffer_allocunsafe_size)"
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "ftp",
             "events",
             "dgram",
-            "http2"
+            "http2\n**Explanation:** From flaviocopes docs: [reference](https://flaviocopes.com/node-core-modules/)"
         ],
         "_ps": 0
     },
@@ -45,7 +45,7 @@
             "read",
             "readFile",
             "createReadStream",
-            "readFileSync"
+            "readFileSync\n**Explanation:** _From official docs: [reference](https://nodejs.org/api/fs.html#fs_dir_read)\nTo minimize memory costs, when possible prefer streaming via fs.createReadStream()._"
         ],
         "_ps": 2
     },
@@ -55,7 +55,7 @@
             "lookup",
             "resolve",
             "resolve4",
-            "reverse"
+            "reverse\n**Explanation:** From official docs: [reference](https://nodejs.org/api/dns.html#dns_dns_lookup_hostname_options_callback)"
         ],
         "_ps": 0
     },
@@ -65,7 +65,7 @@
             "util.types.isDate(value)",
             "assert.isDate(value)",
             "console.isDate(value)",
-            "util.date(value)"
+            "util.date(value)\n**Explanation:** From official docs: [reference](https://nodejs.org/api/util.html#util_util_types_isdate_value)"
         ],
         "_ps": 0
     },
@@ -75,7 +75,7 @@
             "no, there are no modules supporting it yet",
             "yes, with the https or http2 modules",
             "yes, through the path module",
-            "yes, with the http module"
+            "yes, with the http module\n**Explanation:** From official docs: [reference](https://nodejs.dev/learn/making-http-requests-with-nodejs)"
         ],
         "_ps": 1
     },
@@ -85,7 +85,7 @@
             "A-API",
             "Z-API",
             "N-API",
-            "X-API"
+            "X-API\n**Explanation:** From official docs: [reference](https://nodejs.org/api/n-api.html#n_api_node_api)"
         ],
         "_ps": 2
     },
@@ -95,7 +95,7 @@
             "--dev-tools",
             "--inspect",
             "--chrome",
-            "--debug"
+            "--debug\n**Explanation:** From official docs: [reference](https://nodejs.org/en/docs/guides/debugging-getting-started/)"
         ],
         "_ps": 1
     },
@@ -105,7 +105,7 @@
             "node -p \"process.cpus\"",
             "node -p \"util.cpus().size\"",
             "node -p \"process.os.cpus\"",
-            "node -p \"os.cpus().length\""
+            "node -p \"os.cpus().length\"\n**Explanation:** From coderrocketfuel docs: [reference](https://coderrocketfuel.com/article/get-the-number-of-system-cpu-cores-using-node-js)"
         ],
         "_ps": 3
     },
@@ -115,7 +115,7 @@
             "exit",
             "test",
             "time",
-            "print"
+            "print\n**Explanation:** From official docs: [reference](https://nodejs.org/api/console.html)"
         ],
         "_ps": 2
     },
@@ -125,7 +125,7 @@
             "global.cache",
             "module.cache",
             "process.cache",
-            "require.cache"
+            "require.cache\n**Explanation:** From official docs: [reference](https://nodejs.org/api/modules.html#modules_require_cache)"
         ],
         "_ps": 3
     },
@@ -135,7 +135,7 @@
             "node index.js --trace-warnings",
             "node --no-warnings",
             "node -trace-warnings",
-            "node index.js --no-warnings"
+            "node index.js --no-warnings\n**Explanation:** From official docs: [reference](https://nodejs.org/api/cli.html#cli_no_warnings)"
         ],
         "_ps": 1
     },
@@ -145,7 +145,7 @@
             "new Promise(child_process.exec())",
             "util.promisify(child_process.exec())",
             "util.promisify(child_process.exec)",
-            "new Promise(child_process.exec)"
+            "new Promise(child_process.exec)\n**Explanation:** From official docs: [reference](https://nodejs.org/api/child_process.html)"
         ],
         "_ps": 2
     },
@@ -155,19 +155,19 @@
             ".break",
             ".history",
             ".editor",
-            ".save"
+            ".save\n**Explanation:** From official docs: [reference](https://nodejs.org/api/repl.html#repl_commands_and_special_keys)\n`require('child_process').fork('script.js');`"
         ],
         "_ps": 1
     },
     {
         "question": "Q17. Which statement is true when you run the code shown below?\n`require('child_process').fork('script.js');`",
         "options": [
-            "re('child_process').fork('script.js');`",
             "The forked process shares the event loop with the parent process",
             "A new VM instance is created and the two VM instances will be shared between the forked process and the parent process.",
-            "The forked process will have its own VM instance."
+            "The forked process will have its own VM instance.",
+            "The forked process shares the same VM thread with the parent process.\n**Explanation:** From official docs: [reference](https://nodejs.org/api/child_process.html#child_process_child_process_fork_modulepath_args_options)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q18. If EventEmitter is in scope, which of the following lines of code will have an event emitter emitting a change event?",
@@ -175,7 +175,7 @@
             "EventEmitter.emit('change');",
             "EventEmitter.new().emit('change');",
             "(new EventEmitter()).emit('change');",
-            "new EventEmitter('change');"
+            "new EventEmitter('change');\n**Explanation:** _Because the EventEmitter is already in scope. No need to create new one._"
         ],
         "_ps": 0
     },
@@ -185,7 +185,7 @@
             "process.uptime",
             "process.stdout",
             "process",
-            "Buffer"
+            "Buffer\n**Explanation:** _process.stdout is Buffer type._"
         ],
         "_ps": 1
     },
@@ -225,19 +225,19 @@
             "the libuv library",
             "the c-ares library",
             "the VM (like VS or Chakra)",
-            "the repl module"
+            "the repl module\n```\nconst http = require('http');\n const hostname = '127.0.0.1'; const port = 3000;\n const server = http.createServer((req, res) => {\n  res.statusCode = 200;  res.setHeader(\"Content-Type\", \"text/plain\");  res.end(\"Hello World\\n\");\n});\nserver.listen(port, hostname, () => { console.log(`server running at http://${hostname}:${port}/`); });\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q24. Looking at the code below, what does the console show?\n```\nconst http = require('http');\n const hostname = '127.0.0.1'; const port = 3000;\n const server = http.createServer((req, res) => {\n  res.statusCode = 200;  res.setHeader(\"Content-Type\", \"text/plain\");  res.end(\"Hello World\\n\");\n});\nserver.listen(port, hostname, () => { console.log(`server running at http://${hostname}:${port}/`); });\n```",
         "options": [
-            "",
-            "http = require('http');",
-            " hostname = '127.0.0.1'; const port = 3000;",
-            " server = http.createServer((req, res) => {"
+            "server running at http://localhost:3000/",
+            "server running at port 3000",
+            "server running at http://localhost:4000/",
+            "server running at http://127.0.0.1:3000/"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q25.What is the purpose of the path module?",
@@ -255,19 +255,19 @@
             "server. start",
             "server.activate",
             "server.listen",
-            "server. run"
+            "server. run\n```\nconst fs = require('fs'); const os = require('os');\nconst system = os.platform(); const user = os.userInfo().username;\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\n);\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q27.What does the code shown below do?\n```\nconst fs = require('fs'); const os = require('os');\nconst system = os.platform(); const user = os.userInfo().username;\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\n);\n```",
         "options": [
-            "",
-            "fs = require('fs'); const os = require('os');",
-            "system = os.platform(); const user = os.userInfo().username;",
-            "endFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}"
+            "creates a text file hello.txt and appends customized text",
+            "creates an image file",
+            "console logs system information",
+            "creates a file named data and append numbers"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q28.How do you start a Node application, if the entry file is indexjs?",
@@ -305,19 +305,19 @@
             "process. stdinfo",
             "process. stdin",
             "process. stdout",
-            "process. stderr"
+            "process. stderr\n`console.log(arguments);`"
         ],
         "_ps": 0
     },
     {
         "question": "Q32. You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?\n`console.log(arguments);`",
         "options": [
-            "le.log(arguments);`",
             "ReferenceError: arguments is not defined",
             "an empty string",
-            "undefined"
+            "undefined",
+            "an object representing an array that has five elements"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q33. Which choice is not a valid method on event emitters?",
@@ -495,7 +495,7 @@
             "v8",
             "env",
             "process",
-            "child_process"
+            "child_process\n**Explanation:** \\_process is an global object and act like a bridge, the others aren't\n1. [source](https://nodejs.org/api/globals.html)\n2. [source](https://nodejs.org/api/process.html#process_process)"
         ],
         "_ps": 2
     },
@@ -505,7 +505,7 @@
             "Every Node process runs in a single thread, and all the I/O work is run in that same thread.",
             "Every Node process gets four threads that it can share between its JavaScript VM and the event loop.",
             "The event loop is single-threaded, but a JavaScript VM can use multiple threads.",
-            "JavaScript execution in Node.js is single-threaded, but I/O operations are executed using multiple threads."
+            "JavaScript execution in Node.js is single-threaded, but I/O operations are executed using multiple threads.\n**Explanation:** _https://www.geeksforgeeks.org/why-node-js-is-a-single-threaded-language/_"
         ],
         "_ps": 2
     },
@@ -535,7 +535,7 @@
             "const numInstances = cluster.instances().length;",
             "const numInstances = cluster.instances();",
             "const numInstances = require('os').cpus().length;",
-            "const numInstances = process.cpus().length;"
+            "const numInstances = process.cpus().length;\n**Explanation:** _From official docs: [https://nodejs.org/api/cluster.html#cluster_cluster](https://nodejs.org/api/cluster.html#cluster_cluster)_"
         ],
         "_ps": 2
     },
@@ -545,7 +545,7 @@
             "Use regular expressions directly on the file.",
             "Use Promises and async/await to offload the task to libuv.",
             "Copy the file into a database and perform the operations there.",
-            "Use readline together with streams to read and transform and write the file contents line by line."
+            "Use readline together with streams to read and transform and write the file contents line by line.\n**Explanation:** _From official docs: [https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line](https://nodejs.org/api/readline.html#readline_example_read_file_stream_line_by_line)_"
         ],
         "_ps": 3
     },
@@ -555,7 +555,7 @@
             "process",
             "exports",
             "setTimeout",
-            "Buffer"
+            "Buffer\n**Explanation:** _process, exports and setTimeout are global objects, Buffer isn't (please see https://nodejs.org/api/globals.html)_"
         ],
         "_ps": 3
     },
@@ -595,29 +595,29 @@
             "a locally scoped object that provides information about the current node process",
             "a global object that provides information about files",
             "a global object that provides information about the database",
-            "a global object that provides information about the current node process"
+            "a global object that provides information about the current node process\n```\n// File: person.js\nexports.name = \"Jane\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q61. What will this code log to the console?\n```\n// File: person.js\nexports.name = \"Jane\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```",
         "options": [
-            "",
-            "e: person.js",
-            "s.name = \"Jane\";",
-            "e: index.js"
+            "`{'Jane'}`",
+            "`{ name: 'Jane' }`",
+            "`{}`",
+            "`Jane`\n```\n// File: person.js\nexports = \"John\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q62. What will this code log to the console?\n```\n// File: person.js\nexports = \"John\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```",
         "options": [
-            "",
-            "e: person.js",
-            "s = \"John\";",
-            "e: index.js"
+            "`John`",
+            "`Undefined`",
+            "`{'John'}`",
+            "`{}`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q63. Is it possible to write tests in Node.js without an external library?",
@@ -625,7 +625,7 @@
             "yes, through the assert module",
             "yes, through the debugger module",
             "yes, through the console module",
-            "no"
+            "no\n**From the article:** [Making a Testing Framework in Node.js (Without any External Libraries)](https://www.sohamkamani.com/blog/javascript/making-a-node-js-test-runner/)"
         ],
         "_ps": 0
     },
@@ -714,8 +714,7 @@
         "options": [
             "They are an indication of the stability of Nodejs modules and usage recommendations.",
             "They tell if a feature is ES6 compliant.",
-            "They are a Node command to validate stability of your code.",
-            "They tell if a feature is LTS (Long Term Supported)."
+            "They are a Node command to validate stability of your code."
         ],
         "_ps": 0
     }

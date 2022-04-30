@@ -52,12 +52,12 @@
     {
         "question": "Q6. How can you create a stored procedure in MySQL?",
         "options": [
-            "A",
-            "",
-            "TE PROCEDURE P () AS",
-            "N"
+            "A\n```\n1 CREATE PROCEDURE P () AS\n2 BEGIN\n3 END;\n```",
+            "B\n```\n1 CREATE PROCEDURE P ()\n2 BEGIN\n3 END\n```",
+            "C\n```\n1 CREATE PROCP\n2 BEGIN\n3 END;\n```",
+            "D\n```\n1 CREATE PROC P AS O\n2 BEGIN\n3 END;\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q7. If you were building a table schema to store student grades as a letter (A, B, C, D, or F) which column type would be the best choice?",
@@ -72,22 +72,22 @@
     {
         "question": "Q8. Management has requested that you build an employee database. You start with the employee table. What is the correct syntax?",
         "options": [
-            "A",
-            "",
-            "EATE TABLE employee (",
-            "ployeeID char(10),"
+            "A\n```sql\n    CREATE TABLE employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY ON employeeID\n    );\n```",
+            "B\n```sql\n    CREATE TABLE employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY employeeID\n    );\n```",
+            "C\n```sql\n    CREATE TABLE IF EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n```",
+            "D\n```sql\n    CREATE TABLE IF NOT EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n```\n![mysql Q09](images/mysql_q09.jpg)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q9. You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?",
+        "question": "Q9. You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?\n![mysql Q09](images/mysql_q09.jpg)",
         "options": [
-            "l Q09](images/mysql_q09.jpg)",
             "LIKE",
             "IN",
-            "BETWEEN"
+            "BETWEEN",
+            "HAVING"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q10. Which query would NOT be used to administer a MySQL server?",
@@ -105,7 +105,7 @@
             "a list of entities, their relationship, constraints, data types, and cardinalities",
             "a list of entities, their relationship, and constraints",
             "all tables and their names, which are needed to implement the logical model",
-            "all tables, columns, data types, indexes and their relationship"
+            "all tables, columns, data types, indexes and their relationship\n`Logical, physical and normalized are all products of the designing phase in this order.`"
         ],
         "_ps": -1
     },
@@ -145,7 +145,7 @@
             "administrator schema",
             "encrypted algorithms",
             "user settings",
-            "access control lists"
+            "access control lists\n[Reference](https://dev.mysql.com/doc/refman/8.0/en/security-guidelines.html)"
         ],
         "_ps": 3
     },
@@ -195,19 +195,19 @@
             "GROUP BY",
             "WHERE",
             "LIMIT",
-            "LIKE"
+            "LIKE\n`SELECT * FROM Employees WHERE EmployeeName LIKE 'a%'`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q21. What does the following SQL statement return?",
+        "question": "Q21. What does the following SQL statement return?\n`SELECT * FROM Employees WHERE EmployeeName LIKE 'a%'`",
         "options": [
-            "T * FROM Employees WHERE EmployeeName LIKE 'a%'`",
             "It records in the Employees table where the value in the EmployeeName column doesn't have an \"a\".",
             "It records in the Employees table where the value in the EmployeeName column starts with \"a\".",
-            "It records in the Employees table where the value in the EmployeeName column has an \"a\"."
+            "It records in the Employees table where the value in the EmployeeName column has an \"a\".",
+            "It records in the Employees table where the value in the EmployeeName column ends with \"a\"."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q22. In `SELECT * FROM clients;` what does clients represent?",
@@ -335,7 +335,7 @@
             "JOIN",
             "WITH HEADERS",
             "UNION",
-            "WITH COLUMNS"
+            "WITH COLUMNS\n[Sample](https://stackoverflow.com/questions/5941809/include-headers-when-using-select-into-outfile)"
         ],
         "_ps": 2
     },
@@ -395,19 +395,19 @@
             "inefficient for storing json documents",
             "cannot be indexed directly",
             "documents cannot be validated when stored in json columns",
-            "cannot be normalized"
+            "cannot be normalized\n![mysql Q41](images/mysql_q41.jpg)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q41.Which statement is true for the diagram below",
+        "question": "Q41.Which statement is true for the diagram below\n![mysql Q41](images/mysql_q41.jpg)",
         "options": [
-            "l Q41](images/mysql_q41.jpg)",
             "carid is the primary key for purchases",
             "carid is the foreign key for cars.carid",
-            "customerid is the foreign key for customers.id"
+            "customerid is the foreign key for customers.id",
+            "customerid is the primary key for purchases"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q42.Which statement can you use to load data from a file into the table?",
@@ -415,29 +415,29 @@
             "cat file|mysql",
             "load data infile (correct if the file is already on the server)",
             "load data local infile (also correct but only if the file is from the client)",
-            "extended insert statement"
+            "extended insert statement\n![mysql Q43](images/mysql_q43.jpg)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q43. You are working with the tables as shown in this diagram. You need to make sure that any record added to the purchases table consists of a customerID, which already exists in the customers table, and a carID, which already exists in the cars table. You decide to use a trigger to do the validation. Which one do you use?",
+        "question": "Q43. You are working with the tables as shown in this diagram. You need to make sure that any record added to the purchases table consists of a customerID, which already exists in the customers table, and a carID, which already exists in the cars table. You decide to use a trigger to do the validation. Which one do you use?\n![mysql Q43](images/mysql_q43.jpg)",
         "options": [
-            "l Q43](images/mysql_q43.jpg)",
             "`AFTER INSERT`",
             "`BEFORE INSERT`",
-            "`CROSS JOIN`"
+            "`CROSS JOIN`",
+            "`IF EXISTS`\n`IF EXISTS` and `CROSS JOIN` are not valid for a trigger."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q44. Which is the correct syntax of an extended insert statement?",
         "options": [
-            "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)",
-            "('Mercedes', 'C', 2003)",
-            "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)",
-            "values ('Mercedes', 'C', 2003)"
+            "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)\n      ('Mercedes', 'C', 2003)",
+            "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)\n      values ('Mercedes', 'C', 2003)",
+            "insert into cars (make, model, year) extended ('Ford', 'Mustang', 2002),\n      ('Mercedes', 'C', 2003)",
+            "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002),\n      ('Mercedes', 'C', 2003)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q45. You need to make an exact copy of a table, with all columns and indexes. How can you get all of the information needed to accomplish this?",
@@ -445,7 +445,7 @@
             "create table",
             "clone table",
             "insert into",
-            "show create table"
+            "show create table\nNote that the question is about _getting_ the data and not about the _duplicating_ operation itself. And actually there is no need to run `SHOW CREATE TABLE` at all. [To duplicate the table](https://popsql.com/learn-sql/mysql/how-to-duplicate-a-table-in-mysql) structure you can `CREATE TABLE new_table LIKE original_table;`."
         ],
         "_ps": 3
     },
@@ -475,7 +475,7 @@
             "COLLATE",
             "UNION",
             "FULL JOIN",
-            "WITH"
+            "WITH\nThis is exactly what [WITH clause](https://dev.mysql.com/doc/refman/8.0/en/with.html) is designed for"
         ],
         "_ps": 3
     },
@@ -485,7 +485,7 @@
             "merge",
             "updatable",
             "temptable",
-            "undefined"
+            "undefined\n[Reference](https://dev.mysql.com/doc/refman/8.0/en/view-algorithms.html)"
         ],
         "_ps": 1
     },
@@ -495,7 +495,7 @@
             "to display your version of MySQL",
             "to display operating system error codes",
             "to display default settings that are in error",
-            "to display storage error codes"
+            "to display storage error codes\nNote: perror prints a description for a system error code or for a storage engine (table handler) error code -\n[link](<https://dev.mysql.com/doc/refman/5.7/en/perror.html#:~:text=2%20perror%20%E2%80%94%20Display%20MySQL%20Error%20Message%20Information,-For%20most%20system&text=You%20can%20find%20out%20what,(table%20handler)%20error%20code>)"
         ],
         "_ps": 3
     },
@@ -505,7 +505,7 @@
             "SHOW table COLUMNS;",
             "SHOW COLUMNS FROM table;",
             "LIST table COLUMNS;",
-            "SELECT COLUMNS FROM table;"
+            "SELECT COLUMNS FROM table;\nNote: `DESCRIBE tablename` is a shortcut for this command"
         ],
         "_ps": 1
     },
@@ -565,19 +565,19 @@
             "to reduce corruption in data",
             "to reduce storage space",
             "to make the system faster",
-            "to prevent data anomalies"
+            "to prevent data anomalies\nNote: \"to make the system faster\" can also be correct. For example we can calculate some heavy query in advance and store its result in some column (use it as a cache). So if \"system\" means \"application which uses mysql\" then it's correct too.\n```mysql\nLOAD XML LOCAL INFILE 'cars.xml'\nINTO TABLE cars\nROWS IDENTIFIED BY `<car>`;\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is _not_ supported by the statement?",
+        "question": "Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is _not_ supported by the statement?\n```mysql\nLOAD XML LOCAL INFILE 'cars.xml'\nINTO TABLE cars\nROWS IDENTIFIED BY `<car>`;\n```",
         "options": [
-            "ql",
-            "ML LOCAL INFILE 'cars.xml'",
-            "ABLE cars",
-            "DENTIFIED BY `<car>`;"
+            "A\n```xml\n<car>\n   <field name=\"make\"> Lexus </field>\n   <field name=\"model\"> IS300 </field>\n   <field name=\"make\"> 2016 </field>\n</car>\n```",
+            "B\n```xml\n<car name=\"make\"> Dodge </car>\n<car name=\"model\"> Ram </car>\n<car name=\"year\"> 2000 </car>\n```",
+            "C\n```xml\n<car make=\"Ford\" model=\"Mustang\" year=\"2002\"/>\n```",
+            "D\n```xml\n<car year=\"2010\">\n    <make>Mercedes</make> <model> C-Class</model>\n</car>\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q59. You are loading data into a table. Which command can you use to make sure that all data is inserted and duplicated rows are discarded?",
@@ -595,19 +595,19 @@
             "It will stop and issue an error when it encounters a row that is referenced by a row in a child table.",
             "It always first drops, then re-creates a new table.",
             "It deletes rows one by one on tables with foreign key constraints.",
-            "It does not invoke the `DELETE` triggers associated with the table."
+            "It does not invoke the `DELETE` triggers associated with the table.\nNote: both answers are correct - see [TRUNCATE TABLE Statement](https://dev.mysql.com/doc/refman/8.0/en/truncate-table.html) in MySQL manual\n![mysql Q61](images/mysql_q61.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q61. You are working with the tables as shown in this diagram. You need to get the number of cars sold per the home state of each customer's residence. How can you accomplish this?",
+        "question": "Q61. You are working with the tables as shown in this diagram. You need to get the number of cars sold per the home state of each customer's residence. How can you accomplish this?\n![mysql Q61](images/mysql_q61.png)",
         "options": [
-            "l Q61](images/mysql_q61.png)",
             "`SELECT state, COUNT(*) FROM customers WHERE ID IN (SELECT customerID FROM purchases) GROUP BY state;`",
             "`SELECT state, COUNT(*) FROM customers c LEFT JOIN purchases p ON c.ID = p.customerID GROUP BY state;`",
-            "`SELECT state, COUNT(*) FROM customers c, purchases p WHERE c.ID = p.customerID GROUP BY state;`"
+            "`SELECT state, COUNT(*) FROM customers c, purchases p WHERE c.ID = p.customerID GROUP BY state;`",
+            "`SELECT state, COUNT(*) FROM customers GROUP BY state;`\nExplanation: THe difference between 2 and 3 is that LEFT JOIN will return 1 row per customer before grouping. If replaced with RIGHT JOIN it would return the correct info."
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q62. In data migration, there is often a need to delete duplicate rows as part of data cleanup. Which statement works best?",
@@ -655,7 +655,7 @@
             "`SELECT city FROM json_data;`",
             "`SELECT city->>'$.name' city FROM json_data;`",
             "`SELECT city.name city FROM json_data;`",
-            "`SELECT city->'$.name' city FROM json_data;`"
+            "`SELECT city->'$.name' city FROM json_data;`\nNote: the last option is valid too but the results will be enclosed with quotation marks"
         ],
         "_ps": 1
     },
@@ -665,19 +665,19 @@
             "ENGINE",
             "PARTITION",
             "STORAGE",
-            "TABLESPACE"
+            "TABLESPACE\nTable name: customers\n| ID | lastname | firstname | phone | address | city | state | zip |\n| ---- | -------- | --------- | ------------ | ------------------- | ----------- | ----- | ----- |\n| A001 | Smith | Bob | 212-555-1212 | 1001 1st Street | New York | NY | 10001 |\n| A002 | Chang | John | 213-555-5678 | 888 Rodeo Drive | Los Angeles | CA | 90210 |\n| A003 | Smith | Mary | 999-999-9999 | 123 Main Street | Anytown | VA | 12345 |\n| A004 | Johnson | Jack | 312-312-3120 | 1111 Chicago Avenue | Chicago | IL | 60606 |\n| A005 | Lopez | Linda | 737-777-3333 | 123 Main Street | Austin | TX | 73344 |"
         ],
         "_ps": 0
     },
     {
-        "question": "Q68. You are working with the table in this diagram. You want to use full-text search to find the customers who live on a street or a drive. What is the command to do that?",
+        "question": "Q68. You are working with the table in this diagram. You want to use full-text search to find the customers who live on a street or a drive. What is the command to do that?\nTable name: customers\n| ID | lastname | firstname | phone | address | city | state | zip |\n| ---- | -------- | --------- | ------------ | ------------------- | ----------- | ----- | ----- |\n| A001 | Smith | Bob | 212-555-1212 | 1001 1st Street | New York | NY | 10001 |\n| A002 | Chang | John | 213-555-5678 | 888 Rodeo Drive | Los Angeles | CA | 90210 |\n| A003 | Smith | Mary | 999-999-9999 | 123 Main Street | Anytown | VA | 12345 |\n| A004 | Johnson | Jack | 312-312-3120 | 1111 Chicago Avenue | Chicago | IL | 60606 |\n| A005 | Lopez | Linda | 737-777-3333 | 123 Main Street | Austin | TX | 73344 |",
         "options": [
-            "name: customers",
-            " lastname | firstname | phone | address | city | state | zip |",
-            " | -------- | --------- | ------------ | ------------------- | ----------- | ----- | ----- |",
-            " | Smith | Bob | 212-555-1212 | 1001 1st Street | New York | NY | 10001 |"
+            "A\n```sql\nSELECT *\nFROM customers\nWHERE address MATCH 'Street' OR 'Drive';\n```",
+            "B\n```sql\nSELECT *\nFROM customers\nWHERE MATCH(address) IN ('street, drive');\n```",
+            "C\n```sql\nSELECT *\nFROM customers\nWHERE address MATCH 'Street' OR address MATCH 'Drive';\n```",
+            "D\n```sql\nSELECT *\nFROM customers\nWHERE MATCH(address) AGAINST ('street, drive');\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q69. Which query lists the databases on the current server?",
@@ -785,19 +785,19 @@
             "`SELECT * FROM customers WHERE PhoneNumber = NULL;`",
             "`SELECT * FROM customers WHERE PhoneNumber IS NOT VALID;`",
             "`SELECT * FROM customers WHERE PhoneNumber IS NULL;`",
-            "`SELECT * FROM customers WHERE PhoneNumber IS UNKNOWN;`"
+            "`SELECT * FROM customers WHERE PhoneNumber IS UNKNOWN;`\n![mysql picture](images/mysql_q80.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q80. In the diagram below, the price field is declared as type DECIMAL. What would be a more efficient declaration for this field?",
+        "question": "Q80. In the diagram below, the price field is declared as type DECIMAL. What would be a more efficient declaration for this field?\n![mysql picture](images/mysql_q80.png)",
         "options": [
-            "l picture](images/mysql_q80.png)",
             "FLOAT",
             "DECIMAL(10,2)",
-            "NUMERIC"
+            "NUMERIC",
+            "DOUBLE"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q81. Which choice is `not` an available string type for a column?",
@@ -805,19 +805,19 @@
             "`ENUM`",
             "`SET`",
             "`BIT`",
-            "`CHAR`"
+            "`CHAR`\nExplnation: BIT is not a string type\n![mysql picture](images/mysql_q80.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q82. This diagram shows what type of relationship between customers and cars?",
+        "question": "Q82. This diagram shows what type of relationship between customers and cars?\n![mysql picture](images/mysql_q80.png)",
         "options": [
-            "l picture](images/mysql_q80.png)",
             "one-to-many",
             "parent-child",
-            "many-to-many"
+            "many-to-many",
+            "many-to-one"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q83. A stored routine is a set of SQL statements stored on the server and takes form as either a procedure or a function. Which statement cannot be used inside stored routines?",
@@ -825,7 +825,7 @@
             "`SELECT`",
             "`USE`",
             "`SET`",
-            "`DECLARE`"
+            "`DECLARE`\nExplanation: Both `SET` and `DECLARE` are used to create variables. Reference: [MySQL STORED PROCEDURE Tutorial With Examples](https://www.softwaretestinghelp.com/mysql-stored-procedure/)"
         ],
         "_ps": 1
     },
@@ -835,19 +835,19 @@
             "trigger",
             "regular expression",
             "view",
-            "index"
+            "index\n![mysql picture](images/mysql_q85.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q85. In the diagram below, the ID fields are declared as type CHAR instead of INT . Which is NOT one of the possible reasons behind that decision?",
+        "question": "Q85. In the diagram below, the ID fields are declared as type CHAR instead of INT . Which is NOT one of the possible reasons behind that decision?\n![mysql picture](images/mysql_q85.png)",
         "options": [
-            "l picture](images/mysql_q85.png)",
             "The ID field needs to include letters and not just numbers.",
             "You can have a consistent format across all of the tables that require ID fields.",
-            "The ID field needs to have leading 0s, which the INT data type would truncate."
+            "The ID field needs to have leading 0s, which the INT data type would truncate.",
+            "The `CHAR(10)` data type is more efficient and space-saving."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q86. Why would you use a common table expression (CTE)?",
@@ -855,7 +855,7 @@
             "To define queries for later reuse for the duration of the current session",
             "To create temporary tables that can be used to pre-select often-used result sets.",
             "To calculate a new single value from a result set and return it to the query parser.",
-            "To break down complex queries and allow reuse within a query."
+            "To break down complex queries and allow reuse within a query.\nExplanation: CTEs do not create temporary tables, they only work within a signle query. Reference: [13.2.15 WITH (Common Table Expressions)](https://dev.mysql.com/doc/refman/8.0/en/with.html)."
         ],
         "_ps": 3
     },
@@ -865,29 +865,29 @@
             "--verbose",
             "--skip",
             "--skip-error",
-            "--loose"
+            "--loose\nReference: [4.2.2.4 Program Option Modifiers](https://dev.mysql.com/doc/refman/8.0/en/option-modifiers.html)\n```\nSELECT name FROM students WHERE name REGEXP '^to';\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q88. What does this SQL statement return?",
+        "question": "Q88. What does this SQL statement return?\n```\nSELECT name FROM students WHERE name REGEXP '^to';\n```",
         "options": [
-            "",
-            " name FROM students WHERE name REGEXP '^to';",
-            "",
-            "all names starting with \"to,\" such as Tommy or Tony"
+            "all names starting with \"to,\" such as Tommy or Tony",
+            "all names with \"to,\" such as Roberto and Tommy",
+            "all names without \"to,\" such as Samantha or Kathryn",
+            "all names ending with \"to,\" such as Roberto\n![mysql picture](images/mysql_q92.png)"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
-        "question": "Q89. You are working with the tables as shown in the diagram. You need to generate the list of price totals for each make and model of car, with subtotals for each make, and the grand total of all prices. Which SQL clause do you use?",
+        "question": "Q89. You are working with the tables as shown in the diagram. You need to generate the list of price totals for each make and model of car, with subtotals for each make, and the grand total of all prices. Which SQL clause do you use?\n![mysql picture](images/mysql_q92.png)",
         "options": [
-            "l picture](images/mysql_q92.png)",
             "UNION",
             "SHOW TOTALS",
-            "UNION ALL"
+            "UNION ALL",
+            "WITH ROLLUP"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q90. The left and right joins are also known as \\_.",
@@ -955,29 +955,29 @@
             "JSON",
             "CSV",
             "XML",
-            "TXT"
+            "TXT\n![mysql picture](images/mysql_q98.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q97. You are working with the tables as shown in this diagram. You need to generate the list of all cars, whether or not they had been sold, with the purchase date of the cars that were sold. Which statement accomplishes that?",
+        "question": "Q97. You are working with the tables as shown in this diagram. You need to generate the list of all cars, whether or not they had been sold, with the purchase date of the cars that were sold. Which statement accomplishes that?\n![mysql picture](images/mysql_q98.png)",
         "options": [
-            "l picture](images/mysql_q98.png)",
-            "A",
-            "",
-            " cars.*, purchases.date"
+            "A\n```\nSELECT cars.*, purchases.date\nFROM cars RIGHT JOIN purchases\nON cars.ID = purchases.carID;\n```",
+            "B\n```\nSELECT cars.*, purchases.date\nFROM cars INNER JOIN purchases\nON cars.ID = purchases.carID;\n```",
+            "C\n```\nSELECT cars.*, purchases.date\nFROM cars JOIN purchases\nON cars.ID = purchases.carID;\n```",
+            "D\n```\nSELECT cars.*, purchases.date FROM cars LEFT JOIN purchases ON cars.ID = purchases.carID;\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q98. Which code snippet from a stored procedure should be rewritten as a CASE statement?",
         "options": [
-            "A",
-            "",
-            " var1 THEN SET varA = var1;",
-            "SEIF var2 THEN SET varA = var2;"
+            "A\n```\n    IF var1 THEN SET varA = var1;\n    ELSEIF var2 THEN SET varA = var2;\n    ELSEIF var3 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n```",
+            "B\n```\n    IF var1 = var2 THEN SET varA = var1;\n    ELSEIF var2 = var3 THEN SET varA = var2;\n    ELSEIF var3 = var4 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n```",
+            "C\n```\n    IF var1 = 1 THEN SET varA = var1;\n    ELSEIF var2 = 2 THEN SET varA = var2;\n    ELSEIF var3 = 3 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n```",
+            "D\n```\n    IF var1 = 1 THEN SET varA = var1;\n    ELSEIF var1 = 2 THEN SET varA = var2;\n    ELSEIF var1 = 3 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q99. Why would you use stored functions?",
@@ -985,8 +985,17 @@
             "for formulas and business rules that you want to apply to columns in an SQL query",
             "for formulas and business rules that should be applied on a specific trigger event like on inserts",
             "to automatically modify the data of a table based on a query",
-            "for reusing recurring queries"
+            "for reusing recurring queries\nTable name: superheroes\n| name | alias | power1 | power2 | power3 |\n| ---- | ----- | ------ | ------ | ------ |\n| Superman | Clark Kent | Flight | X-Ray Vision | Super Strength |\n| Wonder Woman | Diana Prince | Force Fields | Reflexes | Telepathy |\n| Spider-man | Peter Parker | Walcrawling | Web-making | Enhanced Senses |\n| Aquaman | Arthur Curry | Underwater Breathing | Enhanced Sight | Stamina |\n| Hulk | Bruce Banner | Super Strength | Radiation Immunity | Invulnerability |"
         ],
         "_ps": 1
+    },
+    {
+        "question": "Q100. What steps do you need to take to normalize the table from this diagram?\nTable name: superheroes\n| name | alias | power1 | power2 | power3 |\n| ---- | ----- | ------ | ------ | ------ |\n| Superman | Clark Kent | Flight | X-Ray Vision | Super Strength |\n| Wonder Woman | Diana Prince | Force Fields | Reflexes | Telepathy |\n| Spider-man | Peter Parker | Walcrawling | Web-making | Enhanced Senses |\n| Aquaman | Arthur Curry | Underwater Breathing | Enhanced Sight | Stamina |\n| Hulk | Bruce Banner | Super Strength | Radiation Immunity | Invulnerability |",
+        "options": [
+            "Create another table to serve as a lookup for powers with fields for code and description, as well as a junction table with superhero names and power codes.",
+            "Add a column to this table to serve as a record identifier, and make it the primary key.",
+            "Extend this table to have additional columns \"power4,\" \"power5,\" and so on, to allow additional powers for each superhero."
+        ],
+        "_ps": 0
     }
 ]

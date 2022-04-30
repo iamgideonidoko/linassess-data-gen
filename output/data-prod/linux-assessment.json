@@ -1,0 +1,881 @@
+[
+    {
+        "question": "Q1. To mount a drive by its ID, what command would you use first to retrieve it?",
+        "options": [
+            "df -h",
+            "listid",
+            "ls -l",
+            "blkid"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q2. Linux file access control lists (ACLs) are \\_.",
+        "options": [
+            "discretionary access control system permissions layered over standard Linux permissions",
+            "mandatory access control system permissions layered over standard Linux permissions",
+            "a type of firewall for Linux",
+            "the same as standard Linux permissions"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q3. When using iproute2, how do you show routing information for an IPv6 network?",
+        "options": [
+            "route -ipv6",
+            "route",
+            "ip -6 route show",
+            "ip route show\n```bash\nfind / -size +10M -exec ls -l {} ;\n```"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q4. What does this command string do?\n```bash\nfind / -size +10M -exec ls -l {} ;\n```",
+        "options": [
+            "It finds all files using ls -l and hands them off to the find command to display.",
+            "It finds all files older than 10 minutes and long lists them using the ls command.",
+            "It finds all files larger than 10 MB and long lists them using the ls command.",
+            "It uses the ls command to find all files in the filesystem matching the {} wildcard.\n```bash\nlocate --regexp '^/usr.*pixmaps.*jpg$'\n```"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q5. What would this locate command show?\n```bash\nlocate --regexp '^/usr.*pixmaps.*jpg$'\n```",
+        "options": [
+            "all files in a directory named pixmaps",
+            "all files ending in \".jpg\"",
+            "all file paths that start with \"/usr\", include the word \"pixmaps\", and end with \".jpg\"",
+            "all file paths that include \"/usr/pixmaps\" and end with \".jpg\""
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q6. Which command allows you to do packet analysis from the command line?",
+        "options": [
+            "wireshark",
+            "ethtool",
+            "netstat",
+            "tcpdump"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q7. Which command will tell you how long a system has been running?",
+        "options": [
+            "log",
+            "uptime",
+            "runtime",
+            "access"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q8. How would you describe PCP (Performance Co-Pilot)?",
+        "options": [
+            "It is an application testing suite used to profile programming code.",
+            "It is a local command used for monitoring local system resources in real time.",
+            "It is a set of tools, services, and libraries for gathering and analyzing performance measures.",
+            "It is a tool designed to change system configuration for purposes of optimization."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q9. You want to resolve a long list of DNS names using dig. What should you do?",
+        "options": [
+            "Create a text file including all names and use the -f option of dig.",
+            "Type in each query manually.",
+            "Write a shell script to send multiple dig queries to the DNS server.",
+            "Save the DNS names in an SQL database and process it with dig.\n```\nps -e --format uid,pid,ppid,%cpu,cmd\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q10. What would this command output?\n```\nps -e --format uid,pid,ppid,%cpu,cmd\n```",
+        "options": [
+            "the user ID, process ID, parent process ID, CPU usage, and command name of a process",
+            "the user ID, group ID, parent process ID, CPU usage, and command name of a process",
+            "the UUID, process ID, parent process ID, CPU usage, and command name of a process",
+            "all of these answers"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q11. Which command in Bash executes the last line in the shell history that starts with ls?",
+        "options": [
+            "!",
+            "!!",
+            "!\\*",
+            "!ls"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q12. The ssh-copy-id command copies \\_ to the remote host.",
+        "options": [
+            "both private and public keys",
+            "the ssh public key",
+            "the ssh private key",
+            "a fingerprint file"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. What command is used to determine the amount of disk usage for a directory?",
+        "options": [
+            "find",
+            "fdisk",
+            "du",
+            "df"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q14. A backup drive was created using dd to make a bit-for-bit copy. When the drive is inserted into an iSCSI target before it is booted up, the data appears to be missing. What happened?",
+        "options": [
+            "The backup drive is corrupted and needs to be re-created.",
+            "When the backup drive was duplicated, the label was as well. When booted, the system mounted the old duplicated drive by its identical label.",
+            "There is a conflict between the physical location of the backup drive and the original drive.",
+            "The backup process went wrong, and the old drive was duplicated over the original drive."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q15. What is the key difference between a redirect (>) and piping to the tee command?",
+        "options": [
+            "The tee command sends output only to STDOUT and STDERR.",
+            "A redirect sends output to STDOUT and a file, whereas a tee sends output only to STDOUT.",
+            "Nothing, they are the same.",
+            "The tee command sends output to STDOUT and a file, whereas a redirect sends output only to a file."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q16. What does the /etc/nsswitch.conf file manage?",
+        "options": [
+            "priority of one DNS server over another",
+            "per network interface DNS server configuration",
+            "alternative DNS services",
+            "sources for name service information\n```bash\necho \\$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'\n```"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q17. Assume the variable myNumber holds a string consisting of 10 digits. What will this command output?\n```bash\necho \\$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'\n```",
+        "options": [
+            "It will only match digits—and since the string has only digits, the command will output the same number without changes.",
+            "It will output the same 10-digit number, but every digit will be inside parentheses.",
+            "It will output the entire 10-digit number inside parentheses.",
+            "It will output the same 10-digit number, but the first 3 digits will be inside parentheses."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q18. Packages can be downloaded but not installed with yum or dnf by specifying which option?",
+        "options": [
+            "None of these answers. yum does not support downloading packages without installing them.",
+            "--downloaddir",
+            "-d",
+            "--downloadonly\n`[0-9]`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q19. What character class is equal to this set?\n`[0-9]`",
+        "options": [
+            "`[[:alnum:]]`",
+            "`[[:digit:]]`",
+            "`[[:alpha:]]`",
+            "`[[:num:]]`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q20. When archiving files, which command will preserve all file attributes including ACLs and SELinux security context?",
+        "options": [
+            "zip",
+            "tar",
+            "archive",
+            "gzip"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q21. In a systemd-based OS, you can change the system hostname by editing /etc/hostname manually and then doing what?",
+        "options": [
+            "Restart dhcpd.",
+            "Run /etc/hostname.",
+            "Nothing, the system notices automatically.",
+            "Notify systemd to update it by restarting the systemd-hostnamed service."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q22. What command would you use to resize an LVM volume group to include an additional physical volume?",
+        "options": [
+            "vgadd",
+            "vgresize",
+            "vgappend",
+            "vgextend\n`0 1 \\* \\* \\*`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. When would this system cron job run its task?\n`0 1 \\* \\* \\*`",
+        "options": [
+            "every minute of the hour",
+            "every hour of every day",
+            "every day at 1:00 AM",
+            "only on Mondays"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q24. ifconfig has been deprecated. What command is now recommended for changing IP addresses in the live config?",
+        "options": [
+            "netconf",
+            "ipconfig",
+            "ipman",
+            "ip"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q25. You are managing an Apache web server on a system using SELinux. By default it cannot read personal webpages in users' home directories. What SELinux boolean would you set to allow this?",
+        "options": [
+            "apache_enable_homedirs",
+            "httpd_enable_userdirs",
+            "httpd_enable_homedirs",
+            "httpd_enable_userhome_dirs"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q26. Why doesn't passwd -l keep a user from logging in via other methods?",
+        "options": [
+            "The passwd command is not used for locking passwords.",
+            "There is no password -l option.",
+            "It locks only the password, not the account, so users can still authenticate with keys or other methods.",
+            "It does lock the account, keeping users from logging in even if they are using other authentication methods."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q27. In the Bash shell, what is the difference between piping into | and piping into |&?",
+        "options": [
+            "Piping into | pipes both stdout and stderr. Piping into |& pipes only stderr.",
+            "Piping into | pipes stdout. Piping into |& pipes stdout and stderr.",
+            "Piping into | pipes both stdout and stderr. Piping into |& pipes only stdout.",
+            "Piping into | pipes stdout. Piping into |& pipes all open file descriptors."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q28. Why is the passwd command able to modify the /etc/passwd file?",
+        "options": [
+            "The kernel identifies it as one of the names of extended commands.",
+            "It has the same name as the file it modifies.",
+            "It has the SUID permission mode and is owned by root.",
+            "It is a system administration command."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q29. When a user deletes a file using the rm command, Linux will \\_.",
+        "options": [
+            "always ask for confirmation",
+            "back up the file before it deletes the file",
+            "ask for confirmation if configured to do so",
+            "never ask for confirmation"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q30. What is a major advantage of using Logical Volume Management (LVM)?",
+        "options": [
+            "Access to a drive is faster than with standard partitions.",
+            "Volumes can be resized smaller without unmounting them.",
+            "Repairing filesystem errors is easier than with standard partitions.",
+            "Volumes can be resized even if the free space is not contiguous."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. What is one major difference between brace expansion and globs?",
+        "options": [
+            "Globs create a list; brace expansion matches pattern.",
+            "Brace expansion requires files to exist; globs do not.",
+            "Brace expansion creates a list; globs match the list of pathnames.",
+            "Globs get processes first and brace expansion later."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q32. To remove all ACLs from a directory , use setfacl with which options?",
+        "options": [
+            "-d",
+            "-k",
+            "-b",
+            "-x"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q33. Which choice will _not_ print \"Hello World\" in the terminal?",
+        "options": [
+            "A\n```bash\nmyVar = 5\n[[ $myVar -lt 10 ]] && echo \" Hello World\"\n```",
+            "B\n```bash\nmyVar = 5\n[[ $myVar -lt 10 ]] || echo \" Hello World\"\n```",
+            "C\n```bash\nmyVar = 5\n[[ ! $myVar -gt 10 ]] && echo \" Hello World\"\n```",
+            "D\n```bash\nmyVar = 5\n[[ $myVar -gt 10 ]] || echo \" Hello World\"\n```"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q34. What is not inherited by child process?",
+        "options": [
+            "shell aliases",
+            "userid",
+            "environmental variables",
+            "scheduling priority"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q35. What NFS option allows the root user to access NFS shares as the root user?",
+        "options": [
+            "no_admin_squash",
+            "no_root_squash",
+            "allow_root_access",
+            "all_squash\n```bash\ndate | mail -s \"This is a remote test\" user1@rhhost1.localnet.com\n```"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q36. You send an email to a remote client using the following syntax. What will be in the body of the email?\n```bash\ndate | mail -s \"This is a remote test\" user1@rhhost1.localnet.com\n```",
+        "options": [
+            "\"This is a remote test\"",
+            "the date, the time, and the words \"This is a remote test\"",
+            "The email subject shows \"This is a remote test\" but the body of the email will be empty.",
+            "the current date and time"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q37. What is the /etc/hosts file used for?",
+        "options": [
+            "resolving the local name",
+            "blocking sites using iptables",
+            "setting the hostname",
+            "configuring DNS name servers"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q38. In an extended regular expression, you would use (pattern){3} to match three instances of the pattern. How would you match the same thing with an extended glob?",
+        "options": [
+            "3(pattern)",
+            "{0,3}(pattern}",
+            "Occurrence quantifiers are not supported in Bash's version of extended globs, so this is not possible.",
+            "{3}(pattern})"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q39. When configuring a Samba share, how would the engineering group be specified in the smb.conf?",
+        "options": [
+            "Samba uses Linux operating system groups from the /etc/group file; just specify the group name.",
+            "It would be preceded by a percent sign (%), such as %engineers.",
+            "Use the group name by itself; Samba checks for its existence.",
+            "It would be preceded by an @ symbol, such as @engineering."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q40. To configure the Kerberos client, which command should you use to import the keytab file?",
+        "options": [
+            "krb5-workstation",
+            "ktutil",
+            "pam_krb5",
+            "kdb5_util"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q41. To search from the current cursor position up to the beginning of the file using VIM, type \\_ and then the search criteria.",
+        "options": [
+            "`?`",
+            "`\\`",
+            "`/`",
+            "`/search`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q42. What is the job of the NetworkManager daemon?",
+        "options": [
+            "It is a graphical tool that manages network connections, including bonding and wireless networks.",
+            "It is a security service that manages user access control of local network-aware services.",
+            "It attempts to keep an active network connection available at all times.",
+            "It is a command-line tool that manages network connections."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q43. Why might would you use the usermod command ?",
+        "options": [
+            "to log out a user",
+            "to lock a user's account",
+            "to change global user account settings",
+            "to set a user's password"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q44. Extending an LVM volume group does what to the formatted filesystem?",
+        "options": [
+            "It prepares the filesystem for use by defragmenting it.",
+            "It resizes the filesystem to match the volume group size.",
+            "It does nothing.",
+            "It remounts the filesystem with the new size.\n```bash\nsed -E 's/[a-Z]{4}/(&)/'  textfile.txt\n```"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q45. What would this sed command do?\n```bash\nsed -E 's/[a-Z]{4}/(&)/'  textfile.txt\n```",
+        "options": [
+            "It would substitute the letter with an ampersand (&).",
+            "It would replace all letters in the textfile.txt file with ampersand (&).",
+            "It would replace the first four letters with an ampersand (&).",
+            "It would place parentheses around the first four letters of each line of textfile.txt."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q46. With GNU tools such as GNU grep, awk, and sed, what is difference between regular expressions (BREs) and extended regular expressions (EREs)?",
+        "options": [
+            "EREs support occurrence operators.",
+            "Only the syntax differs.",
+            "EREs support alternation.",
+            "EREs can match groups."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q47. Which kernel module do you need to load to use interface bonding?",
+        "options": [
+            "bonding.",
+            "team.",
+            "netbond.",
+            "bond.\n```bash\nfind / -size -10K -exec ls -l {} \\;\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q48. What does this command string do?\n```bash\nfind / -size -10K -exec ls -l {} \\;\n```",
+        "options": [
+            "It finds all files larger than 10k and long lists them using the ls command.",
+            "It finds all files of size 10k using ls -l and hands them off to the find command to display.",
+            "It finds all files in the / directory of size 10k and long lists them.",
+            "It finds all files in the file system smaller than 10k and long lists them using the ls command."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q49. To change the priority of multiple swap partitions, which file would you edit?",
+        "options": [
+            "/proc/swapiness",
+            "/etc/fstab",
+            "/etc/mounts",
+            "/etc/swaps"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q50. What would you type to list all systemd service unit files, whether they are enabled or not?",
+        "options": [
+            "systemctl list-services.",
+            "chkconfig --list-all",
+            "systemctl list-unit-files -at service",
+            "systemctl list-unit-files -t service"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q51. You can set Linux group passwords using which command?",
+        "options": [
+            "gpasswd",
+            "passwd",
+            "editsam",
+            "grouppass"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q52. With most GNU commands, if an option is a word, what will it be preceded by?",
+        "options": [
+            "two dashes",
+            "a backslash",
+            "one dash",
+            "nothing"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q53. What would happen if you have a script file named script that takes a long time to complete, and you type `nohup ./script &` in the command line?",
+        "options": [
+            "The script will remain running in the background even if you reboot the system.",
+            "The script will run in your terminal and you will not be able to do anything until it completes.",
+            "The script will run in the background until you end the session.",
+            "The script will run in the background and will continue running even if you end the session."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q54. To elevate privileges using the `sudo` command, a user must **\\_**.",
+        "options": [
+            "enter the root user's password",
+            "enter their own password",
+            "enter the sudo user's password",
+            "change to the root group\n[A Cloud Guru's Blog](https://acloudguru.com/blog/engineering/linux-commands-for-beginners-sudo#:~:text=Sudo%20asks%20for%20your%20user%20password.%C2%A0%20Note%20that%20it%20is%20asking%20for%20your%20password%2C%20not%20the%20root%20password.)\n`0 22 * * 1-5`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q55. When would this system cron job run its task?\n`0 22 * * 1-5`",
+        "options": [
+            "on the 22nd of every month from June to May",
+            "at 10:00 PM Monday to Friday",
+            "every 22 minutes every day except weekends",
+            "from 1:00 AM to 5:00 AM on the 22nd of every month"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q56. How does TCP Wrappers differ from a firewall?",
+        "options": [
+            "Firewalls are only service specific, whereas TCP Wrappers can block all traffic.",
+            "TCP Wrappers works at the network layer, so it blocks traffic before the firewall even sees it.",
+            "Firewalls easily spawn commands to operate on connection data, whereas TCP Wrappers cannot.",
+            "TCP Wrappers works at the application layer, so it can make access decisions on encrypted data.\n**Note:** TCP Wrapper works on Application Layer but answer is not too much confirmed."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q57. As root, you set execute permissions for user, group, and other on a directory. Now users can do what?",
+        "options": [
+            "They can execute files in it.",
+            "They can traverse it.",
+            "They can read files in it.",
+            "They can delete files in it.\n**Note:** This is correct because of the keyword \"directory\". More info at: https://www.tutorialspoint.com/unix/unix-file-permission.htm\n`echo \"Thu Jun 4 15:45:45 PDT 2020\" | cut -f3 -d\" \"`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q58. What will this command print?\n`echo \"Thu Jun 4 15:45:45 PDT 2020\" | cut -f3 -d\" \"`",
+        "options": [
+            "It will print nothing.",
+            "Thu Jun 4 15:45:45 PDT 2020",
+            "0.6567708333333333",
+            "4\n```\nif ls /etc/passwd &> /dev/null\nthen\n    echo \"exists\"\nfi\n```"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q59. How can you improve this code snippet?\n```\nif ls /etc/passwd &> /dev/null\nthen\n    echo \"exists\"\nfi\n```",
+        "options": [
+            "The code snippet cannot be improved, this is a valid way of checking for the existence of a file.",
+            "Use Bash's built-in `[[ ]]` test conditions instead of the ls command.",
+            "The redirect to `/dev/null` will silence the return code invalidating the conditional. Removing the redirect will solve this.",
+            "The ls command will output the name of the file to the screen. Running ls in quiet mode will improve the code snippet."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q60. Using a systemd-based distribution, you want to restrict the cron service from running either automatically or manually. Which command would you run?",
+        "options": [
+            "systemctl disable crond",
+            "systemctl disallow crond",
+            "systemctl mask crond",
+            "systemctl stop crond\n**Note:** This is the correct answer because \"mask\" prohibits all kinds of activation of the unit, including manual activation.\n[Reference](https://www.commandlinux.com/man-page/man1/systemctl.1.html) : search \"mask\"."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q61. What issue might a user have when they mount a filesystem by partition path such as /dev/sdal in the /etc/fstab file?",
+        "options": [
+            "The device order may change on boot, resulting in a system that will not boot properly.",
+            "The user may run out of device letters.",
+            "There are no issues with referring to partitions by their partition path.",
+            "It is more difficult identifying mounted devices by partition path.\n[Reference](https://access.redhat.com/discussions/6004221)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q62. Which option would you choose to force grep to use a basic regular expression (BRE)?",
+        "options": [
+            "grep -E",
+            "grep -B",
+            "grep -e",
+            "grep -G\n**Explanation**: Man page of grep command."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q63. An rsyslogd filter determines which items in a log file to act on. What is it made up of?",
+        "options": [
+            "a facility and an action",
+            "a filter and an action",
+            "a facility and a priority",
+            "a filter and a priority\n[Reference](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-viewing_and_managing_log_files)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q64. Which choice is a Network Manager tool used to configure network connections from the GUI?",
+        "options": [
+            "nmcli",
+            "ip",
+            "Onmtui",
+            "nm-connection-editor"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q65. What will not happen if you run the make command without parameters?",
+        "options": [
+            "It will clean up all previously generated binaries and perform a new build.",
+            "It will run rules of compilation and building.",
+            "It will look for a file called makefile in your current directory.",
+            "It will build only programs that need to be rebuilt."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q66. Most commands that support SELinux use which option to display SELinux security context?",
+        "options": [
+            "-S",
+            "--selinux",
+            "--MAC",
+            "-Z"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q67. What is the difference between the whoami and logname commands?",
+        "options": [
+            "whoami and logname provide the same information.",
+            "whoami tells who are you currently, and logname tells who you were when you logged in initially.",
+            "logname specifies the name of the login log file, and whoami prints the logged in username.",
+            "whoami shows you who logged in as initially, and logname shows who are you currently."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q68. What is the command to create an associative array in Bash?",
+        "options": [
+            "declare -a",
+            "aarray",
+            "array -a",
+            "declare -A"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q69. What tool Should you use to replace a physical volum in LVM?",
+        "options": [
+            "lvcopy",
+            "tar",
+            "pvmove",
+            "cp"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q70. What is the difference the `==` and `=~` comparison operators when used in BASH double square bracket `if` conditionals?",
+        "options": [
+            "The `==` operator performs a string comparison; `=~` performs a regex comparison.",
+            "The `==` operator performs a string comparison; `=~` performs a glob pattern comparison.",
+            "The `=~` operator performs a string comparison; `==` performs a regex comparison.",
+            "There is no `=~` operator in BASH `if` conditionals.\n```shell\n   echo \"data\" | tee -a file.txt\n   echo \"data\" >> file.txt\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q71. What is the difference between these two lines of code?\n```shell\n   echo \"data\" | tee -a file.txt\n   echo \"data\" >> file.txt\n```",
+        "options": [
+            "The first line will append the word `data` to file.txt and output it on the screen. The second line will append the word `data` only to file.txt.",
+            "They are the same.",
+            "The first line will append the word `data` to file.txt and there will be no output on the screen. The second line will output the word `data` on the screen and append it to `file.txt`",
+            "Both lines will overwrite file.txt with the word data.\n```shell\n(ss).*\\1\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q72. Using backreferences in a POSIX regular expression, which word would this pattern match?\n```shell\n(ss).*\\1\n```",
+        "options": [
+            "addressee",
+            "possess",
+            "barrenness",
+            "successfully"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q73. To run CGI scripts with Apache, you need to **\\_**.",
+        "options": [
+            "compile the script with a CGI compiler",
+            "make the script executable",
+            "make the script executable and set the `httpd_enable_cgi` SELinux boolean",
+            "change the ownership of the script to Apache\n[reference here](https://selinuxproject.org/page/ApacheRecipes#Allow_the_Apache_HTTP_Server_to_run_CGI_scripts)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q74. To permanently add NAT to the default zone using firewalld, you would use which command string?",
+        "options": [
+            "`firewall-cmd --permanent --add-nat`",
+            "`firewall-cmd --permanent --add-masquerade`",
+            "`firewall-cmd --zone=default --add-nat`",
+            "`firewall-cmd --zone=default --add-masquerade`\n[reference here](https://www.rootusers.com/how-to-use-firewalld-rich-rules-and-zones-for-filtering-and-nat)\n```\nif [[ $FILE == $GLOB ]] ;then\n```"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q75. What is the difference between using `=` and `==` in a BASH double square bracket `if` conditional?\n```\nif [[ $FILE == $GLOB ]] ;then\n```",
+        "options": [
+            "The single equal sign (`=`) is an assignment operator; the double equal sign (`==`) checks equality.",
+            "There is no difference.",
+            "The single equal sign (`=`) checks equality; the double equal sign (`==`) checks string equality.",
+            "The double equal sign (`==`) is an assignment operator; the single equal sign (`=`) checks equality.\n[reference here](https://stackoverflow.com/a/12948608)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q76. `journald` differs from traditional logging services such as `rsyslogd` and `syslogd` because its logs are **\\_** by default.",
+        "options": [
+            "stored remotely",
+            "text",
+            "persistent",
+            "not persistent\n[reference here](https://sematext.com/blog/journald-logging-tutorial/#toc-journald-storage-4)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q77. What is the purpose of a Mail Transport Agent (MTA)?",
+        "options": [
+            "It transports the mail from user's computer to the mail server.",
+            "It accepts mail and adds it to the mail queue for further processing.",
+            "It stores the mail in a mail queue waiting for the MUA to download it.",
+            "It transports mail from one mail server to another."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q78. What do you need to do before you can perform SSH passwordless logins?",
+        "options": [
+            "Generate RSA or DSA key pairs using ssh-keygen.",
+            "Change the remote user's password.",
+            "Create a local SSL certificate.",
+            "Change the remote SSH configure to allow it.\n[Reference](https://phoenixnap.com/kb/setup-passwordless-ssh)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q79. When installing a downloaded package on the RedHat-based distribution manual using RPM, what may you have to do first?",
+        "options": [
+            "Compile the package source code.",
+            "Download all dependencies and install them before installing the desired package.",
+            "Agree to an end-user license agreement.",
+            "provide the --resolve option so RPM resolves all packages dependency.\n**[Explanation:](https://access.redhat.com/discussions/2026743)** Rpm is not meant to resolve dependencies. It checks whether required software (versions) are installed and fails when software is missing and when the wrong version of software is installed."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q80. With GNU tools such as a GNU grep, awk, and sed, what is the difference between basic regular expressions (BREs) and extended regular expressions (EREs)?",
+        "options": [
+            "EREs can match the groups.",
+            "EREs support occurrence operators.",
+            "ERE's support alternation.",
+            "only the syntax differs.\n[Reference](https://www.gnu.org/software/sed/manual/html_node/BRE-vs-ERE.html)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q81. What is the difference between reading the list of disk partitions from `/proc/partitions` and getting it using `fdisk -l`?",
+        "options": [
+            "`/proc/partitions` represents the disk partition table more accurately than `fdisk -l`",
+            "`/proc/partitions` shows only mounted drives. `fdisk -l` shows all drivers.",
+            "There is no difference between the two, and both lists contain the same data.",
+            "`/proc/partitions` is the kernel's list of partitions held in ram. `fdisk -l` reads the partition table from the drive itself.\n    cat < in.txt > out.txt"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q82. What would be in out.txt?\n    cat < in.txt > out.txt",
+        "options": [
+            "the content of in.txt.",
+            "the output from the command line.",
+            "Nothing, because you cannot redirect from a file (in.txt) to another file (out.txt). You can redirect only from a command to a file.",
+            "Nothing, The redirect will create a new empty file, but there will not be any output from the cat command to redirect.\n```\n^(([0-9][0-9]?)|(2[0-9][0-9]))$\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q83. Using alternation in a POSIX-extended regular expression, which numbers would this pattern match?\n```\n^(([0-9][0-9]?)|(2[0-9][0-9]))$\n```",
+        "options": [
+            "0-99 and 200-299",
+            "0-99",
+            "200-299",
+            "0-299"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q84. Typing `systemctl enable crond` does what to the crond service?",
+        "options": [
+            "Starts the crond service now.",
+            "Allows user to start the crond service.",
+            "Unmasks the crond service.",
+            "Ensures that the crond service starts automatically on bootup."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q85. Which of these features is missing from the Bash Language?",
+        "options": [
+            "associative arrays.",
+            "extened regular expressions.",
+            "debug traps.",
+            "object orientation."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q86. What is the first step to integrate extended globs into your command-line workflow?",
+        "options": [
+            "Nothing, extended globs are already integrated into the shell and turned on automatically.",
+            "Make extended globs persistent by adding `shopt -s extglob` to a shell startup file.",
+            "Type `shopt -s extglob` into a shell one time to set the option on permanently.",
+            "Make extended globs persistent by adding `shopt +s extglob` to a shell startup file."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q87. Which statement about default ACLs is true?",
+        "options": [
+            "They provide inheritance for user and group permissions.",
+            "They work only on files.",
+            "They provide inheritance for group ownership.",
+            "They grant access to the directory on which they are set.\n[reference:](https://www.redhat.com/sysadmin/linux-access-control-lists#setting-an-acl)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q88. The object that `systemd` uses to manage services is called a \\_ file.",
+        "options": [
+            "unit",
+            "service",
+            "single"
+        ],
+        "_ps": 0
+    }
+]

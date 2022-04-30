@@ -5,7 +5,7 @@
             "They should share the same signatures, including parameter types and return types.",
             "They should share the same parameter types but can return different types.",
             "All functions should be the same type.",
-            "The functions should not be a first class type."
+            "The functions should not be a first class type.\n[User defined function types in Go (Golang)](https://golangbyexample.com/user-defined-function-type-go/)"
         ],
         "_ps": 0
     },
@@ -15,7 +15,7 @@
             "the number of characters",
             "the number of bytes",
             "It does not accept string types.",
-            "the number of code points"
+            "the number of code points\n[Length of string in Go (Golang)](https://golangbyexample.com/length-of-string-golang/)."
         ],
         "_ps": 1
     },
@@ -25,29 +25,29 @@
             "`do { ... } while i < 5`",
             "`for _,c := range \"hello\" { ... }`",
             "`for i := 1; i < 5; i++ { ... }`",
-            "`for i < 5 { ... }`"
+            "`for i < 5 { ... }`\nExplanation: Go has only `for`-loops\n`values := []int{1, 1, 2}`"
         ],
         "_ps": 0
     },
     {
         "question": "Q4. How will you add the number 3 to the right side?\n`values := []int{1, 1, 2}`",
         "options": [
-            "s := []int{1, 1, 2}`",
             "`values.append(3)`",
             "`values.insert(3, 3)`",
-            "`append(values, 3)`"
+            "`append(values, 3)`",
+            "`values = append(values, 3)`\nExplanation: slices in GO are immutable, so calling `append` does not modify the slice\n```go\nconst (\n  Write = iota\n  Read\n  Execute\n)\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q5. What is the value of `Read`?\n```go\nconst (\n  Write = iota\n  Read\n  Execute\n)\n```",
         "options": [
-            "",
-            "(",
-            "e = iota",
-            ""
+            "0",
+            "1",
+            "2",
+            "a random value\n[IOTA in Go (Golang)](https://golangbyexample.com/iota-in-golang/)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q6. Which is the _only_ valid import statement in Go?",
@@ -55,19 +55,19 @@
             "`import \"github/gin-gonic/gin\"`",
             "`import \"https://github.com/gin-gonic/gin\"`",
             "`import \"../template\"`",
-            "`import \"github.com/gin-gonic/gin\"`"
+            "`import \"github.com/gin-gonic/gin\"`\n[Import in GoLang](https://golangdocs.com/import-in-golang)\n```go\npackage main\nvar GlobalFlag string\nfunc main() {\n  print(\"[\"+GlobalFlag+\"]\")\n}\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q7. What would happen if you attempted to compile and run this Go program?\n```go\npackage main\nvar GlobalFlag string\nfunc main() {\n  print(\"[\"+GlobalFlag+\"]\")\n}\n```",
         "options": [
-            "",
-            "e main",
-            "obalFlag string",
-            "ain() {"
+            "It would not compile because `GlobalFlag` was never initialized.",
+            "It would compile and print `[]`.",
+            "It would compile and print nothing because `\"[\" +nil+\"]\"` is also `nil`.",
+            "It would compile but then panic because `GlobalFlag` was never initialized.\n[variables](https://golangbyexample.com/variables-in-golang-complete-guide/) in Go have initial values. For string type, it's an empty string.\n[Go Playground](https://play.golang.org/p/TaRIzuD-nxC)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q8. From where is the variable `myVar` accessible if it is declared outside of any functions in a file in package `myPackage` located inside module `myModule`?",
@@ -75,7 +75,7 @@
             "It can be accessed anywhere inside `myPackage`, not the rest of myModule.",
             "It can be accessed by any application that imports `myModule`.",
             "It can be accessed from anywhere in `myModule`.",
-            "It can be accessed by other packages in `myModule` as long as they import `myPackage`"
+            "It can be accessed by other packages in `myModule` as long as they import `myPackage`\nExplanation: to make the variable available outside of `myPackage` change the name to `MyVar`.\nSee also an example of [Exported names](https://tour.golang.org/basics/3) in the Tour of Go."
         ],
         "_ps": 0
     },
@@ -85,19 +85,19 @@
             "`go test`",
             "`go test -x`",
             "`go test --verbose`",
-            "`go test -v`"
+            "`go test -v`\n[test package](https://pkg.go.dev/cmd/go/internal/test)\n```go\ntype Point struct {\n  x int\n  y int\n}\nfunc main() {\n  data := []byte(`{\"x\":1, \"y\": 2}`)\n  var p Point\n  if err := json.Unmarshal(data, &p); err != nil {\n    fmt.Println(\"error: \", err)\n  } else {\n    fmt.Println(p)\n  }\n}\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q10. This code printed `{0, 0}`. How can you fix it?\n```go\ntype Point struct {\n  x int\n  y int\n}\nfunc main() {\n  data := []byte(`{\"x\":1, \"y\": 2}`)\n  var p Point\n  if err := json.Unmarshal(data, &p); err != nil {\n    fmt.Println(\"error: \", err)\n  } else {\n    fmt.Println(p)\n  }\n}\n```",
         "options": [
-            "",
-            "oint struct {",
-            "t",
-            "t"
+            "use `json.Decoder`",
+            "Pass a pointer to `data`",
+            "Make `X` and `Y` exported (uppercase)",
+            "Use field tags\n[How to Parse JSON in Golang?](https://www.geeksforgeeks.org/how-to-parse-json-in-golang/)\n[Go Playground](https://play.golang.org/p/RdL6y3Zv8ke)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q11. What does a `sync.Mutex` block while it is locked?",
@@ -105,7 +105,7 @@
             "all goroutines",
             "any other call to lock that `Mutex`",
             "any reads or writes of the variable it is locking",
-            "any writes to the variable it is locking"
+            "any writes to the variable it is locking\n[Mutex in GoLang](https://golangdocs.com/mutex-in-golang)"
         ],
         "_ps": 1
     },
@@ -115,7 +115,7 @@
             "Pass an `int` and `Mutex` to each and count when they return.",
             "Loop over a `select` statement.",
             "Sleep for a safe amount of time.",
-            "`sync.WaitGroup`"
+            "`sync.WaitGroup`\nExplanation: this is exactly what `sync.WaitGroup` is designed for - [Use sync.WaitGroup in Golang](https://nanxiao.me/en/use-sync-waitgroup-in-golang/)"
         ],
         "_ps": 3
     },
@@ -125,7 +125,7 @@
             "It blocks the other channels.",
             "It is meant to be used in select statements without side effects.",
             "It blocks the `select` statement until the time has passed.",
-            "The goroutine does not end until the time passes."
+            "The goroutine does not end until the time passes.\nNote: it doesn't block `select` and does not block other channels."
         ],
         "_ps": 1
     },
@@ -135,19 +135,19 @@
             "executing a function concurrently",
             "executing a different case based on the type of a variable",
             "executing a different case based on the value of a variable",
-            "executing a different case based on which channel returns first"
+            "executing a different case based on which channel returns first\n```go\nfunc Add(a, b int) {\n  return a + b\n}\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q15. According to the Go documentation standard, how should you document this function?\n```go\nfunc Add(a, b int) {\n  return a + b\n}\n```\n```go\n// Calculate a + b\n// - a: int\n// - b: int\n// - returns: int\nfunc Add(a, b int) {\n  return a + b\n}\n```\n```go\n// Does a + b\nfunc Add(a, b int) {\n  return a + b\n}\n```\n```go\n// Add returns the sum of a and b\nfunc Add(a, b int) {\n  return a + b\n}\n```",
+        "question": "Q15. According to the Go documentation standard, how should you document this function?\n```go\nfunc Add(a, b int) {\n  return a + b\n}\n```",
         "options": [
-            "",
-            "dd(a, b int) {",
-            "rn a + b",
-            ""
+            "A\n```go\n// Calculate a + b\n// - a: int\n// - b: int\n// - returns: int\nfunc Add(a, b int) {\n  return a + b\n}\n```",
+            "B\n```go\n// Does a + b\nfunc Add(a, b int) {\n  return a + b\n}\n```",
+            "C\n```go\n// Add returns the sum of a and b\nfunc Add(a, b int) {\n  return a + b\n}\n```",
+            "D\n```go\n// returns the sum of a and b\nfunc Add(a, b int) {\n  return a + b\n}\n```\nExplanation: documentation block should start with a function name"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q16. What restriction is there on the type of `var` to compile this `i := myVal.(int)?`",
@@ -155,7 +155,7 @@
             "`myVal` must be an integer type, such as `int`, `int64`, `int32`, etc.",
             "`myVal` must be able to be asserted as an `int`.",
             "`myVal` must be an interface.",
-            "`myVal` must be a numeric type, such as `float64` or `int64`."
+            "`myVal` must be a numeric type, such as `float64` or `int64`.\nExplanation: This kind of type casting (using `.(type)`) is used on interfaces only.\n[this example](https://tutorialedge.net/golang/snippets/type-casting-interface-to-string-go/)\n[Primitive types are type-casted differently](https://golangdocs.com/type-casting-in-golang)\n[Go Playground](https://play.golang.org/p/TXF_JBvThp6)"
         ],
         "_ps": 2
     },
@@ -165,7 +165,7 @@
             "a global variable",
             "a medium for sending values between goroutines",
             "a dynamic array of values",
-            "a lightweight thread for concurrent programming"
+            "a lightweight thread for concurrent programming\n[Channels](https://tour.golang.org/concurrency/2)"
         ],
         "_ps": 1
     },
@@ -175,19 +175,19 @@
             "Check runtime.GOOS.",
             "Add a // +build windows comment anywhere in the file.",
             "Add a \\_ prefix to the file name.",
-            "Add a // +build windows comment at the top of the file."
+            "Add a // +build windows comment at the top of the file.\n[How to use conditional compilation with the go build tool, Oct 2013](https://dave.cheney.net/2013/10/12/how-to-use-conditional-compilation-with-the-go-build-tool)\n```go\ndata := \"A group of Owls is called a parliament\"\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q19. What is the correct way to pass this as a body of an HTTP POST request?\n```go\ndata := \"A group of Owls is called a parliament\"\n```",
         "options": [
-            "",
-            "= \"A group of Owls is called a parliament\"",
-            "",
-            "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", []byte(data))"
+            "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", []byte(data))",
+            "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", data)",
+            "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", strings.NewReader(data))",
+            "resp, err := http.Post(\"https://httpbin.org/post\", \"text/plain\", &data)\n[net/http#Client.Post](https://pkg.go.dev/net/http#Client.Post)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q20. What should the idiomatic name be for an interface with a single method and the signature `Save() error`?",
@@ -195,7 +195,7 @@
             "Saveable",
             "SaveInterface",
             "ISave",
-            "Saver"
+            "Saver\n[Effective Go, Interface names](https://golang.org/doc/effective_go#interface-names)"
         ],
         "_ps": 3
     },
@@ -205,7 +205,7 @@
             "does not create; creates",
             "does not create; does not create",
             "creates; creates",
-            "creates; does not create"
+            "creates; does not create\n[Go Language Core technology (Volume one) 1.5-scope](https://topic.alibabacloud.com/a/go-language-core-technology-volume-one-15-font-colorredscopefont_1_38_30923325.html)\nRelevant excerpt from the article:\n> _The second if statement is nested inside the first, so a variable declared in the first if statement is visible to the second if statement. There are similar rules in switch: Each case has its own lexical block in addition to the conditional lexical block._"
         ],
         "_ps": 2
     },
@@ -215,7 +215,7 @@
             "The default behavior is case insensitive, but it can be overridden.",
             "Fields are matched case sensitive.",
             "Fields are matched case insensitive.",
-            "The default behavior is case sensitive, but it can be overridden."
+            "The default behavior is case sensitive, but it can be overridden.\n[encoding/json#Unmarshal](https://pkg.go.dev/encoding/json#Unmarshal)\nRelevant excerpt from the article:\n> _To unmarshal JSON into a struct, Unmarshal matches incoming object keys to the keys used by Marshal (either the struct field name or its tag), preferring an exact match but also accepting a case-insensitive match. By default, object keys which don't have a corresponding struct field are ignored (see Decoder.DisallowUnknownFields for an alternative)._"
         ],
         "_ps": 0
     },
@@ -225,7 +225,7 @@
             "Time.Add() is for performing addition while Time.Sub() is for nesting timestamps.",
             "Time.Add() always returns a later time while time.Sub always returns an earlier time.",
             "They are opposites. Time.Add(x) is the equivalent of Time.Sub(-x).",
-            "Time.Add() accepts a Duration parameter and returns a Time while Time.Sub() accepts a Time parameter and returns a Duration."
+            "Time.Add() accepts a Duration parameter and returns a Time while Time.Sub() accepts a Time parameter and returns a Duration.\n[time#Time.Add](https://pkg.go.dev/time#Time.Add)\n[time#Time.Sub](https://pkg.go.dev/time#Time.Sub)"
         ],
         "_ps": 3
     },
@@ -235,7 +235,7 @@
             "Every field must have all tags to compile.",
             "It tightly couples different layers of your application.",
             "Any tags after the first are ignored.",
-            "Missing tags panic at runtime."
+            "Missing tags panic at runtime.\n[Example Code / b29r0fUD1cp](https://play.golang.org/p/b29r0fUD1cp)"
         ],
         "_ps": 1
     },
@@ -245,7 +245,7 @@
             "in the main function",
             "immediately after a line that might panic",
             "inside a deferred function",
-            "at the beginning of a function that might panic"
+            "at the beginning of a function that might panic\n[Example of Recover Function in Go (Golang)](https://golangbot.com/panic-and-recover/#recoveringfromapanic)\nRelevant excerpt from the article:\n> _Recover is useful only when called inside deferred functions. Executing a call to recover inside a deferred function stops the panicking sequence by restoring normal execution and retrieves the error message passed to the panic function call. If recover is called outside the deferred function, it will not stop a panicking sequence._"
         ],
         "_ps": 2
     },
@@ -275,7 +275,7 @@
             "go test all",
             "go run --all",
             "go test .",
-            "go test ./..."
+            "go test ./...\n[Example of testing in Go (Golang)](https://pkg.go.dev/testing)\n[Example of cmd in Go (Golang)](https://pkg.go.dev/cmd/go)\nRelevant excerpt from the article:\n> _Relative patterns are also allowed, like \"go test ./...\" to test all subdirectories._"
         ],
         "_ps": 3
     },
@@ -285,7 +285,7 @@
             "any, it accepts arbitary bytes",
             "any Unicode format",
             "UTF-8 or ASCII",
-            "UTF-8"
+            "UTF-8\n[Example of encoding in Go (Golang)](https://pkg.go.dev/golang.org/x/text/encoding)\nRelevant excerpt from the article:\n> _Package encoding defines an interface for character encodings, such as Shift JIS and Windows 1252, that can convert to and from UTF-8._"
         ],
         "_ps": 3
     },
@@ -295,7 +295,7 @@
             "There is no difference.",
             "t.Fatal does not crash the test harness, preserving output messages.",
             "t.Fatal stops execution of the subtest and continues with other test cases.",
-            "t.Fatal stops all tests and contains extra information about the failed subtest."
+            "t.Fatal stops all tests and contains extra information about the failed subtest.\n[Reference:](https://go.dev/play/p/gtne3iRL9AX)\nExplanation:  \nFatal is equivalent to Log followed by FailNow.  \nLog formats its arguments using default formatting, analogous to Println, and records the text in the error log.  \nFailNow marks the function as having failed and stops its execution by calling runtime.Goexit (which then runs all deferred calls in the current goroutine). Execution will continue at the next test or benchmark. FailNow must be called from the goroutine running the test or benchmark function, not from other goroutines created during the test. Calling FailNow does not stop those other goroutines.  \nRun runs f as a subtest of t called name. It runs f in a separate goroutine and blocks until f returns or calls t.Parallel to become a parallel test. Run reports whether f succeeded (or at least did not fail before calling t.Parallel).  \nRun may be called simultaneously from multiple goroutines, but all such calls must return before the outer test function for t returns."
         ],
         "_ps": 2
     },
@@ -305,7 +305,7 @@
             "It raises a panic.",
             "It prints the log and then raises a panic.",
             "It prints the log and then safely exits the program.",
-            "It exits the program."
+            "It exits the program.\n[Example of func Fatal in Go (Golang)](https://pkg.go.dev/log#Fatal)\nRelevant excerpt from the article:\n> _Fatal is equivalent to Print() followed by a call to os.Exit(1)._"
         ],
         "_ps": 2
     },
@@ -315,7 +315,7 @@
             "\"2006-01-02\"",
             "\"YYYY-mm-dd\"",
             "\"y-mo-d\"",
-            "\"year-month-day\""
+            "\"year-month-day\"\n[Example of func Time in Go (Golang)](https://pkg.go.dev/time)\nRelevant excerpt from the article:\n> _Most programs can use one of the defined constants as the layout passed to Format or Parse. The rest of this comment can be ignored unless you are creating a custom layout string._"
         ],
         "_ps": 0
     },
@@ -325,7 +325,7 @@
             "`log.Error(err)`",
             "`log.Printf(\"error: %v\", err)`",
             "`log.Printf(log.ERROR, err)`",
-            "`log.Print(\"error: %v\", err)`"
+            "`log.Print(\"error: %v\", err)`\nExplanation: There is defined neither log.ERROR, nor log.Error() in [log package](https://pkg.go.dev/log); log.Print() arguments are handled in the manner of fmt.Print(); log.Printf() arguments are handled in the manner of fmt.Printf()."
         ],
         "_ps": 1
     },
@@ -345,39 +345,39 @@
             "any that starts with `test`",
             "any files that include the word `test`",
             "only files in the root directory that end in `_test.go`",
-            "any that ends in `_test.go`"
+            "any that ends in `_test.go`\n```\nch := make(chan int)\nch <- 7\nval := <-ch\nfmt.Println(val)\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q36. What will be the output of this code?\n```\nch := make(chan int)\nch <- 7\nval := <-ch\nfmt.Println(val)\n```",
         "options": [
-            "",
-            "make(chan int)",
-            "7",
-            " <-ch"
+            "0",
+            "It will deadlock",
+            "It will not compile",
+            "2.718\n```\nch := make(chan int)\nclose(ch)\nval := <-ch\nfmt.Println(val)\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q37. What will be the output of this program?\n```\nch := make(chan int)\nclose(ch)\nval := <-ch\nfmt.Println(val)\n```",
         "options": [
-            "",
-            "make(chan int)",
-            "ch)",
-            " <-ch"
+            "It will deadlock",
+            "It will panic",
+            "0",
+            "NaN\n```\nvar stocks map[string]float64 // stock -> price\nprice := stocks[\"MSFT\"]\nfmt.Println(\"%f\\n\", price)\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q38. What will be printed in this code?\n```\nvar stocks map[string]float64 // stock -> price\nprice := stocks[\"MSFT\"]\nfmt.Println(\"%f\\n\", price)\n```",
         "options": [
-            "",
-            "ocks map[string]float64 // stock -> price",
-            ":= stocks[\"MSFT\"]",
-            "intln(\"%f\\n\", price)"
+            "0",
+            "0.000000",
+            "The code will panic",
+            "NaN"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q39. What is the common way to have several executables in your project?",
@@ -385,7 +385,7 @@
             "Have a cmd directory and a directory per executable inside it.",
             "Comment out main.",
             "Use build tags.",
-            "Have a pkg directory and a directory per executable inside it."
+            "Have a pkg directory and a directory per executable inside it.\n1. [stackoverflow](https://stackoverflow.com/questions/9985559/organizing-a-multiple-file-go-project/51942843#51942843)\n2. [medium](https://medium.com/@benbjohnson/structuring-applications-in-go-3b04be4ff091)\n3. [medium](https://medium.com/golang-learn/go-project-layout-e5213cdcfaa2)"
         ],
         "_ps": 0
     },
@@ -395,7 +395,7 @@
             "Set GOOS to **arm64** and GOARCH to **darwin**.",
             "Set GOOS to **osx** and GOARCH to **arm64**.",
             "Set GOOS to **arm64** and GOARCH to **osx**.",
-            "Set GOOS to **darwin** and GOARCH to **arm64**."
+            "Set GOOS to **darwin** and GOARCH to **arm64**.\n[documentation](https://pkg.go.dev/cmd/go#hdr-Build_constraints)"
         ],
         "_ps": 3
     },
@@ -405,7 +405,7 @@
             "`go(fmt.Println(\"Hello Gopher!\"))`",
             "`go func() { fmt.Println(\"Hello Gopher!\") }`",
             "`go fmt.Println(\"Hello Gopher!\")`",
-            "`Go fmt.Println(\"Hello Gopher!\")`"
+            "`Go fmt.Println(\"Hello Gopher!\")`\n[Example of start a goroutine](https://go.dev/play/p/KGgnAWpZMrS)"
         ],
         "_ps": 2
     },
@@ -415,7 +415,7 @@
             "in pseudo-random order that cannot be predicted",
             "in reverse order of how they were added, last in first out",
             "sorted by key in ascending order",
-            "in the order they were added, first in first out"
+            "in the order they were added, first in first out\n[Reference](https://go.dev/ref/spec#:~:text=The%20iteration%20order%20over%20maps%20is%20not%20specified)"
         ],
         "_ps": 0
     },
@@ -424,8 +424,7 @@
         "options": [
             "There is no customizing the string representation of a type.",
             "Build it in pieces each time by calling individual fields.",
-            "Implement a method `String()` string",
-            "Create a wrapper function that accepts your type and outputs a string."
+            "Implement a method `String()` string"
         ],
         "_ps": 2
     }

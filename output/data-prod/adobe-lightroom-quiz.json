@@ -15,7 +15,7 @@
             "metadata",
             "Image settings",
             "Edit settings",
-            "Develop settings"
+            "Develop settings\nNote: I just use synchronization. After digging into settings I was able only to discover Settings -> Copy settings."
         ],
         "_ps": 3
     },
@@ -25,19 +25,19 @@
             "Web",
             "Book",
             "Print",
-            "Library"
+            "Library\n![Review the image shown. What does the exclamation point adjacent to the thumbnail imply?](images/Q4.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q4. Review the image shown. What does the exclamation point adjacent to the thumbnail imply?",
+        "question": "Q4. Review the image shown. What does the exclamation point adjacent to the thumbnail imply?\n![Review the image shown. What does the exclamation point adjacent to the thumbnail imply?](images/Q4.png)",
         "options": [
-            "ew the image shown. What does the exclamation point adjacent to the thumbnail imply?](images/Q4.png)",
             "The image has been edited in Photoshop.",
             "The photo is marked as picked.",
-            "The photo needs at least one keyword."
+            "The photo needs at least one keyword.",
+            "A photo is missing and needs to be relocated.\n[Reference (adobe.com)](https://helpx.adobe.com/in/lightroom-classic/help/locate-missing-photos.html)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q5. Adjusting the exposure of a raw file by -1 is the equivalent of doing what in the camera?",
@@ -45,19 +45,19 @@
             "opening the aperture one f-stop",
             "closing the aperture one f-stop",
             "adjusting the ISO by +400",
-            "adjusting the ISO by -400"
+            "adjusting the ISO by -400\n![Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?](images/Q6.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q6. Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?",
+        "question": "Q6. Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?\n![Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?](images/Q6.png)",
         "options": [
-            "ew the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?](images/Q6.png)",
             "A",
             "B",
-            "C"
+            "C",
+            "D"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q7. Suppose you want to migrate a selection of images to another machine. How can you create a new catalog that contains a copy of all the images?",
@@ -65,7 +65,7 @@
             "Use the Export as Catalog command.",
             "When you back up the catalog, the images are backed up as well.",
             "Use the Export command.",
-            "Use the Import from Another Catalog command."
+            "Use the Import from Another Catalog command.\n[Reference (adobe.com)](https://helpx.adobe.com/lightroom-classic/help/create-catalogs.html)"
         ],
         "_ps": 0
     },
@@ -95,19 +95,19 @@
             "Click File > Export with Previous.",
             "Click File > Export with Preset.",
             "Click File > Export as Catalog.",
-            "Click File > Export Again."
+            "Click File > Export Again.\n![In the image shown, what do the blue areas indicate?](images/Q11.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q11. In the image shown, what do the blue areas indicate?",
+        "question": "Q11. In the image shown, what do the blue areas indicate?\n![In the image shown, what do the blue areas indicate?](images/Q11.png)",
         "options": [
-            "he image shown, what do the blue areas indicate?](images/Q11.png)",
             "crushed details in the shadows",
             "a special effect applied to the image",
-            "too little saturation in the image"
+            "too little saturation in the image",
+            "crushed details in the highlights"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q12. When exporting an image, which sharpening method is best for use on displays?",
@@ -115,7 +115,7 @@
             "Glossy Paper",
             "Screen",
             "Internet",
-            "Matte Paper"
+            "Matte Paper\n[Reference (digitalphotomentor.com)](https://www.digitalphotomentor.com/the-guide-to-image-sharpening-in-lightroom/)"
         ],
         "_ps": 1
     },
@@ -145,27 +145,26 @@
             "You are using the Paint Overlay style.",
             "You are editing a raw file.",
             "You are using the Color Priority style.",
-            "You are using the Highlight Priority style."
+            "You are using the Highlight Priority style.\n![Image with a yellow circle](images/Q16.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q16. In the image shown, what is the icon circled in yellow?",
+        "question": "Q16. In the image shown, what is the icon circled in yellow?\n![Image with a yellow circle](images/Q16.png)",
         "options": [
-            "e with a yellow circle](images/Q16.png)",
             "Virtual copy",
             "Synced with Lightroom",
-            "Metadata conflict warning"
+            "Metadata conflict warning",
+            "Missing photo"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q17. Which criteria CANNOT be used with a smart collection?",
         "options": [
             "Export Date",
             "Capture Date",
-            "Rating",
-            "Camera Serial Number"
+            "Rating"
         ],
         "_ps": 0
     }

@@ -2,12 +2,12 @@
     {
         "question": " Q1. What does this code output?\n`echo 76 <=> '76 trombones';`",
         "options": [
-            "76 <=> '76 trombones';`",
             "1",
             "-1",
-            "a parser error"
+            "a parser error",
+            "0\n**_Both sides of the \"spaceship\" are equal, so the answer is 0. PHP will convert '76 trombones' to 76 in this context, as the string starts with '76'. Try it!_**\n**_For php 8.0 and forward the answer is [x] -1, for previous versions the answer is [x] 0._**"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q2. Which is the most secure way to avoid storing a password in clear text in database?",
@@ -15,29 +15,29 @@
             "`$encrypted = shal($password);`",
             "`$encrypted = crypt($password, \\$salt);`",
             "`$encrypted = md5($password);`",
-            "`$encrypted = password_hash($password, PASSWORD_DEFAULT);`"
+            "`$encrypted = password_hash($password, PASSWORD_DEFAULT);`\n```php\n$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);\nif ($email === false) {\n    $emailErr = \"Please re-enter valid email\";\n}\n```"
         ],
         "_ps": 3
     },
     {
         "question": " Q3. What does this script do?\n```php\n$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);\nif ($email === false) {\n    $emailErr = \"Please re-enter valid email\";\n}\n```",
         "options": [
-            "",
-            " = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);",
-            "mail === false) {",
-            "mailErr = \"Please re-enter valid email\";"
+            "It makes sure the email address is a good and functioning address",
+            "It makes an email safe to input into a database",
+            "It assigns an email to a variable and then removes all illegal characters from the \\$email variable",
+            "It verifies that an email address is well formed.\n```\n1 <?php\n2       $count = 0;\n3       $_xval = 5;\n4       $_yval = 1.0;\n5       $some_string = \"Hello there!\";\n6       $some_string = \"How are you?\";\n7       $will i work = 6;\n8       $3blindmice = 3;\n9 ?>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q4. In the following script, which line(s) will cause an error(s)?\n```\n1 <?php\n2       $count = 0;\n3       $_xval = 5;\n4       $_yval = 1.0;\n5       $some_string = \"Hello there!\";\n6       $some_string = \"How are you?\";\n7       $will i work = 6;\n8       $3blindmice = 3;\n9 ?>\n```",
         "options": [
-            "",
-            "p",
-            "  $count = 0;",
-            "  $_xval = 5;"
+            "Line 6 will cause an error because you can't reassign a new value to a variable that has already been set.",
+            "Line 7 and 8 will cause an error. Line 7 has whitespace in $will i work and should be $will_i_work. Line 8 cannot start with a number befcause it is a variable.",
+            "Line 5 will cause an error because some_string should be someString.",
+            "Line 3 and 4 will cause an error because a variable cannot start with an underscore(\\_)."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": " Q5. In a conditional statement, you want to execute the code only if both value are true. Which comparison operator should you use?",
@@ -95,29 +95,29 @@
             "0",
             "NULL",
             "''",
-            "-1"
+            "-1\n```php\n1 $string_name = \"testcookie\";\n2 $string_value = \"This is a test cookie\";\n3 $expiry_info = info()+259200;\n4 $string_domain = \"localhost.localdomain\";\n```"
         ],
         "_ps": 3
     },
     {
         "question": " Q11. What is missing from this code, which is supposed to create a test cookies?\n```php\n1 $string_name = \"testcookie\";\n2 $string_value = \"This is a test cookie\";\n3 $expiry_info = info()+259200;\n4 $string_domain = \"localhost.localdomain\";\n```",
         "options": [
-            "",
-            "ing_name = \"testcookie\";",
-            "ing_value = \"This is a test cookie\";",
-            "iry_info = info()+259200;"
+            "The `$_REQUEST` is missing.",
+            "The `$_COOKIES` array is missing.",
+            "The cookie session is missing.",
+            "The call to `setcookie()` is missing.\n`$total = 2 + 5 * 20 - 6 / 3`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q12. What is the value of \\$total in this calculation?\n`$total = 2 + 5 * 20 - 6 / 3`",
         "options": [
-            "l = 2 + 5 * 20 - 6 / 3`",
             "44",
             "138",
-            "126"
+            "126",
+            "100"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q13. What is the purpose of adding a lowercase \"u\" as a modifier after the final delimiter in a Perl-compatible regular expression?",
@@ -135,19 +135,19 @@
             "`$dog = new Pet;`",
             "all of these answers",
             "`$horse = (new Pet);`",
-            "`$cat = new Pet();`"
+            "`$cat = new Pet();`\n```php\n1 if (!$_SESSION['myusername'])\n2 {\n3   header('locaton: /login.php');\n4   exit;\n5 }\n```"
         ],
         "_ps": 1
     },
     {
         "question": " Q15. What is the best way to explain what this script does?\n```php\n1 if (!$_SESSION['myusername'])\n2 {\n3   header('locaton: /login.php');\n4   exit;\n5 }\n```",
         "options": [
-            "",
-            "!$_SESSION['myusername'])",
-            "",
-            "ader('locaton: /login.php');"
+            "This script times out the session for myusername.",
+            "Cookies are starting to be stored as a result of this script.",
+            "This script validates the username and password.",
+            "This script is on a page that requires the user to be logged in. It checks to see if the user has a valid session."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q16. Which is the correct format for adding a comment to a PHP script?",
@@ -180,22 +180,22 @@
         "_ps": 1
     },
     {
-        "question": " Q19. The PHP function array_reduce() takes a callback function that accepts a value carried over each iteration and the current item in the array, and reduces an array to a single value. Which code sample will sum and output the values in the provided array?\n  ```php\n  1 <?php\n  2 echo array_reduce([1, 2, 5, 10, 11], function ($item, $carry) {\n  3     $carry = $carry + $item;\n  4 });\n  5?>\n  ```\n  ```php\n  1 <?php\n  2 echo array_reduce([1, 2, 5, 10, 11], function ($carry, $item) {\n  3     return $carry = $item + $item;\n  4 });\n  5?>\n  ```\n  ```php\n  1 <?php\n  2 array_reduce([11 2, 5, 10, 11], function ($item, $carry) {\n  3     echo $carry + $item;\n  4 });\n  5?>\n  ```",
+        "question": " Q19. The PHP function array_reduce() takes a callback function that accepts a value carried over each iteration and the current item in the array, and reduces an array to a single value. Which code sample will sum and output the values in the provided array?",
         "options": [
-            "",
-            "hp",
-            "php",
-            "ho array_reduce([1, 2, 5, 10, 11], function ($item, $carry) {"
+            "  ```php\n  1 <?php\n  2 echo array_reduce([1, 2, 5, 10, 11], function ($item, $carry) {\n  3     $carry = $carry + $item;\n  4 });\n  5?>\n  ```",
+            "  ```php\n  1 <?php\n  2 echo array_reduce([1, 2, 5, 10, 11], function ($carry, $item) {\n  3     return $carry = $item + $item;\n  4 });\n  5?>\n  ```",
+            "  ```php\n  1 <?php\n  2 array_reduce([11 2, 5, 10, 11], function ($item, $carry) {\n  3     echo $carry + $item;\n  4 });\n  5?>\n  ```",
+            "  ```php\n  1 <?php\n  2 echo array_reduce([1, 2, 5, 10, 11], function ($carry, $item) {\n  3     return $carry += $item;\n  4 });\n  5?>\n  ```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": " Q20. Which PHP script uses a constructor to display the string \"Winter is almost over!\"?\n  ```php\n  1 class MyClass {\n  2 public function _construct()\n  3 {\n  4 echo 'Winter is almost over!'.\"\\n\";\n  5 }\n  6 }\n  7 $userclass = new MyClass;\n  ```\n  ```php\n  1 class MyClass {\n  2 public function _construct()\n  3 {\n  4 echo 'Winter is almost over!..\"\\n\";\n  5 }\n  6 }\n  7 $userclass = new MyClass;\n  ```\n  ```php\n  1 class MyClass {\n  2 public function _construct()\n  3 {\n  4 echo 'Winter is almost over!..\"\\n\";\n  5 }\n  6 }\n  7 $userclass = new MyClass;\n  ```",
+        "question": " Q20. Which PHP script uses a constructor to display the string \"Winter is almost over!\"?",
         "options": [
-            "",
-            "hp",
-            "ass MyClass {",
-            "blic function _construct()"
+            "  ```php\n  1 class MyClass {\n  2 public function _construct()\n  3 {\n  4 echo 'Winter is almost over!'.\"\\n\";\n  5 }\n  6 }\n  7 $userclass = new MyClass;\n  ```",
+            "  ```php\n  1 class MyClass {\n  2 public function _construct()\n  3 {\n  4 echo 'Winter is almost over!..\"\\n\";\n  5 }\n  6 }\n  7 $userclass = new MyClass;\n  ```",
+            "  ```php\n  1 class MyClass {\n  2 public function _construct()\n  3 {\n  4 echo 'Winter is almost over!..\"\\n\";\n  5 }\n  6 }\n  7 $userclass = new MyClass;\n  ```",
+            "  ```php\n  1 class MyClass {\n  2 public function _construct()\n  3 {\n  4 echo 'Winter is almost over!'.\"n\";\n  5 }\n  6 }\n  7 $userclass = MyClass;\n  ```"
         ],
         "_ps": 0
     },
@@ -235,19 +235,19 @@
             "/",
             "%",
             "//",
-            "DIV"
+            "DIV\n```php\nfunction process(...$vals) {\n        // do some processing\n }\n```"
         ],
         "_ps": 1
     },
     {
         "question": " Q25. What is the significance of the three dots in this function signature?\n```php\nfunction process(...$vals) {\n        // do some processing\n }\n```",
         "options": [
-            "",
-            "on process(...$vals) {",
-            "  // do some processing",
-            ""
+            "It makes the function variadic, allowing it to accept as an argument an array containing an arbitrary number of values.",
+            "It makes the function variadic, allowing it to accept an arbitrary number of arguments that are converted into an array inside the function.",
+            "It temporarily disables the function while debugging other parts of the script.",
+            "It's a placeholder like a TO DO reminder that automatically triggers a notice when you run a script before completing the function definition."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": " Q26. Assuming the `Horse` class exists, which is a valid example of inheritance in PHP?",
@@ -280,14 +280,14 @@
         "_ps": 2
     },
     {
-        "question": " Q29. Which is the way to create an array of \"seasons\"?\n```\nseasons=array(\n    1=>'spring',\n    2=>'summer',\n    3=>'autumn',\n    4=>'winter',\n);\n```",
+        "question": " Q29. Which is the way to create an array of \"seasons\"?",
         "options": [
-            "",
-            "",
-            "s=array(",
-            ">'spring',"
+            "```\nseasons=array(\n    1=>'spring',\n    2=>'summer',\n    3=>'autumn',\n    4=>'winter',\n);\n```",
+            "`$seasons=array(spring,summer,autumn,winter);`",
+            "`$seasons=('spring','summer','autumn','winter');`",
+            "`$seasons=['spring','summer','autumn','winter'];`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q30. Both `self` and `this` are keywords that can be used to refer to member variables of an enclosing class. The difference is that `$this->member` should be used for ** members and `self::$member` should be used for ** members.",
@@ -295,29 +295,29 @@
             "private, public",
             "object,primitive",
             "non-static,static",
-            "concrete,abstract"
+            "concrete,abstract\n```php\n$mathe=array('archi','euler','pythagoras');\narray_push($mathe,'hypatia');\narray_push($mathe,'fibonacci');\narray_pop($mathe);\necho array_pop($mathe);\necho sizeof($mathe);\n```"
         ],
         "_ps": 2
     },
     {
         "question": " Q31. What will this code print?\n```php\n$mathe=array('archi','euler','pythagoras');\narray_push($mathe,'hypatia');\narray_push($mathe,'fibonacci');\narray_pop($mathe);\necho array_pop($mathe);\necho sizeof($mathe);\n```",
         "options": [
-            "",
-            "=array('archi','euler','pythagoras');",
-            "push($mathe,'hypatia');",
-            "push($mathe,'fibonacci');"
+            "euler3",
+            "hypatia5",
+            "hypatia3",
+            "fibonacci4\n`isset ($_GET['fav_band'])`"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": " Q32. You are using the following code to find a users band, but it is returning false. Which step(s) would solve the problem?\n`isset ($_GET['fav_band'])`",
         "options": [
-            " ($_GET['fav_band'])`",
             "check if `fav_band` is included in the query string at the top of your browser",
             "all of the answers",
-            "view the source of form and make sure there is an input field with the name 'fav_band'"
+            "view the source of form and make sure there is an input field with the name 'fav_band'",
+            "print everything that has been transmitted in the request: `print_r($_REQUEST);`"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": " Q33. Which code would you use to print all the elements in an array called `$cupcakes`?",
@@ -365,29 +365,29 @@
             "`php -h`",
             "`php info`",
             "`php -v`",
-            "`php -m`"
+            "`php -m`\n```php\nif (!empty($_POST[\"mail\"])) {\necho \"Yes, mail is set\";\n} else {\necho \"No, mail is not set\";\n} (correct)\n```\n`$result = 25 % 6;`"
         ],
         "_ps": 3
     },
     {
         "question": " Q38. For the HTML form below, what is the correct functioning script that checks the input \"mail\" to be sure it is filled before proceeding?\n```php\nif (!empty($_POST[\"mail\"])) {\necho \"Yes, mail is set\";\n} else {\necho \"No, mail is not set\";\n} (correct)\n```\n##### Q39. What is the value of `$result` in this calculation?\n`$result = 25 % 6;`",
         "options": [
-            "",
-            "mpty($_POST[\"mail\"])) {",
-            "Yes, mail is set\";",
-            " {"
+            "4.167",
+            "1.5",
+            "4",
+            "1"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q39. What is the value of `$result` in this calculation?\n`$result = 25 % 6;`",
         "options": [
-            "lt = 25 % 6;`",
             "4.167",
             "1.5",
-            "4"
+            "4",
+            "1"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q40. What is the job of the controller as a component in MVC?",
@@ -395,19 +395,19 @@
             "The controller handles data passed to it by the view, and also passes data to the view. It interprets data sent by the view and disperses that data to the approrpiate models awaiting results to pass back to the view.",
             "The controller is a mechanism that allows you to create reusable code in languages such as PHP, where multiple inheritance is not supported.",
             "The controller presents content through the user interface, after communicating directly with the database.",
-            "The controller handles specific tasks related to a specific area of functionality, handles business logic related to the results, and communicates directly with the database."
+            "The controller handles specific tasks related to a specific area of functionality, handles business logic related to the results, and communicates directly with the database.\n`$string = 'Shylock in a Shakespeare's \"Merchant of Venice\" demands his pound of flesh.';`"
         ],
         "_ps": 0
     },
     {
         "question": " Q41. Why does this code trigger an error?\n`$string = 'Shylock in a Shakespeare's \"Merchant of Venice\" demands his pound of flesh.';`",
         "options": [
-            "ng = 'Shylock in a Shakespeare's \"Merchant of Venice\" demands his pound of flesh.';`",
             "Strings should always be wrapped in double quotes; and double quotes inside a string should be escaped by backslashes.",
             "All single and double quotes inside a string need to be escaped by backslashes to prevent a parse error.",
-            "The opening and closing single quotes should be replaced by double quotes; and the apostrophe should be escaped by a backslash."
+            "The opening and closing single quotes should be replaced by double quotes; and the apostrophe should be escaped by a backslash.",
+            "The apostrophe needs to be escaped by a backslash to prevent it from being treated as the closing quote."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": " Q42. A PDO object called `$db` has been set up to use for database operations, including user authentication. All user-related properties are set. The script line `public function __construct(&$db)` shows a constructor that initializes all user-related properties to \\_ if no user has logged in. These parameters will be properly set by the login functions when a user logs in.",
@@ -430,24 +430,24 @@
         "_ps": 0
     },
     {
-        "question": " Q44. Which code snippet demonstrates encapsulation?\n  ```php\n  class Cow extends Animal {\n      private $milk;\n  }\n  ```\n  ```php\n  class Cow {\n      public $milk;\n  }\n  $daisy = new Cow();\n  $daisy->milk = \"creamy\";\n  ```\n  ```php\n  class Cow {\n      public $milk;\n      function getMilk() {`\n          return $this->milk;\n      }\n  }\n  ```",
+        "question": " Q44. Which code snippet demonstrates encapsulation?",
         "options": [
-            "",
-            "hp",
-            "s Cow extends Animal {",
-            "private $milk;"
+            "  ```php\n  class Cow extends Animal {\n      private $milk;\n  }\n  ```",
+            "  ```php\n  class Cow {\n      public $milk;\n  }\n  $daisy = new Cow();\n  $daisy->milk = \"creamy\";\n  ```",
+            "  ```php\n  class Cow {\n      public $milk;\n      function getMilk() {`\n          return $this->milk;\n      }\n  }\n  ```",
+            "  ```php\n  class Cow {\n      private $milk;\n      public function getMilk() {\n          return $this->milk;\n      }\n  }\n  ```\n```xml\n<books>\n    <book>\n        <title>A Tale of Two Cities</title>\n        <author>Charles Dickens</author>\n        <categories>\n            <category>Classics</category>\n            <category>Historical</category>\n        </categories>\n    </book>\n    <book>\n        <title>Then There Were None</title>\n        <author>Agatha Christies</author>\n        <categories>\n            <category>Mystery</category>\n        </categories>\n    </book>\n</books>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": " Q45. The following XML document is in books.xml. Which code will output \"Historical\"?\n```xml\n<books>\n    <book>\n        <title>A Tale of Two Cities</title>\n        <author>Charles Dickens</author>\n        <categories>\n            <category>Classics</category>\n            <category>Historical</category>\n        </categories>\n    </book>\n    <book>\n        <title>Then There Were None</title>\n        <author>Agatha Christies</author>\n        <categories>\n            <category>Mystery</category>\n        </categories>\n    </book>\n</books>\n```\n  ```php\n  $books = simplexml_load_string('books.xml');\n  echo $books->book[0]->categories->category[1];\n  ```\n  ```php\n  $books = simplexml_load_file('books.xml');\n  echo $books->book[0]->categories->category[1];\n  ```\n  ```php\n  $books = SimpleXMLElement('books.xml');\n  echo $books->book[0]->categories->category[1];\n  ```",
+        "question": " Q45. The following XML document is in books.xml. Which code will output \"Historical\"?\n```xml\n<books>\n    <book>\n        <title>A Tale of Two Cities</title>\n        <author>Charles Dickens</author>\n        <categories>\n            <category>Classics</category>\n            <category>Historical</category>\n        </categories>\n    </book>\n    <book>\n        <title>Then There Were None</title>\n        <author>Agatha Christies</author>\n        <categories>\n            <category>Mystery</category>\n        </categories>\n    </book>\n</books>\n```",
         "options": [
-            "",
-            ">",
-            "ook>",
-            "  <title>A Tale of Two Cities</title>"
+            "  ```php\n  $books = simplexml_load_string('books.xml');\n  echo $books->book[0]->categories->category[1];\n  ```",
+            "  ```php\n  $books = simplexml_load_file('books.xml');\n  echo $books->book[0]->categories->category[1];\n  ```",
+            "  ```php\n  $books = SimpleXMLElement('books.xml');\n  echo $books->book[0]->categories->category[1];\n  ```",
+            "  ```php\n  $books = SimpleXML('books.xml');\n  echo $books->book[0]->categories->category[1];\n  ```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": " Q46. When it comes to the value of a variable, what is the difference between NULL and empty?",
@@ -455,19 +455,19 @@
             "NULL is a blank value; empty is the lack of a value.",
             "A NULL value has an allocated address in memory; empty does not.",
             "NULL referes to the lack of a value for an integer; empty refers to the lack of a value for a string.",
-            "NULL is the lack of a value; empty is a blank value."
+            "NULL is the lack of a value; empty is a blank value.\n```php\nfunction doStuff($haystack, $needle) {\n      $length = strlen($needle)\n      if (substr($haystack, 0, $length) == $needle)\n        return true;\n      else\n        return false;\n}\n```"
         ],
         "_ps": 3
     },
     {
         "question": " Q47. What would be a good name for this function?\n```php\nfunction doStuff($haystack, $needle) {\n      $length = strlen($needle)\n      if (substr($haystack, 0, $length) == $needle)\n        return true;\n      else\n        return false;\n}\n```",
         "options": [
-            "",
-            "on doStuff($haystack, $needle) {",
-            "$length = strlen($needle)",
-            "if (substr($haystack, 0, $length) == $needle)"
+            "`equals`",
+            "`endsWith`",
+            "`startsWith`",
+            "`contains`"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": " Q48. If you want to pass a formfield to another page when a button is clicked, you should use the ** . If you want to store information across multiple pages, you should use the ** ?",
@@ -475,19 +475,19 @@
             "request; response",
             "response; request",
             "session; request",
-            "request; session"
+            "request; session\n```php\nisset($_POST['submit'])\n```"
         ],
         "_ps": 3
     },
     {
         "question": " Q49. You are using the following code to decide if a button is clicked, but it is never returning true. Which step is most likely to shed light on the problem?\n```php\nisset($_POST['submit'])\n```",
         "options": [
-            "",
-            "$_POST['submit'])",
-            "",
-            "Make sure the input field displaying the button is named 'submit'"
+            "Make sure the input field displaying the button is named 'submit'",
+            "Make sure you are not missing any semicolons",
+            "Print everything in the session `print_r($_SESSION);`",
+            "Look in the query string at the top of your browser to see if submit is assigned a value"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": " Q50. Why should you follow a PSR standard?",
@@ -510,14 +510,14 @@
         "_ps": 3
     },
     {
-        "question": "Q52. What are the recommended settings in the PHP configuration file, php.ini, for a testing environment?\n  ```php\n  report_errors = E_ALL\n  display_errors = On\n  ```\n  ```php\n  error_reporting = E_ALL\n  display_errors = On\n  ```\n  ```php\n  error_reporting = E_ALL & ~E_NOTICE\n  display_errors = Off\n  ```",
+        "question": "Q52. What are the recommended settings in the PHP configuration file, php.ini, for a testing environment?",
         "options": [
-            "",
-            "hp",
-            "rt_errors = E_ALL",
-            "lay_errors = On"
+            "  ```php\n  report_errors = E_ALL\n  display_errors = On\n  ```",
+            "  ```php\n  error_reporting = E_ALL\n  display_errors = On\n  ```",
+            "  ```php\n  error_reporting = E_ALL & ~E_NOTICE\n  display_errors = Off\n  ```",
+            "  ```php\n  error_reporting = E_ALL & ~E_NOTICE\n  display_errors = On\n  ```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q53. Which PHP variable name is invalid?",
@@ -555,39 +555,39 @@
             "`__RESOURCE__`",
             "`__FUNCTION__`",
             "`__CLASS__`",
-            "`__TRAIT__`"
+            "`__TRAIT__`\n[Reference](https://www.php.net/manual/en/language.constants.magic.php)\n```php\n  if( 1 == true){\n        echo \"1\";\n  }\n  if( 1 === true){\n      echo \"2\";\n  }\n  if(\"php\" == true){\n      echo \"3\";\n  }\n  if(\"php\" === false){\n      echo \"4\";\n  }\n```"
         ],
         "_ps": 0
     },
     {
         "question": " Q57. What below script will print?\n```php\n  if( 1 == true){\n        echo \"1\";\n  }\n  if( 1 === true){\n      echo \"2\";\n  }\n  if(\"php\" == true){\n      echo \"3\";\n  }\n  if(\"php\" === false){\n      echo \"4\";\n  }\n```",
         "options": [
-            "",
-            "1 == true){",
-            "  echo \"1\";",
-            ""
+            "134",
+            "13",
+            "1",
+            "123\n```php\n$secret_word = 'if i ate spinach';\nsetcookie('login', $_REQUEST['username']. ','. md5($_REQUEST['username'].$secret_word));\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": " Q57. When should this php script be used?\n```php\n$secret_word = 'if i ate spinach';\nsetcookie('login', $_REQUEST['username']. ','. md5($_REQUEST['username'].$secret_word));\n```",
         "options": [
-            "",
-            "t_word = 'if i ate spinach';",
-            "kie('login', $_REQUEST['username']. ','. md5($_REQUEST['username'].$secret_word));",
-            ""
+            "when a user goes to pay for an item online",
+            "when items are placed in a cart",
+            "at first registration",
+            "at every login, for security\n```php\nCat\nDog\nDog\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": " Q58. A PHP \"variable variable\" takes the value of a variable and treats that as the name of a variable. For example, if `$var` is a variable then `$$var` is a variable variable whose name is the value of `$var`. Which script produces the output below, using variable variables?\n```php\nCat\nDog\nDog\n```\n```php\n      $name = \"Cat\";\n      $name = \"Dog\";\n      echo $name . \"<br/>\";\n      echo $$name . \"<br/>\";\n      echo $Dog;\n```\n```php\n      $name = \"Cat\";\n      $$name = \"Dog\";\n      echo $name . \"<br/>\";\n      echo $$name . \"<br/>\";\n      echo $Dog;\n```\n```php\n      $name = \"Cat\";\n      $$name = \"Dog\";\n      echo $name . \"<br/>\";\n      echo $$name . \"<br/>\";\n      echo $Cat;\n```",
+        "question": " Q58. A PHP \"variable variable\" takes the value of a variable and treats that as the name of a variable. For example, if `$var` is a variable then `$$var` is a variable variable whose name is the value of `$var`. Which script produces the output below, using variable variables?\n```php\nCat\nDog\nDog\n```",
         "options": [
-            "",
-            "",
-            "",
-            ""
+            "```php\n      $name = \"Cat\";\n      $name = \"Dog\";\n      echo $name . \"<br/>\";\n      echo $$name . \"<br/>\";\n      echo $Dog;\n```",
+            "```php\n      $name = \"Cat\";\n      $$name = \"Dog\";\n      echo $name . \"<br/>\";\n      echo $$name . \"<br/>\";\n      echo $Dog;\n```",
+            "```php\n      $name = \"Cat\";\n      $$name = \"Dog\";\n      echo $name . \"<br/>\";\n      echo $$name . \"<br/>\";\n      echo $Cat;\n```",
+            "```php\n      $name = \"Cat\";\n      $$name = \"Dog\";\n      echo $name . \"<br/>\";\n      echo $name . \"<br/>\";\n      echo $Cat;\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": " Q59. Imagine a web application, built following a MVC architecture, that contains a quiz and a button to score it, When the user presses the Score button, which component should handle the request?",
@@ -600,34 +600,34 @@
         "_ps": 1
     },
     {
-        "question": " Q60. Which script might be used to continue a user's search for music, across different webpages?\n```php\n        <?php\n           start_session();\n           $music = $_SESSION['music'];\n        ?>\n```\n```php\n        <?php\n           session_start();\n           $music = $SESSION['music'];\n        ?>\n```\n```php\n        <?php\n           start_session();\n           $music =$session['music'];\n        ?>\n```",
+        "question": " Q60. Which script might be used to continue a user's search for music, across different webpages?",
         "options": [
-            "",
-            "",
-            "  <?php",
-            "     start_session();"
+            "```php\n        <?php\n           start_session();\n           $music = $_SESSION['music'];\n        ?>\n```",
+            "```php\n        <?php\n           session_start();\n           $music = $SESSION['music'];\n        ?>\n```",
+            "```php\n        <?php\n           start_session();\n           $music =$session['music'];\n        ?>\n```",
+            "```php\n        <?php\n           session_start();\n           $music = $_SESSION['music'];\n        ?>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": " Q61. Which PHP script finds the earliest and latest dates from an array?\n```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". max($dates).\"\\n\";\n        echo \"Earliest Date: \". min($dates).\"\\n\";\n        ?>\n```\n```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". min($dates).\"\\n\";\n        echo \"Earliest Date: \". max($dates).\"\\n\";\n        ?>\n```\n```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". ($dates).\"\\n\";\n        echo \"Earliest Date: \". ($dates).\"\\n\";\n        ?>\n```",
+        "question": " Q61. Which PHP script finds the earliest and latest dates from an array?",
         "options": [
-            "",
-            "",
-            "  <?php",
-            "  $dates = array('2018-02-01', '2017-02-02', '2015-02-03');"
+            "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". max($dates).\"\\n\";\n        echo \"Earliest Date: \". min($dates).\"\\n\";\n        ?>\n```",
+            "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". min($dates).\"\\n\";\n        echo \"Earliest Date: \". max($dates).\"\\n\";\n        ?>\n```",
+            "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". ($dates).\"\\n\";\n        echo \"Earliest Date: \". ($dates).\"\\n\";\n        ?>\n```",
+            "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \" max($dates).\"\\n\";\n        echo \"Earliest Date: \" min($dates).\"\\n\";\n        ?>\n```\n```php\n$kilometers = 1;\nfor (;;) {\n    if ($kilometers > 5) break;\n       echo \"$kilometers kilometers = \".$kilometers*0.62140. \" miles. <br />\";\n    $kilometers++;\n}\n```"
         ],
         "_ps": 0
     },
     {
-        "question": " Q62. What is the resulting output of this for statement?\n```php\n$kilometers = 1;\nfor (;;) {\n    if ($kilometers > 5) break;\n       echo \"$kilometers kilometers = \".$kilometers*0.62140. \" miles. <br />\";\n    $kilometers++;\n}\n```\n```\n        kilometers = 0.6214 miles.\n        kilometers = 1.2428 miles.\n        kilometers = 1.8642 miles.\n        kilometers = 2.4856 miles.\n        kilometers = 3.107 miles.\n```\n```\n        kilometers = 0.6214 miles.\n        kilometers = 1.2428 miles.\n        kilometers = 1.8642 miles\n        kilometers = 2.4856 miles.\n        kilometers = 3.107 miles.\n        kilometers = 3.7284 miles.\n```\n```\n        kilometers = 1.2428 miles.\n        kilometers = 1.8642 miles.\n        kilometers = 2.4856 miles.\n        kilometers = 3.107 miles.\n```",
+        "question": " Q62. What is the resulting output of this for statement?\n```php\n$kilometers = 1;\nfor (;;) {\n    if ($kilometers > 5) break;\n       echo \"$kilometers kilometers = \".$kilometers*0.62140. \" miles. <br />\";\n    $kilometers++;\n}\n```",
         "options": [
-            "",
-            "eters = 1;",
-            ";) {",
-            " ($kilometers > 5) break;"
+            "```\n        kilometers = 0.6214 miles.\n        kilometers = 1.2428 miles.\n        kilometers = 1.8642 miles.\n        kilometers = 2.4856 miles.\n        kilometers = 3.107 miles.\n```",
+            "```\n        kilometers = 0.6214 miles.\n        kilometers = 1.2428 miles.\n        kilometers = 1.8642 miles\n        kilometers = 2.4856 miles.\n        kilometers = 3.107 miles.\n        kilometers = 3.7284 miles.\n```",
+            "```\n        kilometers = 1.2428 miles.\n        kilometers = 1.8642 miles.\n        kilometers = 2.4856 miles.\n        kilometers = 3.107 miles.\n```",
+            "FATAL ERROR syntax error, unexpected ')', expecting ';' on line number 2"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": " Q63. In PHP 7, What is the correct way to import multiple classes from namespace in a single declaration ?!",
@@ -645,7 +645,7 @@
             "string, integer, float, boolean, array, object, NULL, resource",
             "string, integer, boolean, array, object, NULL, resource",
             "string, integer, float, array, object, NULL, resource",
-            "string, integer, float, boolean, array, object, NULL"
+            "string, integer, float, boolean, array, object, NULL\n[reference](https://www.w3schools.com/php/php_datatypes.asp)"
         ],
         "_ps": 0
     },
@@ -655,7 +655,7 @@
             "server-side scripting language",
             "compiled language",
             "machine language",
-            "algorithmic language"
+            "algorithmic language\n[reference](https://www.quora.com/Which-programming-language-is-used-to-create-PHP)"
         ],
         "_ps": 0
     },
@@ -665,19 +665,19 @@
             "`$_SERVER`",
             "`$SERVER_VARIABLES`",
             "`$_ENV`",
-            "`$GLOBALS`"
+            "`$GLOBALS`\n[reference](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/php_superglobals.asp.html)\n```php\n$capitals = ['UK' => 'London', 'France' => 'Paris'];\necho \"$capitals['france'] is the capital of France.\";\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q67. Describe what happens if you run this code in a testing environment:\n```php\n$capitals = ['UK' => 'London', 'France' => 'Paris'];\necho \"$capitals['france'] is the capital of France.\";\n```",
         "options": [
-            "",
-            "als = ['UK' => 'London', 'France' => 'Paris'];",
-            "$capitals['france'] is the capital of France.\";",
-            ""
+            "It displays: \"Paris is the capital of France.\"",
+            "It displays: \" is the capital of France.\"",
+            "It triggers a syntax error because the array keys on line 1 are in quotes.",
+            "It triggers a syntax error because the array key on line 2 is in quotes.\n**_Also, 'france' key must be capitalized!_**"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q68. DRY (Don't Repeat Yourself) is a principle of software development aimed at reducing repetition of software patterns. Which choice is not a way to write DRYer code with PHP?",
@@ -695,7 +695,7 @@
             "`$HTTP_SERVER_VARS(\"REMOTE_IP\")`",
             "`$_SESSION[\"REMOTE_ADDR\"];`",
             "`$_SERVER[\"HTTP_X_FORWARDED_FOR\"]`",
-            "`getenv(\"REMOTE_ADDR\")`"
+            "`getenv(\"REMOTE_ADDR\")`\n**_Both 2 and 4 are correct!_**"
         ],
         "_ps": 1
     },
@@ -705,29 +705,29 @@
             "Make sure the user has the proper permissions.",
             "Keep a count of upload file sizes and log them.",
             "Change the `upload_max_filesize` configuration parameter.",
-            "Be sure to use chunked transfer encoding."
+            "Be sure to use chunked transfer encoding.\n```php\n$my_text = 'The quick grey [squirrel].';\npreg_match('#\\[(.*?)\\]#', $my_text, $match);\nprint $match[1].\"\\n\";\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q71. What is the output of this script?\n```php\n$my_text = 'The quick grey [squirrel].';\npreg_match('#\\[(.*?)\\]#', $my_text, $match);\nprint $match[1].\"\\n\";\n```",
         "options": [
-            "",
-            "xt = 'The quick grey [squirrel].';",
-            "atch('#\\[(.*?)\\]#', $my_text, $match);",
-            "$match[1].\"\\n\";"
+            "squirrel",
+            "The quick grey [squirrel].",
+            "[squirrel]",
+            "The quick grey squirrel.\n`$fruits = ['apple', 'orange', 'pear', 'mango', 'papaya'];`\n`$i = 0;`\n`echo $fruits[$i+=3];`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q72. What is the output of this script?\n`$fruits = ['apple', 'orange', 'pear', 'mango', 'papaya'];`\n`$i = 0;`\n`echo $fruits[$i+=3];`",
         "options": [
-            "ts = ['apple', 'orange', 'pear', 'mango', 'papaya'];`",
-            "0;`",
-            "$fruits[$i+=3];`",
-            "mango"
+            "mango",
+            "apple",
+            "a parse error",
+            "pear"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q73. What are some of the main types of errors in PHP?",
@@ -750,12 +750,12 @@
         "_ps": 2
     },
     {
-        "question": "Q75. Which two functions can sanitize text and validate text formats?\n#### Q76. Why is it not recommended to make all of a class's variables public?",
+        "question": "Q75. Which two functions can sanitize text and validate text formats?",
         "options": [
             "`session_start()` and `filter_input()`",
             "`filter_var()` and `filter_input()`",
             "`preg_match()` and `strstr()`",
-            "76. Why is it not recommended to make all of a class's variables public?"
+            "Doing so makes your code tightly coupled."
         ],
         "_ps": 1
     },
@@ -775,19 +775,19 @@
             "`$statement->bindValue(':name', '%' . $_GET['name'] . '%');`",
             "`$statement->bindValue('%' . $_GET['name'] . '%', ':name');`",
             "`$statement->bindParam(':name', '%' . $_GET['name'] . '%');`",
-            "`$statement->bindParam('%' . $_GET['name'] . '%', ':name');`"
+            "`$statement->bindParam('%' . $_GET['name'] . '%', ':name');`\n`$array1 = ['country', 'capital', 'language'];`\n`$array2 = ['France', 'Paris', 'French'];`"
         ],
         "_ps": 0
     },
     {
         "question": "Q78. Create an associative array using `$array1` as the keys and `$array2` as the values:\n`$array1 = ['country', 'capital', 'language'];`\n`$array2 = ['France', 'Paris', 'French'];`",
         "options": [
-            "y1 = ['country', 'capital', 'language'];`",
-            "y2 = ['France', 'Paris', 'French'];`",
             "`$array3 = array_merge($array1, $array2);`",
-            "`$array3 = array_union($array1, $array2);`"
+            "`$array3 = array_union($array1, $array2);`",
+            "`$array3 = array_keys($array1, $array2);`",
+            "`$array3 = array_combine($array1, $array2);`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q79. Assume that `$r` is 255, and `$g` and `$b` are both 0. What is the correct code to output `\"#ff0000\"`?",
@@ -800,24 +800,24 @@
         "_ps": 3
     },
     {
-        "question": "Q80. You want to find out what day Twelfth Night falls on after Christmas 2018. Which code should you use?\n      `$twelfth_night = $xmas->add(new DateInterval('P12D'));`\n      `echo $twelfth_night->format('l');`\n      `echo date('d', $twelfth_night);`\n      `echo strftime('%d', $twelfth_night);`",
+        "question": "Q80. You want to find out what day Twelfth Night falls on after Christmas 2018. Which code should you use?",
         "options": [
-            "`$xmas = new DateTime('Dec 25, 2018');`",
-            "`$twelfth_night = $xmas->add(new DateInterval('P12D'));`",
-            "`echo $twelfth_night->format('l');`",
-            "`$twelfth_night = strtotime('December 25, 2018 + 12 days');`"
+            "`$xmas = new DateTime('Dec 25, 2018');`\n      `$twelfth_night = $xmas->add(new DateInterval('P12D'));`\n      `echo $twelfth_night->format('l');`",
+            "`$twelfth_night = strtotime('December 25, 2018 + 12 days');`\n      `echo date('d', $twelfth_night);`",
+            "`$twelfth_night = strtotime('December 25, 2018 + 12 days');`\n      `echo strftime('%d', $twelfth_night);`",
+            "`$xmas = new DateTime('Dec 25, 2018');`\n      `$twelfth_night = $xmas->add(strtotime('12 days'));`\n      `echo $twelfth_night->format('D');`\n**_1 seems correct, but the question asks for \"day\", not day of the week. Twelfth Night is the \"06\" day of January, 2019._**"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q81. Which loop displays all numbers from 1 to 10 inclusive?\n      `while ($i < 10) {`\n      `echo $i++ . '<br/>';`\n      `}`\n      `while ($i <= 10) {`\n      ` echo $i++ . '<br/>';`\n      `}`\n      ` echo ++$i . '<br/>';`\n      `}`",
+        "question": "Q81. Which loop displays all numbers from 1 to 10 inclusive?",
         "options": [
-            "`$i = 1;`",
-            "`while ($i < 10) {`",
-            "`echo $i++ . '<br/>';`",
-            "`}`"
+            "`$i = 1;`\n      `while ($i < 10) {`\n      `echo $i++ . '<br/>';`\n      `}`",
+            "`$i = 0;`\n      `while ($i <= 10) {`\n      ` echo $i++ . '<br/>';`\n      `}`",
+            "`while ($i &lt;= 10) {`\n      ` echo ++$i . '<br/>';`\n      `}`",
+            "`$i = 0;`\n      `while ($i < 10) {`\n      ` echo ++$i . '<br/>';`\n      `}`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q82. Which are types of control structures in PHP?",
@@ -825,7 +825,7 @@
             "`break`, `continue`, `do-while`, `exception`, `for`, `foreach`, `if`, `switch`, `throw`, `while`",
             "`values`, `operators`, `expressions`, `keywords`, `comments`",
             "`for`, `foreach`, `if`, `else`, `else if`, `switch`, `tries`, `throws`, `while`",
-            "`if-then-else`, `do-while`, `for-each`, `go-to`, `stop-when`"
+            "`if-then-else`, `do-while`, `for-each`, `go-to`, `stop-when`\n[reference](https://www.php.net/manual/en/language.control-structures.php)"
         ],
         "_ps": 0
     },
@@ -845,27 +845,26 @@
             "`die`",
             "`return`",
             "`throw`",
-            "`break`"
+            "`break`\n```php\n$numbers = array(4,6,2,22,11);\nsort($numbers);\n$arrlength = count($numbers);\nfor($x = 0; $x < $arrlength; $x++){\n    echo $numbers[$x];\n    echo \"<br />\";\n    }\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q84. Is the output of this code in descending order, shown vertically, and with spaces between numbers? And what is the output?\n```php\n$numbers = array(4,6,2,22,11);\nsort($numbers);\n$arrlength = count($numbers);\nfor($x = 0; $x < $arrlength; $x++){\n    echo $numbers[$x];\n    echo \"<br />\";\n    }\n```",
         "options": [
-            "",
-            "rs = array(4,6,2,22,11);",
-            "numbers);",
-            "ngth = count($numbers);"
+            "This does not meet all the criteria because the resulting numbers will be \"2461122\", which is in no particular order.",
+            "This meets the criteria because the <br /> is present and sort() lists in descending order",
+            "This does not meet all the criteria because the sort() function sorts an indexed array in ascending order. Thus this code will display \"2 4 6 11 22\" shown vertically, but the numbers are spaced.",
+            "does not meet all the criteria because the echo simply result in showing the array numbers in the order shown within the $numbers array, which is ascending"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q85. Which is not true of the `toString()` in PHP?",
         "options": [
             "It saves a lot of work of using setters methods to access the values of objects.",
             "It saves a lot of work of using getters methods to access the values of objects.",
-            "It allows you to call an object and see its components as a string.",
-            "It is automatically called when you use echo or print."
+            "It allows you to call an object and see its components as a string."
         ],
         "_ps": 2
     }

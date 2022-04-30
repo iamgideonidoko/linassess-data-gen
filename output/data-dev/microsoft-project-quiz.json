@@ -35,19 +35,19 @@
             "Subprojects will have critical paths calculated individually.",
             "Individual resources will have critical paths calculated.",
             "Milestones will have critical paths fixed.",
-            "Only one critical path will be calculated for a linked project."
+            "Only one critical path will be calculated for a linked project.\n![Microsoft Project Q05](images/microsoft-project_Q05.jpg)"
         ],
         "_ps": 0
     },
     {
         "question": "Q5. What Microsoft Project view is shown in the image below?\n![Microsoft Project Q05](images/microsoft-project_Q05.jpg)",
         "options": [
-            "osoft Project Q05](images/microsoft-project_Q05.jpg)",
             "Network Diagram",
             "Task Dependency Report",
-            "Flow Chart"
+            "Flow Chart",
+            "Gantt Chart"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q6. You want to switch the scheduling mode for a project from scheduling from a start date to scheduling from a finish date. This action will change the default constraint from As Soon As Possible to As Late As Possible. Which dialog box should you use to make this change?",
@@ -85,7 +85,7 @@
             "Inserted projects are calculated like summary tasks is selected.",
             "Calculate multiple critical paths is not selected.",
             "One of the Com add-ins is not selected.",
-            "Calculate project after each edit is set to Off."
+            "Calculate project after each edit is set to Off.\n`The hint being \"The schedule has 10,000 tasks\" and the fact that the Gantt Chart does not update.`"
         ],
         "_ps": 3
     },
@@ -145,7 +145,7 @@
             "It has changed to 10h.",
             "It has changed to 6h.",
             "It has changed to 125%.",
-            "It has changed to 110%."
+            "It has changed to 110%.\n[reference link](https://support.microsoft.com/en-us/office/peak-task-field-a9947235-b552-4ae5-9f26-d58fdc1a27d3)"
         ],
         "_ps": 2
     },
@@ -175,7 +175,7 @@
             "Start-to-Finish (SF)",
             "Finish-to-Finish(FF)",
             "Finish-to-Start (FS)",
-            "Start-to-Start (SS)"
+            "Start-to-Start (SS)\n**Reasoning:** the problem states that the finish of the secondary dishes should be the same with the finish of the main course. The main course takes longer to complete than the secondary dishes. If we set Start-to-Finish, the secondary dishes will begin after the main dish is complete and this is not what the problem stated."
         ],
         "_ps": 1
     },
@@ -300,14 +300,14 @@
         "_ps": 2
     },
     {
-        "question": "Q31. You are assigned the ownership of schedule comprising approximately 12,000 tasks. You need to know exactly, with detail, which tasks have a constraint other than ASAP. The most effective method do this is to create a filter that tests for which set of conditions?\n       1\\. does not equal As Soon As Possible.  \n       2\\. equals Yes.  \n       3\\. equals No.  \n       4\\. equals 100%.  \n       5\\. equals Yes.\n       1\\. is less than As Soon As Possible.  \n       2\\. does not equal Yes.  \n       3\\. equals No.  \n       4\\. is equal to 0%.  \n       5\\. equals Yes.\n       1\\. is greater than As Soon As Possible.  \n       2\\. equals Yes.  \n       3\\. equals Yes.  \n       4\\. equals 0d.  \n       5\\. equals Ongoing.",
+        "question": "Q31. You are assigned the ownership of schedule comprising approximately 12,000 tasks. You need to know exactly, with detail, which tasks have a constraint other than ASAP. The most effective method do this is to create a filter that tests for which set of conditions?",
         "options": [
-            "Constraint TypeSummaryRecurring% CompleteActive  ",
-            " 1\\. does not equal As Soon As Possible.  ",
-            " 2\\. equals Yes.  ",
-            " 3\\. equals No.  "
+            "Constraint TypeSummaryRecurring% CompleteActive  \n       1\\. does not equal As Soon As Possible.  \n       2\\. equals Yes.  \n       3\\. equals No.  \n       4\\. equals 100%.  \n       5\\. equals Yes.",
+            "Constraint TypeSummaryRecurring% CempleteActive  \n       1\\. is less than As Soon As Possible.  \n       2\\. does not equal Yes.  \n       3\\. equals No.  \n       4\\. is equal to 0%.  \n       5\\. equals Yes.",
+            "Constraint TypeDetailRecurringDurationActive  \n       1\\. is greater than As Soon As Possible.  \n       2\\. equals Yes.  \n       3\\. equals Yes.  \n       4\\. equals 0d.  \n       5\\. equals Ongoing.",
+            "Constraint TypeSummaryRecurring% CompleteActive  \n       1\\. does not equal As Soon As Possible.  \n       2\\. does not equal Yes.  \n       3\\. equals No.  \n       4\\. is 1ess than 100%.  \n       5\\. equals Yes."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q32. You are working with two project files. You want the second project to contain some of the same tasks, along with their work assignments, as the first project. You Choose to copy the tasks between the projects. What else is copied along with the task when performing basic copy and paste action?",
@@ -365,19 +365,19 @@
             "The **Switch Window** lists the hidden file.",
             "The **Switch Window** command does not list the hidden file.",
             "To unhide the file, select **Switch Window**.",
-            "To view a hidden file, on the **View** tab, click **Arrange Windows**."
+            "To view a hidden file, on the **View** tab, click **Arrange Windows**.\n![Microsoft Project Q38](images/microsoft-project_Q38.jpg)"
         ],
         "_ps": 2
     },
     {
         "question": "Q38. In the image below, what does the indicator in Task ID 9 represent?\n![Microsoft Project Q38](images/microsoft-project_Q38.jpg)",
         "options": [
-            "osoft Project Q38](images/microsoft-project_Q38.jpg)",
             "subproject",
             "linked file",
-            "custom field"
+            "custom field",
+            "resource pool"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q39. You are using work breakdown structure (WBS) codes for an in-progress project. Due to some schedule changes, tasks have been moved around, which has modified the WBS. How do you fix the WBS codes?",
@@ -434,9 +434,8 @@
         "options": [
             "Start-to-Start (SS)",
             "Finish-to-Start (FS)",
-            "Start-to-Finish (SF)",
-            "Finish-to-Finish (FF)"
+            "Start-to-Finish (SF)"
         ],
-        "_ps": 3
+        "_ps": -1
     }
 ]

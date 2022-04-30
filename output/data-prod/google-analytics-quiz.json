@@ -1,13 +1,13 @@
 [
     {
-        "question": "Q1. In the following URL, what channel grouping is traffic assigned to?",
+        "question": "Q1. In the following URL, what channel grouping is traffic assigned to?\n`example.com/?utm_source=google&utm_medium=cpc&utm_campaign=315`",
         "options": [
-            "le.com/?utm_source=google&utm_medium=cpc&utm_campaign=315`",
             "Display",
             "Google",
-            "Organic Search"
+            "Organic Search",
+            "Paid Search"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q2. If you want to evaluate if direct traffic delivered more traffic than organic search in August 2019, which report do you look at?",
@@ -35,19 +35,19 @@
             "one",
             "three",
             "two",
-            "four"
+            "four\n[Reference](https://support.google.com/analytics/answer/7084499)\n![Google Analytics Icons](https://i.imgur.com/LZzFesL.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q5. What are the icons highlighted below used for?",
+        "question": "Q5. What are the icons highlighted below used for?\n![Google Analytics Icons](https://i.imgur.com/LZzFesL.png)",
         "options": [
-            "le Analytics Icons](https://i.imgur.com/LZzFesL.png)",
             "to change the way the data table is displayed",
             "to adjust the date range",
-            "to assign secondary dimensions"
+            "to assign secondary dimensions",
+            "to compare data to previous periods"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q6. Which report would help you measure the value of your social media efforts?",
@@ -155,7 +155,7 @@
             "Account > Property > Organization > Views",
             "Organization > Account > Property > Views",
             "Organization > Property > Account > Views",
-            "Account > Organization > Property > Views"
+            "Account > Organization > Property > Views\n[Reference](https://support.google.com/analytics/answer/1009618?hl=en)"
         ],
         "_ps": 1
     },
@@ -295,19 +295,19 @@
             "Configure calculated metrics.",
             "Use a custom import.",
             "This functionality is not possible.",
-            "Create a search and replace filter."
+            "Create a search and replace filter.\n![Tree map](https://i.imgur.com/CJFjxxD.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q31. What is this report an example of?",
+        "question": "Q31. What is this report an example of?\n![Tree map](https://i.imgur.com/CJFjxxD.png)",
         "options": [
-            " map](https://i.imgur.com/CJFjxxD.png)",
             "cohort analysis",
             "funnel visualization",
-            "user flow"
+            "user flow",
+            "treemap"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q32. You already have Google Analytics set up on your website, but decide to add Google Tag Manager. What do you do with the existing Analytics tag?",
@@ -745,7 +745,7 @@
             "custom channels",
             "advanced filters",
             "content grouping",
-            "custom segments"
+            "custom segments\n[answer](https://support.google.com/analytics/answer/2853423?hl=en)"
         ],
         "_ps": 2
     },
@@ -804,8 +804,7 @@
         "options": [
             "dimension",
             "metric",
-            "hit",
-            "tag"
+            "hit"
         ],
         "_ps": 2
     }

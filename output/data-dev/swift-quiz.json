@@ -2,32 +2,32 @@
     {
         "question": "Q1. What is this code an example of?\n```swift\nlet val = (Double)6\n```",
         "options": [
-            "ft",
-            "l = (Double)6",
-            "",
-            "a syntax issue"
+            "a syntax issue",
+            "typecasting",
+            "assignment",
+            "initialization\n```swift\nlet x = 5\nguard x == 5 { return }\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q2. What is the error in this code?\n```swift\nlet x = 5\nguard x == 5 { return }\n```",
         "options": [
-            "ft",
-            "= 5",
-            "x == 5 { return }",
-            ""
+            "The guard is missing the else.",
+            "Nothing is wrong.",
+            "The guard is missing a then.",
+            "The comparison is wrong.\n```swift\nenum Direction {\n  case north, south, east, west\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q3. What is the raw/underlying type of this enum?\n```swift\nenum Direction {\n  case north, south, east, west\n}\n```",
         "options": [
-            "ft",
-            "irection {",
-            " north, south, east, west",
-            ""
+            "There is none.",
+            "String",
+            "Any",
+            "Int"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q4. Why is dispatchGroup used in certain situations?",
@@ -35,89 +35,89 @@
             "It allows multiple synchronous or asynchronous operations to run on different queues.",
             "It allows track and control execution of multiple operations together.",
             "It allows operations to wait for each other as desired.",
-            "all of these answers."
+            "all of these answers.\n```swift\nlet val = 5\nprint(\"value is: \\(val)\")\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q5. What is this code an example of?\n```swift\nlet val = 5\nprint(\"value is: \\(val)\")\n```",
         "options": [
-            "ft",
-            "l = 5",
-            "\"value is: \\(val)\")",
-            ""
+            "string interpolation",
+            "string compilation",
+            "method chaining",
+            "string concatenation\n```swift\nvar vals = [10, 2]\nvals.sort { (s1, s2) -> Bool in\n  s1 > s2\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q6. What are the contents of `vals` after this code is executed?\n```swift\nvar vals = [10, 2]\nvals.sort { (s1, s2) -> Bool in\n  s1 > s2\n}\n```",
         "options": [
-            "ft",
-            "ls = [10, 2]",
-            "ort { (s1, s2) -> Bool in",
-            " s2"
+            "[10, 2]",
+            "[2, 10]",
+            "nil",
+            "This code contains an error\n```swift\ntypealias Thing = [String:Any]\nvar stuff: Thing\nprint(type(of: stuff))\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q7. What does this code print?\n```swift\ntypealias Thing = [String:Any]\nvar stuff: Thing\nprint(type(of: stuff))\n```",
         "options": [
-            "ft",
-            "ias Thing = [String:Any]",
-            "uff: Thing",
-            "type(of: stuff))"
+            "Dictionary<String, Any>",
+            "Dictionary",
+            "ERROR",
+            "Thing\n```swift\nlet x = [\"1\", \"2\"].dropFirst()\nlet y = x[0]\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q8. What is the value of y?\n```swift\nlet x = [\"1\", \"2\"].dropFirst()\nlet y = x[0]\n```",
         "options": [
-            "ft",
-            "= [\"1\", \"2\"].dropFirst()",
-            "= x[0]",
-            ""
+            "This code contains an error",
+            "1",
+            "2",
+            "nil\n```swift\nvar test = 1 == 1\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q9. What is the value of test in this code?\n```swift\nvar test = 1 == 1\n```",
         "options": [
-            "ft",
-            "st = 1 == 1",
-            "",
-            "TRUE"
+            "TRUE",
+            "YES",
+            "1",
+            "This code contains an error\n```swift\nvar x: Int?\nlet y = x ?? 5\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q10. What is the value of y?\n```swift\nvar x: Int?\nlet y = x ?? 5\n```",
         "options": [
-            "ft",
-            " Int?",
-            "= x ?? 5",
-            ""
+            "5",
+            "0",
+            "nil",
+            "This code contains an error\n```swift\nfunc add(a: Int, b: Int) -> Int { return a+b }\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q11. What is the type of this function?\n```swift\nfunc add(a: Int, b: Int) -> Int { return a+b }\n```",
         "options": [
-            "ft",
-            "dd(a: Int, b: Int) -> Int { return a+b }",
-            "",
-            "Int"
+            "Int",
+            "(Int, Int) -> Int",
+            "Int<Optional>",
+            "Functions don't have types.\n```swift\nfunc myFunc(_ a: Int, b: Int) -> Int {\n  return a + b\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q12. What is the correct way to call this function?\n```swift\nfunc myFunc(_ a: Int, b: Int) -> Int {\n  return a + b\n}\n```",
         "options": [
-            "ft",
-            "yFunc(_ a: Int, b: Int) -> Int {",
-            "rn a + b",
-            ""
+            "myFunc(5, b: 6)",
+            "myFunc(5, 6)",
+            "myFunc(a: 5, b: 6)",
+            "myFunc(a, b)"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q13. The Codable protocol is **\\_**?",
@@ -125,19 +125,19 @@
             "a combination of Encodable and Decodable",
             "not a true protocol <<<<---Possibly correct as it's a typealias of Encodable and Decodable",
             "required of all classes",
-            "automatically included in all classes"
+            "automatically included in all classes\n```swift\nlet value1 = \"\\(\"test\".count)\"\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q14. What is the type of value1 in this code?\n```swift\nlet value1 = \"\\(\"test\".count)\"\n```",
         "options": [
-            "ft",
-            "lue1 = \"\\(\"test\".count)\"",
-            "",
-            "String"
+            "String",
+            "Int",
+            "null",
+            "test.count"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q15. When a function takes a closure as a parameter, when do you want to mark is as escaping?",
@@ -145,49 +145,49 @@
             "when it's executed after the function returns",
             "when it's scope is undefined",
             "when it's lazy loaded",
-            "all of these answers"
+            "all of these answers\n```swift\nclass Person {\n  var name: String\n  var address: String\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q16. What's wrong with this code?\n```swift\nclass Person {\n  var name: String\n  var address: String\n}\n```",
         "options": [
-            "ft",
-            "Person {",
-            "name: String",
-            "address: String"
+            "Person has no initializers.",
+            "Person has no base class.",
+            "var name is not formatted corrrectly.",
+            "address is a keyword.\n```swift\nlet names = [\"Bear\", \"Joe\", \"Clark\"]\nnames.map { (s) -> String in\n  return s.uppercased()\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q17. What is the value of names after this code is executed?\n```swift\nlet names = [\"Bear\", \"Joe\", \"Clark\"]\nnames.map { (s) -> String in\n  return s.uppercased()\n}\n```",
         "options": [
-            "ft",
-            "mes = [\"Bear\", \"Joe\", \"Clark\"]",
-            "map { (s) -> String in",
-            "rn s.uppercased()"
+            "[\"BEAR\", \"JOE\", \"CLARK\"]",
+            "[\"B\", \"J\", \"C\"]",
+            "[\"Bear\", \"Joe\", \"Clark\"]",
+            "This code contains an error.\n```swift\nlet val = 5\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q18. What describes this line of code?\n```swift\nlet val = 5\n```",
         "options": [
-            "ft",
-            "l = 5",
-            "",
-            "a constant named val of type Int"
+            "a constant named val of type Int",
+            "a variable named val of type item",
+            "a constant named val of type Number",
+            "a variable named val of type Int\n```swift\nextension String {\n  var firstLetter: Character = \"c\" {\n    didSet {\n      print(\"new value\")\n    }\n  }\n}\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q19. What is the error in this code?\n```swift\nextension String {\n  var firstLetter: Character = \"c\" {\n    didSet {\n      print(\"new value\")\n    }\n  }\n}\n```",
         "options": [
-            "ft",
-            "ion String {",
-            "firstLetter: Character = \"c\" {",
-            "dSet {"
+            "Extensions can't add properties. // although extensions technically can't contain stored properties",
+            "Nothing is wrong with it.",
+            "didSet takes a parameter.",
+            "c is not a character."
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q20. didSet and willSet are examples of **\\_**?",
@@ -195,29 +195,29 @@
             "property observers",
             "key properties",
             "all of these answers",
-            "newOld value calls"
+            "newOld value calls\n```swift\nself.callback = {\n  self.attempts += 1\n  self.downloadFailed()\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q21. What is wrong with this code?\n```swift\nself.callback = {\n  self.attempts += 1\n  self.downloadFailed()\n}\n```",
         "options": [
-            "ft",
-            "allback = {",
-            ".attempts += 1",
-            ".downloadFailed()"
+            "Use of self inside the closure causes retain cycle.",
+            "You cannot assign a value to closure in this manner.",
+            "You need to define the type of closure explicitly.",
+            "There is nothing wrong with this code.\n```swift\nvar vals = Set<String> = [\"4\", \"5\", \"6\"]\nvals.insert(\"5\")\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q22. How many values does vals have after this code is executed?\n```swift\nvar vals = Set<String> = [\"4\", \"5\", \"6\"]\nvals.insert(\"5\")\n```",
         "options": [
-            "ft",
-            "ls = Set<String> = [\"4\", \"5\", \"6\"]",
-            "nsert(\"5\")",
-            ""
+            "three",
+            "four",
+            "eight",
+            "This code contains an error."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q23. How can you avoid a strong reference cycle in a closure?",
@@ -225,19 +225,19 @@
             "Use a capture list to set class instances of weak or unowned.",
             "You can't, there will always be a danger of strong reference cycles inside a closure.",
             "Initialize the closure as read-only.",
-            "Declare the closure variable as lazy."
+            "Declare the closure variable as lazy.\n```swift\nif let s = String.init(\"some string\") {\n  print(s)\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q24. What is wrong with this code?\n```swift\nif let s = String.init(\"some string\") {\n  print(s)\n}\n```",
         "options": [
-            "ft",
-            " s = String.init(\"some string\") {",
-            "t(s)",
-            ""
+            "This String initializer does not return an optional.",
+            "String does not have an initializer that can take a String.",
+            "= is not a comparison.",
+            "Nothing is wrong with this code."
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q25. Which code snippet correctly creates a typealias closure?",
@@ -265,29 +265,29 @@
             "structs",
             "classes",
             "optionals",
-            "generics"
+            "generics\n```swift\nvar strings = [1, 2, 3]\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q28. What is the correct way to add a value to this array?\n```swift\nvar strings = [1, 2, 3]\n```",
         "options": [
-            "ft",
-            "rings = [1, 2, 3]",
-            "",
-            "all of these answers"
+            "all of these answers",
+            "strings.append(4)",
+            "strings.insert(5, at: 1)",
+            "strings += [5]\n```swift\nfor i in 0...100 {\n  print(i)\n}\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q29. How many times will this loop be executed?\n```swift\nfor i in 0...100 {\n  print(i)\n}\n```",
         "options": [
-            "ft",
-            "in 0...100 {",
-            "t(i)",
-            ""
+            "0",
+            "101",
+            "99",
+            "100"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q30. What can AnyObject represent?",
@@ -295,59 +295,59 @@
             "an instance of any class",
             "an instance of function type",
             "all of these answers",
-            "an instance of an optional type"
+            "an instance of an optional type\n```swift\ntypealias Thing = [String:Any]\nvar stuff : Thing\nprint(type(of:stuff))\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q31. What does this code print?\n```swift\ntypealias Thing = [String:Any]\nvar stuff : Thing\nprint(type(of:stuff))\n```",
         "options": [
-            "ft",
-            "ias Thing = [String:Any]",
-            "uff : Thing",
-            "type(of:stuff))"
+            "Dictionary",
+            "ERROR",
+            "Thing",
+            "Dictionary<String, Any>\n```swift\nlet names = [\"Larry\", \"Sven\", \"Bear\"]\nlet t = names.enumerated().first().offset\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q32. What is the value of t after this code is executed?\n```swift\nlet names = [\"Larry\", \"Sven\", \"Bear\"]\nlet t = names.enumerated().first().offset\n```",
         "options": [
-            "ft",
-            "mes = [\"Larry\", \"Sven\", \"Bear\"]",
-            "= names.enumerated().first().offset",
-            ""
+            "This code is invalid.",
+            "This code does not compile.",
+            "0",
+            "1"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q32. What is the value of test after this code executes?\n```swift\nlet vt = (name: \"ABC\", val: 5)\nlet test = vt.0\n```",
         "options": [
-            "ft",
-            " = (name: \"ABC\", val: 5)",
-            "st = vt.0",
-            ""
+            "ABC",
+            "0",
+            "5",
+            "name\n```swift\nclass LSN : MMM {\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q33. What is the base class in this code?\n```swift\nclass LSN : MMM {\n}\n```",
         "options": [
-            "ft",
-            "LSN : MMM {",
-            "",
-            ""
+            "MMM",
+            "LSN",
+            "There is no base class.",
+            "This code is invalid.\n```swift\nvar userLocation: String = \"Home\" {\n  willSet(newValue) {\n  print(\"About to set userLocation to \\(newValue)...\")\n  }\n  didSet {\n  if userLocation != oldValue {\n  print(\"userLocation updated with new value!\")\n  } else {\n  print(\"userLocation already set to that value...\")\n  }\n  }\n }\n userLocation = \"Work\"\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q34. What does this code print to the console?\n```swift\nvar userLocation: String = \"Home\" {\n  willSet(newValue) {\n  print(\"About to set userLocation to \\(newValue)...\")\n  }\n  didSet {\n  if userLocation != oldValue {\n  print(\"userLocation updated with new value!\")\n  } else {\n  print(\"userLocation already set to that value...\")\n  }\n  }\n }\n userLocation = \"Work\"\n```",
         "options": [
-            "ft",
-            "erLocation: String = \"Home\" {",
-            "Set(newValue) {",
-            "t(\"About to set userLocation to \\(newValue)...\")"
+            "About to set userLocation to Work… userLocation updated with new value!",
+            "About to set userLocation to Work… userLocation already set to that value…",
+            "About to set userLocation to Home… userLocation updated to new value!",
+            "ERROR"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q35. What must a convenience initializer call?",
@@ -365,29 +365,29 @@
             "DispatchQueue.visible",
             "DispatchQueue.global",
             "errorExample need to be labeled as `throws`.",
-            "DispatchQueue.background"
+            "DispatchQueue.background\n```swift\nlet x = [\"a\", \"b\", \"c\"]\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q37. What is the inferred type of x?\n```swift\nlet x = [\"a\", \"b\", \"c\"]\n```",
         "options": [
-            "ft",
-            "= [\"a\", \"b\", \"c\"]",
-            "",
-            "`String[]`"
+            "`String[]`",
+            "`Array<String>`",
+            "`Set<String>`",
+            "`Array<Character>`\n```swift\nlet nThings: [Any] = [1, \"2\", \"three\"]\nlet oThings = nThings.reduce(\"\") { \"\\($0)\\($1)\" }\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q38. What is the value of `oThings` after this code is executed?\n```swift\nlet nThings: [Any] = [1, \"2\", \"three\"]\nlet oThings = nThings.reduce(\"\") { \"\\($0)\\($1)\" }\n```",
         "options": [
-            "ft",
-            "hings: [Any] = [1, \"2\", \"three\"]",
-            "hings = nThings.reduce(\"\") { \"\\($0)\\($1)\" }",
-            ""
+            "11212three",
+            "115",
+            "12three",
+            "Nothing, this code is invalid."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q39. How would you call a function that throws errors and also returns a value?",
@@ -395,29 +395,29 @@
             "`!try`",
             "`try?`",
             "`try!`",
-            "`?try`"
+            "`?try`\n```swift\nprotocol TUI {\n  func add(x1 : Int, x2 : Int) -> Int {\n    return x1 + x2\n  }\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q40. What is wrong with this code?\n```swift\nprotocol TUI {\n  func add(x1 : Int, x2 : Int) -> Int {\n    return x1 + x2\n  }\n}\n```",
         "options": [
-            "ft",
-            "ol TUI {",
-            " add(x1 : Int, x2 : Int) -> Int {",
-            "turn x1 + x2"
+            "Protocol functions cannot have return types.",
+            "Protocol functions cannot have implementations.",
+            "Nothing is wrong with it.",
+            "`add` is a reserved keyword.\n```swift\nclass Car {\n  var wheels: Int = 4\n  let doors = 4\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q41. In this code, what are `wheels` and `doors` examples of?\n```swift\nclass Car {\n  var wheels: Int = 4\n  let doors = 4\n}\n```",
         "options": [
-            "ft",
-            "Car {",
-            "wheels: Int = 4",
-            "doors = 4"
+            "class members",
+            "This code is invalid.",
+            "class fields",
+            "class properties"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q42. How do you designated a failable initializer?",
@@ -425,39 +425,39 @@
             "You cannot",
             "deinit",
             "`init?`",
-            "init"
+            "init\n```swift\nlet dbl = Double.init(\"5a\")\nprint(dbl ?? \".asString()\")\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q43. What is printed when this code is executed?\n```swift\nlet dbl = Double.init(\"5a\")\nprint(dbl ?? \".asString()\")\n```",
         "options": [
-            "ft",
-            "l = Double.init(\"5a\")",
-            "dbl ?? \".asString()\")",
-            ""
+            "five",
+            "5a",
+            "`.asString()`",
+            "5\n```swift\nfunc add(this x: Int, toThat y: Int)->{}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q44. In the function below, what are `this` and `toThat` examples of?\n```swift\nfunc add(this x: Int, toThat y: Int)->{}\n```",
         "options": [
-            "ft",
-            "dd(this x: Int, toThat y: Int)->{}",
-            "",
-            "none of these answers"
+            "none of these answers",
+            "local terms",
+            "argument labels",
+            "parameters names\n```swift\nfor (key, value) in [1: \"one\", 2: \"two\"]{\n  print(key, value)\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q45. What is wrong with this code?\n```swift\nfor (key, value) in [1: \"one\", 2: \"two\"]{\n  print(key, value)\n}\n```",
         "options": [
-            "ft",
-            "ey, value) in [1: \"one\", 2: \"two\"]{",
-            "t(key, value)",
-            ""
+            "The interaction source is invalid",
+            "The interaction variable is invalid",
+            "There is nothing wrong with this code",
+            "The comma in the print is misplaced"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q46. Which of these choices is associated with unit testing?",
@@ -465,89 +465,89 @@
             "XCTest",
             "all of these answers",
             "@testable",
-            "XCAssert"
+            "XCAssert\n```swift\nclass Square{\n  var height: Int = 0\n  var width : Int {\n    return height\n  }\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q47. In the code below, what is width an example of?\n```swift\nclass Square{\n  var height: Int = 0\n  var width : Int {\n    return height\n  }\n}\n```",
         "options": [
-            "ft",
-            "Square{",
-            "height: Int = 0",
-            "width : Int {"
+            "This code contains error",
+            "a closure",
+            "a computed property",
+            "lazy loading\n```swift\nlet vals = (\"val\", 1)\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q48. What data type is this an example of?\n```swift\nlet vals = (\"val\", 1)\n```",
         "options": [
-            "ft",
-            "ls = (\"val\", 1)",
-            "",
-            "a dictionary"
+            "a dictionary",
+            "a tuple",
+            "an optional",
+            "This code contains error\n```swift\nvar x = 5\nx = 10.0\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q49. What is wrong with this code?\n```swift\nvar x = 5\nx = 10.0\n```",
         "options": [
-            "ft",
-            "= 5",
-            ".0",
-            ""
+            "You cannot assign a Double to a variable of type Int",
+            "x is undefined",
+            "x is a constant",
+            "x has no type\n```swift\nvar items = [\"a\":1, \"b\":2, \"c\":\"test\"] as [String: Any]\nitems[\"c\"] = nil\nprint(items[\"c\"] as Any)\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q50. What will this code print to the console?\n```swift\nvar items = [\"a\":1, \"b\":2, \"c\":\"test\"] as [String: Any]\nitems[\"c\"] = nil\nprint(items[\"c\"] as Any)\n```",
         "options": [
-            "ft",
-            "ems = [\"a\":1, \"b\":2, \"c\":\"test\"] as [String: Any]",
-            "\"c\"] = nil",
-            "items[\"c\"] as Any)"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q51. What is wrong with this code?\n```swift\nlet val = 5.0 + 10\n```",
-        "options": [
-            "ft",
-            "l = 5.0 + 10",
-            "",
-            "There is nothing wrong with this code"
+            "Any",
+            "test",
+            "1,2,3",
+            "nil\n```swift\nlet val = 5.0 + 10\n```"
         ],
         "_ps": 3
     },
     {
+        "question": "Q51. What is wrong with this code?\n```swift\nlet val = 5.0 + 10\n```",
+        "options": [
+            "There is nothing wrong with this code",
+            "val is a constant and cannot be changed",
+            "5.0 and 10 are different types",
+            "There is no semicolon\n```swift\nstruct Test{\n  var score: Int\n  var date: Date\n}\n```"
+        ],
+        "_ps": 0
+    },
+    {
         "question": "Q52. How many parameters does the initializer for Test have?\n```swift\nstruct Test{\n  var score: Int\n  var date: Date\n}\n```",
         "options": [
-            "ft",
-            " Test{",
-            "score: Int",
-            "date: Date"
+            "zero",
+            "This code contains an error",
+            "two",
+            "Structs do not have initializers\n```swift\nlet x = try? String.init(\"test\")\nprint(x)\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q53. What prints to the console when executing this code?\n```swift\nlet x = try? String.init(\"test\")\nprint(x)\n```",
         "options": [
-            "ft",
-            "= try? String.init(\"test\")",
-            "x)",
-            ""
+            "nil",
+            "Nothing - this code contains an error",
+            "Optional(\"test\")",
+            "test\n```swift\nvar vals = [1,2,3]\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q54. How can you sort this array?\n```swift\nvar vals = [1,2,3]\n```",
         "options": [
-            "ft",
-            "ls = [1,2,3]",
-            "",
-            "`vals.sort { $0 < $1 }`"
+            "`vals.sort { $0 < $1 }`",
+            "`vals.sort { (s1, s2) in s1 < s2 }`",
+            "`vals.sort(by: <)`",
+            "all of these answers"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q55. DispatchQueue.main.async takes a block that will be",
@@ -575,138 +575,137 @@
             "String?",
             "Optional[String]",
             "[String]?",
-            "?String"
+            "?String\n```swift\nfor i in [\"0\", \"1\"]{\n  print(i)\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q58. How many times this code will be executed? —OR— How many times will this loop be performed?\n```swift\nfor i in [\"0\", \"1\"]{\n  print(i)\n}\n```",
         "options": [
-            "ft",
-            "in [\"0\", \"1\"]{",
-            "t(i)",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q59. What does this code print?\n```swift\nlet names = [\"Bear\", \"Tony\", \"Svante\"]\nprint(names[1]+\"Bear\")\n```",
-        "options": [
-            "ft",
-            "mes = [\"Bear\", \"Tony\", \"Svante\"]",
-            "names[1]+\"Bear\")",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q60. What is true of this code?\n```swift\nlet name: String?\n```",
-        "options": [
-            "ft",
-            "me: String?",
-            "",
-            "name can hold only a string value."
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q61. What is the value of `val` after this code is executed?\n```swift\nlet i = 5\nlet val = i * 6.0\n```",
-        "options": [
-            "ft",
-            "= 5",
-            "l = i * 6.0",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q62. What does this code print?\n```swift\nenum Positions : Int {\n  case first, second, third, other\n}\nprint (Positions.other.rawValue)\n```",
-        "options": [
-            "ft",
-            "ositions : Int {",
-            " first, second, third, other",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q63. What is printed to the console when this code is executed?\n```swift\n\"t\".forEach { (char) in\n    print(char)\n}\n```",
-        "options": [
-            "ft",
-            "rEach { (char) in",
-            "int(char)",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q64. What prints when this code is executed?\n```swift\nlet s1 = [\"1\", \"2\", \"3\"]\n    .filter { $0 > \"0\" }\n    .sorted { $0 > $1 }\nprint(s1)\n```",
-        "options": [
-            "ft",
-            " = [\"1\", \"2\", \"3\"]",
-            "ilter { $0 > \"0\" }",
-            "orted { $0 > $1 }"
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q65. What enumeration feature allows them to store case-specific data?\n(Question does not make that much sense though. )",
-        "options": [
-            "ion does not make that much sense though. )",
-            "associated values",
-            "integral values",
-            "raw values"
+            "one",
+            "two",
+            "three",
+            "This code does not compile\n```swift\nlet names = [\"Bear\", \"Tony\", \"Svante\"]\nprint(names[1]+\"Bear\")\n```"
         ],
         "_ps": 1
     },
     {
+        "question": "Q59. What does this code print?\n```swift\nlet names = [\"Bear\", \"Tony\", \"Svante\"]\nprint(names[1]+\"Bear\")\n```",
+        "options": [
+            "1Bear",
+            "BearBear",
+            "TonyBear",
+            "Nothing, this code is invalid\n```swift\nlet name: String?\n```"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q60. What is true of this code?\n```swift\nlet name: String?\n```",
+        "options": [
+            "name can hold only a string value.",
+            "name can hold either a string or nil value.",
+            "Optional values cannot be `let` constants.",
+            "Only non-empty string variables can be stored in name.\n```swift\nlet i = 5\nlet val = i * 6.0\n```"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q61. What is the value of `val` after this code is executed?\n```swift\nlet i = 5\nlet val = i * 6.0\n```",
+        "options": [
+            "This code is invalid.",
+            "6",
+            "30",
+            "0\n```swift\nenum Positions : Int {\n  case first, second, third, other\n}\nprint (Positions.other.rawValue)\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q62. What does this code print?\n```swift\nenum Positions : Int {\n  case first, second, third, other\n}\nprint (Positions.other.rawValue)\n```",
+        "options": [
+            "3",
+            "0",
+            "other",
+            "nil\n```swift\n\"t\".forEach { (char) in\n    print(char)\n}\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q63. What is printed to the console when this code is executed?\n```swift\n\"t\".forEach { (char) in\n    print(char)\n}\n```",
+        "options": [
+            "nil",
+            "Nothing, since the code contains an error",
+            "t",
+            "zero\n```swift\nlet s1 = [\"1\", \"2\", \"3\"]\n    .filter { $0 > \"0\" }\n    .sorted { $0 > $1 }\nprint(s1)\n```"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q64. What prints when this code is executed?\n```swift\nlet s1 = [\"1\", \"2\", \"3\"]\n    .filter { $0 > \"0\" }\n    .sorted { $0 > $1 }\nprint(s1)\n```",
+        "options": [
+            "[]",
+            "[\"3\", \"2\", \"1\"]",
+            "[321]",
+            "[\"1\", \"2\", \"3\"]\n(Question does not make that much sense though. )"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q65. What enumeration feature allows them to store case-specific data?\n(Question does not make that much sense though. )",
+        "options": [
+            "associated values",
+            "integral values",
+            "raw values",
+            "custom values\n```swift\nclass AmP : MMM, AOM {\n  }\n```"
+        ],
+        "_ps": 0
+    },
+    {
         "question": "Q66. In the code below, AOM must be a(n)?\n```swift\nclass AmP : MMM, AOM {\n  }\n```",
         "options": [
-            "ft",
-            "AmP : MMM, AOM {",
-            "",
-            ""
+            "class",
+            "protocol",
+            "enumeration",
+            "struct\n```swift\nlet numbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q67. What is the value of numbers in the code below?\n```swift\nlet numbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}\n```",
         "options": [
-            "ft",
-            "mbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}",
-            "",
-            "[1,3,5]"
+            "[1,3,5]",
+            "[]",
+            "[2,4,6]",
+            "nil\n```swift\nlet vals = [\"a\", 1, \"Hi\"]\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q68. What is the type of `vals` in this code?\n```swift\nlet vals = [\"a\", 1, \"Hi\"]\n```",
         "options": [
-            "ft",
-            "ls = [\"a\", 1, \"Hi\"]",
-            "",
-            "Array(char)"
+            "Array(char)",
+            "[Any]",
+            "Array<char>",
+            "[Generic]\n```swift\nlet vt = (name: \"ABC\", val: 5)\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q69. How can you extract val to `x` in tuple `vt`\n```swift\nlet vt = (name: \"ABC\", val: 5)\n```",
         "options": [
-            "ft",
-            " = (name: \"ABC\", val: 5)",
-            "",
-            "let x = vt.1"
+            "let x = vt.1",
+            "all of these answers",
+            "let x = vt.val",
+            "let (`_`, x) = vt\n```swift\nclass Person {\n    var name: String\n    var address: String\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q70. What is wrong with this code?\n```swift\nclass Person {\n    var name: String\n    var address: String\n}\n```",
         "options": [
-            "ft",
-            "Person {",
-            "r name: String",
-            "r address: String"
+            "var `name`is not formatted correctly.",
+            "`Person` has no initialisers.",
+            "'Person` has no base class."
         ],
-        "_ps": -1
+        "_ps": 1
     }
 ]

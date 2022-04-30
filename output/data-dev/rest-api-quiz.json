@@ -85,7 +85,7 @@
             "`OpenAPI (Swagger)`",
             "`WADL`",
             "`WSDL`",
-            "`OAuth`"
+            "`OAuth`\n[OpenAPI Specification](https://swagger.io/specification/)"
         ],
         "_ps": 0
     },
@@ -95,7 +95,7 @@
             "`SUBMIT`",
             "`WRITE`",
             "`POST`",
-            "`CREATE`"
+            "`CREATE`\n[HTTP request methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)"
         ],
         "_ps": 2
     },
@@ -115,7 +115,7 @@
             "`409 Conflict`",
             "`400 Bad Request`",
             "`406 Not Acceptable`",
-            "`405 Method Not Allowed`"
+            "`405 Method Not Allowed`\n[Response Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)"
         ],
         "_ps": 3
     },
@@ -125,7 +125,7 @@
             "`an identify layer on top of OAuth 2.0`",
             "`the new name for SAML 3.0`",
             "`a modern replacement for API keys`",
-            "`an SSO competitor for OAuth 2.0`"
+            "`an SSO competitor for OAuth 2.0`\n[What is OpenID Connect?](https://openid.net/connect/)"
         ],
         "_ps": 0
     },
@@ -135,7 +135,7 @@
             "`flexible querying/responses`",
             "`more stable APIs`",
             "`compatible with more gateways`",
-            "`more secure by default`"
+            "`more secure by default`\n[GraphQL vs. REST](https://www.apollographql.com/blog/graphql/basics/graphql-vs-rest/)"
         ],
         "_ps": 0
     },
@@ -165,7 +165,7 @@
             "`application/json`",
             "`application/json_version2`",
             "`text/html`",
-            "`application/vnd.myapp.v2+json`"
+            "`application/vnd.myapp.v2+json`\n[Reference](https://blog.allegro.tech/2015/01/Content-headers-or-how-to-version-api.html)"
         ],
         "_ps": 3
     },
@@ -175,7 +175,7 @@
             "`A token is encrypted.`",
             "`A token is encoded.`",
             "`A token is scoped to the use case.`",
-            "`A token can be shared between systems.`"
+            "`A token can be shared between systems.`\n[How to easily secure your APIs with API keys and OAuth](https://apifriends.com/api-security/api-keys-oauth/)"
         ],
         "_ps": 2
     },
@@ -215,7 +215,7 @@
             "`token`",
             "`scope`",
             "`claim`",
-            "`back channel`"
+            "`back channel`\n[OAuth Scopes](https://oauth.net/2/scope/)"
         ],
         "_ps": 1
     },
@@ -235,7 +235,7 @@
             "`no-proxy`",
             "`client-only`",
             "`restricted`",
-            "`private`"
+            "`private`\n[reference](https://www.digitalocean.com/community/tutorials/web-caching-basics-terminology-http-headers-and-caching-strategies)"
         ],
         "_ps": 3
     },
@@ -245,7 +245,7 @@
             "`Authorization Code Grant`",
             "`Client Credentials Grant`",
             "`Implicit Grant`",
-            "`Authentication Grant`"
+            "`Authentication Grant`\n[Reference:](https://datatracker.ietf.org/doc/html/rfc6749#section-4.4.3)"
         ],
         "_ps": 0
     },
@@ -375,7 +375,7 @@
             "to share user profile information",
             "to update an API configuration",
             "to keep a web session active",
-            "to retrieve an access token"
+            "to retrieve an access token\n[Understanding Refresh Tokens](https://auth0.com/learn/refresh-tokens/)"
         ],
         "_ps": 3
     },
@@ -465,7 +465,7 @@
             "`403`",
             "`404`",
             "`401`",
-            "`405`"
+            "`405`\n[Response Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)"
         ],
         "_ps": 2
     },
@@ -505,7 +505,7 @@
             "`Expires: 1 minute`",
             "`Cache-Control: max-age=60`",
             "`Expires: 1 January 2020`",
-            "`Cache-Expires: max-age=60`"
+            "`Cache-Expires: max-age=60`\n[Cache Control Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)"
         ],
         "_ps": 1
     },
@@ -525,7 +525,7 @@
             "`200`",
             "`201`",
             "`204`",
-            "`202`"
+            "`202`\n[Response Codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses)"
         ],
         "_ps": 1
     },
@@ -535,7 +535,7 @@
             "AWS Lambda",
             "downloading open-source software",
             "Serverless",
-            "JavaScript on a webpage"
+            "JavaScript on a webpage\n[Code on Demand](https://en.wikipedia.org/wiki/Code_on_demand)"
         ],
         "_ps": 3
     },
@@ -545,7 +545,7 @@
             "/companies/employees/{companyId}/{employeeId}",
             "/company/{companyId}/employees/{employeeId}",
             "/companies/{companyId}/employees/{employeeId}",
-            "/companies/{companyId}/employee/{employeeId}"
+            "/companies/{companyId}/employee/{employeeId}\n[Resource Naming](https://restfulapi.net/resource-naming/)"
         ],
         "_ps": 2
     },
@@ -575,7 +575,7 @@
             "DELETE",
             "GET",
             "PUT",
-            "POST"
+            "POST\n[Idempotency](https://restfulapi.net/idempotent-rest-apis/)"
         ],
         "_ps": 3
     },
@@ -585,7 +585,7 @@
             "Uniform Interface",
             "Cacheable",
             "Stateless",
-            "Client-Server"
+            "Client-Server\n[REST Architectural Constraints](https://restfulapi.net/rest-architectural-constraints/)"
         ],
         "_ps": 2
     },
@@ -624,9 +624,8 @@
         "options": [
             "200 OK",
             "204 No Content",
-            "201 Created",
-            "202 Accepted"
+            "201 Created"
         ],
-        "_ps": 3
+        "_ps": -1
     }
 ]

@@ -210,12 +210,12 @@
         "_ps": 2
     },
     {
-        "question": "Q22. Dimensions in a drawing can be spaced automatically with the Adjust Space (DIMSPACE) command. You can specify a distance between spaced dimensions or you can use the Auto option. What does Auto do to the dimensions being spaced?\n#### Q23. There is often a need to hide or isolate selected objects, especially in complex drawings when detailing geometry. Where would you find the Isolate menu option—which is not on the ribbon?",
+        "question": "Q22. Dimensions in a drawing can be spaced automatically with the Adjust Space (DIMSPACE) command. You can specify a distance between spaced dimensions or you can use the Auto option. What does Auto do to the dimensions being spaced?",
         "options": [
             "calculates the Auto space as one and a half times (1.5x) the text height of the text in the dimension style being used",
             "calculates the Auto space as twice the distance between the first and second dimensions selected for spacing",
             "calculates the Auto space as three times (3x) the text height of the text in the dimension style being used",
-            "23. There is often a need to hide or isolate selected objects, especially in complex drawings when detailing geometry. Where would you find the Isolate menu option—which is not on the ribbon?"
+            "the status bar"
         ],
         "_ps": 1
     },
@@ -300,14 +300,14 @@
         "_ps": -1
     },
     {
-        "question": "Q31. Single-line text can be added anywhere in a drawing. If middle-center justified text with height of 0 was required in model space that was 300 millimeters high, what workflow would you use?\n1. Right-click and select Justify.\n2. Select MC.\n3. Pick a middle point.\n4. Type text.\n5. Specify the height.\n6. Specify the rotation angle.\n1. Right-click and select Justify.\n2. Select MC.\n3. Specify the height.\n4. Specify the rotation angle.\n5. Pick a middle point.\n6. Type text.\n1. Right-click and select Justify.\n2. Select MC.\n3. Specify the height.\n4. Specify the rotation angle.\n5. Pick a middle point.\n6. Type text.",
+        "question": "Q31. Single-line text can be added anywhere in a drawing. If middle-center justified text with height of 0 was required in model space that was 300 millimeters high, what workflow would you use?",
         "options": [
-            "",
-            "ht-click and select Justify.",
-            "ect MC.",
-            "k a middle point."
+            "1. Right-click and select Justify.\n2. Select MC.\n3. Pick a middle point.\n4. Type text.\n5. Specify the height.\n6. Specify the rotation angle.",
+            "1. Right-click and select Justify.\n2. Select MC.\n3. Specify the height.\n4. Specify the rotation angle.\n5. Pick a middle point.\n6. Type text.",
+            "1. Right-click and select Justify.\n2. Select MC.\n3. Specify the height.\n4. Specify the rotation angle.\n5. Pick a middle point.\n6. Type text.",
+            "1. Right-click and select Justify.\n2. Select MC.\n3. Pick a middle point.\n4. Drag the mouse to set the height.\n5. Drag the mouse to set the rotation angle.\n6. Type text."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q32. A circle has five grips: a center grip and four quadrant grips. When using the Tan Tan Radius (TTR) method to draw a circle in a right-angled corner, which of the two quadrant grips will be touching other objects?",
@@ -405,19 +405,19 @@
             "polar—relative to the last center point selected",
             "absolute—relative to the origin 0,0",
             "relative—relative to the last point selected",
-            "angled—relative to the last angle of the last object selected"
+            "angled—relative to the last angle of the last object selected\n![q42](images/q42_autocad.png)"
         ],
         "_ps": 1
     },
     {
         "question": "Q42. When working with objects in your drawings, you normally define their properties via their respective layers. However, you can define individual object properties with the Properties panel on the Home tab of the AutoCAD ribbon. Individual color and linetype can be defined there, along with what other typical object property?\n![q42](images/q42_autocad.png)",
         "options": [
-            "(images/q42_autocad.png)",
             "description",
             "plottable or not plottable",
-            "linetype scale"
+            "linetype scale",
+            "lineweight"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q43. The Text Align (TEXTALIGN) command does more than just align text vertically or horizontally. Which TEXTALIGN setting allows you to set up evenly aligned text to a defined spacing in a drawing?",
@@ -735,27 +735,27 @@
             "C (clockwise)",
             "Alt",
             "D (direction)",
-            "Ctrl"
+            "Ctrl\n![q75](images/q75_autocad.png)"
         ],
         "_ps": 3
     },
     {
         "question": "Q75. When using the POLYGON command in AutoCAD, you can create an inscribed polygon and a circumscribed polygon. What other type of polygon is available?\n![q75](images/q75_autocad.png)",
         "options": [
-            "(images/q75_autocad.png)",
             "side polygon",
             "polyline polygon",
-            "line polygon"
+            "line polygon",
+            "edge polygon\n![q76](images/q76_autocad.png)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q76. When using blocks in a drawing, a selected block displays only one grip: the insertion point. How would you get a block to display all of its associated grips?\n![q76](images/q76_autocad.png)",
         "options": [
-            "(images/q76_autocad.png)",
             "Change the GRIPBLOCK system variable to 1.",
             "Select the block and change it in the Properties palette.",
-            "Change the GRIPBLOCK system variable to 0."
+            "Change the GRIPBLOCK system variable to 0.",
+            "Select the block and change it in the right-click shortcut menu."
         ],
         "_ps": -1
     },
@@ -774,8 +774,7 @@
         "options": [
             "Hold down Alt (Windows) or Option (Mac) and select the four items.",
             "Hold down CTRL (Windows) or Command (Mac) and select the four items.",
-            "Simply select them.",
-            "Hold down Shift and select the four items."
+            "Simply select them."
         ],
         "_ps": -1
     }

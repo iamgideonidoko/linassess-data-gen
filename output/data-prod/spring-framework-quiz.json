@@ -5,7 +5,7 @@
             "Filters are called before a request hits the DispatcherServlet. They allow for interception-style, chained processing of web requests for security, timeouts, and other purposes.",
             "Filters are used with a checksum algorithm that will filter invalid bytes out of a byte stream request body and allow for processing of HTTP requests from the DispatcherRequestServlet.",
             "Filters are used with a checksum algorithm that will filter invalid bytes out of an octet stream a multipart upload and allow for chained processing of WebDispatcherServlet requests.",
-            "Filters are used to validate request parameters out of the byte stream request body and allow for processing of requests from the DispatcherRequestServlet."
+            "Filters are used to validate request parameters out of the byte stream request body and allow for processing of requests from the DispatcherRequestServlet.\n[HandlerInterceptors vs. Filters in Spring MVC](https://www.baeldung.com/spring-mvc-handlerinterceptor-vs-filter). Also there is no such thing as DispatcherRequestServlet in Spring."
         ],
         "_ps": 0
     },
@@ -105,29 +105,29 @@
             "It's a transaction attribute configured by `spring.security.transactions.xml` config file that uses Spring's transaction implementation and validation code.",
             "It's a transaction that must actively validate by the bytecode of a transaction using Spring's `TransactionBytecodeValidator` class. Default Transaction behavior rolls back on validation exception but commits on proper validation",
             "It creates a proxy that implements the same interface(s) as the annotated class, allowing Spring to inject behaviors before, after, or around method calls into the object being proxied.",
-            "It's a transaction that must be actively validated by Spring's `TransactionValidator` class using Spring's transaction validation code. Default Transaction behavior rolls back on validation exception."
+            "It's a transaction that must be actively validated by Spring's `TransactionValidator` class using Spring's transaction validation code. Default Transaction behavior rolls back on validation exception.\n```java\n@SpringBootApplication\npublic class App {\n     public static void main(String args[]) {\n          SpringApplication.run(App.class, args);\n          System.out.println(\"startup\");\n     }\n}\npublic class Print implements InitializingBean {\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(\"init\");\n     }\n}\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q12. Which is a valid example of the output from this code (ignoring logging statements) ?",
+        "question": "Q12. Which is a valid example of the output from this code (ignoring logging statements) ?\n```java\n@SpringBootApplication\npublic class App {\n     public static void main(String args[]) {\n          SpringApplication.run(App.class, args);\n          System.out.println(\"startup\");\n     }\n}\npublic class Print implements InitializingBean {\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(\"init\");\n     }\n}\n```",
         "options": [
-            "a",
-            "gBootApplication",
-            " class App {",
-            "ublic static void main(String args[]) {"
+            "Nothing will print",
+            "startup\n      init",
+            "init",
+            "startup\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     @Autowired\n     static SimpleDateFormat formatter;\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(context.containsBean(\"formatter\") + \" \");\n          System.out.println(context.getBean(\"formatter\").getClass());\n          System.out.println(formatter.getClass());\n          System.out.println(context.getClass());\n     }\n}\n@Configuration\nclass TestConfig {\n     @Bean\n     public SimpleDateFormat formatter() {\n          return new SimpleDateFormat();\n     }\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q13. Which println statement would you remove to stop this code throwing a null pointer exception?",
+        "question": "Q13. Which println statement would you remove to stop this code throwing a null pointer exception?\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     @Autowired\n     static SimpleDateFormat formatter;\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(context.containsBean(\"formatter\") + \" \");\n          System.out.println(context.getBean(\"formatter\").getClass());\n          System.out.println(formatter.getClass());\n          System.out.println(context.getClass());\n     }\n}\n@Configuration\nclass TestConfig {\n     @Bean\n     public SimpleDateFormat formatter() {\n          return new SimpleDateFormat();\n     }\n}\n```",
         "options": [
-            "a",
-            "nent",
-            " class Test implements InitializingBean {",
-            "Autowired"
+            "formatter.getClass()",
+            "context.getClass()",
+            "context.getBean(\"formatter\").getClass()",
+            "context.containsBean(\"formatter\")"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q14. What is the root interface for accessing a Spring bean container?",
@@ -145,19 +145,19 @@
             "@Secured",
             "@RequiresRole",
             "@RestrictedTo",
-            "@SecurePath"
+            "@SecurePath\n```java\n@RestController\npublic class SampleController {\n     @RequestMapping(\"/map\")\n     public String map(@RequestParam(\"bar\") String foo, @RequestParam(\"foo\") String bar) {\n          return bar + foo;\n     }\n}\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q16. What is the result of calling the map controller method using the HTTP request GET localhost:8080/map?foo=foo&bar=bar ?",
+        "question": "Q16. What is the result of calling the map controller method using the HTTP request GET localhost:8080/map?foo=foo&bar=bar ?\n```java\n@RestController\npublic class SampleController {\n     @RequestMapping(\"/map\")\n     public String map(@RequestParam(\"bar\") String foo, @RequestParam(\"foo\") String bar) {\n          return bar + foo;\n     }\n}\n```",
         "options": [
-            "a",
-            "ontroller",
-            " class SampleController {",
-            "RequestMapping(\"/map\")"
+            "An InvalidParameterNameMappingException is thrown at runtime.",
+            "barfoo",
+            "foobar",
+            "A status code of 400 Bad Request is returned."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q17. What is the purpose of the @Lazy annotation and why would you use it?",
@@ -265,7 +265,7 @@
             "This annotation takes the String literal passed into the annotation as a parameter and automatically generates all the code for your application as per the passed in template parameter.",
             "This compound annotation applies the @Bootable, @Springify, and @StandardConfig annotations that launch a CLI tool after launching the Spring Boot WAR file that will guide you through a series of prompts to set up your app.",
             "This annotation scans the provided spring-boot-config-construction.yaml file in your root directory and automatically generates all the code for your application as defined in the YAML file.",
-            "28. How does Spring Data facilitate queries against a datastore?"
+            "Queries are explicitly coded in repository implementations using the Spring Data CriteriaBuilder."
         ],
         "_ps": 1
     },
@@ -295,7 +295,7 @@
             "It's the servlet filter chain proxy that handles all requests to the route defined in spring.security.xml. All calls to the filter proxy are forwarded to the ErrorDispatcherServlet.",
             "It's the servlet filter chain that handles requests to the route defined in spring.security.factories. All calls to the filter proxy y are forwarded to the ErrorServlet.",
             "It's the servlet filter proxy delegating to a filter bean specified in web.xml. All calls to the filter proxy will be delegated to that servlet filter bean.",
-            "It's the web servlet daemon filter proxy that delegates to a bean specified in spring.security.factories. All calls to the filter proxy that do not contain a proper route will return an error."
+            "It's the web servlet daemon filter proxy that delegates to a bean specified in spring.security.factories. All calls to the filter proxy that do not contain a proper route will return an error.\n[Overview and Need for DelegatingFilterProxy in Spring](https://www.baeldung.com/spring-delegating-filter-proxy)"
         ],
         "_ps": 2
     },
@@ -305,7 +305,7 @@
             "It helps monitor and manage a Spring Boot application by providing endpoints such as health checks, auditing, metrics gathering, and HTTP tracing.",
             "It provides out-of-the-box functionality that integrates with third-party metrics platforms to automatically scale up and down the number of threads in threadpools.",
             "It's a CLI that allows you to modify the configuration of a running Spring Boot application without the need for restarting or downtime.",
-            "It provides out-of-the-box functionality that integrates wiltr?third-party metrics platforms to automatically scale up and down the number of instances of the Spring Boot application."
+            "It provides out-of-the-box functionality that integrates wiltr?third-party metrics platforms to automatically scale up and down the number of instances of the Spring Boot application.\n[Spring Boot Actuator](https://www.baeldung.com/spring-boot-actuators)"
         ],
         "_ps": 0
     },
@@ -315,7 +315,7 @@
             "It introspects the local machine and automatically provisions resources based on certain contextual configuration files.",
             "It automatically generates comments for annotated classes on autowired dependencies to provide additional context about dependencies.",
             "It defines metadata at the class-level to determine how to load or configure an ApplicationContext in Spring integration tests.",
-            "It automatically generates JavaDocs for annotated classes to provide additional context about the purpose of the class."
+            "It automatically generates JavaDocs for annotated classes to provide additional context about the purpose of the class.\n[@ContextConfiguration Example in Spring Test](https://www.concretepage.com/spring-5/contextconfiguration-example-spring-test)"
         ],
         "_ps": 2
     },
@@ -395,19 +395,19 @@
             "any of these answers",
             "Annotate a Setter method with the @Autowired annotation.",
             "Specify parameters in the constructor with an optional @Autowired annotation.",
-            "Use field injection."
+            "Use field injection.\n```java\nmy.property=Test\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q41. Consider the properties file application.properties. How would you load the property my.property?",
+        "question": "Q41. Consider the properties file application.properties. How would you load the property my.property?\n```java\nmy.property=Test\n```",
         "options": [
-            "a",
-            "perty=Test",
-            "",
-            "A"
+            "A\n```java\n@Prop(\"${my.property}\")\nprivate String val;\n```",
+            "B\n```java\n@GetVal(\"my.property\")\nprivate String val;\n```",
+            "C\n```java\n@GetProperty(\"${my.property}\")\nprivate String val;\n```",
+            "D\n```java\n@Value(\"${my.property}\")\nprivate String val;\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q42. What is a bean in the context of Spring?",
@@ -425,19 +425,19 @@
             "application properties located in an application.properties file outside the application.jar",
             "@PropertySource annotations on configuration classes",
             "profile-specific application-{profile}.properties files",
-            "application properties located in an application.properties file inside the application.jar"
+            "application properties located in an application.properties file inside the application.jar\n![Alt text](https://usaupload.com/cache/plugins/filepreviewer/69009/c5e6eedce33819dd3b16bff7590d244b0fedf52561323c444b4b63e19e61e2e8/1100x800_cropped.jpg 'Spring bean lifecycle')"
         ],
         "_ps": 2
     },
     {
-        "question": "Q44. In the Spring Bean lifecycle pictured, what should the third step of the process be?",
+        "question": "Q44. In the Spring Bean lifecycle pictured, what should the third step of the process be?\n![Alt text](https://usaupload.com/cache/plugins/filepreviewer/69009/c5e6eedce33819dd3b16bff7590d244b0fedf52561323c444b4b63e19e61e2e8/1100x800_cropped.jpg 'Spring bean lifecycle')",
         "options": [
-            "text](https://usaupload.com/cache/plugins/filepreviewer/69009/c5e6eedce33819dd3b16bff7590d244b0fedf52561323c444b4b63e19e61e2e8/1100x800_cropped.jpg 'Spring bean lifecycle')",
             "Persist bean definitions into a database",
             "Instance bean objects",
-            "De-normalize bean definition"
+            "De-normalize bean definition",
+            "Use reflection to inject bean objects into the servlet container"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q45. What Spring Boot property is used to set the logging level for the entire application in the application.properties file?",
@@ -445,7 +445,7 @@
             "logging.settings",
             "log.level",
             "root.logger.level",
-            "logging.level.root"
+            "logging.level.root\n[Logging in Spring Boot](https://www.baeldung.com/spring-boot-logging)"
         ],
         "_ps": 3
     },
@@ -475,19 +475,19 @@
             "It ensures that transactions that are commited to the database are propagated to all the shards of a clustered database system.",
             "None of these answers is correct.",
             "It guarantees that transactions that are submitted to the database cluster are propagated to all the nodes of a clustered database cloud.",
-            "It enforces that a logical transaction scope is created for each method that determines rollback-only status, with an outer transaction scope being logically independent from the inner transaction scope."
+            "It enforces that a logical transaction scope is created for each method that determines rollback-only status, with an outer transaction scope being logically independent from the inner transaction scope.\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     private TestService service;\n     public void setService(TestService service) {\n          this.service = service;\n     }\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.print(context.containsBean(\"testService\") + \" \");\n          System.out.println(service.getClass());\n     }\n}\n@Service\nclass TestService {}\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q49. What is printed when this code is run as a @SpringBootApplication?",
+        "question": "Q49. What is printed when this code is run as a @SpringBootApplication?\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     private TestService service;\n     public void setService(TestService service) {\n          this.service = service;\n     }\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.print(context.containsBean(\"testService\") + \" \");\n          System.out.println(service.getClass());\n     }\n}\n@Service\nclass TestService {}\n```",
         "options": [
-            "a",
-            "nent",
-            " class Test implements InitializingBean {",
-            "Autowired"
+            "a null pointer stacktrace",
+            "true null",
+            "true package.TestService",
+            "false package.TestService\nExplanation: missing `@Autowired` on `private TestService service` or on the setter"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q50. To register a custom filter that applies only to certain URL patterns, you should remove the **\\_** annotation from the filter class and register a @Bean of type `_` in Spring @Configuration.",
@@ -495,19 +495,19 @@
             "@RequestMapping; WebRequest",
             "@Controller; URLFilter",
             "@WebFilter; ServletContextInitializer",
-            "@Component; FilterRegistrationBean"
+            "@Component; FilterRegistrationBean\n1. A predicate that matches join points.\n2. A point during the execution of a program, such as the execution of a method or the handling of an exception.\n3. An action taken by an aspect at a particular join point."
         ],
         "_ps": 3
     },
     {
-        "question": "Q51. What is the correct term for each definition bellow?",
+        "question": "Q51. What is the correct term for each definition bellow?\n1. A predicate that matches join points.\n2. A point during the execution of a program, such as the execution of a method or the handling of an exception.\n3. An action taken by an aspect at a particular join point.",
         "options": [
-            "redicate that matches join points.",
-            "oint during the execution of a program, such as the execution of a method or the handling of an exception.",
-            "action taken by an aspect at a particular join point.",
-            ""
+            "  ```\n  1. Pointcut\n  2. Advice\n  3. Join point\n  ```",
+            "  ```\n  1. Join point\n  2. Pointcut\n  3. Advice\n  ```",
+            "  ```\n  1. Advice\n  2. Pointcut\n  3. Join point\n  ```",
+            "  ```\n  1. Pointcut\n  2. Join point\n  3. Advice\n  ```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q52. How should passwords be stored?",
@@ -515,29 +515,29 @@
             "Passwords should be hashed using an adaptive one-way function such as bcrypt.",
             "Passwords can be stored in a BASE64 encoded format if they are stored in a private database.",
             "Passwords should be salted and hashed using the MD5 algorithm.",
-            "Passwords should be hashed using the SHA-1 algorithm, then salted to provide defence against rainbow table attacks."
+            "Passwords should be hashed using the SHA-1 algorithm, then salted to provide defence against rainbow table attacks.\nExplanation: sha-1 is not considered secure anymore: https://en.wikipedia.org/wiki/SHA-1#Attacks . With bcrypt you can select more complex hashes https://en.wikipedia.org/wiki/Bcrypt\n`@target(com.linkedin.annotation.Loggable)`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q53. What methods does this Pointcut expression reference?",
+        "question": "Q53. What methods does this Pointcut expression reference?\n`@target(com.linkedin.annotation.Loggable)`",
         "options": [
-            "et(com.linkedin.annotation.Loggable)`",
             "any join point where the target object has a @Loggable annotation",
             "any join point where the executing method has a @Loggable annotation",
-            "any method that implements Loggable"
+            "any method that implements Loggable",
+            "any method that extends Loggable\n[Difference between @target and @within (Spring AOP)](https://stackoverflow.com/questions/51124771/difference-between-target-and-within-spring-aop)\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     @Autowired\n     SimpleDateFormat formatter;\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(context.containsBean(\"formatter\"));\n          System.out.println(formatter.getClass());\n     }\n}\n@Configuration\nclass TestConfig2 {\n    @Bean\n    public final SimpleDateFormat formatter() {\n        return new SimpleDateFormat();\n    }\n}\n```"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
-        "question": "Q54. What is printed when this code is run as a @SpringBootApplication?",
+        "question": "Q54. What is printed when this code is run as a @SpringBootApplication?\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     @Autowired\n     SimpleDateFormat formatter;\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(context.containsBean(\"formatter\"));\n          System.out.println(formatter.getClass());\n     }\n}\n@Configuration\nclass TestConfig2 {\n    @Bean\n    public final SimpleDateFormat formatter() {\n        return new SimpleDateFormat();\n    }\n}\n```",
         "options": [
-            "a",
-            "nent",
-            " class Test implements InitializingBean {",
-            "Autowired"
+            "true <br />\n      &emsp; class java.text.SimpleDateFormat <br />",
+            "true <br />\n      &emsp; SimpleDateFormat <br />",
+            "a NullPointerException stacktrace",
+            "a BeanDefinitionParsingException stacktrace\nExplanation: `@Bean`-method in `@Configuration` must be overridable. Remove the `final` keyword to fix."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q55. What is the purpose of a web application context?",
@@ -575,19 +575,19 @@
             "none of these answers",
             "bean type",
             "bean size",
-            "bean name"
+            "bean name\n### Q59. What is the result of calling the map controller method using the following HTTP request?\n```\nPOST localhost:8080/map\n{\"b\" : \"b\", \"d\" : \"d\"}\n```\n```java\n@RestController\npublic class SampleController {\n    @RequestMapping(\"/map\")\n    public String map(@RequestBody SampleObject sampleObject) {\n        return sampleObject.getB() + sampleObject.getC();\n    }\n}\n```\n```java\npublic class SampleObject {\n    String b;\n    String c;\n    public String getB() { return b; }\n    public void setB() { this.b = b; }\n    public String getC() { return c; }\n    public void setC() { this.c = c; }\n}\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q60. What effect does private static have on the object service below?",
+        "question": "Q60. What effect does private static have on the object service below?\n```java\n@SpringBootApplication\npublic class Question14 {\n    @Autowired\n    private static Service service;\n    public static void main(String[] args) {\n        SpringApplication.run(Question14.class, args);\n    }\n}\n@Component\nclass Service {}\n```",
         "options": [
-            "a",
-            "gBootApplication",
-            " class Question14 {",
-            "utowired"
+            "The application will result in a compile error because you can't autowire a private variable.",
+            "The application will compile and run, and service will have its dependency correctly injected by Spring.",
+            "The application will compile and run, but service will not be autowired because you cannot autowire a static class member.",
+            "The application will result in a compile error because you attempted to autowire a static variable."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q61. What is a security context?",
@@ -605,19 +605,19 @@
             "Annotate a Controller class with `@Controller`. Then, using a specific naming convention for the methods, the `RequestMappingHandlerAdapter` will automatically configure your endpoints with the proper HTTP verb and URI.",
             "Register a controller as a bean. Then, using a specific naming convention for the methods, the `RequestMappingHandlerAdapter` will automatically configure your endpoints based on values from the YAML config file.",
             "Annotate a controller method with `@RequestMapping`, or a HTTP verb-specific annotation with a String URI pattern parameter (and other params as needed), which is supported through a `RequestMappingHandlerMapping/Adapter`.",
-            "Register a controller as a bean. Then, using a specific naming convention for the methods, the RequestMappingHandlerAdapter will automatically configure your endpoints based on values passed into the bean definition."
+            "Register a controller as a bean. Then, using a specific naming convention for the methods, the RequestMappingHandlerAdapter will automatically configure your endpoints based on values passed into the bean definition.\n[Spring RequestMapping](https://www.baeldung.com/spring-requestmapping). Spring does not use naming conventions for web requests (unlike e.g. for the Data Repositories)\n`execution(* setter*(..))`"
         ],
         "_ps": 2
     },
     {
-        "question": "Q63. What methods does the Pointcut expression below reference?",
+        "question": "Q63. What methods does the Pointcut expression below reference?\n`execution(* setter*(..))`",
         "options": [
-            "tion(* setter*(..))`",
             "any method with a name that contains the String \"setter\" with a single parameter",
             "any method with a name that begins with String \"setter\" with a single parameter",
-            "any method with a name that begins with String \"setter\""
+            "any method with a name that begins with String \"setter\"",
+            "any method with a name that contains the String \"setter\"\n[baeldung](https://www.baeldung.com/spring-aop-pointcut-tutorial#1-execution)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q64. What pattern does Spring MVC implement to delegate request processing to controllers?",
@@ -625,29 +625,29 @@
             "Front Controller",
             "Facade",
             "Reactive Chain",
-            "Observer"
+            "Observer\n`within(com.linkedin.service..*)`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q65. What methods does this Pointcut expression?",
+        "question": "Q65. What methods does this Pointcut expression?\n`within(com.linkedin.service..*)`",
         "options": [
-            "n(com.linkedin.service..*)`",
             "any join point only within the service package",
             "This is not valid Pointcut expression",
-            "any method in a class that autowires a service bean"
+            "any method in a class that autowires a service bean",
+            "any join point within the service package or one of its subpackages\n`/shutdown`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q66. What is the output from invoking this Actuator endpoint in an unmodified Spring Boot application generated using Spring Intializr?",
+        "question": "Q66. What is the output from invoking this Actuator endpoint in an unmodified Spring Boot application generated using Spring Intializr?\n`/shutdown`",
         "options": [
-            "down`",
             "The request would fail because the endpoint is disabled by default.",
             "The Spring Boot app would return a URL and a list of currently running processes, and ask you to confirm the shutdown command.",
-            "The Spring Boot app would return a URL to confirm the shutdown command."
+            "The Spring Boot app would return a URL to confirm the shutdown command.",
+            "The Spring Boot app would begin shutting down.\nReason: By default, all the endpoints are enabled in Spring Boot Application except /shutdown; this is, naturally, part of the Actuator endpoints."
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q67. How can you access the application context in a Spring integration test?",
@@ -655,7 +655,7 @@
             "The context is present in a ThreadLocal so you can just call getSpringApplicationContextInstance() anywhere in a test to get the current context.",
             "Test classes can implement the ApplicationContextAware interface or autowire the ApplicationContext.",
             "The context is automatically injected in every test so you can just call getSpringApplicationContextInstance() anywhere in a test to get the current context.",
-            "You can just add the parameter Context context to any method so that the context is automatically wired in."
+            "You can just add the parameter Context context to any method so that the context is automatically wired in.\n[spring(dot)io](https://spring.io/blog/2011/06/21/spring-3-1-m2-testing-with-configuration-classes-and-profiles#:~:text=By%20default%20the%20ApplicationContext%20is,%40Resource%20%2C%20or%20%40Inject%20.)"
         ],
         "_ps": 1
     },
@@ -665,27 +665,26 @@
             "FilePath",
             "MultipartFile",
             "File",
-            "MvcFile"
+            "MvcFile\n```java\n@GetMapping(\"api/v1/domain/resource/{id}\")\npublic Pojo getPojo(@PathVariable(\"id\") String id) {\n  return testService.getPojo(id);\n}\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q69. What is the purpose of this endpoint?",
+        "question": "Q69. What is the purpose of this endpoint?\n```java\n@GetMapping(\"api/v1/domain/resource/{id}\")\npublic Pojo getPojo(@PathVariable(\"id\") String id) {\n  return testService.getPojo(id);\n}\n```",
         "options": [
-            "a",
-            "pping(\"api/v1/domain/resource/{id}\")",
-            " Pojo getPojo(@PathVariable(\"id\") String id) {",
-            "rn testService.getPojo(id);"
+            "This endpoint is designed to delete an object of the typetype Pojo with the passed in path variable",
+            "This endpoint is designed to return JSON mapped to the object type Pojo with the passed in id.",
+            "This endpoint returns the path variable that describes the Pojo's location within the container.",
+            "This endpoint is designed to update an existing resource of the object type Pojo with the passed in id."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q70. What property can be used to set the active Spring profiles",
         "options": [
             "active.profile",
             "active.spring.profiles",
-            "spring.profiles.active",
-            "profiles"
+            "spring.profiles.active"
         ],
         "_ps": 2
     }

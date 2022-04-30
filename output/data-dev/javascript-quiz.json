@@ -5,7 +5,7 @@
             "`<>`",
             "`~`",
             "`==!`",
-            "`!==`"
+            "`!==`\n[Reference Javascript Comparison Operators](https://www.w3schools.com/js/js_operators.asp)"
         ],
         "_ps": 3
     },
@@ -15,19 +15,19 @@
             "Only a for statement uses a callback function.",
             "A for statement is generic, but a forEach statement can be used only with an array.",
             "Only a forEach statement lets you specify your own iterator.",
-            "A forEach statement is generic, but a for statement can be used only with an array."
+            "A forEach statement is generic, but a for statement can be used only with an array.\n[Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)\n```js\nfunction addTax(total) {\n  return total * 1.05;\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q3. Review the code below. Which statement calls the addTax function and passes 50 as an argument? How would you use this function to find out how much tax should be paid on \\$50?\n```js\nfunction addTax(total) {\n  return total * 1.05;\n}\n```",
         "options": [
-            "",
-            "on addTax(total) {",
-            "rn total * 1.05;",
-            ""
+            "`addTax = 50;`",
+            "`return addTax 50;`",
+            "`addTax(50);`",
+            "`addTax 50;`\n[Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q4. Which statement is the correct way to create a variable called rate and assign it the value 100?",
@@ -35,7 +35,7 @@
             "`let rate = 100;`",
             "`let 100 = rate;`",
             "`100 = let rate;`",
-            "`rate = 100;`"
+            "`rate = 100;`\n[Reference Javascript Assignment operators](https://www.w3schools.com/js/js_operators.asp)"
         ],
         "_ps": 0
     },
@@ -45,29 +45,29 @@
             "`var student = new Person();`",
             "`var student = construct Person;`",
             "`var student = Person();`",
-            "`var student = construct Person();`"
+            "`var student = construct Person();`\n[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)\n```js\nlet modal = document.querySelector('#result');\nsetTimeout(function () {\n  modal.classList.remove('hidden');\n}, 10000);\nconsole.log('Results shown');\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q6. When would the final statement in the code shown be logged to the console? When would 'results shown' be logged to the console?\n```js\nlet modal = document.querySelector('#result');\nsetTimeout(function () {\n  modal.classList.remove('hidden');\n}, 10000);\nconsole.log('Results shown');\n```",
         "options": [
-            "",
-            "dal = document.querySelector('#result');",
-            "eout(function () {",
-            "l.classList.remove('hidden');"
+            "after 10 second",
+            "after results are received from the HTTP request",
+            "after 10000 seconds",
+            "immediately\n[Reference Javascript is synchronous and single threaded](https://stackoverflow.com/a/2035662/15067394)\n### Q7. Which snippet could you add to this code to print \"food\" to the console?\n```javascript\nclass Animal {\n  static belly = [];\n  eat() {\n    Animal.belly.push('food');\n  }\n}\nlet a = new Animal();\na.eat();\nconsole.log(/* Snippet Here */); //Prints food\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q8. You've written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?\n```javascript\nfor (var i = 1; i <= 4; i++) {\n  setTimeout(function () {\n    console.log(i);\n  }, i * 10000);\n}\n```\n```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (i) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(j);\n}\n```\n```javascript\nwhile (var i=1; i<=4; i++) {\n  setTimeout(function() {\n    console.log(i);\n    }, i*1000);\n}\n```\n```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (j) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(i);\n}\n```",
+        "question": "Q8. You've written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?\n```javascript\nfor (var i = 1; i <= 4; i++) {\n  setTimeout(function () {\n    console.log(i);\n  }, i * 10000);\n}\n```",
         "options": [
-            "ascript",
-            "ar i = 1; i <= 4; i++) {",
-            "imeout(function () {",
-            "nsole.log(i);"
+            "```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (i) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(j);\n}\n```",
+            "```javascript\nwhile (var i=1; i<=4; i++) {\n  setTimeout(function() {\n    console.log(i);\n    }, i*1000);\n}\n```",
+            "```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (j) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(i);\n}\n```",
+            "```javascript\nfor (var j = 1; j <= 4; j++) {\n  setTimeout(function () {\n    console.log(j);\n  }, j * 1000);\n}\n```\n1. [Reference setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)\n2. [Reference immediately invoked anonymous functions](https://www.javascripttutorial.net/javascript-anonymous-functions/)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q9. How does a function create a closure?",
@@ -75,29 +75,29 @@
             "It reloads the document whenever the value changes.",
             "It returns a reference to a variable in its parent scope.",
             "It completes execution without returning.",
-            "It copies a local variable to the global scope."
+            "It copies a local variable to the global scope.\n[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q10. Which statement creates a new function called discountPrice?\n```js\nlet discountPrice = function (price) {\n  return price * 0.85;\n};\n```\n```js\nlet discountPrice(price) {\n  return price * 0.85;\n};\n```\n```js\nlet function = discountPrice(price) {\n  return price * 0.85;\n};\n```",
+        "question": "Q10. Which statement creates a new function called discountPrice?",
         "options": [
-            "",
-            "",
-            "scountPrice = function (price) {",
-            "rn price * 0.85;"
+            "```js\nlet discountPrice = function (price) {\n  return price * 0.85;\n};\n```",
+            "```js\nlet discountPrice(price) {\n  return price * 0.85;\n};\n```",
+            "```js\nlet function = discountPrice(price) {\n  return price * 0.85;\n};\n```",
+            "```js\ndiscountPrice = function (price) {\n  return price * 0.85;\n};\n```\n[Reference defining javascript functions](https://www.w3schools.com/js/js_functions.asp)\n```js\nvar Storm = function () {};\nStorm.prototype.precip = 'rain';\nvar WinterStorm = function () {};\nWinterStorm.prototype = new Storm();\nWinterStorm.prototype.precip = 'snow';\nvar bob = new WinterStorm();\nconsole.log(bob.precip);\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q11. What is the result in the console of running the code shown?\n```js\nvar Storm = function () {};\nStorm.prototype.precip = 'rain';\nvar WinterStorm = function () {};\nWinterStorm.prototype = new Storm();\nWinterStorm.prototype.precip = 'snow';\nvar bob = new WinterStorm();\nconsole.log(bob.precip);\n```",
         "options": [
-            "",
-            "orm = function () {};",
-            "prototype.precip = 'rain';",
-            "nterStorm = function () {};"
+            "Storm()",
+            "undefined",
+            "'rain'",
+            "'snow'\n[Reference prototype chain](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q12. You need to match a time value such as 12:00:32. Which of the following regular expressions would work for your code?",
@@ -105,39 +105,39 @@
             "`/[0-9]{2,}:[0-9]{2,}:[0-9]{2,}/`",
             "`/\\d\\d:\\d\\d:\\d\\d/`",
             "`/[0-9]+:[0-9]+:[0-9]+/`",
-            "`/ : : /`"
+            "`/ : : /`\nNOTE: The first three are all partially correct and will match digits, but the **second option is the most correct** because it will **only** match **2 digit** time values (12:00:32). The first option would have worked if the repetitions range looked like `[0-9]{2}`, however because of the **comma** `[0-9]{2,}` it will select 2 **or more** digits (120:000:321). The third option will any range of time digits, single _and_ multiple (meaning `1:2:3` will also match).\n**More resources:**\n1. [Repeating characters](https://regexone.com/lesson/repeating_characters)\n2. [Kleene operators](https://regexone.com/lesson/kleene_operators)\n```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q13. What is the result in the console of running this code?\n```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```",
         "options": [
-            "",
-            "trict';",
-            "on logThis() {",
-            ".desc = 'logger';"
+            "`undefined`",
+            "`window`",
+            "`{desc: \"logger\"}`",
+            "`function`\n[Reference javascript classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)\n```js\nlet roadTypes = ['street', 'road', 'avenue', 'circle'];\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q14. How would you reference the text 'avenue' in the code shown?\n```js\nlet roadTypes = ['street', 'road', 'avenue', 'circle'];\n```",
         "options": [
-            "",
-            "adTypes = ['street', 'road', 'avenue', 'circle'];",
-            "",
-            "roadTypes.2"
+            "roadTypes.2",
+            "roadTypes\\[3\\]",
+            "roadTypes.3",
+            "roadTypes\\[2\\]\n[Reference accessing javascript arrays](https://www.w3schools.com/js/js_arrays.asp)\n```javascript\nconsole.log(typeof 42);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q15. What is the result of running this statement?\n```javascript\nconsole.log(typeof 42);\n```",
         "options": [
-            "ascript",
-            "e.log(typeof 42);",
-            "",
-            "`'float'`"
+            "`'float'`",
+            "`'value'`",
+            "`'number'`",
+            "`'integer'`\n[Reference javascript data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q16. Which property references the DOM object that dispatched an event?",
@@ -145,19 +145,19 @@
             "`self`",
             "`object`",
             "`target`",
-            "`source`"
+            "`source`\n[Reference DOM events](https://www.w3schools.com/jsref/dom_obj_event.asp)\n```js\nfunction addNumbers(x, y) {\n  if (isNaN(x) || isNaN(y)) {\n  }\n}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q17. You're adding error handling to the code shown. Which code would you include within the if statement to specify an error message?\n```js\nfunction addNumbers(x, y) {\n  if (isNaN(x) || isNaN(y)) {\n  }\n}\n```",
         "options": [
-            "",
-            "on addNumbers(x, y) {",
-            "isNaN(x) || isNaN(y)) {",
-            ""
+            "`exception('One or both parameters are not numbers')`",
+            "`catch('One or both parameters are not numbers')`",
+            "`error('One or both parameters are not numbers')`",
+            "`throw('One or both parameters are not numbers')`\n[Reference javascript throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q18. Which method converts JSON data to a JavaScript object?",
@@ -165,7 +165,7 @@
             "`JSON.fromString();`",
             "`JSON.parse()`",
             "`JSON.toObject()`",
-            "`JSON.stringify()`"
+            "`JSON.stringify()`\n[Reference convert json to javascript object](https://www.w3schools.com/js/js_json_parse.asp)"
         ],
         "_ps": 1
     },
@@ -175,19 +175,19 @@
             "When you want to reuse a set of statements multiple times.",
             "When you want your code to choose between multiple options.",
             "When you want to group data together.",
-            "When you want to loop through a group of statement."
+            "When you want to loop through a group of statement.\n[Reference javascript conditionals](https://www.javascript.com/learn/conditionals)\n```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q20. What would be the result in the console of running this code?\n```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```",
         "options": [
-            "",
-            "ar i = 0; i < 5; i++) {",
-            "ole.log(i);",
-            ""
+            "12345",
+            "1234",
+            "01234",
+            "012345\n[Reference javascript for loops](https://www.w3schools.com/js/js_loop_for.asp)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q21. Which Object method returns an iterable that can be used to iterate over the properties of an object?",
@@ -195,19 +195,19 @@
             "`Object.get()`",
             "`Object.loop()`",
             "`Object.each()`",
-            "`Object.keys()`"
+            "`Object.keys()`\n[Reference javascript object static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#static_methods)\n```js\nvar a = ['dog', 'cat', 'hen'];\na[100] = 'fox';\nconsole.log(a.length);\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q22. What will be logged to the console?\n```js\nvar a = ['dog', 'cat', 'hen'];\na[100] = 'fox';\nconsole.log(a.length);\n```",
         "options": [
-            "",
-            "= ['dog', 'cat', 'hen'];",
-            " = 'fox';",
-            "e.log(a.length);"
+            "101",
+            "3",
+            "4",
+            "100"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q23. What is one difference between collections created with Map and collections created with Object?",
@@ -215,19 +215,19 @@
             "You can iterate over values in a Map in their insertion order.",
             "You can count the records in a Map with a single method call.",
             "Keys in Maps can be strings.",
-            "You can access values in a Map without iterating over the whole collection."
+            "You can access values in a Map without iterating over the whole collection.\n**Explanation:** `Map.prototype.size returns the number of elements in a Map, whereas Object does not have a built-in method to return its size.`\n[Reference map methods javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)\n```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q24. What is the value of dessert.type after executing this code?\n```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\n```",
         "options": [
-            "",
-            "dessert = { type: 'pie' };",
-            "t.type = 'pudding';",
-            ""
+            "pie",
+            "The code will throw an error.",
+            "pudding",
+            "undefined\n[Reference working with js objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q25. 0 && hi",
@@ -235,7 +235,7 @@
             "ReferenceError",
             "True",
             "0",
-            "false"
+            "false\n[Reference boolean logic](https://ntgard.medium.com/https-medium-com-ntgard-boolean-logic-in-javascript-part-1-3371af974f19)"
         ],
         "_ps": 2
     },
@@ -245,7 +245,7 @@
             "`\\++`",
             "`\\--`",
             "`\\==`",
-            "`\\|\\|`"
+            "`\\|\\|`\n[Reference short circuit javascript](https://codeburst.io/javascript-what-is-short-circuit-evaluation-ff22b2f5608c)"
         ],
         "_ps": 3
     },
@@ -255,7 +255,7 @@
             "`Student.parent = Person;`",
             "`Student.prototype = new Person();`",
             "`Student.prototype = Person;`",
-            "`Student.prototype = Person();`"
+            "`Student.prototype = Person();`\n[Reference prototype object js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)"
         ],
         "_ps": 1
     },
@@ -265,7 +265,7 @@
             "to tell parsers to interpret your JavaScript syntax loosely",
             "to tell parsers to enforce all JavaScript syntax rules when processing your code",
             "to instruct the browser to automatically fix any errors it finds in the code",
-            "to enable ES6 features in your code"
+            "to enable ES6 features in your code\n[Reference what is use strict in js](https://www.w3schools.com/js/js_strict.asp)"
         ],
         "_ps": 1
     },
@@ -275,7 +275,7 @@
             "all of them",
             "`const`",
             "`var`",
-            "`let`"
+            "`let`\n[Reference var vs let vs const in js](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/)"
         ],
         "_ps": 2
     },
@@ -285,7 +285,7 @@
             "`Boolean(0)`",
             "`Boolean(\"\")`",
             "`Boolean(NaN)`",
-            "`Boolean(\"false\")`"
+            "`Boolean(\"false\")`\n[Reference boolean of a string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)"
         ],
         "_ps": 3
     },
@@ -295,7 +295,7 @@
             "`this`",
             "`catch`",
             "`function`",
-            "`array`"
+            "`array`\n[Reference js reserved words](https://www.w3schools.com/js/js_reserved.asp)"
         ],
         "_ps": 3
     },
@@ -305,29 +305,29 @@
             "Arguments",
             "args",
             "argsArray",
-            "argumentsList"
+            "argumentsList\n[Reference implicit js parameters for functions](https://www.codeproject.com/Tips/1221966/JavaScript-Functions-Implicit-Parameters)\n```js\nclass X {\n  get Y() {\n    return 42;\n  }\n}\nvar x = new X();\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q33. For the following class, how do you get the value of 42 from an instance of X?\n```js\nclass X {\n  get Y() {\n    return 42;\n  }\n}\nvar x = new X();\n```",
         "options": [
-            "",
-            "X {",
-            "Y() {",
-            "turn 42;"
+            "`x.get('Y')`",
+            "`x.Y`",
+            "`x.Y()`",
+            "`x.get().Y`\n[Reference getters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)\n```js\nsum(10, 20);\ndiff(10, 20);\nfunction sum(x, y) {\n  return x + y;\n}\nlet diff = function (x, y) {\n  return x - y;\n};\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q34. What is the result of running this code?\n```js\nsum(10, 20);\ndiff(10, 20);\nfunction sum(x, y) {\n  return x + y;\n}\nlet diff = function (x, y) {\n  return x - y;\n};\n```",
         "options": [
-            "",
-            ", 20);",
-            "0, 20);",
-            "on sum(x, y) {"
+            "30, ReferenceError, 30, -10",
+            "30, ReferenceError",
+            "30, -10",
+            "ReferenceError, -10\n[Reference accessing before initialization](https://stackoverflow.com/questions/56318460/cannot-access-variable-name-before-initialization)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q35. Why is it usually better to work with Objects instead of Arrays to store a collection of records?",
@@ -335,7 +335,7 @@
             "Objects are more efficient in terms of storage.",
             "Adding a record to an object is significantly faster than pushing a record into an array.",
             "Most operations involve looking up a record, and objects can do that better than arrays.",
-            "Working with objects makes the code more readable."
+            "Working with objects makes the code more readable.\n**Explanation:** Records in an object can be retrieved using their key which can be any given value (e.g. an employee ID, a city name, etc), whereas to retrieve a record from an array we need to know its index.\n[Reference efficiency of lookups](https://stackoverflow.com/questions/17295056/array-vs-object-efficiency-in-javascript)"
         ],
         "_ps": 2
     },
@@ -345,7 +345,7 @@
             "It can be used for both internal and external JavaScript code.",
             "It can be used only for internal JavaScript code.",
             "It can be used only for internal or external JavaScript code that exports a promise.",
-            "It can be used only for external JavaScript code."
+            "It can be used only for external JavaScript code.\n[Reference async attribute for html](https://www.w3schools.com/tags/att_script_async.asp)"
         ],
         "_ps": 3
     },
@@ -355,19 +355,19 @@
             "`import _ from 'lodash';`",
             "`import 'lodash' as _;`",
             "`import '_' from 'lodash;`",
-            "`import lodash as _ from 'lodash';`"
+            "`import lodash as _ from 'lodash';`\n[Reference how to import library in js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)\n```js\n[] == [];\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q38. What does the following expression evaluate to?\n```js\n[] == [];\n```",
         "options": [
-            "",
-            "[];",
-            "",
-            "True"
+            "True",
+            "undefined",
+            "[]",
+            "False\n[Reference arrays in js are objects](https://stackoverflow.com/questions/30820611/why-doesnt-equality-check-work-with-arrays)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q39. What type of function can have its execution suspended and then resumed at a later point?",
@@ -375,19 +375,19 @@
             "Generator function",
             "Arrow function",
             "Async/ Await function",
-            "Promise function"
+            "Promise function\n[Reference what are generators in nodejs](https://www.guru99.com/node-js-generators-compare-callbacks.html#:~:text=Generators%20are%20function%20executions%20that,resumed%20at%20a%20later%20point.)\n```js\nvar v = 1;\nvar f1 = function () {\n  console.log(v);\n};\nvar f2 = function () {\n  var v = 2;\n  f1();\n};\nf2();\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q40. What will this code print?\n```js\nvar v = 1;\nvar f1 = function () {\n  console.log(v);\n};\nvar f2 = function () {\n  var v = 2;\n  f1();\n};\nf2();\n```",
         "options": [
-            "",
-            "= 1;",
-            " = function () {",
-            "ole.log(v);"
+            "2",
+            "1",
+            "Nothing - this code will throw an error.",
+            "undefined\n[Reference closures in js \\/ nested functions](https://javascript.info/closure)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q41. Which statement is true about Functional Programming?",
@@ -395,7 +395,7 @@
             "Every object in the program has to be a function.",
             "Code is grouped with the state it modifies.",
             "Date fields and methods are kept in units.",
-            "Side effects are not allowed."
+            "Side effects are not allowed.\n[Reference functional programming](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)"
         ],
         "_ps": 3
     },
@@ -405,19 +405,19 @@
             "You are calling a method named reduce on an object that's declared but has no value.",
             "You are calling a method named reduce on an object that does not exist.",
             "You are calling a method named reduce on an empty array.",
-            "You are calling a method named reduce on an object that's has a null value."
+            "You are calling a method named reduce on an object that's has a null value.\n**Explanation**: `You cannot invoke reduce on undefined object... It will throw (yourObject is not Defined...)`\n`let arr = [];`"
         ],
         "_ps": 0
     },
     {
         "question": "Q43. How many prototype objects are in the chain for the following array?\n`let arr = [];`",
         "options": [
-            "rr = [];`",
             "3",
             "2",
-            "0"
+            "0",
+            "1\n[Reference array prototype](https://www.w3schools.com/jsref/jsref_prototype_array.asp)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q44. Which choice is _not_ a unary operator?",
@@ -425,29 +425,29 @@
             "`typeof`",
             "`delete`",
             "`instanceof`",
-            "`void`"
+            "`void`\n[Reference js unary operators](https://www.digitalocean.com/community/tutorials/javascript-unary-operators-simple-and-useful#:~:text=A%20unary%20operation%20is%20an,therefore%20their%20functionality%20is%20guaranteed.)\n```javascript\nvar start = 1;\nif (start === 1) {\n  let end = 2;\n}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q45. What type of scope does the end variable have in the code shown?\n```javascript\nvar start = 1;\nif (start === 1) {\n  let end = 2;\n}\n```",
         "options": [
-            "ascript",
-            "art = 1;",
-            "art === 1) {",
-            "end = 2;"
+            "conditional",
+            "block",
+            "global",
+            "function\n[Reference block vs function scope](https://josephcardillo.medium.com/the-difference-between-function-and-block-scope-in-javascript-4296b2322abe)\n```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q46. What will the value of y be in this code:\n```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\n```",
         "options": [
-            "",
-            "x = 6 % 2;",
-            "y = x ? 'One' : 'Two';",
-            ""
+            "One",
+            "undefined",
+            "TRUE",
+            "Two\n[Reference ternary operator js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q47. Which keyword is used to create an error?",
@@ -455,7 +455,7 @@
             "`throw`",
             "`exception`",
             "`catch`",
-            "`error`"
+            "`error`\n[Reference throwing errors in js](<https://www.w3schools.com/jsref/jsref_throw.asp#:~:text=The%20throw%20statement%20throws%20(generates,to%20create%20a%20custom%20error.)>)"
         ],
         "_ps": 0
     },
@@ -465,59 +465,59 @@
             "The defer attribute can work synchronously.",
             "The defer attribute works only with generators.",
             "The defer attribute works only with promises.",
-            "The defer attribute will asynchronously load the scripts in order."
+            "The defer attribute will asynchronously load the scripts in order.\n[Reference async vs defer](https://www.digitalocean.com/community/tutorials/html-defer-async#:~:text=%3E-,Async%20vs%20Defer,order%20as%20they%20are%20called.)\n```js\nvar a;\nvar b = (a = 3) ? true : false;\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q49. The following program has a problem. What is it?\n```js\nvar a;\nvar b = (a = 3) ? true : false;\n```",
         "options": [
-            "",
-            "",
-            "= (a = 3) ? true : false;",
-            ""
+            "The condition in the ternary is using the assignment operator.",
+            "You can't define a variable without initializing it.",
+            "You can't use a ternary in the right-hand side of an assignment operator.",
+            "The code is using the deprecated var keyword.\n[Reference ternary operator js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)\n```html\n<p class=\"pull\">lorem ipsum</p>\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q50. Which statement references the DOM node created by the code shown?\n```html\n<p class=\"pull\">lorem ipsum</p>\n```",
         "options": [
-            "l",
-            "ss=\"pull\">lorem ipsum</p>",
-            "",
-            "`Document.querySelector('class.pull')`"
+            "`Document.querySelector('class.pull')`",
+            "`document.querySelector('.pull');`",
+            "`Document.querySelector('pull')`",
+            "`Document.querySelector('#pull')`\n[Reference query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)\n```js\nlet answer = true;\nif (answer === false) {\n  return 0;\n} else {\n  return 10;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q51. What value does this code return?\n```js\nlet answer = true;\nif (answer === false) {\n  return 0;\n} else {\n  return 10;\n}\n```",
         "options": [
-            "",
-            "swer = true;",
-            "swer === false) {",
-            "rn 0;"
+            "10",
+            "true",
+            "false",
+            "0\n[Reference javascript conditionals](https://www.javascript.com/learn/conditionals)\n```js\nvar start = 1;\nfunction setEnd() {\n  var end = 10;\n}\nsetEnd();\nconsole.log(end);\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q52. What is the result in the console of running the code shown?\n```js\nvar start = 1;\nfunction setEnd() {\n  var end = 10;\n}\nsetEnd();\nconsole.log(end);\n```",
         "options": [
-            "",
-            "art = 1;",
-            "on setEnd() {",
-            "end = 10;"
+            "10",
+            "0",
+            "ReferenceError",
+            "undefined\n[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)\n```js\nfunction sayHello() {\n  console.log('hello');\n}\nconsole.log(sayHello.prototype);\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q53. What will this code log in the console?\n```js\nfunction sayHello() {\n  console.log('hello');\n}\nconsole.log(sayHello.prototype);\n```",
         "options": [
-            "",
-            "on sayHello() {",
-            "ole.log('hello');",
-            ""
+            "undefined",
+            "\"hello\"",
+            "an object with a constructor property",
+            "an error message\n[Reference prototypes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q54. Which collection object allows unique value to be inserted only once?",
@@ -525,19 +525,19 @@
             "Object",
             "Set",
             "Array",
-            "Map"
+            "Map\n[Reference javascript sets](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)\n```js\nfunction printA() {\n  console.log(answer);\n  var answer = 1;\n}\nprintA();\nprintA();\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q55. What two values will this code print?\n```js\nfunction printA() {\n  console.log(answer);\n  var answer = 1;\n}\nprintA();\nprintA();\n```",
         "options": [
-            "",
-            "on printA() {",
-            "ole.log(answer);",
-            "answer = 1;"
+            "`1` then `1`",
+            "`1` then `undefined`",
+            "`undefined` then `undefined`",
+            "`undefined` then `1`\n[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q56. How does the `forEach()` method differ from a `for` statement?",
@@ -545,7 +545,7 @@
             "forEach allows you to specify your own iterator, whereas for does not.",
             "forEach can be used only with strings, whereas for can be used with additional data types.",
             "forEach can be used only with an array, whereas for can be used with additional data types.",
-            "for loops can be nested; whereas forEach loops cannot."
+            "for loops can be nested; whereas forEach loops cannot.\n[Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)"
         ],
         "_ps": 2
     },
@@ -555,7 +555,7 @@
             "=> `({})`",
             "=> `{}`",
             "=> `{ return {};}`",
-            "=> `(({}))`"
+            "=> `(({}))`\n[Reference arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)"
         ],
         "_ps": 1
     },
@@ -565,7 +565,7 @@
             "to start tasks that might take some time without blocking subsequent tasks from executing immediately",
             "to ensure that tasks further down in your code are not initiated until earlier tasks have completed",
             "to make your code faster",
-            "to ensure that the call stack maintains a LIFO (Last in, First Out) structure"
+            "to ensure that the call stack maintains a LIFO (Last in, First Out) structure\n**EXPLANATION:** \"to ensure that tasks further down in your code are not initiated until earlier tasks have completed\" you use the normal (synchronous) flow where each command is executed sequentially. Asynchronous code allows you to break this sequence: start a long running function (AJAX call to an external service) and continue running the rest of the code in parallel."
         ],
         "_ps": 0
     },
@@ -575,7 +575,7 @@
             "`[3] == [3]`",
             "`3 == '3'`",
             "`3 != '3'`",
-            "`3 === '3'`"
+            "`3 === '3'`\n[Reference booleans](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)"
         ],
         "_ps": 1
     },
@@ -585,7 +585,7 @@
             "5thItem",
             "firstName",
             "grand total",
-            "function"
+            "function\n[Reference coding conventions](https://www.w3schools.com/js/js_conventions.asp)"
         ],
         "_ps": 1
     },
@@ -595,7 +595,7 @@
             "`cancel()`",
             "`stop()`",
             "`preventDefault()`",
-            "`prevent()`"
+            "`prevent()`\n[Reference javascript events](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)"
         ],
         "_ps": 2
     },
@@ -605,7 +605,7 @@
             "`attachNode()`",
             "`getNode()`",
             "`querySelector()`",
-            "`appendChild()`"
+            "`appendChild()`\n[Reference Node interface](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)"
         ],
         "_ps": 3
     },
@@ -615,7 +615,7 @@
             "`break`",
             "`pass`",
             "`skip`",
-            "`continue`"
+            "`continue`\n[Reference break vs continue](https://www.w3schools.com/js/js_break.asp)"
         ],
         "_ps": 3
     },
@@ -625,7 +625,7 @@
             "`(a,b) => c`",
             "`a, b => {return c;}`",
             "`a, b => c`",
-            "`{ a, b } => c`"
+            "`{ a, b } => c`\n[Reference arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)"
         ],
         "_ps": 0
     },
@@ -635,7 +635,7 @@
             "class",
             "generator function",
             "map",
-            "proxy"
+            "proxy\n[Reference javascript classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)"
         ],
         "_ps": 0
     },
@@ -645,7 +645,7 @@
             "`! This is a comment`",
             "`# This is a comment`",
             "`\\\\ This is a comment`",
-            "`// This is a comment`"
+            "`// This is a comment`\n[Reference comments in javascript](https://www.w3schools.com/js/js_comments.asp)"
         ],
         "_ps": 3
     },
@@ -655,7 +655,7 @@
             "TypeError",
             "SystemError",
             "SyntaxError",
-            "LogicError"
+            "LogicError\n[Reference javascript errors](https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/error)"
         ],
         "_ps": 0
     },
@@ -665,37 +665,37 @@
             "create()",
             "new()",
             "constructor()",
-            "init()"
+            "init()\n[Reference javascript constructors](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)\n```javascript\nlet a = 5;\nconsole.log(++a);\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q69. What is the result of running the statement shown?\n```javascript\nlet a = 5;\nconsole.log(++a);\n```",
         "options": [
-            "ascript",
-            "= 5;",
-            "e.log(++a);",
-            ""
+            "4",
+            "10",
+            "6",
+            "5\n[Reference ++x vs x++](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment)\n```javascript\nbutton.addEventListener(\n  'click',\n  function (e) {\n    button.className = 'clicked';\n  },\n  false,\n);\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q70. You've written the event listener shown below for a form button, but each time you click the button, the page reloads. Which statement would stop this from happening?\n```javascript\nbutton.addEventListener(\n  'click',\n  function (e) {\n    button.className = 'clicked';\n  },\n  false,\n);\n```",
         "options": [
-            "ascript",
-            ".addEventListener(",
-            "ck',",
-            "tion (e) {"
+            "`e.blockReload();`",
+            "`button.preventDefault();`",
+            "`button.blockReload();`",
+            "`e.preventDefault();`\n[Reference events in javascript](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q71. Which statement represents the starting code converted to an IIFE?\n[Reference what is an Immediately Invoked Function Expression](https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174)\n#### Q72. Which statement selects all img elements in the DOM tree?",
+        "question": "Q71. Which statement represents the starting code converted to an IIFE?",
         "options": [
             "`function() { console.log('lorem ipsum'); }()();`",
             "`function() { console.log('lorem ipsum'); }();`",
-            "`(function() { console.log('lorem ipsum'); })();`",
-            "ence what is an Immediately Invoked Function Expression](https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174)"
+            "`(function() { console.log('lorem ipsum'); })();`\n[Reference what is an Immediately Invoked Function Expression](https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174)",
+            "`Document.querySelector('img')`"
         ],
         "_ps": 2
     },
@@ -705,7 +705,7 @@
             "`Document.querySelector('img')`",
             "`Document.querySelectorAll('<img>')`",
             "`Document.querySelectorAll('img')`",
-            "`Document.querySelector('<img>')`"
+            "`Document.querySelector('<img>')`\n[Reference query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)"
         ],
         "_ps": 2
     },
@@ -715,7 +715,7 @@
             "To use ES6 syntax",
             "To start tasks that might take some time without blocking subsequent tasks from executing immediately",
             "To ensure that parsers enforce all JavaScript syntax rules when processing your code",
-            "To ensure that tasks further down in your code aren't initiated until earlier tasks have completed"
+            "To ensure that tasks further down in your code aren't initiated until earlier tasks have completed\n[Reference async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)"
         ],
         "_ps": 1
     },
@@ -725,7 +725,7 @@
             "DELETE",
             "GET",
             "PATCH",
-            "POST"
+            "POST\n[Reference http methods](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods)"
         ],
         "_ps": 1
     },
@@ -735,99 +735,99 @@
             "focus",
             "blur",
             "hover",
-            "enter"
+            "enter\n[Reference javascript events](https://developer.mozilla.org/en-US/docs/Web/Events)\n```javascript\nfunction logThis() {\n  console.log(this);\n}\nlogThis();\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q76. What is the result in the console of running this code?\n```javascript\nfunction logThis() {\n  console.log(this);\n}\nlogThis();\n```",
         "options": [
-            "ascript",
-            "on logThis() {",
-            "ole.log(this);",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q77. Which class-based component is equivalent to this function component?\n```javascript\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\n```",
-        "options": [
-            "ascript",
-            "Greeting = ({ name }) => <h1>Hello {name}!</h1>;",
-            "",
-            "`class Greeting extends React.Component { render() { return <h1>Hello {this.props.name}!</h1>; } }`"
+            "function",
+            "undefined",
+            "Function.prototype",
+            "window\n[Reference what is the javascript window](https://www.w3schools.com/js/js_window.asp)\n```javascript\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\n```"
         ],
         "_ps": 3
     },
     {
+        "question": "Q77. Which class-based component is equivalent to this function component?\n```javascript\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\n```",
+        "options": [
+            "`class Greeting extends React.Component { render() { return <h1>Hello {this.props.name}!</h1>; } }`",
+            "`class Greeting extends React.Component { constructor() { return <h1>Hello {this.props.name}!</h1>; } }`",
+            "`class Greeting extends React.Component { <h>Hello {this.props.name}!</h>; } }`",
+            "`class Greeting extends React.Component { render({ name }) { return <h1>Hello {name}!</h1>; } }`\n```javascript\nuseEffect(() => {\n  // do things\n}, []);\n```"
+        ],
+        "_ps": 0
+    },
+    {
         "question": "Q78. Which class-based lifecycle method would be called at the same time as this effect Hook?\n```javascript\nuseEffect(() => {\n  // do things\n}, []);\n```",
         "options": [
-            "ascript",
-            "ect(() => {",
-            "o things",
-            ";"
+            "componentWillUnmount",
+            "componentDidUpdate",
+            "render",
+            "componentDidMount\n[Reference react lifecycle methods](https://reactjs.org/docs/react-component.html)\n```javascript\nvar obj;\nconsole.log(obj);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q79. What is the output of this code?\n```javascript\nvar obj;\nconsole.log(obj);\n```",
         "options": [
-            "ascript",
-            "j;",
-            "e.log(obj);",
-            ""
+            "`ReferenceError: obj is not defined`",
+            "`{}`",
+            "`undefined`",
+            "`null`\n[Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)\n```javascript\nclass TaxCalculator {\n  static calculate(total) {\n    return total * 0.05;\n  }\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q80. How would you use the TaxCalculator to determine the amount of tax on \\$50?\n```javascript\nclass TaxCalculator {\n  static calculate(total) {\n    return total * 0.05;\n  }\n}\n```",
         "options": [
-            "ascript",
-            "TaxCalculator {",
-            "ic calculate(total) {",
-            "turn total * 0.05;"
+            "calculate(50);",
+            "new TaxCalculator().calculate(\\$50);",
+            "TaxCalculator.calculate(50);",
+            "new TaxCalculator().calculate(50);\n[Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)\n```js\nconst foo = {\n  bar() {\n    console.log('Hello, world!');\n  },\n  name: 'Albert',\n  age: 26,\n};\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q81. What is wrong with this code?\n```js\nconst foo = {\n  bar() {\n    console.log('Hello, world!');\n  },\n  name: 'Albert',\n  age: 26,\n};\n```",
         "options": [
-            "",
-            "foo = {",
-            ") {",
-            "nsole.log('Hello, world!');"
+            "The function bar needs to be defined as a key/value pair.",
+            "Trailing commas are not allowed in JavaScript.",
+            "Functions cannot be declared as properties of objects.",
+            "Nothing, there are no errors.\n1. [Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)\n2. [Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)\n```js\nconsole.log('I');\nsetTimeout(() => {\n  console.log('love');\n}, 0);\nconsole.log('Javascript!');\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q82. What will be logged to the console?\n```js\nconsole.log('I');\nsetTimeout(() => {\n  console.log('love');\n}, 0);\nconsole.log('Javascript!');\n```\n```plaintext\nI\nJavascript!\nlove\n```\n```plaintext\nlove\nI\nJavascript!\n```",
+        "question": "Q82. What will be logged to the console?\n```js\nconsole.log('I');\nsetTimeout(() => {\n  console.log('love');\n}, 0);\nconsole.log('Javascript!');\n```",
         "options": [
-            "",
-            "e.log('I');",
-            "eout(() => {",
-            "ole.log('love');"
+            "```plaintext\nI\nJavascript!\nlove\n```",
+            "```plaintext\nlove\nI\nJavascript!\n```",
+            "The output may change with each execution of code and cannot be determined.",
+            "```\nI\nlove\nJavascript!\n```\n**Reference**\nhttps://developer.mozilla.org/en-US/docs/Web/API/setTimeout#reasons_for_delays_longer_than_specified especially see the 'late timeouts' section.\n```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q83. What will this code log to the console?\n```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```",
         "options": [
-            "",
-            "foo = [1, 2, 3];",
-            "[n] = foo;",
-            "e.log(n);"
+            "1",
+            "undefined",
+            "NaN",
+            "Nothing--this is not proper JavaScript syntax and will throw an error.\n[Reference array deconstruction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)\n```js\nconst foo = {\n  name: 'Albert',\n};\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q84. How do you remove the property name from this object?\n```js\nconst foo = {\n  name: 'Albert',\n};\n```",
         "options": [
-            "",
-            "foo = {",
-            ": 'Albert',",
-            ""
+            "delete name from foo;",
+            "delete foo.name;",
+            "del foo.name;",
+            "remove foo.name;\n[Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q85. What is the difference between the `map()` and the `forEach()` methods on the Array prototype?",
@@ -835,19 +835,19 @@
             "There is no difference.",
             "The `forEach()` method returns a single output value, whereas the `map()` method performs operation on each value in the array.",
             "The map() methods returns a new array with a transformation applied on each item in the original array, whereas the `forEach()` method iterates through an array with no return value.",
-            "The `forEach()` methods returns a new array with a transformation applied on each item in the original array, whereas the `map()` method iterates through an array with no return value."
+            "The `forEach()` methods returns a new array with a transformation applied on each item in the original array, whereas the `map()` method iterates through an array with no return value.\n1. [Reference map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)\n2. [Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)\n```js\nfunction makeAdder(x) {\n  return function (y) {\n    return x + y;\n  };\n}\nvar addFive = makeAdder(5);\nconsole.log(addFive(3));\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q86. Which concept does this code illustrate?\n```js\nfunction makeAdder(x) {\n  return function (y) {\n    return x + y;\n  };\n}\nvar addFive = makeAdder(5);\nconsole.log(addFive(3));\n```",
         "options": [
-            "",
-            "on makeAdder(x) {",
-            "rn function (y) {",
-            "turn x + y;"
+            "overloading",
+            "closure",
+            "currying",
+            "overriding\n[Reference currying](https://javascript.info/currying-partials)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q87. Which tag pair is used in HTML to embed JavaScript?",
@@ -855,29 +855,29 @@
             "`<script></script>`",
             "`<js></js>`",
             "`<javascript></javascript>`",
-            "`<code></code>`"
+            "`<code></code>`\n[Reference add js to html file](https://www.w3schools.com/tags/tag_script.asp)\n```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q88. What would be the result in the console of running this code?\n```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```",
         "options": [
-            "",
-            "ar i = 0; i < 5; i++) {",
-            "ole.log(i);",
-            ""
+            "0 1 2 3 4",
+            "0 1 2 3 4 5",
+            "1 2 3 4",
+            "1 2 3 4 5\n[Reference Differences between forEach and for loop](https://www.geeksforgeeks.org/difference-between-foreach-and-for-loop-in-javascript/)\n```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\nconst seconds = dessert;\nseconds.type = 'fruit';\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q89. What is the value of `dessert.type` after executing this code?\n```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\nconst seconds = dessert;\nseconds.type = 'fruit';\n```",
         "options": [
-            "",
-            "dessert = { type: 'pie' };",
-            "t.type = 'pudding';",
-            "seconds = dessert;"
+            "pie",
+            "fruit",
+            "undefined",
+            "pudding\n**Explanation:** `Assigning a variable (such as seconds) to an object (such as dessert) does not create a new object. The seconds variable merely becomes a reference for the dessert object. Any changes made to seconds will also reflect in dessert.`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q90. If your app receives data from a third-party API, which HTTP response header must the server specify to allow exceptions to the same-origin policy?",
@@ -885,19 +885,19 @@
             "Security-Mode",
             "Access-Control-Allow-Origin",
             "Different-Origin",
-            "Same-Origin"
+            "Same-Origin\n[Reference Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)\n```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q91. What will be logged to the console??\n```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```",
         "options": [
-            "",
-            "trict';",
-            "on logThis() {",
-            ".desc = 'logger';"
+            "window",
+            "undefined",
+            "function",
+            "{desc: \"logger\"}\n[Reference strict in javascript classes](https://www.w3schools.com/js/js_strict.asp)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q92. Which statement is applicable to the defer attribute of the HTML \\<script\\> tag?",
@@ -905,99 +905,99 @@
             "defer causes the script to be loaded from the backup content delivery network (CDN).",
             "defer allows the browser to continue processing the page while the script loads in the background.",
             "defer blocks the browser from processing HTML below the tag until the script is completely loaded.",
-            "defer lazy loads the script, causing it to download only when it is called by another script on the page."
+            "defer lazy loads the script, causing it to download only when it is called by another script on the page.\n**Explanation:** If the defer attribute is set, it specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. [HTML \\<script\\> defer Attribute](https://www.w3schools.com/tags/att_script_defer.asp)\n```js\nlet rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];\nrainForests.splice(0, 2);\nconsole.log(rainForests);\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q93. What will this code print?\n```js\nlet rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];\nrainForests.splice(0, 2);\nconsole.log(rainForests);\n```",
         "options": [
-            "",
-            "inForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];",
-            "rests.splice(0, 2);",
-            "e.log(rainForests);"
+            "`[\"Amazon\",\"Borneo\",\"Cerrado\",\"Congo\"]`",
+            "`[\"Cerrado\", \"Congo\"]`",
+            "`[\"Congo\"]`",
+            "`[\"Amazon\",\"Borneo\"]`\n[Reference array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)\n```js\nconst numbers = [1, 2, 3, 4, 5];\n//MISSING LINE\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q94. Which missing line would allow you to create five variables(one,two,three,four,five) that correspond to their numerical values (1,2,3,4,5)?\n```js\nconst numbers = [1, 2, 3, 4, 5];\n//MISSING LINE\n```",
         "options": [
-            "",
-            "numbers = [1, 2, 3, 4, 5];",
-            "ING LINE",
-            ""
+            "`const [one,two,three,four,five]=numbers`",
+            "`const {one,two,three,four,five}=numbers`",
+            "`const [one,two,three,four,five]=[numbers]`",
+            "`const {one,two,three,four,five}={numbers}`\n[Reference array destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)\n```js\nconst obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n};\nconst obj2 = {\n  ...obj,\n  a: 0,\n};\nconsole.log(obj2.a, obj2.b);\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q95. What will this code print?\n```js\nconst obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n};\nconst obj2 = {\n  ...obj,\n  a: 0,\n};\nconsole.log(obj2.a, obj2.b);\n```",
         "options": [
-            "",
-            "obj = {",
-            ",",
-            ","
+            "Nothing, it will throw an error",
+            "0 2",
+            "undefined 2",
+            "undefined 2\n[Reference spread syntax es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)\n```js\nlet animals = ['jaguar', 'eagle'];\n//Missing Line\nconsole.log(animals.pop()); //Prints jaguar\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q96. Which line could you add to this code to print \"jaguar\" to the console?\n```js\nlet animals = ['jaguar', 'eagle'];\n//Missing Line\nconsole.log(animals.pop()); //Prints jaguar\n```",
         "options": [
-            "",
-            "imals = ['jaguar', 'eagle'];",
-            "ing Line",
-            "e.log(animals.pop()); //Prints jaguar"
+            "`animals.filter(e => e === \"jaguar\");`",
+            "`animals.reverse();`",
+            "`animals.shift();`",
+            "`animals.pop();`\n[Reference Javascript Array Reverse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)\n```js\n//Missing Line\nfor (var i = 0; i < vowels.length; i++) {\n  console.log(vowels[i]);\n  //Each letter printed on a separate line as follows;\n  //a\n  //e\n  //i\n  //o\n  //u\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q97. What line is missing from this code?\n```js\n//Missing Line\nfor (var i = 0; i < vowels.length; i++) {\n  console.log(vowels[i]);\n  //Each letter printed on a separate line as follows;\n  //a\n  //e\n  //i\n  //o\n  //u\n}\n```",
         "options": [
-            "",
-            "ing Line",
-            "ar i = 0; i < vowels.length; i++) {",
-            "ole.log(vowels[i]);"
+            "`let vowels = \"aeiou\".toArray();`",
+            "`let vowels = Array.of(\"aeiou\");`",
+            "`let vowels = {\"a\", \"e\", \"i\", \"o\", \"u\"};`",
+            "`let vowels = \"aeiou\";`\n[Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)\n```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\nconsole.log(y);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q98. What will be logged to the console?\n```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\nconsole.log(y);\n```",
         "options": [
-            "",
-            "x = 6 % 2;",
-            "y = x ? 'One' : 'Two';",
-            "e.log(y);"
+            "undefined",
+            "One",
+            "true",
+            "Two\n[Reference ternary operator js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)\n`let matrix = [[\"You\",\"Can\"],[\"Do\",\"It\"],[\"!\",\"!\",\"!\"]];`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q99. How would you access the word It from this multidimensional array?\n`let matrix = [[\"You\",\"Can\"],[\"Do\",\"It\"],[\"!\",\"!\",\"!\"]];`",
         "options": [
-            "atrix = [[\"You\",\"Can\"],[\"Do\",\"It\"],[\"!\",\"!\",\"!\"]];`",
             "`matrix[1[2]]`",
             "`matrix[1][1]`",
-            "`matrix[1,2]`"
+            "`matrix[1,2]`",
+            "`matrix[1][2]`\n```js\nconst animals = ['Rabbit', 'Dog', 'Cat'];\nanimals.unshift('Lizard');\n```"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q100. What does this code do?\n```js\nconst animals = ['Rabbit', 'Dog', 'Cat'];\nanimals.unshift('Lizard');\n```",
         "options": [
-            "",
-            "animals = ['Rabbit', 'Dog', 'Cat'];",
-            "s.unshift('Lizard');",
-            ""
+            "It adds \"Lizard\" to the start of the animals array.",
+            "It adds \"Lizard\" to the end of the animals array.",
+            "It replaces \"Rabbit\" with \"Lizard\" in the animals array.",
+            "It replaces \"Cat\" with \"Lizard\" in the animals array.\n[Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)\n```js\nlet x = 6 + 3 + '3';\nconsole.log(x);\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q101. What is the output of this code?\n```js\nlet x = 6 + 3 + '3';\nconsole.log(x);\n```",
         "options": [
-            "",
-            "= 6 + 3 + '3';",
-            "e.log(x);",
-            ""
+            "93",
+            "12",
+            "66",
+            "633\n[Reference type coercion](https://www.freecodecamp.org/news/js-type-coercion-explained-27ba3d9a2839/)"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q102. Which statement can take a single expression as input and then look through a number of choices until one that matches that value is found?",
@@ -1005,19 +1005,19 @@
             "else",
             "when",
             "if",
-            "switch"
+            "switch\n[Reference switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)\n```js\nvar sound = 'grunt';\nvar bear = { sound: 'roar' };\nfunction roar() {\n  console.log(this.sound);\n}\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q103. Which statement prints \"roar\" to the console?\n```js\nvar sound = 'grunt';\nvar bear = { sound: 'roar' };\nfunction roar() {\n  console.log(this.sound);\n}\n```",
         "options": [
-            "",
-            "und = 'grunt';",
-            "ar = { sound: 'roar' };",
-            "on roar() {"
+            "`bear.bind(roar);`",
+            "`roar.bind(bear);`",
+            "`roar.apply(bear);`",
+            "`bear[roar]();`\n1. [Reference Apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)\n2. [Reference this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)\n3. [Reference bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q104. Which choice is a valid example of an arrow function, assuming c is defined in the outer scope?",
@@ -1025,37 +1025,37 @@
             "`a, b => { return c; }`",
             "`a, b => c`",
             "`{ a, b } => c`",
-            "`(a,b) => c`"
+            "`(a,b) => c`\n[Reference arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)\n```javascript\nvar flagsJSON =\n  '{ \"countries\" : [' +\n  '{ \"country\":\"Ireland\" , \"flag\":\"🇮🇪\" },' +\n  '{ \"country\":\"Serbia\" , \"flag\":\"🇷🇸\" },' +\n  '{ \"country\":\"Peru\" , \"flag\":\"🇵🇪\" } ]}';\nvar flagDatabase = JSON.parse(flagsJSON);\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q105. Which code would you use to access the Irish flag?\n```javascript\nvar flagsJSON =\n  '{ \"countries\" : [' +\n  '{ \"country\":\"Ireland\" , \"flag\":\"🇮🇪\" },' +\n  '{ \"country\":\"Serbia\" , \"flag\":\"🇷🇸\" },' +\n  '{ \"country\":\"Peru\" , \"flag\":\"🇵🇪\" } ]}';\nvar flagDatabase = JSON.parse(flagsJSON);\n```",
         "options": [
-            "ascript",
-            "agsJSON =",
-            "countries\" : [' +",
-            "country\":\"Ireland\" , \"flag\":\"🇮🇪\" },' +"
+            "flagDatabase.countries[0].flag",
+            "flagDatabase.countries[1].flag",
+            "flagsJSON.countries[0].flag",
+            "flagDatabase[1].flag\n[Reference working with objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)\n```js\n//some-file.js\nexport const printMe = (str) => console.log(str);\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q106. Which statement correctly imports this code from some-file.js?\n```js\n//some-file.js\nexport const printMe = (str) => console.log(str);\n```",
         "options": [
-            "",
-            "-file.js",
-            " const printMe = (str) => console.log(str);",
-            ""
+            "`import printMe from './some-file';`",
+            "`import { printMe } from './some-file';`",
+            "`import default as printMe from './some-file';`",
+            "`const printMe = import './some-file';`\n[Reference importing libraries in javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)\n```js\nconst arr1 = [2, 4, 6];\nconst arr2 = [3, 5, 7];\nconsole.log([...arr1, ...arr2]);\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q107. What will be the output of this code?\n```js\nconst arr1 = [2, 4, 6];\nconst arr2 = [3, 5, 7];\nconsole.log([...arr1, ...arr2]);\n```",
         "options": [
-            "",
-            "arr1 = [2, 4, 6];",
-            "arr2 = [3, 5, 7];",
-            "e.log([...arr1, ...arr2]);"
+            "`[2, 3, 4, 5, 6, 7]`",
+            "`[3,5,7,2,4,6]`",
+            "`[3, 5, 7, 2, 4, 6]`",
+            "`[[2, 4, 6], [3, 5, 7]]`"
         ],
         "_ps": -1
     },
@@ -1065,7 +1065,7 @@
             "`done()`",
             "`then()`",
             "`finally()`",
-            "`catch()`"
+            "`catch()`\n[Reference fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)"
         ],
         "_ps": 1
     },
@@ -1075,7 +1075,7 @@
             "`array.slice()`",
             "`array.shift()`",
             "`array.push()`",
-            "`array.replace()`"
+            "`array.replace()`\n[Reference working with arrays](https://www.w3schools.com/js/js_arrays.asp)"
         ],
         "_ps": 3
     },
@@ -1085,99 +1085,99 @@
             "do…while",
             "forEach",
             "while",
-            "for"
+            "for\n[Reference loops in js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)\n```javascript\nconsole.log(typeof 'blueberry');\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q111. What will be logged to the console?\n```javascript\nconsole.log(typeof 'blueberry');\n```",
         "options": [
-            "ascript",
-            "e.log(typeof 'blueberry');",
-            "",
-            "`string`"
+            "`string`",
+            "`array`",
+            "`Boolean`",
+            "`object`\n[Reference what is typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)\n```html\n//HTML Markup\n<div id=\"A\">\n  <div id=\"B\">\n    <div id=\"C\">Click Here</div>\n  </div>\n</div>\n```\n```javascript\n//JavaScript\ndocument.querySelectorAll('div').forEach((e) => {\n  e.onclick = (e) => console.log(e.currentTarget.id);\n});\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q112. What is the output that is printed when the div containing the text \"Click Here\" is clicked?\n```html\n//HTML Markup\n<div id=\"A\">\n  <div id=\"B\">\n    <div id=\"C\">Click Here</div>\n  </div>\n</div>\n```\n```javascript\n//JavaScript\ndocument.querySelectorAll('div').forEach((e) => {\n  e.onclick = (e) => console.log(e.currentTarget.id);\n});\n```",
         "options": [
-            "l",
-            " Markup",
-            "d=\"A\">",
-            " id=\"B\">"
+            "C B A",
+            "A",
+            "C",
+            "A B C\n1. [Reference query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)\n2. [Reference events](https://developer.mozilla.org/en-US/docs/Web/Events)\n```js\nconst myNumbers = [1, 2, 3, 4, 5, 6, 7];\nconst myFunction = (arr) => {\n  return arr.map((x) => x + 3).filter((x) => x < 7);\n};\nconsole.log(myFunction(myNumbers));\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q113. What will this code log to the console?\n```js\nconst myNumbers = [1, 2, 3, 4, 5, 6, 7];\nconst myFunction = (arr) => {\n  return arr.map((x) => x + 3).filter((x) => x < 7);\n};\nconsole.log(myFunction(myNumbers));\n```",
         "options": [
-            "",
-            "myNumbers = [1, 2, 3, 4, 5, 6, 7];",
-            "myFunction = (arr) => {",
-            "rn arr.map((x) => x + 3).filter((x) => x < 7);"
+            "[4,5,6,7,8,9,10]",
+            "[4,5,6,7]",
+            "[1,2,3,4,5,6]",
+            "[4,5,6]\n[Reference functions in javascript](https://www.w3schools.com/js/js_functions.asp)\n```js\nlet rainForestAcres = 10;\nlet animals = 0;\nwhile (rainForestAcres < 13 || animals <= 2) {\n  rainForestAcres++;\n  animals += 2;\n}\nconsole.log(animals);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q114. What does this code print to the console?\n```js\nlet rainForestAcres = 10;\nlet animals = 0;\nwhile (rainForestAcres < 13 || animals <= 2) {\n  rainForestAcres++;\n  animals += 2;\n}\nconsole.log(animals);\n```",
         "options": [
-            "",
-            "inForestAcres = 10;",
-            "imals = 0;",
-            "(rainForestAcres < 13 || animals <= 2) {"
+            "2",
+            "4",
+            "6",
+            "8\n[Reference MDN JavaScript Looping code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)\n```js\nlet cipherText = [...'YZOGUT QGMORTZ MTRHTILS'];\nlet plainText = '';\n/* Missing Snippet */\nconsole.log(plainText); //Prints YOU GOT THIS\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q115. Which snippet could you add to this code to print \"YOU GOT THIS\" to the console?\n```js\nlet cipherText = [...'YZOGUT QGMORTZ MTRHTILS'];\nlet plainText = '';\n/* Missing Snippet */\nconsole.log(plainText); //Prints YOU GOT THIS\n```\n```js\nfor (let key of cipherText.keys()) {\n  plainText += key % 2 === 0 ? key : ' ';\n}\n```\n```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 !== 0 ? value : '';\n}\n```\n```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 === 0 ? value : '';\n}\n```",
+        "question": "Q115. Which snippet could you add to this code to print \"YOU GOT THIS\" to the console?\n```js\nlet cipherText = [...'YZOGUT QGMORTZ MTRHTILS'];\nlet plainText = '';\n/* Missing Snippet */\nconsole.log(plainText); //Prints YOU GOT THIS\n```",
         "options": [
-            "",
-            "pherText = [...'YZOGUT QGMORTZ MTRHTILS'];",
-            "ainText = '';",
-            "sing Snippet */"
+            "```js\nfor (let key of cipherText.keys()) {\n  plainText += key % 2 === 0 ? key : ' ';\n}\n```",
+            "```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 !== 0 ? value : '';\n}\n```",
+            "```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 === 0 ? value : '';\n}\n```",
+            "```js\nfor (let value of cipherText) {\n  plainText += value;\n}\n```\n1. [Reference MDN JavaScript Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)\n2. [Reference MDN JavaScript Array entries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries)\n3. [Reference MDN JavaScript Remainder/Modulo](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)\n```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q116. What will this code log to the console?\n```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```",
         "options": [
-            "",
-            "foo = [1, 2, 3];",
-            "[n] = foo;",
-            "e.log(n);"
+            "undefined",
+            "1",
+            "NaN",
+            "Nothing. This is not proper JavaScript syntax and will throw an error.\n```js\nvar pokedex = ['Snorlax', 'Jigglypuff', 'Charmander', 'Squirtle'];\npokedex.pop();\nconsole.log(pokedex.pop());\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q117. Which Pokemon will be logged to the console?\n```js\nvar pokedex = ['Snorlax', 'Jigglypuff', 'Charmander', 'Squirtle'];\npokedex.pop();\nconsole.log(pokedex.pop());\n```",
         "options": [
-            "",
-            "kedex = ['Snorlax', 'Jigglypuff', 'Charmander', 'Squirtle'];",
-            "x.pop();",
-            "e.log(pokedex.pop());"
+            "Charmander",
+            "Jigglypuff",
+            "Snorlax",
+            "Squirtle\n**Explanation**: The pop() method removes the last element from an array and returns that element. This method changes the length of the array.\n[Reference Array.pop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)\n```js\nlet conservation = true;\nlet deforestation = false;\nlet acresOfRainForest = 100;\nif(/* Snippet goes here */){\n    ++acresOfRainForest;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q118. Which snippet allows the `acresOfRainForest` variable to increase?\n```js\nlet conservation = true;\nlet deforestation = false;\nlet acresOfRainForest = 100;\nif(/* Snippet goes here */){\n    ++acresOfRainForest;\n}\n```",
         "options": [
-            "",
-            "nservation = true;",
-            "forestation = false;",
-            "resOfRainForest = 100;"
+            "`!deforestation && !conservation`",
+            "`deforestation && conservation || deforestation`",
+            "`conservation && !deforestation`",
+            "`!conservation || deforestation`\n[Reference if...else statements](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#if...else_statements)\n```html\n<h1 class=\"content\">LinkedIn Learning</h1>\n<div class=\"content\">\n  <span class=\"content\">The LinkedIn Learning library has great JavaScript courses!</span>\n</div>\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q119. Which statement can be used to select the element from the DOM containing the text \"The LinkedIn Learning library has great JavaScript courses\" from this markup?\n```html\n<h1 class=\"content\">LinkedIn Learning</h1>\n<div class=\"content\">\n  <span class=\"content\">The LinkedIn Learning library has great JavaScript courses!</span>\n</div>\n```",
         "options": [
-            "l",
-            "ass=\"content\">LinkedIn Learning</h1>",
-            "lass=\"content\">",
-            "n class=\"content\">The LinkedIn Learning library has great JavaScript courses!</span>"
+            "document.querySelector(\"div.content\")",
+            "document.querySelector(\"span.content\")",
+            "document.querySelector(\".content\")",
+            "document.querySelector(\"div.span\")"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q120. Which value is not falsey?",
@@ -1185,128 +1185,127 @@
             "`[]`",
             "`undefined`",
             "`0`",
-            "`null`"
+            "`null`\n[Reference Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)\n```js\nconst lion = 1;\nlet tiger = 2;\nvar bear;\n++lion;\nbear += lion + tiger;\ntiger++;\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q121. What line of code causes this code segment to throw an error?\n```js\nconst lion = 1;\nlet tiger = 2;\nvar bear;\n++lion;\nbear += lion + tiger;\ntiger++;\n```",
         "options": [
-            "",
-            "lion = 1;",
-            "ger = 2;",
-            "ar;"
+            "`line 5, because lion cannot be reassigned a value`",
+            "`line 6, because the += operator cannot be used with the undefined variable bear`",
+            "`line 5, because the prefix (++) operator does not exist in JavaScript`",
+            "`line 3, because the variable bear is left undefined`\n1. [Reference const in js](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)\n2. [Reference TypeError: invalid assignment to const \"x\"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Errors/Invalid_const_assignment)\n```js\nconst person = { name: 'Dave', age: 40, hairColor: 'blue' };\nconst result = Object.keys(person).map((x) => x.toUpperCase());\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q122. What will be the value of `result` after running this code?\n```js\nconst person = { name: 'Dave', age: 40, hairColor: 'blue' };\nconst result = Object.keys(person).map((x) => x.toUpperCase());\n```",
         "options": [
-            "",
-            "person = { name: 'Dave', age: 40, hairColor: 'blue' };",
-            "result = Object.keys(person).map((x) => x.toUpperCase());",
-            ""
+            "It will throw a TypeError.",
+            "`[\"Name\", \"Age\", \"HairColor\"]`",
+            "`[\"DAVE\", 40, \"BLUE\"]`",
+            "`[\"NAME\", \"AGE\", \"HAIRCOLOR\"]`\n1. [Reference Object.keys()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)\n2. [Reference Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)\n3. [Reference String.prototype.toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase)\n```js\nlet animals = [\"eagle\", \"osprey\", \"salmon\"];\nlet key = animal => animal === \"salmon\";\nif(/* Insert Snippet Here */){\n  console.log(\"swim\");\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q123. Which snippet could you insert to this code to print \"swim\" to the console?\n```js\nlet animals = [\"eagle\", \"osprey\", \"salmon\"];\nlet key = animal => animal === \"salmon\";\nif(/* Insert Snippet Here */){\n  console.log(\"swim\");\n}\n```",
         "options": [
-            "",
-            "imals = [\"eagle\", \"osprey\", \"salmon\"];",
-            "y = animal => animal === \"salmon\";",
-            "Insert Snippet Here */){"
+            "`animals.every(key)`",
+            "`animals.some(key).length === 1`",
+            "`animals.filter(key) === true`",
+            "`animals.some(key)`\n[Reference Array.prototype.some](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)\n```js\nclass RainForest {\n  static minimumRainFall = 60;\n}\nlet congo = new RainForest();\nRainForest.minimumRainFall = 80;\nconsole.log(congo.minimumRainFall);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q124. What is the output of this code?\n```js\nclass RainForest {\n  static minimumRainFall = 60;\n}\nlet congo = new RainForest();\nRainForest.minimumRainFall = 80;\nconsole.log(congo.minimumRainFall);\n```",
         "options": [
-            "",
-            "RainForest {",
-            "ic minimumRainFall = 60;",
-            ""
+            "`undefined`",
+            "`None of these answers, as static is not a feature in Javascript.`",
+            "`60`",
+            "`80`\n[Reference Classes static](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)\n```js\nlet obj = {};\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q125. How can you attempt to access the property `a.b` on `obj` without throwing an error if a is undefined?\n```js\nlet obj = {};\n```",
         "options": [
-            "",
-            "j = {};",
-            "",
-            "`obj?.a.b`"
+            "`obj?.a.b`",
+            "`obj.a?.b`",
+            "`obj[a][b]`",
+            "`obj.?a.?b`\n[Reference Optional chaining (?.)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)\n```js\nif (true) {\n  var x = 5;\n  const y = 6;\n  let z = 7;\n}\nconsole.log(x + y + z);\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q126. What happens when you run this code?\n```js\nif (true) {\n  var x = 5;\n  const y = 6;\n  let z = 7;\n}\nconsole.log(x + y + z);\n```",
         "options": [
-            "",
-            "ue) {",
-            "x = 5;",
-            "t y = 6;"
+            "It will throw a `ReferenceError` about `x`.",
+            "It will print `18`.",
+            "It will print `undefined`.",
+            "It will throw a `ReferenceError` about `y`.\n[Reference let statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)\n```js\nconst x = [1, 2];\nconst y = [5, 7];\nconst z = [...x, ...y];\nconsole.log(z);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q127. What does this code print to the console?\n```js\nconst x = [1, 2];\nconst y = [5, 7];\nconst z = [...x, ...y];\nconsole.log(z);\n```",
         "options": [
-            "",
-            "x = [1, 2];",
-            "y = [5, 7];",
-            "z = [...x, ...y];"
+            "`[1,2,5,7]`",
+            "`[[1, 2], [5, 7]]`",
+            "`[2,7]`",
+            "`[2,1,7,5]`\n[Reference spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)\n```js\nconst a = { x: 1 };\nconst b = { x: 1 };\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q128. Given this code, which statement will evaluate to false?\n```js\nconst a = { x: 1 };\nconst b = { x: 1 };\n```",
         "options": [
-            "",
-            "a = { x: 1 };",
-            "b = { x: 1 };",
-            ""
+            "`a['x'] === b['x']`",
+            "`a != b`",
+            "`a === b`",
+            "`a.x === b.x`\n[Reference](http://adripofjavascript.com/blog/drips/object-equality-in-javascript.html)\n```js\nconsole.log(typeof 41.1);\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q129. What will this code log to the console?\n```js\nconsole.log(typeof 41.1);\n```",
         "options": [
-            "",
-            "e.log(typeof 41.1);",
-            "",
-            "`Nothing. It resuults in a ReferenceError.`"
+            "`Nothing. It resuults in a ReferenceError.`",
+            "`decimal`",
+            "`float`",
+            "`number`\n[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#basic_usage)\n```js\nlet scores = [];\nscores.push(1, 2);\nscores.pop();\nscores.push(3, 4);\nscores.pop();\nscore = scores.reduce((a, b) => a + b);\nconsole.log(score);\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q130. What is the output of this code?\n```js\nlet scores = [];\nscores.push(1, 2);\nscores.pop();\nscores.push(3, 4);\nscores.pop();\nscore = scores.reduce((a, b) => a + b);\nconsole.log(score);\n```",
         "options": [
-            "",
-            "ores = [];",
-            ".push(1, 2);",
-            ".pop();"
+            "`3`",
+            "`4`",
+            "`6`",
+            "`7`\n1. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)\n2. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)\n3. [Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)\n```js\nlet bear = {\n  sound: 'roar',\n  roar() {\n    console.log(this.sound);\n  },\n};\nbear.sound = 'grunt';\nlet bearSound = bear.roar;\nbearSound();\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q131. What does this code print to the console?\n```js\nlet bear = {\n  sound: 'roar',\n  roar() {\n    console.log(this.sound);\n  },\n};\nbear.sound = 'grunt';\nlet bearSound = bear.roar;\nbearSound();\n```",
         "options": [
-            "",
-            "ar = {",
-            "d: 'roar',",
-            "() {"
+            "`Nothing is printed to the console.`",
+            "`grunt`",
+            "`undefined`",
+            "`roar`\n[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)\n```js\nvar cat = { name: 'Athena' };\nfunction swap(feline) {\n  feline.name = 'Wild';\n  feline = { name: 'Tabby' };\n}\nswap(cat);\nconsole.log(cat.name);\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q132. What is the output of this code?\n```js\nvar cat = { name: 'Athena' };\nfunction swap(feline) {\n  feline.name = 'Wild';\n  feline = { name: 'Tabby' };\n}\nswap(cat);\nconsole.log(cat.name);\n```",
         "options": [
-            "",
-            "t = { name: 'Athena' };",
-            "on swap(feline) {",
-            "ne.name = 'Wild';"
+            "undefined",
+            "Wild",
+            "Tabby"
         ],
-        "_ps": -1
+        "_ps": 1
     }
 ]

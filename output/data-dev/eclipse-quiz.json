@@ -245,7 +245,7 @@
             "to switch between preferences within a single workspace",
             "to easily switch between different layouts of views in the Workbenchfor specific tasks",
             "to manage the fact that some views work only in certain perspectives",
-            "to debug multiple applications at the same time"
+            "to debug multiple applications at the same time\n[Reference](https://www.eclipse.org/articles/using-perspectives/PerspectiveArticle.html)"
         ],
         "_ps": 1
     },
@@ -265,17 +265,17 @@
             "Open the commit in the Git Staging view.",
             "Open the commit in the Git Reflog view.",
             "Double-click a commit in the History view.",
-            "Right-click the file in the Package Explorer and select Team > Show in History."
+            "Right-click the file in the Package Explorer and select Team > Show in History.\n![image Q28](https://github.com/Beziu/linkedin-skill-assessments-quizzes/blob/master/eclipse/images/Eclipse-Q28.jpg)"
         ],
         "_ps": 3
     },
     {
         "question": "Q28. In the image below, what does the circled button do?\n![image Q28](https://github.com/Beziu/linkedin-skill-assessments-quizzes/blob/master/eclipse/images/Eclipse-Q28.jpg)",
         "options": [
-            "e Q28](https://github.com/Beziu/linkedin-skill-assessments-quizzes/blob/master/eclipse/images/Eclipse-Q28.jpg)",
             "It links the Editor and Navigator, causing the Editor to switch to the file selected in the Package Explorer and vice versa.",
             "It expands Libraries when you are in the Java perspective.",
-            "It minimizes the left view"
+            "It minimizes the left view",
+            "It collapses open folders in the Package Explorer view."
         ],
         "_ps": -1
     },
@@ -354,8 +354,7 @@
         "options": [
             "Click Run > Debug As > Remote Application.",
             "You cannot do this in Eclipse.",
-            "Create and run a configuration under Run > Debug Configurations > Remote Java Application.",
-            "Click Run > External Tools."
+            "Create and run a configuration under Run > Debug Configurations > Remote Java Application."
         ],
         "_ps": 2
     }

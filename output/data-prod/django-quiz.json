@@ -32,12 +32,12 @@
     {
         "question": "Q4. A client wants their site to be able to load \"Rick & Morty\" episodes by number or by title—e.g., shows/3/3 or shows/picklerick. Which URL pattern do you recommend?",
         "options": [
-            "",
-            "",
-            "shows/<int:season>/<int:episode>/', views.episode_number),",
-            "shows/<slug:episode_name>/', views.episode_name)"
+            "```\nurl(r'shows/<int:season>/<int:episode>/', views.episode_number),\nurl(r'shows/<slug:episode_name>/', views.episode_name)\n```",
+            "```\npath('shows/<int:season>/<int:episode>/', views.episode_number),\npath(r'shows/<slug:episode_name>/', views.episode_name)\n```",
+            "```\npath('shows/<int:season>/<int:episode>', views.episode_number),\npath(r'shows/<slug:episode_name>/', views.episode_number)\n```",
+            "```\nurl(r'^show/(?P<season>[0-9]+)/(?P<episode>[0-9]+)/$', views.episode_number),\nurl(r'^show/(?P<episode_name>[\\w-]+)/', views.episode_name\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q5. How do you determine at startup time if a piece of middleware should be used?",
@@ -152,10 +152,10 @@
     {
         "question": "Q17. How would you define the relationship between a star and a constellation in a Django model?",
         "options": [
-            "",
-            "",
-            "Star(models.Model):",
-            " models.CharField(max_length=100)"
+            "```\nclass Star(models.Model):\nname = models.CharField(max_length=100)\nclass Constellation(models.Model):\nstars = models.ManyToManyField(Star)\n```",
+            "```\nclass Star(models.Model):\nconstellation = models.ForeignKey(Constellation, on_delete=models.CASCADE)\nclass Constellation(models.Model):\nstars = models.ForeignKey(Star, on_delete=models.CASCADE)\n```",
+            "```\nclass Star(models.Model):\nname = models.CharField(max_length=100)\nclass Constellation(models.Model):\nstars = models.OneToManyField(Star)\n```",
+            "```\nclass Star(models.Model):\nconstellation = models.ManyToManyField(Constellation)\nclass Constellation(models.Model):\nname = models.CharField(max_length=100)\n```"
         ],
         "_ps": 0
     },
@@ -325,19 +325,19 @@
             "if your single installation powers more than one site",
             "if you need to serve static as well as dynamic content",
             "if you want your app have a fully qualified domain name",
-            "if you are expecting more than 10.000 users"
+            "if you are expecting more than 10.000 users\n`title=models.charfield(max_length=100, validators=[validate_spelling])`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q35. Which infrastructure do you need:",
+        "question": "Q35. Which infrastructure do you need:\n`title=models.charfield(max_length=100, validators=[validate_spelling])`",
         "options": [
-            "=models.charfield(max_length=100, validators=[validate_spelling])`",
             "inizialized array called validators",
             "a validators file containing a function called validate_spelling imported at the top of model",
-            "a validators file containing a function called validate imported at the top of model"
+            "a validators file containing a function called validate imported at the top of model",
+            "spelling package imported at the top of model"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q36. What decorator is used to require that a view accepts only the get and head methods?",
@@ -352,12 +352,12 @@
     {
         "question": "Q37. How would you define the relation between a book and an author - book has only one author.",
         "options": [
-            "",
-            "",
-            "Author (models.model):",
-            "odels.foreignkey(Book,on_delete=models.cascade)"
+            "```\nclass Author (models.model):\nbook=models.foreignkey(Book,on_delete=models.cascade)\nclass Book(models.model):\nname=models.charfield(max_length=100)\n```",
+            "```python\nclass Author (models.model):\nname=models.charfield(max_length=100)\nclass Book(models.model):\nauthor=models.foreignkey(Author,on_delete=models.cascade)\n```",
+            "```\nclass Author (models.model):\nname=models.charfield(max_length=100)\nclass Book(models.model):\nauthor=models.foreignkey(Author)\n```",
+            "```\nclass Author (models.model):\nname=models.charfield(max_length=100)\nclass Book(models.model):\nauthor=models.foreignkey(Author,on_delete=models.cascade)\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q38. What is a callable that takes a value and raises an error if the value fails?",
@@ -395,29 +395,29 @@
             "objectwriters",
             "serializers",
             "picklers",
-            "viewsets"
+            "viewsets\n```\n{ percentage if spark >= 50 percentage }\nLots of spark\n{percentage elif spark == 42 percentage}\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q42. How should the code end?",
+        "question": "Q42. How should the code end?\n```\n{ percentage if spark >= 50 percentage }\nLots of spark\n{percentage elif spark == 42 percentage}\n```",
         "options": [
-            "",
-            "entage if spark >= 50 percentage }",
-            "f spark",
-            "ntage elif spark == 42 percentage}"
+            "{ percentage else percentage}",
+            "{percentage endif percentage}",
+            "Nothing needed",
+            "{percentage end percentage}\n```\nfrom rest_framework import serializers\nfrom .models import Planet\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q43 Which code block will create a serializer?",
+        "question": "Q43 Which code block will create a serializer?\n```\nfrom rest_framework import serializers\nfrom .models import Planet\n```",
         "options": [
-            "",
-            "est_framework import serializers",
-            "models import Planet",
-            ""
+            "```\nclass PlanetSerializer(serializers.ModelSerializer):\nclass Meta:\nmodel=Planet\nfields=('name','position', 'mass', 'rings')\n```",
+            "```\nfrom rest_framework import serializers\nfrom .models import Planet\nclass PlanetSerializer():\nclass Meta:\nfields=('name','position', 'mass', 'rings')\nmodel=Planet\n```",
+            "```\nfrom django.db import serializers\nfrom .models import Planet\nclass PlanetSerializer(serializers.ModelSerializer):\nfields=('name','position', 'mass', 'rings')\nmodel=Sandwich\n```",
+            "```\nfrom django.db import serializers\nfrom .models import Planet\nclass PlanetSerializer(serializers.ModelSerializer):\nclass Meta:\nfields=('name')\nmodel=Planet\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q44 Which class allows you to automatically create a Serializer class with fields and validators that correspond to your model's fields?",
@@ -475,29 +475,29 @@
             "Loose Coupling",
             "Less Code",
             "Fast Development",
-            "Implicit over explicit"
+            "Implicit over explicit\n```\n{{\"live long and prosper\"|truncate:3}}\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q50. What is the result of this template code?",
+        "question": "Q50. What is the result of this template code?\n```\n{{\"live long and prosper\"|truncate:3}}\n```",
         "options": [
-            "",
-            "e long and prosper\"|truncate:3}}",
-            "",
-            "live long and ..."
+            "live long and ...",
+            "live long and",
+            "a compilation error",
+            "liv\n```\n1 sandwiches = Sandwich.objects.filter(is_vegan=True)\n2 for sandwich in sandwiches:\n3   print(sandwich.name + \" - \" + sandwich.spice_level)\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
-        "question": "Q51. When does this code load data into memory?",
+        "question": "Q51. When does this code load data into memory?\n```\n1 sandwiches = Sandwich.objects.filter(is_vegan=True)\n2 for sandwich in sandwiches:\n3   print(sandwich.name + \" - \" + sandwich.spice_level)\n```",
         "options": [
-            "",
-            "wiches = Sandwich.objects.filter(is_vegan=True)",
-            "sandwich in sandwiches:",
-            "int(sandwich.name + \" - \" + sandwich.spice_level)"
+            "line 1",
+            "It depends on how many results return by query.",
+            "It depends on cache.",
+            "line 2"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q52. You are building a web application using a React front end and a Django back end. For what will you need to provision?\\*\\*",
@@ -585,19 +585,19 @@
             "models",
             "views",
             "forms",
-            "serializers"
+            "serializers\n```shell\n% if sparles >= 50 %\n  Lots of sparkles!\n% elif sparkles == 42 %\n  The answer to life, the universe, and everything!\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q61. To complete the conditional, what should this block of code end with?",
+        "question": "Q61. To complete the conditional, what should this block of code end with?\n```shell\n% if sparles >= 50 %\n  Lots of sparkles!\n% elif sparkles == 42 %\n  The answer to life, the universe, and everything!\n```",
         "options": [
-            "ll",
-            "parles >= 50 %",
-            " of sparkles!",
-            " sparkles == 42 %"
+            "`% endif %`",
+            "Nothing else is needed.",
+            "`% end%`",
+            "`% else %`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q62. You have inherited a Django project and need to get it running locally. It comes with a requirements.txt file containing all its dependencies. Which command should you use?",
@@ -684,8 +684,7 @@
         "options": [
             "POST",
             "PUT",
-            "PAUSE",
-            "PATCH"
+            "PAUSE"
         ],
         "_ps": 2
     }

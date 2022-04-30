@@ -5,19 +5,19 @@
             "A matrix may contain numeric values only.",
             "A matrix must not be singular.",
             "A data frame may contain variables that have different modes.",
-            "A data frame may contain variables of different lengths."
+            "A data frame may contain variables of different lengths.\n`unclass(as.Date(\"1971-01-01\"))`"
         ],
         "_ps": 2
     },
     {
-        "question": "Q2. What value does this statement return?",
+        "question": "Q2. What value does this statement return?\n`unclass(as.Date(\"1971-01-01\"))`",
         "options": [
-            "ss(as.Date(\"1971-01-01\"))`",
             "1",
             "365",
-            "4"
+            "4",
+            "12"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q3. What do you use to take an object such as a data frame out of the workspace?",
@@ -25,19 +25,19 @@
             "remove()",
             "erase()",
             "detach()",
-            "delete()"
+            "delete()\n```\nxvect<-c(1,2,3)\nxvect[2] <- \"2\"\nxvect\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q4. Review the following code. What is the result of line 3?",
+        "question": "Q4. Review the following code. What is the result of line 3?\n```\nxvect<-c(1,2,3)\nxvect[2] <- \"2\"\nxvect\n```",
         "options": [
-            "",
-            "-c(1,2,3)",
-            "2] <- \"2\"",
-            ""
+            "[1] 1 2 3",
+            "[1] \"1\" 2 \"3\"",
+            "[1] \"1\" \"2\" \"3\"",
+            "[1] 7 9"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q5. The variable height is a numeric vector in the code below. Which statement returns the value 35?",
@@ -45,19 +45,19 @@
             "`height(length(height))`",
             "`height[length(height)]`",
             "`height[length[height]]`",
-            "`height(5)`"
+            "`height(5)`\n![Image](https://i.ibb.co/jvPPSRk/Captura-de-pantalla-2020-07-14-a-las-20-58-09.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q6. In the image below, the data frame is named rates. The statement `sd(rates[, 2])` returns 39. As what does R regard Ellen's product ratings?",
+        "question": "Q6. In the image below, the data frame is named rates. The statement `sd(rates[, 2])` returns 39. As what does R regard Ellen's product ratings?\n![Image](https://i.ibb.co/jvPPSRk/Captura-de-pantalla-2020-07-14-a-las-20-58-09.png)",
         "options": [
-            "e](https://i.ibb.co/jvPPSRk/Captura-de-pantalla-2020-07-14-a-las-20-58-09.png)",
             "sample with replacement",
             "population",
-            "trimmed sample"
+            "trimmed sample",
+            "sample <-- not sure"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q7. Which choice does R regard as an acceptable name for a variable?",
@@ -85,19 +85,19 @@
             "type",
             "length",
             "attributes",
-            "scalar"
+            "scalar\n![Image](https://i.ibb.co/8DL1HCV/Captura-de-pantalla-2020-07-14-a-las-18-33-34.png)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q10. In the image below, the data frame on lines 1 through 4 is named StDf. State and Capital are both factors. Which statement returns the results shown on lines 6 and 7?",
+        "question": "Q10. In the image below, the data frame on lines 1 through 4 is named StDf. State and Capital are both factors. Which statement returns the results shown on lines 6 and 7?\n![Image](https://i.ibb.co/8DL1HCV/Captura-de-pantalla-2020-07-14-a-las-18-33-34.png)",
         "options": [
-            "e](https://i.ibb.co/8DL1HCV/Captura-de-pantalla-2020-07-14-a-las-18-33-34.png)",
             "StDf[1:2,-3]",
             "StDf[1:2,1]",
-            "StDf[1:2,]"
+            "StDf[1:2,]",
+            "StDf[1,2,]"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q11. Which function displays the first five rows of the data frame named pizza?",
@@ -115,49 +115,49 @@
             "console(-25)",
             "console(reverse=TRUE)",
             "history()",
-            "history(max.show = 25)"
+            "history(max.show = 25)\n```\n> class( d.pizza[ , \"temperature\" ] )\n> \"numeric\"\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q13. d.pizza is a data frame. It's a column named temperature contains only numbers. If you extract temperature using the [] accessors, its class defaults to numeric. How can you access temperature so that it retains the class of data.frame?",
+        "question": "Q13. d.pizza is a data frame. It's a column named temperature contains only numbers. If you extract temperature using the [] accessors, its class defaults to numeric. How can you access temperature so that it retains the class of data.frame?\n```\n> class( d.pizza[ , \"temperature\" ] )\n> \"numeric\"\n```",
         "options": [
-            "",
-            "s( d.pizza[ , \"temperature\" ] )",
-            "eric\"",
-            ""
+            "`class( d.pizza( , \"temperature\" ) )`",
+            "`class( d.pizza[ , \"temperature\" ] )`",
+            "`class( d.pizza$temperature )`",
+            "`class( d.pizza[ , \"temperature\", drop=F ] )`\n```\na <- c(3,3,6.5,8)\nb <- c(7,2,5.5,10)\nc <- a < b\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q14. What does c contain?",
+        "question": "Q14. What does c contain?\n```\na <- c(3,3,6.5,8)\nb <- c(7,2,5.5,10)\nc <- a < b\n```",
         "options": [
-            "",
-            "(3,3,6.5,8)",
-            "(7,2,5.5,10)",
-            " < b"
+            "[1] NaN",
+            "[1] -4",
+            "[1] 4 -1 -1 2",
+            "[1] TRUE FALSE FALSE TRUE\n```\n> y <- 1:9\n> dim(y) <- c(3,3)\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q15. Review the statements below. Does the use of the dim function change the class of y, and if so what is y's new class?",
+        "question": "Q15. Review the statements below. Does the use of the dim function change the class of y, and if so what is y's new class?\n```\n> y <- 1:9\n> dim(y) <- c(3,3)\n```",
         "options": [
-            "",
-            " 1:9",
-            "y) <- c(3,3)",
-            ""
+            "No, y's new class is \"array\".",
+            "Yes, y's new class is \"matrix\".",
+            "No, y's new class is \"vector\".",
+            "Yes, y's new class is \"integer\".\n`mydf <- data.frame(x=1:3, y=c(\"a\",\"b\",\"c\"), stringAsFactors=FALSE)`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q16. What is `mydf$y` in this code?",
+        "question": "Q16. What is `mydf$y` in this code?\n`mydf <- data.frame(x=1:3, y=c(\"a\",\"b\",\"c\"), stringAsFactors=FALSE)`",
         "options": [
-            "<- data.frame(x=1:3, y=c(\"a\",\"b\",\"c\"), stringAsFactors=FALSE)`",
             "list",
             "string",
-            "factor"
+            "factor",
+            "character vector"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q17. How does a vector differ from a list?",
@@ -185,29 +185,29 @@
             "rbind()",
             "cbind()",
             "bind()",
-            "coerce()"
+            "coerce()\n```\n1 mylist <- list(1,2,\"C\",4,5)\n2 unlist(mylist)\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q20. Review line 1 below. What does the statement in line 2 return?",
+        "question": "Q20. Review line 1 below. What does the statement in line 2 return?\n```\n1 mylist <- list(1,2,\"C\",4,5)\n2 unlist(mylist)\n```",
         "options": [
-            "",
-            "st <- list(1,2,\"C\",4,5)",
-            "st(mylist)",
-            ""
+            "[1] 1 2 4 5",
+            "\"C\"",
+            "[1] \"1\" \"2\" \"C\" \"4\" \"5\"",
+            "[1] 1 2 C 4 5\n```\nx <- NA\ny <- x/1\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q21. What is the value of y in this code?",
+        "question": "Q21. What is the value of y in this code?\n```\nx <- NA\ny <- x/1\n```",
         "options": [
-            "",
-            "A",
-            "/1",
-            ""
+            "Inf",
+            "Null",
+            "NaN",
+            "NA"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q22. Two variable in the mydata data frame are named Var1 and Var2. How do you tell a bivariate function, such as cor.test, which two variables you want to analyze?",
@@ -215,19 +215,19 @@
             "`cor.test(Var1 ~ Var2)`",
             "`cor.test(mydata$(Var1,Var2))`",
             "`cor.test(mydata$Var1,mydata$Var2)`",
-            "`cor.test(Var1,Var2, mydata)`"
+            "`cor.test(Var1,Var2, mydata)`\n```\nlibrary(DescTools)\ndeliver <- aggregate(count,by=list(area,driver), FUN=mean)\nprint(deliver)\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q23. A data frame named d.pizza is part of the DescTools package. A statement is missing from the following R code and an error is therefore likely to occur. Which statement is missing?",
+        "question": "Q23. A data frame named d.pizza is part of the DescTools package. A statement is missing from the following R code and an error is therefore likely to occur. Which statement is missing?\n```\nlibrary(DescTools)\ndeliver <- aggregate(count,by=list(area,driver), FUN=mean)\nprint(deliver)\n```",
         "options": [
-            "",
-            "y(DescTools)",
-            "r <- aggregate(count,by=list(area,driver), FUN=mean)",
-            "deliver)"
+            "`attach(d.pizza)`",
+            "`summarize(deliver)`",
+            "`mean <- rbind(d.pizza,count)`",
+            "`deliver[!complete.cases(deliver),]`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q24. How to name rows and columns in DataFrames and Matrices F in R?",
@@ -242,102 +242,102 @@
     {
         "question": "Q25. Which set of two statements-followed by the cbind() function-results in a data frame named vbound?",
         "options": [
-            "",
-            "",
-            "st(1,2,3)",
-            "st(c(4,5,6))"
+            "```\nv1<-list(1,2,3)\nv2<-list(c(4,5,6))\nvbound<-cbind(v1,v2)\n```",
+            "```\nv1<-c(1,2,3)\nv2<-list(4,5,6))\nvbound<-cbind(v1,v2)\n```",
+            "```\nv1<-c(1,2,3)\nv2<-c(4,5,6))\nvbound<-cbind(v1,v2)\n```\n`Cpeople <- ournames %in% grep(\"^C\", ournames, value=TRUE)`",
+            "records where the first character is a C"
         ],
         "_ps": -1
     },
     {
-        "question": "Q26. ournames is a character vector. What values does the statement below return to Cpeople?",
+        "question": "Q26. ournames is a character vector. What values does the statement below return to Cpeople?\n`Cpeople <- ournames %in% grep(\"^C\", ournames, value=TRUE)`",
         "options": [
-            "le <- ournames %in% grep(\"^C\", ournames, value=TRUE)`",
             "records where the first character is a C",
             "any record with a value containing a C",
-            "TRUE or FALSE, depending on whether any character in ournames is C"
+            "TRUE or FALSE, depending on whether any character in ournames is C",
+            "TRUE and FALSE values, depending on whether the first character in an ournames record is C\n```\nv <- 1:3\nnames(v) <- c(\"a\", \"b\", \"c\")\nv[4] <- 4\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q27. What is the value of names(v[4])?",
+        "question": "Q27. What is the value of names(v[4])?\n```\nv <- 1:3\nnames(v) <- c(\"a\", \"b\", \"c\")\nv[4] <- 4\n```",
         "options": [
-            "",
-            ":3",
-            "v) <- c(\"a\", \"b\", \"c\")",
-            "- 4"
+            "\"\"",
+            "d",
+            "NULL",
+            "NA\n```\nx <- c(1, 2, 3, 4)\nOutput: [1] 2 3 4\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q28. Which of the following statements doesn't yield the code output below. Review the following code. What is the result of line 3?",
+        "question": "Q28. Which of the following statements doesn't yield the code output below. Review the following code. What is the result of line 3?\n```\nx <- c(1, 2, 3, 4)\nOutput: [1] 2 3 4\n```",
         "options": [
-            "",
-            "(1, 2, 3, 4)",
-            ": [1] 2 3 4",
-            ""
+            "x[c(2, 3, 4)]",
+            "x[-1]",
+            "x[c(-1, 0, 0, 0)]",
+            "x[c(-1, 2, 3, 4)]\n![image](https://user-images.githubusercontent.com/52632898/139964478-9806a163-76b2-4f99-97bc-c925fdf6e388.png)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q29. Given DFMerged <- merge(DF1, DF2) and the image below, how manu rows are in DFMerged?",
+        "question": "Q29. Given DFMerged <- merge(DF1, DF2) and the image below, how manu rows are in DFMerged?\n![image](https://user-images.githubusercontent.com/52632898/139964478-9806a163-76b2-4f99-97bc-c925fdf6e388.png)",
         "options": [
-            "e](https://user-images.githubusercontent.com/52632898/139964478-9806a163-76b2-4f99-97bc-c925fdf6e388.png)",
             "6",
             "9",
-            "3"
+            "3",
+            "0\n```\nx<-5:8\nnames(x)<-letters[5:8]\nx\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q30. What does R return in response to the final statement?",
+        "question": "Q30. What does R return in response to the final statement?\n```\nx<-5:8\nnames(x)<-letters[5:8]\nx\n```",
         "options": [
-            "",
-            "",
-            "x)<-letters[5:8]",
-            ""
+            "e f g h\n      \"5\" \"6\" \"7\" \"8\"",
+            "5 6 7 8",
+            "e f g h",
+            "e f g h\n      5 6 7 8\n```\nx<-as.Date(\"2018-10-01\")\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q31. How do you return \"October\" from x in this code?",
+        "question": "Q31. How do you return \"October\" from x in this code?\n```\nx<-as.Date(\"2018-10-01\")\n```",
         "options": [
-            "",
-            "Date(\"2018-10-01\")",
-            "",
-            "attr()"
+            "attr()",
+            "months(x)",
+            "as.month(x)",
+            "month(x)\n```\nfact<-factor(c(\"Rep\",\"Dem\",\"Dem\",\"Rep\"))\nfact\n[1] Rep Dem Dem Rep\nLevels: Rep Dem\nfact[2]<-\"Ind\"\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q32. How will R respond to the last line of this code?",
+        "question": "Q32. How will R respond to the last line of this code?\n```\nfact<-factor(c(\"Rep\",\"Dem\",\"Dem\",\"Rep\"))\nfact\n[1] Rep Dem Dem Rep\nLevels: Rep Dem\nfact[2]<-\"Ind\"\n```",
         "options": [
-            "",
-            "factor(c(\"Rep\",\"Dem\",\"Dem\",\"Rep\"))",
-            "",
-            "p Dem Dem Rep"
+            ">",
+            "[,2]Ind",
+            "invalid factor level, NA generated",
+            "Ind\n```\nStartDate<- as.Date(\"2020/2/28\")\nStopDate<- as.Date(\"2020/3/1\")\nStopDate-StartDate\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q33. What does R return?",
+        "question": "Q33. What does R return?\n```\nStartDate<- as.Date(\"2020/2/28\")\nStopDate<- as.Date(\"2020/3/1\")\nStopDate-StartDate\n```",
         "options": [
-            "",
-            "ate<- as.Date(\"2020/2/28\")",
-            "te<- as.Date(\"2020/3/1\")",
-            "te-StartDate"
+            "\"1970-01-02\"",
+            "time difference of one day",
+            "time difference of two days",
+            "error in x-y: nonnumeric argument to binary operator\n```\n> mtrx <- matrix( c(3,5,8,4), nrow= 2,ncol=2,byrow=TRUE)\n> newmat <- mtrx * mtrx\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q34. What does the expression `mtrx * mtrx` do ?",
+        "question": "Q34. What does the expression `mtrx * mtrx` do ?\n```\n> mtrx <- matrix( c(3,5,8,4), nrow= 2,ncol=2,byrow=TRUE)\n> newmat <- mtrx * mtrx\n```",
         "options": [
-            "",
-            " <- matrix( c(3,5,8,4), nrow= 2,ncol=2,byrow=TRUE)",
-            "at <- mtrx * mtrx",
-            ""
+            "it transpose **mtrx**",
+            "it premultiplies the current **netwmat** row by the **newmat** column.",
+            "it returns the results of a matrix multiplication",
+            "It squares each cell in **mtrx**\n```r\n> newmat\n     [,1] [,2]\n[1,]    9   25\n[2,]   64   16\n# The `%*%` operator gives matrix multiplication\n> mtrx %*% mtrx\n     [,1] [,2]\n[1,]   49   35\n[2,]   56   56\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q35. Which function in R combines different values into a single object?",
@@ -385,19 +385,19 @@
             "ANOVAData, anovadata",
             "VisitPCA, VarX",
             "VisitPCA, varx",
-            "Xvar, Yvar"
+            "Xvar, Yvar\n```r\nStDf[, -1]\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q39. StDf is a data frame. Based on this knowledge, what does this statement return?",
+        "question": "Q39. StDf is a data frame. Based on this knowledge, what does this statement return?\n```r\nStDf[, -1]\n```",
         "options": [
-            "",
-            " -1]",
-            "",
-            "all but the first row and first column of StDf"
+            "all but the first row and first column of StDf",
+            "all but the final column of StDf",
+            "all but the first column of StDf",
+            "only the first column of StDf"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q40. Which statement enables you to interactively open a single file?",
@@ -415,19 +415,19 @@
             "Each is a type of data frame.",
             "Each is a type of atomic vector.",
             "Each is a type of complex vector.",
-            "Each is a type of raw vector."
+            "Each is a type of raw vector.\n```r\nMyMat = matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q42. What does the `MyMat[ ,3]` subsetting operation return for this code?",
+        "question": "Q42. What does the `MyMat[ ,3]` subsetting operation return for this code?\n```r\nMyMat = matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)\n```",
         "options": [
-            "",
-            "= matrix(c(7, 9, 8, 6, 10, 12),nrow=2,ncol=3, byrow = TRUE)",
-            "",
-            ""
+            "```\n[ ,3]\n[1, ] 8\n[2, ] 12\n```",
+            "```\n[1] 8 12\n```",
+            "```\n[1] 10 12\n```",
+            "```\n[ ,3]\n[1, ] 10\n[2, ] 12\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q43. What does the function `power.anova.test` return?",
@@ -435,19 +435,19 @@
             "the probability of making a Type I error",
             "the probability of not making a Type II error",
             "the probability of making a Type II error",
-            "the probability of not making a Type I error"
+            "the probability of not making a Type I error\n```r\nresult <- lm(outcome ~ covariate + factor + covariate:factor, data = testcoef)\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q44. Review the statement below. What is the effect of `covariate:factor` on the analysis?",
+        "question": "Q44. Review the statement below. What is the effect of `covariate:factor` on the analysis?\n```r\nresult <- lm(outcome ~ covariate + factor + covariate:factor, data = testcoef)\n```",
         "options": [
-            "",
-            " <- lm(outcome ~ covariate + factor + covariate:factor, data = testcoef)",
-            "",
-            "It forces the intercepts of the individual regressions to zero."
+            "It forces the intercepts of the individual regressions to zero.",
+            "It calls for the effect of the covariate **within each level of the factor**.",
+            "It calls for the effect of each variable from covariate to factor in testcoef.",
+            "It forces the covariate to enter the equation before the factor levels.\n```r\n# Example call to demonstrate.  `Species` is a Factor.  Petal.Length, Petal.Width are numeric.\n# see `help(formula)` for more details on the formula specification.  `:` is \"effect modification\" or \"interaction\"\n> summary(lm(Petal.Length ~ Petal.Width + Species + Petal.Width:Species, data = iris))\n...\nPetal.Width:Speciesversicolor   1.3228     0.5552   2.382   0.0185 *  \nPetal.Width:Speciesvirginica    0.1008     0.5248   0.192   0.8480   \n...\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q45. A variable whose type is numeric can contain which items?",
@@ -475,48 +475,47 @@
             "`Rmat[upper.tri(Rmat)]`",
             "`upper.triangular(Rmat)`",
             "`upper.tri(Rmat)`",
-            "`upper.diag(Rmat)`"
+            "`upper.diag(Rmat)`\n`x <- c(12L, 6L, 10L, 8L, 15L, 14L, 19L, 18L, 23L, 59L)`"
         ],
         "_ps": 0
     },
     {
-        "question": "Q48. `x` is a vector of type integer, as shown on line 1 below. What is the type of the result returned by the statement > median(x)?",
+        "question": "Q48. `x` is a vector of type integer, as shown on line 1 below. What is the type of the result returned by the statement > median(x)?\n`x <- c(12L, 6L, 10L, 8L, 15L, 14L, 19L, 18L, 23L, 59L)`",
         "options": [
-            "c(12L, 6L, 10L, 8L, 15L, 14L, 19L, 18L, 23L, 59L)`",
             "numeric",
             "integer",
-            "single"
+            "single",
+            "double\n`a <- list(\"10\", TRUE, 5.6)`"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q49. A list named `a` is created using the statement below. Which choice returns TRUE?",
+        "question": "Q49. A list named `a` is created using the statement below. Which choice returns TRUE?\n`a <- list(\"10\", TRUE, 5.6)`",
         "options": [
-            "list(\"10\", TRUE, 5.6)`",
             "is.list(a[1])",
             "is.numeric(a[1])",
-            "is.logical(a[1])"
+            "is.logical(a[1])",
+            "is.character(a[1])\n`x <- as.Date(\"2018-10-01\")`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q50. How do you return \"October\" from `x` in this code?\n`x <- as.Date(\"2018-10-01\")`",
+        "options": [
+            "as.month(x)",
+            "months(x)",
+            "month(x)",
+            "attr(x)\n### Q51. How do you obtain the row numbers in a data frame named `pizza` for which the value of `pizza$delivery_min` is greater than or equal to 30?"
         ],
         "_ps": 1
     },
     {
-        "question": "Q50. How do you return \"October\" from `x` in this code?",
+        "question": "Q52. Which function returns `[1] TRUE FALSE TRUE`?\n`indat <- c(\"Ash Rd\",\"Ash Cir\",\"Ash St\")`",
         "options": [
-            "as.Date(\"2018-10-01\")`",
-            "as.month(x)",
-            "months(x)",
-            "month(x)"
-        ],
-        "_ps": 2
-    },
-    {
-        "question": "Q52. Which function returns `[1] TRUE FALSE TRUE`?",
-        "options": [
-            " <- c(\"Ash Rd\",\"Ash Cir\",\"Ash St\")`",
             "grepl(\"[Rd|Ave|Dr|St]\", indat)",
             "grepl(\"Rd|Ave|Dr|St\", indat)",
             "grepl(\"Rd,Ave,Dr,St\", indat)"
         ],
-        "_ps": 2
+        "_ps": 1
     }
 ]

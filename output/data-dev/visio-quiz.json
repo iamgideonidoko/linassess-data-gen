@@ -10,12 +10,12 @@
         "_ps": 3
     },
     {
-        "question": "Q2. What is the correct order of the three basic steps required to create nearly all diagrams?\n```markdown\n1. Create a new diagram from one of the templates.\n2. Drag shapes onto the page.\n3. Add text to shapes (if required).\n```\n```markdown\n1. Open a starter diagram.\n2. Drag shapes around.\n3. Connect the shapes and add text.\n```\n```markdown\n1. Create a new diagram from one of the templates.\n2. Create shapes using the drawing tools.\n3. Add text to shapes (if required).\n```",
+        "question": "Q2. What is the correct order of the three basic steps required to create nearly all diagrams?",
         "options": [
-            "A",
-            "kdown",
-            "ate a new diagram from one of the templates.",
-            "g shapes onto the page."
+            "A\n```markdown\n1. Create a new diagram from one of the templates.\n2. Drag shapes onto the page.\n3. Add text to shapes (if required).\n```",
+            "B\n```markdown\n1. Open a starter diagram.\n2. Drag shapes around.\n3. Connect the shapes and add text.\n```",
+            "C\n```markdown\n1. Create a new diagram from one of the templates.\n2. Create shapes using the drawing tools.\n3. Add text to shapes (if required).\n```",
+            "D\n```markdown\n1. Open a starter diagram.\n2. Add text to shapes (if required).\n3. Drag shapes onto the page.\n```"
         ],
         "_ps": 0
     },
@@ -80,14 +80,14 @@
         "_ps": 3
     },
     {
-        "question": "Q9. Which flowchart shape indicates a question or branch in the process flow?\n![image](images/001.png)\n![image](images/002.png)\n![image](images/003.png)",
+        "question": "Q9. Which flowchart shape indicates a question or branch in the process flow?",
         "options": [
-            "A",
-            "e](images/001.png)",
-            "B",
-            "e](images/002.png)"
+            "A\n![image](images/001.png)",
+            "B\n![image](images/002.png)",
+            "C\n![image](images/003.png)",
+            "D\n![image](images/004.png)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q10. Some Business Process Model Notation (BPMN) shapes are further annotated by attaching a callout shape. Which option is associated with a callout shape?",
@@ -115,19 +115,19 @@
             "Engineering",
             "Software and Database",
             "Maps and Floor Plans",
-            "Science"
+            "Science\n![image](images/005.png)"
         ],
         "_ps": 1
     },
     {
         "question": "Q13. What does the icon in the lower-right corner of the organizational shape indicate?\n![image](images/005.png)",
         "options": [
-            "e](images/005.png)",
             "Belt shape",
             "hidden subordinates",
-            "synchronized copy"
+            "synchronized copy",
+            "executive position"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q14. You need to create a diagram showing many servers, switches, and other devices in a large corporate environment. Which diagram should you use?",
@@ -235,19 +235,19 @@
             "insertion bar",
             "data bar",
             "text callout",
-            "icon set"
+            "icon set\n![image](images/006.png)"
         ],
         "_ps": 1
     },
     {
         "question": "Q25. Which of these options is available when you select some shapes and then click the arrow on the Position button in the Arrange group on the Home tab?\n![image](images/006.png)",
         "options": [
-            "e](images/006.png)",
             "Auto Align",
             "Auto Space",
-            "Align Center"
+            "Align Center",
+            "Align Right"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q26. Why would you use an icon set in your drawing?",
@@ -300,12 +300,12 @@
         "_ps": 0
     },
     {
-        "question": "Q31. You have dragged a table shape from the Office Furniture stencil into an office layout diagram, but it is not the correct width. Which method can you _not_ use to set the width of the table?\n```markdown\n1. Select the table shape.\n2. In the Size & Position window, type the desired width value into the Width field.\n```\n```markdown\n1. Select the table shape.\n2. In the Shape Data window, type the desired width value into the Width field.\n```\n```markdown\n1. Select the table shape.\n2. In the Size & Position window, type the desired width value into the X field.\n```",
+        "question": "Q31. You have dragged a table shape from the Office Furniture stencil into an office layout diagram, but it is not the correct width. Which method can you _not_ use to set the width of the table?",
         "options": [
-            "A",
-            "kdown",
-            "ect the table shape.",
-            "the Size & Position window, type the desired width value into the Width field."
+            "A\n```markdown\n1. Select the table shape.\n2. In the Size & Position window, type the desired width value into the Width field.\n```",
+            "B\n```markdown\n1. Select the table shape.\n2. In the Shape Data window, type the desired width value into the Width field.\n```",
+            "C\n```markdown\n1. Select the table shape.\n2. In the Size & Position window, type the desired width value into the X field.\n```",
+            "D\n```markdown\n1. Ensure that the Shape Data window is open.\n2. Select the table shape.\n3. Click and drag one of the shape's selection handles until the Width field displays the desired value.\n```"
         ],
         "_ps": 0
     },
@@ -344,8 +344,7 @@
         "options": [
             "Visio list",
             "list",
-            "variable list",
-            "fixed list"
+            "variable list"
         ],
         "_ps": 2
     }

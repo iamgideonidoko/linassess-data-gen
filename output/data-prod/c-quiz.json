@@ -2,22 +2,22 @@
     {
         "question": " Q1. Which Code sample will eventually cause the computer to run out of memory?",
         "options": [
-            "",
-            "",
-            "1)",
-            ""
+            "```c\nwhile(1)\n{\n    char *smallString = (char *) malloc(10);\n}\n```",
+            "```c\nlong long number = 1;\n    while(1)\n    number *= 2;\n```",
+            "```c\nwhile(1)\n{\n    char hugeString[1000000L];\n    memset(hugeString, 0, 1000000L);\n}\n```",
+            "```c\nwhile(1)\n{\n    long *bigArray = (long *) malloc(sizeof(long) * 1000);\n    memset(bigArray, 1000000, 1000);\n    free(bigArray);\n}\n```\n```c\nint f1 (int a, int b)\n{\n    if (a > b)\n    {\n        printf(\"A is greater than B\\n\");\n        return 1;\n    }\n    else\n    {\n        printf(\"B is greater than A\");\n        return 0;\n    }\n}\nmain()\n{\n    if (f1(20,10) || f1(10,20))\n        printf(\"C is fun!\\n\");\n}\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q2. What will this code print on the screen?",
+        "question": "Q2. What will this code print on the screen?\n```c\nint f1 (int a, int b)\n{\n    if (a > b)\n    {\n        printf(\"A is greater than B\\n\");\n        return 1;\n    }\n    else\n    {\n        printf(\"B is greater than A\");\n        return 0;\n    }\n}\nmain()\n{\n    if (f1(20,10) || f1(10,20))\n        printf(\"C is fun!\\n\");\n}\n```",
         "options": [
-            "",
-            " (int a, int b)",
-            "",
-            " (a > b)"
+            "```\nA is greater then B\nC is fun!\n```",
+            "```\nA is greater then B\nB is greater then A\nC is fun!\n```",
+            "```\nA is greater then B\nB is greater then A\n```",
+            "Nothing is printed on Screen"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q3. What is the name for calling a function inside the same function?",
@@ -25,39 +25,39 @@
             "recursion",
             "subfunction",
             "inner call",
-            "infinite loop"
+            "infinite loop\n```c\nmain(){\n    char c1 ='a';\n    char c2 = c1+10;\n}\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q4. What does the declaration of variable c2 demonstrate?",
+        "question": "Q4. What does the declaration of variable c2 demonstrate?\n```c\nmain(){\n    char c1 ='a';\n    char c2 = c1+10;\n}\n```",
         "options": [
-            "",
-            "{",
-            "ar c1 ='a';",
-            "ar c2 = c1+10;"
+            "character arithmetic",
+            "undefined assignment",
+            "type conversion",
+            "invalid declaration\n```c\nfloat g;\nvoid *vptr=&g;\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q5. A pointer to void named vptr, has been set to point to a floating point variable named g. What is the valid way to dereference vptr to assign its pointed value to a float variable named f later in this program?",
+        "question": "Q5. A pointer to void named vptr, has been set to point to a floating point variable named g. What is the valid way to dereference vptr to assign its pointed value to a float variable named f later in this program?\n```c\nfloat g;\nvoid *vptr=&g;\n```",
         "options": [
-            "",
-            "g;",
-            "vptr=&g;",
-            ""
+            "f = _(float _)vptr;",
+            "f = (float \\*)vptr;",
+            "f = \\*(float \\*)vptr;",
+            "f = \\*(float)vptr;\n```c\nstruct s {\n    int i;\n    struct s *s1;\n    struct s *s2;\n};\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q6. What is this declaration an example of?",
+        "question": "Q6. What is this declaration an example of?\n```c\nstruct s {\n    int i;\n    struct s *s1;\n    struct s *s2;\n};\n```",
         "options": [
-            "",
-            " s {",
-            "t i;",
-            "ruct s *s1;"
+            "a node",
+            "a linked list",
+            "a stack",
+            "a binary tree"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q7. A C header file is a file with extension .h that contains function declarations and macro definitons to be shared between several source files. Header files are listed using the preprocessing directive #include, and can have one of the following formats: #include &lt;fileA&gt; or #include \"fileB\". What is the difference between these two formats?",
@@ -72,12 +72,12 @@
     {
         "question": "Q8. Using a for loop, how could you write a C code to count down from 10 to 1 and display each number on its own line?",
         "options": [
-            "",
-            "",
-            "nt i = 0; i>=0, i--){",
-            "intf(\"%d\\n\", i);"
+            "```c\nfor (int i = 0; i>=0, i--){\n    printf(\"%d\\n\", i);\n}//end of loop\n```",
+            "```c\nint i;\nfor (i=1; i<=10; i++){\n    printf(\"%d\", i);\n}\n```",
+            "```c\nint i = 10;\nwhile (i>0){\n    printf(\"%d\\n\", i);\n    i--;\n}\n```",
+            "```c\nint i;\nfor (i= 10; i>0; i--){\n    printf(\"%d\\n\", i);\n}// end of loop\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q9. What is not one of the reserved words in standard C?",
@@ -85,39 +85,39 @@
             "volatile",
             "typeof",
             "register",
-            "typedef"
+            "typedef\n[Reference](https://www.ibm.com/docs/en/adfz/developer-for-zos/14.2.0?topic=programs-c-reserved-keywords)\n```c\nint main(){\n    int a=1, b=2, c=3, d=4;\n    int x = a;\n    if (a>b)\n    if (b<c) x=b;\n    else x=c;\n    return(x);\n}\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q10. What does the program shown below return?",
+        "question": "Q10. What does the program shown below return?\n```c\nint main(){\n    int a=1, b=2, c=3, d=4;\n    int x = a;\n    if (a>b)\n    if (b<c) x=b;\n    else x=c;\n    return(x);\n}\n```",
         "options": [
-            "",
-            "in(){",
-            "t a=1, b=2, c=3, d=4;",
-            "t x = a;"
+            "1",
+            "3",
+            "2",
+            "0\n```c\nunion Cars {\n    char make[20];\n    char model[30];\n    short year;\n} car;\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
-        "question": "Q11. Using the Union declaration below, how many bytes of memory space will the data of this type occupy?",
+        "question": "Q11. Using the Union declaration below, how many bytes of memory space will the data of this type occupy?\n```c\nunion Cars {\n    char make[20];\n    char model[30];\n    short year;\n} car;\n```",
         "options": [
-            "",
-            "Cars {",
-            "ar make[20];",
-            "ar model[30];"
+            "32",
+            "54",
+            "30",
+            "52\n```c\nmain(){\n    constant int PI = 3.14;\n    printf(\"%f\\n\", pi);\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q12. In this code sample, what is not a problem for C compiler?",
+        "question": "Q12. In this code sample, what is not a problem for C compiler?\n```c\nmain(){\n    constant int PI = 3.14;\n    printf(\"%f\\n\", pi);\n}\n```",
         "options": [
-            "",
-            "{",
-            "nstant int PI = 3.14;",
-            "intf(\"%f\\n\", pi);"
+            "The value of PI needs to be set to 3.141593, not 3.14",
+            "The declaration of PI needs to say const, not constant.",
+            "The data type of PI needs to be float not int.",
+            "The printf statement needs to use PI, not pi."
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q13. Which is the smallest program to compile and run without errors?",
@@ -125,7 +125,7 @@
             "main()",
             "int main() {return 0;}",
             "main() { }",
-            "main() { ; }"
+            "main() { ; }\n[Reference](https://www.beningo.com/150-the-wolrds-shortest-c-program/)"
         ],
         "_ps": 2
     },
@@ -155,7 +155,7 @@
             "BSS Segment",
             "stack",
             "heap",
-            "data segment"
+            "data segment\n[Reference](http://www.it.uc3m.es/pbasanta/asng/course_notes/dynamic_memory_heap_en.html#:~:text=The%20dynamic%20memory%20that%20is,reads%20a%20set%20of%20words.)"
         ],
         "_ps": 2
     },
@@ -165,7 +165,7 @@
             "dalloc()",
             "dealloc()",
             "release()",
-            "free()"
+            "free()\n[Reference](https://www.tutorialspoint.com/c_standard_library/c_function_free.htm)"
         ],
         "_ps": 3
     },
@@ -205,19 +205,19 @@
             "Objects; Structure",
             "Variables; Declaration",
             "Data types; Memory location",
-            "Arrays; Header file"
+            "Arrays; Header file\n```c\nmain() {\n    char c1='a' , c2='A';\n    int i=c2-c1;\n    printf(\"%d\", i);\n}\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q22. What is the output of this program?",
+        "question": "Q22. What is the output of this program?\n```c\nmain() {\n    char c1='a' , c2='A';\n    int i=c2-c1;\n    printf(\"%d\", i);\n}\n```",
         "options": [
-            "",
-            " {",
-            "ar c1='a' , c2='A';",
-            "t i=c2-c1;"
+            "32",
+            "Runtime error",
+            "-32",
+            "0"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q23. What is the difference between scanf() and sscanf() functions?",
@@ -225,19 +225,19 @@
             "The scanf() function reads data formatted as a string; The sscanf() function reads string input from the screen.",
             "The scanf() function reads formatted data from the keyboard; The sscanf() function reads formatted input from a string.",
             "The scanf() function reads string data from the keyboard; The sscanf() function reads string data from a string.",
-            "The scanf() function reads formatted data from a file; The sscanf() function reads input from a selected string"
+            "The scanf() function reads formatted data from a file; The sscanf() function reads input from a selected string\n```c\nchar *string[20] = { \"one\", \"two\", \"three\"};\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q24. What is not a valid command with this declaration?",
+        "question": "Q24. What is not a valid command with this declaration?\n```c\nchar *string[20] = { \"one\", \"two\", \"three\"};\n```",
         "options": [
-            "",
-            "string[20] = { \"one\", \"two\", \"three\"};",
-            "",
-            "`printf(\"%c\", string[1][2]);`"
+            "`printf(\"%c\", string[1][2]);`",
+            "`printf(\"%s\", string[1][2]);`",
+            "`printf(\"%s\", string[1]);`",
+            "`printf(string[1]);`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q25. What is the expression player->name equivalent to?",
@@ -252,32 +252,32 @@
     {
         "question": "Q26. Which program will compile and run without errors?",
         "options": [
-            "",
-            "",
-            " {",
-            "r(i=0; i<10; i++) ;"
+            "```c\nmain() {\n    for(i=0; i<10; i++) ;\n}\n```",
+            "```c\nmain() {\nint i=0;\n    for(; i<10; i++) ;\n}\n```",
+            "```c\nmain() {\n    int i;\n    for(i=0; i<j; i++) ;\n}\n```",
+            "```c\nmain() {\nint i;\n    for (i= 10; i<10; i++)\n}\n```\n```c\n1 main() { float x = f1(10, 5); }\n2 float f1(int a, int b) { return (a/b); }\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q27. What does this function call return?",
+        "question": "Q27. What does this function call return?\n```c\n1 main() { float x = f1(10, 5); }\n2 float f1(int a, int b) { return (a/b); }\n```",
         "options": [
-            "",
-            "() { float x = f1(10, 5); }",
-            "t f1(int a, int b) { return (a/b); }",
-            ""
+            "2",
+            "2.000000",
+            "a runtime error",
+            "a compiler error\n```c\n#include <stdio.h>\nint main() {\n    int *p = NULL;\n    return 0;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q28. What does this program create?",
+        "question": "Q28. What does this program create?\n```c\n#include <stdio.h>\nint main() {\n    int *p = NULL;\n    return 0;\n}\n```",
         "options": [
-            "",
-            "de <stdio.h>",
-            "in() {",
-            "t *p = NULL;"
+            "a runtime error",
+            "a NULL pointer",
+            "a compile error",
+            "a void pointer"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q29. What is an alternative way to write the expression (\\*x).y?",
@@ -315,19 +315,19 @@
             "0 if str1 and str2 are the same, a negative number if str1 is less than str2, a positive number if str1 is greater than str2",
             "true (1) if str1 and str2 are the same, false (0) if str1 and str2 are not the same",
             "true (1) if str1 and str2 are the same, NULL if str1 and str2 are not the same",
-            "0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1"
+            "0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1\n```c\nint a=10, b=20;\nint f1(a) { return(a*b); }\nmain() {\nprintf(\"%d\", f1(5));\n}\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q33. What is the output of this program?",
+        "question": "Q33. What is the output of this program?\n```c\nint a=10, b=20;\nint f1(a) { return(a*b); }\nmain() {\nprintf(\"%d\", f1(5));\n}\n```",
         "options": [
-            "",
-            "10, b=20;",
-            "(a) { return(a*b); }",
-            " {"
+            "100",
+            "200",
+            "5",
+            "50"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q34. Which is _not_ a correct way to declare a string variable?",
@@ -342,22 +342,22 @@
     {
         "question": "Q35. Which choice is an include guard for the header file mylib.h?",
         "options": [
-            "",
-            "",
-            " MYLIB_H",
-            " MYLIB_H"
+            "```c\n#ifdef MYLIB_H\n#undef MYLIB_H\n// mylib.h content\n#endif /* MYLIB_H */\n```",
+            "```c\n#ifndef MYLIB_H\n#define MYLIB_H\n// mylib.h content\n#endif /* MYLIB_H */\n```",
+            "```c\n#define MYLIB_H\n#include \"mylib.h\"\n#undef MYLIB_H\n```",
+            "```c\n#ifdef MYLIB_H\n#define MYLIB_H\n// mylib.h content\n#endif /* MYLIB_H */\n```\n```c\nmain(){\n int x=1;\n while(x++<100){\n    x*=x;\n    if(x<10) continue;\n    if(x>50) break\n }\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q36. How many times does the code inside the while loop get executed in this program?",
+        "question": "Q36. How many times does the code inside the while loop get executed in this program?\n```c\nmain(){\n int x=1;\n while(x++<100){\n    x*=x;\n    if(x<10) continue;\n    if(x>50) break\n }\n}\n```",
         "options": [
-            "",
-            "{",
-            "=1;",
-            "(x++<100){"
+            "100",
+            "3",
+            "5",
+            "50"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q37. File input and output (I/O) in C is done through what?",
@@ -402,10 +402,10 @@
     {
         "question": "Q41. You have written a function that you want to include as a member of structure a. How is such as structure member defiened?",
         "options": [
-            "",
-            "",
-            " a {",
-            "id *f1;"
+            "```c\nstruct a {\n    void *f1;\n};\n```",
+            "```c\nstruct a {\n    void (*f1)();\n};\n```",
+            "```c\nstruct a {\n    *(void *f1)();\n};\n```",
+            "```c\nstruct a {\n    void *f1();\n};\n```"
         ],
         "_ps": 0
     },
@@ -415,19 +415,19 @@
             "FIFO",
             "LIFO",
             "LILO",
-            "LOLI"
+            "LOLI\n```c\nmain(){\n    char *p = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n    int i;\n    for (i=0;i<5;i++) *p++; *p++;\n    printf(\"%c\",*p++);\n}\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q43. What does this program display?",
+        "question": "Q43. What does this program display?\n```c\nmain(){\n    char *p = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n    int i;\n    for (i=0;i<5;i++) *p++; *p++;\n    printf(\"%c\",*p++);\n}\n```",
         "options": [
-            "",
-            "{",
-            "ar *p = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";",
-            "t i;"
+            "K",
+            "M",
+            "H",
+            "G"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q44. Describe the relationship between lvalue and rvalue.",
@@ -452,22 +452,22 @@
     {
         "question": "Q46. Which add function properly returns the updated value of result?",
         "options": [
-            "",
-            "",
-            "dd (int a, int b, int *result)",
-            ""
+            "```c\nvoid add (int a, int b, int *result)\n{\n    *result = a+b;\n}\nmain()\n{\n    int a = 10;\n    int b = 20;\n    int result = 0;\n    add(a,b,&result);\n}\n```",
+            "```c\nvoid add (int a, int b, int result)\n{\n    result = a+b;\n}\nmain()\n{\n    int a = 10;\n    int b = 20;\n    int result = 0;\n    add(a,b,result);\n}\n```",
+            "```c\nvoid add (int a, int b, int *result)\n{\n    result = a+b;\n}\nmain()\n{\n    int a = 10;\n    int b = 20;\n    int result = 0;\n    add(a,b,result);\n}\n```",
+            "```c\nvoid add (int *a, int *b, int *result)\n{\n    result = a+b;\n}\nmain()\n{\n    int a = 10;\n    int b = 20;\n    int result = 0;\n    add(*a,*b,*result);\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q47. Consider the number of the Fibonacci series below 100: 0,1,1,2,3,5,8,13,21,34,55,89. Which piece of code outputs the sequence?",
         "options": [
-            "",
-            "",
-            "ibonacci(int a, int b)",
-            ""
+            "```c\nvoid fibonacci(int a, int b)\n{\n    int c = a+b;\n    if(a>100)\n       return;\n    printf(\"%d\", a);\n    fibonacci(a,b);\n}\nint main()\n{\n    fibonacci(0,1);\n}\n```",
+            "```c\nvoid fibonacci(int a, int b)\n{\n    int c = a+b;\n    if(a>100)\n       return;\n    printf(\"%d\", b);\n    fibonacci(a,c);\n}\nint main()\n{\n    fibonacci(0,1);\n}\n```",
+            "```c\nvoid fibonacci(int a, int b)\n{\n    int c = a+b;\n    if(a>100)\n       return;\n    printf(\"%d\", a);\n    fibonacci(b,c);\n}\nint main()\n{\n    fibonacci(0,1);\n}\n```",
+            "```c\nvoid fibonacci(int a, int b)\n{\n    int c = a+b;\n    if(a>100)\n       return;\n    printf(\"%d\", c);\n    fibonacci(b,c);\n}\nint main()\n{\n    fibonacci(0,1);\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q48. Which is _not_ a storage class specifier?",
@@ -475,7 +475,7 @@
             "`intern`",
             "`extern`",
             "`register`",
-            "`static`"
+            "`static`\n[Reference](https://en.cppreference.com/w/cpp/language/storage_duration)"
         ],
         "_ps": 0
     },
@@ -485,19 +485,19 @@
             "`for(i=1; i<=1; i++);`",
             "`for(i=1; i=10; i++);`",
             "`for(i=1; i==10; i++);`",
-            "`for(i=10; i>=1; i--);`"
+            "`for(i=10; i>=1; i--);`\n```\n1 main() {\n2   int a, b, c;\n3   a=10; b=50;\n4   c=a * b % a;\n5 }\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q50. What is the value of variable c at the end of this program?",
+        "question": "Q50. What is the value of variable c at the end of this program?\n```\n1 main() {\n2   int a, b, c;\n3   a=10; b=50;\n4   c=a * b % a;\n5 }\n```",
         "options": [
-            "",
-            "() {",
-            "t a, b, c;",
-            "10; b=50;"
+            "50",
+            "5",
+            "0",
+            "500\n### Q51. What is _not_ one of the basic data types in C"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q53. What standard data type provides the smallest storage size and can be used in computations?",
@@ -515,28 +515,27 @@
             "It returns TRUE for lowercase letters of the alphabet.",
             "It ensures that text output uses only ASCII values (0 through 127).",
             "It returns FALSE for lowercase letters of the alphabet.",
-            "It converts an uppercase letter of the alphabet to lowercase."
+            "It converts an uppercase letter of the alphabet to lowercase.\n```c\nfloat g;\nvoid *vptr=&g;\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q55. Void pointer _vptr_ is assigned the address of float variable _g_. What is a valid way to dereference _vptr_ to assign its pointed value to a float variable named _f_ later in the program?",
+        "question": "Q55. Void pointer _vptr_ is assigned the address of float variable _g_. What is a valid way to dereference _vptr_ to assign its pointed value to a float variable named _f_ later in the program?\n```c\nfloat g;\nvoid *vptr=&g;\n```",
         "options": [
-            "",
-            "g;",
-            "vptr=&g;",
-            ""
+            "f=(float \\*)vptr;",
+            "f=_(float _)vptr;",
+            "f=\\*(float)vptr;",
+            "f=(float)\\*vptr;"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q56. Using a _for_ loop, how would you write C code to count down from 10 to 1 and display each number on its own line?",
         "options": [
-            "",
-            "",
-            "t i=10;1>0;) {",
-            "intf(\"%d\\n\", i);"
+            "```c\nfor(int i=10;1>0;) {\n    printf(\"%d\\n\", i);\n    i--;\n}\n```",
+            "```c\nfor (int i=10; i>0; i--)\n    printf(\"%d\\n\", i);\n```",
+            "```c\nfor (int i=1; i<=10; i++)\n    printf(\"%d\", i);\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     }
 ]

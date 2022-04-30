@@ -75,7 +75,7 @@
             "`mvn clean istall package`",
             "`mvn package`",
             "`mvn clean install`",
-            "Option 4"
+            "Option 4\n```shell script\nmvn clean\nmvn package\nmvn verify\nmvn install\n```"
         ],
         "_ps": 1
     },
@@ -285,19 +285,19 @@
             "WAR",
             "JAR",
             "EAR",
-            "POM"
+            "POM\n    > mvn archetype:generate \\\n    -DgroupID=sample-maven-project \\\n    -DartifactID=com.palmer.bethan.sample \\\n    -Dversion=1.0.0 \\\n    -DinteractiveMode=false"
         ],
         "_ps": 1
     },
     {
-        "question": "Q30. What does the following command do?",
+        "question": "Q30. What does the following command do?\n    > mvn archetype:generate \\\n    -DgroupID=sample-maven-project \\\n    -DartifactID=com.palmer.bethan.sample \\\n    -Dversion=1.0.0 \\\n    -DinteractiveMode=false",
         "options": [
-            "mvn archetype:generate \\",
-            "groupID=sample-maven-project \\",
-            "artifactID=com.palmer.bethan.sample \\",
-            "version=1.0.0 \\"
+            "It does nothing since no archetype has been specified",
+            "It generates a new Maven archetype",
+            "It generates a new Maven projet using the default Maven archetype",
+            "It cleans and installs the sample-maven-project project"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q31. When defining a dependency that is included with the runtime container, what scope do you use in the pom.xml?",
@@ -355,19 +355,19 @@
             "install",
             "test",
             "compile",
-            "package"
+            "package\n```\n<configuration>\n    <archive>\n        <manifest>\n            <addClasspath>true</addClasspath>\n            <mainClass>com.palmer.bethan.App</mainClass>\n        </manifest>\n    </archive>\n</configuration>\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q37. Bellow is a definition of the Maven JAR Plugin, where the main class is set to com.palmer.bethan.App. What is the effect of this?",
+        "question": "Q37. Bellow is a definition of the Maven JAR Plugin, where the main class is set to com.palmer.bethan.App. What is the effect of this?\n```\n<configuration>\n    <archive>\n        <manifest>\n            <addClasspath>true</addClasspath>\n            <mainClass>com.palmer.bethan.App</mainClass>\n        </manifest>\n    </archive>\n</configuration>\n```",
         "options": [
-            "",
-            "guration>",
-            "rchive>",
-            "  <manifest>"
+            "Maven will generate javadocs for the App class.",
+            "Maven will generate an executable JAR, which can be used to run the App class.",
+            "Maven will include only the App class when it compiles the source code.",
+            "Maven will add an empty main method to the App class."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q38. Suppose you are packaging a Maven project and see the following error: “[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!” What do you add to your POM file to set the platform encoding to ensure your build is not platform dependent?",
@@ -385,7 +385,7 @@
             "If you include these elements, an error will be thrown when you try to build the project.",
             "These elements are inherited from the parent POM file, and do not need to be repeated.",
             "Child POM files should include definitions of only dependencies and plugins.",
-            "The values in the parent POM will be overridden by what is defined in the child POM."
+            "The values in the parent POM will be overridden by what is defined in the child POM.\n[maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html#the-solution)"
         ],
         "_ps": 1
     },
@@ -415,17 +415,17 @@
             "all of these answers",
             "dependencies",
             "groupId",
-            "version"
+            "version\n![q43](q43.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q43. Below is a report generated for a multimodule project with the Checkstyle Plugin. Why might the highlighted links to the two child projects _not_ work?",
+        "question": "Q43. Below is a report generated for a multimodule project with the Checkstyle Plugin. Why might the highlighted links to the two child projects _not_ work?\n![q43](q43.png)",
         "options": [
-            "(q43.png)",
             "The Checkstyle Plugin does not work on child modules.",
             "Each Checkstyle report is in the target/site folder of the respective module.",
-            "All links in Checkstyle reports must be specified in the plugin definition."
+            "All links in Checkstyle reports must be specified in the plugin definition.",
+            "Checkstyle reports for child modules have to be behind a firewall."
         ],
         "_ps": -1
     },
@@ -495,7 +495,7 @@
             "to check the parent POM file defines all of the child POM files",
             "to carry out checks before building the project",
             "to ensure plugins defined in the POM file are in the correct order",
-            "to check the project structure is correct after building a project"
+            "to check the project structure is correct after building a project\n1. [stackoverflow](https://stackoverflow.com/a/40601037)\n2. [maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#a-build-lifecycle-is-made-up-of-phases)"
         ],
         "_ps": 1
     },
@@ -505,7 +505,7 @@
             "Run mvn clean and look at which plugins are not mentioned in the output.",
             "You will need to do this manually.",
             "Include the Maven dependency plugin in your POM file and run the unpack goal.",
-            "Run the analyze goal of the dependency plugin."
+            "Run the analyze goal of the dependency plugin.\n1. [baeldung](https://www.baeldung.com/maven-unused-dependencies)\n2. [stackoverflow](https://stackoverflow.com/a/1518661)"
         ],
         "_ps": 3
     },
@@ -515,7 +515,7 @@
             "Keeping the default structure reduces onboarding time, because developers recognize it.",
             "Overriding the default structure is very complex.",
             "Overriding the default structure will cause Maven to take longer to compile your code.",
-            "all of these answers"
+            "all of these answers\n[maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html)"
         ],
         "_ps": 3
     },
@@ -525,7 +525,7 @@
             "to compile the source code of the project",
             "to install all of the remote dependencies",
             "to deploy the final project artifacts into a remote Maven repository",
-            "to copy the final project artifacts into the local Maven repository"
+            "to copy the final project artifacts into the local Maven repository\n[maven docs](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#a-build-lifecycle-is-made-up-of-phases)"
         ],
         "_ps": 1
     },
@@ -535,19 +535,19 @@
             "Use -Dtest=skip",
             "Use -DskipTests=true",
             "Use -Dtests=pass",
-            "Use a plugin that can be configured to skip tests"
+            "Use a plugin that can be configured to skip tests\n```\n<profiles>\n    <profile>\n        <id>set=app-home</id>\n        <properties>maven-people-plugin</artifactId>\n            <application-home>/path/to/application</application-home>\n        </properties>\n    </profile>\n</profiles>\n<activeProfiles>\n    <activeProfile>set-app-home</activeProfile>\n</activeProfiles>\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q55. Below is a section of a settings.xml file. How can you use the path to the app home in your POM file?",
+        "question": "Q55. Below is a section of a settings.xml file. How can you use the path to the app home in your POM file?\n```\n<profiles>\n    <profile>\n        <id>set=app-home</id>\n        <properties>maven-people-plugin</artifactId>\n            <application-home>/path/to/application</application-home>\n        </properties>\n    </profile>\n</profiles>\n<activeProfiles>\n    <activeProfile>set-app-home</activeProfile>\n</activeProfiles>\n```",
         "options": [
-            "",
-            "les>",
-            "rofile>",
-            "  <id>set=app-home</id>"
+            "${activeProfile}",
+            "${application-home}",
+            "${set-app-home}",
+            "${/path/to/application}"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q56. What is the default value of the warSourceDirectory configuration property of the Maven WAR Plugin?",
@@ -564,8 +564,7 @@
         "options": [
             "src/main/template",
             "src/main/archetype",
-            "src/main/resources/archetype-resources",
-            "src/main/java"
+            "src/main/resources/archetype-resources"
         ],
         "_ps": 2
     }

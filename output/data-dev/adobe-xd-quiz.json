@@ -2,32 +2,32 @@
     {
         "question": "Q1. Where was this `Lock` icon applied?\n![Q1](images/001.jpg)",
         "options": [
-            "images/001.jpg)",
             "in the `Components` panel",
             "in the `Layers` panel",
-            "in the `Property Inspector`"
+            "in the `Property Inspector`",
+            "in Share mode\n![Q2](images/002.jpg)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q2. In this figure, which value represents the bottom margin of the layout grid?\n![Q2](images/002.jpg)",
         "options": [
-            "images/002.jpg)",
             "30",
             "20",
-            "43"
+            "43",
+            "0\n![Q3](images/003.jpg)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q3. What does clicking the circled icon enable you to do?\n![Q3](images/003.jpg)",
         "options": [
-            "images/003.jpg)",
             "Change the trigger.",
             "Choose a destination.",
-            "Add a new interaction."
+            "Add a new interaction.",
+            "Add a new state."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q4.You want to share your project to a blog or social media. How would you accomplish this?",
@@ -115,29 +115,29 @@
             "Designed at 3X",
             "Designed for Web",
             "Designed at 1X",
-            "Designed at 2X"
+            "Designed at 2X\n![Q13](images/004.jpg)"
         ],
         "_ps": -1
     },
     {
         "question": "13. What does this wire attached to a component indicate?\n![Q13](images/004.jpg)",
         "options": [
-            "(images/004.jpg)",
             "destination.",
             "interaction.",
-            "trigger"
+            "trigger",
+            "animation.\n![Q14](images/005.jpg)"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "14. What happens when you click this circled icon in the design preview?\n![Q14](images/005.jpg)",
         "options": [
-            "(images/005.jpg)",
             "The preview switches to the artboard view.",
             "The preview switches to user flow.",
-            "The preview switches to the developer view."
+            "The preview switches to the developer view.",
+            "The artboard properties are displayed"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "15. Which method for bringing Illustrator content into XD is not possible?",
@@ -154,8 +154,7 @@
         "options": [
             "Open your Creative Cloud fonts and click Enable.",
             "Enable the fonts in your computer's fonts settings.",
-            "Adobe fonts are automatically reactivated through the Creative Cloud.",
-            "Relink the fonts to your Creative Cloud library."
+            "Adobe fonts are automatically reactivated through the Creative Cloud."
         ],
         "_ps": -1
     }

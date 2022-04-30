@@ -45,7 +45,7 @@
             "Book Fold.",
             "Different Odd & Even Pages.",
             "Mirror Margins.",
-            "Landscape."
+            "Landscape.\n[Reference](https://support.microsoft.com/en-us/office/create-a-booklet-or-book-in-word-dfd94694-fa4f-4c71-a1c7-737c31539e4a)"
         ],
         "_ps": 0
     },
@@ -155,29 +155,29 @@
             "cover page",
             "blank page",
             "master page",
-            "table of contents page"
+            "table of contents page\n![image](images/001.png)"
         ],
         "_ps": 0
     },
     {
         "question": "Q17. What happens in this SmartArt object when you press the Delete key?\n![image](images/001.png)",
         "options": [
-            "e](images/001.png)",
             "The boxes resize to maintain the same overall height.",
             "The object is deleted and a hole is left behind.",
-            "The text merges with the second box."
+            "The text merges with the second box.",
+            "The gaps between the boxes close and the boxes remain the same size.\n![image](images/001.png)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q18. What happens in this SmartArt diagram when you delete the selected object?\n![image](images/001.png)",
         "options": [
-            "e](images/001.png)",
             "The text from the deleted box merges with the next box's text.",
             "The selected object is deleted and the spacing is preserved where the object was.",
-            "The remaining objects resize to maintain the same overall height."
+            "The remaining objects resize to maintain the same overall height.",
+            "The gaps between the objects close and the objects remain the same size."
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q19. Which command builds an overview of document contents based on applied headings styles?",
@@ -215,7 +215,7 @@
             "Click Open > Recent and select Recover Unsaved Documents.",
             "Click File > Options > Recover Unsaved Documents.",
             "Click File > Open > Recent > Documents.",
-            "Click File > Recent > Recover Unsaved Documents."
+            "Click File > Recent > Recover Unsaved Documents.\nExplanation:\nSolutions found in Office2019:  \nFile -> Open -> Recent -> Recover Unsaved Documents  \nFile -> Info -> Manage Document -> Recover Unsaved Documents  \nRead carefully. It's not about recovering, but only the last recent file!"
         ],
         "_ps": 2
     },
@@ -245,19 +245,19 @@
             "Replace All",
             "AutoFormat As You Type",
             "Find and Replace",
-            "AutoCorrect Options"
+            "AutoCorrect Options\n**Explanation:** The keyword here is creating a \"shortcut\" which is set with the Autocorrect Options by navigating to File -> Options -> Proofing -> AutoCorrect Options -> Replace text as you type.\n![image](images/003.png)"
         ],
         "_ps": 3
     },
     {
         "question": "Q26. Your document contains two columns of content with a vertical line between the columns, as shown. From where can you delete the line?\n![image](images/003.png)",
         "options": [
-            "e](images/003.png)",
             "Insert > Text",
             "Columns dialog box",
-            "Insert > Line > Vertical"
+            "Insert > Line > Vertical",
+            "Insert > Line > Remove\n**Explanation:** Layout -> Columns -> More columns -> Line between"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q27. When you crop an image in a document, what happens to the image and the overall document file size?",
@@ -325,19 +325,19 @@
             "Footnotes use Arabic numerals and endnotes use letters.",
             "A footnote is placed in the page footer, and an endnote is placed on a blank page at the end of the document.",
             "A footnote is placed at the bottom of the page, and an endnote is placed at the end of the document.",
-            "An endnote always appears on the bottom of the same page that it references."
+            "An endnote always appears on the bottom of the same page that it references.\n![image](images/004.png)"
         ],
         "_ps": 2
     },
     {
         "question": "Q34. Which formatting option was used to create the effect shown below?\n![image](images/004.png)",
         "options": [
-            "e](images/004.png)",
             "Drop Cap",
             "Subscript",
-            "Small Caps"
+            "Small Caps",
+            "Superscript"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q35. What Word building block uses headings to help users identify the contents of a document?",
@@ -345,19 +345,19 @@
             "table of contents",
             "page break",
             "cover page",
-            "index"
+            "index\n```\nA. Display for Review is set to No Markup.\nB. Track changes has been turned off.\nC. Display for Review is set to Original.\nD. Inserts and Deletions and Formatting are turned off in Show Markup.\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q36. You have been reviewing a Word document using Track Changes. There are still changes that need to be reviewed, but you cannot see them. Why is this? (Select all that apply.)\n```\nA. Display for Review is set to No Markup.\nB. Track changes has been turned off.\nC. Display for Review is set to Original.\nD. Inserts and Deletions and Formatting are turned off in Show Markup.\n```",
         "options": [
-            "",
-            "play for Review is set to No Markup.",
-            "ck changes has been turned off.",
-            "play for Review is set to Original."
+            "A, C, D",
+            "A, B",
+            "D",
+            "A, C"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q37. You are coordinating the update of your company's 10-chapter operations manual. You begin by saving each chapter as a separate document. What Word feature can you use to manage all of these chapter documents?",
@@ -375,19 +375,19 @@
             "You can reformat all headings by changing style sets.",
             "You can navigate from heading to heading in the Navigation pane.",
             "all of these answers",
-            "You can easily generate a table of contents."
+            "You can easily generate a table of contents.\n```\n A. Type \"(TM)\".\n B. On the **Insert** tab, in the **Symbols** group, select **Symbol**. From the symbols gallery, select the trademark symbol, then click **Insert**.\n C. On the **Insert** Tab, in the **Illustrations** group, select **Icons**. From the icons gallery, select the **Signs and Symbols** category. Then select the trademark symbol and click **Insert**.\n D. Type \"(R)\".\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q39. You need to add a trademark symbol to a new product name. How can you accomplish this? (Select two items.)\n```\n A. Type \"(TM)\".\n B. On the **Insert** tab, in the **Symbols** group, select **Symbol**. From the symbols gallery, select the trademark symbol, then click **Insert**.\n C. On the **Insert** Tab, in the **Illustrations** group, select **Icons**. From the icons gallery, select the **Signs and Symbols** category. Then select the trademark symbol and click **Insert**.\n D. Type \"(R)\".\n```",
         "options": [
-            "",
-            "pe \"(TM)\".",
-            " the **Insert** tab, in the **Symbols** group, select **Symbol**. From the symbols gallery, select the trademark symbol, then click **Insert**.",
-            " the **Insert** Tab, in the **Illustrations** group, select **Icons**. From the icons gallery, select the **Signs and Symbols** category. Then select the trademark symbol and click **Insert**."
+            "B and D",
+            "A and B",
+            "B and C",
+            "A and D\n**Hint:**\n(TM) : Unregistered trademark symbol  \n(R): Registered trademark symbol"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q40. You are reformatting a professional document that you created previously using manual formatting. In your document, first-level headings are formatted with Arial 11 Bold. What is the fastest way to create and apply a Heading 1 style using these properties?",
@@ -435,7 +435,7 @@
             "Use the Split Table command.",
             "Press Shift + Enter (Windows) or Sift + Return (Mac).",
             "Use the Section Break command.",
-            "Use the Split Cells command."
+            "Use the Split Cells command.\n**Explanation:** Tables Layout tab -> Merge group -> Split Table"
         ],
         "_ps": 0
     },
@@ -445,7 +445,7 @@
             "a Word macro-enabled document",
             "a plain text file",
             "a multipage website",
-            "a Word 2003 XML document"
+            "a Word 2003 XML document\n**Explanation:** Each Word document can be saved as a Web Page."
         ],
         "_ps": 2
     },
@@ -485,19 +485,19 @@
             "Share the document with others.",
             "Assume ownership of the document.",
             "Remove access from another user.",
-            "Coauthor the document with your colleague."
+            "Coauthor the document with your colleague.\n![image](images/002.png)"
         ],
         "_ps": 0
     },
     {
         "question": "Q50. In the image below, what do the red bars next to the text indicate?\n![image](images/002.png)",
         "options": [
-            "e](images/002.png)",
             "Draw tools were used in these areas.",
             "Changes were made to these areas.",
-            "Comments were added to these areas."
+            "Comments were added to these areas.",
+            "none of these answers"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q51. What formatting must you use to use both portrait and landscape pages in the same Word document?",
@@ -545,19 +545,19 @@
             "Click the Select Data button.",
             "Click the Refresh Data button.",
             "Click the Switch Row/Column button.",
-            "Click the Edit Data button."
+            "Click the Edit Data button.\nA. OneDrive\nB. SharePoint document library\nC. Google Drive\nD. DropBox"
         ],
         "_ps": 3
     },
     {
         "question": "Q56. You want to be able to edit your Word document simultaneously with other Word users in your organization. Which save location should you select in the Save As dialog box?\nA. OneDrive\nB. SharePoint document library\nC. Google Drive\nD. DropBox",
         "options": [
-            "Drive",
-            "rePoint document library",
-            "gle Drive",
-            "pBox"
+            "A",
+            "A, B, C, D",
+            "A, B, C",
+            "A or B"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q57. Why is it important to use alternative text for objects in your document?",
@@ -565,7 +565,7 @@
             "Adding alternative text to an object is one way to apply a caption to an object.",
             "It allows you to display the text in a language other than the default language-for example, English to French, French to German.",
             "It helps a user with a visual impairment who is using a screen reader understand the content of the object.",
-            "It enables you to provide another explanation of the object, in case the user does not understand what the object is."
+            "It enables you to provide another explanation of the object, in case the user does not understand what the object is.\n[Reference](https://support.microsoft.com/en-us/office/add-alternative-text-to-a-shape-picture-chart-smartart-graphic-or-other-object-44989b2a-903c-4d9a-b742-6a75b451c669)"
         ],
         "_ps": 2
     },
@@ -575,19 +575,19 @@
             "You can restrict printing for specific document sections.",
             "You can apply unique formatting to each section.",
             "You can collaborate on specific sections with other authors.",
-            "You can restrict access to each section individually."
+            "You can restrict access to each section individually.\n[Reference](https://support.microsoft.com/en-us/office/insert-delete-or-change-a-section-break-0eeae2d6-b906-42d3-a1bd-7e77ca8ea1f3)\n```markdown\nA. Colleague's name appears in the Share panel.\nB. Colleague's picture appears in the upper-right corner of the ribbon.\nC. A banner notification pops up as the colleague edits the document.\nD. A flag icon with the colleague's name appears where their edit is being made.\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q59. How can you tell if a colleague is coauthoring a document at the same time as you? (Select all that apply.)\n```markdown\nA. Colleague's name appears in the Share panel.\nB. Colleague's picture appears in the upper-right corner of the ribbon.\nC. A banner notification pops up as the colleague edits the document.\nD. A flag icon with the colleague's name appears where their edit is being made.\n```",
         "options": [
-            "kdown",
-            "league's name appears in the Share panel.",
-            "league's picture appears in the upper-right corner of the ribbon.",
-            "anner notification pops up as the colleague edits the document."
+            "A, B, C",
+            "B, C, D",
+            "A, B, D",
+            "A, C, D\n[Reference](https://support.microsoft.com/en-us/office/coauthor-documents-anywhere-ed0cf685-f619-4d54-9c42-a61c8795c87f)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q60. When you insert a picture into a document, what happens to the picture?",
@@ -595,7 +595,7 @@
             "Word stretches the photo to fill the page.",
             "Word scales the image to the largest size possible to fit within the height or width of the page.",
             "Word converts the photo's file format.",
-            "Word analyzes and corrects the image for tone and color."
+            "Word analyzes and corrects the image for tone and color.\n[Reference link](https://support.microsoft.com/en-us/office/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344)"
         ],
         "_ps": 1
     },
@@ -605,19 +605,19 @@
             "Simple Markup shows the final version without inline markups; All Markups shows the final version with inline markups.",
             "Simple Markup shows the markup versions by one selected author; All Markup shows the combined markup version of all authors.",
             "Simple Markup shows the revisions of one selected author in the Review pane; All Markup shows the revisions of all authors with inline markups.",
-            "Simple Markup shows the final version with inline markups; All Markup shows the final version without inline markups."
+            "Simple Markup shows the final version with inline markups; All Markup shows the final version without inline markups.\n      [Reference link](https://support.microsoft.com/en-us/office/video-track-changes-and-show-markup-3faf8a07-26ed-4b76-b6a0-43cca013e6d3)"
         ],
         "_ps": 1
     },
     {
         "question": "Q62. REMOVED (Duplicate of Q5)\n#### Q63. Which object can you NOT insert into a Word document from the Insert tab?",
         "options": [
-            "63. Which object can you NOT insert into a Word document from the Insert tab?",
             "a 3D model",
             "an equation",
-            "a sketch"
+            "a sketch",
+            "a symbol"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q63. Which object can you NOT insert into a Word document from the Insert tab?",
@@ -635,7 +635,7 @@
             "Review the images and crop as needed. Compress the images. Save the document and then compress the entire document.",
             "Replace the images with lower-resolution images. Save the document and then compress it.",
             "Review the images and crop as needed. Then compress the images and delete cropped areas.",
-            "Review the images and crop as needed. Save document and then compress it."
+            "Review the images and crop as needed. Save document and then compress it.\n[Reference link](https://support.microsoft.com/en-us/topic/reduce-the-file-size-of-a-picture-in-microsoft-office-8db7211c-d958-457c-babd-194109eb9535)"
         ],
         "_ps": 2
     },
@@ -645,7 +645,7 @@
             "Accessibility Checker",
             "Check Compatibility",
             "Manage Document",
-            "Document Inspector"
+            "Document Inspector\n[Reference](https://support.microsoft.com/en-us/topic/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f#:~:text=Click%20File%20%3E%20Info%20%3E%20Remove%20Personal,from%20the%20document%20check%20box.)"
         ],
         "_ps": 3
     },
@@ -655,29 +655,29 @@
             "Pie",
             "Column",
             "Line",
-            "Bar"
+            "Bar\nDuplicated with Q33."
         ],
         "_ps": 0
     },
     {
         "question": "Q67. What is the difference between a footnote and an endnote?\nDuplicated with Q33.",
         "options": [
-            "ated with Q33.",
             "An endnote always appears on the bottom of the same page that it references",
             "Footnote use Arabic numerals and endnotes use letters.",
-            "A footnote is placed at the bottom of the page, and an endnote is placed at the end of the document"
+            "A footnote is placed at the bottom of the page, and an endnote is placed at the end of the document",
+            "A footnote is placed in teh page footer and an endnote is placed on a blank page at the end of the document\n![image](https://i.imgur.com/JjdzceL.png)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q68. In the image below, where do you click to hide comments when a document prints?\n![image](https://i.imgur.com/JjdzceL.png)",
         "options": [
-            "e](https://i.imgur.com/JjdzceL.png)",
             "A",
             "B",
-            "C"
+            "C",
+            "D"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q69. Which page orientation should you select to accommodate a wide chart or table?",
@@ -725,7 +725,7 @@
             "check Accessibility",
             "inspect document",
             "check compatibility",
-            "protect document"
+            "protect document\n[Reference](https://support.microsoft.com/en-us/office/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f)"
         ],
         "_ps": 0
     },
@@ -765,19 +765,19 @@
             "Insert Footnote",
             "Insert Citation",
             "Insert Caption",
-            "Insert Table of Figures"
+            "Insert Table of Figures\nDuplicated with Q50.\n![image](https://i.imgur.com/JUbaoyO.png)"
         ],
         "_ps": 2
     },
     {
         "question": "Q78. In this image, what do the red lines next to the text indicate?\nDuplicated with Q50.\n![image](https://i.imgur.com/JUbaoyO.png)",
         "options": [
-            "ated with Q50.",
-            "e](https://i.imgur.com/JUbaoyO.png)",
             "Changes were made to these areas.",
-            "Draw tools were used in these areas."
+            "Draw tools were used in these areas.",
+            "Track Changes has been disabled.",
+            "Comments were added to these areas."
         ],
-        "_ps": 2
+        "_ps": 0
     },
     {
         "question": "Q79. You want an image to move with the surrounding text as you make changes to the document. Which option should you select?",
@@ -854,8 +854,7 @@
         "options": [
             "SmartArt",
             "drop-down list",
-            "combo box",
-            "check box"
+            "combo box"
         ],
         "_ps": 2
     }

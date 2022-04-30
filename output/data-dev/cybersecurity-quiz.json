@@ -35,7 +35,7 @@
             "cloud access security broker (CASB)",
             "intrusion prevention system (IPS)",
             "intrusion detection system (IDS)",
-            "next generation firewall"
+            "next generation firewall\nAn intrusion detection system (`IDS`) is a device or software application that monitors a network or systems for malicious activity or policy violations.\n[Quizlet](https://quizlet.com/217188159/cissp-practice-testschapter-7-security-operations-domain7-flash-cards/)"
         ],
         "_ps": 2
     },
@@ -95,7 +95,7 @@
             "monitoring of normal employee system and data access patterns",
             "applying system and application updates regularly",
             "fault tolerant infrastructure and data redundancy",
-            "separation of duties and job rotation"
+            "separation of duties and job rotation\n[Stack Exchange](https://security.stackexchange.com/a/114835/249930)"
         ],
         "_ps": 3
     },
@@ -105,19 +105,19 @@
             "rainbow table attack",
             "pass-the-hash attack",
             "password spray attack",
-            "brute force attack"
+            "brute force attack\nA rainbow table attack is a more efficient and effective way of cracking many hashed passwords, whereas brute-forcing would take much longer and may not complete in a reasonable amount of time.\n[Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1002/brute-force-attacks-3).\n![image](https://user-images.githubusercontent.com/50566479/136518616-8712a45f-8ba5-48bd-ac60-5a96ddf754ae.png)"
         ],
         "_ps": 0
     },
     {
         "question": "Q12. Which area is DMZ?\n![image](https://user-images.githubusercontent.com/50566479/136518616-8712a45f-8ba5-48bd-ac60-5a96ddf754ae.png)",
         "options": [
-            "e](https://user-images.githubusercontent.com/50566479/136518616-8712a45f-8ba5-48bd-ac60-5a96ddf754ae.png)",
             "4",
             "1",
-            "2"
+            "2",
+            "3"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q13. You configure an encrypted USB drive for a user who needs to deliver a sensitive file at an in-person meeting. What type of encryption is typically used to encrypt the file?",
@@ -232,12 +232,12 @@
     {
         "question": "Q24. You organization is conducting a pilot deployment of a new e-commerce application being considered for purchase. You need to recommend a strategy to evaluate the security of the new software. Your organization does not have access to the application's source code.\n#### Which strategy should you choose?",
         "options": [
-            "hich strategy should you choose?",
             "dynamic application security testing",
             "unit testing",
-            "white box testing"
+            "white box testing",
+            "static application security testing"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Which strategy should you choose?",
@@ -265,7 +265,7 @@
             "200",
             "400",
             "100",
-            "300"
+            "300\n**Explanation**: The formula for asymmetric encryption is `2n`; where `n` is the number of communicating parties."
         ],
         "_ps": 0
     },
@@ -275,7 +275,7 @@
             "Federal Information Security Managment Act (FISMA)",
             "Payment Card Industry Data Security Standard (PCI-DSS)",
             "General Data Protection Regulation (GDPR)",
-            "International Organization for Standardization and Internation Electronical Commission (ISO/IEC 27018)"
+            "International Organization for Standardization and Internation Electronical Commission (ISO/IEC 27018)\n**Explanation**: The Payment Card Industry Data Security Standard (`PCI DSS`) is the global card industry security standard that is **required of all entities** that store, process, or transmit cardholder data, including financial institutions, online retailers and service providers.\n[PCI Security Overview](https://www.pcisecuritystandards.org/pci_security/standards_overview)"
         ],
         "_ps": 1
     },
@@ -285,7 +285,7 @@
             "Common event format",
             "common weakness enumeration",
             "common vulnerabilties and exposures",
-            "common vulnerability scoring system"
+            "common vulnerability scoring system\n**Explaination**: The Common Vulnerabilities and Exposures (`CVE`) system provides a reference-method for publicly known information-security vulnerabilities and exposures."
         ],
         "_ps": 2
     },
@@ -295,7 +295,7 @@
             "log server",
             "network scanner",
             "firewall",
-            "protocol analyzer"
+            "protocol analyzer\n**Explanation**: A `protocol analyzer` is a tool used to capture and analyze signals and data traffic over a communication channel.\n[WireShark](https://www.wireshark.org) is a protocol analyzer."
         ],
         "_ps": 3
     },
@@ -305,7 +305,7 @@
             "aggregation",
             "inference",
             "SQL injection",
-            "cross-origin resouce sharing"
+            "cross-origin resouce sharing\n**Explanation**: An `Inference Attack` is a data mining technique performed by analyzing data in order to illegitimately gain knowledge about a subject or database. A subject's sensitive information can be considered as leaked if an adversary can infer its real value with a high confidence. **Source**: ([Wikipedia](https://en.wikipedia.org/wiki/Inference_attack))."
         ],
         "_ps": 1
     },
@@ -315,7 +315,7 @@
             "Zero Trust Security",
             "Role-Based Access Control (RBAC)",
             "authorization",
-            "Single Sign-On"
+            "Single Sign-On\n[Okata.com](https://www.okta.com/identity-101/authentication-vs-authorization/)"
         ],
         "_ps": 2
     },
@@ -325,7 +325,7 @@
             "processor",
             "object",
             "subject",
-            "controller"
+            "controller\n[Intersoft Consulting](https://gdpr-info.eu/art-4-gdpr/)"
         ],
         "_ps": 2
     },
@@ -335,7 +335,7 @@
             "use least privilege access",
             "verify explicitly",
             "trust but verify",
-            "assume breach"
+            "assume breach\n**Explanation**: zero trust assumes that the system will be breached and designs security as if there is no perimeter. Hence, don’t trust anything by default.\n[NIST](https://www.nist.gov/blogs/taking-measure/zero-trust-cybersecurity-never-trust-always-verify)"
         ],
         "_ps": 2
     },
@@ -345,7 +345,7 @@
             "ARP spoofing",
             "pharming attacks",
             "cross-site scripting (XSS)",
-            "DNS poisoning"
+            "DNS poisoning\n[White Hat Sec](https://www.whitehatsec.com/glossary/content/input-validation)"
         ],
         "_ps": 2
     },
@@ -385,7 +385,7 @@
             "Autopsy",
             "Snort",
             "Nmap",
-            "Wireshark"
+            "Wireshark\nnmap is a port scanner [https://en.wikipedia.org/wiki/Nmap](https://en.wikipedia.org/wiki/Nmap)\nwireshark is a traffic analyzer\nsnort is an IDS\nautopsy is for forensic analysis"
         ],
         "_ps": 2
     },
@@ -535,7 +535,7 @@
             "Reporting",
             "Recovery",
             "Eradiction / Remediation",
-            "Lessons Learned"
+            "Lessons Learned\n[Explanation: Pages 29 to 31 ->](https://nvlpubs.nist.gov/nistpubs/specialpublications/nist.sp.800-83r1.pdf)"
         ],
         "_ps": 2
     },
@@ -725,7 +725,7 @@
             "inherent risk",
             "residual risk",
             "applied risk",
-            "leftover risk"
+            "leftover risk\n[Explanation](https://www.sans.org/brochure/course/information-security-risk-management/226)"
         ],
         "_ps": 1
     },
@@ -765,17 +765,17 @@
             "ISO 27001",
             "ISO 27017",
             "Cloud Security Guidelines",
-            "Cloud Controls Matrix"
+            "Cloud Controls Matrix\n[Explanation](https://www.cybersaint.io/blog/six-steps-of-the-nist-risk-management-framework)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q77. What are the essential characteristics of the reference monitor?\n#### Q78. According to NIST, what is the first action required to take advantage of the cybersecurity framework?",
+        "question": "Q77. What are the essential characteristics of the reference monitor?",
         "options": [
             "It is versatile, accurate, and operates at a very high speed.",
             "It is tamper-proof, can always be invoked, and must be small enough to test.",
             "It is restricted, confidential, and top secret",
-            "78. According to NIST, what is the first action required to take advantage of the cybersecurity framework?"
+            "Identify the key business outcomes."
         ],
         "_ps": 1
     },
@@ -785,7 +785,7 @@
             "Identify the key business outcomes.",
             "Understand the threats and vulnerabilities.",
             "Conduct a risk assessment.",
-            "Analyze and prioritize gaps to create the action plan."
+            "Analyze and prioritize gaps to create the action plan.\n[Explanation](https://www.cybersaint.io/blog/six-steps-of-the-nist-risk-management-framework)"
         ],
         "_ps": 0
     },
@@ -805,7 +805,7 @@
             "a salami attack",
             "a DoS (Denial of Service) attack",
             "a DDoS (Distributed Denial of Service) attack",
-            "a botnet attack"
+            "a botnet attack\n[Explanation](https://www.forbes.com/sites/parmyolson/2014/11/20/the-largest-cyber-attack-in-history-has-been-hitting-hong-kong-sites/?sh=56e071cd38f6)"
         ],
         "_ps": 2
     },
@@ -825,7 +825,7 @@
             "FedRAMP",
             "GDPR",
             "PCI-DSS",
-            "HIPAA"
+            "HIPAA\n[Explanation](https://online.maryville.edu/blog/5-important-regulations-in-united-states-healthcare/)"
         ],
         "_ps": 3
     },
@@ -835,7 +835,7 @@
             "DevSecOps requires the inclusion of cybersecurity engineers in the CI/CD process of DevOps.",
             "DevSecOps slows down the CI/CD process of DevOps.",
             "DevSecOps places security controls in the CI/CD process of DevOps.",
-            "DevSecOps lets cybersecurity engineers dictate the CI/CD process of DevOps."
+            "DevSecOps lets cybersecurity engineers dictate the CI/CD process of DevOps.\n[Explanation](https://www.linkedin.com/learning/devops-foundations-devsecops/introduction-to-devsecops)"
         ],
         "_ps": 0
     },
@@ -845,19 +845,19 @@
             "always",
             "only when assessing regulatory compliance",
             "only if following the Agile model",
-            "never"
+            "never\n[Explanation:](https://www.synopsys.com/glossary/what-is-sast.html)\n    Control of security required for regulatory compliance\n    Legacy application and database support\n    Scalability to meet seasonal increases in demand\nWhich cloud model is the best option for these requirements?"
         ],
         "_ps": 0
     },
     {
         "question": "Q85. Your organization service customer orders with a custom ordering system developed in-hose. You are responsible for recommending a cloud model to meet the following requirements:\n    Control of security required for regulatory compliance\n    Legacy application and database support\n    Scalability to meet seasonal increases in demand\nWhich cloud model is the best option for these requirements?",
         "options": [
-            "ntrol of security required for regulatory compliance",
-            "gacy application and database support",
-            "alability to meet seasonal increases in demand",
-            "cloud model is the best option for these requirements?"
+            "government cloud",
+            "public cloud",
+            "hybrid cloud",
+            "private cloud"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q86. You have just conducted a port scan of a network. There is no well-known port active. How do you find a webserver running on a host, which uses a random port number?",
@@ -865,19 +865,19 @@
             "Give up on the current target network and move on to the next one.",
             "Switch to another network scanning tool. Resort to more resource-intensive probing, like launching random attacks to all open ports.",
             "Turn on the stealth mode in your network scanning tool. Check whether you missed any other active ports associated with web servers.",
-            "Turn on additional options in your network scanning tool to further investigate the details (type and version) of applications running on the rest of the active ports."
+            "Turn on additional options in your network scanning tool to further investigate the details (type and version) of applications running on the rest of the active ports.\nWhat are the primary goals of the digital signature in this scenario? (Choose the best answer.)"
         ],
         "_ps": 3
     },
     {
         "question": "Q87. Executives in your organization exchange emails with external business partners when negotiating valuable business contracts. To ensure that these communications are legally defensible, the security team has recommended that a digital signature be added to these message.\nWhat are the primary goals of the digital signature in this scenario? (Choose the best answer.)",
         "options": [
-            "re the primary goals of the digital signature in this scenario? (Choose the best answer.)",
             "integrity and non-repudiation",
             "privacy and non-repudiation",
-            "privacy and confidentiality"
+            "privacy and confidentiality",
+            "integrity and privacy"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q88. Which option is a mechanism to ensure non-repudiation?",
@@ -885,7 +885,7 @@
             "MD5",
             "Caesar cipher",
             "symmetric-key encryption",
-            "asymmetric-key encryption"
+            "asymmetric-key encryption\n[Explanation:](https://medium.com/geekoffee/ensuring-integrity-authenticity-and-non-repudiation-in-data-transmission-using-node-js-af73c2404153)"
         ],
         "_ps": 3
     },
@@ -905,7 +905,7 @@
             "separation of duties",
             "privileged account management (PAM)",
             "defense-in-depth",
-            "least privilege"
+            "least privilege\n[Explanation:](https://en.wikipedia.org/wiki/Defense_in_depth_(computing))"
         ],
         "_ps": 2
     },
@@ -1005,18 +1005,17 @@
             "a stateful packet inspection firewall",
             "a web application firewall (WAF)",
             "an Intrusion Detection and Prevention System (IDPS) appliance",
-            "Security Information Event Management (SIEM)"
+            "Security Information Event Management (SIEM)\nWhat is the next step you should take to best fulfill your responsibilities and meet the needs of the business?"
         ],
         "_ps": -1
     },
     {
         "question": "Q101. You are responsible for forensic investigations in your organization.You have been tasked with investigating a compromised virtual application server. Becase a revenue generating application runs on the server, the server needs to be returned to service as quickly as possible.\nWhat is the next step you should take to best fulfill your responsibilities and meet the needs of the business?",
         "options": [
-            "s the next step you should take to best fulfill your responsibilities and meet the needs of the business?",
             "Restore the server from backup immediately.",
             "Take the server offline until your investigation is complete.",
             "Take a snapshot of the compromised virtual server for your investigation."
         ],
-        "_ps": 3
+        "_ps": 2
     }
 ]

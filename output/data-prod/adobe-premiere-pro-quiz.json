@@ -55,19 +55,19 @@
             "Narration",
             "SFX",
             "Ambience",
-            "Music"
+            "Music\n```markdown\nA. Clarity\nB. Contrast\nC. Saturation\nD. Temperature\nE. Blur\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q7. HSL secondary color correction allows you to adjust which of the following? (Select three items.)",
+        "question": "Q7. HSL secondary color correction allows you to adjust which of the following? (Select three items.)\n```markdown\nA. Clarity\nB. Contrast\nC. Saturation\nD. Temperature\nE. Blur\n```",
         "options": [
-            "kdown",
-            "rity",
-            "trast",
-            "uration"
+            "B, C, D",
+            "A, B, C",
+            "B, D, E",
+            "A, C, E"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q8. What is the only panel in which the Rate Stretch tool can modify a clip?",
@@ -75,19 +75,19 @@
             "Program Monitor panel",
             "Source Monitor panel",
             "Timeline panel",
-            "Media Browser panel"
+            "Media Browser panel\n![image](images/001.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q9. What can you do to make the shape layer automatically adjust size as the text layer changes?",
+        "question": "Q9. What can you do to make the shape layer automatically adjust size as the text layer changes?\n![image](images/001.png)",
         "options": [
-            "e](images/001.png)",
             "Select the Mask with Shape option.",
             "Select Responsive Design and Pin To the text layer.",
-            "Select Responsive Design and Pin To the Video Frame."
+            "Select Responsive Design and Pin To the Video Frame.",
+            "Use the Align and Transform controls."
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q10. In which panel do you assemble media in order to create sequence?",
@@ -135,19 +135,19 @@
             "container",
             "format",
             "compressor",
-            "codec"
+            "codec\n![image](images/002.png)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q15. You want to save a short portion of a longer clip for easy access. How can you do this?",
+        "question": "Q15. You want to save a short portion of a longer clip for easy access. How can you do this?\n![image](images/002.png)",
         "options": [
-            "e](images/002.png)",
             "in the Media Browser, mark in and out points on a clip, and then import.",
             "Mark in and out points on the clip in the Program Monitor and select choose Clip > Make Subclip.",
-            "Mark in and out points on a clip in the Timeline panel and then drag it back into a bin."
+            "Mark in and out points on a clip in the Timeline panel and then drag it back into a bin.",
+            "Mark in and out points on the clip in the Source Monitor and select Clip > Make Subclip."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q16. What adjustment can help return edge detail to video footage?",
@@ -165,19 +165,19 @@
             "Effects panel",
             "Project panel",
             "Effect Controls panel",
-            "Program Monitor panel"
+            "Program Monitor panel\n![image](images/003.png)"
         ],
         "_ps": 2
     },
     {
-        "question": "Q18. You are working with a new project and have been editing for two hours. What is the number of backup projects you would expect to find?",
+        "question": "Q18. You are working with a new project and have been editing for two hours. What is the number of backup projects you would expect to find?\n![image](images/003.png)",
         "options": [
-            "e](images/003.png)",
             "2",
             "12",
-            "20"
+            "20",
+            "24"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q19. Which panel would you use to browse and import assets for maximum compatibility with Premiere Pro?",
@@ -185,19 +185,19 @@
             "Library",
             "Effects",
             "Project",
-            "Media Browser"
+            "Media Browser\nReference : https://helpx.adobe.com/in/premiere-pro/how-to/import-with-media-browser.html#:~:text=The%20Media%20Browser%20panel%20should,with%20fragmented%20media%20file%20types.&text=To%20import%20selected%20clips%20into,on%20them%20and%20choose%20Import.\n![image](images/004.png)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q20. A transition is set to center aligned. What would be the result of dragging with the tool selected, to the right?",
+        "question": "Q20. A transition is set to center aligned. What would be the result of dragging with the tool selected, to the right?\n![image](images/004.png)",
         "options": [
-            "e](images/004.png)",
             "The transition would slide to the right.",
             "You would extend only the right side of the transition.",
-            "You would perform a ripple edit and extend the duration of the first clip."
+            "You would perform a ripple edit and extend the duration of the first clip.",
+            "The transition would grow on both sides."
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q21. Which application does NOT support Dynamic Link?",
@@ -225,19 +225,19 @@
             "audio",
             "template",
             "transition",
-            "preset"
+            "preset\n![image](images/005.png)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q24. How was this clip manipulated using a Curves adjustment?",
+        "question": "Q24. How was this clip manipulated using a Curves adjustment?\n![image](images/005.png)",
         "options": [
-            "e](images/005.png)",
             "Hue vs. Luma",
             "Saturation vs. Saturation",
-            "Hue vs. Saturation"
+            "Hue vs. Saturation",
+            "Luma vs. Saturation"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q25. Where is transparency data stored when compositing media?",
@@ -265,39 +265,39 @@
             "Use Previews",
             "Use Frame Blending",
             "Use Maximum Render Quality",
-            "Match Sequence Settings"
+            "Match Sequence Settings\n![image](images/006.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q28. In the scenario shown below, you want to extend the end of the red clip in the Timeline and not change the duration of the adjacent clip. Which is the most appropriate trim choice to accomplish this?",
+        "question": "Q28. In the scenario shown below, you want to extend the end of the red clip in the Timeline and not change the duration of the adjacent clip. Which is the most appropriate trim choice to accomplish this?\n![image](images/006.png)",
         "options": [
-            "e](images/006.png)",
             "Trim In",
             "Trim Out",
-            "Ripple Trim In"
+            "Ripple Trim In",
+            "Ripple Trim Out\n```markdown\nA. GIF\nB. DCP\nC. QuickTime\nD. HEVC\nE. FLV\n```"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q29. Which formats does Adobe Media Encoder support? (Select three items.)\n```markdown\nA. GIF\nB. DCP\nC. QuickTime\nD. HEVC\nE. FLV\n```",
+        "options": [
+            "A, B, C",
+            "A, C, E",
+            "B, C, D",
+            "B, D, E\n```markdown\nA. AVCHD\nB. HEVC\nC. Animated GIF\nD. MXF OP1a\nE. M4A\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q29. Which formats does Adobe Media Encoder support? (Select three items.)",
+        "question": "Q30. Which video file format can you export with Adobe Media Encoder? (Select three items.)\n```markdown\nA. AVCHD\nB. HEVC\nC. Animated GIF\nD. MXF OP1a\nE. M4A\n```",
         "options": [
-            "kdown",
-            "",
-            "",
-            "ckTime"
+            "A, B, C",
+            "A, C, E",
+            "B, C, D",
+            "B, D, E"
         ],
-        "_ps": -1
-    },
-    {
-        "question": "Q30. Which video file format can you export with Adobe Media Encoder? (Select three items.)",
-        "options": [
-            "kdown",
-            "HD",
-            "C",
-            "mated GIF"
-        ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q31. If you have placed a GPU-accelerated effect on a clip in the Timeline and have not rendered it, what color appears at the top of your Timeline?",
@@ -315,17 +315,17 @@
             "The default brightness is the halfway position between darker and lighter.",
             "You can set the top bar of windows to a custom accent color.",
             "You can adjust the intensity of the Focus Indicator to help easily identify which window is active.",
-            "You can change the highlight color."
+            "You can change the highlight color.\n![image](images/007.png)"
         ],
         "_ps": 3
     },
     {
-        "question": "Q33. What can you tell about this transition?",
+        "question": "Q33. What can you tell about this transition?\n![image](images/007.png)",
         "options": [
-            "e](images/007.png)",
             "Premiere will insert white to fill the needed handles.",
             "Premiere will insert black to fill the needed handles.",
-            "There is not enough media (handles) to cover the duration of the transition."
+            "There is not enough media (handles) to cover the duration of the transition.",
+            "The transition is automatically shortened to use only the available media and the area under the diagonal lines will have no transitions applied."
         ],
         "_ps": -1
     },
@@ -345,37 +345,37 @@
             "Select the clip in the Timeline and choose File > Adobe Dynamic Link > Import After Effects Composition.",
             "Select the clip in the Timeline and choose File > Adobe Dynamic Link > Replace with After Effects Composition.",
             "Select the clip in the Timeline and choose File > Adobe Dynamic Link > New After Effects Composition.",
-            "Select the clip in the Timeline and choose Edit > Copy. Switch to After Effects and choose Edit > Paste."
+            "Select the clip in the Timeline and choose Edit > Copy. Switch to After Effects and choose Edit > Paste.\n![image](images/008.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q36. You want to pull down the saturation in just the clouds shown below. Which Curves adjustment makes this easiest?",
+        "question": "Q36. You want to pull down the saturation in just the clouds shown below. Which Curves adjustment makes this easiest?\n![image](images/008.png)",
         "options": [
-            "e](images/008.png)",
             "Hue vs. Saturation",
             "RGB Curves",
-            "Luma vs. Saturation"
+            "Luma vs. Saturation",
+            "Hue vs. Luma\n```markdown\nA. Logo\nB. Text\nC. Rectangle\nD. Circle\nE. Ellipse\n```"
         ],
         "_ps": -1
     },
     {
-        "question": "Q37. Which is a new graphic layer type? (Select three items.)",
+        "question": "Q37. Which is a new graphic layer type? (Select three items.)\n```markdown\nA. Logo\nB. Text\nC. Rectangle\nD. Circle\nE. Ellipse\n```",
         "options": [
-            "kdown",
-            "o",
-            "t",
-            "tangle"
+            "A, B, C",
+            "A, C, E",
+            "B, C, E",
+            "B, D, E\n![image](images/009.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q38. Which option can create a color field that automatically adjusts size as you add or subtract from a text layer?",
+        "question": "Q38. Which option can create a color field that automatically adjusts size as you add or subtract from a text layer?\n![image](images/009.png)",
         "options": [
-            "e](images/009.png)",
             "Choose Fill from the Appearance controls.",
             "Choose Stroke from the Appearance controls.",
-            "Choose Background from the Appearance controls."
+            "Choose Background from the Appearance controls.",
+            "Choose Shadow from the Appearance controls."
         ],
         "_ps": -1
     },
@@ -385,19 +385,19 @@
             "Shadows",
             "Contrast",
             "Midtones",
-            "Blacks"
+            "Blacks\n![image](images/010.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q40. Looking at the histogram below, which single adjustment slider could create this change?",
+        "question": "Q40. Looking at the histogram below, which single adjustment slider could create this change?\n![image](images/010.png)",
         "options": [
-            "e](images/010.png)",
             "Blacks",
             "Contrast",
-            "Whites"
+            "Whites",
+            "Exposure"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q41. Under which drop-down menu can you remove effects?",
@@ -445,17 +445,17 @@
             "Convert Image Sequences to Clips",
             "Convert After Effects Compositions to Clips",
             "Include Preview Files",
-            "Consolidate and Transcode"
+            "Consolidate and Transcode\n![image](images/011.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q46. Which option is enabled to affect the view of the audio waveforms as shown below?",
+        "question": "Q46. Which option is enabled to affect the view of the audio waveforms as shown below?\n![image](images/011.png)",
         "options": [
-            "e](images/011.png)",
             "Show Audio Time Units",
             "Rectified Audio Waveform",
-            "Large Audio Waveforms"
+            "Large Audio Waveforms",
+            "Logarithmic Keyframe Scaling"
         ],
         "_ps": -1
     },
@@ -474,8 +474,7 @@
         "options": [
             "workspaces",
             "layouts",
-            "panel presets",
-            "events"
+            "panel presets"
         ],
         "_ps": 0
     }

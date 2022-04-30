@@ -15,7 +15,7 @@
             "They can view free/busy details only.",
             "They can edit.",
             "They can view all details.",
-            "They can view titles and locations."
+            "They can view titles and locations.\n[Reference](https://support.microsoft.com/en-us/office/share-an-outlook-calendar-with-other-people-353ed2c1-3ec5-449d-8c73-6931a0adab88)"
         ],
         "_ps": 0
     },
@@ -35,17 +35,17 @@
             "all of these answers",
             "Archive messages you are done with.",
             "Save and then remove large attachments from messages",
-            "Sort by size and then delete large messages."
+            "Sort by size and then delete large messages.\n```\nA. Users can change their email settings to ignore requests for read receipts.\nB. Users can decline individual requests for read receipts.\nC. Read receipts are expensive, so some organizations turn them off.\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q5. Why are read receipts less reliable than delivery receipts?",
+        "question": "Q5. Why are read receipts less reliable than delivery receipts?\n```\nA. Users can change their email settings to ignore requests for read receipts.\nB. Users can decline individual requests for read receipts.\nC. Read receipts are expensive, so some organizations turn them off.\n```",
         "options": [
-            "",
-            "rs can change their email settings to ignore requests for read receipts.",
-            "rs can decline individual requests for read receipts.",
-            "d receipts are expensive, so some organizations turn them off."
+            "A and C",
+            "B and C",
+            "A and B",
+            "A,B,and C"
         ],
         "_ps": -1
     },
@@ -255,7 +255,7 @@
             "Search the autocomplete library, select the incorrect suggestion, and then click Delete",
             "Close Outlook, reboot your computer, and restart Outlook",
             "Wait until the suggestion appears again, then highlight it and press the Delete key",
-            "Delete the corresponding contact"
+            "Delete the corresponding contact\n[Reference](https://support.microsoft.com/en-us/office/manage-suggested-recipients-in-the-to-cc-and-bcc-boxes-with-auto-complete-dbe46e31-c098-4881-8cf7-66b037bce23e)"
         ],
         "_ps": 2
     },
@@ -315,19 +315,19 @@
             "Asking your supervisor to prioritize a list of tasks",
             "Sending customers a three-question survey about a recent service experience",
             "Asking your colleagues to choose their favorite lunch spot from a list",
-            "All of these answers"
+            "All of these answers\n```\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 PM and send an update\nB. Double click the meeting to open it, change the start time to 1 PM abd send an update\nC. Some people have already accepted, so you must cancel this meeting and create a new meeting\n```"
         ],
         "_ps": 2
     },
     {
-        "question": "Q33. You created a meeting for next Tuesday at 2 PM, and several invitees have accepted. How do you change the meeting so it will begin at 1 PM and last for one hour?",
+        "question": "Q33. You created a meeting for next Tuesday at 2 PM, and several invitees have accepted. How do you change the meeting so it will begin at 1 PM and last for one hour?\n```\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 PM and send an update\nB. Double click the meeting to open it, change the start time to 1 PM abd send an update\nC. Some people have already accepted, so you must cancel this meeting and create a new meeting\n```",
         "options": [
-            "",
-            "n the calendar in Day, Week, or Work Week view. Drag the start time to 1 PM and send an update",
-            "ble click the meeting to open it, change the start time to 1 PM abd send an update",
-            "e people have already accepted, so you must cancel this meeting and create a new meeting"
+            "B",
+            "C",
+            "A or B",
+            "A"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q34. What permission allows your delegates to read, create, change, and delete items that they create, but not items that you created?",
@@ -395,7 +395,7 @@
             "Only when the recipient is also using Outlook",
             "Only if the email is plain text without attachments",
             "If the email si still in your outbox",
-            "If the email was sent within the past 24 hours"
+            "If the email was sent within the past 24 hours\n[Reference](https://support.microsoft.com/en-us/office/recall-or-replace-an-email-message-that-you-sent-35027f88-d655-4554-b4f8-6c0729a723a0)"
         ],
         "_ps": 0
     },
@@ -415,17 +415,17 @@
             "Export your contacts to Excel, which ash lots of columns; add the data; and then import the contacts back to Outlook",
             "Use the Field Chooser to create two new columns of type Date in the folder",
             "Create a custom contacts form that includes two text boxes to collect this data",
-            "All of these answers"
+            "All of these answers\n```\nA. To easily see when you have a new message related to Project A\nB. To audit the rule\nC. Because the unread messages count for the Inbox folder will not include Project A\nD. Because you cannot create a search folder for a subfolder\n```"
         ],
         "_ps": -1
     },
     {
-        "question": "Q43. You have created a rule to automatically route emails to the Project A folder. Why might you also add Project A to Favorites? (Select all that apply)",
+        "question": "Q43. You have created a rule to automatically route emails to the Project A folder. Why might you also add Project A to Favorites? (Select all that apply)\n```\nA. To easily see when you have a new message related to Project A\nB. To audit the rule\nC. Because the unread messages count for the Inbox folder will not include Project A\nD. Because you cannot create a search folder for a subfolder\n```",
         "options": [
-            "",
-            "easily see when you have a new message related to Project A",
-            "audit the rule",
-            "ause the unread messages count for the Inbox folder will not include Project A"
+            "A and C",
+            "A, C, and D",
+            "A and B",
+            "B and D"
         ],
         "_ps": -1
     },
@@ -485,7 +485,7 @@
             "none of these answers",
             "your People list",
             "your Outlook Favorites",
-            "the global address book"
+            "the global address book\n[official docs](https://support.microsoft.com/en-us/office/find-people-and-contacts-f868749b-31a4-4fba-a936-b778cbb8f1cb)"
         ],
         "_ps": 3
     },
@@ -765,7 +765,7 @@
             "a subfolder",
             "a compressed file",
             "a file system folder",
-            "an archive"
+            "an archive\n[Reference](https://www.extendoffice.com/documents/outlook/5238-outlook-move-items-older-than.html)"
         ],
         "_ps": 3
     },
@@ -795,19 +795,19 @@
             "Create a Ccd folder, and then create a rule to move all messages where you are on the cc line to that folder.",
             "Create a rule to move all messages where you are in the Cc line to the Deleted items folder.",
             "Turn on Focused Inbox.",
-            "Create a rule to apply conditional formatting to all messages where you are in the Cc line."
+            "Create a rule to apply conditional formatting to all messages where you are in the Cc line.\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  \nB. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  \nC. Some people have already accepted, so you must cancel this meeting and create a new meeting."
         ],
         "_ps": 0
     },
     {
-        "question": " Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?",
+        "question": " Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  \nB. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  \nC. Some people have already accepted, so you must cancel this meeting and create a new meeting.",
         "options": [
-            "n the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  ",
-            "ble-click the meeting to open it, change the start time to 1 p.m., and send an update.  ",
-            "e people have already accepted, so you must cancel this meeting and create a new meeting.",
-            "A or B"
+            "A or B",
+            "B",
+            "C",
+            "А"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": " Q81. Which is not valid search criteria when searching for messages in your Inbox?",
@@ -860,14 +860,14 @@
         "_ps": 1
     },
     {
-        "question": "Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?",
+        "question": "Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  \nB. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  \nC. Some people have already accepted, so you must cancel this meeting and create a new meeting.",
         "options": [
-            "n the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  ",
-            "ble-click the meeting to open it, change the start time to 1 p.m., and send an update.  ",
-            "e people have already accepted, so you must cancel this meeting and create a new meeting.",
-            "A or B"
+            "A or B",
+            "B",
+            "C",
+            "А"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q81. Which is not valid search criteria when searching for messages in your Inbox?",
@@ -974,9 +974,8 @@
         "options": [
             "It takes up less space in their mailboxes.",
             "It takes up less space in your mailbox.",
-            "It allows better version control of the file..",
-            "all of these answers"
+            "It allows better version control of the file.."
         ],
-        "_ps": 3
+        "_ps": -1
     }
 ]

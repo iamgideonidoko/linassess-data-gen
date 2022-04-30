@@ -485,7 +485,7 @@
             "The global secondary indexes in DynamoDB are consistent, and are not guaranteed to return correct results.",
             "The global secondary indexes in DynamoDB are transactionally consistent, and are guaranteed to return correct results.",
             "The global secondary indexes in DynamoDB are partially consistent, and are not guaranteed to return correct results.",
-            "The global secondary indexes in DynamoDB are eventually consistent, and are not guaranteed to return correct results."
+            "The global secondary indexes in DynamoDB are eventually consistent, and are not guaranteed to return correct results.\n[reference link:](https://stackoverflow.com/questions/35414372/dynamodb-consistent-reads-for-global-secondary-index)"
         ],
         "_ps": 3
     },
@@ -495,27 +495,27 @@
             "ADD mystream \\* sensor-id 1234 temperature 19.8 1518951480106-1",
             "UPDATE mystream \\* sensor-id 1234 temperature 19.8 1518951480106-3",
             "XADD mystream \\* sensor-id 1234 temperature 9.8 1518951480106-0",
-            "INSERT mystream \\* sensor-d 1234 temperature 19.8 15181480106-2"
+            "INSERT mystream \\* sensor-d 1234 temperature 19.8 15181480106-2\n```\nvar indexCollection = function(db) {return co(function*() {...});};\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q51. Which code example completes this statement and creates an index for a MongoDB object named restaurants, sorted ascending by the field name?\n```\nvar indexCollection = function(db) {return co(function*() {...});};\n```",
         "options": [
-            "",
-            "dexCollection = function(db) {return co(function*() {...});};",
-            "",
-            "`const results = yield db.table('restaurants').createIndex({\"name\": 1}, null); return results;`"
+            "`const results = yield db.table('restaurants').createIndex({\"name\": 1}, null); return results;`",
+            "`const results = yield db.collection('restaurants').createIndex({\"name\": 0}, null); return results;`",
+            "`const results = yield db.collection('restaurants').createIndex({\"name\": 1}, null); return results;`",
+            "`const results = yield db.table('restaurants').createIndex({\"name\": 0}, null); return results;`"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q52. Which Cypher code executes the multiquery block?\n```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```\n```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type\n```\n```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c AND MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nAND MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```",
+        "question": "Q52. Which Cypher code executes the multiquery block?",
         "options": [
-            "",
-            "",
-            "(c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,",
-            "(t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;"
+            "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```",
+            "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type\n```",
+            "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c AND MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nAND MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```",
+            "```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c;MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p;\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```\n### Q53. You need to create a scalable database that supports immutable writes. What do you use?"
         ],
         "_ps": -1
     },
@@ -564,8 +564,7 @@
         "options": [
             "MongoDB",
             "Redis",
-            "MySQL",
-            "Cassandra"
+            "MySQL"
         ],
         "_ps": 1
     }

@@ -1,0 +1,641 @@
+[
+    {
+        "question": "Q1. When developing a backlink strategy, what approach would be most beneficial?",
+        "options": [
+            "Guest post the article to as many sites as possible",
+            "Create an infographics and share it with relevant bloggers",
+            "Create diverse and unnatural links",
+            "Distribute links in comment sections of websites"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q2. What is a key reason the URL `domain.com/apparel/jackets` is preferable to the URL `domain.com/p=141`?",
+        "options": [
+            "It is longer",
+            "It is not preferable",
+            "It uses structured markup",
+            "It is readable to a human"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q3. Which HTTP response status code would indicate a page has been moved permanently?",
+        "options": [
+            "410",
+            "302",
+            "200",
+            "301"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q4. You notice a website is serving HTML to a Search Engine than to a human user. What is this an example of?",
+        "options": [
+            "Spam injection",
+            "Cloaking",
+            "Sneaky Redirect",
+            "Splicing"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q5. What would significantly improve Google&#39;s ability to a non-YouTube video in its Search Results?",
+        "options": [
+            "Provide a 150 x 80 pixel thumbnail image",
+            "Add Schema.org VideoObject",
+            "Convert .mp4 videos to .mov",
+            "Embed video objects with JavaScript conditionals"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q6. Google primarily determines indexing and ranking by crawling which version of a page?",
+        "options": [
+            "Responsive version",
+            "Submitted version",
+            "Mobile version",
+            "Desktop version"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q7. You want to identify which US state has the most search interest for a particular keyword. What tool would help you determine this?",
+        "options": [
+            "Google Analytics",
+            "Google Keyword Planner",
+            "Google Search Console",
+            "Google Trends"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q8. You want to block crawlers from accessing your entire website. What robots.txt entry would you use?",
+        "options": [
+            "```markdown\n    User-agent: Allbots\n    Disallow: \\*\n```",
+            "```markdown\n    User-agent: /\n    Disallow: \\*\n```",
+            "```markdown\n    User-agent: /\n    Disallow:\n```",
+            "```markdown\n    User-agent: \\*\n    Disallow: /\n```"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q9. Which results is most likely if you use an interstitial pop-up that requires a user to take action before you load the content of the page?",
+        "options": [
+            "Both the pop-up and the content of the page will be indexed",
+            "The pop-up will be indexed instead of the desired body content",
+            "An interstitial pop-up is treated the same as a soft 404",
+            "The pop-up will be ignored, and the content of the page will be indexed correctly"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q10. You notice a particular product in an e-commerce storefront is no longer indexed, despite no technical issues. What is a likely reason for this?",
+        "options": [
+            "No title or meta description tags were provided",
+            "The Keywords is too competitive",
+            "Robots.txt is configured to allow access",
+            "The product is out of stock"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q11. All bylone dates for articles are suddenly no longer visible on a `website&#39;s` listing within Google Search. Assuming no changes have been made to the site programming or content, what is the most likely cause?",
+        "options": [
+            "The site has been delisted from Google Search",
+            "A Google News sitemap was not provided within 30 days of setting up a publisher center account",
+            "The site kept updating the dates to make the content appear fres, without changing",
+            "The articles have aged more than 365 days without any significant updates to the content or the site"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q12. Which approach is not advisable to Geo-targeting your website?",
+        "options": [
+            "Using a gTLD with subdomain",
+            "using URL parameters",
+            "Using a ccTLD",
+            "Using a gTLD with a subdirectory"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. You have been asked to help a big e-commerce brand optimize their website for search engines. They currently have thousands of products listed on their website. What is your most appropriate first step?",
+        "options": [
+            "Recommend that they add more products",
+            "Work on compressing image files",
+            "302 redirect all product pages to URL that contains target keywords",
+            "Register the business with a Google My Business account."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q14. What Does The Term &quot;Sandbox&quot; Mean In SEO?",
+        "options": [
+            "The Box With Paid Ads That Appear When You Perform A Search.",
+            "This Is Where Sites Are Kept Till They Get Mature Enough To Be Included In The Top Rankings For A Particular Keyword",
+            "A Special Category Of Sites That Are Listed In Kid-safe Searches",
+            "The First 10 Search Results For A Particular Keyword."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q15. What Is Anchor Text?",
+        "options": [
+            "It Is The Main Body Of Text On A Particular Web Page",
+            "It Is The Text Within The Left Or Top Panel Of A Web Page",
+            "It Is The Visible Text That Is Hyper Linked To Another Page",
+            "It Is The Most Prominent Text On The Page That The Search Engines Use To Assign A Title To The Page"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q16. Which Google search query should be used to return only PDF documents that reference Microsoft?",
+        "options": [
+            "Microsoft + .pdf",
+            "\"Microsoft\" + \"pdf\"",
+            "Microsoft AND \"pdf\"",
+            "Microsoft filetype:pdf"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q17. Which link is not crawlable?",
+        "options": [
+            "`<a href=\"http://domain.com\">`",
+            "`<a onclick=\"newwin('domain.com')\">`",
+            "`<a href=\"http://domain.com\" class=\"blue\">`",
+            "`<a href=\"../category-2/page\">`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q18. Which choice represents the best header structure?",
+        "options": [
+            "```markdown\n    H1: How to Bak Bagels\n    H2: Ingredients\n    H3: Dry Ingredients\n    H4: Wet Ingredients\n    H2: Instructions\n    H6: Reviews\n```",
+            "```markdown\n    H1: How to Bak Bagels\n    H1: Ingredients\n    H1: Dry Ingredients\n    H1: Wet Ingredients\n    H1: Instructions\n    H2: Reviews\n```",
+            "```markdown\n    H1: How to Bak Bagels\n    H2: Ingredients\n    H3: Dry Ingredients\n    H3: Wet Ingredients\n    H2: Instructions\n    H2: Reviews\n```",
+            "```markdown\n    H1: How to Bak Bagels\n    H2: Ingredients\n    H4: Dry Ingredients\n    H5: Wet Ingredients\n    H6: Instructions\n    H1: Reviews\n```"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q19. All byline dates articles are suddenly no longer visible on a website's listing within Google Search. Assuming no changes have been made to the site programming or content, what is the most likely cause?",
+        "options": [
+            "The site has been delisted from Google Search",
+            "The site kept updating the date to make the content appear fresh, without changing the content.",
+            "The articles have aged more than 365 days without any significant updates to the content or the site.",
+            "A Google New sitemap was not provided within 30 days of setting up a Publisher Center account"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q20. What is an example of a Google search result that can be found in position zero?",
+        "options": [
+            "Google Ads result",
+            "featured snippet",
+            "related searches",
+            "autocomplete"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q21. When creating accessible video content, what should you consider including?",
+        "options": [
+            "transcript",
+            "thumbnail",
+            "Flash Player",
+            "event tracking"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q22. You are optimizing a website that sells supplies for banking donuts. Which approach is most appropriate to drive more organic traffic?",
+        "options": [
+            "Buy donutbakingsupplies.com and 301 redirect to your website",
+            "Add the keyword \"donut supplies\" to every page.",
+            "Create a new blog with high-quality donut recipes",
+            "Join a link farm to rapidly build inbounnd links."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q23. Why is it important to be mindful of outbound follow links?",
+        "options": [
+            "There is a limit to how many links you can create.",
+            "all of these answers",
+            "Any follow links reduce your PageRank by 1.",
+            "Your site's reputation is tied to the sites you link to."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q24. Which statement is true about JSON-LD?",
+        "options": [
+            "It has no relation to JSON.",
+            "It is the only structured data format available.",
+            "It is considered the most complicated approach to adding structured data.",
+            "It is Google's preferred structured data format."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q25. What is a key reason why duplicate content might cause an issue with ranking?",
+        "options": [
+            "It creates an inability to use canonical URLs, which dramatically reduces crawl effectiveness,",
+            "It requires using a 302 redirect, which dilutes PageRank.",
+            "It triggers an immediate manual action penalty, which delists an entire domain until the duplicate content is removed.",
+            "It makes it difficult for a search engine to determine the original and authoritative content source."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q26. What attribute would you use to describe the content of an image?",
+        "options": [
+            "tabindex",
+            "longdesc",
+            "src",
+            "alt"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q27. You are researching keywords for a client and creating list for an optimization plan. Which is _not_ a recommended method of creating keyword lists?",
+        "options": [
+            "synonyms and related words",
+            "queries about benefits, features, problems",
+            "how-to and question-based queries",
+            "focusing on only high-volume, high-popularity words"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q28. You want to get a rough idea of how many searches per month a particular search term gets. Which tool do you use?",
+        "options": [
+            "Google Keyword Planner",
+            "Google Tag Manager",
+            "Google Search Console",
+            "Google Suggest"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q29. Changing the title tag and/or meta description will have a measurable impact on your \\_.",
+        "options": [
+            "RSS",
+            "CTR",
+            "PPC",
+            "LSI"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q30. How do keywords change as people progress through the buying cycle?",
+        "options": [
+            "They move from simple to more complex as searchers gather more information and then refine their choices.",
+            "The stay simple, as searchers try to use as few words as possible.",
+            "The keywords do not change much at all.",
+            "They move from complex to simple, as searchers find answers to their questions."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q31. Which technique is an example of black hat SEO?",
+        "options": [
+            "cloaking",
+            "keyword research",
+            "useful content",
+            "on-page optimization"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q32. A local accountant wants to start attracting more business directly from Google organic search. What is the best piece of advice to give to her?",
+        "options": [
+            "Use the pharse \"local accountant\" as a keyword to focus her website on.",
+            "Focus on short-tail keywords.",
+            "Register her business with a Google My Business account.",
+            "Leave a link to her website in the blog comments of popular accounting websites.\n`<a href=\"catalog/gloves.html\">Blue Gloves</a>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q33. What is the anchor text in this code sample?\n`<a href=\"catalog/gloves.html\">Blue Gloves</a>`",
+        "options": [
+            "Blue Gloves",
+            "href",
+            "catalog/",
+            "gloves.html"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q34. **\\_** analysis allows you to review requests made to your web server to identify insights such as how ofter a crawler arrives, what pages have 404 errors, and most crawled pages",
+        "options": [
+            "Log file",
+            "HTTP/2",
+            "Cron job",
+            "Resource packet"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q35. Which page title references content that is evergreen",
+        "options": [
+            "Mega List of Teams Going to the Olympics",
+            "Complete Coverage of Microsoft's Latest Announcement",
+            "The Future of SEO in 2020",
+            "How to Reheat Pizza"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q36. You load a page and start reading an article, and suddenly the content on the page moves. What metric is used to quantify this impact on user experience?",
+        "options": [
+            "First Meaningful Paint (FMP)",
+            "Recalculated Style Timing (RST)",
+            "Latent Loading Signal (LLS)",
+            "Cumulative Layout Shift (CLS)\n```<script type=\"application/ld+json\">\n{\n   \"@context\": \"https://schema.org\",\n   \"@type\": \"Organization\",\n   \"url\": \"http://www.domain.com\",\n   \"name\": \"Bradley Corp.\",\n   \"contactPoint\": {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+1-555-555-5555\",\n      \"contactType\": \"Customer service\"\n    }\n}\n</script>\n```"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q37. What is this code is an example of?\n```<script type=\"application/ld+json\">\n{\n   \"@context\": \"https://schema.org\",\n   \"@type\": \"Organization\",\n   \"url\": \"http://www.domain.com\",\n   \"name\": \"Bradley Corp.\",\n   \"contactPoint\": {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+1-555-555-5555\",\n      \"contactType\": \"Customer service\"\n    }\n}\n</script>\n```",
+        "options": [
+            "meta tag",
+            "HTTP response",
+            "XML sitemap",
+            "structured data"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q38. Which search query would be most difficult to determine search intent?",
+        "options": [
+            "XBox live coupon",
+            "Microsoft Office 365",
+            "LinkedIn login",
+            "LAX airport directions"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q39. When you conduct a search, what are the bolded words within the search listing description?",
+        "options": [
+            "suggested search terms",
+            "related search queries",
+            "keywords that match the search query",
+            "words with a `<b>` tag assigned in their meta description"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q40. Which acronym is used to describe the page a user sees after submitting a search?",
+        "options": [
+            "SERP (Search Engine Results Page)",
+            "INDX",
+            "PARS",
+            "SEM"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q41. Which statement is true regarding the use of social signals, such as LinkedIn shares, by Google in its ranking algorithm?",
+        "options": [
+            "Google does not use social signals to determine rank",
+            "Social signals are identical to backlinks",
+            "Social signals are used to determine topic authority",
+            "Social signals provide a benefit only if they have structured data markup"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q42. A user clicks an internal link resulting in this redirect chain: `http://domain.com -> https://domain.com -> https://domain.com/`. In this example, what is being consumed unnecessarily?",
+        "options": [
+            "redirect allotment",
+            "crawl budget",
+            "velocity scale",
+            "domain authority"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q43. You are planning for the development of an e-commerce website. Which approach will be more beneficial for rankings?",
+        "options": [
+            "Optimize the front page of your website to drive traffic from all category search terms.",
+            "Optimize product category pages to drive traffic from individual category search terms.",
+            "Optimize all pages on the site for all category search terms.",
+            "Optimize product pages to drive traffic from individual category search terms."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q44. You want to block crwlers from accessing your entire website. What robots.txt entry would you use?",
+        "options": [
+            "```\n    User-agent: Allbots\n    Disallow: *\n```",
+            "```\n    User-agent: /\n    Disallow: *\n```",
+            "```\n    User-agent: *\n    Disallow:\n```",
+            "```\n    User-agent: *\n    Disallow: /\n```"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q45. What is the relationship of click depth to PageRank?",
+        "options": [
+            "The deeper the click depth, the lower the PageRank",
+            "PageRank and click depth have no relation",
+            "The deeper the click depth, the higher the PageRank",
+            "Click depth and PageRank are equal"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q46. What is a popular technique for writing content with the goal of having it appear in a features snippet?",
+        "options": [
+            "Write the question in a headline tag, and then answer it below in a format that matches the snippet type.",
+            "Use the features snippet schema and apply an object that matches the correct snippet type.",
+            "Google manually generates featured snippets, so there is no special technique.",
+            "Submit the content through Google Search Console, and tag it with the correct snippet type."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q47. Which approach is not advisable to geotargeting your website?",
+        "options": [
+            "using a gTLD with a subdirectory",
+            "using URL parameters",
+            "using a gTLD with subdomain",
+            "using a ccTLD"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q48. What is a common best practice for handling search result pages on a blog's built-in site search?",
+        "options": [
+            "Set site research results to no-index.",
+            "Do not use site search.",
+            "Set site search to 404.",
+            "Add a canonical from the search result page to the home page."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q49. What might help a search engine understand the difference between an article on a dog bark versus tree bark?",
+        "options": [
+            "tertiary analysis",
+            "ranked choice trees",
+            "semantic analysis",
+            "knowledge graphs"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q50 A webpage has this tag: `<title>Brad's Bagels: How to Bake a Bagel</title>`. However, the Google search result for this page displays this title: _Brad's Bagels: Baking Bagels in the Oven_. What is a likely explanation?",
+        "options": [
+            "The title tag was placed within the <HEAD> section of the webpage, but not before the meta content tags, so Google cannot identify the actual title.",
+            "The page is using structured data to define an alternative title object, which allows the search engine to pick a preferable version.",
+            "A breadcrumb navigation is in use, which overrides the title tag supplied in the HTML.",
+            "Google generated a new title using text on the page that more closely matched the search query."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q51. What alt attribute should be assigned to an image of a decorative line being used to separate content",
+        "options": [
+            "alt=\"\"",
+            "alt=\"Thin black line being used to seperate two blocks of content\"",
+            "alt=\"dec\"",
+            "alt=\"thin-line\""
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q52. Your site serves identical content when you visit domain.com/page or domain.com/page?ref=123. What should you implement?",
+        "options": [
+            "parameter stripping",
+            "URL cloaking",
+            "a 302 redirect",
+            "a rel=canonical link"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q53. What data vocabulary is most commonly used when marking up content on a page?",
+        "options": [
+            "vocabulary.org",
+            "RDFa.org",
+            "schema.org",
+            "data-vocabulary.org"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q54. According to Google, what type of content includes topics such as news, legal issues, financial advice, and medical information?",
+        "options": [
+            "RSS",
+            "KYC",
+            "YMYL",
+            "BDB\n**Explanation:** `Google describes YMYL (Your Money or Your Life) sites/pages as ones that could potentially impact a person’s happiness, health, financial stability, or safety.`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q55. When would it be necessary to 301 redirect every page on a site?",
+        "options": [
+            "when parameters are used in URLs",
+            "when migrating from HTTP to HTTPS",
+            "when launching a new redesign",
+            "when creating a new subdomain\n**Explanation:** From article: [301 Redirects for SEO](https://ahrefs.com/blog/301-redirects/) (2020)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q56. What would contribute to a low bounce rate?",
+        "options": [
+            "Content does not match search intent.",
+            "Page returns 404 error.",
+            "Content reflects search intent.",
+            "URL uses parameters."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q57. What should be as consistent as possible across the web when developing a local SEO strategy?",
+        "options": [
+            "backlinks",
+            "NAP",
+            "LRP",
+            "inbound links\n1. [reference](https://support.google.com/business/answer/7091)\n2. [reference #2](https://www.smartinsights.com/search-engine-optimisation-seo/how-to-adjust-your-nap-profile-for-local-seo/)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q58.A user enters a search \\_ to retrieve results from a search engine?",
+        "options": [
+            "query",
+            "parser",
+            "bar",
+            "link"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q59 The search query \"How to make donuts without yeast\" is an example of what?",
+        "options": [
+            "fresh keyword",
+            "operative keyword",
+            "short-tail keyword",
+            "long-tail keyword"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q60 What tool enables companies to display extra information within the natural search results without the need of any structured data?",
+        "options": [
+            "Google Input Tools",
+            "structured data testing tool",
+            "Google Tag Manager",
+            "Google My Business"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q61 Your client is ready to start a blog. but has read that they should put the blog on a subdomain instead of subdirectory in order to create more external links to their website. How would you advise your client about this strategy?",
+        "options": [
+            "Not only should the blog be on a subdomain, but each of the major navigation areas should be on separate subdomains in order to increase the number and value of the links into the primary domain.",
+            "It is best to have the blog on a subdirectory and build links to primary domain.",
+            "It is an advisable choice as it will enable interlinking between the domains and increase the number of links.",
+            "The blog should be on a separate URL to avouud building too many links between the same domain or IP."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q62 Blog author pages, each with only one sentence about the author, are at risk of being flagged as **\\_** content.",
+        "options": [
+            "non-indexable",
+            "irrelevant",
+            "biased",
+            "thin"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q63 What is a common benefit to long-tail keywords?",
+        "options": [
+            "They are less competitive, and may have higher conversion rates.",
+            "Long-tail keywords are no longer relevant in today's SEO landscape.",
+            "They are less grandular, so you capture broader searches.",
+            "They are more competitive, but drive significantly more traffic."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q64 You have been asked to help a big e-commerce brand optimize their website for search engines. They currently have thousands of products listed on their website. What is your most appropriate first step?",
+        "options": [
+            "Set campaign goals.",
+            "Conduct a technical audit.",
+            "Conduct a backlink audit."
+        ],
+        "_ps": -1
+    }
+]

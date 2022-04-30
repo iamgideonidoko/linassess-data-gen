@@ -2,32 +2,32 @@
     {
         "question": "Q1. You are working with this XML code snippet from the XML document cars.xml. You need to return the information about the cars built after the year 2000. What does your XQuery look like?\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Cadillac</make><model>Escalade</model><year>2011</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1998</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>2009</year></car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar><make>Cadillac</make><model>Escalade</model><year>2007</year></car>",
-            "ar><make>Cadillac</make><model>Escalade</model><year>2011</year></car>"
+            "`doc(\"cars.xml\")/cars/car[year>2000].data`",
+            "`doc(\"cars.xml\")/cars/car[xs:integer(year) gt 2000]`",
+            "`doc(\"cars.xml\")/cars/car[year gt 2000]`",
+            "`doc(\"cars.xml\")/cars/car[integer(year) > 2000]`\n```xml\n<xs:element name=\"car\">\n    <xs:complexType>\n        <xs:sequence>\n            <xs:element name=\"make\" type=\"xs:string\"/>\n            <xs:element name=\"model\" type=\"xs:string\"/>\n            <xs:element name=\"year\" type=\"xs:string\"/>\n        </xs:sequence>\n        <xs:anyAttribute/>\n    </xs:complexType>\n</xs:element>\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q2. You are working with the following XSD fragment. What does it say about the `<car>` element?\n```xml\n<xs:element name=\"car\">\n    <xs:complexType>\n        <xs:sequence>\n            <xs:element name=\"make\" type=\"xs:string\"/>\n            <xs:element name=\"model\" type=\"xs:string\"/>\n            <xs:element name=\"year\" type=\"xs:string\"/>\n        </xs:sequence>\n        <xs:anyAttribute/>\n    </xs:complexType>\n</xs:element>\n```",
         "options": [
-            "",
-            "ement name=\"car\">",
-            "s:complexType>",
-            "  <xs:sequence>"
+            "The `<car>` element can be extended with only one attribute",
+            "The `<car>` element can be extended with multiple attributes",
+            "The `<car>` element cannot have any attributes",
+            "The `<car>` element has child elements which can appear in any order\n**Reference**: [XSD The `<anyAttribute>` Element](https://www.w3schools.com/xml/schema_complex_anyattribute.asp)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
-        "question": "Q3. You are converting your HTML file into XHTML Strict. Which code snippet will validate without errors?\n  ```xml\n  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n      <head><title>XHTML Example</title></head>\n      <body bgcolor=\"#FFFFFF\" >\n          <p>Content goes here ...</p>\n      </body>\n  </html>\n  ```\n  ```xml\n  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n      <head><title>XHTML Example</title></head>\n      <body name=\"bodySection\">\n          <p><b>Content goes here ...</b></p>\n      </body>\n  </html>\n  ```\n  ```xml\n  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n      <head><title>XHTML Example</title></head>\n      <body color=\"#333333\">\n          <p><i>Content goes here ...</i></p>\n      </body>\n  </html>\n  ```",
+        "question": "Q3. You are converting your HTML file into XHTML Strict. Which code snippet will validate without errors?",
         "options": [
-            "",
-            "ml",
-            "l xmlns=\"http://www.w3.org/1999/xhtml\">",
-            "<head><title>XHTML Example</title></head>"
+            "  ```xml\n  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n      <head><title>XHTML Example</title></head>\n      <body bgcolor=\"#FFFFFF\" >\n          <p>Content goes here ...</p>\n      </body>\n  </html>\n  ```",
+            "  ```xml\n  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n      <head><title>XHTML Example</title></head>\n      <body name=\"bodySection\">\n          <p><b>Content goes here ...</b></p>\n      </body>\n  </html>\n  ```",
+            "  ```xml\n  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n      <head><title>XHTML Example</title></head>\n      <body color=\"#333333\">\n          <p><i>Content goes here ...</i></p>\n      </body>\n  </html>\n  ```",
+            "  ```xml\n  <html xmlns=\"http://www.w3.org/1999/xhtml\">\n      <head><title>XHTML Example</title></head>\n      <body id=\"bodySelection\">\n          <p><strong>Content goes here ...</strong></p>\n      </body>\n  </html>\n  ```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q4. When working with Ajax applications, which is faster, XML or JSON?",
@@ -45,19 +45,19 @@
             "PHP, .NET, and SQL",
             "HTML, CSS, and DOM",
             "Python, Perl, and C++",
-            "Java, ASP, and C#"
+            "Java, ASP, and C#\n```xml\n<x/>\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q6. What is this code an example of?\n```xml\n<x/>\n```",
         "options": [
-            "",
-            "",
-            "",
-            "null element"
+            "null element",
+            "self-closing tag",
+            "improperly named element",
+            "incorrect XML syntax"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q7. Which XHTML syntax rule does NOT apply to XML?",
@@ -65,7 +65,7 @@
             "XHTML attribute values must be quoted",
             "XHTML tags and attributes must be in lowercase",
             "XHTML elements must be properly nested within each other.",
-            "XHTML tags must have an equivalent closing tag."
+            "XHTML tags must have an equivalent closing tag.\n**Explanation**: XML Attributes values [must be quoted](https://www.w3schools.com/xml/xml_attributes.asp). Element names are [case-sensitive](https://www.w3schools.com/xml/xml_elements.asp) (and CamelCase is actually one of the naming styles)."
         ],
         "_ps": 1
     },
@@ -85,19 +85,19 @@
             "processor; complies; process",
             "system; stores; retrieve",
             "non; processes; format",
-            "human; annotates; manipulate"
+            "human; annotates; manipulate\n```xml\n<x a=\"x\" a=\"y\"></x>\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q10. What is this code an example of?\n```xml\n<x a=\"x\" a=\"y\"></x>\n```",
         "options": [
-            "",
-            "x\" a=\"y\"></x>",
-            "",
-            "improperly named element"
+            "improperly named element",
+            "self-closing tag",
+            "null element",
+            "incorrect XML syntax"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q11. XML provides a framework for specifying markup languages, while HTML is a predefined markup language. What is applicable to XML and not HTML?",
@@ -195,7 +195,7 @@
             "XSLT",
             "DOM",
             "AJAX",
-            "XSD"
+            "XSD\n`This question is about understanding the XML аfile contents. XSD is the correct one here - that's the schema document, which describes the XML.`"
         ],
         "_ps": 3
     },
@@ -235,7 +235,7 @@
             "Header files, function declarations, global variables with their data types, and system library folder location.",
             "Namespace declaration, processor type, markup references, and encoding specification.",
             "The document's elements and attributes, their data types and default values, and the number and order of child elements.",
-            "XML entity definitions, XSLT and cascading style sheets, DOM specification, and CDATA assignments."
+            "XML entity definitions, XSLT and cascading style sheets, DOM specification, and CDATA assignments.\n[reference link:](https://www.w3schools.com/xml/xml_dtd_building.asp)"
         ],
         "_ps": 2
     },
@@ -245,39 +245,39 @@
             "Frameset",
             "Transitional",
             "Basic",
-            "Strict"
+            "Strict\n**Explanation**: [XHTML - Doctypes](https://www.tutorialspoint.com/xhtml/xhtml_doctypes.htm)\n```xml\n<cars>\n    <car>\n        <make>Cadillac\n            <model>Escalade</model>\n            <price year=\"2007\">$20,000</price>\n        </make>\n    </car>\n</cars>\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q26. You are working with the following XML code snippet. You have this line in your XSLT code `xsl:value-of-select=\"//car/make\"/>`. What does it display?\n```xml\n<cars>\n    <car>\n        <make>Cadillac\n            <model>Escalade</model>\n            <price year=\"2007\">$20,000</price>\n        </make>\n    </car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar>",
-            "  <make>Cadillac"
+            "Cadillac",
+            "Cadillac Escalade",
+            "Cadillac Escalade 20000",
+            "Cadillac Escalade $20,000\n```xml\n<cars>\n    <car><make>Cadillac</make> <model>Escalade</model> <year>2007</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1968</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>1999</year></car>\n</cars>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q27. You need to display the list of cars in the code snippet below in a column format, with a counter column for each row. Which XPath function do you use for the counter?\n```xml\n<cars>\n    <car><make>Cadillac</make> <model>Escalade</model> <year>2007</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1968</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>1999</year></car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar><make>Cadillac</make> <model>Escalade</model> <year>2007</year></car>",
-            "ar><make>Ford</make> <model>Mustang</model> <year>1968</year></car>"
+            "`format-number()`",
+            "`id()`",
+            "`count()`",
+            "`position()`\n**Explanation**: [count()](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/count) returns the total the number of nodes (3), while [position()](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/position) returns the 0-based index of each node.\n```xml\n<cars>\n    <car><make>Cadillac</make> <model>Escalade</model ><year>2007</year></car>\n    <car><make>Cadillac</make> <model>Escalade</model> <year>2011</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1968</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1998</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>1999</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>2009</year></car>\n</cars>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q28. You are working with this XML code snippet from the XML document cars.xml. You need to return the information about the cars built after the year 2000, as an ordered list, starting with the most recent. What does your XQuery look like?\n```xml\n<cars>\n    <car><make>Cadillac</make> <model>Escalade</model ><year>2007</year></car>\n    <car><make>Cadillac</make> <model>Escalade</model> <year>2011</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1968</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1998</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>1999</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>2009</year></car>\n</cars>\n```\n```xquery\n<ul>\n{\n    for $x in doc(\"cars.xml\")/cars/car\n    where $x/year>2000\n    order by $x/year descending\n    return <li>{$x}</li>\n}\n</ul>\n```\n```xquery\n<ol>\n{\n    for $x in doc(\"cars.xml\")/cars/car\n    where $x/year>2000\n    order by $x/year desc\n    return <li>{data($x)}</li>\n}\n</ol>\n```\n```xquery\n<ul>\n{\n    for $x in doc(\"cars.xml\")/cars/car\n    where $x/year>2000\n    order by $x/year\n    return <li>{$x}</li>\n}\n</ul>\n```",
+        "question": "Q28. You are working with this XML code snippet from the XML document cars.xml. You need to return the information about the cars built after the year 2000, as an ordered list, starting with the most recent. What does your XQuery look like?\n```xml\n<cars>\n    <car><make>Cadillac</make> <model>Escalade</model ><year>2007</year></car>\n    <car><make>Cadillac</make> <model>Escalade</model> <year>2011</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1968</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1998</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>1999</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>2009</year></car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar><make>Cadillac</make> <model>Escalade</model ><year>2007</year></car>",
-            "ar><make>Cadillac</make> <model>Escalade</model> <year>2011</year></car>"
+            "A\n```xquery\n<ul>\n{\n    for $x in doc(\"cars.xml\")/cars/car\n    where $x/year>2000\n    order by $x/year descending\n    return <li>{$x}</li>\n}\n</ul>\n```",
+            "B\n```xquery\n<ol>\n{\n    for $x in doc(\"cars.xml\")/cars/car\n    where $x/year>2000\n    order by $x/year desc\n    return <li>{data($x)}</li>\n}\n</ol>\n```",
+            "C\n```xquery\n<ul>\n{\n    for $x in doc(\"cars.xml\")/cars/car\n    where $x/year>2000\n    order by $x/year\n    return <li>{$x}</li>\n}\n</ul>\n```",
+            "D\n```xquery\n<ol>\n{\n    for $x in doc(\"cars.xml\")/cars/car\n    where $x/year>2000\n    order by $x/year descending\n    return <li>{data($x)}</li>\n}\n</ol>\n```\n[reference link:](https://stackoverflow.com/questions/6001357/xquery-order-by-ascending-and-descending)"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q29. The `readyState` property holds the status of the XMLHttpRequest. Which is NOT a valid status?",
@@ -285,7 +285,7 @@
             "`4 (DONE)`",
             "`3 (LOADING)`",
             "`1 (PROCESSING)`",
-            "`0 (UNSENT)`"
+            "`0 (UNSENT)`\n[reference link:](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState)"
         ],
         "_ps": 2
     },
@@ -295,17 +295,17 @@
             "Use the `<any>` element.",
             "Use the `<redefine>` element.",
             "Use `<xs:extension>`.",
-            "Specify the new elements in the schema."
+            "Specify the new elements in the schema.\n[reference link:](https://www.w3schools.com/xml/schema_complex_any.asp)\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model>\n        <price year=\"2007\">20000</price></car>\n    <car><make>Ford</make><model>Mustang</model>\n        <price year=\"2008\">17000</price></car>\n    <car><make>Mercedes</make><model>C-Class</model>\n        <price year=\"2009\">24000</price></car>\n</cars>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q31. You are working with the following XML code snippet. Which XPath expression produces C-Class?\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model>\n        <price year=\"2007\">20000</price></car>\n    <car><make>Ford</make><model>Mustang</model>\n        <price year=\"2008\">17000</price></car>\n    <car><make>Mercedes</make><model>C-Class</model>\n        <price year=\"2009\">24000</price></car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar><make>Cadillac</make><model>Escalade</model>",
-            "  <price year=\"2007\">20000</price></car>"
+            "`/car[price>20000]/make/model`",
+            "`/car[price>=20000 and @year>=2009]/make/model`",
+            "`//car[price>=20000 and @year>2008]/model`",
+            "`/cars/car[price>=20000 and year>2008]/model`\nNOTE: [XPather](http://xpather.com/) shows that all answers are incorrect. Report the question."
         ],
         "_ps": -1
     },
@@ -315,19 +315,19 @@
             "Set the type attribute to `xs:required`.",
             "Set the `use` attribute to `required`.",
             "Set the minLength attribute to 1.",
-            "Set the minOccurs attribute to 1."
+            "Set the minOccurs attribute to 1.\n**Reference**: [XSD Attributres](https://www.w3schools.com/xml/schema_simple_attributes.asp)\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model>\n        <price year=\"2007\">20000</price></car>\n    <car><make>Ford</make><model>Mustang</model>\n        <price year=\"2008\">17000</price></car>\n    <car><make>Mercedes</make><model>C-Class</model>\n        <price year=\"2009\">24000</price></car>\n</cars>\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q33. You are working with the following XML code snippet. What do you need to include in your XSLT code to display `Mercedes, Cadillac, Ford`?\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model>\n        <price year=\"2007\">20000</price></car>\n    <car><make>Ford</make><model>Mustang</model>\n        <price year=\"2008\">17000</price></car>\n    <car><make>Mercedes</make><model>C-Class</model>\n        <price year=\"2009\">24000</price></car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar><make>Cadillac</make><model>Escalade</model>",
-            "  <price year=\"2007\">20000</price></car>"
+            "`<xsl:sort select=\"make\" />`",
+            "`<xsl:sort select=\"model\" />`",
+            "`<xsl:sort select=\"car\" />`",
+            "`<xsl:sort select=\"price\" />`\n**Explanation**: A trick question. The [`<xsl:sort>`](https://www.w3schools.com/xml/ref_xsl_el_sort.asp) will sort the output in ascending (alphabetical for strings) order by default. The `select` tells which tag to use for sorting.\n- If we use `select=\"make\"` or `select=\"year\"` we get the order `Cadillac, Ford, Mercedes`\n- If we use `select=\"price\"` we get `Ford, Cadillac, Mercedes`\n- And finally with `select=\"model\"` we get `Mercedes, Cadillac, Ford`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q34. What is the correct syntax for comments in XQuery?",
@@ -345,7 +345,7 @@
             "Element",
             "Document",
             "EntityReference",
-            "DocumentFragment"
+            "DocumentFragment\n[reference link:](https://www.w3schools.com/XML/dom_nodetype.asp)"
         ],
         "_ps": 1
     },
@@ -365,7 +365,7 @@
             "`<xsl:namespace>`",
             "any valid element",
             "root element",
-            "top-level element in the corresponding namespace"
+            "top-level element in the corresponding namespace\n[reference link:](https://www.w3schools.com/xml/ref_xsl_el_namespace-alias.asp)"
         ],
         "_ps": 2
     },
@@ -375,29 +375,29 @@
             "XML is too flexible and does not have enough reserved keywords.",
             "XML contains only data and not any processing instructions.",
             "XML does not perform any computation or algorithms.",
-            "XML does not have specialized syntax rules."
+            "XML does not have specialized syntax rules.\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Cadillac</make><model>Escalade</model><year>2011</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1998</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>2009</year></car>\n</cars>\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q39. What is true about these elements in XQuery?\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Cadillac</make><model>Escalade</model><year>2011</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1998</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>2009</year></car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar><make>Cadillac</make><model>Escalade</model><year>2007</year></car>",
-            "ar><make>Cadillac</make><model>Escalade</model><year>2011</year></car>"
+            "Elements `<make>` and `<model>` are ancestors of `<year>`.",
+            "Elements `<make>` and `<model>` are children of `<cars>`.",
+            "Elements `<make>` and `<model>` are siblings.",
+            "Elements `<car>` and `<cars>` are parents of `<make>` and `<model>`.\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n</cars>\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q40. Which is a valid CSS section for this XML code snippet?\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n</cars>\n```\n```css\ncars {\n  display: block;\n}\ncar(make),\ncar(model),\ncar(year) {\n  display: inline;\n  padding-top: 0.5em;\n}\n```\n```css\ncar,\ncars {\n  display: block;\n}\nmake,\nmodel,\nyear {\n  display: inline;\n  padding-top: 0.5em;\n}\n```\n```css\ncars {\n  display: block;\n}\ncar.make,\ncar.model,\ncar.year {\n  display: inline;\n  padding-top: 0.5em;\n}\n```",
+        "question": "Q40. Which is a valid CSS section for this XML code snippet?\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n</cars>\n```",
         "options": [
-            "",
-            "",
-            "ar><make>Cadillac</make><model>Escalade</model><year>2007</year></car>",
-            "ar><make>Ford</make><model>Mustang</model><year>1968</year></car>"
+            "```css\ncars {\n  display: block;\n}\ncar(make),\ncar(model),\ncar(year) {\n  display: inline;\n  padding-top: 0.5em;\n}\n```",
+            "```css\ncar,\ncars {\n  display: block;\n}\nmake,\nmodel,\nyear {\n  display: inline;\n  padding-top: 0.5em;\n}\n```",
+            "```css\ncars {\n  display: block;\n}\ncar.make,\ncar.model,\ncar.year {\n  display: inline;\n  padding-top: 0.5em;\n}\n```",
+            "```css\ncars {\n  display: block;\n}\ncar#make,\ncar#model,\ncar#year {\n  display: inline;\n  padding-top: 0.5em;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q41. An XML document contains this code as part of the DTD: <!ELEMENT car (make, model?, year+, price*)>. What are the rules that need to be followed for each of the elements?",
@@ -405,7 +405,7 @@
             "<make> is required, <model> is optional, <year> is optional, and <price> is optional.",
             "<make> is required, <model> is required, <year> is optional, and <price> is optional.",
             "<make> is required, <model> is required, <year> is required, and <price> is optional.",
-            "<make> is required, <model> is optional, <year> is required, and <price> is optional."
+            "<make> is required, <model> is optional, <year> is required, and <price> is optional.\n### Q42. Which element in this XML code is not a good candidate for conversion into an attribute?\n```xml\n1 <superheroes>\n2 <name>Superman</name>\n3 <alias>Clark Kent</alias>\n4 <birthplace>Krypton</birthplace>\n5 <power>Flight</power>\n6 <power>X-Ray Vision</power>\n7 <power>Super Strength</power>\n8 </superheroes>\n```"
         ],
         "_ps": 3
     }

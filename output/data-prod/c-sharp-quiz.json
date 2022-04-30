@@ -1,0 +1,711 @@
+[
+    {
+        "question": "Q1. In which of these situations are interfaces better than abstract classes?",
+        "options": [
+            "When you need to define an object type's characteristics, use an interface. When you need to define an object type's capabilities, use an abstract class.",
+            "Interfaces are a legacy of older versions of C#, and are interchangeable with the newer abstract class feature.",
+            "When you need a list of capabilities and data that are classes-agnostic, use an interface. When you need a certain object type to share characteristics, use an abstract class.",
+            "You should use both an interface and an abstract class when defining any complex object."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q2. Which statement is true of delegates?",
+        "options": [
+            "Delegates are not supported in the current version of C#",
+            "They cannot be used as callbacks.",
+            "Only variables can be passed to delegates as parameters.",
+            "They can be chained together.\n[Official documentation: Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/#delegates-overview)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q3. Which choice best defines C#'s asynchronous programming model?",
+        "options": [
+            "reactive",
+            "inherited callback",
+            "task-based",
+            "callback-based\n[Official documentation: Task asynchronous programming model](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q4. How would you determine if a class has a particular attribute?",
+        "options": [
+            ".\n```cs\nvar type = typeof(SomeType);\nvar attribute = type.GetCustomAttribute<SomeAttribute>();\n```",
+            ".\n```cs\nvar typeof(MyPresentationModel).Should().BeDecoratedWith<SomeAttribute>();\n```",
+            ".\n```cs\nAttribute.GetCustomAttribute, typeof(SubControllerActionToViewDataAttribute)\n```",
+            ".\n```cs\nAttribute.GetCustomAttribute(typeof(ExampleController), typeof(SubControllerActionToViewDataAttribute))\n```\n[Official documentation: Attribute Class](https://docs.microsoft.com/en-us/dotnet/api/system.attribute?view=net-5.0)\n[Official documentation: Attribute.GetCustomAttribute Method](https://docs.microsoft.com/en-us/dotnet/api/system.attribute.getcustomattribute?view=net-5.0)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q5. What is the difference between the ref and out keywords?",
+        "options": [
+            "Variables passed to out specify that the parameter is an output parameter, while ref specifies that a variable may be passed to a function without being initialized.",
+            "Variables passed to ref can be passed to a function without being initialized, while out specifies that the value is a reference value that can be changed inside the calling method.",
+            "Variables passed to out can be passed to a function without being initialized, while ref specifies that the value is a reference value that can be changed inside the calling method.",
+            "Variables passed to ref specify that the parameter is an output parameter, while out specifies that a variable may be passed to a function without being initialized.\n[Official documentation: ref](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref)\n[Official documentation: out parameter modifier](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/out-parameter-modifier)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q6. How could you retrieve information about a class, as well as create an instance at runtime?",
+        "options": [
+            "reflection",
+            "serialization",
+            "abstraction",
+            "dependency injection\n[Official documentation: Reflection ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)\n```cs\n    private static object objA;\n    private static object objB;\n    private static void performTaskA()\n    {\n        lock (objB)\n        {\n            Thread.Sleep(1000);\n            lock (objA) { }\n        }\n    }\n    private static void PerformTaskB()\n    {\n        lock (objA)\n        {\n            lock (objB) { }\n        }\n    }\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q7. What is this code an example of?\n```cs\n    private static object objA;\n    private static object objB;\n    private static void performTaskA()\n    {\n        lock (objB)\n        {\n            Thread.Sleep(1000);\n            lock (objA) { }\n        }\n    }\n    private static void PerformTaskB()\n    {\n        lock (objA)\n        {\n            lock (objB) { }\n        }\n    }\n```",
+        "options": [
+            "a private class that uses multithreading",
+            "multithread coding",
+            "thread mismanagement",
+            "a potential deadlock\n[Official documentation: Deadlocks and race conditions](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices#deadlocks-and-race-conditions)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q8. What is the difference between an anonymous type and a regular data type?",
+        "options": [
+            "Anonymous types don't have type names",
+            "Anonymous types can only be static",
+            "Anonymous types can be used only in struts",
+            "Anonymous types don't work with LINQ.\n[Official documentation: Anonymous Types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q9. When would you use a Dictionary rather that an Array type in your application?",
+        "options": [
+            "when you need a jagged collection structure",
+            "when you need to store values of the same type",
+            "when you need to store key-value pairs rather than single values",
+            "when you need an ordered, searchable list\n[Official documentation: Dictionary<TKey,TValue> Class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2?view=net-5.0)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q10. What is the difference between a.Equals(b) and a == b?",
+        "options": [
+            "The .Equals method compares reference identities while the == compares contents.",
+            "The .Equals method compares primitive values while == compares all values.",
+            "The .Equals method compares contents while == compares references reference identity.",
+            "The .Equals method compares reference type while == compares primitive value types."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q11. Which choice best describes a deadlock situation?",
+        "options": [
+            "when you try to instantiate two objects at the same time in the same class or struct",
+            "when you are trying to execute an action after a user event is registered",
+            "when simultaneous instructions are waiting on each other to finish before executing",
+            "when you try to execute a series of events simultaneously on multiple threads\n[Official documentation: Deadlocks and race conditions](https://docs.microsoft.com/en-us/dotnet/standard/threading/managed-threading-best-practices#deadlocks-and-race-conditions)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q12. How does the async keyword work?",
+        "options": [
+            "It allows access to asynchronous methods in the C# API",
+            "It allows thread pooling and synchronous processes in static classes.",
+            "It allows the await keyword to be used in a method",
+            "It allows access to synchronous methods in the C# API\n[Official documentation: async](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/async)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q13. What is an object in C#?",
+        "options": [
+            "a class or struct, including its variables and functions",
+            "a primitive data type that can be created only at compile time",
+            "a value type that can be used only with an abstract class",
+            "an instance of a class or struct that includes fields, properties, and/or methods\n[Official documentation: Objects](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/objects)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q14. Which code snippet declares an anonymous type named userData?",
+        "options": [
+            "`var<<!---->T> userData = new <<!---->T> { name = \"John\", age = 32 };`",
+            "`var userData = new { name = \"John\", age = 32 };`",
+            "`AType userData = new AType { name = \"John\", age = 32 };`",
+            "`Anonymous<T> userData = new Anonymous<T> { name = \"John\", age = 32 };`\n[Official documentation: Anonymous Types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types)\n`public void userInput(string charParamters) { }`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q15. What will be returned when this method is executed?\n`public void userInput(string charParamters) { }`",
+        "options": [
+            "nothing",
+            "a Boolean",
+            "a string variable",
+            "an integer\n[Official documentation: void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/void)\n```cs\nstring[] employees = { \"Joe\", \"Bob\", \"Carol\", \"Alice\", \"Will\" };\nIEnumerable<string> employeeQuery = from person in employees\n                                    orderby person\n                                    select person;\nforeach(string employee in employeeQuery)\n{\n    Console.WriteLine(employee);\n}\n```"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q16. In what order would the employee names in this example be printed to the console?\n```cs\nstring[] employees = { \"Joe\", \"Bob\", \"Carol\", \"Alice\", \"Will\" };\nIEnumerable<string> employeeQuery = from person in employees\n                                    orderby person\n                                    select person;\nforeach(string employee in employeeQuery)\n{\n    Console.WriteLine(employee);\n}\n```",
+        "options": [
+            "ascending",
+            "unordered",
+            "descending",
+            "first in, first out\n[dotnetpattern: LINQ OrderBy Operator](http://dotnetpattern.com/linq-orderby-operator)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q17. Lambda expressions are often used in tandem with which of the following?",
+        "options": [
+            "Namespaces",
+            "LINQ",
+            "Type Aliasing",
+            "Assemblies\n[Official documentation: Language Integrated Query (LINQ) Overview](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q18. What is the correct formatting for single line and multiline comments?",
+        "options": [
+            "/_/ - Single Line\n      /_ - Multiline",
+            "// Multiline\n      /_ Single Line _/",
+            "//\\* Multiline\n      / Single Line",
+            "// Single Line\n      /_ Multiline _/\n[w3schools: C# Comments](https://www.w3schools.com/cs/cs_comments.php)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q19. How do you make a method in an abstract class overridable?",
+        "options": [
+            "Make it public",
+            "Make it static",
+            "Make it private",
+            "Make it virtual\n[Official documentation: virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)\n[Official documentation: abstract](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q20. How would you write code for an integer property called Age with a getter and setter?",
+        "options": [
+            "public int Age { get - set }",
+            "public int Age: get set;",
+            "public int Age (get, set );",
+            "public int Age { get; set; }\n[Official documentation: Using Properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q21. What is an abstract class?",
+        "options": [
+            "a class that is denoted by the class keyword (can be seen and used by any other class in the system--thus it is by default public)",
+            "something denoted by the abstract keyword and used system wide; if you want any program to create an object of a class you use the abstract class",
+            "a class that is denoted by the virtual keyword",
+            "a class that can be used only as base class\n[Official documentation: Abstract and Sealed Classes and Class Members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q22. When using a thread pool what happens to a given thread after it finishes its task?",
+        "options": [
+            "The thread is destroyed and memory is freed up.",
+            "The thread runs in loop until the next assignment.",
+            "The thread goes inactive in the background and waits for garbage collection.",
+            "The thread returns to the pool for reuse.\n[Official documentation: Thread pool characteristics](https://docs.microsoft.com/en-us/dotnet/standard/threading/the-managed-thread-pool#thread-pool-characteristics)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. Which choice represents a class that inherits behavior from a base class?",
+        "options": [
+            "a second base class",
+            "a revised class",
+            "a derived class",
+            "a parent class\n[Official documentation: Inheritance](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q24. What does operator overloading allow you to do?",
+        "options": [
+            "hide built-in operatores when necessary",
+            "add methods to be interpreted by the compiler at runtime",
+            "define how enums and other primitive value types work within the rest of the application",
+            "define custom functionality for common operators like addition and equality\n[Official documentation: Operator overloading](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/operator-overloading)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q25. What it the main purpose of LINQ?",
+        "options": [
+            "to delete duplicate data",
+            "to bind namespaces and assemblies",
+            "to query and transform data",
+            "to connect assemblies\n[Official documentation: Language Integrated Query (LINQ) Overview](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/#query-expression-overview)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q26. What is the correct syntax for a new generic list of strings named contacts?",
+        "options": [
+            "public List<string names> contacts = new List<string names>();",
+            "public List(string names) contacts = new List(string names)();",
+            "var contacts = new List<string>();",
+            "var contacts = new List(string);\n[Official documentation: List<T> Class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q27. What is the difference between throw exceptions and throw clauses?",
+        "options": [
+            "Throw clauses fire only at runtime, while throw exceptions can fire at any time.",
+            "Throw exceptions overwrite the stack trace, while throw clauses retain the stack information.",
+            "Throw clauses overwrite the stack trace, while throw exceptions retain the stack information.",
+            "Throw exceptions fire only at runtime, while throw clauses can fire during compile time.\n[Official documentation: throw](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/throw)\n[c-sharpcorner: Difference Between Throw Exception and Throw Clause](https://www.c-sharpcorner.com/UploadFile/akkiraju/difference-between-throw-exception-and-throw-clause/)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q28. When an asynchronous method is executed, the code runs but nothing happens other than a compiler warning. What is most likely causing the method to not return anything?",
+        "options": [
+            "The return yield statement is missing at the end of the method.",
+            "The method is missing an await keyword in its body.",
+            "The wait keyword is missing from the end of the method.",
+            "The yield keyword is missing from the method."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q29. What are C# events?",
+        "options": [
+            "system actions that communicate directly with the compiler at runtime",
+            "actions that execute when the code compiles, generating logs and test output",
+            "actions that generate notifications, which are sent to their registered listeners",
+            "user-only methods that send data to the application's back end\n[Official documentation: Introduction to events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q30. What kind of values can arrays store?",
+        "options": [
+            "unordered collections of numerc values",
+            "key-value pairs of any C# supported type",
+            "class and struct instances",
+            "multiple variables, or collections, of the same type\n[Official documentation: Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/)\n`enum AppState { OffLine, Loading, Ready }`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. Given this enumeration, how would you access the integer-type value of 'AppState.Loading'?\n`enum AppState { OffLine, Loading, Ready }`",
+        "options": [
+            "string currentState = (string)AppState.Loading;",
+            "string currentState = AppState.Loading.integralVal;",
+            "int currentState = AppState.Loading.rawValue;",
+            "int currentState = (int)AppState.Loading;\n[Official documentation: Enumeration types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum#conversions)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q32. What character would you use to start a regular expression pattern at a word boundary?",
+        "options": [
+            "d",
+            "\\a",
+            "\\b",
+            "\\w\n[regular-expressions: Word Boundaries](https://www.regular-expressions.info/wordboundaries.html)\n[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\n```cs\npublic interface INameble\n{\n    string FirstName { get; set; }\n    string LastName { get; }\n}\n```"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q33. To conform to the following interface, which of its members need to be implemented?\n```cs\npublic interface INameble\n{\n    string FirstName { get; set; }\n    string LastName { get; }\n}\n```",
+        "options": [
+            "Both the FirstName and LastName properties need to be implemented.",
+            "Neither, they are both optional.",
+            "Only the LastName property needs to be implemented.",
+            "Only the FirstName property needs to be implemented.\n[Official documentation: interface](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/interface)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q34. You're dealing with multiple assemblies in your program, but are worried about memory allocation. At what point in the program life cycle are assemblies loaded into memory?",
+        "options": [
+            "at runtime",
+            "at compile time",
+            "only when required",
+            "only when programmatically loaded"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q35. What is most accurate description of a regular expression?",
+        "options": [
+            "A regular expression is a C# tool used to parse HTML",
+            "A regular expression is a special text string for describing a search patters.",
+            "A regular expression allows a variable to be passed by reference.",
+            "A regular expression allows a class to conform to the Equatable protocol.\n[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\n[Official documentation: .NET regular expressions](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q36. Why would you use a class field in C#",
+        "options": [
+            "To define behaviours of the class",
+            "To hold information and data contained in the class object",
+            "To communicate between classes and object",
+            "To store the class definition value\n[Official documentation: Introduction to classes](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q37. When would you use generics in your code?",
+        "options": [
+            "to increase code performance",
+            "all of these answers",
+            "when code reuse is a priority",
+            "when type safety is important\n[Official documentation: Generic classes and methods](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)\n```cs\npublic delegate void AuthCallback(bool validUser);\npublic static AuthCallback loginCallback = Login;\npublic static void Login()\n{\n    Console.WriteLine(\"Valid user!\");\n}\npublic static void Main(string[] args)\n{\n    loginCallback(true);\n}\n```"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q38. What prints to the console when this code is executed?\n```cs\npublic delegate void AuthCallback(bool validUser);\npublic static AuthCallback loginCallback = Login;\npublic static void Login()\n{\n    Console.WriteLine(\"Valid user!\");\n}\npublic static void Main(string[] args)\n{\n    loginCallback(true);\n}\n```",
+        "options": [
+            "Login successful...",
+            "Valid user!",
+            "an error, because the method signature of Login doesn't match the delegate",
+            "Login successful... Valid user!\n[Official documentation: Introduction to Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/delegates-overview)\n[Official documentation: Introduction to Events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q39. How would you declare a sealed class named User?",
+        "options": [
+            "public class User {}",
+            "abstract User {}",
+            "sealed class User {}",
+            "private sealed class User {}\n[Official documentation: Abstract and Sealed Classes and Class Members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q40. What is the correct syntax for a new generic list of strings named contacts? (similar to Q26)",
+        "options": [
+            "`var contacts = new List<string>();`",
+            "`var contacts = new List(string);`",
+            "`public List<string names> contacts = new List<string names>();`",
+            "`public List(string names) contacts = new List(string names);`\n[Official documentation: List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?view=net-5.0)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q41. What is the difference between non-static and static classes?",
+        "options": [
+            "non-static classes need to be initialized before use, while static classes do not",
+            "non-static classes are accessible only from an interface while static classes are accessible from anywhere",
+            "non-static classes need to initialize all class members at runtime, while static classes do not",
+            "non-static classes do not need to be initialized while static classes do\n[stackoverflow](https://stackoverflow.com/questions/20451554/whats-the-function-of-a-static-constructor-in-a-non-static-class)\n[Official documentation: Static Constructors](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors)\n`public int age=\"28\"`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q42. Which characteristic prevents this code from compiling?\n`public int age=\"28\"`",
+        "options": [
+            "type safety",
+            "single inheritance",
+            "dependency injection",
+            "multiple inheritance\n[c-sharpcorner: Type Safety in .NET](https://www.c-sharpcorner.com/UploadFile/vikie4u/type-safety-in-net/)\n`public class User {}`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q43. How would you serialize this class?\n`public class User {}`",
+        "options": [
+            "Mark the User class with the `DeserializableAttribute`.",
+            "Declare the class as `public serializable class User {}`.",
+            "Mark the User class with the `SerializableAttribute` attribute.",
+            "Declare the class as `private serializable class User {}`.\n[Official documentation: SerializableAttribute Class](https://docs.microsoft.com/en-us/dotnet/api/system.serializableattribute?view=net-5.0)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q44. How would you write a delegate named ResultCallback with an int parameter named responseCode?",
+        "options": [
+            "public delegate ResultCallback(int responseCode);",
+            "public delegate void ResultCallback<(int) responseCode>;",
+            "public void delegate ResultCallback\\<int responseCode\\>;",
+            "public delegate void ResultCallback(int responseCode);\n[Official documentation: Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q45. What is the difference between a static and non-static method?",
+        "options": [
+            "non-static methods always need to have a void return type",
+            "non-static methods do not have access to static member variables",
+            "static methods do not have to instantiate an instance of the class to call the method",
+            "static methods always have to be public\n[Official documentation: Static Members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members#static-members)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q46. What is the correct way to write an event named apiResult based on a delegate named ResultCallback?",
+        "options": [
+            "public void event ResultCallback apiResult;",
+            "public event ResultCallback(() -> apiResult);",
+            "public event void ResultCallback",
+            "public event ResultCallback apiResult;\n[Official documentation: Introduction to events](https://docs.microsoft.com/en-us/dotnet/csharp/events-overview)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q47. When will the code inside finally block be executed in a try-catch statement?",
+        "options": [
+            "if there is an error, it won't execute at all",
+            "between the try and catch blocks",
+            "after the try and catch blocks",
+            "when the finally block overrides the catch block and executes in its place\n[Official documentation: try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q48. What method correctly extends the string class?",
+        "options": [
+            "public static string IsvalidName(this string i, string value) {}",
+            "public static void IsvalidName(this string i, string value) {}",
+            "public string IsvalidName(this string i, string value) {}",
+            "public void IsvalidName(this string i, string value) {}"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q49. How are C# classses limited?",
+        "options": [
+            "They do not support multiple inheritance.",
+            "They support multiple inheritance.",
+            "They can have only a set number of properties.",
+            "They can have only a set number of methods.\n[Official documentation: Class inheritance](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes#class-inheritance)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q50. What function do namespaces perform?",
+        "options": [
+            "Namespaces calculate code coverage at runtime.",
+            "Namespaces compile application code together at compile time.",
+            "Namespaces group code together into a single repository.",
+            "Namespaces separate code into groupings, control access, and void naming collisions.\n[Official documentation: namespace](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/namespace)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q51. What is the correct way to write a public property with a private backing field?",
+        "options": [
+            "```cs\nprivate int _password;\npubic int Password = { get; set; }\n```",
+            "```cs\nprivate int _password;\npublic int Password = _password;\n```",
+            "```cs\nprivate int _password;\npublic int Password\n{\n  get -> _password;\n  set-> _password = value;\n}\n```",
+            "```cs\nprivate int _password;\npublic int Password\n{\n  get { return _password; }\n  set { _password = value; }\n}\n```\n[Official documentation: Using Properties](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/using-properties)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q52. What is a thread pool?",
+        "options": [
+            "a collection of synchronous methods created during initialization that cannot be reused",
+            "a collection of threads created during initialization that can be reused",
+            "a collection of threads only recognized at compile time that can be reused",
+            "a collection of asynchronous methods created at compile time that cannot be reused\n[Official documentation: ThreadPool Class](https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadpool?view=net-5.0)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q53. What is the most accurate description of a regular expression?",
+        "options": [
+            "A regular expressions allows a variable to be passed by reference",
+            "A regular expression allows a class to conform to the Equatable protocol",
+            "A regular expression is a C# tool used to parse HTML",
+            "A regular expression is a special text string for describing a search pattern\n[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q54. When an object in C# is serialized, what is it converted to?",
+        "options": [
+            "XML",
+            "JSON",
+            "byte stream",
+            "value stream\n[Official documentation: Serialization](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/serialization/)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q55. What is a delegate",
+        "options": [
+            "a variable that holds a reference to a value type and its content",
+            "a specific value type that can be used only in callback methods",
+            "a type that holds a reference to a method with a particular parameter list and return type",
+            "a custom variable type that can be used in abstract classes\n[Official documentation: Delegates](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q56. What are the four keywords associated with exception handling in C#?",
+        "options": [
+            "try, catch, valid, invalid",
+            "try, valid, finally, throw",
+            "try, catch, finally, throw",
+            "finally, throw, valid, invalid\n[Tutorial Point](https://www.tutorialspoint.com/csharp/csharp_exception_handling.htm#:~:text=Exceptions%20provide%20a%20way%20to,catch%2C%20finally%2C%20and%20throw.)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q57. What is the main difference between the is and as operators?",
+        "options": [
+            "The is operator checks instance types, while the as operator checks the inherited type.",
+            "The is operator checks primitive data types, while the as operator checks the object type.",
+            "The as operator checks object type, while the is operator attempts to cast an object to a specific type.",
+            "The is operator checks object type, while the as operator attempts to cast an object to a specific type.\n[Pluralsight guide](https://www.pluralsight.com/guides/csharp-is-as-operators-is-expressions)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q58. What is the difference between finally and finalize blocks?",
+        "options": [
+            "The finally block is called during the execution of a try and catch block, while the finalize method is called after garbage collection.",
+            "The finally block is called after the execution of a try and catch block, while the finalize method is called just before garbage collection.",
+            "The finalize block is called before the execution of a try and catch block, while the finally method is called just before garbage collection.",
+            "The finalize block is called during the execution of a try and catch block, while the finally method is called after garbage collection.\n[C-sharpcorner](https://www.c-sharpcorner.com/forums/final-finally-and-finalize)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q59. Your application has a value type called username that needs to be able to accept null values, but this is generating compile-time errors. How would you fix this in code?",
+        "options": [
+            "Null<string> username = null;",
+            "string? username = null;",
+            "Type<string>? username = null;",
+            "Optional<string> username = null;"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q60. Which code snippet correctly declares a custom exception named InvalidResponse?",
+        "options": [
+            "struct InvalidResponse: Exception {}",
+            "class InvalidResponse: Exception {}",
+            "public Exception InvalidResponse = new Exception ();",
+            "public Exception InvalidResponse () -> Exception;\n[Official documentation: Exceptions](https://docs.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q61. How would you write an enum variable called AppState with values for Offline, Loading, and Ready?",
+        "options": [
+            "enum AppState = [Offline, Loading, Ready]",
+            "enum AppState {\"Offline\", \"Loading\", \"Ready\"}",
+            "enum AppState = {Offline, Loading, Ready}",
+            "enum AppState {Offline, Loading, Ready}\n[Official documentation: Enum](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q62. What is the main difference between a value type and a reference type?",
+        "options": [
+            "A value type can be any primitive type, while reference types must be type-agnostic.",
+            "A value type refers to another value, while a reference type refers to a value in memory.",
+            "A value type stores an actual value, while a reference type is a pointer to a value.",
+            "A value type is available only at runtime, while a reference type is available only at compile time.\n[Official documentation: Value types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/value-types)\n[Official documentation: Reference types](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/reference-types)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q63. What is the difference between the `break` and `continue` keywords?",
+        "options": [
+            "The `break` keyword is used to break out of multiple iteration statements, while `continue` can only break out of code blocks that have single iterations.",
+            "The `break` keyword literally breaks out of a control flow statement, while `continue` ignores the rest of the control statement or iteration and starts the next one.",
+            "The `break` keyword literally breaks out of the current control flow code and stops it dead, while `continue` keeps executing the code after an exception is thrown.",
+            "The `break` keyword jumps out of an iteration and then proceeds with the rest of the control flow code, while `continue` stops the executing code dead.\n[Official documentation: Jump statements](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/jump-statements)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q64. Which code snippet correctly declares a variable named userId with a public `get` and private `set`?",
+        "options": [
+            "`public int userID <get, set>;`",
+            "`public int userID [get, private set];`",
+            "`public int userID { get; private set; }`",
+            "`public int userID = { public get, private set };`\n[Official documentation: Properties](https://docs.microsoft.com/en-us/dotnet/csharp/properties)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q65. What is true about virtual methods?",
+        "options": [
+            "`Overriding virtual methods in a derived class is mandatory.`",
+            "`Overriding virtual methods in a derived class is not possible.`",
+            "`Virtual methods always need a default implementation.`",
+            "`Virtual methods cannot have default implementation.`\n[Official documentation: virtual](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/virtual)\n[c-sharpcorner: Virtual Method in C#](https://www.c-sharpcorner.com/UploadFile/3d39b4/virtual-method-in-C-Sharp/)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q66. What is likely to happen if you have multiple threads accessing the same resource in your program?",
+        "options": [
+            "`resource overload`",
+            "`thread jumping`",
+            "`deadlock and race conditions`",
+            "`nothing, since this is what threading is for`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q67. How do you indicate that a string might be null?",
+        "options": [
+            "`A string cannot be nullable.`",
+            "`string? myVariable`",
+            "`string myVariable = null`",
+            "`string(null) myVariable`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q68. Do you need to declare an out variable before you use it?",
+        "options": [
+            "`No, you can declare it the parameter list.`",
+            "`Out variables are no longer part of C#.`",
+            "`You must declare it if it is a primitive type.`",
+            "`Yes.`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q69. How would you access the last two people in an array named People?",
+        "options": [
+            "`People[..^2]`",
+            "`You cannot do this in C#.`",
+            "`People[..^3]`",
+            "`People[^2]`\n[Official Documentation: Ranges](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-8.0/ranges)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q70. When can anonymous types be created?",
+        "options": [
+            "`at compile time`",
+            "`after runtime`",
+            "`at runtime`",
+            "`after compile time`\n[C-sharpcorner: Anonymous Types](https://www.c-sharpcorner.com/UploadFile/ff2f08/anonymous-types-in-C-Sharp/)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q71. What is true about thread multitasking?",
+        "options": [
+            "`Thread multitasking allows code to be executed concurrently`",
+            "`Thread multitasking allows code to be executed only when handling a user event.`",
+            "`Thread multitasking blocks code from being executed simultaneously to guard memory.`"
+        ],
+        "_ps": 0
+    }
+]

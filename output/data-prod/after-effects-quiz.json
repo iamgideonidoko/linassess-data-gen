@@ -95,17 +95,17 @@
             "Click File > Export > Add to Adobe Media Encoder Queue.",
             "Click File > Watch Folders.",
             "Click File > Export > Background Render.",
-            "Click File > Export > Add to Render Queue."
+            "Click File > Export > Add to Render Queue.\nA. Z Rotation\nB. Anchor Point\nC. Material Options\nD. Position\nE. Geometry Options"
         ],
         "_ps": -1
     },
     {
-        "question": "Q11. What properties are added to a 3D layer? (Select three items.)",
+        "question": "Q11. What properties are added to a 3D layer? (Select three items.)\nA. Z Rotation\nB. Anchor Point\nC. Material Options\nD. Position\nE. Geometry Options\n#### Q12. You want to include controls from an After Effects composition in the Essential Graphics panel. What is one way to do this?",
         "options": [
-            "otation",
-            "hor Point",
-            "erial Options",
-            "ition"
+            "Command+click (Mac) or Ctrl+click (Windows) a property in the Timeline to add it to the Essential Graphics panel.",
+            "Select Add Formatting.",
+            "Drag a property from the Timeline into the Essential Graphics panel.",
+            "Double-click a property in the Timeline to add it to the Essential Graphics panel."
         ],
         "_ps": -1
     },
@@ -145,7 +145,7 @@
             "Keying > Advanced Spill Suppressor",
             "Keying > Key Cleaner",
             "Keying > Extract",
-            "Keying > Keylight (1.2)"
+            "Keying > Keylight (1.2)\nIf you want to apply an effect to multiple layers and adjust all layers at once, which method should you use?"
         ],
         "_ps": -1
     }

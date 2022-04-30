@@ -2,12 +2,12 @@
     {
         "question": "Q1. In the following example, which selector has the highest specificity ranking for selecting the anchor link element?\n```css\nul li a\na\n.example a\ndiv a\n```",
         "options": [
-            "",
-            "a",
-            "",
-            "le a"
+            "`.example a`",
+            "`div a`",
+            "`a`",
+            "`ul li a`"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q2. Using an attribute selector, how would you select an `<a>` element with a \"title\" attribute?",
@@ -25,19 +25,19 @@
             "Use the \"clearfix hack\" on the floated element and add a float to the parent element.",
             "Use the overflow property on the floated element or the \"clearfix hack\" on either the floated or parent element.",
             "Use the \"clearfix hack\" on the floated element or the overflow property on the parent element.",
-            "Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\""
+            "Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\"\n```css\n1) .nav {\n  ...;\n}\n2) nav {\n  ...;\n}\n3) #nav {\n  ...;\n}\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q4. What element(s) do the following selectors match to?\n```css\n1) .nav {\n  ...;\n}\n2) nav {\n  ...;\n}\n3) #nav {\n  ...;\n}\n```\n  ```markdown\n  1. An element with an ID of \"nav\"\n  2. A nav element\n  3. An element with a class of \"nav\"\n  ```\n  ```markdown\n      They all target the same nav element.\n  ```\n  ```markdown\n  1. An element with an class of \"nav\"\n  2. A nav element\n  3. An element with a id of \"nav\"\n  ```",
+        "question": "Q4. What element(s) do the following selectors match to?\n```css\n1) .nav {\n  ...;\n}\n2) nav {\n  ...;\n}\n3) #nav {\n  ...;\n}\n```",
         "options": [
-            "",
-            "v {",
-            "",
-            ""
+            "  ```markdown\n  1. An element with an ID of \"nav\"\n  2. A nav element\n  3. An element with a class of \"nav\"\n  ```",
+            "  ```markdown\n      They all target the same nav element.\n  ```",
+            "  ```markdown\n  1. An element with an class of \"nav\"\n  2. A nav element\n  3. An element with a id of \"nav\"\n  ```",
+            "  ```markdown\n  1. An element with an class of \"nav\"\n  2. A nav element\n  3. An div with a id of \"nav\"\n  ```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q5. When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?",
@@ -55,19 +55,19 @@
             "By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.",
             "By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.",
             "A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.",
-            "A `<span>` is an example of a block element. `<div>` is an example of an inline element."
+            "A `<span>` is an example of a block element. `<div>` is an example of an inline element.\n```css\n.grid {\n  display: grid;\n  width: 500px;\n  grid-template-columns: 50px 1fr 2fr;\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q7. CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?\n```css\n.grid {\n  display: grid;\n  width: 500px;\n  grid-template-columns: 50px 1fr 2fr;\n}\n```",
         "options": [
-            "",
-            "{",
-            "lay: grid;",
-            "h: 500px;"
+            "The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.",
+            "The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.",
+            "The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.",
+            "The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q8. What is the line-height property primarily used for?",
@@ -95,29 +95,29 @@
             "position",
             "flexbox",
             "grid",
-            "float"
+            "float\n```css\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q11. In the shorthand example below, which individual background properties are represented?\n```css\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\n```\n  ```css\n  background-color: blue;\n  background-image: url(image.jpg);\n  background-repeat: no-repeat;\n  background-attachment: scroll;\n  background-position: 0px 0px;\n  ```\n  ```css\n  background-color: blue;\n  background-img: url(image.jpg);\n  background-position: no-repeat;\n  background-scroll: scroll;\n  background-size: 0px 0px;\n  ```\n  ```css\n  background-color: blue;\n  background-src: url(image.jpg);\n  background-repeat: no-repeat;\n  background-wrap: scroll;\n  background-position: 0px 0px;\n  ```",
+        "question": "Q11. In the shorthand example below, which individual background properties are represented?\n```css\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\n```",
         "options": [
-            "",
-            "ound: blue url(image.jpg) no-repeat scroll 0px 0px;",
-            "",
-            ""
+            "  ```css\n  background-color: blue;\n  background-image: url(image.jpg);\n  background-repeat: no-repeat;\n  background-attachment: scroll;\n  background-position: 0px 0px;\n  ```",
+            "  ```css\n  background-color: blue;\n  background-img: url(image.jpg);\n  background-position: no-repeat;\n  background-scroll: scroll;\n  background-size: 0px 0px;\n  ```",
+            "  ```css\n  background-color: blue;\n  background-src: url(image.jpg);\n  background-repeat: no-repeat;\n  background-wrap: scroll;\n  background-position: 0px 0px;\n  ```",
+            "  ```css\n  background-color: blue;\n  background-src: url(image.jpg);\n  background-repeat: no-repeat;\n  background-scroll: scroll;\n  background-position: 0px 0px;\n  ```\n```css\n.example {\n  color: yellow;\n}\nul li a {\n  color: blue;\n}\nul a {\n  color: green;\n}\na {\n  color: red;\n}\n```\n```html\n<ul>\n  <li><a href=\"#\" class=\"example\">link</a></li>\n  <li>list item</li>\n  <li>list item</li>\n</ul>\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q12. In the following example, according to cascading and specificity rules, what color will the link be?\n```css\n.example {\n  color: yellow;\n}\nul li a {\n  color: blue;\n}\nul a {\n  color: green;\n}\na {\n  color: red;\n}\n```\n```html\n<ul>\n  <li><a href=\"#\" class=\"example\">link</a></li>\n  <li>list item</li>\n  <li>list item</li>\n</ul>\n```",
         "options": [
-            "",
-            "le {",
-            "r: yellow;",
-            ""
+            "green",
+            "yellow",
+            "blue",
+            "red"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q13. When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?",
@@ -125,39 +125,39 @@
             "Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.",
             "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.",
             "Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.",
-            "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements."
+            "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.\n```css\nline-height: 20px;\nline-height: 2;\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q14. What is the difference between the following line-height settings?\n```css\nline-height: 20px;\nline-height: 2;\n```",
         "options": [
-            "",
-            "eight: 20px;",
-            "eight: 2;",
-            ""
+            "The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.",
+            "The value of 20px will set the line-height to 20px. The value of 2 is not valid.",
+            "The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.",
+            "The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.\n```html\n<section>\n  <p>paragraph one</p>\n</section>\n<p>paragraph two</p>\n```\n```css\nsection p {\n  color: red;\n}\nsection + p {\n  color: blue;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q15. In the following example, what color will paragraph one and paragraph two be? (_Alternative_: In this example, what color will paragraphs one and two be?)\n```html\n<section>\n  <p>paragraph one</p>\n</section>\n<p>paragraph two</p>\n```\n```css\nsection p {\n  color: red;\n}\nsection + p {\n  color: blue;\n}\n```",
         "options": [
-            "l",
-            "on>",
-            "aragraph one</p>",
-            "ion>"
+            "Paragraph one will be blue, paragraph two will be red.",
+            "Both paragraphs will be blue.",
+            "Paragraphs one will be red, paragraph two will be blue.",
+            "Both paragraphs will be red."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q16.What are three valid ways of adding CSS to an HTML page?\n  ```markdown\n  1. External; CSS is written in a separate file.\n  2. Inline; CSS is added to the <head> of the HTML page.\n  3. Internal; CSS is included within the HTML tags.\n  ```\n  ```markdown\n  1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.\n  2. Inline; CSS is added to the HTML tag.\n  3. Internal; CSS is included within the <header> element of the HTML file.\n  ```\n  ```markdown\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n  2. Internal; CSS is included within the <header> element of the HTML file.\n  3. Inline; CSS is added to the HTML tag.\n  ```",
+        "question": "Q16.What are three valid ways of adding CSS to an HTML page?",
         "options": [
-            "",
-            "arkdown",
-            "xternal; CSS is written in a separate file.",
-            "nline; CSS is added to the <head> of the HTML page."
+            "  ```markdown\n  1. External; CSS is written in a separate file.\n  2. Inline; CSS is added to the <head> of the HTML page.\n  3. Internal; CSS is included within the HTML tags.\n  ```",
+            "  ```markdown\n  1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.\n  2. Inline; CSS is added to the HTML tag.\n  3. Internal; CSS is included within the <header> element of the HTML file.\n  ```",
+            "  ```markdown\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n  2. Internal; CSS is included within the <header> element of the HTML file.\n  3. Inline; CSS is added to the HTML tag.\n  ```",
+            "  ```markdown\n  1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.\n  2. Inline; CSS is added to the HTML tag.\n  3. Internal; CSS is included within the <head> element of the HTML file.\n  ```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q17. Which of the following is true of the SVG image format? (_Alternative_: Which statement about the SVG image format is true?)",
@@ -165,19 +165,19 @@
             "CSS can be applied to SVGs but JavaScript cannot be.",
             "SVGs work best for creating 3D graphics.",
             "SVGs can be created as a vector graphic or coded using SVG specific elements such as &#x3C;svg&#x3E;, &#x3C;line&#x3E;, and &#x3C;ellipse&#x3E;.",
-            "SVGs are a HAML-based markup language for creating vector graphics."
+            "SVGs are a HAML-based markup language for creating vector graphics.\n```css\na:active {\n  color: pink;\n}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q18. In the example below, when will the color pink be applied to the anchor element?\n```css\na:active {\n  color: pink;\n}\n```",
         "options": [
-            "",
-            "ve {",
-            "r: pink;",
-            ""
+            "The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.",
+            "The color of the link will display as pink on mouse hover.",
+            "The color of the link will display as pink while the link is being clicked but before the mouse click is released.",
+            "The color of the link will display as pink before it has been clicked."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q19. To change the color of an SVG using CSS, which property is used?",
@@ -225,19 +225,19 @@
             "p::first-letter { color: red; }",
             "p:first-letter { color: red; }",
             "first-letter::p { color: red; }",
-            "first-letter:p { color: red; }"
+            "first-letter:p { color: red; }\n```css\np {\n  color: #000000;\n}\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q24. In this example, what is the selector, property, and value?\n```css\np {\n  color: #000000;\n}\n```\n  ```markdown\n  \"p\" is the selector\n  \"#000000\" is the property\n  \"color\" is the value\n  ```\n  ```markdown\n  \"p\" is the selector\n  \"color\" is the property\n  \"#000000\" is the value\n  ```\n  ```markdown\n  \"color\" is the selector\n  \"#000000\" is the property\n  \"#p\" is the value\n  ```",
+        "question": "Q24. In this example, what is the selector, property, and value?\n```css\np {\n  color: #000000;\n}\n```",
         "options": [
-            "",
-            "",
-            "r: #000000;",
-            ""
+            "  ```markdown\n  \"p\" is the selector\n  \"#000000\" is the property\n  \"color\" is the value\n  ```",
+            "  ```markdown\n  \"p\" is the selector\n  \"color\" is the property\n  \"#000000\" is the value\n  ```",
+            "  ```markdown\n  \"color\" is the selector\n  \"#000000\" is the property\n  \"#p\" is the value\n  ```",
+            "  ```markdown\n  \"color\" is the selector\n  \"p\" is the property\n  \"#000000\" is the value\n  ```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q25. What is the rem unit based on?",
@@ -255,19 +255,19 @@
             "`corner-radius: 10px;`",
             "`border-corner: 10px;`",
             "`corner-curve: 10px;`",
-            "`border-radius: 10px;`"
+            "`border-radius: 10px;`\n[Official doc:](https://www.w3schools.com/css/css3_borders.asp)\n```css\n@media (min-width: 1024px), screen and (orientation: landscape) { … }\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q27. In the following media query example, what conditions are being targeted?\n```css\n@media (min-width: 1024px), screen and (orientation: landscape) { … }\n```",
         "options": [
-            "",
-            " (min-width: 1024px), screen and (orientation: landscape) { … }",
-            "",
-            "The rule will apply to a device that has either a width of 1024px or wider, or is a screen device in landscape mode."
+            "The rule will apply to a device that has either a width of 1024px or wider, or is a screen device in landscape mode.",
+            "The rule will apply to a device that has a width of 1024px or narrower and is a screen device in landscape mode.",
+            "The rule will apply to a device that has a width of 1024px or wider and is a screen device in landscape mode.",
+            "The rule will apply to a device that has a width of 1024px or narrower, or is a screen device in landscape mode."
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q28. CSS transform properties are used to change the shape and position of the selected objects. The transform-origin property specifies the location of the element's transformation origin. By default, what is the location of the origin?",
@@ -285,19 +285,19 @@
             "`color: #000`",
             "`color: rgb(0,0,0)`",
             "`color: #000000`",
-            "`color: 000000`"
+            "`color: 000000`\n```html\n<div style=\"margin-bottom: 2rem;\">Div 1</div>\n<div style=\"margin-top: 2rem;\">Div 2</div>\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q30. What is the vertical gap between the two elements below?\n```html\n<div style=\"margin-bottom: 2rem;\">Div 1</div>\n<div style=\"margin-top: 2rem;\">Div 2</div>\n```",
         "options": [
-            "l",
-            "tyle=\"margin-bottom: 2rem;\">Div 1</div>",
-            "tyle=\"margin-top: 2rem;\">Div 2</div>",
-            ""
+            "2rem",
+            "32px",
+            "64px",
+            "4rem\n[Reference MDN Webdocs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q31. When using the Flexbox method, what property and value is used to display flex items in a column?",
@@ -315,39 +315,39 @@
             "any declarations in user-agent stylesheets",
             "important declarations in user stylesheets",
             "normal declarations in author stylesheets",
-            "important declarations in author stylesheets"
+            "important declarations in author stylesheets\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-1.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q33. The flex-direction property is used to specify the direction that flex items are displayed. What are the values used to specify the direction of the items in the following examples?\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-1.png)\n  - Example 1: `flex-direction: row;`\n  - Example 2: `flex-direction: row-reverse;`\n  - Example 3: `flex-direction: column;`\n  - Example 4: `flex-direction: column-reverse;`\n  - Example 1: `flex-direction: row-reverse;`\n  - Example 2: `flex-direction: row;`\n  - Example 3: `flex-direction: column-reverse;`\n  - Example 4: `flex-direction: column;`\n  - Example 1: `flex-direction: row;`\n  - Example 2: `flex-direction: row-reverse;`\n  - Example 3: `flex-direction: column;`\n  - Example 4: `flex-direction: reverse-column;`",
+        "question": "Q33. The flex-direction property is used to specify the direction that flex items are displayed. What are the values used to specify the direction of the items in the following examples?\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-1.png)",
         "options": [
-            "e](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-1.png)",
-            "",
-            "ample 1: `flex-direction: row;`",
-            "ample 2: `flex-direction: row-reverse;`"
+            "  - Example 1: `flex-direction: row;`\n  - Example 2: `flex-direction: row-reverse;`\n  - Example 3: `flex-direction: column;`\n  - Example 4: `flex-direction: column-reverse;`",
+            "  - Example 1: `flex-direction: row-reverse;`\n  - Example 2: `flex-direction: row;`\n  - Example 3: `flex-direction: column-reverse;`\n  - Example 4: `flex-direction: column;`",
+            "  - Example 1: `flex-direction: row;`\n  - Example 2: `flex-direction: row-reverse;`\n  - Example 3: `flex-direction: column;`\n  - Example 4: `flex-direction: reverse-column;`",
+            "  - Example 1: `flex-direction: column;`\n  - Example 2: `flex-direction: column-reverse;`\n  - Example 3: `flex-direction: row;`\n  - Example 4: `flex-direction: row-reverse;`\nNote: Examples seem to be missing.\n```css\nh2 ~ p {\n  color: blue;\n}\nh2 + p {\n  background: beige;\n}\n```\n```html\n<section>\n  <p>paragraph 1</p>\n  <h2>Heading</h2>\n  <p>paragraph 2</p>\n  <p>paragraph 3</p>\n</section>\n```"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
-        "question": "Q34. There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?\n```css\nh2 ~ p {\n  color: blue;\n}\nh2 + p {\n  background: beige;\n}\n```\n```html\n<section>\n  <p>paragraph 1</p>\n  <h2>Heading</h2>\n  <p>paragraph 2</p>\n  <p>paragraph 3</p>\n</section>\n```\n#### Q35. When using flexbox, the \"justify-content\" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-2.png)",
+        "question": "Q34. There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?\n```css\nh2 ~ p {\n  color: blue;\n}\nh2 + p {\n  background: beige;\n}\n```\n```html\n<section>\n  <p>paragraph 1</p>\n  <h2>Heading</h2>\n  <p>paragraph 2</p>\n  <p>paragraph 3</p>\n</section>\n```",
         "options": [
-            "",
-            " {",
-            "r: blue;",
-            ""
+            "Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.",
+            "Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.",
+            "Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-2.png)",
+            "justify-content: space-around;"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q35. When using flexbox, the \"justify-content\" property can be used to distribute the space between the flex items along the main axis. Which value should be used to evenly distribute the flex items within the container shown below?\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-2.png)",
         "options": [
-            "e](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-2.png)",
             "justify-content: space-around;",
             "justify-content: center;",
-            "justify-content: auto;"
+            "justify-content: auto;",
+            "justify-content: space-between;"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q36. There are many advantages to using icon fonts. What is one of those advantages?",
@@ -385,39 +385,39 @@
             "Icon fonts can be inserted only using JavaScript.",
             "Icon fonts are inserted as inline images.",
             "Icon fonts require browser extensions.",
-            "Icon fonts can be styled with typography-related properties such as font-size and color."
+            "Icon fonts can be styled with typography-related properties such as font-size and color.\n```css\nfont-weight: 400;\nfont-weight: 700;\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q40. The values for the font-weight property can be keywords or numbers. For each numbered value below, what is the associated keyword?\n```css\nfont-weight: 400;\nfont-weight: 700;\n```",
         "options": [
-            "",
-            "eight: 400;",
-            "eight: 700;",
-            ""
-        ],
-        "_ps": -1
-    },
-    {
-        "question": "Q41. If the width of the container is 500 pixels, what would the width of the three columns be in this layout?\n`.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`",
-        "options": [
-            " { display: grid; grid-template-columns: 50px 1fr 2fr; }`",
-            "50px, 150px, 300px",
-            "50px, 200px, 300px",
-            "50px, 100px, 200px"
+            "bold; normal",
+            "normal; bold",
+            "light; normal",
+            "normal; bolder\n`.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`"
         ],
         "_ps": 1
     },
     {
-        "question": "Q42. Using the :nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?\n  ```css\n  li:nth-child(3 + 2n) {\n    margin: 0 5 px;\n  }\n  ```\n  ```css\n  li:nth-child(3n + 2) {\n    margin: 0 5 px;\n  }\n  ```\n  ```css\n  li:nth-child(2),\n  li:nth-child(5),\n  li:nth-child(8) {\n    margin: 0 5 px;\n  }\n  ```",
+        "question": "Q41. If the width of the container is 500 pixels, what would the width of the three columns be in this layout?\n`.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`",
         "options": [
-            "",
-            "ss",
-            "th-child(3 + 2n) {",
-            "rgin: 0 5 px;"
+            "50px, 150px, 300px",
+            "50px, 200px, 300px",
+            "50px, 100px, 200px",
+            "50px, 50px, 100px\nNote: an alternative for Q7."
         ],
-        "_ps": -1
+        "_ps": 0
+    },
+    {
+        "question": "Q42. Using the :nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?",
+        "options": [
+            "  ```css\n  li:nth-child(3 + 2n) {\n    margin: 0 5 px;\n  }\n  ```",
+            "  ```css\n  li:nth-child(3n + 2) {\n    margin: 0 5 px;\n  }\n  ```",
+            "  ```css\n  li:nth-child(2),\n  li:nth-child(5),\n  li:nth-child(8) {\n    margin: 0 5 px;\n  }\n  ```",
+            "  ```css\n  li:nth-child(2n + 3) {\n    margin: 0 5 px;\n  }\n  ```"
+        ],
+        "_ps": 1
     },
     {
         "question": "Q43. Which selector would select only internal links within the current page?",
@@ -455,19 +455,19 @@
             "padding: 10px 10px 0px 0px;",
             "padding: 10px 0px;",
             "padding: 10px 0;",
-            "padding: 10px 0px 10px 0px;"
+            "padding: 10px 0px 10px 0px;\n```css\n@font-face {\n  font-family: 'Avenir', sans-serif;\n  src: url('avenir.woff2') format('woff2'), url('avenir.woff') format('woff');\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q47. Is there an error in this code? If so, find the best description of the problem\n```css\n@font-face {\n  font-family: 'Avenir', sans-serif;\n  src: url('avenir.woff2') format('woff2'), url('avenir.woff') format('woff');\n}\n```",
         "options": [
-            "",
-            "face {",
-            "-family: 'Avenir', sans-serif;",
-            " url('avenir.woff2') format('woff2'), url('avenir.woff') format('woff');"
+            "The font file formats are not supported in modern browsers.",
+            "The src attribute requires a comma between the URL and format values.",
+            "There are no errors in the example.",
+            "The sans-serif inclusion is problematic."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q48. Which style places an element at a fixed location within its container?",
@@ -475,19 +475,19 @@
             "position: absolute;",
             "display: flex;",
             "display: block;",
-            "float: left;"
+            "float: left;\n```css\n.example {\n  margin-left: calc(5% + 5px);\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q49. The calc() CSS function is often used for calculating relative values. In the example below, what is the specified margin-left value?\n```css\n.example {\n  margin-left: calc(5% + 5px);\n}\n```",
         "options": [
-            "",
-            "le {",
-            "in-left: calc(5% + 5px);",
-            ""
+            "The left margin value is equal to 5% of its parents element's width plus 5px",
+            "The left margin value is equal to 5% of the viewport width plus 5px",
+            "The left margin value is equal to 5% of the closest positioned element's width plus 5px",
+            "The left margin value is equal to 5% of the selected element's width (.example) plus 5px"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q50. What is the CSS selector for an `<a>` tag containing the title attribute?",
@@ -495,7 +495,7 @@
             "`a[title]`",
             "`a > title`",
             "`a=title`",
-            "`a.title`"
+            "`a.title`\nNote: an alternative for Q2."
         ],
         "_ps": 0
     },
@@ -505,19 +505,19 @@
             "`.logo { position: absolute; left: 100px; top: 150px; }`",
             "`.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`",
             "`.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`",
-            "`.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`"
+            "`.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`\n```css\np:first-of-type {\n  color: red;\n}\np {\n  color: blue;\n}\n.container {\n  color: yellow;\n}\np:first-child {\n  color: green;\n}\n```\n```html\n<div class=\"container\">\n  <h1>Heading</h1>\n  <p>Paragraph1</p>\n  <p>Paragraph2</p>\n</div>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q52. In this example, what color will Paragraph 1 be?\n```css\np:first-of-type {\n  color: red;\n}\np {\n  color: blue;\n}\n.container {\n  color: yellow;\n}\np:first-child {\n  color: green;\n}\n```\n```html\n<div class=\"container\">\n  <h1>Heading</h1>\n  <p>Paragraph1</p>\n  <p>Paragraph2</p>\n</div>\n```",
         "options": [
-            "",
-            "t-of-type {",
-            "r: red;",
-            ""
+            "blue",
+            "green",
+            "red",
+            "yellow"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q53. What is the `::placeholder pseudo-element` used for?",
@@ -560,12 +560,12 @@
         "_ps": 1
     },
     {
-        "question": "Q57. When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?\n  ```markdown\n  1. Larger z-index values appear on top elements with a lower z-index value.\n  2. Negative and positive number can be used.\n  3. z-index can be used only on positioned elements.\n  ```\n  ```markdown\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive numbers can be used.\n  3. z-index can be used with or without positioned elements.\n  ```\n  ```markdown\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive number can be used.\n  3. z-index must also be used with positioned elements.\n  ```",
+        "question": "Q57. When elements within a container overlap, the z-index property can be used to indicate how those items are stacked on top of each other. Which set of statements is true?",
         "options": [
-            "",
-            "arkdown",
-            "arger z-index values appear on top elements with a lower z-index value.",
-            "egative and positive number can be used."
+            "  ```markdown\n  1. Larger z-index values appear on top elements with a lower z-index value.\n  2. Negative and positive number can be used.\n  3. z-index can be used only on positioned elements.\n  ```",
+            "  ```markdown\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive numbers can be used.\n  3. z-index can be used with or without positioned elements.\n  ```",
+            "  ```markdown\n  1. Smaller z-index values appear on top of elements with a larger z-index value.\n  2. Negative and positive number can be used.\n  3. z-index must also be used with positioned elements.\n  ```",
+            "  ```markdown\n  1. Larger z-index values appear on top of elements with a lower z-index value.\n  2. Only positive number can be used.\n  3. z-index must also be used with positioned elements.\n  ```\nNote: an alternative for Q13."
         ],
         "_ps": 0
     },
@@ -625,27 +625,27 @@
             "Proposed Recommendation",
             "Working Draft",
             "Recommendation",
-            "Candidate Recommendation"
+            "Candidate Recommendation\n```css\ncolor: red; /* declaration A */\nfont-size: 1em; /* declaration B */\npadding: 10px 0; /* declaration C */\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q64. Are any of the following declarations invalid?\n```css\ncolor: red; /* declaration A */\nfont-size: 1em; /* declaration B */\npadding: 10px 0; /* declaration C */\n```",
         "options": [
-            "",
-            " red; /* declaration A */",
-            "ize: 1em; /* declaration B */",
-            "g: 10px 0; /* declaration C */"
+            "Declaration A is invalid.",
+            "Declaration B is invalid.",
+            "Declaration C is invalid.",
+            "All declarations are valid."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q65. Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?\n  ```css\n  a:link {\n    background: #0000ff;\n  }\n  a:hover {\n    background: rgba(0, 0, 255, 0.5);\n  }\n  ```\n  ```css\n  a {\n    color: blue;\n  }\n  a:hover {\n    background: white;\n  }\n  ```\n  ```css\n  a:link {\n    background: blue;\n  }\n  a:hover {\n    color: rgba(0, 0, 255, 0.5);\n  }\n  ```",
+        "question": "Q65. Which CSS will cause your links to have a solid blue background that changes to semitransparent on hover?",
         "options": [
-            "",
-            "ss",
-            "nk {",
-            "ckground: #0000ff;"
+            "  ```css\n  a:link {\n    background: #0000ff;\n  }\n  a:hover {\n    background: rgba(0, 0, 255, 0.5);\n  }\n  ```",
+            "  ```css\n  a {\n    color: blue;\n  }\n  a:hover {\n    background: white;\n  }\n  ```",
+            "  ```css\n  a:link {\n    background: blue;\n  }\n  a:hover {\n    color: rgba(0, 0, 255, 0.5);\n  }\n  ```",
+            "  ```css\n  a:hover {\n    background: rgba(blue, 50%);\n  }\n  a:link {\n    background: rgba(blue);\n  }\n  ```"
         ],
         "_ps": 0
     },
@@ -655,19 +655,19 @@
             "`div.sidebar {}`",
             "`* {}`",
             "`div#sidebar2 p {}`",
-            "`.sidebar p {}`"
+            "`.sidebar p {}`\n```css\nbody {\n  background: #ffffff; /* white */\n}\nsection {\n  background: #0000ff; /* blue */\n  height: 200px;\n}\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q67. The body of your page includes some HTML sections. How will it look with the following CSS applied?\n```css\nbody {\n  background: #ffffff; /* white */\n}\nsection {\n  background: #0000ff; /* blue */\n  height: 200px;\n}\n```",
         "options": [
-            "",
-            "",
-            "ground: #ffffff; /* white */",
-            ""
+            "blue sections on a white background",
+            "Yellow sections on a blue background",
+            "Green sections on a white background",
+            "blue sections on a red background"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q68. Which CSS keyword can you use to override standard source order and specificity rules?",
@@ -715,29 +715,29 @@
             "\"h1\" string",
             "\"a\" character",
             "\"p\" character",
-            "\"\\*\" character"
+            "\"\\*\" character\n```css\nh1 {\n  color: red;\n}\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q73. In the following CSS code, `'h1'` is the `___`, while `'color'` is the `___`.\n```css\nh1 {\n  color: red;\n}\n```",
         "options": [
-            "",
-            "",
-            "r: red;",
-            ""
+            "property; declaration",
+            "declaration; rule",
+            "\"p\" character",
+            "selector; property\n```css\nfont-weight: bold;\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q74. What is an alternate way to define the following CSS rule?\n```css\nfont-weight: bold;\n```",
         "options": [
-            "",
-            "eight: bold;",
-            "",
-            "font-weight: 400;"
+            "font-weight: 400;",
+            "font-weight: medium;",
+            "font-weight: 700;",
+            "font-weight: Black;"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q75. You want your styling to be based on a font stack consisting of three fonts. Where should the generic font for your font family be specified?",
@@ -765,19 +765,19 @@
             "by using an HTML link element referring to a Google-provided CSS",
             "by embedding the font file directly into the project's master JavaScript",
             "by using a Google-specific CSS syntax that directly links to the desired font file",
-            "by using a standard font-face CSS definition sourcing a font file on Google's servers"
+            "by using a standard font-face CSS definition sourcing a font file on Google's servers\n```css\nhtml {\n  font-size: 10px;\n}\nbody {\n  font-size: 2rem;\n}\n.rem {\n  font-size: 1.5rem;\n}\n.em {\n  font-size: 2em;\n}\n```\n```html\n<body>\n  <p class=\"rem\"></p>\n  <p class=\"em\"></p>\n</body>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q78. Using the following HTML and CSS example, what will equivalent pixel value be for .em and .rem elements?\n```css\nhtml {\n  font-size: 10px;\n}\nbody {\n  font-size: 2rem;\n}\n.rem {\n  font-size: 1.5rem;\n}\n.em {\n  font-size: 2em;\n}\n```\n```html\n<body>\n  <p class=\"rem\"></p>\n  <p class=\"em\"></p>\n</body>\n```",
         "options": [
-            "",
-            "",
-            "-size: 10px;",
-            ""
+            "The .rem will be equivalent to 25px; the .em value will be 20px.",
+            "The .rem will be equivalent to 15px; the .em value will be 20px.",
+            "The .rem will be equivalent to 15px; the .em value will be 40px.",
+            "The .rem will be equivalent to 20px; the .em value will be 40px."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q79. What property is used to adjust the space between text characters?",
@@ -795,59 +795,59 @@
             "`.element {cursor: pointer;}`",
             "`.element {cursor: hand;}`",
             "`.element {cursor: move-hand;}`",
-            "`.element {cursor: pointer-hand;}`"
+            "`.element {cursor: pointer-hand;}`\n```css\nbackground-position: 10% 50%;\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q81. What is the effect of this style?\n```css\nbackground-position: 10% 50%;\n```",
         "options": [
-            "",
-            "ound-position: 10% 50%;",
-            "",
-            "The background image is placed 10% from the left and 50% from the top of its container"
+            "The background image is placed 10% from the left and 50% from the top of its container",
+            "The background image is placed 10% from the bottom and 50% from the left of its container",
+            "The background image is placed 10% from the right and 50% from the bottom of its container",
+            "The background image is placed 10% from the top and 50% from the left of its container\n```css\ngrid-template-columns: 2fr 1fr;\n```"
         ],
-        "_ps": 3
+        "_ps": 0
     },
     {
         "question": "Q82. How will the grid items display?\n```css\ngrid-template-columns: 2fr 1fr;\n```",
         "options": [
-            "",
-            "emplate-columns: 2fr 1fr;",
-            "",
-            "The first column is twice the height of the second column and will be as wide as the content"
+            "The first column is twice the height of the second column and will be as wide as the content",
+            "The first column is half the size of the container and the second column will absorb the remaining space",
+            "The first column is twice as wide as the second column and will fit proportionally within the grid container",
+            "The first column is twice the width and height of the second column, and will fit proportionally within the grid container\n```html\n<img id=\"photo\" alt=\"\" src=\"...\" />\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q83. Which style rule would make the image 50% smaller during a hover?\n```html\n<img id=\"photo\" alt=\"\" src=\"...\" />\n```",
         "options": [
-            "l",
-            "d=\"photo\" alt=\"\" src=\"...\" />",
-            "",
-            "img#photo:hover {scale: 0.5;}"
+            "img#photo:hover {scale: 0.5;}",
+            "img#photo:hover {transform: scale(0.5);}",
+            "img#photo {hover-scale: 0.5;}",
+            "img#photo:hover {size: smaller;}\n```css\nA. border-radius: 10px 10px 0 0;\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\nC. border-radius: 10px 0;\nD. border-top-radius: 10px;\n```"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q84. Which CSS properties can you use to create a rounded corner on just the top-left and top-right corners of an element?\n```css\nA. border-radius: 10px 10px 0 0;\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\nC. border-radius: 10px 0;\nD. border-top-radius: 10px;\n```",
         "options": [
-            "",
-            "der-radius: 10px 10px 0 0;",
-            "der-top-left-radius: 10px; and border-top-right-radius: 10px;",
-            "der-radius: 10px 0;"
+            "A and C",
+            "C and D",
+            "B and C",
+            "A and B\n```html\n<section>\n  <p class=\"example\">...</p>\n</section>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q85. Review the HTML example below. Then choose the list of selectors that select the \\<p>, from lowest to highest specificity.\n```html\n<section>\n  <p class=\"example\">...</p>\n</section>\n```\n  ```css\n  1. section \\* {\n    ...;\n  }\n  2. [class*='example'] {\n    ...;\n  }\n  3. p.example {\n    ...;\n  }\n  4. section p {\n    ...;\n  }\n  ```\n  ```css\n  1. p {\n    ...;\n  }\n  2. p.example {\n    ...;\n  }\n  3. section p {\n    ...;\n  }\n  4. [class*='example'] {\n    ...;\n  }\n  ```\n  ```css\n  1. p.example {\n    ...;\n  }\n  2. section p {\n    ...;\n  }\n  3. [class*='example'] {\n    ...;\n  }\n  4. section \\* {\n    ...;\n  }\n  ```",
+        "question": "Q85. Review the HTML example below. Then choose the list of selectors that select the \\<p>, from lowest to highest specificity.\n```html\n<section>\n  <p class=\"example\">...</p>\n</section>\n```",
         "options": [
-            "l",
-            "on>",
-            "lass=\"example\">...</p>",
-            "ion>"
+            "  ```css\n  1. section \\* {\n    ...;\n  }\n  2. [class*='example'] {\n    ...;\n  }\n  3. p.example {\n    ...;\n  }\n  4. section p {\n    ...;\n  }\n  ```",
+            "  ```css\n  1. p {\n    ...;\n  }\n  2. p.example {\n    ...;\n  }\n  3. section p {\n    ...;\n  }\n  4. [class*='example'] {\n    ...;\n  }\n  ```",
+            "  ```css\n  1. p.example {\n    ...;\n  }\n  2. section p {\n    ...;\n  }\n  3. [class*='example'] {\n    ...;\n  }\n  4. section \\* {\n    ...;\n  }\n  ```",
+            "  ```css\n  1. p {\n    ...;\n  }\n  2. section p {\n    ...;\n  }\n  3. [class*='example'] {\n    ...;\n  }\n  4. p.example {\n    ...;\n  }\n  ```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q86. Which property is used to create a drop shadow effect on an HTML element?",
@@ -865,7 +865,7 @@
             "`input[type=\"text\"]:not([disabled]) {...}`",
             "`input[type=\"text\"]:not(\"disabled\") {...}`",
             "`input[type*=\"text\"]:not([disabled=\"disabled\"]) {...}`",
-            "`input[type=\"text\"]:not([type=\"disabled\"]) {...}`"
+            "`input[type=\"text\"]:not([type=\"disabled\"]) {...}`\n`input[type=\"text\"]` selects all the input with type text, and `:not([disabled])` selects all the elements not having the attribute \"disabled\". Combining both only selects all the input elements with type attribte as \"text\" and not having \"disabled\" attribute.`\n[Reference link attribute-selector](https://www.w3schools.com/css/css_attribute_selectors.asp)\n[Reference link-:not()](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)"
         ],
         "_ps": 0
     },
@@ -875,29 +875,29 @@
             "`background-color: hsl(0, 0, 0, 0.5);`",
             "`background-color: rgbx(0, 0, 0, 0.5);`",
             "`background-color: rgba(0, 0, 0, 0.5);`",
-            "`background-color: rgba(0, 0, 0, 1);`"
+            "`background-color: rgba(0, 0, 0, 1);`\n`rgba` is a funtion in css. rgba stands for red, green, blue and alpha. The value of alpha can be between 0 and 1 both inclusive with 0 being fully transparent and 1 being fully opaque.\n[Reference link-rgba](https://www.w3schools.com/cssref/func_rgba.asp)\n```html\n<header>\n  <hl>Heading 1</h1>\n  <h2>Heading 2</h2>\n</header>\n<h2>Heading 2</h2>\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q89. Using this HTML markup, how would you select only the headings contained within the `<header>` element?\n```html\n<header>\n  <hl>Heading 1</h1>\n  <h2>Heading 2</h2>\n</header>\n<h2>Heading 2</h2>\n```",
         "options": [
-            "l",
-            "r>",
-            "Heading 1</h1>",
-            "Heading 2</h2>"
+            "`header h1, header h2 {...}`",
+            "`header h1 + header h2 {...}`",
+            "`header h1, h2 {...}`",
+            "`h1, h2 {...}`\n```css\n.container {\n  display: flex;\n}\n.item {\n  border: 1px solid red;\n  flex-direction: row-reverse;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q90. Suppose you want to have a list of items (.item) displayed in a row and in reverse order using flexbox. What is the error in the CSS below?\n```css\n.container {\n  display: flex;\n}\n.item {\n  border: 1px solid red;\n  flex-direction: row-reverse;\n}\n```",
         "options": [
-            "",
-            "iner {",
-            "lay: flex;",
-            ""
+            "The value for flex-direction should be reverse-row.",
+            "The .container element should have a property of flex: display.",
+            "The flex-direction property should be declared in the container.",
+            "The display value should be flex-inline to display the items in a row."
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q91. Which choice is not a valid transition?",
@@ -905,29 +905,29 @@
             "`transition: margin 1000ms ease-in-out;`",
             "`transition: color 1.3s ease-in;`",
             "`transition: position 400ms linear;`",
-            "`transition: opacity 1s ease-in;`"
+            "`transition: opacity 1s ease-in;`\n```css\narticle p {\n  color: blue;\n}\narticle > p {\n  color: green;\n}\n```\n```html\n<article>\n  <p>Paragraph 1</p>\n  <aside>\n    <p>Paragraph 2</p>\n  </aside>\n</article>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q92. In this example, what color will the paragraphs be and why?\n```css\narticle p {\n  color: blue;\n}\narticle > p {\n  color: green;\n}\n```\n```html\n<article>\n  <p>Paragraph 1</p>\n  <aside>\n    <p>Paragraph 2</p>\n  </aside>\n</article>\n```",
         "options": [
-            "",
-            "e p {",
-            "r: blue;",
-            ""
+            "Paragraph 1 will be blue. Paragraph 2 will be green.",
+            "Both paragraphs will be green.",
+            "Paragraph 1 will be green. Paragraph 2 will be blue.",
+            "Both paragraphs will be blue.\n```css\nborder: 1px solid red;\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q93. Review the declaration of border style shown below. What is the corresponding longhand syntax?\n```css\nborder: 1px solid red;\n```\n  ```css\n  border-size: 1px;\n  border-style: solid;\n  border-color: red;\n  ```\n  ```css\n  border-size: 1px;\n  border-type: solid;\n  border-color: red;\n  ```\n  ```css\n  border-width: 1px;\n  border-style: solid;\n  border-color: red;\n  ```",
+        "question": "Q93. Review the declaration of border style shown below. What is the corresponding longhand syntax?\n```css\nborder: 1px solid red;\n```",
         "options": [
-            "",
-            ": 1px solid red;",
-            "",
-            ""
+            "  ```css\n  border-size: 1px;\n  border-style: solid;\n  border-color: red;\n  ```",
+            "  ```css\n  border-size: 1px;\n  border-type: solid;\n  border-color: red;\n  ```",
+            "  ```css\n  border-width: 1px;\n  border-style: solid;\n  border-color: red;\n  ```",
+            "  ```css\n  border-width: 1px;\n  border-line: solid;\n  border-color: red;\n  ```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q94. Pseudo-classes are used to `_`.",
@@ -935,19 +935,19 @@
             "style the state of the selected element",
             "insert presentational content",
             "style a specific part of the selected element",
-            "style the elements using class selectors"
+            "style the elements using class selectors\n```css\nsection {\n  color: gray;\n}\n```\n```html\n<section>\n  <p>paragraph</p>\n  <a href=\"#\">link</a>\n</section>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q95. In this example, what styles will be applied to which elements?\n```css\nsection {\n  color: gray;\n}\n```\n```html\n<section>\n  <p>paragraph</p>\n  <a href=\"#\">link</a>\n</section>\n```",
         "options": [
-            "",
-            "n {",
-            "r: gray;",
-            ""
+            "The paragraph and link will be gray.",
+            "The background color of the section element will be gray.",
+            "The paragraph will be gray. The link will be the browser default, black.",
+            "Only the paragraph will be gray."
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q96. Which answer is an example of a type selector (also sometimes referred to as an element selector)?",
@@ -960,14 +960,14 @@
         "_ps": 1
     },
     {
-        "question": "Q97. What is the correct order for listing different link states in a website so those states display correctly on the page?\n  ```css\n  a\n  a:hover\n  ```\n  ```css\n  :link\n  :visited\n  :hover\n  :active\n  :focus\n  ```\n  ```css\n  :active\n  :focus\n  :hover\n  :link\n  :visited\n  ```",
+        "question": "Q97. What is the correct order for listing different link states in a website so those states display correctly on the page?",
         "options": [
-            "",
-            "ss",
-            "",
-            "ver"
+            "  ```css\n  a\n  a:hover\n  ```",
+            "  ```css\n  :link\n  :visited\n  :hover\n  :active\n  :focus\n  ```",
+            "  ```css\n  :active\n  :focus\n  :hover\n  :link\n  :visited\n  ```",
+            "  ```css\n  :link\n  :visited\n  :focus\n  :hover\n  :active\n  ```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q98. Which selector is used to select the paragraph element that is a direct descendent of section?",
@@ -975,19 +975,19 @@
             "`section * p`",
             "`section + p`",
             "`section ~ p`",
-            "`section > p`"
+            "`section > p`\n[Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)\n```css\nul {\n  --color: red;\n}\np {\n  color: var(--color);\n}\na {\n  color: var(--color, orange);\n}\n```\n```html\n<p>Paragraph</p>\n<ul>\n  <li>\n    <a href=\"#\">list item a link </a>\n  </li>\n  <li>list item</li>\n</ul>\n```"
         ],
         "_ps": 3
     },
     {
         "question": "Q99. For this code, what is the font color of the hypertext link?\n```css\nul {\n  --color: red;\n}\np {\n  color: var(--color);\n}\na {\n  color: var(--color, orange);\n}\n```\n```html\n<p>Paragraph</p>\n<ul>\n  <li>\n    <a href=\"#\">list item a link </a>\n  </li>\n  <li>list item</li>\n</ul>\n```",
         "options": [
-            "",
-            "",
-            "lor: red;",
-            ""
+            "red",
+            "orange",
+            "blue",
+            "black\n[Reference](https://www.sitepoint.com/pseudo-classes-the-basics/)"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q100. Which statement is not true?",
@@ -995,49 +995,49 @@
             "Specificity determines which CSS rule is applied by the browsers.",
             "When two selectors apply to the same element, the one with lower specificity wins.",
             "The last rule defined overrides all previous rules and even conflicting rules.",
-            "Rules with more specific selectors have greater specificity."
+            "Rules with more specific selectors have greater specificity.\n[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)\n```css\n.example {\n  width: 800px;\n  margin: 0 auto;\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q101. What is the output of the margin value when used within this context, assuming that its containing element is larger than 800px?\n```css\n.example {\n  width: 800px;\n  margin: 0 auto;\n}\n```",
         "options": [
-            "",
-            "le {",
-            "h: 800px;",
-            "in: 0 auto;"
+            "The example element will have 0 margin space around the whole element. The auto value will center align the element horizontally and vertically within its container.",
+            "The example element will have 0 margin space on the left and right. It will be sized automatically on the top and bottom, which will center align the element within its container.",
+            "The example element will have 0 margin space on the top and bottom. The margin will be sized automatically on the left and right, which may center align the element within its container.",
+            "The margin value is invalid because its missing a unit measurement after the 0.\n[Source: SOW](https://stackoverflow.com/questions/3170772/what-does-auto-do-in-margin-0-auto)\n```css\n10vw = ?px\n10vh = ?px\n10vmin = ?px\n10vmax = ?px\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q102. There are currently four viewport-percentage lengths that can be used to define the value relative to the viewport size: vw, vh, vmin, and vmax. If the current viewport size has a width of 800px and a height of 600px, what will these values be equivalent to in pixels?\n```css\n10vw = ?px\n10vh = ?px\n10vmin = ?px\n10vmax = ?px\n```\n      10vh = 60px\n      10vmin = 60px\n      10vmax = 80px\n      10vh = 80px\n      10vmin = 80px\n      10vmax = 60px\n      10vh = 6px\n      10vmin = 6px\n      10vmax = 8px",
+        "question": "Q102. There are currently four viewport-percentage lengths that can be used to define the value relative to the viewport size: vw, vh, vmin, and vmax. If the current viewport size has a width of 800px and a height of 600px, what will these values be equivalent to in pixels?\n```css\n10vw = ?px\n10vh = ?px\n10vmin = ?px\n10vmax = ?px\n```",
         "options": [
-            "",
-            " ?px",
-            " ?px",
-            " = ?px"
+            "10vw = 80px\n      10vh = 60px\n      10vmin = 60px\n      10vmax = 80px",
+            "10vw = 60px\n      10vh = 80px\n      10vmin = 80px\n      10vmax = 60px",
+            "10vw = 8px\n      10vh = 6px\n      10vmin = 6px\n      10vmax = 8px",
+            "10vw = 6px\n      10vh = 8px\n      10vmin = 8px\n      10vmax = 6px\n```css\nh2 ~ p {\n  color: blue;\n}\n```\n```html\n<section>\n  <p>P1</p>\n  <h2>H2</h2>\n  <p>P3</p>\n  <p>P4</p>\n</section>\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q103. Which element(s) will be blue?\n```css\nh2 ~ p {\n  color: blue;\n}\n```\n```html\n<section>\n  <p>P1</p>\n  <h2>H2</h2>\n  <p>P3</p>\n  <p>P4</p>\n</section>\n```",
         "options": [
-            "",
-            " {",
-            "r: blue;",
-            ""
+            "P3P3",
+            "P1P1",
+            "P1, P3, and P4P1, P3, and P4",
+            "P3 and P4\n```css\np:first-of-type:first-letter {\n  color: red;\n}\n```\n```html\n<body>\n  <p>Paragraph 1.</p>\n  <p>Paragraph 2.</p>\n  <article>\n    <h1>Heading</h1>\n    <p>Paragraph 3.</p>\n    <p>paragraph 4.</p>\n  </article>\n  <section>\n    <p>Paragraph 5.</p>\n    <p>Paragraph 6.</p>\n  </section>\n</body>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q104. Referring to the HTML markup and CSS example below, which element(s) will be targeted?\n```css\np:first-of-type:first-letter {\n  color: red;\n}\n```\n```html\n<body>\n  <p>Paragraph 1.</p>\n  <p>Paragraph 2.</p>\n  <article>\n    <h1>Heading</h1>\n    <p>Paragraph 3.</p>\n    <p>paragraph 4.</p>\n  </article>\n  <section>\n    <p>Paragraph 5.</p>\n    <p>Paragraph 6.</p>\n  </section>\n</body>\n```",
         "options": [
-            "",
-            "t-of-type:first-letter {",
-            "r: red;",
-            ""
+            "The first letter in all paragraphs will be red.",
+            "Only the first letter in paragraphs 1 and 5 will be red.",
+            "The first letter in paragraphs 1, 3, and 5 will be red.",
+            "Only the first letter in paragraph 1 will be red.Only"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q105. Which five style features are associated with the box model?",
@@ -1045,39 +1045,39 @@
             "margin, padding, border, width, height",
             "width, height, z-index, overflow, font size",
             "margin, padding, font size, line height, border",
-            "font size, line height, letter spacing, width, height"
+            "font size, line height, letter spacing, width, height\n```css\n[] a[href$='domain.com'] {\n  color: pink;\n}\n[x] a[href='*domain.com'] {\n  color: pink;\n}\n[] a[href*='domain.com'] {\n  color: rgb(255, 155, 155);\n}\n[] a[href*='domain.com'] {\n  color: pink;\n}\n```\n[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)\n```css\n[x] `background: linear-gradient(#648880, #293f50);`\n[ ] `background-image: linear(#648880, #293f50);`\n[ ] `background: gradient(linear, #648880, #293f50);`\n[ ] `background-color: linear-gradient(#648880, #293f50);`\n```\n```css\n[] .glyphicon-bgcircle {\n  circle-radius: 50%;\n  margins: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] glyphicon-bgcircle {\n  border-circle: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[x] .glyphicon-bgcircle {\n  border-radius: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] .glyphicon-bgcircle {\n  radius-rounded: 50%;\n  margins: auto;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q106. Which choice will not set all links that include domain.com to pink?\n```css\n[] a[href$='domain.com'] {\n  color: pink;\n}\n[x] a[href='*domain.com'] {\n  color: pink;\n}\n[] a[href*='domain.com'] {\n  color: rgb(255, 155, 155);\n}\n[] a[href*='domain.com'] {\n  color: pink;\n}\n```\n[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)\n#### Q107. Which property and value pair could be used to apply a linear gradient effect?\n```css\n[x] `background: linear-gradient(#648880, #293f50);`\n[ ] `background-image: linear(#648880, #293f50);`\n[ ] `background: gradient(linear, #648880, #293f50);`\n[ ] `background-color: linear-gradient(#648880, #293f50);`\n```\n#### Q108. You want to add a background circle behind an icon. Which style declaration is correct?\n```css\n[] .glyphicon-bgcircle {\n  circle-radius: 50%;\n  margins: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] glyphicon-bgcircle {\n  border-circle: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[x] .glyphicon-bgcircle {\n  border-radius: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] .glyphicon-bgcircle {\n  radius-rounded: 50%;\n  margins: auto;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n```\n#### Q109. When using a font stack to declare the font family, in what order should the values appear?",
         "options": [
-            "",
-            "ref$='domain.com'] {",
-            "r: pink;",
-            ""
+            "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
+            "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
+            "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
+            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q107. Which property and value pair could be used to apply a linear gradient effect?\n```css\n[x] `background: linear-gradient(#648880, #293f50);`\n[ ] `background-image: linear(#648880, #293f50);`\n[ ] `background: gradient(linear, #648880, #293f50);`\n[ ] `background-color: linear-gradient(#648880, #293f50);`\n```\n#### Q108. You want to add a background circle behind an icon. Which style declaration is correct?\n```css\n[] .glyphicon-bgcircle {\n  circle-radius: 50%;\n  margins: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] glyphicon-bgcircle {\n  border-circle: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[x] .glyphicon-bgcircle {\n  border-radius: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] .glyphicon-bgcircle {\n  radius-rounded: 50%;\n  margins: auto;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n```\n#### Q109. When using a font stack to declare the font family, in what order should the values appear?",
         "options": [
-            "",
-            "ackground: linear-gradient(#648880, #293f50);`",
-            "ackground-image: linear(#648880, #293f50);`",
-            "ackground: gradient(linear, #648880, #293f50);`"
+            "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
+            "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
+            "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
+            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q108. You want to add a background circle behind an icon. Which style declaration is correct?\n```css\n[] .glyphicon-bgcircle {\n  circle-radius: 50%;\n  margins: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] glyphicon-bgcircle {\n  border-circle: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[x] .glyphicon-bgcircle {\n  border-radius: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] .glyphicon-bgcircle {\n  radius-rounded: 50%;\n  margins: auto;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n```\n#### Q109. When using a font stack to declare the font family, in what order should the values appear?",
         "options": [
-            "",
-            "yphicon-bgcircle {",
-            "le-radius: 50%;",
-            "ins: 50px;"
+            "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
+            "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
+            "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
+            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
         ],
-        "_ps": -1
+        "_ps": 0
     },
     {
         "question": "Q109. When using a font stack to declare the font family, in what order should the values appear?",
@@ -1085,49 +1085,49 @@
             "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
             "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
             "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
-            "The first value is the first choice, followed by a maximum of three alternatives."
+            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q110. Which items are valid values for the font-size property?\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```",
         "options": [
-            "",
-            "t-size: xsmall",
-            "t-size: 50%",
-            "t-size: 1em"
+            "C, D",
+            "B, C, D",
+            "A, C",
+            "A, B, C, D\n![Sample text](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-3.png)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q111. In this image, the blue box and sample text are both contained within the same parent element. The blue box is floated on the left margin of the container. Why is it not contained with the container?\n![Sample text](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-3.png)",
         "options": [
-            "le text](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-3.png)",
             "Floating the blue box increased its height.",
             "Floating the blue box on the left also moves it down.",
-            "Floating the blue box actually shifts it to the right and down."
+            "Floating the blue box actually shifts it to the right and down.",
+            "Floating the blue box took it out of document flow and the container is sized only to the sample text.\n```css\n<style>\n.container {\n  position: relative;\n  height: 200px;\n  width: 200px;\n  border: 1px solid black;\n}\n</style>\n<div class=\"container\"><div class=\"overlay\"></div></div>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
-        "question": "Q112. Given this code, which CSS declaration of .overlay will span the entire width and height of its container?\n```css\n<style>\n.container {\n  position: relative;\n  height: 200px;\n  width: 200px;\n  border: 1px solid black;\n}\n</style>\n<div class=\"container\"><div class=\"overlay\"></div></div>\n```\n```css\n.overlay {\n  position: static;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\n  position: absolute;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```\n```css\n.overlay {\n  position: static;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```",
+        "question": "Q112. Given this code, which CSS declaration of .overlay will span the entire width and height of its container?\n```css\n<style>\n.container {\n  position: relative;\n  height: 200px;\n  width: 200px;\n  border: 1px solid black;\n}\n</style>\n<div class=\"container\"><div class=\"overlay\"></div></div>\n```",
         "options": [
-            "",
-            ">",
-            "iner {",
-            "tion: relative;"
+            "```css\n.overlay {\n  position: static;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```",
+            "```css\n.overlay {\n  position: absolute;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```",
+            "```css\n.overlay {\n  position: static;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```",
+            "```css\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```\n```js\n<div class=\"container\">\n  <img src=\"grumpy-cat.gif\" />\n  <p>The z-index property is cool!</p>\n</div>\n```\n```css\nimg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  // Missing line\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q113. Which missing line of code would place the text on top of the image?\n```js\n<div class=\"container\">\n  <img src=\"grumpy-cat.gif\" />\n  <p>The z-index property is cool!</p>\n</div>\n```\n```css\nimg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  // Missing line\n}\n```",
         "options": [
-            "",
-            "lass=\"container\">",
-            " src=\"grumpy-cat.gif\" />",
-            "he z-index property is cool!</p>"
+            "`z-index: 1;`",
+            "`z-index: -1;`",
+            "`z-index: 0;`",
+            "`z-index: true;`"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q114. To make the font size of an element one size smaller than the font size of the element's container, which style property would you apply?",
@@ -1135,27 +1135,27 @@
             "`font-size: reduce;`",
             "`font-size: 8px;`",
             "`font-size: -1em;`",
-            "`font-size: smaller;`"
+            "`font-size: smaller;`\n```js\n<span class=\"highlight\">#BLM</span>\n```"
         ],
         "_ps": 3
     },
     {
-        "question": "Q115. Given this markup, which selector would result in the text being highlighted in yellow?\n```js\n<span class=\"highlight\">#BLM</span>\n```\n```css\n.highlight {\n  background-color: yellow;\n}\n```\n```css\n#highlight {\n  background-color: yellow;\n}\n```\n```css\n.highlight {\n  color: yellow;\n}\n```",
+        "question": "Q115. Given this markup, which selector would result in the text being highlighted in yellow?\n```js\n<span class=\"highlight\">#BLM</span>\n```",
         "options": [
-            "",
-            "class=\"highlight\">#BLM</span>",
-            "",
-            ""
+            "```css\n.highlight {\n  background-color: yellow;\n}\n```",
+            "```css\n#highlight {\n  background-color: yellow;\n}\n```",
+            "```css\n.highlight {\n  color: yellow;\n}\n```",
+            "```css\n#highlight {\n  color: yellow;\n}\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
-        "question": "Q116. To prevent a background image from tiling in any direction, which style property would you apply?\n```css\nbackground-repeat: no-repeat;\n```\n```css\nbackground-repeat: fixed;\n```\n```css\nbackground-repeat: none;\n```",
+        "question": "Q116. To prevent a background image from tiling in any direction, which style property would you apply?",
         "options": [
-            "",
-            "",
-            "ound-repeat: no-repeat;",
-            ""
+            "```css\nbackground-repeat: no-repeat;\n```",
+            "```css\nbackground-repeat: fixed;\n```",
+            "```css\nbackground-repeat: none;\n```",
+            "```css\nbackground-tile: none;\n```"
         ],
         "_ps": -1
     },
@@ -1165,7 +1165,7 @@
             "`transform: rotate(-30deg);`",
             "`transform: rotate(30deg);`",
             "`rotate: 30deg;`",
-            "`spin: 30deg;`"
+            "`spin: 30deg;`\n[Reference](<https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate()>)"
         ],
         "_ps": 0
     },
@@ -1175,19 +1175,19 @@
             "`background-image: file('wood.png');`",
             "`background-image: url('wood.png');`",
             "`background-image: wood.png;`",
-            "`image: wood.png`"
+            "`image: wood.png`\n```js\n<section><p>paragraph one</p></section><p>paragraph two</p>\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q119. What style rule would set the font color of only paragraph two to blue?\n```js\n<section><p>paragraph one</p></section><p>paragraph two</p>\n```\n```css\nsection > p {\n  color: blue;\n}\n```\n```css\np {\n  color: blue;\n}\n```\n```css\nsection + p {\n  color: blue;\n}\n```",
+        "question": "Q119. What style rule would set the font color of only paragraph two to blue?\n```js\n<section><p>paragraph one</p></section><p>paragraph two</p>\n```",
         "options": [
-            "",
-            "on><p>paragraph one</p></section><p>paragraph two</p>",
-            "",
-            ""
+            "```css\nsection > p {\n  color: blue;\n}\n```",
+            "```css\np {\n  color: blue;\n}\n```",
+            "```css\nsection + p {\n  color: blue;\n}\n```",
+            "```css\np + section {\n  color: blue;\n}\n```\n[Reference](https://www.w3schools.com/cssref/sel_element_pluss.asp)"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q120. You want to move an element up 100px. Which CSS property would you use?",
@@ -1195,29 +1195,29 @@
             "`transform: translateX(-100px)`",
             "`transform: translateY(-100px)`",
             "`transform: translateY(100px)`",
-            "`transform: translateX(100px)`"
+            "`transform: translateX(100px)`\n```js\n<div id=\"outer\">\n  <div id=\"inner\">Center Me!</div>\n</div>\n```"
         ],
         "_ps": 1
     },
     {
-        "question": "Q121. Which style will horizontally center the inner &lt;div&gt; within the outer &lt;div&gt;?\n```js\n<div id=\"outer\">\n  <div id=\"inner\">Center Me!</div>\n</div>\n```\n```css\n#inner {\n  width: 50%;\n}\n#outer {\n  width: 100%;\n}\n```\n```css\n#inner {\n  left: 0;\n  right: 0;\n  position: center;\n}\n```\n```css\n#inner {\n  text-align: center;\n}\n```",
+        "question": "Q121. Which style will horizontally center the inner &lt;div&gt; within the outer &lt;div&gt;?\n```js\n<div id=\"outer\">\n  <div id=\"inner\">Center Me!</div>\n</div>\n```",
         "options": [
-            "",
-            "d=\"outer\">",
-            " id=\"inner\">Center Me!</div>",
-            ""
+            "```css\n#inner {\n  width: 50%;\n}\n#outer {\n  width: 100%;\n}\n```",
+            "```css\n#inner {\n  left: 0;\n  right: 0;\n  position: center;\n}\n```",
+            "```css\n#inner {\n  text-align: center;\n}\n```",
+            "```css\n#inner {\n  width: 50%;\n  margin: 0 auto;\n}\n```\n```css\n.pen {\n  height: 100px;\n  width: 100px;\n  border: 2px dashed brown;\n  position: relative;\n}\n#puppy {\n  position: absolute;\n  right: 80px;\n  bottom: 0px;\n}\n```\n```html\n<div class=\"pen\">\n  <span id=\"puppy\">🐶</span>\n</div>\n```"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q122. Which corner will the puppy be in when these CSS rules are applied?\n```css\n.pen {\n  height: 100px;\n  width: 100px;\n  border: 2px dashed brown;\n  position: relative;\n}\n#puppy {\n  position: absolute;\n  right: 80px;\n  bottom: 0px;\n}\n```\n```html\n<div class=\"pen\">\n  <span id=\"puppy\">🐶</span>\n</div>\n```",
         "options": [
-            "",
-            "",
-            "ht: 100px;",
-            "h: 100px;"
+            "top-right corner",
+            "bottom-right corner",
+            "top-left corner",
+            "bottom-left corner"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q123. Which choice uses the correct syntax for adding a hover pseudo class to <a> element ?",
@@ -1225,18 +1225,17 @@
             "`a:hover {...}`",
             "`a :hover {...}`",
             "`a.hover {...}`",
-            "`a hover {...}`"
+            "`a hover {...}`\n[Reference](https://stackoverflow.com/questions/1935820/set-ahover-based-on-class)\n```css\n  <style>\n    #cellar-door {\n      box-shadow: 3px 5px 10px #000;\n    }\n    .text-shadow {\n      text-shadow: 3px 5px 10px #000;\n    }\n  </style>\n  <h1 _____> Cellar Door</h1>\n```"
         ],
         "_ps": 0
     },
     {
         "question": "Q124. Which missing code will give \"Cellar Door\" a shadow?\n```css\n  <style>\n    #cellar-door {\n      box-shadow: 3px 5px 10px #000;\n    }\n    .text-shadow {\n      text-shadow: 3px 5px 10px #000;\n    }\n  </style>\n  <h1 _____> Cellar Door</h1>\n```",
         "options": [
-            "",
-            "le>",
-            "ellar-door {",
-            "box-shadow: 3px 5px 10px #000;"
+            "`class=\"text-shadow\"`",
+            "`id=\"cellar-door\"`",
+            "`id=\"text-shadow\"`"
         ],
-        "_ps": -1
+        "_ps": 0
     }
 ]

@@ -195,7 +195,7 @@
             "Structure Tags",
             "XMP Fields",
             "Custom Properties",
-            "Stop Words"
+            "Stop Words\n[Reference](https://helpx.adobe.com/experience-manager/kb/Stopwordlist.html)"
         ],
         "_ps": 3
     },
@@ -215,7 +215,7 @@
             "Tools > Edit PDF",
             "Tools > Accessibility",
             "Tools > Action Wizard",
-            "Tools > PDF Standards"
+            "Tools > PDF Standards\n[Reference](https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html)"
         ],
         "_ps": 2
     },
@@ -274,8 +274,7 @@
         "options": [
             "a text field with rich text formatting",
             "a multi-line text field",
-            "a drop-down field",
-            "a list box field"
+            "a drop-down field"
         ],
         "_ps": -1
     }

@@ -15,7 +15,7 @@
             "Layout tools",
             "Arrange tools",
             "Design Ideas feature",
-            "Picture tools"
+            "Picture tools\n`In MS PP 2019 it's called \"Drawing Tools\". There is no such answer but there is a function called \"Arrange\"`"
         ],
         "_ps": 1
     },
@@ -45,7 +45,7 @@
             "the Options tab",
             "the Home tab",
             "the Print dialog box",
-            "the Share tab"
+            "the Share tab\n`Should be in the printer window not in the options menu`"
         ],
         "_ps": 2
     },
@@ -75,7 +75,7 @@
             "reading order",
             "slide titles",
             "missing alt text",
-            "grammar"
+            "grammar\n[Source](https://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1?ns=powerpnt&version=16&ui=en-us&rs=en-us&ad=us)"
         ],
         "_ps": 3
     },
@@ -85,7 +85,7 @@
             "Apply a cell stye.",
             "Apply a graphic style.",
             "Apply a table style.",
-            "Right-click a table and choose a new style."
+            "Right-click a table and choose a new style.\n`Table Tools -> Design Tab -> Table Styles`"
         ],
         "_ps": 2
     },
@@ -95,19 +95,19 @@
             "Resize shape to fit text",
             "Do not autofit",
             "none of these answers",
-            "Shrink text on overflow"
+            "Shrink text on overflow\n```\nA. Focal Point\nB. Depth\nC. Blur\nD. Angle\nE. Distance\n```"
         ],
         "_ps": 0
     },
     {
-        "question": "Q11. Which three shadow properties can be adjusted in PowerPoint?",
+        "question": "Q11. Which three shadow properties can be adjusted in PowerPoint?\n```\nA. Focal Point\nB. Depth\nC. Blur\nD. Angle\nE. Distance\n```",
         "options": [
-            "",
-            "al Point",
-            "th",
-            "r"
+            "A, B, C",
+            "A, C, E",
+            "B, C, D",
+            "C, D, E"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q12. You want your presentation to play continuously on screen, What option must you set?",
@@ -115,7 +115,7 @@
             "Use Presenter view",
             "Advance slides manually",
             "Advance slides automatically",
-            "Loop continuously until 'Esc'"
+            "Loop continuously until 'Esc'\n`Slide Show Tab -> Set Up Slide Show -> Show options -> Loop continuously until 'Esc'`"
         ],
         "_ps": 3
     },
@@ -135,7 +135,7 @@
             "Heading Style 2",
             "Subtitle",
             "Content Style",
-            "List 2"
+            "List 2\n```\nHighlight the content you want to use as a slide title, and select Heading 1 in Styles.\nHighlight the content you want to use as the slide text, and select Heading 2 in Styles.\nIf your Word document contains no Heading 1 or Heading 2 styles, PowerPoint will create a slide for each paragraph in your content.\n```"
         ],
         "_ps": 0
     },
@@ -155,7 +155,7 @@
             "Automatic",
             "Hidden",
             "none of these answers",
-            "Visible"
+            "Visible\n`If hidden is selected the courser stays hidden no matter what.`"
         ],
         "_ps": 0
     },
@@ -215,7 +215,7 @@
             "Compress the picture and use the Print (220 ppi) resolution setting.",
             "Select Best scale for slide show, increase the picture resolution and resize the picture to the original size",
             "Remove picture compression.",
-            "Change the printer property settings to print in a higher resolution."
+            "Change the printer property settings to print in a higher resolution.\n`Personal Hint: File Tab -> Options -> Advanced -> Image Size and Quality -> Do not compress images in file File Tab -> Options -> Advanced -> Print -> High quality `"
         ],
         "_ps": 2
     },
@@ -315,7 +315,7 @@
             "Export the file as a template.",
             "Save the file as a PDF.",
             "Save the file as a POTX.",
-            "Save the file as a PPTX."
+            "Save the file as a PPTX.\n`Personal Hint: There are multiple file suffixes for templates (.potx, .potm, .pot).`"
         ],
         "_ps": 0
     },
@@ -515,7 +515,7 @@
             "The two slides must have multiple objects in common with different names in the Selection pane",
             "The two slides must have at least one obiect in common that is in a different position on the second slide",
             "The second slide must have different objects that are in the same position as the objects on the first slide",
-            "The two slides must have at least one obiect in common that is in the same position on the second slide"
+            "The two slides must have at least one obiect in common that is in the same position on the second slide\n1. [Reference](https://support.microsoft.com/en-us/office/use-the-morph-transition-in-powerpoint-8dd1c7b2-b935-44f5-a74c-741d8d9244ea#:~:text=The%20Morph%20transition%20allows%20you%20to%20animate%20smooth,of%20things%E2%80%94text%2C%20shapes%2C%20pictures%2C%20SmartArt%20graphics%2C%20and%20WordArt.)\n2. [Reference](https://twist.learningguild.net/2019/03/morph-magic-for-incredible-effects-in-powerpoint-richard-goring/#:~:text=Morph%20recognizes%20any%20duplicate%20objects%20across%20two%20slides,make%20objects%20change%20size%2C%20or%20shape%2C%20or%20color.)"
         ],
         "_ps": 1
     },
@@ -525,7 +525,7 @@
             "to adiust animation timings",
             "to record your slide show",
             "to remove transition timings",
-            "to determine how long it takes to present your slide show"
+            "to determine how long it takes to present your slide show\n[Reference](https://it.nmu.edu/docs/rehearsing-timings-powerpoint)"
         ],
         "_ps": 3
     },
@@ -535,7 +535,7 @@
             "Apply a picture effect",
             "Apply a draw effect",
             "Apply an artistic effect",
-            "Apply a picture style"
+            "Apply a picture style\n[Reference](https://edu.gcfglobal.org/en/powerpoint2010/formatting-pictures/1/)"
         ],
         "_ps": 2
     },
@@ -545,7 +545,7 @@
             "Apply a color template",
             "Customize a color fill",
             "Apply a color palette",
-            "Apply a color theme"
+            "Apply a color theme\n[Reference](https://slidesgo.com/slidesgo-school/powerpoint-tutorials/how-to-change-colors-in-a-powerpoint-presentation)"
         ],
         "_ps": 3
     },
@@ -555,7 +555,7 @@
             "Change the slide size to standard",
             "Repeatedly bump up the scale setting print option until it fills the page in the preview",
             "Change the scale setting print option to 100%",
-            "Select the **Scale to Fit Paper** print option"
+            "Select the **Scale to Fit Paper** print option\n[Reference](https://www.rdpslides.com/pptfaq/FAQ00774_Printing_PowerPoint-_Slide_size_v-_Printer_Page_size.htm)"
         ],
         "_ps": 3
     },
@@ -565,7 +565,7 @@
             "List 2",
             "Content Style",
             "Subtitle",
-            "Heading Style 2"
+            "Heading Style 2\n[Reference](https://support.microsoft.com/en-us/office/import-a-word-outline-into-powerpoint-a25f6e01-9a19-4c0d-a108-7f533e42dfe9)"
         ],
         "_ps": 3
     },
@@ -575,7 +575,7 @@
             "missing alt text",
             "slide titles",
             "grammar",
-            "reading order"
+            "reading order\n1. [Reference](https://support.microsoft.com/en-us/office/rules-for-the-accessibility-checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1)\n2. [Reference](https://webaim.org/resources/evaloffice/)"
         ],
         "_ps": 0
     },
@@ -585,7 +585,7 @@
             "Apply a graphic style",
             "Apply a table style",
             "Right-click a table and select a new style",
-            "Apply a cell style"
+            "Apply a cell style\n[Reference ](https://support.microsoft.com/en-us/office/change-the-look-of-a-table-a18cbaa8-e681-455f-a99f-a2378fe5ff06)"
         ],
         "_ps": 1
     },
@@ -665,19 +665,19 @@
             "Slide Zoom",
             "Reuse Slide",
             "Slides from Outline",
-            "Add Section"
+            "Add Section\n![images](images/Q68.png)"
         ],
         "_ps": 1
     },
     {
-        "question": "Q68. The picture on the left is the original image. The image on the right is smaller, but the flowers are the same size and part of the picture has been removed. What method was used to format this picture?",
+        "question": "Q68. The picture on the left is the original image. The image on the right is smaller, but the flowers are the same size and part of the picture has been removed. What method was used to format this picture?\n![images](images/Q68.png)",
         "options": [
-            "es](images/Q68.png)",
             "changing the width and height with aspect ration locked",
             "drapping a corner sizing handle",
-            "using the **Crop to Shape** tool"
+            "using the **Crop to Shape** tool",
+            "using the **Crop** tool"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q69. Which view allows you to see additional information on a second monitor when delivering a presentation?",
@@ -715,7 +715,7 @@
             "macro-eanbled presentation",
             "template",
             "show",
-            "theme"
+            "theme\n[Reference](https://docs.fileformat.com/presentation/potx/)"
         ],
         "_ps": 1
     },
@@ -725,7 +725,7 @@
             "Presenter view",
             "Master view",
             "Normal view",
-            "Reading view"
+            "Reading view\n[Reference](https://support.microsoft.com/en-us/office/use-presenter-view-in-powerpoint-fe7638e4-76fb-4349-8d81-5eb6679f49d7#:~:text=PowerPoint%20Presenter%20View%20shows%20you,Select)"
         ],
         "_ps": 0
     },
@@ -735,7 +735,7 @@
             "Add-in",
             "Zoom",
             "Animation",
-            "Transition"
+            "Transition\n[Reference](https://support.microsoft.com/en-us/office/animate-text-or-objects-305a1c94-83b1-4778-8df5-fcf7a9b7b7c6)"
         ],
         "_ps": 2
     },
@@ -745,7 +745,7 @@
             "Keep Formatting",
             "Embed",
             "Keep Text Only",
-            "Picture"
+            "Picture\n[Reference](https://support.microsoft.com/en-us/office/insert-excel-data-in-powerpoint-19767daf-672c-43bc-bda1-330b242c57c9)"
         ],
         "_ps": 1
     },
@@ -765,19 +765,19 @@
             "the decline of voter turnout by county",
             "trends in voter turnout over the part 10 years",
             "what percentage of the whole population voted",
-            "how many people voted in various geographic regions on a map"
+            "how many people voted in various geographic regions on a map\n![Q79](images/Q79.png)"
         ],
         "_ps": -1
     },
     {
-        "question": "Q78. A few lines of text are overflowing the placeholder on your slide. How can you fix it on your slide?",
+        "question": "Q78. A few lines of text are overflowing the placeholder on your slide. How can you fix it on your slide?\n![Q79](images/Q79.png)",
         "options": [
-            "(images/Q79.png)",
             "Delete the overflowing text.",
             "Select **Stop Fitting Text to This Placeholder**.",
-            "Select **Autofit Text to Placeholder**."
+            "Select **Autofit Text to Placeholder**.",
+            "Click **Collapse**."
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q79. If you want to create an organizational chart that illustrates the reporting relationships within the organization, which SmartArt category would you use?",
@@ -785,27 +785,26 @@
             "Hierarchy",
             "Matrix",
             "Pyramid",
-            "Relationship"
+            "Relationship\n![Q81](images/Q81.png)"
         ],
         "_ps": 0
     },
     {
-        "question": "Q80. What do the labels Introduction and ProjectsByMonth indicate?",
+        "question": "Q80. What do the labels Introduction and ProjectsByMonth indicate?\n![Q81](images/Q81.png)",
         "options": [
-            "(images/Q81.png)",
             "selection names",
             "layouts",
-            "hidden slides"
+            "hidden slides",
+            "links to the next slide\n[Reference](https://support.microsoft.com/en-us/office/organize-your-powerpoint-slides-into-sections-de4bf162-e9cc-4f58-b64a-7ab09443b9f8#:~:text=Right%2Dclick%20between%20slides%20and,next%20to%20the%20section%20name.)"
         ],
-        "_ps": 1
+        "_ps": 0
     },
     {
         "question": "Q81. There are objects and text hidden behind an image on your slide. With the image selected, what could you adjust to make the objects and text appear \"through\" the image?",
         "options": [
             "Compress Picture",
             "Transparency",
-            "Corrections",
-            "Artistic Effects"
+            "Corrections"
         ],
         "_ps": -1
     }

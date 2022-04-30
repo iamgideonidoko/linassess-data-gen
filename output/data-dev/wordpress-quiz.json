@@ -85,19 +85,19 @@
             "YAML",
             "JSON",
             "TXT",
-            "XML"
+            "XML\n```<html>\n<head>\n        <style>\n                body { color: black; }\n                p { color: blue; }\n                div { color: green; }\n                p { color: red; }\n        </style>\n</head>\n<body>\n        <div>\n                <p>This is a paragraph inside a div.</p>\n        </div>\n</body>\n</html>\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q10. What color is the paragraph nested within the div?\n```<html>\n<head>\n        <style>\n                body { color: black; }\n                p { color: blue; }\n                div { color: green; }\n                p { color: red; }\n        </style>\n</head>\n<body>\n        <div>\n                <p>This is a paragraph inside a div.</p>\n        </div>\n</body>\n</html>\n```",
         "options": [
-            "ml>",
-            "",
-            "  <style>",
-            "          body { color: black; }"
+            "blue",
+            "black",
+            "red",
+            "green"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q11. Theme developers can take advantage of the Customizer API to give users a way to manipulate basic theme settings. The Customizer API is object-oriented and provides four main objects. What are they?",
@@ -210,14 +210,14 @@
         "_ps": 3
     },
     {
-        "question": "Q22. Which of these snippets represents a wrapper that calls jQuery safely and doesn't require repetitive use of the word \"jQuery\"?\n```\n$.ready(function() {\n// do stuff\n});\n```\n```\n(function($) {\n// do stuff\n})( jQuery );\n```\n```\n$(function() {\n// do stuff\n});\n```",
+        "question": "Q22. Which of these snippets represents a wrapper that calls jQuery safely and doesn't require repetitive use of the word \"jQuery\"?",
         "options": [
-            ".",
-            "",
-            "y(function() {",
-            "stuff"
+            ".\n```\n$.ready(function() {\n// do stuff\n});\n```",
+            ".\n```\n(function($) {\n// do stuff\n})( jQuery );\n```",
+            ".\n```\n$(function() {\n// do stuff\n});\n```",
+            ".\n```\njQuery(function($) {\n// do stuff\n});\n```"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q23. What is the correct order of parameters for the add_action() function?",
@@ -235,19 +235,19 @@
             "Assign an ARIA state of \"hidden\" to the label, like this: `<label state=\"hidden\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
             "Use the built-in WordPress CSS class .screen-reader-text to hide the text from screen, like this: `<label class=\"screen-reader-text\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
             "Create a custom CSS class to set a large negative value to the text-indent property to hide the text off screen, like this: `<label class=\"hide-this\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
-            "The majority of users do not require a screen reader. Remove the label entirely."
+            "The majority of users do not require a screen reader. Remove the label entirely.\n```\nif ( ! defined( 'ABSPATH' ) ) {\n   die;\n}\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q25. You might see this code in a WordPress plugin. What does it do?\n```\nif ( ! defined( 'ABSPATH' ) ) {\n   die;\n}\n```",
         "options": [
-            "",
-            " defined( 'ABSPATH' ) ) {",
-            ";",
-            ""
+            "This is how WordPress detects a plugin's presence. This ensures that the plugin is running from the /wp-content/plugins/ directory. If it is not, the plugin should not run.",
+            "This is a way to prevent naming collisions. ABSPATH is the absolute path to the plugin's directory. If ABSPATH is defined by another WordPress plugin with the same directory slug, the plugin should not run.",
+            "This is a security measure. ABSPATH is the absolute path to the WordPress directory. If the file is called directly, ABSPATH will not be defined and therefore the plugin should not run.",
+            "This is a compatibility checker. ABSPATH is defined in WordPress core. The plugin checks that the minimum version of WordPress needed to support the plugin is installed. If it is not, the plugin should not run."
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q26. Which is a best practice for working with WordPress CSS?",
@@ -325,7 +325,7 @@
             "Determine the date of the attack and restore your site to a backup point prior to that date.",
             "Hire a third-party service to clean up your site because it is difficult for someone who is not a WordPress security expert to find and remove all traces of an attack.",
             "Manually delete suspicious files on the server and delete any database tables that are not core WordPress.",
-            "Change your hosting password, your WordPress admin password, and your database password."
+            "Change your hosting password, your WordPress admin password, and your database password.\n**Explanation**: It's not the cheapest, but it's the most reliable. Restoring the backup might not help if you have backdoor scripts installed outside of WP directory."
         ],
         "_ps": 1
     },
@@ -395,7 +395,7 @@
             "The site should communicate with WordPress.org.",
             "Remove inactive themes.",
             "Do not output debug information.",
-            "WordPress updates are accomplished manually only."
+            "WordPress updates are accomplished manually only.\n**Explanation**: Communicating with WordPress.org is needed for detecting new versions."
         ],
         "_ps": 3
     },
@@ -405,17 +405,17 @@
             "Template tags prefaced with the\\_ can be used directly within a template. Template tags prefaced with get_the are generally reserved for partial templates.",
             "Template tags prefaced with the\\_ return a value. Template tags prefaced with get_the display a value.",
             "Template tags prefaced with the\\_ display a value. Template tags prefaced with get_the return a value.",
-            "Template tags prefaced with the\\_ don't accept arguments. Template tags prefaced with get_the do accept arguments."
+            "Template tags prefaced with the\\_ don't accept arguments. Template tags prefaced with get_the do accept arguments.\n```\nLink to the script directly from a template named page-contact.php using the get_header() template tag, like this:\nget_header( '<script src=\"/my-script.js\"></script>' );\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\nfunction load_scripts() {\n    if ( is_page( 'contact' ) ) {\n    echo '<script src=\"/my-script.js\"></script>';\n    }\n}\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\n    function load_scripts() {\n        if ( is_page( 'contact' ) ) {\n        wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js' );\n        }\n    }\n```"
         ],
         "_ps": 2
     },
     {
         "question": "Q42. How can you add a custom script that needs to run only on the contact page of a site? The slug of the page is contact.\n```\nLink to the script directly from a template named page-contact.php using the get_header() template tag, like this:\nget_header( '<script src=\"/my-script.js\"></script>' );\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\nfunction load_scripts() {\n    if ( is_page( 'contact' ) ) {\n    echo '<script src=\"/my-script.js\"></script>';\n    }\n}\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\n    function load_scripts() {\n        if ( is_page( 'contact' ) ) {\n        wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js' );\n        }\n    }\n```",
         "options": [
-            "",
-            "o the script directly from a template named page-contact.php using the get_header() template tag, like this:",
-            "ader( '<script src=\"/my-script.js\"></script>' );",
-            "nctions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:"
+            "Link to the script directly from a template named page-contact.php, like this:",
+            "<head>",
+            "<script src=\"/my-script.js\"></script>",
+            "</head>"
         ],
         "_ps": -1
     },
@@ -455,7 +455,7 @@
             "RRR",
             "WET",
             "DRY",
-            "KISS"
+            "KISS\n`DRY(Don't Repeat Yourself)`"
         ],
         "_ps": 2
     },
@@ -475,7 +475,7 @@
             "The site should run the most recent version of WordPress.",
             "Remove or inactivate unnecessary plugins.",
             "UTF8 is supported.",
-            "Choose a very recent version of PHP."
+            "Choose a very recent version of PHP.\n**Explanation**: New versions usually come with speed improvements. Inactivating plugins improves performance. By exclusion, it's UTF8."
         ],
         "_ps": 2
     },
@@ -535,19 +535,19 @@
             "internationalization",
             "localization",
             "translation",
-            "using GlotPress"
+            "using GlotPress\n**Explanation**: Localization and translation are synonyms for submitting language-specific translation. GlotPress is just a Wordpress plugin.\n`define( 'DISALLOW_FILE_EDIT', true );`"
         ],
         "_ps": 0
     },
     {
         "question": "Q55. In your wp-config.php file, you've added the following line of code. What does it do?\n`define( 'DISALLOW_FILE_EDIT', true );`",
         "options": [
-            "e( 'DISALLOW_FILE_EDIT', true );`",
             "prevents any non-admin user from directly editing theme or plugin files",
             "disables the theme and plugin editor in the WordPress admin",
-            "disables the ability to edit core WordPress files from either within the WordPress admin or via direct file access"
+            "disables the ability to edit core WordPress files from either within the WordPress admin or via direct file access",
+            "sets read-only permissions on all files in the WordPress install\n**Explanation**: [More WordPress Security: Disallow File Edit Setting In WordPress](https://www.icontrolwp.com/blog/more-wordpress-security-disallow-file-edit-setting-wordpress/). Setting all files to read-only would make auto-updates impossible."
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q56. Which of the following must have underlined links in order to meet WCAG 2.0 accessibility standards?",
@@ -575,19 +575,19 @@
             "derivative works must also be licensed as GPL",
             "all of these answers",
             "the software is free to use",
-            "the software is free to modify"
+            "the software is free to modify\n```\n<input type=\"text\" id=\"title\" name=\"title\" />\n$title = $_POST[ 'title' ];\n```"
         ],
         "_ps": 1
     },
     {
         "question": "Q59 Review of the HTML on line1. The goal of the PHP on line 2 is to extract the field value and assign it to a variable prior to inserting into the database. What is wrong with this PHP code?\n```\n<input type=\"text\" id=\"title\" name=\"title\" />\n$title = $_POST[ 'title' ];\n```",
         "options": [
-            "",
-            " type=\"text\" id=\"title\" name=\"title\" />",
-            " = $_POST[ 'title' ];",
-            ""
+            "The code sample does not use the GET method. It should be wrapped in the `get_post_field()` function and look like this `$title = get_post_field( $GET[ 'title' ] );`",
+            "The code sample does not use sanitize the form data. It should use the `sanitize_text_field()` function and look like this: `$title = sanitize_text_field( $_POST[ 'title' ] );`",
+            "There is no error. The code follows WordPress best practices.",
+            "The code sample does not allow for translation. It should use a translation function and look like this: `$title = __( $_POST[ 'title' ];`\n[Ref](https://hazimhassan.com/linkedin-wordpress-assessment-answers-2021/)"
         ],
-        "_ps": -1
+        "_ps": 1
     },
     {
         "question": "Q60. Which software development principle, often used in WordPress, aims to reduce the repetition of code?",
@@ -625,7 +625,7 @@
             "short database queries",
             "a way to cache information",
             "plugins used for quick debugging",
-            "post draft stored in the database"
+            "post draft stored in the database\n**Explanation**: [Transients](https://developer.wordpress.org/apis/handbook/transients/)"
         ],
         "_ps": 1
     },
@@ -655,7 +655,7 @@
             "Contributor",
             "Author",
             "Editor",
-            "Subscriber"
+            "Subscriber\n**Explanation**: [Summary of Roles](https://wordpress.org/support/article/roles-and-capabilities/#summary-of-roles)"
         ],
         "_ps": 1
     },
@@ -665,7 +665,7 @@
             "when there is no plugin available to make a customization you need",
             "when you need to add a custom page template",
             "when you need to add a custom script to the header or footer of every page in a site",
-            "You should never edit WordPress core."
+            "You should never edit WordPress core.\n**Explanation**: It is not recommended to change WordPress core files other than wp-config.php. [Editing Files Offline](https://wordpress.org/support/article/editing-files/#editing-files-offline)"
         ],
         "_ps": 3
     },
@@ -675,29 +675,29 @@
             "is_archive()",
             "is_page()",
             "is_page_template()",
-            "is_single()"
+            "is_single()\n[Ref](https://developer.wordpress.org/reference/functions/is_single/)\n`a:2:{i:0;s:27:\"ari-adminer/ari-adminer.php\";i:1;s:30:\"atomic-blocks/atomicblocks.php\";}`"
         ],
         "_ps": 3
     },
     {
         "question": "Q69. Wordpress core and many plugins store data in the database in a special format as represented by the sample below. What format is this called?\n`a:2:{i:0;s:27:\"ari-adminer/ari-adminer.php\";i:1;s:30:\"atomic-blocks/atomicblocks.php\";}`",
         "options": [
-            "i:0;s:27:\"ari-adminer/ari-adminer.php\";i:1;s:30:\"atomic-blocks/atomicblocks.php\";}`",
             "value",
             "serialized data",
-            "PHP array"
+            "PHP array",
+            "text array\n[Ref](https://wpengine.com/support/wordpress-serialized-data/)\n```\n<?php\nif ( have_posts() ) : while ( have_posts() ) : the_post();\n        the_content();\nendwhile;\nelse :\n        _e( 'Sorry, no posts matched your criteria.', 'textdomain' );\nendif;\n```"
         ],
-        "_ps": 2
+        "_ps": 1
     },
     {
         "question": "Q70. What is this code sample an example of?\n```\n<?php\nif ( have_posts() ) : while ( have_posts() ) : the_post();\n        the_content();\nendwhile;\nelse :\n        _e( 'Sorry, no posts matched your criteria.', 'textdomain' );\nendif;\n```",
         "options": [
-            "",
-            "",
-            "ave_posts() ) : while ( have_posts() ) : the_post();",
-            "  the_content();"
+            "custom query",
+            "template tags",
+            "the Loop",
+            "nested loop"
         ],
-        "_ps": -1
+        "_ps": 2
     },
     {
         "question": "Q71. Which of these are the minimum files required to make a child theme?",
@@ -705,7 +705,7 @@
             "index.php functions.php",
             "index.php style.css script.js",
             "functions.php style.css script.js",
-            "functions.php style.css"
+            "functions.php style.css\n[Ref](https://kinsta.com/blog/wordpress-child-theme/)"
         ],
         "_ps": 3
     },
@@ -715,7 +715,7 @@
             "hashes and reCAPTCHA",
             "database username and passwords",
             "custom action hooks and filters",
-            "unique keys and salts"
+            "unique keys and salts\n[Ref](https://www.malcare.com/blog/how-to-secure-your-wordpress-site-with-wp-config-php/)"
         ],
         "_ps": 3
     },
@@ -725,7 +725,7 @@
             "`archive.php`",
             "`index.php`",
             "`page.php`",
-            "`category.php`"
+            "`category.php`\n[Reference](https://developer.wordpress.org/themes/basics/template-hierarchy/)"
         ],
         "_ps": 1
     },
@@ -735,7 +735,7 @@
             "The query can only be run inside the Loop.",
             "You can modify the query in a template page if you use `pre_get_posts()`.",
             "According to WordPress best practices, the query should only be modified in `functions.php`.",
-            "Due to execution order, the query has already run by the time a template is loaded."
+            "Due to execution order, the query has already run by the time a template is loaded.\n[Reference](https://webcraft.tools/how-to-modify-the-main-wordpress-query/)"
         ],
         "_ps": 1
     },
@@ -745,7 +745,7 @@
             "WordPress settings",
             "Customizer",
             "wp-config.php",
-            "Theme settings"
+            "Theme settings\n[Reference](https://wordpress.org/support/article/creating-a-favicon/)"
         ],
         "_ps": 1
     },
@@ -755,7 +755,7 @@
             "`apply_filters( 'Hello World!', 'mytextdomain' );`",
             "`esc_html( 'Hello World!', 'mytextdomain' );`",
             "`$string = \"Hello World!\";`",
-            "`__( 'Hello World!', 'mytextdomain' );`"
+            "`__( 'Hello World!', 'mytextdomain' );`\n[Reference](https://wordpress.stackexchange.com/questions/231685/how-to-get-a-translated-string-from-a-language-other-than-the-current-one)"
         ],
         "_ps": 3
     },
@@ -765,19 +765,19 @@
             "Do not skip heading levels.",
             "Be sure there is proper color contrast between background and text.",
             "If an activity can be completed with a mouse, it must also be accessible by keyboard.",
-            "all of these answers"
+            "all of these answers\n`var x = \"16\"`"
         ],
         "_ps": 3
     },
     {
         "question": "Q78. JavaScript variables can hold many data types. Which data type does the following variable represent?\n`var x = \"16\"`",
         "options": [
-            " = \"16\"`",
             "Boolean",
             "Number",
-            "String"
+            "String",
+            "Object\n[Reference](https://www.w3schools.com/js/js_datatypes.asp)"
         ],
-        "_ps": 3
+        "_ps": 2
     },
     {
         "question": "Q79. You would use a post instead of a page when the content is **\\_**.",
@@ -794,9 +794,8 @@
         "options": [
             "formatting",
             "widgets",
-            "layout",
-            "shortcodes"
+            "layout"
         ],
-        "_ps": 3
+        "_ps": -1
     }
 ]
