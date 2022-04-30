@@ -1,0 +1,24 @@
+{
+  "name": "linaccess-data-gen",
+  "version": "1.0.0",
+  "description": "Data generator for Linacess app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamGideonIdoko/linaccess-data-gen.git"
+  },
+  "keywords": [
+    "linkedin",
+    "assessment",
+    "app"
+  ],
+  "author": "Gideon Idoko <iamgideonidoko@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IamGideonIdoko/linaccess-data-gen/issues"
+  },
+  "homepage": "https://github.com/IamGideonIdoko/linaccess-data-gen#readme"
+}
