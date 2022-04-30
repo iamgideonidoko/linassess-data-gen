@@ -20,5 +20,20 @@
   "bugs": {
     "url": "https://github.com/IamGideonIdoko/linaccess-data-gen/issues"
   },
-  "homepage": "https://github.com/IamGideonIdoko/linaccess-data-gen#readme"
+  "homepage": "https://github.com/IamGideonIdoko/linaccess-data-gen#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.30",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
 }
