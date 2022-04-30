@@ -10,7 +10,7 @@
         "_ps": 3
     },
     {
-        "question": "Q2. A developer executes the C# code below, which finds any game objects tagged as “enemy” in a start event. But the developer notices that, when executed, FindGameObjectsWithTag returns NULL even though the scene contains objects tagged as “Enemy”. What is a possible cause?",
+        "question": "Q2. A developer executes the C# code below, which finds any game objects tagged as “enemy” in a start event. But the developer notices that, when executed, FindGameObjectsWithTag returns NULL even though the scene contains objects tagged as “Enemy”. What is a possible cause?\n`GameObject[] MyEnemies = GameObject.FindGameObjectsWithTag(“Enemy”);`",
         "options": [
             "bject[] MyEnemies = GameObject.FindGameObjectsWithTag(“Enemy”);`",
             "The objects are animated",
@@ -230,7 +230,7 @@
         "_ps": 0
     },
     {
-        "question": "Q24. What does the C# Space attribute used below achieved?",
+        "question": "Q24. What does the C# Space attribute used below achieved?\n    [Space(20)]\n    Public string PlayerName;",
         "options": [
             "pace(20)]",
             "blic string PlayerName;",
@@ -340,7 +340,7 @@
         "_ps": 0
     },
     {
-        "question": "Q35. What does this code fragment do when attached to a rigged character?",
+        "question": "Q35. What does this code fragment do when attached to a rigged character?\n```\n    public Animator avatar;\n    public Transform lookAtObj;\n    void OnAnimatorIK(int layerIndex)\n    {\n        avatar.SetLookAtPosition(lookAtObj).position;\n        avatar.SetLookAtWeight(If);\n    }\n```",
         "options": [
             "",
             "blic Animator avatar;",
@@ -380,7 +380,7 @@
         "_ps": 1
     },
     {
-        "question": "Q39. You can perfectly align two mesh objects together at the vertices by using vertex snapping. How do you best access this tool?",
+        "question": "Q39. You can perfectly align two mesh objects together at the vertices by using vertex snapping. How do you best access this tool?\n![Vertex](images/Q39.png?raw=true)",
         "options": [
             "ex](images/Q39.png?raw=true)",
             "Select a mesh object and press the W key over the destination vertex",
@@ -460,7 +460,7 @@
         "_ps": 1
     },
     {
-        "question": "Q47. Which code sample uses C# properties for creating the health functionality?",
+        "question": "Q47. Which code sample uses C# properties for creating the health functionality?\n```\npublic class Health : MonoBehavior\n{\n    private float HealthPoints = 100f;\n    public float GetHealth()\n    {\n        return HealthPoints;\n    }\n    public void SetHealth(float Change)\n    {\n        HealthPoints += Change;\n        if (HealthPoints <= 0)\n            Destroy(gameObject);\n     }\n}\n```\n```\npublic class Health : MonoBehavior\n{\n    public UnityEvent OnHealthChanged;\n    private float HealthPoints = 100f;\n    public void SetHealth(float Change)\n    {\n        HealthPoints += Change;\n        OnHealthChanged.Invoke();\n    }\n    public void Die()\n    {\n        Destroy(gameObject);\n    }\n}\n```\n```\npublic class Health : MonoBehavior\n{\n    public float HealthPoints\n    {\n        get { return _healthpoints; }\n        set\n        {\n            _healthpoints = value;\n            if(_healthpoints <= 0 )\n            {\n                Destroy(gameObjects);\n            }\n        }\n    }\n    private float _healthpoints = 100f;\n}\n```",
         "options": [
             "A",
             "",

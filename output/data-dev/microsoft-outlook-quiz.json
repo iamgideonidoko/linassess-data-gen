@@ -40,7 +40,7 @@
         "_ps": 0
     },
     {
-        "question": "Q5. Why are read receipts less reliable than delivery receipts?",
+        "question": "Q5. Why are read receipts less reliable than delivery receipts?\n```\nA. Users can change their email settings to ignore requests for read receipts.\nB. Users can decline individual requests for read receipts.\nC. Read receipts are expensive, so some organizations turn them off.\n```",
         "options": [
             "",
             "rs can change their email settings to ignore requests for read receipts.",
@@ -320,7 +320,7 @@
         "_ps": 2
     },
     {
-        "question": "Q33. You created a meeting for next Tuesday at 2 PM, and several invitees have accepted. How do you change the meeting so it will begin at 1 PM and last for one hour?",
+        "question": "Q33. You created a meeting for next Tuesday at 2 PM, and several invitees have accepted. How do you change the meeting so it will begin at 1 PM and last for one hour?\n```\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 PM and send an update\nB. Double click the meeting to open it, change the start time to 1 PM abd send an update\nC. Some people have already accepted, so you must cancel this meeting and create a new meeting\n```",
         "options": [
             "",
             "n the calendar in Day, Week, or Work Week view. Drag the start time to 1 PM and send an update",
@@ -420,7 +420,7 @@
         "_ps": -1
     },
     {
-        "question": "Q43. You have created a rule to automatically route emails to the Project A folder. Why might you also add Project A to Favorites? (Select all that apply)",
+        "question": "Q43. You have created a rule to automatically route emails to the Project A folder. Why might you also add Project A to Favorites? (Select all that apply)\n```\nA. To easily see when you have a new message related to Project A\nB. To audit the rule\nC. Because the unread messages count for the Inbox folder will not include Project A\nD. Because you cannot create a search folder for a subfolder\n```",
         "options": [
             "",
             "easily see when you have a new message related to Project A",
@@ -800,7 +800,7 @@
         "_ps": 0
     },
     {
-        "question": " Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?",
+        "question": " Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  \nB. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  \nC. Some people have already accepted, so you must cancel this meeting and create a new meeting.",
         "options": [
             "n the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  ",
             "ble-click the meeting to open it, change the start time to 1 p.m., and send an update.  ",
@@ -860,7 +860,7 @@
         "_ps": 1
     },
     {
-        "question": "Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?",
+        "question": "Q80. You created a meeting for next Tuesday at 2 p.m., and several invitees have accepted. How do you change the meeting so it will begin at 1 p.m.?\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  \nB. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  \nC. Some people have already accepted, so you must cancel this meeting and create a new meeting.",
         "options": [
             "n the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  ",
             "ble-click the meeting to open it, change the start time to 1 p.m., and send an update.  ",

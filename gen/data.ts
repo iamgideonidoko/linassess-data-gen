@@ -40,10 +40,35 @@ const getQuestions = async (str: string) => {
     const questions: Question[] = [];
     const fileLines = await processLineByLine(str);
     fileLines.forEach((item, idx) => {
+        // get questions, questions begin with ####
         if (item.startsWith('####')) {
+            let question = item.substring(5);
             const options = [fileLines[idx + 1], fileLines[idx + 2], fileLines[idx + 3], fileLines[idx + 4]];
+            let currentOption = '';
+            for (let i = 1; i <= fileLines.length; i++) {
+                if (fileLines[idx + i] && fileLines[idx + i].startsWith('- [')) {
+                    break;
+                } else {
+                    question += `\n${fileLines[idx + i]}`;
+                }
+            }
+            for (let i = 1; i <= fileLines.length; i++) {
+                if (options.length >= 4) break;
+                if (fileLines[idx + i] && fileLines[idx + i].startsWith('- [')) {
+                    if (currentOption) {
+                        options.push(fileLines[idx + 1]);
+                        currentOption = '';
+                    } else {
+                        currentOption = fileLines[idx + 1];
+                    }
+                } else {
+                    if (currentOption) {
+                        currentOption += `\n${fileLines[idx + 1]}`;
+                    }
+                }
+            }
             questions.push({
-                question: item.substring(5),
+                question,
                 options: options.map((item) => item.substring(6)),
                 _ps: options.findIndex((item) => item.indexOf('[x]') >= 0),
             });
@@ -80,7 +105,18 @@ const getQuestions = async (str: string) => {
         try {
             const fileName = (() => {
                 if (item.path === 'c++') return `c++quiz`;
-                return item.path.replace('#', '-sharp').replace('-(programming-language)', '') + '-quiz';
+                switch (item.path) {
+                    case 'c++':
+                        return `c++quiz`;
+                    case 'react':
+                        return 'reactjs-quiz';
+                    case 'seo':
+                        return 'search-engine-optimization-quiz';
+                    case 'microsoft-access':
+                        return 'microsoft-access';
+                    default:
+                        return item.path.replace('#', '-sharp').replace('-(programming-language)', '') + '-quiz';
+                }
             })();
             const res = await axios.get(`${constants.fileBaseUrl}/${item.path.replace('#', '0%23')}/${fileName}.md`);
 

@@ -20,7 +20,7 @@
         "_ps": 0
     },
     {
-        "question": "Q3. Describe what these Git commands do to the commit history:",
+        "question": "Q3. Describe what these Git commands do to the commit history:\n```bash\ngit reset --hard HEAD~5\ngit merge --squash HEAD@{1}\n```",
         "options": [
             "h",
             "set --hard HEAD~5",
@@ -40,7 +40,7 @@
         "_ps": 3
     },
     {
-        "question": "Q5. Which of the following is true you when you use the following command?",
+        "question": "Q5. Which of the following is true you when you use the following command?\n`git add -A`",
         "options": [
             "dd -A`",
             "All new and updated files are staged",
@@ -50,7 +50,7 @@
         "_ps": 1
     },
     {
-        "question": "Q6. What will the following command print to the Terminal?",
+        "question": "Q6. What will the following command print to the Terminal?\n`git remote -v`",
         "options": [
             "emote -v`",
             "A list of remote repositories and their URLs",
@@ -60,7 +60,7 @@
         "_ps": 1
     },
     {
-        "question": "Q7. Looking at the following commands, describe what is happening.",
+        "question": "Q7. Looking at the following commands, describe what is happening.\n```bash\ngit checkout feature-user-location\ngit cherry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231\n```",
         "options": [
             "h",
             "eckout feature-user-location",
@@ -70,7 +70,7 @@
         "_ps": -1
     },
     {
-        "question": "Q8. What does the following command do to the git repository?",
+        "question": "Q8. What does the following command do to the git repository?\n`git reset --soft HEAD^`",
         "options": [
             "eset --soft HEAD^`",
             "It deletes all previous commits and reset the repository history back to its initial state.",
@@ -90,7 +90,7 @@
         "_ps": 3
     },
     {
-        "question": "Q10. Why would the following command be used?",
+        "question": "Q10. Why would the following command be used?\n`git rebase -i HEAD~10`",
         "options": [
             "ebase -i HEAD~10`",
             "To run a comparative search of the last 10 commits for differences",
@@ -150,7 +150,7 @@
         "_ps": 1
     },
     {
-        "question": "Q16. What files is this .gitignore programmed to leave out?",
+        "question": "Q16. What files is this .gitignore programmed to leave out?\n```shell\n#.swift\nbuild/\n*.txt\n*.metadata\n```",
         "options": [
             "ll",
             "t",
@@ -160,7 +160,7 @@
         "_ps": -1
     },
     {
-        "question": "Q17. After you make changes to a local repository, you run the following command. What will this do?",
+        "question": "Q17. After you make changes to a local repository, you run the following command. What will this do?\n`git commit -a -m \"Refactor code base\"`",
         "options": [
             "ommit -a -m \"Refactor code base\"`",
             "Nothing, you can't use multiple options in the same command",
@@ -170,7 +170,7 @@
         "_ps": -1
     },
     {
-        "question": "Q18. After checking your git status you get the following output, which shows the file beta-notes.js in the commit but also unstaged. How can this situation occur?",
+        "question": "Q18. After checking your git status you get the following output, which shows the file beta-notes.js in the commit but also unstaged. How can this situation occur?\n```shell\nChange to be committed:\n(use \"git reset HEAD <file>...\" to unstage)\nmodified: beta-notes.js\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout --<file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```",
         "options": [
             "ll",
             " to be committed:",
@@ -190,7 +190,7 @@
         "_ps": 2
     },
     {
-        "question": "Q20. What commands would you use to force an overwrite of your local files with the master branch?",
+        "question": "Q20. What commands would you use to force an overwrite of your local files with the master branch?\n  ```bash\n  git pull --all\n  git reset --hard origin/master\n  ```\n  ```bash\n  git pull -u origin master\n  git reset --hard master\n  ```\n  ```bash\n  git pull origin master\n  git reset --hard origin/myCurrentBranch\n  ```",
         "options": [
             "⠀",
             "ash",
@@ -230,7 +230,7 @@
         "_ps": 1
     },
     {
-        "question": "Q24. What is the operation doing given the Git commands below?",
+        "question": "Q24. What is the operation doing given the Git commands below?\n```\ngit bisect start\ngit bisect bad 5d41402abc4b2a76b9719d911017c592\ngit bisect good 69faab6268350295550de7d587bc323d\n```",
         "options": [
             "",
             "sect start",
@@ -260,7 +260,7 @@
         "_ps": 0
     },
     {
-        "question": "Q27. After pushing commits to the remote repository for the first time using the command below, what shorthand command can you use in future?",
+        "question": "Q27. After pushing commits to the remote repository for the first time using the command below, what shorthand command can you use in future?\n```bash\ngit push -u origin master\n```",
         "options": [
             "h",
             "sh -u origin master",
@@ -280,7 +280,7 @@
         "_ps": 3
     },
     {
-        "question": "Q29. What is the status of the beta-notes.js file in the following output?",
+        "question": "Q29. What is the status of the beta-notes.js file in the following output?\n```shell\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout -- <file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```",
         "options": [
             "ll",
             "s not staged for commit:",
@@ -310,7 +310,7 @@
         "_ps": 1
     },
     {
-        "question": "Q32. What change will the following command make to the staging area files?",
+        "question": "Q32. What change will the following command make to the staging area files?\n`git rm --cached testfile.js`",
         "options": [
             "m --cached testfile.js`",
             "testfile.js will be removed from the staging area and its changes no longer tracked.",
@@ -370,7 +370,7 @@
         "_ps": 3
     },
     {
-        "question": "Q38. What does commit object contain?",
+        "question": "Q38. What does commit object contain?\n#### Q39. Which option enables inclusion of committer name in custom log format?",
         "options": [
             "A set of files, representing the state of a project at a given point of time.",
             "Reference to parent commit objects.",
@@ -620,7 +620,7 @@
         "_ps": 1
     },
     {
-        "question": "Q63. What happens if you run this command from your master branch?",
+        "question": "Q63. What happens if you run this command from your master branch?\n```bash\ngit checkout -b beta-test\n```",
         "options": [
             "h",
             "eckout -b beta-test",
@@ -750,7 +750,7 @@
         "_ps": 0
     },
     {
-        "question": "Q76. How does this command alter the currently checked-out branch?",
+        "question": "Q76. How does this command alter the currently checked-out branch?\n`git reset --soft HEAD^`",
         "options": [
             "eset --soft HEAD^`",
             "It resets the working branch to the first commit.",
@@ -770,7 +770,7 @@
         "_ps": 2
     },
     {
-        "question": "Q78. This command is an example of what kind of tag?",
+        "question": "Q78. This command is an example of what kind of tag?\n`git tag -a v1.4 -m \"ABCD v1.5\"`",
         "options": [
             "ag -a v1.4 -m \"ABCD v1.5\"`",
             "verbose",
@@ -790,7 +790,7 @@
         "_ps": 0
     },
     {
-        "question": "Q80. Consider the following Git workflow:",
+        "question": "Q80. Consider the following Git workflow:\n![image](images/Git-WorkFlow.png)\nWhich of the following options is correct ?",
         "options": [
             "e](images/Git-WorkFlow.png)",
             "of the following options is correct ?",
@@ -1010,7 +1010,7 @@
         "_ps": 2
     },
     {
-        "question": "Q102. After checking your Git status, you get the following output, which shows the file beta-notes.js in the commit but also unstaged. How can this situation occur?",
+        "question": "Q102. After checking your Git status, you get the following output, which shows the file beta-notes.js in the commit but also unstaged. How can this situation occur?\n```bash\nChanges to be committed:\n (use \"git reset HEAD <file>...\" to unstage)\n  modified: beta-notes.js\nChanges not staged for commit:\n (use \"git add <file>...\" to update what will be committed)\n (use \"git checkout -- <file>...\" to discard changes in working directory)\n  modified: beta-notes.js\n```",
         "options": [
             "h",
             "s to be committed:",
@@ -1070,7 +1070,7 @@
         "_ps": 2
     },
     {
-        "question": "Q108. While pushing changes to a remote repository, you receive the following message. How do you resolve this issue?",
+        "question": "Q108. While pushing changes to a remote repository, you receive the following message. How do you resolve this issue?\n```bash\nerror: failed to push some refs to 'https://github.com/myrepo/simple.git'\nhint: Updates were rejected because the remote contains work that you do not hint: not have locally.\n```",
         "options": [
             "h",
             " failed to push some refs to 'https://github.com/myrepo/simple.git'",
@@ -1160,17 +1160,7 @@
         "_ps": 3
     },
     {
-        "question": "Q117. How would you create a custom shortcut or command across your git environment?",
-        "options": [
-            "Run git hotfix with the shortcut name.",
-            "Assign a shortcut or command using git options file.",
-            "Use the git custom-key command.",
-            "Create an alias usin the git config command."
-        ],
-        "_ps": 3
-    },
-    {
-        "question": "Q118. What statement best describes Git's concept of HEAD?",
+        "question": "Q117. What statement best describes Git's concept of HEAD?",
         "options": [
             "a pointer to the most recently changed file in the stage/index",
             "a pointer to the master branch",
@@ -1180,7 +1170,7 @@
         "_ps": 2
     },
     {
-        "question": "Q119. After staging changes to several files, you realize the changes to the confin.properties file are incorrect, and need to be removed from the stage and working directory. What command can you use to remove the staged changes to the file?",
+        "question": "Q118. After staging changes to several files, you realize the changes to the confin.properties file are incorrect, and need to be removed from the stage and working directory. What command can you use to remove the staged changes to the file?",
         "options": [
             "git reset HEAD^ -- config.properties",
             "git rm config.properties",

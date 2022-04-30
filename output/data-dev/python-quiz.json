@@ -50,7 +50,7 @@
         "_ps": 1
     },
     {
-        "question": "Q6. What is the term to describe this code?",
+        "question": "Q6. What is the term to describe this code?\n`count, fruit, price = (2, 'apple', 3.5)`",
         "options": [
             ", fruit, price = (2, 'apple', 3.5)`",
             "`tuple assignment`",
@@ -100,7 +100,7 @@
         "_ps": 0
     },
     {
-        "question": "Q11. What is the correct way to write a doctest?",
+        "question": "Q11. What is the correct way to write a doctest?\n```python\ndef sum(a, b):\n    \"\"\"\n    sum(4, 3)\n    7\n    sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    >>> sum(4, 3)\n    7\n    >>> sum(-4, 5)\n    1\n    \"\"\"\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    # >>> sum(4, 3)\n    # 7\n    # >>> sum(-4, 5)\n    # 1\n    \"\"\"\n    return a + b\n```",
         "options": [
             "A",
             "hon",
@@ -120,7 +120,7 @@
         "_ps": 1
     },
     {
-        "question": "Q13. What would this expression return?",
+        "question": "Q13. What would this expression return?\n```python\ncollege_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']\nreturn list(enumerate(college_years, 2019))\n```",
         "options": [
             "hon",
             "e_years = ['Freshman', 'Sophomore', 'Junior', 'Senior']",
@@ -270,7 +270,7 @@
         "_ps": 0
     },
     {
-        "question": "Q28. Given the following three list, how would you create a new list that matches the desired output printed below?",
+        "question": "Q28. Given the following three list, how would you create a new list that matches the desired output printed below?\n```python\nfruits = ['Apples', 'Oranges', 'Bananas']\nquantities = [5, 3, 4]\nprices = [1.50, 2.25, 0.89]\n#Desired output\n[('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)]\n```\n```python\noutput = []\nfruit_tuple_0 = (first[0], quantities[0], price[0])\noutput.append(fruit_tuple)\nfruit_tuple_1 = (first[1], quantities[1], price[1])\noutput.append(fruit_tuple)\nfruit_tuple_2 = (first[2], quantities[2], price[2])\noutput.append(fruit_tuple)\nreturn output\n```\n```python\ni = 0\noutput = []\nfor fruit in fruits:\n    temp_qty = quantities[i]\n    temp_price = prices[i]\n    output.append((fruit, temp_qty, temp_price))\n    i += 1\nreturn output\n```\n```python\ngroceries = zip(fruits, quantities, prices)\nreturn groceries\n>>> [\n('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)\n]\n```",
         "options": [
             "hon",
             " = ['Apples', 'Oranges', 'Bananas']",
@@ -290,7 +290,7 @@
         "_ps": 3
     },
     {
-        "question": "Q30. What is the correct syntax for calling an instance method on a class named Game?",
+        "question": "Q30. What is the correct syntax for calling an instance method on a class named Game?\n_(Answer format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_\n```python\n>>> dice = Game()\n>>> dice.roll()\n```\n```python\n>>> dice = Game(self)\n>>> dice.roll(self)\n```\n```python\n>>> dice = Game()\n>>> dice.roll(self)\n```",
         "options": [
             "er format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_",
             "<br>",
@@ -340,7 +340,7 @@
         "_ps": 1
     },
     {
-        "question": "Q35. What does this function print?",
+        "question": "Q35. What does this function print?\n```python\ndef print_alpha_nums(abc_list, num_list):\n    for char in abc_list:\n        for num in num_list:\n            print(char, num)\n    return\nprint_alpha_nums(['a', 'b', 'c'], [1, 2, 3])\n```\n```python\na 1\na 2\na 3\nb 1\nb 2\nb 3\nc 1\nc 2\nc 3\n```\n```python\n['a', 'b', 'c'], [1, 2, 3]\n```\n```python\naaa\nbbb\nccc\n111\n222\n333\n```",
         "options": [
             "hon",
             "int_alpha_nums(abc_list, num_list):",
@@ -350,7 +350,7 @@
         "_ps": -1
     },
     {
-        "question": "Q36. Pick correct representation of doctest for function in Python.",
+        "question": "Q36. Pick correct representation of doctest for function in Python.\n```python\ndef sum(a, b):\n    # a = 1\n    # b = 2\n    # sum(a, b) = 3\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    a = 1\n    b = 2\n    sum(a, b) = 3\n    \"\"\"\n    return a + b\n```\n```python\ndef sum(a, b):\n    \"\"\"\n    >>> a = 1\n    >>> b = 2\n    >>> sum(a, b)\n    3\n    \"\"\"\n    return a + b\n```",
         "options": [
             "<br>",
             "hon",
@@ -390,7 +390,7 @@
         "_ps": 2
     },
     {
-        "question": "Q40. Review the code below. What is the correct syntax for changing the price to 1.5?",
+        "question": "Q40. Review the code below. What is the correct syntax for changing the price to 1.5?\n```python\nfruit_info = {\n  'fruit': 'apple',\n  'count': 2,\n  'price': 3.5\n}\n```",
         "options": [
             "hon",
             "info = {",
@@ -400,7 +400,7 @@
         "_ps": -1
     },
     {
-        "question": "Q41. What value would be returned by this check for equality?",
+        "question": "Q41. What value would be returned by this check for equality?\n`5 != 6`",
         "options": [
             "6`",
             "`yes`",
@@ -440,7 +440,7 @@
         "_ps": 0
     },
     {
-        "question": "Q45. What is the proper way to write a list comprehension that represents all the keys in this dictionary?",
+        "question": "Q45. What is the proper way to write a list comprehension that represents all the keys in this dictionary?\n`fruits = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}`",
         "options": [
             "s = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}`",
             "`fruit_names = [x in fruits.keys() for x]`",
@@ -520,7 +520,7 @@
         "_ps": 0
     },
     {
-        "question": "Q53. What is the correct syntax for defining an `__init__()` method that takes no parameters?",
+        "question": "Q53. What is the correct syntax for defining an `__init__()` method that takes no parameters?\n```python\nclass __init__(self):\n    pass\n```\n```python\ndef __init__():\n    pass\n```\n```python\nclass __init__():\n    pass\n```",
         "options": [
             "<br>",
             "hon",
@@ -560,7 +560,7 @@
         "_ps": 1
     },
     {
-        "question": "Q57. What is the most self-descriptive way to define a function that calculates sales tax on a purchase?",
+        "question": "Q57. What is the most self-descriptive way to define a function that calculates sales tax on a purchase?\n```python\ndef tax(my_float):\n    '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n    pass\n```\n```python\ndef tx(amt):\n    '''Gets the tax on an amount.'''\n```\n```python\ndef sales_tax(amount):\n    '''Calculates the sales tax of a purchase. Takes in a float representing the subtotal as an argument and returns a float representing the sales tax.'''\n```",
         "options": [
             "<br>",
             "hon",
@@ -710,7 +710,7 @@
         "_ps": 1
     },
     {
-        "question": "Q72. What is the correct syntax of creating an instance method?",
+        "question": "Q72. What is the correct syntax of creating an instance method?\n```python\ndef get_next_card():\n  # method body goes here\n```\n```python\ndef get_next_card(self):\n  # method body goes here\n```\n```python\ndef self.get_next_card():\n  # method body goes here\n```",
         "options": [
             "<br>",
             "hon",
@@ -740,7 +740,7 @@
         "_ps": 1
     },
     {
-        "question": "Q75. What is the correct syntax for replacing the string apple in the list with the string orange?",
+        "question": "Q75. What is the correct syntax for replacing the string apple in the list with the string orange?\n```python\nmy_list = ['kiwi', 'apple', 'banana']\n```",
         "options": [
             "hon",
             "t = ['kiwi', 'apple', 'banana']",
@@ -770,7 +770,7 @@
         "_ps": 0
     },
     {
-        "question": "Q78. Which choice is the most syntactically correct example of the conditional branching?",
+        "question": "Q78. Which choice is the most syntactically correct example of the conditional branching?\n```python\nnum_people = 5\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n```\n```python\nnum_people = 5\nif num_people > 10:\n    print(\"There is a lot of people in the pool.\")\nif num_people > 4:\n    print(\"There are some people in the pool.\")\nelse:\n    print(\"There is no one in the pool.\")\n```\n```python\nnum_people = 5\nif num_people > 10;\n    print(\"There is a lot of people in the pool.\")\nelif num_people > 4;\n    print(\"There are some people in the pool.\")\nelse;\n    print(\"There is no one in the pool.\")\n```",
         "options": [
             "<br>",
             "hon",
@@ -810,7 +810,7 @@
         "_ps": 2
     },
     {
-        "question": "Q82. What is the correct syntax for defining an `__init__()` method that sets instance-specific attributes upon creation of a new class instance?",
+        "question": "Q82. What is the correct syntax for defining an `__init__()` method that sets instance-specific attributes upon creation of a new class instance?\n```python\ndef __init__(self, attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```\n```python\ndef __init__(attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```\n```python\ndef __init__(self, attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n```",
         "options": [
             "<br>",
             "hon",
@@ -820,7 +820,7 @@
         "_ps": -1
     },
     {
-        "question": "Q83. What would this recursive function print if it is called with no parameters?",
+        "question": "Q83. What would this recursive function print if it is called with no parameters?\n```python\ndef count_recursive(n=1):\n    if n > 3:\n        return\n    print(n)\n    count_recursive(n + 1)\n```\n```python\n1\n1\n2\n2\n3\n3\n```\n```python\n3\n2\n1\n```\n```python\n3\n3\n2\n2\n1\n1\n```",
         "options": [
             "hon",
             "unt_recursive(n=1):",
@@ -840,7 +840,7 @@
         "_ps": 2
     },
     {
-        "question": "Q85. What will this code fragment return?",
+        "question": "Q85. What will this code fragment return?\n```python\nimport numpy as np\nnp.ones([1,2,3,4,5])\n```",
         "options": [
             "hon",
             " numpy as np",
@@ -860,7 +860,7 @@
         "_ps": 2
     },
     {
-        "question": "Q87. what will this command return?",
+        "question": "Q87. what will this command return?\n```python\n{x for x in range(100) if x%3 == 0}\n```",
         "options": [
             "hon",
             " x in range(100) if x%3 == 0}",
@@ -880,7 +880,7 @@
         "_ps": 0
     },
     {
-        "question": "Q89. This code provides the \\_ of the list of numbers",
+        "question": "Q89. This code provides the \\_ of the list of numbers\n```python\nnum_list = [21,13,19,3,11,5,18]\nnum_list.sort()\nnum_list[len(num_list)//2]\n```",
         "options": [
             "hon",
             "st = [21,13,19,3,11,5,18]",
@@ -930,7 +930,7 @@
         "_ps": 2
     },
     {
-        "question": "Q94. What is the output of this code? (NumPy has been imported as np.)?",
+        "question": "Q94. What is the output of this code? (NumPy has been imported as np.)?\n```python\na = np.array([1,2,3,4])\nprint(a[[False, True, False, False]])\n```",
         "options": [
             "hon",
             ".array([1,2,3,4])",
@@ -940,7 +940,7 @@
         "_ps": -1
     },
     {
-        "question": "Q95. Suppose you have a string variable defined as y=”stuff;thing;junk;”. What would be the output from this code?",
+        "question": "Q95. Suppose you have a string variable defined as y=”stuff;thing;junk;”. What would be the output from this code?\n```python\nz = y.split(‘;’)\nlen(z)\n```",
         "options": [
             "hon",
             "split(‘;’)",
@@ -950,7 +950,7 @@
         "_ps": -1
     },
     {
-        "question": "Q96. What is the output of this code?",
+        "question": "Q96. What is the output of this code?\n```python\nnum_list = [1,2,3,4,5]\nnum_list.remove(2)\nprint(num_list)\n```",
         "options": [
             "hon",
             "st = [1,2,3,4,5]",
@@ -970,7 +970,7 @@
         "_ps": 2
     },
     {
-        "question": "Q98. Which command will create a list from 10 down to 1? Example:",
+        "question": "Q98. Which command will create a list from 10 down to 1? Example:\n`[10,9,8,7,6,5,4,3,2,1]`",
         "options": [
             ",8,7,6,5,4,3,2,1]`",
             "`reversed(list(range(1,11)))`",
@@ -980,7 +980,7 @@
         "_ps": -1
     },
     {
-        "question": "Q99. Which fragment of code will print exactly the same output as this fragment?",
+        "question": "Q99. Which fragment of code will print exactly the same output as this fragment?\n```python\nimport math\nprint(math.pow(2,10)) # prints 2 elevated to the 10th power\n```\n```python\nprint(2^10)\n```\n```python\nprint(2**10)\n```\n```python\ny = [x*2 for x in range(1,10)]\nprint(y)\n```",
         "options": [
             "hon",
             " math",
@@ -1000,7 +1000,7 @@
         "_ps": 3
     },
     {
-        "question": "Q101. What is the output of this code? (NumPy has been imported as np.)",
+        "question": "Q101. What is the output of this code? (NumPy has been imported as np.)\n```python\ntable = np.array([\n    [1,3],\n    [2,4]])\nprint(table.max(axis=1))\n```",
         "options": [
             "hon",
             "= np.array([",
@@ -1010,7 +1010,7 @@
         "_ps": -1
     },
     {
-        "question": "Q102. What will this code print?",
+        "question": "Q102. What will this code print?\n```python\nnumber = 3\nprint (f\"The number is {number}\")\n```",
         "options": [
             "hon",
             " = 3",
@@ -1080,7 +1080,7 @@
         "_ps": 1
     },
     {
-        "question": "Q109. Suppose you have the following code snippet and want to extract a list with only the letters. Which fragment of code will _not_ achieve that goal?",
+        "question": "Q109. Suppose you have the following code snippet and want to extract a list with only the letters. Which fragment of code will _not_ achieve that goal?\n```python\nmy_dictionary = {\n    'A': 1,\n    'B': 2,\n    'C': 3,\n    'D': 4,\n    'E': 5\n}\n```\n```python\nletters = []\nfor letter in my_dictionary.values():\n    letters.append(letter)\n```",
         "options": [
             "hon",
             "tionary = {",
@@ -1130,7 +1130,7 @@
         "_ps": 2
     },
     {
-        "question": "Q114. What will be the value of x after running this code?",
+        "question": "Q114. What will be the value of x after running this code?\n```python\nx = {1,2,3,4,5}\nx.add(5)\nx.add(6)\n```",
         "options": [
             "hon",
             ",2,3,4,5}",
@@ -1150,7 +1150,7 @@
         "_ps": 2
     },
     {
-        "question": "Q116. How would you access and store all of the keys in this dictionary at once?",
+        "question": "Q116. How would you access and store all of the keys in this dictionary at once?\n```python\nfruit_info = {\n    'fruit': 'apple',\n    'count': 2,\n    'price': 3.5\n}\n```",
         "options": [
             "hon",
             "info = {",
@@ -1160,7 +1160,7 @@
         "_ps": -1
     },
     {
-        "question": "Q117. What is wrong with this function definition?",
+        "question": "Q117. What is wrong with this function definition?\n```python\ndef be_friendly(greet = \"How are you!\", name):\n    pass\n```",
         "options": [
             "hon",
             "_friendly(greet = \"How are you!\", name):",
@@ -1170,7 +1170,7 @@
         "_ps": -1
     },
     {
-        "question": "Q118. Given that NumPy is imported as `np`, which choice will return `True`?",
+        "question": "Q118. Given that NumPy is imported as `np`, which choice will return `True`?\n```python\na = np.zeros([3,4])\nb = a.copy()\nnp.array_equal(a,b)\n```\n```python\na = np.empty([3,4])\nb = np.empty([3,4])\nnp.array_equal(a,b)\n```\n```python\na = np.zeros([3,4])\nb = np.zeros([4,3])\nnp.array_equal(a,b)\n```",
         "options": [
             "<br>",
             "hon",
@@ -1190,7 +1190,7 @@
         "_ps": 1
     },
     {
-        "question": "Q120. In this code fragment, what will the values of c and d be equivalent to?",
+        "question": "Q120. In this code fragment, what will the values of c and d be equivalent to?\n```python\nimport numpy as np\na = np.array([1,2,3])\nb = np.array([4,5,6])\nc = a*b\nd = np.dot(a,b)\n```\n```python\nc = [ a[1] * b[1], a[2] * b[2], a[3] * b[3] ]\nd = sum(c)\n```\n```python\nc = a[0] * b[0], a[1] * b[1], a[2] * b[2]\nd = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\n```\n```python\nc = [ a[0] * b[0], a[1] * b[1], a[2] * b[2] ]\nd = sum(a) + sum(b)\n```",
         "options": [
             "hon",
             " numpy as np",
@@ -1220,7 +1220,7 @@
         "_ps": 1
     },
     {
-        "question": "Q123. This code provides the **\\_** of the list of numbers.",
+        "question": "Q123. This code provides the **\\_** of the list of numbers.\n```python\nnum_list = [21, 13, 19, 3, 11, 5, 18]\nnum_list.sort()\nnum_list[len(num_list) // 2]\n```",
         "options": [
             "hon",
             "st = [21, 13, 19, 3, 11, 5, 18]",
@@ -1270,7 +1270,7 @@
         "_ps": 3
     },
     {
-        "question": "Q129. Using Pandas, we load a data set from Kaggle, as structured in the image below. Which command will return the total number of survivors?",
+        "question": "Q129. Using Pandas, we load a data set from Kaggle, as structured in the image below. Which command will return the total number of survivors?\n![Q129](images/Q129.png)",
         "options": [
             "](images/Q129.png)",
             "`sum(titanic['Survived'])`",
@@ -1280,7 +1280,7 @@
         "_ps": 1
     },
     {
-        "question": "Q130. How would you create a list of tuples matching these lists of characters and actors?",
+        "question": "Q130. How would you create a list of tuples matching these lists of characters and actors?\n```python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n# example output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n```\n```python\nd = {}\nfor x in range(1, len(characters)):\n    d[x] = actors[x]\n```",
         "options": [
             "hon",
             "ters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]",
@@ -1290,7 +1290,7 @@
         "_ps": -1
     },
     {
-        "question": "Q131. What will this statement return?",
+        "question": "Q131. What will this statement return?\n```python\n{x : x*x for x in range(1,100)}\n```",
         "options": [
             "hon",
             "*x for x in range(1,100)}",
@@ -1300,7 +1300,7 @@
         "_ps": -1
     },
     {
-        "question": "Q132. Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?",
+        "question": "Q132. Jaccard Similarity is a formula that tells you how similar two sets are. It is defined as the cardinality of the intersection divided by the cardinality of the union. Which choice is an accurate implementation in Python?\n![Q132](images/Q132.png)",
         "options": [
             "](images/Q132.png)",
             "`def jaccard(a, b): return len (a | b) / len (a & b)`",

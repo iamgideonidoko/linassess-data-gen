@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. Which of the three methods will copy the directory named \"photo dir\" recursively from the user's home directory to /backups?",
+        "question": "Q1. Which of the three methods will copy the directory named \"photo dir\" recursively from the user's home directory to /backups?\n```bash\ncp -R \"~/photo dir\" /backups #method1\ncp -R ~\"/photo dir\" /backups #method2\ncp -R ~/\"photo dir\" /backups #method3\n```",
         "options": [
             "h",
             "\"~/photo dir\" /backups #method1",
@@ -10,7 +10,7 @@
         "_ps": -1
     },
     {
-        "question": "Q2. If script.sh is run in the current directory, it will fail. Why?",
+        "question": "Q2. If script.sh is run in the current directory, it will fail. Why?\n```bash\n$ ls -1\nBeach photo1.jpg\nPhoto1.jpg\nPhoto2.jpg\nScript.sh\n$ cat script.sh\nfor i in $(ls *.jpg); do\n\tmv $i ${i}.bak\ndone\n```",
         "options": [
             "h",
             "1",
@@ -30,7 +30,7 @@
         "_ps": 0
     },
     {
-        "question": "Q4. Using \"awk\", what would the output of this command string be?",
+        "question": "Q4. Using \"awk\", what would the output of this command string be?\n```bash\necho \"1 2 3\" | awk '{for (i=1; i<=NF; i++) s=s+$i};END {print s}'\n```",
         "options": [
             "h",
             "1 2 3\" | awk '{for (i=1; i<=NF; i++) s=s+$i};END {print s}'",
@@ -40,7 +40,7 @@
         "_ps": 3
     },
     {
-        "question": "Q5. The command below will search the root filesystem for files named \"finance.db\". In this context, what information is being sent to /dev/null?",
+        "question": "Q5. The command below will search the root filesystem for files named \"finance.db\". In this context, what information is being sent to /dev/null?\n```bash\nfind / -name \"finance.db\" 1>results.txt 2>/dev/null\n```",
         "options": [
             "h",
             " -name \"finance.db\" 1>results.txt 2>/dev/null",
@@ -60,7 +60,7 @@
         "_ps": 0
     },
     {
-        "question": "Q7. Assuming that user1 existed, what would be the result of this command string?",
+        "question": "Q7. Assuming that user1 existed, what would be the result of this command string?\n```bash\nawk -F: '/user1/{print $1 \"-\" $3 \"-\" $6}' /etc/passwd\n```",
         "options": [
             "h",
             ": '/user1/{print $1 \"-\" $3 \"-\" $6}' /etc/passwd",
@@ -90,7 +90,7 @@
         "_ps": 2
     },
     {
-        "question": "Q10. If file.sql holds SQL statements to be executed, what will be in file.txt?",
+        "question": "Q10. If file.sql holds SQL statements to be executed, what will be in file.txt?\n```bash\nmysql < file.sql > file.txt\n```",
         "options": [
             "h",
             "< file.sql > file.txt",
@@ -120,7 +120,7 @@
         "_ps": 2
     },
     {
-        "question": "Q13. What is the keyboard shortcut to call up the Bash history search as shown below?",
+        "question": "Q13. What is the keyboard shortcut to call up the Bash history search as shown below?\n```bash\n(reverse-i-search)`':\n```",
         "options": [
             "h",
             "se-i-search)`':",
@@ -140,7 +140,7 @@
         "_ps": 3
     },
     {
-        "question": "Q15. What is the result of this script?",
+        "question": "Q15. What is the result of this script?\n```bash\ntxt=Penguins\n[[ $txt =~ [a-z]{8} ]]; echo $?\n```",
         "options": [
             "h",
             "nguins",
@@ -150,7 +150,7 @@
         "_ps": -1
     },
     {
-        "question": "Q16. How would you change your Bash shell prompt to the following?",
+        "question": "Q16. How would you change your Bash shell prompt to the following?\n```bash\nHAL>\n```",
         "options": [
             "h",
             "",
@@ -160,7 +160,7 @@
         "_ps": -1
     },
     {
-        "question": "Q17. What is the output of this code?",
+        "question": "Q17. What is the output of this code?\n```bash\nVAR=\"/var/www/html/website.com/html/\"\necho \"${VAR#*/html}\"\n```",
         "options": [
             "h",
             "var/www/html/website.com/html/\"",
@@ -190,7 +190,7 @@
         "_ps": 0
     },
     {
-        "question": "Q20. What line of Bash script probably produced the output shown below?",
+        "question": "Q20. What line of Bash script probably produced the output shown below?\n```bash\nThe date is: Sun Mar 24 12:30:06 CST 2019!\n```",
         "options": [
             "h",
             "te is: Sun Mar 24 12:30:06 CST 2019!",
@@ -200,7 +200,7 @@
         "_ps": -1
     },
     {
-        "question": "Q21. Suppose your current working directory is your home directory. How could you run the script demo.sh that is located in your home directory? Find three correct answers.",
+        "question": "Q21. Suppose your current working directory is your home directory. How could you run the script demo.sh that is located in your home directory? Find three correct answers.\n```bash\nA. /home/demo.sh\nB. ./demo.sh\nC. ~/demo.sh\nD. bash /home/demo.sh\nE. bash demo.sh\n```",
         "options": [
             "h",
             "me/demo.sh",
@@ -220,7 +220,7 @@
         "_ps": 3
     },
     {
-        "question": "Q23. What would be in out.txt?",
+        "question": "Q23. What would be in out.txt?\n```bash\ncat < in.txt > out.txt\n```",
         "options": [
             "h",
             "in.txt > out.txt",
@@ -230,7 +230,7 @@
         "_ps": -1
     },
     {
-        "question": "Q24. What does this bash statement do?",
+        "question": "Q24. What does this bash statement do?\n```bash\n(( $a == $b ))\necho $?\n```",
         "options": [
             "h",
             "== $b ))",
@@ -250,7 +250,7 @@
         "_ps": 0
     },
     {
-        "question": "Q26. What does the asterisk represent in this statement?",
+        "question": "Q26. What does the asterisk represent in this statement?\n```bash\n<em>#!/usr/bin/env bash</em>\ncase $num in\n\t1)\n\techo \"one\"\n\t; ;\n\t2)\n\techo \"two\"\n\t; ;\n\t*)\n\techo \"a mystery\"\n\t; ;\nesac\n```",
         "options": [
             "h",
             "/usr/bin/env bash</em>",
@@ -280,7 +280,7 @@
         "_ps": 1
     },
     {
-        "question": "Q29. What is the output of this script?",
+        "question": "Q29. What is the output of this script?\n```bash\n#!/bin/bash\nfname=john\njohn=thomas\necho ${!fname}\n```",
         "options": [
             "h",
             "/bash",
@@ -290,7 +290,7 @@
         "_ps": -1
     },
     {
-        "question": "Q30. What will be the output of this script?",
+        "question": "Q30. What will be the output of this script?\n![question](images/Q30/question.png)",
         "options": [
             "tion](images/Q30/question.png)",
             "`A` ![A](images/Q30/A.png)",
@@ -300,7 +300,7 @@
         "_ps": 3
     },
     {
-        "question": "Q31. What is wrong with this script?",
+        "question": "Q31. What is wrong with this script?\n```bash\n#!/bin/bash\nread -p \"Enter your pet type.\" PET\nif [ $PET = dog ] ;then\n    echo \"You have a dog\"\nfi\n```",
         "options": [
             "h",
             "/bash",
@@ -330,7 +330,7 @@
         "_ps": 0
     },
     {
-        "question": "Q34. Which command is being run in this script to check if file.txt exists?",
+        "question": "Q34. Which command is being run in this script to check if file.txt exists?\n```bash\nif [ -f file.txt ]; then\n    echo \"file.txt exists\"\nfi\n```",
         "options": [
             "h",
             "f file.txt ]; then",
@@ -340,7 +340,7 @@
         "_ps": -1
     },
     {
-        "question": "Q35. What will be the output of this script?",
+        "question": "Q35. What will be the output of this script?\n```bash\n#!/bin/bash\nLinux=('Debian' 'Redhat' 'Ubuntu' 'Android' 'Fedora' 'Suse')\nx=3\nLinux=(${Linux[@]:0:$x} ${Linux[@]:$(($x + 1))})\necho \"${Linux[@]}\"\n```",
         "options": [
             "h",
             "/bash",
@@ -360,7 +360,7 @@
         "_ps": 1
     },
     {
-        "question": "Q37. Given the listed permissions on data.txt is it possible that user2 could have read, write, and execute permissions on data.txt?",
+        "question": "Q37. Given the listed permissions on data.txt is it possible that user2 could have read, write, and execute permissions on data.txt?\n```bash\n$ ls -l\ntotal 0\n-rwx------+ 1 user1 user1 0 Oct 27 10:54 data.txt\n```",
         "options": [
             "h",
             "l",
@@ -370,7 +370,7 @@
         "_ps": -1
     },
     {
-        "question": "Q38. What does this script accomplish?",
+        "question": "Q38. What does this script accomplish?\n```bash\n#!/bin/bash\ndeclare -A ARRAY=([user1]=bob [user2]=ted [user3]=sally)\nKEYS=(${!ARRAY[@]})\nfor (( i=0; $i < ${#ARRAY[@]}; i+=1 ));do\n        echo ${KEYS[$i]} - ${ARRAY[${KEYS[$i]}]}\ndone\n```",
         "options": [
             "h",
             "/bash",
@@ -380,7 +380,7 @@
         "_ps": -1
     },
     {
-        "question": "Q39. What file would match the code below?",
+        "question": "Q39. What file would match the code below?\n```bash\nls Hello[[.vertical-line.]]World\n```",
         "options": [
             "h",
             "lo[[.vertical-line.]]World",
@@ -390,7 +390,7 @@
         "_ps": -1
     },
     {
-        "question": "Q40. What will be in out.txt?",
+        "question": "Q40. What will be in out.txt?\n```bash\nls nonexistentfile | grep \"No such file\" > out.txt\n```",
         "options": [
             "h",
             "existentfile | grep \"No such file\" > out.txt",
@@ -400,7 +400,7 @@
         "_ps": -1
     },
     {
-        "question": "Q41. For the script to print \"Is numeric\" on screen, what would the user have to enter when prompted?",
+        "question": "Q41. For the script to print \"Is numeric\" on screen, what would the user have to enter when prompted?\n```bash\n#!/bin/bash\nread -p \"Enter text \" var\nif [[ \"$var\" =~ \"^[0-9]+$\" ]];then\n    echo \"Is numeric\"\nelse\n    echo \"Is not numeric\"\nfi\n```",
         "options": [
             "h",
             "/bash",
@@ -410,7 +410,7 @@
         "_ps": -1
     },
     {
-        "question": "Q42. What will be the difference between the output on the screen and the contents of out.txt",
+        "question": "Q42. What will be the difference between the output on the screen and the contents of out.txt\n```bash\nmysql < file.sql > out.txt\n```",
         "options": [
             "h",
             "< file.sql > out.txt",
@@ -450,7 +450,7 @@
         "_ps": 0
     },
     {
-        "question": "Q46. In the script shown below, what is **greeting**?",
+        "question": "Q46. In the script shown below, what is **greeting**?\n```bash\n<em>#!/usr/bin/env bash</em>\ngreeting=\"Hello\"\necho $greeting, everybody!\n```",
         "options": [
             "h",
             "/usr/bin/env bash</em>",
@@ -470,7 +470,7 @@
         "_ps": 2
     },
     {
-        "question": "Q48. Using Bash extended globbing, what will be the output of this command?",
+        "question": "Q48. Using Bash extended globbing, what will be the output of this command?\n```bash\n$ ls -l\napple\nbanana\nbananapple\nbanapple\npineapple\nstrawberry\n$ shopt -s extglob\n$ ls -l @(ba*(na)|a+(p)le)\n```\n```bash\napple\nbanana\n```\n```bash\napple\nbanana\nbananapple\nbanapple\npineapple\nstrawberry\n```\n```bash\napple\nbanana\nbananappple\nbanapple\npineapple\n```",
         "options": [
             "h",
             "l",
@@ -490,7 +490,7 @@
         "_ps": 0
     },
     {
-        "question": "Q50. What does the + signify at the end of the 10-digit file permissions on data.txt?",
+        "question": "Q50. What does the + signify at the end of the 10-digit file permissions on data.txt?\n```bash\nls -l\n-rwx------+ 1 user1 u1 0 Oct 1 10:00 data.txt\n```",
         "options": [
             "h",
             "",
@@ -500,7 +500,7 @@
         "_ps": -1
     },
     {
-        "question": "Q51. In Bash, what does the comment below do?",
+        "question": "Q51. In Bash, what does the comment below do?\n```bash\ncd -\n```",
         "options": [
             "h",
             "",
@@ -510,7 +510,7 @@
         "_ps": 3
     },
     {
-        "question": "Q52. What does this command do?",
+        "question": "Q52. What does this command do?\n```bash\ncat > notes -\n```",
         "options": [
             "h",
             "notes -",
@@ -520,7 +520,7 @@
         "_ps": 3
     },
     {
-        "question": "Q53. What is the output of:",
+        "question": "Q53. What is the output of:\n```bash\nVAR=\"This old man came rolling\"\necho \"\\${VAR//man/rolling}\"\n```",
         "options": [
             "h",
             "his old man came rolling\"",
@@ -540,7 +540,7 @@
         "_ps": 1
     },
     {
-        "question": "Q55. What does this command sequence do?",
+        "question": "Q55. What does this command sequence do?\n```bash\ncat >notes -\n```",
         "options": [
             "h",
             "otes -",
@@ -550,7 +550,7 @@
         "_ps": -1
     },
     {
-        "question": "Q56. What is the output of this code?",
+        "question": "Q56. What is the output of this code?\n```bash\nVAR=\"This old man came rolling\"\necho \"${VAR//man/rolling}\"\n```",
         "options": [
             "h",
             "his old man came rolling\"",
@@ -560,7 +560,7 @@
         "_ps": -1
     },
     {
-        "question": "Q57. What statement would you use to print this in the console?",
+        "question": "Q57. What statement would you use to print this in the console?\n`Shall we play a game? yes\\no`",
         "options": [
             " we play a game? yes\\no`",
             "`echo \"Shall we play a game? yes/\\no\"`",
@@ -570,7 +570,7 @@
         "_ps": 3
     },
     {
-        "question": "Q58. Given a directory with these seven files, what would remain after executing these commands?",
+        "question": "Q58. Given a directory with these seven files, what would remain after executing these commands?\n```bash\narchive.tar\nimage1.gif\nimage1.jpg\nimage2.gif\nimage2.jpg\ntextfile1.txt\ntextfile2.txt\n----------\n`shopt -s extglob\nrm !(*gif|*jpg)`\n```\n```bash\narchive.tar\nimage1.gif\nimage1.jpg\nimage2.gif\nimage2.jpg\ntextfile1.txt\ntextfile2.txt\n```\n```bash\narchive.tar\ntextfile1.txt\ntextfile2.txt\n```\nAll of this files will be deleted",
         "options": [
             "h",
             "e.tar",
@@ -580,7 +580,7 @@
         "_ps": -1
     },
     {
-        "question": "Q59. The code below seems to work and outputs \"8 is greater than 5\". However, what unexpected result will tell you it is not functioning properly?",
+        "question": "Q59. The code below seems to work and outputs \"8 is greater than 5\". However, what unexpected result will tell you it is not functioning properly?\n```bash\n#!/bin/bash\nvar=\"8\"\nif [ $var > 5 ]; then\n    echo \"$var is greater than 5\"\nfi\n```",
         "options": [
             "h",
             "/bash",
@@ -590,7 +590,7 @@
         "_ps": -1
     },
     {
-        "question": "Q60. What is the result of this script?",
+        "question": "Q60. What is the result of this script?\n![question](images/Q60/question.png)",
         "options": [
             "tion](images/Q60/question.png)",
             "It removes the directory 'foo' and the files contained within it.",
@@ -610,7 +610,7 @@
         "_ps": 0
     },
     {
-        "question": "Q62. Which does the below command do?",
+        "question": "Q62. Which does the below command do?\n```bash\nw\n```",
         "options": [
             "h",
             "",
@@ -620,7 +620,7 @@
         "_ps": -1
     },
     {
-        "question": "Q63. Which sed options should you use to change the second-to-last instance of variable to rock so it would read:",
+        "question": "Q63. Which sed options should you use to change the second-to-last instance of variable to rock so it would read:\nA constant is a variable that is a rock that isn't variable\n```bash\nvar=\"A constant is a variable that is a variable that isn't variable\"\necho \"$var\" | sed _____\n```",
         "options": [
             "tant is a variable that is a rock that isn't variable",
             "h",
@@ -680,7 +680,7 @@
         "_ps": 3
     },
     {
-        "question": "Q69. What are the results of the command with a user named jon?",
+        "question": "Q69. What are the results of the command with a user named jon?\n```bash\necho 'Hello, $(whoami)!'\n```",
         "options": [
             "h",
             "Hello, $(whoami)!'",
@@ -730,7 +730,7 @@
         "_ps": 0
     },
     {
-        "question": "Q74. What will be the output of this command?",
+        "question": "Q74. What will be the output of this command?\n```bash\n$ ls -l\nfile10.txt\nfile1.txt\nfileabc.txt\nfilea.txt\nfileb.txt\nfilec.txt\n$ ls -l file[^abc]*.txt\n```\n```bash\nfile1.txt\nfile10.txt\n```\n```bash\nfile10.txt\nfile1.txt\nfileabc.txt\nfilea.txt\nfileb.txt\nfilec.txt\n```\n```bash\nfileabc.txt filea.txt fileb.txt filec.txt\n```",
         "options": [
             "h",
             "l",
@@ -740,7 +740,7 @@
         "_ps": -1
     },
     {
-        "question": "Q75. What is the output of this command sequence?",
+        "question": "Q75. What is the output of this command sequence?\n```bash\ncat <<EOF\n------------------------\n   This is line 1.\n   This is line 2.\n   This is line 3.\n------------------------\nEOF\n```\n```bash\nThis is line 1.\nThis is line 2.\nThis is line 3.\n```\n```bash\n------------------------This is line 1.This is line 2.This is line 3.------------------------\n```\n```bash\n------------------------\n   This is line 1.\n   This is line 2.\n   This is line 3.\n------------------------\n```",
         "options": [
             "h",
             "EOF",
@@ -750,7 +750,7 @@
         "_ps": -1
     },
     {
-        "question": "Q76. What would be in out.txt?",
+        "question": "Q76. What would be in out.txt?\n```bash\n#!/bin/bash\necho 123446789 > out. txt\nexec 3<> out. txt\nread -n 4 <&3\necho -n 5 >&3\nexec 3>&-\n```",
         "options": [
             "h",
             "/bash",

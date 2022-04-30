@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. What would happen to the fill color of the object shown below if you copied and pasted it into another Illustrator file where the Document Color Mode was set to CMYK?",
+        "question": "Q1. What would happen to the fill color of the object shown below if you copied and pasted it into another Illustrator file where the Document Color Mode was set to CMYK?\n![CMYK](images/002.png?raw=true)",
         "options": [
             "](images/002.png?raw=true)",
             "The fill color would be converted to CMYK values",
@@ -10,7 +10,7 @@
         "_ps": 1
     },
     {
-        "question": "Q2. You want to add some stars to the circular background object in the image below, using a scatter brush. How can you ensure that the stars appear only inside the circle?",
+        "question": "Q2. You want to add some stars to the circular background object in the image below, using a scatter brush. How can you ensure that the stars appear only inside the circle?\n![Add stars](images/006.png?raw=true)",
         "options": [
             "stars](images/006.png?raw=true)",
             "Select the Screen blending mode before you brush.",
@@ -40,7 +40,7 @@
         "_ps": 0
     },
     {
-        "question": "Q5. Which effect was used to give depth to the outline of California below?",
+        "question": "Q5. Which effect was used to give depth to the outline of California below?\n`A map of California has a light beige main color and a small dark shadow.`",
         "options": [
             " of California has a light beige main color and a small dark shadow.`",
             "3D Extrude & Bevel",
@@ -60,7 +60,7 @@
         "_ps": 2
     },
     {
-        "question": "Q7. You need to change the fill color of all the info circles in the map below. The circles were not created from a symbol. Other than Global Edit, which command would help you accomplish this task efficiently?",
+        "question": "Q7. You need to change the fill color of all the info circles in the map below. The circles were not created from a symbol. Other than Global Edit, which command would help you accomplish this task efficiently?\n`A map of Southern California includes many info circles shaded in light blue.`",
         "options": [
             " of Southern California includes many info circles shaded in light blue.`",
             "Recolor Artwork",
@@ -70,7 +70,7 @@
         "_ps": -1
     },
     {
-        "question": "Q8. How can you reverse the direction of all the arrows on the spiral in the image below?",
+        "question": "Q8. How can you reverse the direction of all the arrows on the spiral in the image below?\n`A red lines spirals clockwise in, towards the center. Arrows along the line point in that direction.`",
         "options": [
             " lines spirals clockwise in, towards the center. Arrows along the line point in that direction.`",
             "Select Object > Path > Reverse Path Direction.",
@@ -80,7 +80,7 @@
         "_ps": 1
     },
     {
-        "question": "Q9. What would you do to the left anchor point to make the object symmetrical?",
+        "question": "Q9. What would you do to the left anchor point to make the object symmetrical?\n![Make symmetrical](images/005.png?raw=true)",
         "options": [
             " symmetrical](images/005.png?raw=true)",
             "Remove it.",
@@ -220,7 +220,7 @@
         "_ps": 1
     },
     {
-        "question": "Q23. In the image below, you are attempting to use the Join tool to remove the overlapping portions of two paths (highlighted in yellow), but nothing seems to be happening. Why is this?",
+        "question": "Q23. In the image below, you are attempting to use the Join tool to remove the overlapping portions of two paths (highlighted in yellow), but nothing seems to be happening. Why is this?\n![Overlapping circles](images/009.png?raw=true)",
         "options": [
             "lapping circles](images/009.png?raw=true)",
             "The paths do not have a fill attribute.",
@@ -250,7 +250,7 @@
         "_ps": 2
     },
     {
-        "question": "Q26. What is the meaning of the three dots on the cloud icon in the image below?",
+        "question": "Q26. What is the meaning of the three dots on the cloud icon in the image below?\n![Cloud icon](images/007.png?raw=true)",
         "options": [
             "d icon](images/007.png?raw=true)",
             "The Alana fonts are deactivated.",
@@ -260,7 +260,7 @@
         "_ps": 3
     },
     {
-        "question": "Q27. What command would you apply to make objects beneath the selected artwork visible inside the circle?",
+        "question": "Q27. What command would you apply to make objects beneath the selected artwork visible inside the circle?\n`A yellow rectangle has a circular selection in the center.`",
         "options": [
             "low rectangle has a circular selection in the center.`",
             "Make Pattern",
@@ -300,7 +300,7 @@
         "_ps": 3
     },
     {
-        "question": "Q31. When viewing the artwork shown below in Outline mode, what can you tell about the word \"backpack\"?",
+        "question": "Q31. When viewing the artwork shown below in Outline mode, what can you tell about the word \"backpack\"?\n![Outline mode](images/008.png?raw=true)",
         "options": [
             "ine mode](images/008.png?raw=true)",
             "It has been converted to outlines.",
@@ -390,7 +390,7 @@
         "_ps": 1
     },
     {
-        "question": "Q40. You have designed the product label shown below. Your client wants the black circle to print as dark as possible and requires that none of the colorful logo elements show through the circle when the label is printed. What should you do?",
+        "question": "Q40. You have designed the product label shown below. Your client wants the black circle to print as dark as possible and requires that none of the colorful logo elements show through the circle when the label is printed. What should you do?\n![Label](images/003.png?raw=true)",
         "options": [
             "l](images/003.png?raw=true)",
             "Select the circle and turn on Overprint Fill in the Attributes panel.",
@@ -420,7 +420,7 @@
         "_ps": 2
     },
     {
-        "question": "Q43. In the gift card shown below, the magenta flower petals need to be printed with a varnish. How would you set up the file so the varnish is applied over the magenta color of the petals?",
+        "question": "Q43. In the gift card shown below, the magenta flower petals need to be printed with a varnish. How would you set up the file so the varnish is applied over the magenta color of the petals?\n![Gift card](images/004.png?raw=true)",
         "options": [
             " card](images/004.png?raw=true)",
             "Use File Info to leave instructions for your print service provider.",
@@ -520,7 +520,7 @@
         "_ps": 1
     },
     {
-        "question": "Q53. The illustrator tool which is shown as a white arrow is known as the `___`",
+        "question": "Q53. The illustrator tool which is shown as a white arrow is known as the `___`\n![white arrow](images/001.png?raw=true)",
         "options": [
             "e arrow](images/001.png?raw=true)",
             "Selection tool",
@@ -650,7 +650,7 @@
         "_ps": 1
     },
     {
-        "question": "Q66. Why does the top point of this star appear different from the other points?",
+        "question": "Q66. Why does the top point of this star appear different from the other points?\n![yellow star](images/010.png?raw=true)",
         "options": [
             "ow star](images/010.png?raw=true)",
             "The stroke has been outlined.",
@@ -750,7 +750,7 @@
         "_ps": -1
     },
     {
-        "question": "Q76. Which option do you use to create the stroke shown below?",
+        "question": "Q76. Which option do you use to create the stroke shown below?\n`<img width=\"400\" alt=\"011\" src=\"https://user-images.githubusercontent.com/13102859/135642887-d7dc854e-0eab-42cc-922e-1f3c04ce55c3.png\">`",
         "options": [
             "width=\"400\" alt=\"011\" src=\"https://user-images.githubusercontent.com/13102859/135642887-d7dc854e-0eab-42cc-922e-1f3c04ce55c3.png\">`",
             "Round Join",

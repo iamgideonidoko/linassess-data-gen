@@ -30,7 +30,7 @@
         "_ps": 0
     },
     {
-        "question": "Q4. How will you add the number 3 to the right side?",
+        "question": "Q4. How will you add the number 3 to the right side?\n`values := []int{1, 1, 2}`",
         "options": [
             "s := []int{1, 1, 2}`",
             "`values.append(3)`",
@@ -40,7 +40,7 @@
         "_ps": -1
     },
     {
-        "question": "Q5. What is the value of `Read`?",
+        "question": "Q5. What is the value of `Read`?\n```go\nconst (\n  Write = iota\n  Read\n  Execute\n)\n```",
         "options": [
             "",
             "(",
@@ -60,7 +60,7 @@
         "_ps": 3
     },
     {
-        "question": "Q7. What would happen if you attempted to compile and run this Go program?",
+        "question": "Q7. What would happen if you attempted to compile and run this Go program?\n```go\npackage main\nvar GlobalFlag string\nfunc main() {\n  print(\"[\"+GlobalFlag+\"]\")\n}\n```",
         "options": [
             "",
             "e main",
@@ -90,7 +90,7 @@
         "_ps": 3
     },
     {
-        "question": "Q10. This code printed `{0, 0}`. How can you fix it?",
+        "question": "Q10. This code printed `{0, 0}`. How can you fix it?\n```go\ntype Point struct {\n  x int\n  y int\n}\nfunc main() {\n  data := []byte(`{\"x\":1, \"y\": 2}`)\n  var p Point\n  if err := json.Unmarshal(data, &p); err != nil {\n    fmt.Println(\"error: \", err)\n  } else {\n    fmt.Println(p)\n  }\n}\n```",
         "options": [
             "",
             "oint struct {",
@@ -140,7 +140,7 @@
         "_ps": 3
     },
     {
-        "question": "Q15. According to the Go documentation standard, how should you document this function?",
+        "question": "Q15. According to the Go documentation standard, how should you document this function?\n```go\nfunc Add(a, b int) {\n  return a + b\n}\n```\n```go\n// Calculate a + b\n// - a: int\n// - b: int\n// - returns: int\nfunc Add(a, b int) {\n  return a + b\n}\n```\n```go\n// Does a + b\nfunc Add(a, b int) {\n  return a + b\n}\n```\n```go\n// Add returns the sum of a and b\nfunc Add(a, b int) {\n  return a + b\n}\n```",
         "options": [
             "",
             "dd(a, b int) {",
@@ -180,7 +180,7 @@
         "_ps": 3
     },
     {
-        "question": "Q19. What is the correct way to pass this as a body of an HTTP POST request?",
+        "question": "Q19. What is the correct way to pass this as a body of an HTTP POST request?\n```go\ndata := \"A group of Owls is called a parliament\"\n```",
         "options": [
             "",
             "= \"A group of Owls is called a parliament\"",
@@ -350,7 +350,7 @@
         "_ps": 3
     },
     {
-        "question": "Q36. What will be the output of this code?",
+        "question": "Q36. What will be the output of this code?\n```\nch := make(chan int)\nch <- 7\nval := <-ch\nfmt.Println(val)\n```",
         "options": [
             "",
             "make(chan int)",
@@ -360,7 +360,7 @@
         "_ps": -1
     },
     {
-        "question": "Q37. What will be the output of this program?",
+        "question": "Q37. What will be the output of this program?\n```\nch := make(chan int)\nclose(ch)\nval := <-ch\nfmt.Println(val)\n```",
         "options": [
             "",
             "make(chan int)",
@@ -370,7 +370,7 @@
         "_ps": -1
     },
     {
-        "question": "Q38. What will be printed in this code?",
+        "question": "Q38. What will be printed in this code?\n```\nvar stocks map[string]float64 // stock -> price\nprice := stocks[\"MSFT\"]\nfmt.Println(\"%f\\n\", price)\n```",
         "options": [
             "",
             "ocks map[string]float64 // stock -> price",

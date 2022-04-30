@@ -160,7 +160,7 @@
         "_ps": 0
     },
     {
-        "question": "Q17. What happens in this SmartArt object when you press the Delete key?",
+        "question": "Q17. What happens in this SmartArt object when you press the Delete key?\n![image](images/001.png)",
         "options": [
             "e](images/001.png)",
             "The boxes resize to maintain the same overall height.",
@@ -170,7 +170,7 @@
         "_ps": 1
     },
     {
-        "question": "Q18. What happens in this SmartArt diagram when you delete the selected object?",
+        "question": "Q18. What happens in this SmartArt diagram when you delete the selected object?\n![image](images/001.png)",
         "options": [
             "e](images/001.png)",
             "The text from the deleted box merges with the next box's text.",
@@ -250,7 +250,7 @@
         "_ps": 3
     },
     {
-        "question": "Q26. Your document contains two columns of content with a vertical line between the columns, as shown. From where can you delete the line?",
+        "question": "Q26. Your document contains two columns of content with a vertical line between the columns, as shown. From where can you delete the line?\n![image](images/003.png)",
         "options": [
             "e](images/003.png)",
             "Insert > Text",
@@ -330,7 +330,7 @@
         "_ps": 2
     },
     {
-        "question": "Q34. Which formatting option was used to create the effect shown below?",
+        "question": "Q34. Which formatting option was used to create the effect shown below?\n![image](images/004.png)",
         "options": [
             "e](images/004.png)",
             "Drop Cap",
@@ -350,7 +350,7 @@
         "_ps": 0
     },
     {
-        "question": "Q36. You have been reviewing a Word document using Track Changes. There are still changes that need to be reviewed, but you cannot see them. Why is this? (Select all that apply.)",
+        "question": "Q36. You have been reviewing a Word document using Track Changes. There are still changes that need to be reviewed, but you cannot see them. Why is this? (Select all that apply.)\n```\nA. Display for Review is set to No Markup.\nB. Track changes has been turned off.\nC. Display for Review is set to Original.\nD. Inserts and Deletions and Formatting are turned off in Show Markup.\n```",
         "options": [
             "",
             "play for Review is set to No Markup.",
@@ -380,7 +380,7 @@
         "_ps": 2
     },
     {
-        "question": "Q39. You need to add a trademark symbol to a new product name. How can you accomplish this? (Select two items.)",
+        "question": "Q39. You need to add a trademark symbol to a new product name. How can you accomplish this? (Select two items.)\n```\n A. Type \"(TM)\".\n B. On the **Insert** tab, in the **Symbols** group, select **Symbol**. From the symbols gallery, select the trademark symbol, then click **Insert**.\n C. On the **Insert** Tab, in the **Illustrations** group, select **Icons**. From the icons gallery, select the **Signs and Symbols** category. Then select the trademark symbol and click **Insert**.\n D. Type \"(R)\".\n```",
         "options": [
             "",
             "pe \"(TM)\".",
@@ -490,7 +490,7 @@
         "_ps": 0
     },
     {
-        "question": "Q50. In the image below, what do the red bars next to the text indicate?",
+        "question": "Q50. In the image below, what do the red bars next to the text indicate?\n![image](images/002.png)",
         "options": [
             "e](images/002.png)",
             "Draw tools were used in these areas.",
@@ -550,7 +550,7 @@
         "_ps": 3
     },
     {
-        "question": "Q56. You want to be able to edit your Word document simultaneously with other Word users in your organization. Which save location should you select in the Save As dialog box?",
+        "question": "Q56. You want to be able to edit your Word document simultaneously with other Word users in your organization. Which save location should you select in the Save As dialog box?\nA. OneDrive\nB. SharePoint document library\nC. Google Drive\nD. DropBox",
         "options": [
             "Drive",
             "rePoint document library",
@@ -580,7 +580,7 @@
         "_ps": 1
     },
     {
-        "question": "Q59. How can you tell if a colleague is coauthoring a document at the same time as you? (Select all that apply.)",
+        "question": "Q59. How can you tell if a colleague is coauthoring a document at the same time as you? (Select all that apply.)\n```markdown\nA. Colleague's name appears in the Share panel.\nB. Colleague's picture appears in the upper-right corner of the ribbon.\nC. A banner notification pops up as the colleague edits the document.\nD. A flag icon with the colleague's name appears where their edit is being made.\n```",
         "options": [
             "kdown",
             "league's name appears in the Share panel.",
@@ -610,7 +610,7 @@
         "_ps": 1
     },
     {
-        "question": "Q62. REMOVED (Duplicate of Q5)",
+        "question": "Q62. REMOVED (Duplicate of Q5)\n#### Q63. Which object can you NOT insert into a Word document from the Insert tab?",
         "options": [
             "63. Which object can you NOT insert into a Word document from the Insert tab?",
             "a 3D model",
@@ -660,7 +660,7 @@
         "_ps": 0
     },
     {
-        "question": "Q67. What is the difference between a footnote and an endnote?",
+        "question": "Q67. What is the difference between a footnote and an endnote?\nDuplicated with Q33.",
         "options": [
             "ated with Q33.",
             "An endnote always appears on the bottom of the same page that it references",
@@ -670,7 +670,7 @@
         "_ps": 3
     },
     {
-        "question": "Q68. In the image below, where do you click to hide comments when a document prints?",
+        "question": "Q68. In the image below, where do you click to hide comments when a document prints?\n![image](https://i.imgur.com/JjdzceL.png)",
         "options": [
             "e](https://i.imgur.com/JjdzceL.png)",
             "A",
@@ -770,7 +770,7 @@
         "_ps": 2
     },
     {
-        "question": "Q78. In this image, what do the red lines next to the text indicate?",
+        "question": "Q78. In this image, what do the red lines next to the text indicate?\nDuplicated with Q50.\n![image](https://i.imgur.com/JUbaoyO.png)",
         "options": [
             "ated with Q50.",
             "e](https://i.imgur.com/JUbaoyO.png)",

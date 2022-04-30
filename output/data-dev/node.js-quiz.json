@@ -160,7 +160,7 @@
         "_ps": 1
     },
     {
-        "question": "Q17. Which statement is true when you run the code shown below?",
+        "question": "Q17. Which statement is true when you run the code shown below?\n`require('child_process').fork('script.js');`",
         "options": [
             "re('child_process').fork('script.js');`",
             "The forked process shares the event loop with the parent process",
@@ -230,7 +230,7 @@
         "_ps": 2
     },
     {
-        "question": "Q24. Looking at the code below, what does the console show?",
+        "question": "Q24. Looking at the code below, what does the console show?\n```\nconst http = require('http');\n const hostname = '127.0.0.1'; const port = 3000;\n const server = http.createServer((req, res) => {\n  res.statusCode = 200;  res.setHeader(\"Content-Type\", \"text/plain\");  res.end(\"Hello World\\n\");\n});\nserver.listen(port, hostname, () => { console.log(`server running at http://${hostname}:${port}/`); });\n```",
         "options": [
             "",
             "http = require('http');",
@@ -260,7 +260,7 @@
         "_ps": 2
     },
     {
-        "question": "Q27.What does the code shown below do?",
+        "question": "Q27.What does the code shown below do?\n```\nconst fs = require('fs'); const os = require('os');\nconst system = os.platform(); const user = os.userInfo().username;\nfs.appendFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}\n);\n```",
         "options": [
             "",
             "fs = require('fs'); const os = require('os');",
@@ -310,7 +310,7 @@
         "_ps": 0
     },
     {
-        "question": "Q32. You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?",
+        "question": "Q32. You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?\n`console.log(arguments);`",
         "options": [
             "le.log(arguments);`",
             "ReferenceError: arguments is not defined",
@@ -600,7 +600,7 @@
         "_ps": 3
     },
     {
-        "question": "Q61. What will this code log to the console?",
+        "question": "Q61. What will this code log to the console?\n```\n// File: person.js\nexports.name = \"Jane\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```",
         "options": [
             "",
             "e: person.js",
@@ -610,7 +610,7 @@
         "_ps": -1
     },
     {
-        "question": "Q62. What will this code log to the console?",
+        "question": "Q62. What will this code log to the console?\n```\n// File: person.js\nexports = \"John\";\n// File: index.js\nconst person = require('./person.js');\nconsole.log(person);\n```",
         "options": [
             "",
             "e: person.js",

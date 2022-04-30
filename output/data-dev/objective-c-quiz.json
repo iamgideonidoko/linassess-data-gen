@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. What is the value of s?",
+        "question": "Q1. What is the value of s?\n```\nNSMutableString *s = [NSMutableString stringWithString: @\"123\"];\n[s appendString: @\"456\"];\n```",
         "options": [
             "",
             "bleString *s = [NSMutableString stringWithString: @\"123\"];",
@@ -10,7 +10,7 @@
         "_ps": -1
     },
     {
-        "question": "Q2. What's the value of i after these statements?",
+        "question": "Q2. What's the value of i after these statements?\n```\nNSString *str = nil;\nNSInteger i = str.integerValue;\n```",
         "options": [
             "",
             "ng *str = nil;",
@@ -20,7 +20,7 @@
         "_ps": -1
     },
     {
-        "question": "Q3. What value is in str after this line in executed?",
+        "question": "Q3. What value is in str after this line in executed?\n`NSString str = \"test\" + \" \" + \"more\";`",
         "options": [
             "ing str = \"test\" + \" \" + \"more\";`",
             "This code contains an error",
@@ -30,7 +30,7 @@
         "_ps": 1
     },
     {
-        "question": "Q4. What does this code print?",
+        "question": "Q4. What does this code print?\n```\n    NSPredicate *p2 = [NSPredicate predicateWithBlock:^BOOL(NSString*  evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {\n      return evaluatedObject.intValue % 2 == 0;\n    }];\n    NSArray *vals = @[@\"1\", @\"2\", @\"3\"];\n    NSArray *n2 = [vals filteredArrayUsingPredicate:p2];\n    NSLog(@\"%@\", n2.firstObject);\n```",
         "options": [
             "",
             "Predicate *p2 = [NSPredicate predicateWithBlock:^BOOL(NSString*  evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {",
@@ -60,7 +60,7 @@
         "_ps": 0
     },
     {
-        "question": "Q7. What is foo?",
+        "question": "Q7. What is foo?\n`-(float)foo;`",
         "options": [
             "at)foo;`",
             "A function with a return type of float.",
@@ -70,7 +70,7 @@
         "_ps": 1
     },
     {
-        "question": "Q8. What can you glean from this line?",
+        "question": "Q8. What can you glean from this line?\n`#import \"NSString+NameHelper.h\"`",
         "options": [
             "rt \"NSString+NameHelper.h\"`",
             "NameHelper is a category of NSString.",
@@ -80,7 +80,7 @@
         "_ps": 1
     },
     {
-        "question": "Q9. What's wrong with this code?",
+        "question": "Q9. What's wrong with this code?\n`float x = 5.;`",
         "options": [
             " x = 5.;`",
             "Nothing is wrong with this code.",
@@ -90,7 +90,7 @@
         "_ps": 1
     },
     {
-        "question": "Q10. How many times with this loop be executed?",
+        "question": "Q10. How many times with this loop be executed?\n```\nfor (int x=0; x<100; x++) {\n  x = x + 1;\n}\n```",
         "options": [
             "",
             "nt x=0; x<100; x++) {",
@@ -100,7 +100,7 @@
         "_ps": -1
     },
     {
-        "question": "Q11. What is this code an example of?",
+        "question": "Q11. What is this code an example of?\n`[self addObserver: self forKeyPath: @\"val\" options:0 context: nil];`",
         "options": [
             " addObserver: self forKeyPath: @\"val\" options:0 context: nil];`",
             "Key-Value Observing",
@@ -120,7 +120,7 @@
         "_ps": 0
     },
     {
-        "question": "Q13. What is printed for this code?",
+        "question": "Q13. What is printed for this code?\n```\nint val = 0;\nval = 1.5;\nprintf(\"%d\", val);\n```",
         "options": [
             "",
             "l = 0;",
@@ -140,7 +140,7 @@
         "_ps": 0
     },
     {
-        "question": "Q15. How many keys does this NSDictionary have after this code is executed?",
+        "question": "Q15. How many keys does this NSDictionary have after this code is executed?\n`NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys: @\"b\", @\"e\", @\"a\", @\"r\", nil];`",
         "options": [
             "tionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys: @\"b\", @\"e\", @\"a\", @\"r\", nil];`",
             "2",
@@ -150,7 +150,7 @@
         "_ps": 1
     },
     {
-        "question": "Q16. What is wrong with this code?",
+        "question": "Q16. What is wrong with this code?\n```\nNSMutableDictionary *dict1 = [NSMutableDictionary dictionaryWithCapacity:5];\n[dict1 setValue:@\"key\" forKey:@\"value\"];\n```",
         "options": [
             "",
             "bleDictionary *dict1 = [NSMutableDictionary dictionaryWithCapacity:5];",
@@ -160,7 +160,7 @@
         "_ps": -1
     },
     {
-        "question": "Q17. What is printed from this code?",
+        "question": "Q17. What is printed from this code?\n```\nNSData *data = [@\"print\" dataUsingEncoding:NSASCIIStringEncoding];\nNSLog(@\"%@\", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);\n```",
         "options": [
             "",
             " *data = [@\"print\" dataUsingEncoding:NSASCIIStringEncoding];",
@@ -170,7 +170,7 @@
         "_ps": -1
     },
     {
-        "question": "Q18. What is different about this function?",
+        "question": "Q18. What is different about this function?\n`+(void)doSomething;`",
         "options": [
             "d)doSomething;`",
             "It is static",
@@ -190,7 +190,7 @@
         "_ps": 2
     },
     {
-        "question": "Q20. What is wrong with this code?",
+        "question": "Q20. What is wrong with this code?\n```\n@interface MyClass : NSObject\n    @property (strong, nonatomic, readonly) NSString *name;\n  @end\n```",
         "options": [
             "",
             "face MyClass : NSObject",
@@ -200,7 +200,7 @@
         "_ps": -1
     },
     {
-        "question": "Q21. What is an enums base type for the code below?",
+        "question": "Q21. What is an enums base type for the code below?\n`typedef enum { Foo1, Foo2} Foo;`",
         "options": [
             "ef enum { Foo1, Foo2} Foo;`",
             "There is no base type.",
@@ -230,7 +230,7 @@
         "_ps": 0
     },
     {
-        "question": "Q24. What is this Objective-C code checking?",
+        "question": "Q24. What is this Objective-C code checking?\n```\nif ([keyPath isInstanceOf:[NSString class]]) {\n}\n```",
         "options": [
             "",
             "eyPath isInstanceOf:[NSString class]]) {",
@@ -240,7 +240,7 @@
         "_ps": -1
     },
     {
-        "question": "Q25. What is this a declaration of?",
+        "question": "Q25. What is this a declaration of?\n`int(^foo)(int);`",
         "options": [
             "foo)(int);`",
             "an Extension",
@@ -250,7 +250,7 @@
         "_ps": 3
     },
     {
-        "question": "Q26. For observing changes to a property, which of these two statements cause the related method to be called and why?",
+        "question": "Q26. For observing changes to a property, which of these two statements cause the related method to be called and why?\n```\n1. _val = 1;\n2. self.val= 100;\n```",
         "options": [
             "",
             "l = 1;",
@@ -260,7 +260,7 @@
         "_ps": -1
     },
     {
-        "question": "Q27. What is wrong with this code?",
+        "question": "Q27. What is wrong with this code?\n```\nfloat x = 2.0;\nint(^foo)(int) = ^(int n1) {\n  return (int)(n1*x);\n};\nfoo(5);\n```",
         "options": [
             "",
             "x = 2.0;",
@@ -290,7 +290,7 @@
         "_ps": 2
     },
     {
-        "question": "Q30. What is the value of newVals after this code is executed?",
+        "question": "Q30. What is the value of newVals after this code is executed?\n```\n    NSArray *vals = @[@\"1\", @\"2\", @\"3\"];\n    NSPredicate *pred = [NSPredicate predicateWithFormat:@\"SELF.intValue > 1\"];\n    NSArray *newVals = [vals filteredArrayUsingPredicate:pred];\n```",
         "options": [
             "",
             "Array *vals = @[@\"1\", @\"2\", @\"3\"];",
@@ -300,7 +300,7 @@
         "_ps": -1
     },
     {
-        "question": "Q31. How would this function be called?",
+        "question": "Q31. How would this function be called?\n`-(int)foo:(int)a b:(int)c;`",
         "options": [
             ")foo:(int)a b:(int)c;`",
             "self.foo(5, b:10);",
@@ -310,7 +310,7 @@
         "_ps": -1
     },
     {
-        "question": "Q32. What is the type of the error return value stored in json?",
+        "question": "Q32. What is the type of the error return value stored in json?\n```\n    NSError *error;\n    NSData *data;\n    id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];\n```",
         "options": [
             "",
             "Error *error;",
@@ -320,7 +320,7 @@
         "_ps": -1
     },
     {
-        "question": "Q33. What is significant about this function declaration?",
+        "question": "Q33. What is significant about this function declaration?\n```\n    -(void)testFunc:(NSString**)str;\n```",
         "options": [
             "",
             "void)testFunc:(NSString**)str;",
@@ -330,7 +330,7 @@
         "_ps": -1
     },
     {
-        "question": "Q34. What is printed from this code execution?",
+        "question": "Q34. What is printed from this code execution?\n```\n    typedef enum {\n        thing1,\n        thing2,\n        thing3\n    } Thing;\n    -(void) enumStuff {\n        NSLog(@\"%d\", thing2);\n    }\n```",
         "options": [
             "",
             "pedef enum {",
@@ -350,7 +350,7 @@
         "_ps": 3
     },
     {
-        "question": "Q36. What is wrong with this line of code?",
+        "question": "Q36. What is wrong with this line of code?\n```\nint temp = 1==1;\n```",
         "options": [
             "",
             "mp = 1==1;",
@@ -360,7 +360,7 @@
         "_ps": -1
     },
     {
-        "question": "Q37. What is special about the code within this block?",
+        "question": "Q37. What is special about the code within this block?\n```\ndispatch_async(dispatch_get_main_queue(), ^{\n// code\n});\n```",
         "options": [
             "",
             "ch_async(dispatch_get_main_queue(), ^{",
@@ -370,7 +370,7 @@
         "_ps": -1
     },
     {
-        "question": "Q38. How many items are in set1 after this code executes?",
+        "question": "Q38. How many items are in set1 after this code executes?\n```\nNSMutableSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil];\n[set1 add0bject:@3];\n```",
         "options": [
             "",
             "bleSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil];",
@@ -380,7 +380,7 @@
         "_ps": -1
     },
     {
-        "question": "Q39. What is wrong with this code?",
+        "question": "Q39. What is wrong with this code?\n```\nNSDictionary *d1 = @[@\"v1\", @4, @\"v2\", @5.6, @\"v3\"];\nNSlog(@\"d1: %@\", d1);\n```",
         "options": [
             "",
             "ionary *d1 = @[@\"v1\", @4, @\"v2\", @5.6, @\"v3\"];",
@@ -390,7 +390,7 @@
         "_ps": -1
     },
     {
-        "question": "Q40. What is the initial value of the property `val`?",
+        "question": "Q40. What is the initial value of the property `val`?\n```\n@property (nonatomic, readonly) int val;\n```",
         "options": [
             "",
             "rty (nonatomic, readonly) int val;",

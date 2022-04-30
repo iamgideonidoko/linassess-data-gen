@@ -90,7 +90,7 @@
         "_ps": 3
     },
     {
-        "question": "Q10. What does this image illustrate?",
+        "question": "Q10. What does this image illustrate?\n![Machine Learning Q10](images/machine-learning_Q10.jpg)",
         "options": [
             "ine Learning Q10](images/machine-learning_Q10.jpg)",
             "a decision tree",
@@ -130,7 +130,7 @@
         "_ps": 2
     },
     {
-        "question": "Q14. You work for an ice cream shop and created the chart below, which shows the relationship between the outside temperature and ice cream sales. What is the best description of this chart?",
+        "question": "Q14. You work for an ice cream shop and created the chart below, which shows the relationship between the outside temperature and ice cream sales. What is the best description of this chart?\n![Machine Learning Q14](images/machine-learning_Q14.jpg)",
         "options": [
             "ine Learning Q14](images/machine-learning_Q14.jpg)",
             "It is a linear regression chart.",
@@ -170,7 +170,7 @@
         "_ps": 1
     },
     {
-        "question": "Q18. What is the missing information in this diagram?",
+        "question": "Q18. What is the missing information in this diagram?\n![Machine Learning Q18](images/machine-learning_Q18.jpg)",
         "options": [
             "ine Learning Q18](images/machine-learning_Q18.jpg)",
             "Training Set",
@@ -250,7 +250,7 @@
         "_ps": 0
     },
     {
-        "question": "Q26. What is this diagram a good example of?",
+        "question": "Q26. What is this diagram a good example of?\n![Machine Learning Q26](images/machine-learning_Q26.jpg)",
         "options": [
             "ine Learning Q26](images/machine-learning_Q26.jpg)",
             "K-nearest neighbor",
@@ -460,7 +460,7 @@
         "_ps": 3
     },
     {
-        "question": "Q47. What is this diagram a good example of?",
+        "question": "Q47. What is this diagram a good example of?\n![Machine Learning Q45](images/machine-learning_Q45.jpg)",
         "options": [
             "ine Learning Q45](images/machine-learning_Q45.jpg)",
             "unsupervised learning",
@@ -600,7 +600,7 @@
         "_ps": 2
     },
     {
-        "question": "Q61. How would you describe this type of classification challenge?",
+        "question": "Q61. How would you describe this type of classification challenge?\n![Machine Learning Q58](images/machine-learning_Q58.jpg)",
         "options": [
             "ine Learning Q58](images/machine-learning_Q58.jpg)",
             "This is a multiclass classification challenge.",
@@ -640,7 +640,7 @@
         "_ps": 2
     },
     {
-        "question": "Q65. (Mostly) whenever we see kernel visualizations online (or some other reference) we are actually seeing:",
+        "question": "Q65. (Mostly) whenever we see kernel visualizations online (or some other reference) we are actually seeing:\n#### Q66. The activations for class A, B and C before softmax were 10,8 and 3. The different in softmax values for class A and class B would be :",
         "options": [
             "What kernels extract",
             "Feature Maps",
@@ -700,7 +700,7 @@
         "_ps": 1
     },
     {
-        "question": "Q71. What is the correct option?",
+        "question": "Q71. What is the correct option?\n![image](images/machine-learning_Q67.png)\n| no. | Red | Blue | Green |\n| --- | --- | --- | --- |\n| **1.** | Validation error | Training error | Test error |\n| **2.** | Training error | Test error | Validation error |\n| **3.** | Optimal error | Validation error | Test error |\n| **4.** | Validation error | Training error | Optimal error |",
         "options": [
             "e](images/machine-learning_Q67.png)",
             "| Red | Blue | Green |",
@@ -730,7 +730,7 @@
         "_ps": 2
     },
     {
-        "question": "Q74. The fit line and data in the figure exhibits which pattern?",
+        "question": "Q74. The fit line and data in the figure exhibits which pattern?\n![image](images/machine-learning_Q70.png)",
         "options": [
             "e](images/machine-learning_Q70.png)",
             "low bias, high variance",

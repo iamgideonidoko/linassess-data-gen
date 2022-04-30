@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. What is printed from this code?",
+        "question": "Q1. What is printed from this code?\n```cpp\nvector<int> v(22);\nbool b = (v[6]);\nprintf(\"%d\", !b);\n```",
         "options": [
             "",
             "<int> v(22);",
@@ -10,7 +10,7 @@
         "_ps": -1
     },
     {
-        "question": "Q2. Which of the following is a reason why using this line is considered a bad practice? (_Alternative_: Why is using this line considered a bad practice?)",
+        "question": "Q2. Which of the following is a reason why using this line is considered a bad practice? (_Alternative_: Why is using this line considered a bad practice?)\n```cpp\nUsing namespace std;\n```",
         "options": [
             "",
             "namespace std;",
@@ -20,7 +20,7 @@
         "_ps": -1
     },
     {
-        "question": "Q3. What is the smallest size a variable of the type child_t may occupy in memory?",
+        "question": "Q3. What is the smallest size a variable of the type child_t may occupy in memory?\n```cpp\ntypedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    unsigned int  size   : 2;\n}child_t;\n```",
         "options": [
             "",
             "f struct{",
@@ -30,7 +30,7 @@
         "_ps": -1
     },
     {
-        "question": "Q4. Which of the following shows the contents of vector v1 and v2 after running this code?",
+        "question": "Q4. Which of the following shows the contents of vector v1 and v2 after running this code?\n```cpp\nstd::vector<int> v1{1,2,3},v2;\nv2=v1;\nv1.push_back(4);\nv2.push_back(5);\n```",
         "options": [
             "",
             "ector<int> v1{1,2,3},v2;",
@@ -50,7 +50,7 @@
         "_ps": 1
     },
     {
-        "question": "Q6. What's a benefit of declaring the parameter as a const reference instead of declaring it as a regular object?",
+        "question": "Q6. What's a benefit of declaring the parameter as a const reference instead of declaring it as a regular object?\n```cpp\nint median(const my_array& a);\n```",
         "options": [
             "",
             "dian(const my_array& a);",
@@ -60,7 +60,7 @@
         "_ps": -1
     },
     {
-        "question": "Q7. What's the storage occupied by u1?",
+        "question": "Q7. What's the storage occupied by u1?\n```cpp\nunion {\n    unit16_t a;\n    unit32_t b;\n    int8_t c;\n} u1;\n```",
         "options": [
             "",
             "{",
@@ -80,7 +80,7 @@
         "_ps": 1
     },
     {
-        "question": "Q9. Which of the following shows the contents of vector pointed by v1 and v2 after running this code?",
+        "question": "Q9. Which of the following shows the contents of vector pointed by v1 and v2 after running this code?\n```cpp\nstd:: vector<int> *v1 = new std::vector<int>({1,2,3});\nstd:: vector<int> *v2;\nv2=v1;\nv1->push_back(4);\nv2->push_back(5);\n```",
         "options": [
             "",
             "vector<int> *v1 = new std::vector<int>({1,2,3});",
@@ -100,7 +100,7 @@
         "_ps": 1
     },
     {
-        "question": "Q11. Suppose you need to keep a data struct with permission to access some resource based on the days of the week, but you can't use a bool variable for each day. You need to use one bit per day of the week. Which of the following is a correct implementation of a structure with bit fields for this application?",
+        "question": "Q11. Suppose you need to keep a data struct with permission to access some resource based on the days of the week, but you can't use a bool variable for each day. You need to use one bit per day of the week. Which of the following is a correct implementation of a structure with bit fields for this application?\n```cpp\ntypedef struct {\n    int sunday:1;\n    int monday:1;\n    // more days\n    int friday:1;\n    int saturday:1;\n} weekdays;\n```\n```cpp\ntypedef char[7]: weekdays;\n```\n```cpp\ntypedef struct {\n    bit sunday:1;\n    bit monday:1;\n    // more days\n    bit friday:1;\n    bit saturday:1;\n} weekdays;\n```",
         "options": [
             "A",
             "",
@@ -120,7 +120,7 @@
         "_ps": 1
     },
     {
-        "question": "Q13. What does auto type specifier do in this line of code (since C++11)?",
+        "question": "Q13. What does auto type specifier do in this line of code (since C++11)?\n```cpp\nauto x = 4000.22;\n```",
         "options": [
             "",
             " = 4000.22;",
@@ -140,7 +140,7 @@
         "_ps": 0
     },
     {
-        "question": "Q15. What is the ternary operator equivalent to this code snippet?",
+        "question": "Q15. What is the ternary operator equivalent to this code snippet?\n```cpp\nif(x)\n    y=a;\nelse\n    y=b;\n```",
         "options": [
             "",
             "",
@@ -150,7 +150,7 @@
         "_ps": -1
     },
     {
-        "question": "Q16. What is the output of this code?",
+        "question": "Q16. What is the output of this code?\n```cpp\n#include <iostream>\nint main(){\n    int x=10, y=20;\n    std::cout << \"x = \" << x++ << \" and y = \" << --y << std::endl;\n    std::cout << \"x = \" << x-- << \" and y = \" << ++y << std::endl;\n    return(0);\n}\n```\n       `x = 11 and y = 19`\n       `x = 10 and y = 20`\n       `x = 11 and y = 20`",
         "options": [
             "",
             "de <iostream>",
@@ -170,7 +170,7 @@
         "_ps": 0
     },
     {
-        "question": "Q18. What is the output of this piece of code?",
+        "question": "Q18. What is the output of this piece of code?\n```cpp\nint8_t a=200;\nuint8_t b=100;\nif(a>b)\n    std::cout<<\"greater\";\nelse\n    std::cout<<\"less\";\n```",
         "options": [
             "",
             " a=200;",
@@ -180,7 +180,7 @@
         "_ps": -1
     },
     {
-        "question": "Q19. What results from executing this code snippet?",
+        "question": "Q19. What results from executing this code snippet?\n```cpp\nint x=5, y=2;\nif(x & y) {\n    /*_part A_*/\n}\nelse {\n    /*_part B_*/\n}\n```",
         "options": [
             "",
             "5, y=2;",
@@ -190,7 +190,7 @@
         "_ps": -1
     },
     {
-        "question": "Q20. What is a valid definition for the `get_length` function, which returns the length of a null-terminated string?",
+        "question": "Q20. What is a valid definition for the `get_length` function, which returns the length of a null-terminated string?\n```cpp\nint get_length(char *str) {\n    int count=0;\n    while(str[count++]);\n    return count-1;\n}\n```\n```cpp\nint get_length(char *str) {\n    int count=0;\n    while(str!=NULL){\n        count++;\n        str++;\n    }\n    return count;\n}\n```\n```cpp\nint get_length(char *str) {\n    int count=0;\n    while((*str)++)\n        count++;\n    return count;\n}\n```",
         "options": [
             "A",
             "",
@@ -220,7 +220,7 @@
         "_ps": 1
     },
     {
-        "question": "Q23. What is printed from this code?",
+        "question": "Q23. What is printed from this code?\n```cpp\nint i = 0;\nprintf(\"%d\", i++);\nprintf(\"%d\", i--);\nprintf(\"%d\", ++i);\nprintf(\"%d\", --i);\n```",
         "options": [
             "",
             "= 0;",
@@ -230,7 +230,7 @@
         "_ps": -1
     },
     {
-        "question": "Q24. What is true about the variable named `ptr`?",
+        "question": "Q24. What is true about the variable named `ptr`?\n```cpp\nvoid *ptr;\n```",
         "options": [
             "",
             "ptr;",
@@ -240,7 +240,7 @@
         "_ps": -1
     },
     {
-        "question": "Q25. What is the output of this code?",
+        "question": "Q25. What is the output of this code?\n```cpp\nint c=3; char d='A';\nstd::printf(\"c is %d and d is %c\",c,d);\n```",
         "options": [
             "",
             "3; char d='A';",
@@ -250,7 +250,7 @@
         "_ps": -1
     },
     {
-        "question": "Q26. What is the output of this code?",
+        "question": "Q26. What is the output of this code?\n```cpp\nprintf(\"1/2 = %f\",(float)(1/2));\n```",
         "options": [
             "",
             "(\"1/2 = %f\",(float)(1/2));",
@@ -270,7 +270,7 @@
         "_ps": 3
     },
     {
-        "question": "Q28. What is the value of `x` after running this code?",
+        "question": "Q28. What is the value of `x` after running this code?\n```cpp\nint x=10, a=-3;\nx=+a;\n```",
         "options": [
             "",
             "10, a=-3;",
@@ -290,7 +290,7 @@
         "_ps": 1
     },
     {
-        "question": "Q30. Consider a pointer to void, named `ptr`, which has been set to point to a floating point variable `g`. Which choice is a valid way to dereference `ptr` to assign its pointed value to a float variable `f` later in the program?",
+        "question": "Q30. Consider a pointer to void, named `ptr`, which has been set to point to a floating point variable `g`. Which choice is a valid way to dereference `ptr` to assign its pointed value to a float variable `f` later in the program?\n```cpp\nfloat g;\nvoid *ptr=&g;\n```",
         "options": [
             "",
             "g;",
@@ -310,7 +310,7 @@
         "_ps": 1
     },
     {
-        "question": "Q32. For these declarations, which choice shows four equivalent ways to assign the character \"y\" in the string to a char variable c?",
+        "question": "Q32. For these declarations, which choice shows four equivalent ways to assign the character \"y\" in the string to a char variable c?\n```cpp\nchar buff[50] = \"strings as arrays of characters are fun!\"\nchar *str = buff+11;\nchar c;\n```\n```cpp\nc = buff[16];\nc = str[5];\nc = *(buff+16);\nc = *(str+5);\n```\n```cpp\nc = *(buff[15]);\nc = *(str[4]);\nc = buff+15;\nc = str+4;\n```\n```cpp\nc = buff[15];\nc = str[4];\nc = *(buff+15);\nc = *(str+4);\n```",
         "options": [
             "",
             "uff[50] = \"strings as arrays of characters are fun!\"",
@@ -320,7 +320,7 @@
         "_ps": -1
     },
     {
-        "question": "Q33. Which choice is the correct declaration for the class named Dog, derived from the Animal class?",
+        "question": "Q33. Which choice is the correct declaration for the class named Dog, derived from the Animal class?\n```cpp\nclass Animal{\n    //....\n}\n```\n```cpp\nclass Dog :: public Animal {\n   //....\n};\n```\n```cpp\nclass Dog : public Animal {\n   //....\n};\n```\n```cpp\npublic class Animal :: Dog {\n   //....\n};\n```",
         "options": [
             "",
             "Animal{",
@@ -330,7 +330,7 @@
         "_ps": -1
     },
     {
-        "question": "Q34. What is the output of this code?",
+        "question": "Q34. What is the output of this code?\n```cpp\n#include <cstdio>\nusing namespace std;\nint main(){\n    char c = 255;\n    if(c>10)\n        printf(\"c = %i, which is greater than 10\", c);\n    else\n        printf(\"c = %i, which is less than 10\", c);\n    return 0;\n}\n```",
         "options": [
             "",
             "de <cstdio>",
@@ -350,7 +350,7 @@
         "_ps": 2
     },
     {
-        "question": "Q36. Which choice is _not_ a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named `center`?",
+        "question": "Q36. Which choice is _not_ a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named `center`?\n```\ncoord center;\ncenter.x = 5;\ncenter.y = 3;\n```\n```cpp\ntypedef struct coord {\n    int x;\n    int y;\n};\n```\n```cpp\ntypedef struct coord {\n    int x;\n    int y;\n} coord;\n```\n```cpp\ntypedef struct {\n    int x;\n    int y;\n} coord;\n```",
         "options": [
             "",
             "center;",
@@ -360,7 +360,7 @@
         "_ps": -1
     },
     {
-        "question": "Q37. Which choice does _not_ produce the same output as this code snippet? Assume the variable `i` will not be used anywhere else in the code.",
+        "question": "Q37. Which choice does _not_ produce the same output as this code snippet? Assume the variable `i` will not be used anywhere else in the code.\n```cpp\nfor (i=1;i<10;i++){\n    cout<<i<<endl;\n}\n```\n```cpp\ni=1;\nwhile(i<10){\n    cout<<++i<<endl;\n}\n```\n```cpp\nfor (int i:{1,2,3,4,5,6,7,8,9}) {\n    cout<<i<<endl;\n}\n```\n```cpp\ni = 1;\ndo {\n    cout<<i++<<endl;\n} while(i<10);\n```",
         "options": [
             "",
             "=1;i<10;i++){",
@@ -370,7 +370,7 @@
         "_ps": -1
     },
     {
-        "question": "Q38. What does this part of a main.cpp file do?",
+        "question": "Q38. What does this part of a main.cpp file do?\n```cpp\n#include \"library.h\"\n```",
         "options": [
             "",
             "de \"library.h\"",
@@ -380,7 +380,7 @@
         "_ps": -1
     },
     {
-        "question": "Q39. Consider this function declaration of `is_even`, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?",
+        "question": "Q39. Consider this function declaration of `is_even`, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?\n```cpp\nbool is_even(int);\n```\n```cpp\nbool is_even(float f);\nbool is_even(char *str);\n```\n```cpp\nbool is_even(float f);\nbool is_even(char str);\n```\n```cpp\nbool is_even_float(float f);\nbool is_even_str(char *str);\n```",
         "options": [
             "",
             "s_even(int);",
@@ -390,7 +390,7 @@
         "_ps": 3
     },
     {
-        "question": "Q40. Which choice is an include guard for the header file `my_library.h`?",
+        "question": "Q40. Which choice is an include guard for the header file `my_library.h`?\n```cpp\n#ifdef MY_LIBRARY_H\n#define MY_LIBRARY_H\n// my_library.h content\n#endif /* MY_LIBRARY_H */\n```\n```cpp\n#ifndef MY_LIBRARY_H\n#define MY_LIBRARY_H\n// my_library.h content\n#endif /* MY_LIBRARY_H */\n```\n```cpp\n#ifdef MY_LIBRARY_H\n#undef MY_LIBRARY_H\n// my_library.h content\n#endif /* MY_LIBRARY_H */\n```",
         "options": [
             "A",
             "",
@@ -400,7 +400,7 @@
         "_ps": -1
     },
     {
-        "question": "Q41. What's wrong with this definition when using a pre-C++11 compiler?",
+        "question": "Q41. What's wrong with this definition when using a pre-C++11 compiler?\n```cpp\nstd::vector<std::vector<int>> thematrix;\n```",
         "options": [
             "",
             "ector<std::vector<int>> thematrix;",
@@ -410,7 +410,7 @@
         "_ps": -1
     },
     {
-        "question": "Q42. What is the statement below equivalent to?",
+        "question": "Q42. What is the statement below equivalent to?\n```cpp\nsprite->x\n```",
         "options": [
             "",
             "->x",
@@ -420,7 +420,7 @@
         "_ps": -1
     },
     {
-        "question": "Q43. Consider a class named `complexNumber`. Which code will result in an equivalent object?",
+        "question": "Q43. Consider a class named `complexNumber`. Which code will result in an equivalent object?\n```cpp\ncomplexNumber(float real, float im)\n: real_part(real),\n im_part(im){}\n```\n```cpp\ncomplexNumber(float real, float im) {\n    this->real = real_part;\n    this->im = im_part;\n}\n```\n```cpp\ncomplexNumber(float real, float im) {\n    this->real_part(real);\n    this->im_part(im);\n}\n```\n```cpp\ncomplexNumber(float real, float im) {\n    this->real_part = real;\n    this->im_part = im;\n}\n```",
         "options": [
             "",
             "xNumber(float real, float im)",
@@ -430,7 +430,7 @@
         "_ps": -1
     },
     {
-        "question": "Q44. What is the result from executing this code snippet?",
+        "question": "Q44. What is the result from executing this code snippet?\n```cpp\nbool x=true, y=false;\nif(~x || y){\n    /*part A*/\n}\nelse{\n    /*part B*/\n}\n```",
         "options": [
             "",
             "=true, y=false;",
@@ -440,7 +440,7 @@
         "_ps": -1
     },
     {
-        "question": "Q45. What would be the output of this code?",
+        "question": "Q45. What would be the output of this code?\n```cpp\nint32_t nums[3]={2,4,3};\nstd::cout << ( nums[0] << nums[1] << nums[2] );\n```",
         "options": [
             "",
             "t nums[3]={2,4,3};",
@@ -450,7 +450,7 @@
         "_ps": -1
     },
     {
-        "question": "Q46. What is the output of this code?",
+        "question": "Q46. What is the output of this code?\n```cpp\nfloat values[5]={0.54f, 2.71828f, 3.14159f, 5.499999f, 10.0f};\nfor(auto f:values)\n    printf(\"%i \",(int)(f+0.5f));\n```",
         "options": [
             "",
             "values[5]={0.54f, 2.71828f, 3.14159f, 5.499999f, 10.0f};",
@@ -470,7 +470,7 @@
         "_ps": 3
     },
     {
-        "question": "Q48. What does this program do?",
+        "question": "Q48. What does this program do?\n```cpp\n#include <iostream>\n#include <fstream>\nusing namespace std;\nint main(){\n    ifstream file1(\"text1.txt\", ios::binary);\n    ofstream file2(\"text2.txt\", ios::binary);\n    file2 << file1.rdbuf();\n}\n```",
         "options": [
             "",
             "de <iostream>",
@@ -480,7 +480,7 @@
         "_ps": -1
     },
     {
-        "question": "Q49. Which of the following is _not_ a consequence of declaring the member variable count of my_class as static?",
+        "question": "Q49. Which of the following is _not_ a consequence of declaring the member variable count of my_class as static?\n```cpp\nclass my_class {\n    public: static int count;\n}\n```",
         "options": [
             "",
             "my_class {",
@@ -500,7 +500,7 @@
         "_ps": 0
     },
     {
-        "question": "Q51. What is the output of this piece of code?",
+        "question": "Q51. What is the output of this piece of code?\n```cpp\nint8_t a=200;\nuint8_t b=100;\nstd::cout<<\"a=\"<<(int)a;\nstd::cout<<\", b=\"<<(int)b;\n```",
         "options": [
             "",
             " a=200;",
@@ -510,7 +510,7 @@
         "_ps": -1
     },
     {
-        "question": "Q52. What is an appropriate way of removing `my_object` as shown below?",
+        "question": "Q52. What is an appropriate way of removing `my_object` as shown below?\n```cpp\nmy_class *my_object = new my_class();\n```",
         "options": [
             "",
             "ss *my_object = new my_class();",
@@ -520,7 +520,7 @@
         "_ps": 3
     },
     {
-        "question": "Q53. What is the correct way to call the `count` member function for the object pointer called `grades`?",
+        "question": "Q53. What is the correct way to call the `count` member function for the object pointer called `grades`?\n```cpp\nclass my_array{\n    public:\n        int count();\n};  // ... more members above\nint main(){\n    my_array *grades = new my_array();\n};  // ... more code above\n```",
         "options": [
             "",
             "my_array{",
@@ -530,7 +530,7 @@
         "_ps": -1
     },
     {
-        "question": "Q54. What would be the output of this code?",
+        "question": "Q54. What would be the output of this code?\n```cpp\nint i0=4, i1=6, i2=8;\nint& nums[3]={i2,i0,i1};\nstd::cout<<nums[0]<<nums[1]<<nums[2];\n```",
         "options": [
             "",
             "=4, i1=6, i2=8;",
@@ -540,7 +540,7 @@
         "_ps": -1
     },
     {
-        "question": "Q55. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?",
+        "question": "Q55. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?\n```cpp\ntypedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    char                 : 0;\n    unsigned int  size   : 2;\n}child_t;\n```",
         "options": [
             "",
             "f struct{",
@@ -550,7 +550,7 @@
         "_ps": -1
     },
     {
-        "question": "Q56. What is this expression equivalent to?",
+        "question": "Q56. What is this expression equivalent to?\n```cpp\nA->B->C->D\n```",
         "options": [
             "",
             "C->D",
@@ -560,7 +560,7 @@
         "_ps": -1
     },
     {
-        "question": "Q57. What does this function do?",
+        "question": "Q57. What does this function do?\n```cpp\nauto buff = new char[50];\nstd::memset(buff,20,50);\n```",
         "options": [
             "",
             "uff = new char[50];",
@@ -580,7 +580,7 @@
         "_ps": 3
     },
     {
-        "question": "Q59. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?",
+        "question": "Q59. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?\n```cpp\nstd::array<uint32_t, 50> my_array;\n```\n```cpp\nstd::sort(my_array.begin(), my_array.end(),\n    [](uint32_t a, uint32_t b) {\n        return a < b;\n    })\n```\n```cpp\nlambda(uint32_t a, uint32_t b){\n    return a < b;\n}\nstd::sort(my_array.begin(), my_array.end(), lambda);\n```\n```cpp\nstd::sort(my_array.begin(), my_array.end(),\n    lambda(uint32_t a, uint32_t b){\n        return a < b;\n    })\n```",
         "options": [
             "",
             "rray<uint32_t, 50> my_array;",
@@ -590,7 +590,7 @@
         "_ps": 3
     },
     {
-        "question": "Q60. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?",
+        "question": "Q60. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?\n```cpp\nvoid std::mutex::lock(){\n    while(!this->try_lock());\n}\n```\n```cpp\nvoid std::mutex::lock(){\n    return (this->try_lock());\n}\n```\n```cpp\nvoid std::mutex::lock(){\n    while(1)\n        this->try_lock();\n}\n```",
         "options": [
             "A",
             "",
@@ -620,7 +620,7 @@
         "_ps": 1
     },
     {
-        "question": "Q63. What is the main difference between these two Functions?",
+        "question": "Q63. What is the main difference between these two Functions?\n```cpp\nstd::mutex::lock()\nstd::mutex::try_lock()\n```",
         "options": [
             "",
             "utex::lock()",
@@ -630,7 +630,7 @@
         "_ps": -1
     },
     {
-        "question": "Q64. What is one benefit of declaring the parameter as a `const` reference instead of declaring it as a regular object?",
+        "question": "Q64. What is one benefit of declaring the parameter as a `const` reference instead of declaring it as a regular object?\n```cpp\nint median(const my_array& a)\n```",
         "options": [
             "",
             "dian(const my_array& a)",
@@ -650,7 +650,7 @@
         "_ps": 2
     },
     {
-        "question": "Q66. What would be the correct declaration of a default constructor for a class named Sprite?",
+        "question": "Q66. What would be the correct declaration of a default constructor for a class named Sprite?\n  ```cpp\n  public:\n    \t\tSprite();\n  ```\n  ```cpp\n  private:\n    \t\tvoid Sprite();\n  ```\n  ```cpp\n  public:\n    \t\tvoid Sprite();\n  ```",
         "options": [
             "",
             "pp",
@@ -660,7 +660,7 @@
         "_ps": 0
     },
     {
-        "question": "Q67. What is the purpose of this line in a header file?",
+        "question": "Q67. What is the purpose of this line in a header file?\n```cpp\n#pragma once\n```",
         "options": [
             "",
             "a once",
@@ -680,7 +680,7 @@
         "_ps": 2
     },
     {
-        "question": "Q69. Consider this function declaration of is_even, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?",
+        "question": "Q69. Consider this function declaration of is_even, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?\n```cpp\nbool is_even(int);\n```",
         "options": [
             "",
             "s_even(int);",
@@ -700,7 +700,7 @@
         "_ps": 1
     },
     {
-        "question": "Q71. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?",
+        "question": "Q71. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?\n```cpp\ntypedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    char                 : 0;\n    unsigned int  size   : 2;\n}child_t;\n```",
         "options": [
             "",
             "f struct{",
@@ -720,7 +720,7 @@
         "_ps": 2
     },
     {
-        "question": "Q74. What is this expression equivalent to?",
+        "question": "Q74. What is this expression equivalent to?\n```cpp\nA->B\n```",
         "options": [
             "",
             "",
@@ -730,7 +730,7 @@
         "_ps": -1
     },
     {
-        "question": "Q75. Which statement is true when declaring the member variable `count` as static?",
+        "question": "Q75. Which statement is true when declaring the member variable `count` as static?\n```cpp\nclass my_class{\n    public: static int count;\n};\n```",
         "options": [
             "",
             "my_class{",
@@ -770,7 +770,7 @@
         "_ps": 0
     },
     {
-        "question": "Q79. Given these records in a map, how will you update the value for the key \"Sinead\" to 22?",
+        "question": "Q79. Given these records in a map, how will you update the value for the key \"Sinead\" to 22?\n![image](images/Q79.png)",
         "options": [
             "e](images/Q79.png)",
             "`marks[\"Sinead\"] = 22`",

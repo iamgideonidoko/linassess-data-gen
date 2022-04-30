@@ -290,7 +290,7 @@
         "_ps": 1
     },
     {
-        "question": "Q30. You are deploying three Azure VMS with an Azure Resource Manager (ARM) template. Which ARM function implements the iteration loop to provision the right number of VMs?",
+        "question": "Q30. You are deploying three Azure VMS with an Azure Resource Manager (ARM) template. Which ARM function implements the iteration loop to provision the right number of VMs?\n```json\n{\n    \"type\": \"Microsoft.Compute/virtualMachines\",\n    \"name\": \"[concat('myvm', `______`)]\",\n    \"apiVersion\": \"2016-04-30-preview\",\n    \"location\": \"[parameters('location')]\",\n    \"copy\": \" \",\n    \"name\": \"virtualMachineLoop\",\n    \"count\": \"[parameters('numberOfInstances')]\"\n},\n```",
         "options": [
             "n",
             "",
@@ -350,7 +350,7 @@
         "_ps": 2
     },
     {
-        "question": "Q36. You need to update the data within an existing database in Azure SQL with your changes. You want to test this process from your development workstation before incorporating the update into your CI/CD process. Which command will you run to update the schema on the target database?",
+        "question": "Q36. You need to update the data within an existing database in Azure SQL with your changes. You want to test this process from your development workstation before incorporating the update into your CI/CD process. Which command will you run to update the schema on the target database?\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"\n      /SourceServerName:\"kinetecosql.database.windows.net\"\n      /SourceDatabaseName:\"kinetecoweb\" /SourceUser:\"admin\" /SourcePassword:\"MyPassword\"",
         "options": [
             "SqlPackage.exe /TargetFile:\" myapp.bacpac \" /Action:**Export**",
             "/SourceServerName:\"kinetecosql.database.windows.net\"",

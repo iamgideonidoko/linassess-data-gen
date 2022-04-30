@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. In the following URL, what channel grouping is traffic assigned to?",
+        "question": "Q1. In the following URL, what channel grouping is traffic assigned to?\n`example.com/?utm_source=google&utm_medium=cpc&utm_campaign=315`",
         "options": [
             "le.com/?utm_source=google&utm_medium=cpc&utm_campaign=315`",
             "Display",
@@ -40,7 +40,7 @@
         "_ps": 2
     },
     {
-        "question": "Q5. What are the icons highlighted below used for?",
+        "question": "Q5. What are the icons highlighted below used for?\n![Google Analytics Icons](https://i.imgur.com/LZzFesL.png)",
         "options": [
             "le Analytics Icons](https://i.imgur.com/LZzFesL.png)",
             "to change the way the data table is displayed",
@@ -300,7 +300,7 @@
         "_ps": 2
     },
     {
-        "question": "Q31. What is this report an example of?",
+        "question": "Q31. What is this report an example of?\n![Tree map](https://i.imgur.com/CJFjxxD.png)",
         "options": [
             " map](https://i.imgur.com/CJFjxxD.png)",
             "cohort analysis",

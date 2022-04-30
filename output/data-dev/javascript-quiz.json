@@ -20,7 +20,7 @@
         "_ps": 1
     },
     {
-        "question": "Q3. Review the code below. Which statement calls the addTax function and passes 50 as an argument? How would you use this function to find out how much tax should be paid on \\$50?",
+        "question": "Q3. Review the code below. Which statement calls the addTax function and passes 50 as an argument? How would you use this function to find out how much tax should be paid on \\$50?\n```js\nfunction addTax(total) {\n  return total * 1.05;\n}\n```",
         "options": [
             "",
             "on addTax(total) {",
@@ -50,7 +50,7 @@
         "_ps": 0
     },
     {
-        "question": "Q6. When would the final statement in the code shown be logged to the console? When would 'results shown' be logged to the console?",
+        "question": "Q6. When would the final statement in the code shown be logged to the console? When would 'results shown' be logged to the console?\n```js\nlet modal = document.querySelector('#result');\nsetTimeout(function () {\n  modal.classList.remove('hidden');\n}, 10000);\nconsole.log('Results shown');\n```",
         "options": [
             "",
             "dal = document.querySelector('#result');",
@@ -60,7 +60,7 @@
         "_ps": -1
     },
     {
-        "question": "Q8. You've written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?",
+        "question": "Q8. You've written the code shown to log a set of consecutive values, but it instead results in the value 5, 5, 5, and 5 being logged to the console. Which revised version of the code would result in the value 1, 2, 3 and 4 being logged?\n```javascript\nfor (var i = 1; i <= 4; i++) {\n  setTimeout(function () {\n    console.log(i);\n  }, i * 10000);\n}\n```\n```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (i) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(j);\n}\n```\n```javascript\nwhile (var i=1; i<=4; i++) {\n  setTimeout(function() {\n    console.log(i);\n    }, i*1000);\n}\n```\n```javascript\nfor (var i = 1; i <= 4; i++) {\n  (function (j) {\n    setTimeout(function () {\n      console.log(j);\n    }, j * 1000);\n  })(i);\n}\n```",
         "options": [
             "ascript",
             "ar i = 1; i <= 4; i++) {",
@@ -80,7 +80,7 @@
         "_ps": 1
     },
     {
-        "question": "Q10. Which statement creates a new function called discountPrice?",
+        "question": "Q10. Which statement creates a new function called discountPrice?\n```js\nlet discountPrice = function (price) {\n  return price * 0.85;\n};\n```\n```js\nlet discountPrice(price) {\n  return price * 0.85;\n};\n```\n```js\nlet function = discountPrice(price) {\n  return price * 0.85;\n};\n```",
         "options": [
             "",
             "",
@@ -90,7 +90,7 @@
         "_ps": 0
     },
     {
-        "question": "Q11. What is the result in the console of running the code shown?",
+        "question": "Q11. What is the result in the console of running the code shown?\n```js\nvar Storm = function () {};\nStorm.prototype.precip = 'rain';\nvar WinterStorm = function () {};\nWinterStorm.prototype = new Storm();\nWinterStorm.prototype.precip = 'snow';\nvar bob = new WinterStorm();\nconsole.log(bob.precip);\n```",
         "options": [
             "",
             "orm = function () {};",
@@ -110,7 +110,7 @@
         "_ps": 1
     },
     {
-        "question": "Q13. What is the result in the console of running this code?",
+        "question": "Q13. What is the result in the console of running this code?\n```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```",
         "options": [
             "",
             "trict';",
@@ -120,7 +120,7 @@
         "_ps": -1
     },
     {
-        "question": "Q14. How would you reference the text 'avenue' in the code shown?",
+        "question": "Q14. How would you reference the text 'avenue' in the code shown?\n```js\nlet roadTypes = ['street', 'road', 'avenue', 'circle'];\n```",
         "options": [
             "",
             "adTypes = ['street', 'road', 'avenue', 'circle'];",
@@ -130,7 +130,7 @@
         "_ps": -1
     },
     {
-        "question": "Q15. What is the result of running this statement?",
+        "question": "Q15. What is the result of running this statement?\n```javascript\nconsole.log(typeof 42);\n```",
         "options": [
             "ascript",
             "e.log(typeof 42);",
@@ -150,7 +150,7 @@
         "_ps": 2
     },
     {
-        "question": "Q17. You're adding error handling to the code shown. Which code would you include within the if statement to specify an error message?",
+        "question": "Q17. You're adding error handling to the code shown. Which code would you include within the if statement to specify an error message?\n```js\nfunction addNumbers(x, y) {\n  if (isNaN(x) || isNaN(y)) {\n  }\n}\n```",
         "options": [
             "",
             "on addNumbers(x, y) {",
@@ -180,7 +180,7 @@
         "_ps": 1
     },
     {
-        "question": "Q20. What would be the result in the console of running this code?",
+        "question": "Q20. What would be the result in the console of running this code?\n```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```",
         "options": [
             "",
             "ar i = 0; i < 5; i++) {",
@@ -200,7 +200,7 @@
         "_ps": 3
     },
     {
-        "question": "Q22. What will be logged to the console?",
+        "question": "Q22. What will be logged to the console?\n```js\nvar a = ['dog', 'cat', 'hen'];\na[100] = 'fox';\nconsole.log(a.length);\n```",
         "options": [
             "",
             "= ['dog', 'cat', 'hen'];",
@@ -220,7 +220,7 @@
         "_ps": 1
     },
     {
-        "question": "Q24. What is the value of dessert.type after executing this code?",
+        "question": "Q24. What is the value of dessert.type after executing this code?\n```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\n```",
         "options": [
             "",
             "dessert = { type: 'pie' };",
@@ -310,7 +310,7 @@
         "_ps": 0
     },
     {
-        "question": "Q33. For the following class, how do you get the value of 42 from an instance of X?",
+        "question": "Q33. For the following class, how do you get the value of 42 from an instance of X?\n```js\nclass X {\n  get Y() {\n    return 42;\n  }\n}\nvar x = new X();\n```",
         "options": [
             "",
             "X {",
@@ -320,7 +320,7 @@
         "_ps": -1
     },
     {
-        "question": "Q34. What is the result of running this code?",
+        "question": "Q34. What is the result of running this code?\n```js\nsum(10, 20);\ndiff(10, 20);\nfunction sum(x, y) {\n  return x + y;\n}\nlet diff = function (x, y) {\n  return x - y;\n};\n```",
         "options": [
             "",
             ", 20);",
@@ -360,7 +360,7 @@
         "_ps": 0
     },
     {
-        "question": "Q38. What does the following expression evaluate to?",
+        "question": "Q38. What does the following expression evaluate to?\n```js\n[] == [];\n```",
         "options": [
             "",
             "[];",
@@ -380,7 +380,7 @@
         "_ps": 0
     },
     {
-        "question": "Q40. What will this code print?",
+        "question": "Q40. What will this code print?\n```js\nvar v = 1;\nvar f1 = function () {\n  console.log(v);\n};\nvar f2 = function () {\n  var v = 2;\n  f1();\n};\nf2();\n```",
         "options": [
             "",
             "= 1;",
@@ -410,7 +410,7 @@
         "_ps": 0
     },
     {
-        "question": "Q43. How many prototype objects are in the chain for the following array?",
+        "question": "Q43. How many prototype objects are in the chain for the following array?\n`let arr = [];`",
         "options": [
             "rr = [];`",
             "3",
@@ -430,7 +430,7 @@
         "_ps": 2
     },
     {
-        "question": "Q45. What type of scope does the end variable have in the code shown?",
+        "question": "Q45. What type of scope does the end variable have in the code shown?\n```javascript\nvar start = 1;\nif (start === 1) {\n  let end = 2;\n}\n```",
         "options": [
             "ascript",
             "art = 1;",
@@ -440,7 +440,7 @@
         "_ps": -1
     },
     {
-        "question": "Q46. What will the value of y be in this code:",
+        "question": "Q46. What will the value of y be in this code:\n```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\n```",
         "options": [
             "",
             "x = 6 % 2;",
@@ -470,7 +470,7 @@
         "_ps": 3
     },
     {
-        "question": "Q49. The following program has a problem. What is it?",
+        "question": "Q49. The following program has a problem. What is it?\n```js\nvar a;\nvar b = (a = 3) ? true : false;\n```",
         "options": [
             "",
             "",
@@ -480,7 +480,7 @@
         "_ps": -1
     },
     {
-        "question": "Q50. Which statement references the DOM node created by the code shown?",
+        "question": "Q50. Which statement references the DOM node created by the code shown?\n```html\n<p class=\"pull\">lorem ipsum</p>\n```",
         "options": [
             "l",
             "ss=\"pull\">lorem ipsum</p>",
@@ -490,7 +490,7 @@
         "_ps": -1
     },
     {
-        "question": "Q51. What value does this code return?",
+        "question": "Q51. What value does this code return?\n```js\nlet answer = true;\nif (answer === false) {\n  return 0;\n} else {\n  return 10;\n}\n```",
         "options": [
             "",
             "swer = true;",
@@ -500,7 +500,7 @@
         "_ps": -1
     },
     {
-        "question": "Q52. What is the result in the console of running the code shown?",
+        "question": "Q52. What is the result in the console of running the code shown?\n```js\nvar start = 1;\nfunction setEnd() {\n  var end = 10;\n}\nsetEnd();\nconsole.log(end);\n```",
         "options": [
             "",
             "art = 1;",
@@ -510,7 +510,7 @@
         "_ps": -1
     },
     {
-        "question": "Q53. What will this code log in the console?",
+        "question": "Q53. What will this code log in the console?\n```js\nfunction sayHello() {\n  console.log('hello');\n}\nconsole.log(sayHello.prototype);\n```",
         "options": [
             "",
             "on sayHello() {",
@@ -530,7 +530,7 @@
         "_ps": 1
     },
     {
-        "question": "Q55. What two values will this code print?",
+        "question": "Q55. What two values will this code print?\n```js\nfunction printA() {\n  console.log(answer);\n  var answer = 1;\n}\nprintA();\nprintA();\n```",
         "options": [
             "",
             "on printA() {",
@@ -670,7 +670,7 @@
         "_ps": 2
     },
     {
-        "question": "Q69. What is the result of running the statement shown?",
+        "question": "Q69. What is the result of running the statement shown?\n```javascript\nlet a = 5;\nconsole.log(++a);\n```",
         "options": [
             "ascript",
             "= 5;",
@@ -680,7 +680,7 @@
         "_ps": -1
     },
     {
-        "question": "Q70. You've written the event listener shown below for a form button, but each time you click the button, the page reloads. Which statement would stop this from happening?",
+        "question": "Q70. You've written the event listener shown below for a form button, but each time you click the button, the page reloads. Which statement would stop this from happening?\n```javascript\nbutton.addEventListener(\n  'click',\n  function (e) {\n    button.className = 'clicked';\n  },\n  false,\n);\n```",
         "options": [
             "ascript",
             ".addEventListener(",
@@ -690,7 +690,7 @@
         "_ps": -1
     },
     {
-        "question": "Q71. Which statement represents the starting code converted to an IIFE?",
+        "question": "Q71. Which statement represents the starting code converted to an IIFE?\n[Reference what is an Immediately Invoked Function Expression](https://javascript.plainenglish.io/https-medium-com-javascript-in-plain-english-stop-feeling-iffy-about-using-an-iife-7b0292aba174)\n#### Q72. Which statement selects all img elements in the DOM tree?",
         "options": [
             "`function() { console.log('lorem ipsum'); }()();`",
             "`function() { console.log('lorem ipsum'); }();`",
@@ -740,7 +740,7 @@
         "_ps": 0
     },
     {
-        "question": "Q76. What is the result in the console of running this code?",
+        "question": "Q76. What is the result in the console of running this code?\n```javascript\nfunction logThis() {\n  console.log(this);\n}\nlogThis();\n```",
         "options": [
             "ascript",
             "on logThis() {",
@@ -750,7 +750,7 @@
         "_ps": -1
     },
     {
-        "question": "Q77. Which class-based component is equivalent to this function component?",
+        "question": "Q77. Which class-based component is equivalent to this function component?\n```javascript\nconst Greeting = ({ name }) => <h1>Hello {name}!</h1>;\n```",
         "options": [
             "ascript",
             "Greeting = ({ name }) => <h1>Hello {name}!</h1>;",
@@ -760,7 +760,7 @@
         "_ps": 3
     },
     {
-        "question": "Q78. Which class-based lifecycle method would be called at the same time as this effect Hook?",
+        "question": "Q78. Which class-based lifecycle method would be called at the same time as this effect Hook?\n```javascript\nuseEffect(() => {\n  // do things\n}, []);\n```",
         "options": [
             "ascript",
             "ect(() => {",
@@ -770,7 +770,7 @@
         "_ps": -1
     },
     {
-        "question": "Q79. What is the output of this code?",
+        "question": "Q79. What is the output of this code?\n```javascript\nvar obj;\nconsole.log(obj);\n```",
         "options": [
             "ascript",
             "j;",
@@ -780,7 +780,7 @@
         "_ps": -1
     },
     {
-        "question": "Q80. How would you use the TaxCalculator to determine the amount of tax on \\$50?",
+        "question": "Q80. How would you use the TaxCalculator to determine the amount of tax on \\$50?\n```javascript\nclass TaxCalculator {\n  static calculate(total) {\n    return total * 0.05;\n  }\n}\n```",
         "options": [
             "ascript",
             "TaxCalculator {",
@@ -790,7 +790,7 @@
         "_ps": -1
     },
     {
-        "question": "Q81. What is wrong with this code?",
+        "question": "Q81. What is wrong with this code?\n```js\nconst foo = {\n  bar() {\n    console.log('Hello, world!');\n  },\n  name: 'Albert',\n  age: 26,\n};\n```",
         "options": [
             "",
             "foo = {",
@@ -800,7 +800,7 @@
         "_ps": -1
     },
     {
-        "question": "Q82. What will be logged to the console?",
+        "question": "Q82. What will be logged to the console?\n```js\nconsole.log('I');\nsetTimeout(() => {\n  console.log('love');\n}, 0);\nconsole.log('Javascript!');\n```\n```plaintext\nI\nJavascript!\nlove\n```\n```plaintext\nlove\nI\nJavascript!\n```",
         "options": [
             "",
             "e.log('I');",
@@ -810,7 +810,7 @@
         "_ps": -1
     },
     {
-        "question": "Q83. What will this code log to the console?",
+        "question": "Q83. What will this code log to the console?\n```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```",
         "options": [
             "",
             "foo = [1, 2, 3];",
@@ -820,7 +820,7 @@
         "_ps": -1
     },
     {
-        "question": "Q84. How do you remove the property name from this object?",
+        "question": "Q84. How do you remove the property name from this object?\n```js\nconst foo = {\n  name: 'Albert',\n};\n```",
         "options": [
             "",
             "foo = {",
@@ -840,7 +840,7 @@
         "_ps": 2
     },
     {
-        "question": "Q86. Which concept does this code illustrate?",
+        "question": "Q86. Which concept does this code illustrate?\n```js\nfunction makeAdder(x) {\n  return function (y) {\n    return x + y;\n  };\n}\nvar addFive = makeAdder(5);\nconsole.log(addFive(3));\n```",
         "options": [
             "",
             "on makeAdder(x) {",
@@ -860,7 +860,7 @@
         "_ps": 0
     },
     {
-        "question": "Q88. What would be the result in the console of running this code?",
+        "question": "Q88. What would be the result in the console of running this code?\n```js\nfor (var i = 0; i < 5; i++) {\n  console.log(i);\n}\n```",
         "options": [
             "",
             "ar i = 0; i < 5; i++) {",
@@ -870,7 +870,7 @@
         "_ps": -1
     },
     {
-        "question": "Q89. What is the value of `dessert.type` after executing this code?",
+        "question": "Q89. What is the value of `dessert.type` after executing this code?\n```js\nconst dessert = { type: 'pie' };\ndessert.type = 'pudding';\nconst seconds = dessert;\nseconds.type = 'fruit';\n```",
         "options": [
             "",
             "dessert = { type: 'pie' };",
@@ -890,7 +890,7 @@
         "_ps": 1
     },
     {
-        "question": "Q91. What will be logged to the console??",
+        "question": "Q91. What will be logged to the console??\n```js\n'use strict';\nfunction logThis() {\n  this.desc = 'logger';\n  console.log(this);\n}\nnew logThis();\n```",
         "options": [
             "",
             "trict';",
@@ -910,7 +910,7 @@
         "_ps": 1
     },
     {
-        "question": "Q93. What will this code print?",
+        "question": "Q93. What will this code print?\n```js\nlet rainForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];\nrainForests.splice(0, 2);\nconsole.log(rainForests);\n```",
         "options": [
             "",
             "inForests = ['Amazon', 'Borneo', 'Cerrado', 'Congo'];",
@@ -920,7 +920,7 @@
         "_ps": -1
     },
     {
-        "question": "Q94. Which missing line would allow you to create five variables(one,two,three,four,five) that correspond to their numerical values (1,2,3,4,5)?",
+        "question": "Q94. Which missing line would allow you to create five variables(one,two,three,four,five) that correspond to their numerical values (1,2,3,4,5)?\n```js\nconst numbers = [1, 2, 3, 4, 5];\n//MISSING LINE\n```",
         "options": [
             "",
             "numbers = [1, 2, 3, 4, 5];",
@@ -930,7 +930,7 @@
         "_ps": -1
     },
     {
-        "question": "Q95. What will this code print?",
+        "question": "Q95. What will this code print?\n```js\nconst obj = {\n  a: 1,\n  b: 2,\n  c: 3,\n};\nconst obj2 = {\n  ...obj,\n  a: 0,\n};\nconsole.log(obj2.a, obj2.b);\n```",
         "options": [
             "",
             "obj = {",
@@ -940,7 +940,7 @@
         "_ps": -1
     },
     {
-        "question": "Q96. Which line could you add to this code to print \"jaguar\" to the console?",
+        "question": "Q96. Which line could you add to this code to print \"jaguar\" to the console?\n```js\nlet animals = ['jaguar', 'eagle'];\n//Missing Line\nconsole.log(animals.pop()); //Prints jaguar\n```",
         "options": [
             "",
             "imals = ['jaguar', 'eagle'];",
@@ -950,7 +950,7 @@
         "_ps": -1
     },
     {
-        "question": "Q97. What line is missing from this code?",
+        "question": "Q97. What line is missing from this code?\n```js\n//Missing Line\nfor (var i = 0; i < vowels.length; i++) {\n  console.log(vowels[i]);\n  //Each letter printed on a separate line as follows;\n  //a\n  //e\n  //i\n  //o\n  //u\n}\n```",
         "options": [
             "",
             "ing Line",
@@ -960,7 +960,7 @@
         "_ps": -1
     },
     {
-        "question": "Q98. What will be logged to the console?",
+        "question": "Q98. What will be logged to the console?\n```js\nconst x = 6 % 2;\nconst y = x ? 'One' : 'Two';\nconsole.log(y);\n```",
         "options": [
             "",
             "x = 6 % 2;",
@@ -970,7 +970,7 @@
         "_ps": -1
     },
     {
-        "question": "Q99. How would you access the word It from this multidimensional array?",
+        "question": "Q99. How would you access the word It from this multidimensional array?\n`let matrix = [[\"You\",\"Can\"],[\"Do\",\"It\"],[\"!\",\"!\",\"!\"]];`",
         "options": [
             "atrix = [[\"You\",\"Can\"],[\"Do\",\"It\"],[\"!\",\"!\",\"!\"]];`",
             "`matrix[1[2]]`",
@@ -980,7 +980,7 @@
         "_ps": 2
     },
     {
-        "question": "Q100. What does this code do?",
+        "question": "Q100. What does this code do?\n```js\nconst animals = ['Rabbit', 'Dog', 'Cat'];\nanimals.unshift('Lizard');\n```",
         "options": [
             "",
             "animals = ['Rabbit', 'Dog', 'Cat'];",
@@ -990,7 +990,7 @@
         "_ps": -1
     },
     {
-        "question": "Q101. What is the output of this code?",
+        "question": "Q101. What is the output of this code?\n```js\nlet x = 6 + 3 + '3';\nconsole.log(x);\n```",
         "options": [
             "",
             "= 6 + 3 + '3';",
@@ -1010,7 +1010,7 @@
         "_ps": 3
     },
     {
-        "question": "Q103. Which statement prints \"roar\" to the console?",
+        "question": "Q103. Which statement prints \"roar\" to the console?\n```js\nvar sound = 'grunt';\nvar bear = { sound: 'roar' };\nfunction roar() {\n  console.log(this.sound);\n}\n```",
         "options": [
             "",
             "und = 'grunt';",
@@ -1030,7 +1030,7 @@
         "_ps": 3
     },
     {
-        "question": "Q105. Which code would you use to access the Irish flag?",
+        "question": "Q105. Which code would you use to access the Irish flag?\n```javascript\nvar flagsJSON =\n  '{ \"countries\" : [' +\n  '{ \"country\":\"Ireland\" , \"flag\":\"🇮🇪\" },' +\n  '{ \"country\":\"Serbia\" , \"flag\":\"🇷🇸\" },' +\n  '{ \"country\":\"Peru\" , \"flag\":\"🇵🇪\" } ]}';\nvar flagDatabase = JSON.parse(flagsJSON);\n```",
         "options": [
             "ascript",
             "agsJSON =",
@@ -1040,7 +1040,7 @@
         "_ps": -1
     },
     {
-        "question": "Q106. Which statement correctly imports this code from some-file.js?",
+        "question": "Q106. Which statement correctly imports this code from some-file.js?\n```js\n//some-file.js\nexport const printMe = (str) => console.log(str);\n```",
         "options": [
             "",
             "-file.js",
@@ -1050,7 +1050,7 @@
         "_ps": -1
     },
     {
-        "question": "Q107. What will be the output of this code?",
+        "question": "Q107. What will be the output of this code?\n```js\nconst arr1 = [2, 4, 6];\nconst arr2 = [3, 5, 7];\nconsole.log([...arr1, ...arr2]);\n```",
         "options": [
             "",
             "arr1 = [2, 4, 6];",
@@ -1090,7 +1090,7 @@
         "_ps": 0
     },
     {
-        "question": "Q111. What will be logged to the console?",
+        "question": "Q111. What will be logged to the console?\n```javascript\nconsole.log(typeof 'blueberry');\n```",
         "options": [
             "ascript",
             "e.log(typeof 'blueberry');",
@@ -1100,7 +1100,7 @@
         "_ps": 3
     },
     {
-        "question": "Q112. What is the output that is printed when the div containing the text \"Click Here\" is clicked?",
+        "question": "Q112. What is the output that is printed when the div containing the text \"Click Here\" is clicked?\n```html\n//HTML Markup\n<div id=\"A\">\n  <div id=\"B\">\n    <div id=\"C\">Click Here</div>\n  </div>\n</div>\n```\n```javascript\n//JavaScript\ndocument.querySelectorAll('div').forEach((e) => {\n  e.onclick = (e) => console.log(e.currentTarget.id);\n});\n```",
         "options": [
             "l",
             " Markup",
@@ -1110,7 +1110,7 @@
         "_ps": -1
     },
     {
-        "question": "Q113. What will this code log to the console?",
+        "question": "Q113. What will this code log to the console?\n```js\nconst myNumbers = [1, 2, 3, 4, 5, 6, 7];\nconst myFunction = (arr) => {\n  return arr.map((x) => x + 3).filter((x) => x < 7);\n};\nconsole.log(myFunction(myNumbers));\n```",
         "options": [
             "",
             "myNumbers = [1, 2, 3, 4, 5, 6, 7];",
@@ -1120,7 +1120,7 @@
         "_ps": -1
     },
     {
-        "question": "Q114. What does this code print to the console?",
+        "question": "Q114. What does this code print to the console?\n```js\nlet rainForestAcres = 10;\nlet animals = 0;\nwhile (rainForestAcres < 13 || animals <= 2) {\n  rainForestAcres++;\n  animals += 2;\n}\nconsole.log(animals);\n```",
         "options": [
             "",
             "inForestAcres = 10;",
@@ -1130,7 +1130,7 @@
         "_ps": -1
     },
     {
-        "question": "Q115. Which snippet could you add to this code to print \"YOU GOT THIS\" to the console?",
+        "question": "Q115. Which snippet could you add to this code to print \"YOU GOT THIS\" to the console?\n```js\nlet cipherText = [...'YZOGUT QGMORTZ MTRHTILS'];\nlet plainText = '';\n/* Missing Snippet */\nconsole.log(plainText); //Prints YOU GOT THIS\n```\n```js\nfor (let key of cipherText.keys()) {\n  plainText += key % 2 === 0 ? key : ' ';\n}\n```\n```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 !== 0 ? value : '';\n}\n```\n```js\nfor (let [index, value] of cipherText.entries()) {\n  plainText += index % 2 === 0 ? value : '';\n}\n```",
         "options": [
             "",
             "pherText = [...'YZOGUT QGMORTZ MTRHTILS'];",
@@ -1140,7 +1140,7 @@
         "_ps": -1
     },
     {
-        "question": "Q116. What will this code log to the console?",
+        "question": "Q116. What will this code log to the console?\n```js\nconst foo = [1, 2, 3];\nconst [n] = foo;\nconsole.log(n);\n```",
         "options": [
             "",
             "foo = [1, 2, 3];",
@@ -1150,7 +1150,7 @@
         "_ps": -1
     },
     {
-        "question": "Q117. Which Pokemon will be logged to the console?",
+        "question": "Q117. Which Pokemon will be logged to the console?\n```js\nvar pokedex = ['Snorlax', 'Jigglypuff', 'Charmander', 'Squirtle'];\npokedex.pop();\nconsole.log(pokedex.pop());\n```",
         "options": [
             "",
             "kedex = ['Snorlax', 'Jigglypuff', 'Charmander', 'Squirtle'];",
@@ -1160,7 +1160,7 @@
         "_ps": -1
     },
     {
-        "question": "Q118. Which snippet allows the `acresOfRainForest` variable to increase?",
+        "question": "Q118. Which snippet allows the `acresOfRainForest` variable to increase?\n```js\nlet conservation = true;\nlet deforestation = false;\nlet acresOfRainForest = 100;\nif(/* Snippet goes here */){\n    ++acresOfRainForest;\n}\n```",
         "options": [
             "",
             "nservation = true;",
@@ -1170,7 +1170,7 @@
         "_ps": -1
     },
     {
-        "question": "Q119. Which statement can be used to select the element from the DOM containing the text \"The LinkedIn Learning library has great JavaScript courses\" from this markup?",
+        "question": "Q119. Which statement can be used to select the element from the DOM containing the text \"The LinkedIn Learning library has great JavaScript courses\" from this markup?\n```html\n<h1 class=\"content\">LinkedIn Learning</h1>\n<div class=\"content\">\n  <span class=\"content\">The LinkedIn Learning library has great JavaScript courses!</span>\n</div>\n```",
         "options": [
             "l",
             "ass=\"content\">LinkedIn Learning</h1>",
@@ -1190,7 +1190,7 @@
         "_ps": 0
     },
     {
-        "question": "Q121. What line of code causes this code segment to throw an error?",
+        "question": "Q121. What line of code causes this code segment to throw an error?\n```js\nconst lion = 1;\nlet tiger = 2;\nvar bear;\n++lion;\nbear += lion + tiger;\ntiger++;\n```",
         "options": [
             "",
             "lion = 1;",
@@ -1200,7 +1200,7 @@
         "_ps": -1
     },
     {
-        "question": "Q122. What will be the value of `result` after running this code?",
+        "question": "Q122. What will be the value of `result` after running this code?\n```js\nconst person = { name: 'Dave', age: 40, hairColor: 'blue' };\nconst result = Object.keys(person).map((x) => x.toUpperCase());\n```",
         "options": [
             "",
             "person = { name: 'Dave', age: 40, hairColor: 'blue' };",
@@ -1210,7 +1210,7 @@
         "_ps": -1
     },
     {
-        "question": "Q123. Which snippet could you insert to this code to print \"swim\" to the console?",
+        "question": "Q123. Which snippet could you insert to this code to print \"swim\" to the console?\n```js\nlet animals = [\"eagle\", \"osprey\", \"salmon\"];\nlet key = animal => animal === \"salmon\";\nif(/* Insert Snippet Here */){\n  console.log(\"swim\");\n}\n```",
         "options": [
             "",
             "imals = [\"eagle\", \"osprey\", \"salmon\"];",
@@ -1220,7 +1220,7 @@
         "_ps": -1
     },
     {
-        "question": "Q124. What is the output of this code?",
+        "question": "Q124. What is the output of this code?\n```js\nclass RainForest {\n  static minimumRainFall = 60;\n}\nlet congo = new RainForest();\nRainForest.minimumRainFall = 80;\nconsole.log(congo.minimumRainFall);\n```",
         "options": [
             "",
             "RainForest {",
@@ -1230,7 +1230,7 @@
         "_ps": -1
     },
     {
-        "question": "Q125. How can you attempt to access the property `a.b` on `obj` without throwing an error if a is undefined?",
+        "question": "Q125. How can you attempt to access the property `a.b` on `obj` without throwing an error if a is undefined?\n```js\nlet obj = {};\n```",
         "options": [
             "",
             "j = {};",
@@ -1240,7 +1240,7 @@
         "_ps": -1
     },
     {
-        "question": "Q126. What happens when you run this code?",
+        "question": "Q126. What happens when you run this code?\n```js\nif (true) {\n  var x = 5;\n  const y = 6;\n  let z = 7;\n}\nconsole.log(x + y + z);\n```",
         "options": [
             "",
             "ue) {",
@@ -1250,7 +1250,7 @@
         "_ps": -1
     },
     {
-        "question": "Q127. What does this code print to the console?",
+        "question": "Q127. What does this code print to the console?\n```js\nconst x = [1, 2];\nconst y = [5, 7];\nconst z = [...x, ...y];\nconsole.log(z);\n```",
         "options": [
             "",
             "x = [1, 2];",
@@ -1260,7 +1260,7 @@
         "_ps": -1
     },
     {
-        "question": "Q128. Given this code, which statement will evaluate to false?",
+        "question": "Q128. Given this code, which statement will evaluate to false?\n```js\nconst a = { x: 1 };\nconst b = { x: 1 };\n```",
         "options": [
             "",
             "a = { x: 1 };",
@@ -1270,7 +1270,7 @@
         "_ps": -1
     },
     {
-        "question": "Q129. What will this code log to the console?",
+        "question": "Q129. What will this code log to the console?\n```js\nconsole.log(typeof 41.1);\n```",
         "options": [
             "",
             "e.log(typeof 41.1);",
@@ -1280,7 +1280,7 @@
         "_ps": -1
     },
     {
-        "question": "Q130. What is the output of this code?",
+        "question": "Q130. What is the output of this code?\n```js\nlet scores = [];\nscores.push(1, 2);\nscores.pop();\nscores.push(3, 4);\nscores.pop();\nscore = scores.reduce((a, b) => a + b);\nconsole.log(score);\n```",
         "options": [
             "",
             "ores = [];",
@@ -1290,7 +1290,7 @@
         "_ps": -1
     },
     {
-        "question": "Q131. What does this code print to the console?",
+        "question": "Q131. What does this code print to the console?\n```js\nlet bear = {\n  sound: 'roar',\n  roar() {\n    console.log(this.sound);\n  },\n};\nbear.sound = 'grunt';\nlet bearSound = bear.roar;\nbearSound();\n```",
         "options": [
             "",
             "ar = {",
@@ -1300,7 +1300,7 @@
         "_ps": -1
     },
     {
-        "question": "Q132. What is the output of this code?",
+        "question": "Q132. What is the output of this code?\n```js\nvar cat = { name: 'Athena' };\nfunction swap(feline) {\n  feline.name = 'Wild';\n  feline = { name: 'Tabby' };\n}\nswap(cat);\nconsole.log(cat.name);\n```",
         "options": [
             "",
             "t = { name: 'Athena' };",

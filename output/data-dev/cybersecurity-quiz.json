@@ -110,7 +110,7 @@
         "_ps": 0
     },
     {
-        "question": "Q12. Which area is DMZ?",
+        "question": "Q12. Which area is DMZ?\n![image](https://user-images.githubusercontent.com/50566479/136518616-8712a45f-8ba5-48bd-ac60-5a96ddf754ae.png)",
         "options": [
             "e](https://user-images.githubusercontent.com/50566479/136518616-8712a45f-8ba5-48bd-ac60-5a96ddf754ae.png)",
             "4",
@@ -230,7 +230,7 @@
         "_ps": 1
     },
     {
-        "question": "Q24. You organization is conducting a pilot deployment of a new e-commerce application being considered for purchase. You need to recommend a strategy to evaluate the security of the new software. Your organization does not have access to the application's source code.",
+        "question": "Q24. You organization is conducting a pilot deployment of a new e-commerce application being considered for purchase. You need to recommend a strategy to evaluate the security of the new software. Your organization does not have access to the application's source code.\n#### Which strategy should you choose?",
         "options": [
             "hich strategy should you choose?",
             "dynamic application security testing",
@@ -770,7 +770,7 @@
         "_ps": 3
     },
     {
-        "question": "Q77. What are the essential characteristics of the reference monitor?",
+        "question": "Q77. What are the essential characteristics of the reference monitor?\n#### Q78. According to NIST, what is the first action required to take advantage of the cybersecurity framework?",
         "options": [
             "It is versatile, accurate, and operates at a very high speed.",
             "It is tamper-proof, can always be invoked, and must be small enough to test.",
@@ -850,7 +850,7 @@
         "_ps": 0
     },
     {
-        "question": "Q85. Your organization service customer orders with a custom ordering system developed in-hose. You are responsible for recommending a cloud model to meet the following requirements:",
+        "question": "Q85. Your organization service customer orders with a custom ordering system developed in-hose. You are responsible for recommending a cloud model to meet the following requirements:\n    Control of security required for regulatory compliance\n    Legacy application and database support\n    Scalability to meet seasonal increases in demand\nWhich cloud model is the best option for these requirements?",
         "options": [
             "ntrol of security required for regulatory compliance",
             "gacy application and database support",
@@ -870,7 +870,7 @@
         "_ps": 3
     },
     {
-        "question": "Q87. Executives in your organization exchange emails with external business partners when negotiating valuable business contracts. To ensure that these communications are legally defensible, the security team has recommended that a digital signature be added to these message.",
+        "question": "Q87. Executives in your organization exchange emails with external business partners when negotiating valuable business contracts. To ensure that these communications are legally defensible, the security team has recommended that a digital signature be added to these message.\nWhat are the primary goals of the digital signature in this scenario? (Choose the best answer.)",
         "options": [
             "re the primary goals of the digital signature in this scenario? (Choose the best answer.)",
             "integrity and non-repudiation",
@@ -997,7 +997,7 @@
             "threat",
             "event"
         ],
-        "_ps": -1
+        "_ps": 3
     },
     {
         "question": "Q100. You need to implement a solution to protect internet-facing applications from common attacks like XSS, CSRF, and SQL injection. Which option is best suited to the task?",
@@ -1010,13 +1010,13 @@
         "_ps": -1
     },
     {
-        "question": "Q101. You are responsible for forensic investigations in your organization.You have been tasked with investigating a compromised virtual application server. Becase a revenue generating application runs on the server, the server needs to be returned to service as quickly as possible.",
+        "question": "Q101. You are responsible for forensic investigations in your organization.You have been tasked with investigating a compromised virtual application server. Becase a revenue generating application runs on the server, the server needs to be returned to service as quickly as possible.\nWhat is the next step you should take to best fulfill your responsibilities and meet the needs of the business?",
         "options": [
             "s the next step you should take to best fulfill your responsibilities and meet the needs of the business?",
             "Restore the server from backup immediately.",
             "Take the server offline until your investigation is complete.",
             "Take a snapshot of the compromised virtual server for your investigation."
         ],
-        "_ps": -1
+        "_ps": 3
     }
 ]

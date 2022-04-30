@@ -70,7 +70,7 @@
         "_ps": 3
     },
     {
-        "question": "Q8. What should fill the two blanks in the HTML code below?",
+        "question": "Q8. What should fill the two blanks in the HTML code below?\n```html\n<address ______ _____>\n  <span itemprop=\"streetAddress\">6410 Via Real</span><br />\n  <span itemprop=\"addressLocality\">Carpinteria</span>,\n  <span itemprop=\"addressRegion\">CA</span>\n  <span itemprop=\"addressCode\">93013</span>\n</address>\n```",
         "options": [
             "l",
             "ss ______ _____>",
@@ -110,7 +110,7 @@
         "_ps": 1
     },
     {
-        "question": "Q12. What is the best way to code the sample shown?",
+        "question": "Q12. What is the best way to code the sample shown?\n![Sample text](images/ss-2.png?raw=true)\n```html\n<details>\n  <summary>Parmesan Deviled Eggs</summary>\n  <p>\n    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n  </p>\n</details>\n```\n```html\n<h4>▸ Parmesan Deviled Eggs</h4>\n<p>\n  These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n</p>\n```\n```html\n<details open>\n  <summary>Parmesan Deviled Eggs</summary>\n  <p>\n    These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.\n  </p>\n</details>\n```",
         "options": [
             "le text](images/ss-2.png?raw=true)",
             "A",
@@ -160,7 +160,7 @@
         "_ps": 0
     },
     {
-        "question": "Q17. What should fill the blank in the HTML code bellow?",
+        "question": "Q17. What should fill the blank in the HTML code bellow?\n```html\n<form method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>\n```",
         "options": [
             "l",
             "method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>",
@@ -170,7 +170,7 @@
         "_ps": 3
     },
     {
-        "question": "Q18. What is the correct markup for `alt` attribute of an image?",
+        "question": "Q18. What is the correct markup for `alt` attribute of an image?\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \"\"Whistler's Mother\"\" in cubist style\">\n```\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \"Whistler's Mother\" in cubist style\">\n```\n```html\n<img src=\"cubism.jpg\" alt='Version of \"Whistler\\'s Mother\" in cubist style'>\n```",
         "options": [
             "A",
             "l",
@@ -180,7 +180,7 @@
         "_ps": -1
     },
     {
-        "question": "Q19. In the code below, what is the purpose of the **id** attribute?",
+        "question": "Q19. In the code below, what is the purpose of the **id** attribute?\n```html\n<p id=\"warning\">Be careful when installing this product.</p>\n```",
         "options": [
             "l",
             "\"warning\">Be careful when installing this product.</p>",
@@ -190,7 +190,7 @@
         "_ps": 3
     },
     {
-        "question": "Q20. What is the best semantic markup for the sentence shown?",
+        "question": "Q20. What is the best semantic markup for the sentence shown?\n```markdown\nOn July 21, 1969, Neil Armstrong said, \"One small step for man, one giant leap for mankind.\"\n```\n```markdown\n<p>\n  On <time datetime=\"1969-07-21\">July 21, 1969</time>, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```\n```markdown\n<p>\n  On July 21, 1969, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```\n```markdown\n<p>\n  On July 21, 1969, Neil Armstrong said, <q>One small step for man, one giant leap for mankind.</q>\n</p>\n```",
         "options": [
             "kdown",
             "y 21, 1969, Neil Armstrong said, \"One small step for man, one giant leap for mankind.\"",
@@ -200,7 +200,7 @@
         "_ps": 3
     },
     {
-        "question": "Q21. What should fill the blank in this HTML code?",
+        "question": "Q21. What should fill the blank in this HTML code?\n```html\n<a href=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>\n```",
         "options": [
             "l",
             "f=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>",
@@ -210,7 +210,7 @@
         "_ps": -1
     },
     {
-        "question": "Q22. Review the text in the red box in the image shown. What is the best way to code this in HTML?",
+        "question": "Q22. Review the text in the red box in the image shown. What is the best way to code this in HTML?\n![Image of footer](images/ss-3.png?raw=true)",
         "options": [
             "e of footer](images/ss-3.png?raw=true)",
             "ordered list",
@@ -220,7 +220,7 @@
         "_ps": 2
     },
     {
-        "question": "Q23. What is the best way to code three choices within a form so that the user can select only one item?",
+        "question": "Q23. What is the best way to code three choices within a form so that the user can select only one item?\n```markdown\n<label for=\"example\">Make a choice:</label>\n<datalist id=\"example\">\n  <option value=\"Choice 1\"></option>\n  <option value=\"Choice 2\"></option>\n  <option value=\"Choice 3\"></option>\n</datalist>\n```\n```markdown\n<p>Make a choice:</p>\n<input id=\"choices\" name=\"example\" />\n<datalist value=\"choices\">\n  <option value=\"Choice 1\"></option>\n  <option value=\"Choice 2\"></option>\n  <option value=\"Choice 3\"></option>\n</datalist>\n```\n```markdown\n<label for=\"example\">Make a choice:</label>\n<input list=\"example\" id=\"choices\" name=\"choices\" />\n<datalist id=\"choices\">\n  <option value=\"Choice 1\">Choice 1</option>\n  <option value=\"Choice 2\">Choice 2</option>\n  <option value=\"Choice 3\">Choice 3</option>\n</datalist>\n```",
         "options": [
             "A",
             "kdown",
@@ -240,7 +240,7 @@
         "_ps": 1
     },
     {
-        "question": "Q25. What does the code shown below accomplish?",
+        "question": "Q25. What does the code shown below accomplish?\n```html\n<picture>\n  <source srcset=\"image1.jpg\" media=\"(min-width: 1000px)\" />\n  <source srcset=\"image2.jpg\" media=\"(min-width: 750px)\" />\n  <img src=\"image3.jpg\" />\n</picture>\n```",
         "options": [
             "l",
             "re>",
@@ -250,7 +250,7 @@
         "_ps": -1
     },
     {
-        "question": "Q26. What code will produce this table?",
+        "question": "Q26. What code will produce this table?\n![Table with yellow background](images/ss-4.png?raw=true)\n```markdown\n<table>\n  <scope cols=\"2\" style=\"background-color: yellow\">\n  <tr>\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr>\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n```\n```markdown\n<table>\n  <colgroup span=\"2\" style=\"background-color: yellow\">\n  <tr>\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr>\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n```\n```markdown\n<table>\n  <group cols=\"2\" style=\"background-color: yellow\">\n  <tr scope=\"row\">\n    <th>Col 1</th>\n    <th>Col 2</th>\n    <th>Col 3</th>\n  </tr>\n  <tr scope=\"row\">\n    <td>first</td>\n    <td>second</td>\n    <td>third</td>\n  </tr>\n</table>\n```",
         "options": [
             "e with yellow background](images/ss-4.png?raw=true)",
             "A",
@@ -270,7 +270,7 @@
         "_ps": 1
     },
     {
-        "question": "Q28. What should fill the two blanks in the HTML code below?",
+        "question": "Q28. What should fill the two blanks in the HTML code below?\n```markdown\n<section itemscope itemtype=\"http://schema.org/Restaurant\">\n  <h1 itemprop=\"name\">Nadia's Garden</h1>\n  <p itemscope ______ ______>\n    <span itemprop=\"ratingValue\">4.5</span> stars - based on\n    <span itemprop=\"reviewCount\">120</span> reviews\n  </p>\n</section>\n```",
         "options": [
             "kdown",
             "on itemscope itemtype=\"http://schema.org/Restaurant\">",
@@ -280,7 +280,7 @@
         "_ps": -1
     },
     {
-        "question": "Q29. Which HTML snippet links back to the very top of a webpage?",
+        "question": "Q29. Which HTML snippet links back to the very top of a webpage?\n```markdown\n<a id=\"top\"></a>\n<!-- placed at the top of the page -->\n<a href=\"#top\">back to top</a>\n```\n```markdown\n<a name=\"top\"></a>\n<!-- placed at the top of the page -->\n<a href=\"#top\">back to top</a>\n```\n```markdown\n<a href=\"#\">back to top</a> <a href=\"#top\">back to top</a>\n```",
         "options": [
             "A",
             "kdown",
@@ -330,7 +330,7 @@
         "_ps": 0
     },
     {
-        "question": "Q34. What is the most semantically accurate way to mark up the sentence shown below? Note: \"TLAs\" stands for \"three-letter acronyms.\"",
+        "question": "Q34. What is the most semantically accurate way to mark up the sentence shown below? Note: \"TLAs\" stands for \"three-letter acronyms.\"\n**We are fond of our TLAs in web design.**\n```html\n<p>We are fond of our <span title=\"three-letter acronyms\">TLAs</span> in web design.</p>\n```\n```html\n<p>We are fond of our TLAs in web design.</p>\n```\n```html\n<p>we are fond of our <abbr title=\"three-letter acronyms\">TLAs</abbr> in web design.</p>\n```",
         "options": [
             "re fond of our TLAs in web design.**",
             "A",
@@ -340,7 +340,7 @@
         "_ps": -1
     },
     {
-        "question": "Q35. What is the correctly nested markup for this list?",
+        "question": "Q35. What is the correctly nested markup for this list?\n![Sample list](images/ss-6.png?raw=true)\n```markdown\n<ul>\n  <li>\n    office\n    <ol style=\"circle\">\n      <li>staple</li>\n      <li>paper</li>\n    </ol>\n  </li>\n  <li>\n    groceries\n    <ol style=\"circle\">\n      <li>milk</li>\n    </ol>\n  </li>\n</ul>\n```\n```markdown\n<ul>\n  <li>Office Supplies\n    <ul>\n      <li>Stapler</li>\n      <li>Paper clips</li>\n    </ul>\n  </li>\n  <li>Groceries\n    <ul>\n      <li>Milk</li>\n    </ul>\n  </li>\n</ul>\n```\n```markdown\n<ul>\n  <li>office</li>\n  <li>staple</li>\n  <li>paper</li>\n  <li>groceries</li>\n  <li>milk</li>\n</ul>\n```\n#### Q37. What should fill the blank below?\n```html\n<link href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />\n```",
         "options": [
             "le list](images/ss-6.png?raw=true)",
             "A",
@@ -350,7 +350,7 @@
         "_ps": -1
     },
     {
-        "question": "Q37. What should fill the blank below?",
+        "question": "Q37. What should fill the blank below?\n```html\n<link href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />\n```",
         "options": [
             "l",
             "href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />",
@@ -360,7 +360,7 @@
         "_ps": -1
     },
     {
-        "question": "Q38. What is the semantically correct way to mark up this layout?",
+        "question": "Q38. What is the semantically correct way to mark up this layout?\n![quote](images/ss-5.png?raw=true)\n```markdown\n<p>\n  \"Making money is what you have to do to sustain a business—being driven to make something of value\n  and purpose is much more powerful.\"\n</p>\n<p><em>Lynda Weinman</em></p>\n```\n```markdown\n<blockquote>\n  <q\n    >\"Making money is what you have to do to sustain a business—being driven to make something of\n    value and purpose is much more powerful.\"</q\n  >\n  <cite><em>Lynda Weinman</em></cite>\n</blockquote>\n```\n```markdown\n<blockquote>\n  <p>\n    \"Making money is what you have to do to sustain a business—being driven to make something of\n    value and purpose is much more powerful.\"\n  </p>\n  <cite>Lynda Weinman</cite>\n</blockquote>\n```",
         "options": [
             "e](images/ss-5.png?raw=true)",
             "A",
@@ -400,7 +400,7 @@
         "_ps": 1
     },
     {
-        "question": "Q42. What does this code do?",
+        "question": "Q42. What does this code do?\n```markdown\n<audio controls>\n  <source src=\"sound.mp3\" type=\"audio/mpeg\" />\n  <source src=\"sound.ogg\" type=\"audio/ogg\" />\n  <source src=\"sound.wav\" type=\"audio/wav\" />\n</audio>\n```",
         "options": [
             "kdown",
             " controls>",
@@ -440,7 +440,7 @@
         "_ps": 1
     },
     {
-        "question": "Q46. Which code snippet creates the layout shown, starting at `<table>` and ending at `</table>`?",
+        "question": "Q46. Which code snippet creates the layout shown, starting at `<table>` and ending at `</table>`?\n![Table](images/ss-1.png?raw=true 'table')\n```markdown\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n</tr>\n<tr>\n  <td rowspan=\"2\">Table cell 3</td>\n</tr>\n```\n```markdown\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n  <td>Table cell 3</td>\n</tr>\n```\n```markdown\n<tr>\n  <td>Table cell 1</td>\n  <td>Table cell 2</td>\n</tr>\n<tr>\n  <td colspan=\"2\">Table cell 3</td>\n</tr>\n```",
         "options": [
             "e](images/ss-1.png?raw=true 'table')",
             "A",
@@ -460,7 +460,7 @@
         "_ps": 0
     },
     {
-        "question": "Q48. Which form is coded correctly?",
+        "question": "Q48. Which form is coded correctly?\n```markdown\n<form>\n  <legend>Title</legend>\n  <fieldset>\n    <label for=\"name\">Your name:</label>\n    <input type=\"text\" name=\"name\" id=\"name\" />\n    <button type=\"submit\">Submit</button>\n  </fieldset>\n</form>\n```\n```markdown\n<form>\n  <fieldset>\n    <legend>Title</legend>\n    <p>Your name:</p>\n    <input type=\"text\" name=\"name\" id=\"name\" />\n    <input type=\"submit\" value=\"Submit\" />\n  </fieldset>\n</form>\n```\n```markdown\n<form>\n  <fieldset>\n    <legend>Title</legend>\n    <label for=\"name\">Your name:</label>\n    <input type=\"text\" name=\"name\" id=\"name\" />\n    <button type=\"submit\">Submit</button>\n  </fieldset>\n</form>\n```",
         "options": [
             "A",
             "kdown",
@@ -480,7 +480,7 @@
         "_ps": 0
     },
     {
-        "question": "Q50. What does this code do?",
+        "question": "Q50. What does this code do?\n```html\n<audio controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>\n```",
         "options": [
             "l",
             " controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>",
@@ -510,7 +510,7 @@
         "_ps": 2
     },
     {
-        "question": "Q53. In the code below, what is the purpose of the **lang** attribute?",
+        "question": "Q53. In the code below, what is the purpose of the **lang** attribute?\n```html\n<p lang=\"en-GB\">Welcome to our wonderful website.</p>\n```",
         "options": [
             "l",
             "g=\"en-GB\">Welcome to our wonderful website.</p>",
@@ -530,7 +530,7 @@
         "_ps": 3
     },
     {
-        "question": "Q55. Review the code below. What is the absolute URL for a page called **page.html**?",
+        "question": "Q55. Review the code below. What is the absolute URL for a page called **page.html**?\n```html\n<base href=\"http://www.linkedin.com/dir/\" />\n```",
         "options": [
             "l",
             "href=\"http://www.linkedin.com/dir/\" />",
@@ -570,7 +570,7 @@
         "_ps": 3
     },
     {
-        "question": "Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?",
+        "question": "Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a></li>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a></li>\n    <ul>\n      <li><a href=\"#\">Link 2a</a></li>\n    </ul>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a>\n    <ul>\n      <li><a href=\"#\">Link 2a</a></li>\n    </ul>\n  </li>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```\n```markdown\n<ul><nav>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a>\n    <ul><nav>\n      <li><a href=\"#\">Link 2a</a></li>\n    </nav></ul>\n  </li>\n  <li><a href=\"#\">Link 3</a></li>\n</nav></ul>\n```",
         "options": [
             "kdown",
             "ul>",
@@ -600,7 +600,7 @@
         "_ps": 3
     },
     {
-        "question": "Q62. What is the best semantic to use Quotes in HTML?",
+        "question": "Q62. What is the best semantic to use Quotes in HTML?\n`Steve Kruz Said: \"He will Win\"`",
         "options": [
             " Kruz Said: \"He will Win\"`",
             "`<q>`",
@@ -640,7 +640,7 @@
         "_ps": 2
     },
     {
-        "question": "Q66. What is the purpose of async in this code?",
+        "question": "Q66. What is the purpose of async in this code?\n`<script async src=\"myscript.js\"></script>`",
         "options": [
             "pt async src=\"myscript.js\"></script>`",
             "It downloads the script from the server when resources allow.",
@@ -650,7 +650,7 @@
         "_ps": 3
     },
     {
-        "question": "Q67. What does this code?",
+        "question": "Q67. What does this code?\n`<audio autoplay loop src=\"sound.mp3\" type=\"audio/mpeg\"></audio>`",
         "options": [
             "o autoplay loop src=\"sound.mp3\" type=\"audio/mpeg\"></audio>`",
             "When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.",
@@ -670,7 +670,7 @@
         "_ps": 2
     },
     {
-        "question": "Q69. In this code, what is the purpose of defer?",
+        "question": "Q69. In this code, what is the purpose of defer?\n`<script defer src=\"myscript.js\"></script>`",
         "options": [
             "pt defer src=\"myscript.js\"></script>`",
             "It downloads the script from the server when resources allow.",
@@ -680,7 +680,7 @@
         "_ps": 2
     },
     {
-        "question": "Q70. The code below contains some errors. Which choice corrects all of the errors?",
+        "question": "Q70. The code below contains some errors. Which choice corrects all of the errors?\n```html\n<table>\n  <tr>\n    Cell 1\n  </tr>\n  <td>Cell 2</td>\n  <caption>\n    A table\n  </caption>\n</table>\n```\n```HTML\n<caption>A table</caption>\n  <table>\n    <td>\n      <tr>Cell 1</tr>\n      <tr>Cell 2</tr>\n    </td>\n  </table>\n```\n```HTML\n<caption>A table</caption>\n<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>\n```\n```HTML\n<table>\n  <caption>A table</caption>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>\n```",
         "options": [
             "l",
             ">",
@@ -690,7 +690,7 @@
         "_ps": -1
     },
     {
-        "question": "Q71. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?",
+        "question": "Q71. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?\n![Image of footer](images/ss-7.png?raw=true)",
         "options": [
             "e of footer](images/ss-7.png?raw=true)",
             "`<a href=\"../work/info.html\">See Information </a>`",
@@ -710,7 +710,7 @@
         "_ps": 2
     },
     {
-        "question": "Q73. Which list comprises three empty elements?",
+        "question": "Q73. Which list comprises three empty elements?\n```HTML\n<area>\n<embed>\n<strong>\n```\n```HTML\n<input>\n<br>\n<p>\n```\n```HTML\n<link>\n<meta>\n<title>\n```",
         "options": [
             "A",
             "L",
@@ -730,7 +730,7 @@
         "_ps": 0
     },
     {
-        "question": "Q75. What is the purpose of the `class` attribute?",
+        "question": "Q75. What is the purpose of the `class` attribute?\n      separated by spaces.",
         "options": [
             "Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,",
             "separated by spaces.",
@@ -750,7 +750,7 @@
         "_ps": 3
     },
     {
-        "question": "Q77. What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?",
+        "question": "Q77. What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?\nAs Steve Krug once said, happy talk must die.",
         "options": [
             "ve Krug once said, happy talk must die.",
             "`<p>`As Steve Krug once said, `<b>`happy talk must die.`</b>` `</p>`",
@@ -760,7 +760,7 @@
         "_ps": -1
     },
     {
-        "question": "Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?",
+        "question": "Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?\n```markdown\n<p>\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"contact.html\">Contact</a>\n</p>\n```\n```markdown\n<nav>\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"contact.html\">Contact</a>\n</nav>\n```\n```markdown\n <nav>\n    <ol>\n      <li><a href=\"index.html\">Home</a></li>\n      <li><a href=\"about.html\">About</a></li>\n      <li><a href=\"contact.html\">Contact</a></li>\n     </ol>\n  </nav>\n```",
         "options": [
             "A",
             "kdown",
@@ -770,7 +770,7 @@
         "_ps": -1
     },
     {
-        "question": "Q79. Which choice is the best way to mark up this layout?",
+        "question": "Q79. Which choice is the best way to mark up this layout?\n![Image of footer](images/ss-8.png?raw=true)\n```markdown\n<h4>Mailing Address</h4>\n<address>\n  6410 Via Real <br>\n  Carpinteria, CA 93013<br>\n  <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n</address>\n```\n```markdown\n<h4><strong>Mailing Address</h4>\n<address><em>\n  6410 Via Real <br>\n  Carpinteria, CA 93013<br>\n  <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n</em></address>\n```\n```markdown\n<h4>Mailing Address</h4>\n<p><em>\n  6410 Via Real <br>\n  Carpinteria, CA 93013<br>\n  <a href=\"mailto:info@linkedin.com\">info@linkedin.com</a>\n</em></p>\n```",
         "options": [
             "e of footer](images/ss-8.png?raw=true)",
             "A",
@@ -800,7 +800,7 @@
         "_ps": 3
     },
     {
-        "question": "Q82. For the HTML code below, when will \"Sample Text\" display to the browser?",
+        "question": "Q82. For the HTML code below, when will \"Sample Text\" display to the browser?\n```markdown\n<noscript>Sample Text</noscript>\n```",
         "options": [
             "kdown",
             "ipt>Sample Text</noscript>",
@@ -810,7 +810,7 @@
         "_ps": -1
     },
     {
-        "question": "Q83. How will this code render by default in most web browsers?",
+        "question": "Q83. How will this code render by default in most web browsers?\n```markdown\n<details>\n  <h4>Mixed Berry Tart.</h4>\n  <p4>Raspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.</p4>\n</details>\n```\n      ![A](images/Q84-1.jpg)\n      ![B](images/Q84-2.jpg)\n      ![C](images/Q84-3.jpg)",
         "options": [
             "kdown",
             "ls>",
@@ -850,7 +850,7 @@
         "_ps": 0
     },
     {
-        "question": "Q87. In this code, what is _target_?",
+        "question": "Q87. In this code, what is _target_?\n`<a target=\"_blank\">...</a>`",
         "options": [
             "rget=\"_blank\">...</a>`",
             "an attribute",
@@ -860,7 +860,7 @@
         "_ps": 1
     },
     {
-        "question": "Q88. What is the correct way to add a submit URL to a `button` element?",
+        "question": "Q88. What is the correct way to add a submit URL to a `button` element?\n```HTML\n<button submit=\"http://example.com/process\">\n  Process data\n</button>\n```\n```HTML\n<button action=\"http://example.com/process\">\n  Process data\n</button>\n```\n```HTML\n<button formaction=\"http://example.com/process\">\n  Process data\n</button>\n```",
         "options": [
             "A",
             "L",
@@ -870,7 +870,7 @@
         "_ps": -1
     },
     {
-        "question": "Q89. Which is the best markup to produce this text?",
+        "question": "Q89. Which is the best markup to produce this text?\n`x<y&z>w`",
         "options": [
             ">w`",
             "`<p>x<y&z>w</p>`",
@@ -880,7 +880,7 @@
         "_ps": 2
     },
     {
-        "question": "Q90. What is wrong with this code snippet?",
+        "question": "Q90. What is wrong with this code snippet?\n```HTML\n<label>Address:</label>\n<input type=\"text\" name=\"address\" id=\"address-input\" />\n```",
         "options": [
             "L",
             ">Address:</label>",
@@ -930,7 +930,7 @@
         "_ps": 1
     },
     {
-        "question": "Q95. The value attribute is associated with which set of tags ?",
+        "question": "Q95. The value attribute is associated with which set of tags ?\n```HTML\n<li>\n<input>\n<option>\n```\n```HTML\n<input>\n<option>\n<textarea>\n```\n```HTML\n<button>\n<input>\n<form>\n```",
         "options": [
             "A",
             "L",
@@ -940,7 +940,7 @@
         "_ps": 0
     },
     {
-        "question": "Q96. What is wrong with this code?",
+        "question": "Q96. What is wrong with this code?\n`<img src=\"https://source.unsplash.com/random\">`",
         "options": [
             "src=\"https://source.unsplash.com/random\">`",
             "`<img>` should be paired with a `<caption>` tag.",
@@ -960,7 +960,7 @@
         "_ps": 1
     },
     {
-        "question": "Q98. Which choice is the best way to code three choices within a form so that the user can select multiple items?",
+        "question": "Q98. Which choice is the best way to code three choices within a form so that the user can select multiple items?\n      <input type=\"radio\" name=\"example\"> Choice 2 <br/>\n      <input type=\"radio\" name=\"example\"> Choice 3\n      <input type=\"checkbox\" name=\"example\"> Choice 2 <br/>\n      <input type=\"checkbox\" name=\"example\"> Choice 3\n      <label><input type=\"checkbox\" name=\"example\"> Choice 2</label><br/>\n      <label><input type=\"checkbox\" name=\"example\"> Choice 3</label>",
         "options": [
             "<input type=\"radio\" name=\"example\"> Choice 1 <br/>",
             "<input type=\"radio\" name=\"example\"> Choice 2 <br/>",
@@ -1010,7 +1010,7 @@
         "_ps": 2
     },
     {
-        "question": "Q103. You need to add comments to the company blog. What is the most semantic markup for a list of comments?",
+        "question": "Q103. You need to add comments to the company blog. What is the most semantic markup for a list of comments?\n```HTML\n<aside>\n  <h3>Comments</h3>\n  <article> First comment.</article>\n  <article> Second comment.</article>\n</aside>\n```\n```HTML\n<div aria=\"dpub-comments\">\n  <h3>Comments</h3>\n  <div aria=\"dpub-comment\"> First comment.</div>\n  <div aria=\"dpub-comment\"> Second comment.</div>\n</div>\n```\n```HTML\n<aside>\n  <h3>Comments</h3>\n  <aside> First comment.</aside>\n  <aside> Second comment.</aside>\n</aside>\n```",
         "options": [
             "A",
             "L",
@@ -1050,7 +1050,7 @@
         "_ps": 3
     },
     {
-        "question": "Q107. Which image file referenced in this `img` element's `srcset` attribute should a browser on a small mobile phone load?",
+        "question": "Q107. Which image file referenced in this `img` element's `srcset` attribute should a browser on a small mobile phone load?\n```html\n<img\n  srcset=\"medium.jpg 320w, large.jpg 1280w\"\n  src=\"small.jpg\"\n  alt=\"Our favorite image\"\n  sizes=\"(min-width: 1200px) 640px, 100vw\"\n/>\n```",
         "options": [
             "l",
             "",
@@ -1060,7 +1060,7 @@
         "_ps": -1
     },
     {
-        "question": "Q108. Which description is coded correctly?",
+        "question": "Q108. Which description is coded correctly?\n```HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dd> Hardware used to provide data to other computers.</dd>\n  <!-- Other terms and descriptions -->\n</dl>\n```\n```HTML\n<dt>\n  <dl>Server</dl>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dd> Hardware used to provide data to other computers.</dd>\n  <!-- Other terms and descriptions -->\n</dt>\n```\n```HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dt> Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n```",
         "options": [
             "A",
             "L",
@@ -1070,7 +1070,7 @@
         "_ps": 0
     },
     {
-        "question": "Q109. What is wrong with this code?",
+        "question": "Q109. What is wrong with this code?\n```HTML\n<ul>\n  <h2>Espresso Drinks</h2>\n  <li>Espresso</li>\n  <li>Latte</li>\n  <li>Cappuccino</li>\n  <li>Mocha</li>\n</ul>\n```",
         "options": [
             "L",
             "",
@@ -1090,7 +1090,7 @@
         "_ps": 2
     },
     {
-        "question": "Q111. How would you mark up a header for a table row?",
+        "question": "Q111. How would you mark up a header for a table row?\n```HTML\n<table>\n  <thead scope=\"row\"><th row=\"1\">Header</th></thead>\n  <tr>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n```\n```HTML\n<table>\n  <tr>\n  <th scope=\"row\">Header</th>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n```\n```HTML\n<table>\n  <tr>\n    <thead scope=\"row\">Header</thead>\n    <td>10</td>\n    <td>18</td>\n  </tr>\n</table>\n```",
         "options": [
             "A",
             "L",

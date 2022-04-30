@@ -40,7 +40,7 @@
         "_ps": 0
     },
     {
-        "question": "Q5. What is the correct set of component classes needed to implement a RecyclerView of items that displays a list of widgets vertically?",
+        "question": "Q5. What is the correct set of component classes needed to implement a RecyclerView of items that displays a list of widgets vertically?\n```\n      RecycleView\n      RecyclerView.Adapter<T extends BaseAdapter>\n      RecyclerView.ViewHolder<T extends BaseViewHolder>\n      LinearLayoutManager\n```\n```\n      RecycleView\n      RecyclerView.Adapter\n      RecyclerView.ViewHolder<T extends BaseViewHolder>\n      LinearLayoutManager\n```\n```\n      RecycleView\n      RecyclerView.Adapter\n      RecyclerView.ViewHolder\n      LinearLayoutManager\n```",
         "options": [
             "",
             "",
@@ -60,7 +60,7 @@
         "_ps": 0
     },
     {
-        "question": "Q7. You have created a NextActivity class that relies on a string containing some data that pass inside the intent Which code snippet allows you to launch your activity?",
+        "question": "Q7. You have created a NextActivity class that relies on a string containing some data that pass inside the intent Which code snippet allows you to launch your activity?\n```\n        Intent(this, NextActivity::class.java).also { intent ->\n            startActivity(intent)\n        }\n```\n```\n        Intent(this, NextActivity::class.java).apply {\n            put(EXTRA_NEXT, \"some data\")\n        }.also { intent ->\n            activityStart(intent)\n        }\n```\n```\n        Intent(this, NextActivity::class.java).apply {\n            putExtra(EXTRA_NEXT, \"some data\")\n        }.also { intent ->\n            startActivity(intent)\n        }\n```",
         "options": [
             "",
             "",
@@ -90,7 +90,7 @@
         "_ps": 0
     },
     {
-        "question": "Q10. How would you specify in your build.gradle file that your app required at least API level 21 to run, but that it can be tested on API level 28?",
+        "question": "Q10. How would you specify in your build.gradle file that your app required at least API level 21 to run, but that it can be tested on API level 28?\n```\n      defaultConfig {\n        ...\n        minApiVersion 21\n        targetApiVersion 28\n      }\n```\n```\n      defaultConfig {\n        ...\n        targetSdkVersion 21\n        testSdkVersion 28\n      }\n```\n```\n      defaultConfig {\n        ...\n        minSdkVersion 21\n        testApiVersion 28\n      }\n```",
         "options": [
             "",
             "",
@@ -110,7 +110,7 @@
         "_ps": 3
     },
     {
-        "question": "Q12. You need to remove an Event based on it;s id from your API, Which code snippet defines that request in Retrofit?",
+        "question": "Q12. You need to remove an Event based on it;s id from your API, Which code snippet defines that request in Retrofit?\n      fun deleteEvent(@Path(\"id\") id: Long): Call<Unit>\n      fun deleteEvent(@Path(\"id\") id: Long): Call<Unit>\n      fun deleteEvent(@Path(\"id\") id: Long): Call<Unit>",
         "options": [
             "@DELETE(\"events)",
             "fun deleteEvent(@Path(\"id\") id: Long): Call<Unit>",
@@ -130,7 +130,7 @@
         "_ps": 3
     },
     {
-        "question": "Q14. Given the fragment below, how would you get access to a TextView with an ID of text_home contained in the layout file of a Fragment class?",
+        "question": "Q14. Given the fragment below, how would you get access to a TextView with an ID of text_home contained in the layout file of a Fragment class?\n```\n    private lateinit var textView: TextView\n    override fun onCreateView(...): View? {\n        val root = inflator.inflator(R>layout.fragment_home, container, false)\n        textView = ??\n        return root\n    }\n```",
         "options": [
             "",
             "ivate lateinit var textView: TextView",
@@ -140,7 +140,7 @@
         "_ps": -1
     },
     {
-        "question": "Q15. Why do you use the AndroidJUnitRunner when running UI tests?",
+        "question": "Q15. Why do you use the AndroidJUnitRunner when running UI tests?\nNotice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices",
         "options": [
             ": AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices",
             "The test runner facilitates loading your test package and the app under test onto a device or emulator, runs the test, and reports the results.",
@@ -210,7 +210,7 @@
         "_ps": 1
     },
     {
-        "question": "Q22. Which drawable definition allows you to achieve the shape below?",
+        "question": "Q22. Which drawable definition allows you to achieve the shape below?\n![img](image/shape.png)\n```\n    xml\n    <shape xmlns:android=\"http://schemas.android.com/apk/res/android\"\n        android:shape=\"oval\">\n        <stroke\n            android:width=\"4dp\"\n\t    android:color=\"@android:color/white\" />\n\t<solid android:color=\"@android:color/black\" />\n    </shape>\n```\n```\n    xml\n    <oval xmlns:android=\"http://schemas.android.com/apk/res/android\">\n        <stroke android:width=\"4dp\" android:color=\"@android:color/black\"/>\n        <solid android:color=\"@android:color/white\"/>\n    </oval>\n```\n```\n    xml\n    <shape xmlns:android=\"http://schemas.android.com/apk/res/android\"\n        android:shape=\"oval\">\n        <stroke\n            android:width=\"4dp\"\n            android:color=\"@android:color/black\" />\n        <solid android:color=\"@android:color/white\" />\n    </shape>\n```",
         "options": [
             "(image/shape.png)",
             "",
@@ -230,7 +230,7 @@
         "_ps": 1
     },
     {
-        "question": "Q24. You need to retrieve a list of photos from an API. Which code snippet defines an HTML GET request in Retrofit?",
+        "question": "Q24. You need to retrieve a list of photos from an API. Which code snippet defines an HTML GET request in Retrofit?\n      fun listPhotos(@Path(\"id\") id:Long?) : Call<Photo>\n      fun listPhotos() : Call<List<Photo>>\n      fun listPhotos() : Call<Photo>",
         "options": [
             "@GET(\"photo/{id}\"}",
             "fun listPhotos(@Path(\"id\") id:Long?) : Call<Photo>",
@@ -270,7 +270,7 @@
         "_ps": 1
     },
     {
-        "question": "Q28. Why might you need to include the following permission to your app?",
+        "question": "Q28. Why might you need to include the following permission to your app?\n`android.permission.ACCESS_NETWORK_STATE`",
         "options": [
             "id.permission.ACCESS_NETWORK_STATE`",
             "to monitor the location of the devices so that you don't attempt to make network calls when the user is stationary",
@@ -280,7 +280,7 @@
         "_ps": -1
     },
     {
-        "question": "Q29. Which image best corresponds to the following `LinearLayout`?",
+        "question": "Q29. Which image best corresponds to the following `LinearLayout`?\n```\n    xml\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n\tandroid:layout_height=\"match_parent\"\n\tandroid:orientation=\"horizontal\"\n\tandroid:gravity=\"center\">\n\t<Button\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:text=\"Button\" />\n\t<Button\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:text=\"Button\" />\n        </LinearLayout>\n```\n      ![img](image/00.jpeg)\n      ![img](image/01.jpeg)\n      ![img](image/02.jpeg)",
         "options": [
             "",
             "l",
@@ -290,7 +290,7 @@
         "_ps": -1
     },
     {
-        "question": "Q30. You want to open the default Dialer app on a device. What is wrong with this code?",
+        "question": "Q30. You want to open the default Dialer app on a device. What is wrong with this code?\n```\nval dialerIntent = Intent()\nval et = findViewById(R.id.some_edit_text)\ndialerIntent.action = Intent.ACTION_DIAL\ndialerIntent.data = Uri.parse(\"tel:\" + et.getText()?.toString())\nstartActivity(dialerIntent)\n```",
         "options": [
             "",
             "alerIntent = Intent()",
@@ -330,7 +330,7 @@
         "_ps": 3
     },
     {
-        "question": "Q34. You would like to enable analytics tracking only in `release` builds. How can you create a new field in the generated `BuildConfig` class to store that value?",
+        "question": "Q34. You would like to enable analytics tracking only in `release` builds. How can you create a new field in the generated `BuildConfig` class to store that value?\n```\nbuildTypes {\n\tdebug {\n\t\tbuildConfig 'boolean', 'ENABLE_ANALYTICS', 'false'\n\t}\n\trelease {\n\t\tbuildConfig 'boolean', 'ENABLE_ANALYTICS', 'true'\n\t}\n}\n```\n```\nbuildTypes {\n\tdebug {\n\t\tbuildConfig 'String', 'ENABLE_ANALYTICS', 'false'\n\t}\n\trelease {\n\t\tbuildConfig 'String', 'ENABLE_ANALYTICS', 'true'\n\t}\n}\n```\n```\nbuildTypes {\n\tdebug {\n\t\tbuildConfigField 'boolean', 'ENABLE_ANALYTICS', 'false'\n\t}\n\trelease {\n\t\tbuildConfigField 'boolean', 'ENABLE_ANALYTICS', 'true'\n\t}\n}\n```",
         "options": [
             "",
             "",
@@ -360,7 +360,7 @@
         "_ps": 1
     },
     {
-        "question": "Q37. Which code snippet would achieve the layout displayed below?",
+        "question": "Q37. Which code snippet would achieve the layout displayed below?\n![img](image/04.jpeg)\n```\nxml\n    <androidx.constraintlayout.widget.ConstraintLayout\n\t...>\n\t<TextView\n\t\tandroid:id=\"@+id/text_dashboard\"\n\t\tandroid:layout_width=\"match_parent\"\n\t\tandroid:layout_height=\"wrap_content\"\n\t\tandroid:layout_marginTop=\"16dp\"\n\t\tandroid:padding=\"8dp\"\n\t\tandroid:textAlignment=\"center\"\n\t\tandroid:text=\"Dashboard\"\n\t\tapp:layout_constraintEnd_toEndOf=\"parent\"\n\t\tapp:layout_constraintStart_toStartOf=\"parent\"\n\t\tapp:layout_constraintTop_toTopOf=\"parent\" />\n    </androidx.constraintlayout.widget.ConstraintLayout>\n```\n```\nxml\n    <androidx.constraintlayout.widget.ConstraintLayout\n\t...>\n\t<TextView\n\t\tandroid:id=\"@+id/text_dashboard\"\n\t\tandroid:layout_width=\"match_parent\"\n\t\tandroid:layout_height=\"wrap_content\"\n\t\tandroid:layout_marginStart=\"8dp\"\n\t\tandroid:layout_marginEnd=\"8dp\"\n\t\tandroid:textAlignment=\"center\"\n\t\tandroid:text=\"Dashboard\"\n\t\tapp:layout_constraintEnd_toEndOf=\"parent\"\n\t\tapp:layout_constraintStart_toStartOf=\"parent\"\n\t\tapp:layout_constraintTop_toTopOf=\"parent\" />\n    </androidx.constraintlayout.widget.ConstraintLayout>\n```\n```\nxml\n    <androidx.constraintlayout.widget.ConstraintLayout\n\t...>\n\t<TextView\n\t\tandroid:id=\"@+id/text_dashboard\"\n\t\tandroid:layout_width=\"match_parent\"\n\t\tandroid:layout_height=\"wrap_content\"\n\t\tandroid:layout_marginStart=\"8dp\"\n\t\tandroid:layout_marginTop=\"16dp\"\n\t\tandroid:layout_marginEnd=\"8dp\"\n\t\tandroid:padding=\"8dp\"\n\t\tandroid:textAlignment=\"center\"\n\t\tandroid:text=\"Dashboard\"\n\t\tapp:layout_constraintEnd_toEndOf=\"parent\"\n\t\tapp:layout_constraintStart_toStartOf=\"parent\"\n\t\tapp:layout_constraintTop_toTopOf=\"parent\" />\n    </androidx.constraintlayout.widget.ConstraintLayout>\n```",
         "options": [
             "(image/04.jpeg)",
             "",
@@ -380,7 +380,7 @@
         "_ps": 3
     },
     {
-        "question": "Q39. Which definition will prevent other apps from accessing your `Activity` class via an `intent`?",
+        "question": "Q39. Which definition will prevent other apps from accessing your `Activity` class via an `intent`?\n```\nxml\n\t<activity android:name=\".ExampleActivity\" />\n```\n```\nxml\n\t<activity android:name=\".ExampleActivity\">\n\t\t<intent-filter>\n\t\t\t<action android:name=\"android.intent.action.SEND\" />\n\t\t</intent-filter>\n\t</activity>\n```\n```\nxml\n\t<activity android:name=\".ExampleActivity\">\n\t\t<intent-filter>\n\t\t\t<action android:name=\"android.intent.action.MAIN\" />\n\t\t\t<category android:name=\"android.intent.category.LAUNCHER\" />\n\t\t</intent-filter>\n\t</activity>\n```",
         "options": [
             "",
             "",
@@ -450,7 +450,7 @@
         "_ps": 2
     },
     {
-        "question": "Q46. Which drawable definition allows you to achieve the shape below?",
+        "question": "Q46. Which drawable definition allows you to achieve the shape below?\n![img](image/43.jpeg)\n```\nxml\n\t<shape xmlns:android-\"http://schemas.android.com/apk/res/android\"\n\t    android:shape-\"oval\">\n\t    <gradient\n               android:startColor-\"@android:color/white\"\n               android:endColor-\"@android:color/black\"\n               android:angle-\"45\"/>\n\t</shape>\n```\n```\nxml\n\t<rectangle xmlns:android-\"http://schemas.android.com/apk/res/android\">\n\t   <gradient\n\t      android:startColor-\"@android:color/white\"\n\t      android:endColor-\"android:color/black\"\n\t      android:angle-\"135\"/>\n\t</rectangle>\n```\n```\nxml\n\t<shape xmlns:android-\"http://schemas.android.com/apk/res/android\"\n\t   android:shape-\"rectangle\">\n\t   <gradient\n\t      android:startColor-\"@android:color/white\"\n\t      android:endColor-\"@android:color/black\"\n\t      android:angle-\"135\"/>\n\t</shape>\n```",
         "options": [
             "(image/43.jpeg)",
             "",
@@ -460,7 +460,7 @@
         "_ps": -1
     },
     {
-        "question": "Q47. Given the ConstraintLayout below, which statement is true?",
+        "question": "Q47. Given the ConstraintLayout below, which statement is true?\n![img](image/44.jpeg)",
         "options": [
             "(image/44.jpeg)",
             "View B is not horizontally constrained.",
@@ -470,7 +470,7 @@
         "_ps": 3
     },
     {
-        "question": "Q48. Given this code snippey from a build.gradle file, which choice is not a possible build variant?",
+        "question": "Q48. Given this code snippey from a build.gradle file, which choice is not a possible build variant?\n    android {\n        ...\n        defaultConfig{...}\n        buildTypes{\n        debug{...}\n        releasae{...}\n    }\n      flavorDimensions \"environment\"\n      productFlavors {\n         producation {...}\n         staging {...}\n      }\n    }",
         "options": [
             "droid {",
             "  ...",
@@ -500,7 +500,7 @@
         "_ps": 3
     },
     {
-        "question": "Q51. When attempting to build your project, what might the following error indicate?",
+        "question": "Q51. When attempting to build your project, what might the following error indicate?\n`Conversion to Dalvik format filed: Unable to execute dex: method ID not in [0, 0xffff]: 65536`",
         "options": [
             "rsion to Dalvik format filed: Unable to execute dex: method ID not in [0, 0xffff]: 65536`",
             "You have included incorect format information in your build.gradle file.",
@@ -520,7 +520,7 @@
         "_ps": 1
     },
     {
-        "question": "Q53. Given the following dimens.xml file, how would you define an ImageView with medium spacing at the bottom?",
+        "question": "Q53. Given the following dimens.xml file, how would you define an ImageView with medium spacing at the bottom?\n```\n<?xml version=1.0 encoding=\"utf-8\"?>\n<resources>\n    <dimen name=\"spacing_medium\">8dp</dimen>\n    <dimen name=\"spacing_large\">12dp</dimen>\n</resources>\n```\n```\n<ImageView\n   android:id=@+id/image_map_pin\"\n   android:layout_width=\"wrap_content\"\n   android:layout_heignt=\"wrap_content\"\n   android:src=@drawable/map_pin />\n```\n```<ImageView\n   android:id=@+id/image_map_pin\"\n   android:layout_width=\"wrap_content\"\n   android:layout_heignt=\"wrap_content\"\n   androi:layout_botttom=\"@dimen/spacing_medium\"\n   android:src=@drawable/map_pin />\n```\n```\n<ImageView\n   android:id=@+id/image_map_pin\"\n   android:layout_width=\"wrap_content\"\n   android:layout_heignt=\"wrap_content\"\n   android:layout_marginBottom=\"@resources/spacing_medium\"\n   android:src=@drawable/map_pin />\n```",
         "options": [
             "",
             "version=1.0 encoding=\"utf-8\"?>",
@@ -540,7 +540,7 @@
         "_ps": 1
     },
     {
-        "question": "Q55. What is the chief purpose of line five in this code snippet?",
+        "question": "Q55. What is the chief purpose of line five in this code snippet?\n```\noverride fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState) setContentView(R.layout.activity_post_create)\n\tif (savedInstanceState != null) return\n\tval fragment = CreatePostFragment()\n\t\tsupportFragmentManager\n\t\t.beginTransaction()\n\t\t.add(R.id. fragment_container, fragment)\n\t\t.commit()\n}\n```",
         "options": [
             "",
             "de fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState) setContentView(R.layout.activity_post_create)",
@@ -570,7 +570,7 @@
         "_ps": 1
     },
     {
-        "question": "Q58. You have created an AboutActivity class that displays details about your app. Which code snippet allows you to launch your activity?",
+        "question": "Q58. You have created an AboutActivity class that displays details about your app. Which code snippet allows you to launch your activity?\n      startService(intent)\n      }\n      startActivity(intent)\n      }\n      activity(intent)\n      }",
         "options": [
             "Intent(this, AboutActivity::class).also { intent ->",
             "startService(intent)",
@@ -610,7 +610,7 @@
         "_ps": 0
     },
     {
-        "question": "Q62. Which layout hierarchy is likely to be drawn the most quickly?",
+        "question": "Q62. Which layout hierarchy is likely to be drawn the most quickly?\n      ![img](https://i.imgur.com/mT08jag.png)\n      ![img](https://i.imgur.com/rz9eKYc.png)\n      ![img](https://i.imgur.com/ETaHhaS.png)",
         "options": [
             "A",
             "![img](https://i.imgur.com/mT08jag.png)",

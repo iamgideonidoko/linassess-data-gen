@@ -10,7 +10,7 @@
         "_ps": 3
     },
     {
-        "question": "Q2. Based on the code below, c is the \\_ of a.",
+        "question": "Q2. Based on the code below, c is the \\_ of a.\n```\na = rand(1, 11);\nb = sort(a);\nc = b(1, ceil(end/2));\n```",
         "options": [
             "",
             "nd(1, 11);",
@@ -30,7 +30,7 @@
         "_ps": 0
     },
     {
-        "question": "Q4. Which code block contains the correct syntax for a `while` loop?",
+        "question": "Q4. Which code block contains the correct syntax for a `while` loop?\n```\na = 0;\ndo\n    a = a + 1;\nwhile a < 5\nend\n```\n```\na = 0;\nwhile(a < 5)\n    a = a + 1;\n```\n```\na = 0;\nwhile a < 5:\n    a = a + 1;\n```",
         "options": [
             "",
             "",
@@ -40,7 +40,7 @@
         "_ps": -1
     },
     {
-        "question": "Q5. What does `b` contain?",
+        "question": "Q5. What does `b` contain?\n```\na =\n    19    20    12     0     6\n     6     9    56     0     3\n    46     8     9     8    19\n     9     8     8    19    46\n     1     9    46     6    19\n```\n```\nb =\n    56     0\n     9     8\n```\n```\nb =\n     8    19\n    19    46\n```\n#### Q6. You have written a function `myfun` and want to measure how long it takes to run. Which code segment will return in `t` the time in seconds it takes `myfun` to run?\n```\nt = cputime(myfun());\n```",
         "options": [
             "",
             "",
@@ -50,7 +50,7 @@
         "_ps": -1
     },
     {
-        "question": "Q6. You have written a function `myfun` and want to measure how long it takes to run. Which code segment will return in `t` the time in seconds it takes `myfun` to run?",
+        "question": "Q6. You have written a function `myfun` and want to measure how long it takes to run. Which code segment will return in `t` the time in seconds it takes `myfun` to run?\n```\nt = cputime(myfun());\n```\n```\ntic;\nmyfun();\ntoc;\n```\n```\ntimer.start;\nmyfun()\nt = timer.stop;\n```",
         "options": [
             "",
             "",
@@ -100,7 +100,7 @@
         "_ps": 0
     },
     {
-        "question": "Q11. You are in the middle of a long MATLAB session where you have performed many analyses and made many plots. You run the following commands, yet a figure window doesn't pop up on the top of your screen with your plot. What might be the issue?",
+        "question": "Q11. You are in the middle of a long MATLAB session where you have performed many analyses and made many plots. You run the following commands, yet a figure window doesn't pop up on the top of your screen with your plot. What might be the issue?\n```\nx = [-1:0.1:1];\ny = X.^2;\nplot(x, y)\n```",
         "options": [
             "",
             "1:0.1:1];",
@@ -130,7 +130,7 @@
         "_ps": 0
     },
     {
-        "question": "Q14. Which statement is equivalent to this for loop?",
+        "question": "Q14. Which statement is equivalent to this for loop?\n```\na = [1 2 3; 4 5 6];\nb = zeros(size(a));\nfor i_row = 1:size(a, 1)\n    for i_col = 1:size(a, 2)\n        b(i_row, i_col) = a(i_row, i_col)^2;\n    end\nend\n```",
         "options": [
             "",
             " 2 3; 4 5 6];",
@@ -150,7 +150,7 @@
         "_ps": 1
     },
     {
-        "question": "Q16. What is the value of `c`?",
+        "question": "Q16. What is the value of `c`?\n```\na = ones(1,3);\nb = 1:3;\nc = conv(a,b)\n```",
         "options": [
             "",
             "es(1,3);",
@@ -170,7 +170,7 @@
         "_ps": 2
     },
     {
-        "question": "Q18. Which choice is correct syntax for a `switch` statement?",
+        "question": "Q18. Which choice is correct syntax for a `switch` statement?\n```\nx = 7;\nswitch x\n    case 2\n        disp(\"two\");\n    otherwise\n        disp(\"not two\");\nend\n```\n```\nx = 7;\nswitch x :\n    case 2\n        disp(\"two\");\n    otherwise\n        disp(\"not two\");\nend\n```\n```\nx = 7;\nswitch x\n    case 2\n        disp(\"two\");\n    else\n        disp(\"not two\");\nend\n```",
         "options": [
             "",
             "",
@@ -180,7 +180,7 @@
         "_ps": 0
     },
     {
-        "question": "Q19. What is the result of this code?",
+        "question": "Q19. What is the result of this code?\n```\na = 1;\nb = 2;\nc = 3;\nd = 4;\ne = c / (~a - b == c - d);\n```\n```\nc =\n    NaN\n```\n```\nc =\n    Inf\n```",
         "options": [
             "",
             "",
@@ -200,7 +200,7 @@
         "_ps": 1
     },
     {
-        "question": "Q21. Which choice has a different final result in `f10` than the other three?",
+        "question": "Q21. Which choice has a different final result in `f10` than the other three?\n```\nf10 = 1;\nfor i = 1:10\n    f10 = f10 * i;\nend\n```\n  `f10 = factorial(10)`\n```MATLAB\nf10 = 1;\ni = 1;\nwhile i <= 10\n    i   = i + 1;\n    f10 = i * f10;\nend\n```",
         "options": [
             "",
             "",
@@ -210,7 +210,7 @@
         "_ps": -1
     },
     {
-        "question": "Q22. Which choice will NOT give you a 5 x 5 identity matrix?",
+        "question": "Q22. Which choice will NOT give you a 5 x 5 identity matrix?\n```\na = rand(5);\nround(a * inv(a))\n```\n  `diag(ones(5, 1))`\n  `identity(5)`",
         "options": [
             "",
             "",
@@ -220,7 +220,7 @@
         "_ps": -1
     },
     {
-        "question": "Q23. Which statement creates this structure?",
+        "question": "Q23. Which statement creates this structure?\n```\ndog =\n      name: 'Bindy'\n     breed: 'border collie'\n    weight: 32\n```\n  `dog = struct('name', 'Bindy'; 'breed', 'border collie'; 'weight', 32);`\n```\ndog.name   = 'Bindy';\ndog.breed  = 'border collie';\ndog.weight = 32;\n```\n```\ndog = {\n    'name'  : 'Bindy',\n    'breed' : 'border collie',\n    'weight': 32;\n}\n```",
         "options": [
             "",
             "",
@@ -230,7 +230,7 @@
         "_ps": -1
     },
     {
-        "question": "Q24. `my_func` is a function as follows. What is the value of `a` at the end of the code beneath?",
+        "question": "Q24. `my_func` is a function as follows. What is the value of `a` at the end of the code beneath?\n```\nfunction a = my_func(a)\n    a = a + 1;\nend\n------------------\na = 0;\nfor i = 1:3\n    my_func(a);\nend\na = my_func(a);\n```",
         "options": [
             "",
             "on a = my_func(a)",
@@ -240,7 +240,7 @@
         "_ps": -1
     },
     {
-        "question": "Q25. Which statement could create this cell array?",
+        "question": "Q25. Which statement could create this cell array?\n```\nc =\n    {[\"hello world\"]}    {1×1 cell}    {[\"goodbye\"]}    {1×3 double}\n```",
         "options": [
             "",
             "",
@@ -250,7 +250,7 @@
         "_ps": -1
     },
     {
-        "question": "Q26. Which choice adds `b` to each row of `a`?",
+        "question": "Q26. Which choice adds `b` to each row of `a`?\n```\na = ones(4, 4);\nb= [1 2 3 4];\n```",
         "options": [
             "",
             "es(4, 4);",
@@ -260,7 +260,7 @@
         "_ps": -1
     },
     {
-        "question": "Q27. Which choice replaces all `a`s with `o`s?",
+        "question": "Q27. Which choice replaces all `a`s with `o`s?\n```\nfor i = 1:length(fruit)\n    fruit{i}(fruit{i} == a) == o;\nend\n```\n```\nfor i = 1:length(fruit)\n    fruit(i)(fruit(i) == 'a') == 'o';\nend\n```\n```\nfor i = 1:length(fruit)\n    fruit{i}(fruit{i} == 'a') == 'o';\nend\n```",
         "options": [
             "",
             "",
@@ -300,7 +300,7 @@
         "_ps": 1
     },
     {
-        "question": "Q31. Which statement returns a cell array of the strings containing '`burger`' from `menu`?",
+        "question": "Q31. Which statement returns a cell array of the strings containing '`burger`' from `menu`?\n`menu = {'hot dog' 'corn dog' 'regular burger' 'cheeseburger' 'veggie burger'}`",
         "options": [
             "= {'hot dog' 'corn dog' 'regular burger' 'cheeseburger' 'veggie burger'}`",
             "menu{strfind(menu, 'burger')}",
@@ -310,7 +310,7 @@
         "_ps": -1
     },
     {
-        "question": "Q32. What is the set of possible values that `a` may contain?",
+        "question": "Q32. What is the set of possible values that `a` may contain?\n```\na      = randi(10, [1, 10]);\na(3)   = 11;\na(a>2) = 12;\n```",
         "options": [
             "",
             " = randi(10, [1, 10]);",
@@ -330,7 +330,7 @@
         "_ps": 1
     },
     {
-        "question": "Q34. Which statement using logical indices will result in an error?",
+        "question": "Q34. Which statement using logical indices will result in an error?\n`a = 1:10;`",
         "options": [
             ":10;`",
             "b = a(a ~= 11)",
@@ -340,7 +340,7 @@
         "_ps": 3
     },
     {
-        "question": "Q35. Which statement turns `menu` into the variable `menu_string` below?",
+        "question": "Q35. Which statement turns `menu` into the variable `menu_string` below?\n```\nmenu = {'hot dog' 'corn dog' 'regular burger' 'cheeseburger' 'veggie burger'}\nmenu_string =\n    'hot dog\n     corn dog\n     regular burger\n     cheeseburger\n     veggie burger'\n```",
         "options": [
             "",
             " {'hot dog' 'corn dog' 'regular burger' 'cheeseburger' 'veggie burger'}",
@@ -350,7 +350,7 @@
         "_ps": -1
     },
     {
-        "question": "Q36. Which code snippet sets a new random seed based on the current time and saves the current settings of the random number generator?",
+        "question": "Q36. Which code snippet sets a new random seed based on the current time and saves the current settings of the random number generator?\n  `rng_settings_curr = rng('shuffle');`\n```\nrng(time());\nrng_settings_curr = rng();\n```\n  `rng_settings_curr = rand('shuffle');`",
         "options": [
             "",
             "_settings_curr = rng('shuffle');`",
@@ -360,7 +360,7 @@
         "_ps": 0
     },
     {
-        "question": "Q37. You have a matrix `data` in which each column is mono audio recording from a room in your house. You've noticed that each column has a very different mean and when you plot them all on the same graph, the spread across the y axis make it impossible to see anything. You want to subtract the mean from each column. Which code block will accomplish this?",
+        "question": "Q37. You have a matrix `data` in which each column is mono audio recording from a room in your house. You've noticed that each column has a very different mean and when you plot them all on the same graph, the spread across the y axis make it impossible to see anything. You want to subtract the mean from each column. Which code block will accomplish this?\n  `data_nomean = data - repmat(median(data), size(data, 1), 1);`\n  `data_nomean = bsxfun(@minus, data, mean(data));`\n```\ndata_nomean = zeros(size(data));\nfor i = 1:size(data, 1)\n    data_nomean(i, :) = data(i, :) - mean(data(i, :));\nend\n```",
         "options": [
             "",
             "a_nomean = data - repmat(median(data), size(data, 1), 1);`",
@@ -370,7 +370,7 @@
         "_ps": 2
     },
     {
-        "question": "Q38. Which code block results in an array `b` containing the mean values of each array within `C`?",
+        "question": "Q38. Which code block results in an array `b` containing the mean values of each array within `C`?\n```\nb = zeros(1, size(C, 2));\nfor i_C = 1:size(C, 2)\n    b(i_C) = mean(C(i_C));\nend\n```\n  `b = cellfun(@mean, C);`\n```\nb = zeros(1, size(C, 1));\nfor i_C = 1:size(C, 1)\n    b(i_C) = mean(C{i_C}(:));\nend\n```",
         "options": [
             "",
             "",
@@ -380,7 +380,7 @@
         "_ps": -1
     },
     {
-        "question": "Q39. Which statement creates a logical array that is 1 if the element in `passwords` contains a digit and 0 if it does not?",
+        "question": "Q39. Which statement creates a logical array that is 1 if the element in `passwords` contains a digit and 0 if it does not?\n`passwords = {'abcd' '1234' 'qwerty' 'love1'};`",
         "options": [
             "ords = {'abcd' '1234' 'qwerty' 'love1'};`",
             "contains(password, '\\d')",
@@ -400,7 +400,7 @@
         "_ps": 2
     },
     {
-        "question": "Q41. Which code block most likely produced this graph?",
+        "question": "Q41. Which code block most likely produced this graph?\n![MatLab Q39](images/matlab_Q39.jpg)\n```\nfigure\nx = rand(10,10);\nr = corrcoef(x);\nsurf(r)\ncolorbar\n```\n```\nfigure\nx = rand(10,10);\nr = corrcoef(x);\nimagesc(r)\ncolorbar\n```\n#### Q42. What kind of files are stored with the .mat extension?",
         "options": [
             "ab Q39](images/matlab_Q39.jpg)",
             "",
@@ -420,7 +420,7 @@
         "_ps": 3
     },
     {
-        "question": "Q43. You would like to randomly reorder every element in array a and put the result into another array b. Which code is NOT necessary to do that?",
+        "question": "Q43. You would like to randomly reorder every element in array a and put the result into another array b. Which code is NOT necessary to do that?\n`a = 1:10;`\n  `b = a(randi(10, 1, 10));`\n```\nm = perms(a);\ni = randi(factorial(10), 1);\nb = a(m(i, :))\n```\n```\n[s, j] = sort(rand(10, 1));\nb      = a(i);\n```",
         "options": [
             ":10;`",
             "",
@@ -430,7 +430,7 @@
         "_ps": 1
     },
     {
-        "question": "Q44. Which statement returns **1** (true)?",
+        "question": "Q44. Which statement returns **1** (true)?\n```\na = 'stand'\nb = \"stand\"\n```",
         "options": [
             "",
             "tand'",
@@ -440,7 +440,7 @@
         "_ps": -1
     },
     {
-        "question": "Q45. Which does E contain?",
+        "question": "Q45. Which does E contain?\n```\nC = {'dog' 'cat' 'mouse'}\nD = {'cow' 'piranha' 'mouse'}\nE = setdiff(C,D)\n```",
         "options": [
             "",
             "dog' 'cat' 'mouse'}",
@@ -460,7 +460,7 @@
         "_ps": 3
     },
     {
-        "question": "Q47. Given the following x and y coordinates, which choice calculates a linear regression for the x and y coordinates, and which plots the points of the x,y data and the regression line on the same graph?",
+        "question": "Q47. Given the following x and y coordinates, which choice calculates a linear regression for the x and y coordinates, and which plots the points of the x,y data and the regression line on the same graph?\n```\nx = 9.0646 6.4362 7.8266 8.3945 5.6135 4.8186 2.8862 10.9311 1.1908 3.2586\ny = 15.4357 11.0923 14.1417 14.9506 8.7687 8.0416 5.1662 20.5005 1.0978\n```\n```\ncoeff_line = polyfit(x,y,1)\nx_line = floor(min(x)):0.1:ceil(max(x));\ny_line = polyval(coeff_line,x_line)\nfigure; plot(x,y,'o')\nhold on\nplot(x_linemy_line)\n```\n```\nfigure\nplot(x,y,'o')\ncoeff_line = polyfit(x,y,1);\nx_line = floor(min(x)):0.1:ceil(max(x));\ny_line = polyval(coeff_line,x_line);\nplot(x_line,y_line)\n```\n```\nfigure\nplot(x,y)\ncoeff_line = polyfit(x,y,1);\nx_line = floor(min(x)):0.1:ceil(max(x));\ny_line = polyval(coeff_line,x_line);\nhold on; plot(x_line,y_line)\n```",
         "options": [
             "",
             "0646 6.4362 7.8266 8.3945 5.6135 4.8186 2.8862 10.9311 1.1908 3.2586",
@@ -470,7 +470,7 @@
         "_ps": -1
     },
     {
-        "question": "Q48. If you run this piece of code, you will get an error. Why?",
+        "question": "Q48. If you run this piece of code, you will get an error. Why?\n```\na = [0 1 2 3; 4 5 6 7];\na = a^2;\n```",
         "options": [
             "",
             " 1 2 3; 4 5 6 7];",
@@ -530,7 +530,7 @@
         "_ps": -1
     },
     {
-        "question": "Q54. Which choice is the correct syntax for declaring a function that returns the input value as the output?",
+        "question": "Q54. Which choice is the correct syntax for declaring a function that returns the input value as the output?\n```\nfunction mystery_func(a) :\n    return a\n```\n```\nfunction b = mystery_func(a)\n    b = a;\nend\n```\n```\ndef b = mystery_func(a)\n    b = a;\nend\n```",
         "options": [
             "",
             "",
@@ -540,7 +540,7 @@
         "_ps": -1
     },
     {
-        "question": "Q55. What is the state of a at the end of this code?",
+        "question": "Q55. What is the state of a at the end of this code?\n```\na = [1 2; 3 4];\nb = a(:,2);\nc = b + 3;\na(1:2,1) = c;\n```\n```\na =\n    6   3\n    7   4\n```\n```\na =\n    5   2\n    7   4\n```\n```\na =\n    5\n    7\n```\n```\na =\n    6\n    7\n```",
         "options": [
             "",
             " 2; 3 4];",
@@ -570,7 +570,7 @@
         "_ps": 1
     },
     {
-        "question": "Q58. In MATLAB, the `imfilter` command performs a convolution operation between an image and a matrix. Suppose you have an image loaded in MATLAB into the variable `img` and you apply the following code. The original image appears slightly blurred because the convolution smoothed out the image (removed noise). Why do you think this happened?",
+        "question": "Q58. In MATLAB, the `imfilter` command performs a convolution operation between an image and a matrix. Suppose you have an image loaded in MATLAB into the variable `img` and you apply the following code. The original image appears slightly blurred because the convolution smoothed out the image (removed noise). Why do you think this happened?\n```\nh = ones(5,5)/25;\nimshow(imfilter(img,h));\n```",
         "options": [
             "",
             "es(5,5)/25;",
@@ -580,7 +580,7 @@
         "_ps": -1
     },
     {
-        "question": "Q59. What is the size of `b`?",
+        "question": "Q59. What is the size of `b`?\n```\na = [1 2 3];\nb = repmat(a,2,3);\n```",
         "options": [
             "",
             " 2 3];",
@@ -590,7 +590,7 @@
         "_ps": -1
     },
     {
-        "question": "Q60. Which statement reverses vector `a`?",
+        "question": "Q60. Which statement reverses vector `a`?\n```\na = [ 1 2 3 4];\n```",
         "options": [
             "",
             "1 2 3 4];",

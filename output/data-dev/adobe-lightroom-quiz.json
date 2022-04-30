@@ -30,7 +30,7 @@
         "_ps": 1
     },
     {
-        "question": "Q4. Review the image shown. What does the exclamation point adjacent to the thumbnail imply?",
+        "question": "Q4. Review the image shown. What does the exclamation point adjacent to the thumbnail imply?\n![Review the image shown. What does the exclamation point adjacent to the thumbnail imply?](images/Q4.png)",
         "options": [
             "ew the image shown. What does the exclamation point adjacent to the thumbnail imply?](images/Q4.png)",
             "The image has been edited in Photoshop.",
@@ -50,7 +50,7 @@
         "_ps": 1
     },
     {
-        "question": "Q6. Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?",
+        "question": "Q6. Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?\n![Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?](images/Q6.png)",
         "options": [
             "ew the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?](images/Q6.png)",
             "A",
@@ -100,7 +100,7 @@
         "_ps": 0
     },
     {
-        "question": "Q11. In the image shown, what do the blue areas indicate?",
+        "question": "Q11. In the image shown, what do the blue areas indicate?\n![In the image shown, what do the blue areas indicate?](images/Q11.png)",
         "options": [
             "he image shown, what do the blue areas indicate?](images/Q11.png)",
             "crushed details in the shadows",
@@ -150,7 +150,7 @@
         "_ps": 0
     },
     {
-        "question": "Q16. In the image shown, what is the icon circled in yellow?",
+        "question": "Q16. In the image shown, what is the icon circled in yellow?\n![Image with a yellow circle](images/Q16.png)",
         "options": [
             "e with a yellow circle](images/Q16.png)",
             "Virtual copy",

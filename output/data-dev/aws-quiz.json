@@ -140,7 +140,7 @@
         "_ps": 3
     },
     {
-        "question": "Q15. You are creating a DynamoDB table to store all movies that have been released since 1938. Your application will allow users to search by movie title and see the details of that film. Given the sample below showing the movie data that you will be importing, what is the best set of keys to apply to this table?",
+        "question": "Q15. You are creating a DynamoDB table to store all movies that have been released since 1938. Your application will allow users to search by movie title and see the details of that film. Given the sample below showing the movie data that you will be importing, what is the best set of keys to apply to this table?\n```json\n{\n  \"title\": \"The Avengers\",\n  \"year\": 2012,\n  \"cast\": [\"Mark Ruffalo\", \"Robert Downey, Jr.\"],\n  \"genres\": [\"Action\"]\n}\n```",
         "options": [
             "n",
             "",
@@ -210,7 +210,7 @@
         "_ps": 1
     },
     {
-        "question": "Q22. You are hosting an application configured to stream media to its clients on TCP ports 3380-3384, 3386-3388, and 3390. The Inbound tab below shows three incoming security group policies attached to this instance. Which policy should you use?",
+        "question": "Q22. You are hosting an application configured to stream media to its clients on TCP ports 3380-3384, 3386-3388, and 3390. The Inbound tab below shows three incoming security group policies attached to this instance. Which policy should you use?\n![image](images/001.png)",
         "options": [
             "e](images/001.png)",
             "The rule that exposes TCP ports 3380-3390 would also publicly expose port 3389 (RDP) to the entire internet. Write separate rules to only expose the needed ports.",
@@ -220,7 +220,7 @@
         "_ps": 1
     },
     {
-        "question": "Q23. You have four front-end web servers behind a load balancer, which use NFS to access another EC2 instance that resizes and stores images for the front-end application. What security group policies should be assigned to these servers?",
+        "question": "Q23. You have four front-end web servers behind a load balancer, which use NFS to access another EC2 instance that resizes and stores images for the front-end application. What security group policies should be assigned to these servers?\n      Elastic IP addresses and allow all inbound HTTPS traffic.",
         "options": [
             "Assign Elastic IPs to all of the instances and create a group that allows all traffic to pass between each of the five",
             "Elastic IP addresses and allow all inbound HTTPS traffic.",
@@ -270,7 +270,7 @@
         "_ps": 1
     },
     {
-        "question": "Q28. What does the statement body of this S3 bucket policy do?",
+        "question": "Q28. What does the statement body of this S3 bucket policy do?\n```json\n{\n  \"Sid\": \"bucketpolicy1\",\n  \"Effect\": \"Allow\",\n  \"Principal\": \"*\",\n  \"Action\": \"s3:GetObject\",\n  \"Resource\": \"arn:aws:s3:::userreports/*\",\n  \"Condition\": {\n    \"IpAddress\": { \"aws:SourceIp\": \"68.249.108.0/24\" },\n    \"NotIpAddress\": { \"aws:SourceIp\": \"68.249.108.128/32\" }\n  }\n}\n```",
         "options": [
             "n",
             "",
@@ -310,7 +310,7 @@
         "_ps": 0
     },
     {
-        "question": "Q32. What does this small section of a CloudFormation template do?",
+        "question": "Q32. What does this small section of a CloudFormation template do?\n```yaml\nFlowLog:\n  Type: AWS::EC2::FlowLog\n  Properties:\n    DeliverLogsPermissionArn: !GetAtt IamRole.Arn\n    LogGroupName: FlowLogsGroup\n    ResourceId: !Ref LogVpcId\n    ResourceType: VPC\n    TrafficType: ALL\n```",
         "options": [
             "l",
             "g:",
@@ -390,7 +390,7 @@
         "_ps": 0
     },
     {
-        "question": "Q40. You have 14 on-premise web servers, 4 database servers, 6 servers using GIS software, 3 file servers, and 4 development servers. What considerations should you take into account when migrating these servers into AWS?",
+        "question": "Q40. You have 14 on-premise web servers, 4 database servers, 6 servers using GIS software, 3 file servers, and 4 development servers. What considerations should you take into account when migrating these servers into AWS?\n#### Q41. As your web application grows and your application monitoring needs become more complex, which additional log monitoring service should you NOT consider?",
         "options": [
             "AWS does not have a way to separate billing for compute costs, so you will need to design a way to split the budget between departments.",
             "New AWS accounts are limited to 20 on-demand EC2 instances. Submit a request to increase your rate limits before starting a migration.",
@@ -410,7 +410,7 @@
         "_ps": 1
     },
     {
-        "question": "Q42. You have a T2 EC2 instance that is critical to your infrastructure. How would you monitor the most important metric for this instance?",
+        "question": "Q42. You have a T2 EC2 instance that is critical to your infrastructure. How would you monitor the most important metric for this instance?\n#### Q43. Which feature can be used to respond to a sudden increase in web traffic?",
         "options": [
             "Turn on CloudWatch Auto Recovery and put monitors on the System Status and Instance Status checks for the instance to notify you when either is in alarm.",
             "Use CloudWatch to put monitors on the remaining CPU credits. If you run out of CPU credit the instance will be stopped.",
@@ -440,7 +440,7 @@
         "_ps": 3
     },
     {
-        "question": "Q45. You have a UDP load balancer that is created by an instance that is running an NGINX proxy. Your application performance management (APM) solution can detect failures in your load balancer instance and transfer the Elastic IP to a passive standby instance. Using the AWS CLI, which script do you program into your APM to move the Elastic IP?",
+        "question": "Q45. You have a UDP load balancer that is created by an instance that is running an NGINX proxy. Your application performance management (APM) solution can detect failures in your load balancer instance and transfer the Elastic IP to a passive standby instance. Using the AWS CLI, which script do you program into your APM to move the Elastic IP?\n```\naws ec2 disassociate-address --association-id eipassoc-2bebb712\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\n```\n```\naws ec2 release-address --association-id eipassoc-2bebb712\naws ec2 assign-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\n```\n```\naws ec2 stop-instances --instance-ids i-8b953\nwait 30\naws ec2 disassociate-address --association-id eipassoc-2bebb712\naws ec2 associate-address --instance-id i-8b953 --allocation-id eipalloc-02d021a\naws ec2 start-instances --instance-ids i-8b953\n```",
         "options": [
             "A",
             "",
@@ -460,7 +460,7 @@
         "_ps": 3
     },
     {
-        "question": "Q47. In the S3 console, underneath the Access column, what does the public badge next to the bucket name indicate?",
+        "question": "Q47. In the S3 console, underneath the Access column, what does the public badge next to the bucket name indicate?\n![image](images/002.png)",
         "options": [
             "e](images/002.png)",
             "All objects within this bucket are assigned public access and could be readable or writable by anyone on the internet. Ensure no sensitive data is being publicly shared within this bucket.",
@@ -540,7 +540,7 @@
         "_ps": 1
     },
     {
-        "question": "Q55. the outbound rules of a security group only allow traffic going to 0.0.0.0/0 on TCP Port 22 (SSH) and TCP port 3306 (MySQL). Review the inbound rules listed in the image below. What is the most important issue to fix with this security group configuration, for an Ubuntu EC2 instance acting as a web server?",
+        "question": "Q55. the outbound rules of a security group only allow traffic going to 0.0.0.0/0 on TCP Port 22 (SSH) and TCP port 3306 (MySQL). Review the inbound rules listed in the image below. What is the most important issue to fix with this security group configuration, for an Ubuntu EC2 instance acting as a web server?\n![image](https://user-images.githubusercontent.com/8637045/112515574-c077e780-8d6c-11eb-96a6-11f27a0547cf.png)",
         "options": [
             "e](https://user-images.githubusercontent.com/8637045/112515574-c077e780-8d6c-11eb-96a6-11f27a0547cf.png)",
             "The outbound rules block UDP port 53, so the server will not be able to resolve any DNS lookups.",
@@ -630,7 +630,7 @@
         "_ps": 0
     },
     {
-        "question": "Q63. Your application performance management (APM) system can read the status of your CloudWatch monitors and perform scripted actions. When the CloudWatch metric StatusCheckFailed enters a failed state (a value of 1), you would like your APM to automatically repair the instance. Which script do you use?",
+        "question": "Q63. Your application performance management (APM) system can read the status of your CloudWatch monitors and perform scripted actions. When the CloudWatch metric StatusCheckFailed enters a failed state (a value of 1), you would like your APM to automatically repair the instance. Which script do you use?\n```\naws ec2 stop-instances --instance-ids i-0b263919b6498b123\naws ec2 start-instances --instance-ids i-0b263919b6498b123\n```\n```\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\n```\n```\naws ec2 reboot-instances --instance-ids i-0b263919b6498b123\nwait 30\naws ec2 start-instance --instance-ids i-0b263919b6498b123\n```",
         "options": [
             "A",
             "",
@@ -640,7 +640,7 @@
         "_ps": 0
     },
     {
-        "question": "Q64. What is wrong with the third incoming security group rule, which allows all traffic from sg-269afc5e to go to an Ubuntu EC2 instance configured as a web server?",
+        "question": "Q64. What is wrong with the third incoming security group rule, which allows all traffic from sg-269afc5e to go to an Ubuntu EC2 instance configured as a web server?\n      Add another rule that allows for SSH access from a secured source, such as a single IP or a range of managed IP addresses.\n      secured, this rule allows all traffic to pass through that is also assigned security group sg-269afc5e.",
         "options": [
             "All traffic on all ports is being denied into this instance, which overwrites the HTTP rule and makes it redundant.",
             "The instance was launched with the default security group, but there is no way for an administrator to SSH into the instance.",
@@ -650,7 +650,7 @@
         "_ps": 1
     },
     {
-        "question": "Q65. You have a VPC that has a public and private subnet. There is a NAT gateway in the public subnet that allows instances in the private subnet to access the internet without having public exposure outside of the VPC. What should the routing tables be for the private subnet?",
+        "question": "Q65. You have a VPC that has a public and private subnet. There is a NAT gateway in the public subnet that allows instances in the private subnet to access the internet without having public exposure outside of the VPC. What should the routing tables be for the private subnet?\n![image](images/003.png)\n```\nDestination 1: 10.0.0.0/16, Target 1: local;\nDestination 2: 0.0.0.0/0, Target 2: nat-09b4832\n```\n```\nDestination 1: 10.0.0.0/24, Target 1: local;\nDestination 2: 0.0.0.0/0, Target 2: igw-b2ff47d6\n```\n```\nDestination 1: 10.0.0.0/24, Target 1: subnet-1948ba2;\nDestination 2: 0.0.0.0/0, Target 2: nat-09b4832\n```",
         "options": [
             "e](images/003.png)",
             "A",
@@ -670,7 +670,7 @@
         "_ps": 0
     },
     {
-        "question": "Q67. You have an application that generates long-running reports, stores them in an S3 bucket, and then emails the user who requested the report with a link to download it. What is the best practice for storing the report data in S3?",
+        "question": "Q67. You have an application that generates long-running reports, stores them in an S3 bucket, and then emails the user who requested the report with a link to download it. What is the best practice for storing the report data in S3?\n      folder names and place the file within the deepest subfolder. Set the retention policy on the object to one hour and email this link to\n      the user. The link will be active for one hour.\n      unique object name. Email this link to the user and have a scheduled task run within your application to remove objects that are older\n      than seven days.\n      session or force the user to log in. After verifying the user has rights to access this file, have the application retrieve the object\n      from S3 and return it in the HTTP response. Delete the file from the S3 bucket after the request is completed.",
         "options": [
             "Create a public S3 bucket. When your application creates the report object in S3, generate two randomly generated long",
             "folder names and place the file within the deepest subfolder. Set the retention policy on the object to one hour and email this link to",
@@ -700,7 +700,7 @@
         "_ps": 1
     },
     {
-        "question": "Q70. A form in web application is sending sign-up data to \"http://example.com/signup/new?source=web\" and this data needs to be handled by an ECS service behind Application Load Balancer (ALB). Which ALB rule will route this request?",
+        "question": "Q70. A form in web application is sending sign-up data to \"http://example.com/signup/new?source=web\" and this data needs to be handled by an ECS service behind Application Load Balancer (ALB). Which ALB rule will route this request?\n![image](images/004.png)\n```\nIF (all match)\n    Path is /signup*\n    Query string is signup:new\nThen\n    Forward to ecs-cluse-service <there is a typo - yes!\n```\n```\nIF (all match)\n    Path is /sign/new/&\n    Query request method is POST\nThen\n    Forward to ecs-cluse-service\n```",
         "options": [
             "e](images/004.png)",
             "A",
@@ -720,7 +720,7 @@
         "_ps": 1
     },
     {
-        "question": "Q72. What does the following AWS CLI `create-service` command for ECS do?",
+        "question": "Q72. What does the following AWS CLI `create-service` command for ECS do?\n```\naws ecs create-service \\\n --cluster production \\\n --service-name rest-api \\\n --task-definition rest-api:1 \\\n --desired-count 2 \\\n --launch-type \"FARGATE\" \\\n --network-configuration \\\n \"awsvpcConfiguration={subnets=[subnet-0b29129ab],securityGroups=[sg-0b29129ab]}\"\n```",
         "options": [
             "",
             "s create-service \\",
@@ -800,7 +800,7 @@
         "_ps": 3
     },
     {
-        "question": "Q80. Your on-premise data center (172.16.128.0/24) is already connected to your AWS VPC (10.0.0.0/16) by a customer gateway. You wish to connect another data center for a company you just acquired (172.16.130.0/24) to your VPC as shown in the image. What is the best way to create this link?",
+        "question": "Q80. Your on-premise data center (172.16.128.0/24) is already connected to your AWS VPC (10.0.0.0/16) by a customer gateway. You wish to connect another data center for a company you just acquired (172.16.130.0/24) to your VPC as shown in the image. What is the best way to create this link?\n![image](images/Q80.png)",
         "options": [
             "e](images/Q80.png)",
             "Establish a connection between your two data centers and connect the second data center to the first through a private tunnel. Traffic will flow from the second data center and then through the first data, and then into AWS.",

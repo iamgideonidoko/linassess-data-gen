@@ -280,7 +280,7 @@
         "_ps": 3
     },
     {
-        "question": "Q29. You have implemented a workflow for a document from a template, and have outlined the steps taken to create the workflow. Which order of steps is correct?",
+        "question": "Q29. You have implemented a workflow for a document from a template, and have outlined the steps taken to create the workflow. Which order of steps is correct?\n```markdown\n1. Select the document in SharePoint.\n2. From the ribbon, click Automate > Power Automate > Create a flow.\n3. Select the template to use for the workflow.\n4. Confirm the flow and any accounts to be used.\n5. Configure any specific fields for the workflow.\n```\n```markdown\n1. From the ribbon, click Automate > Power Automate > Create a flow.\n2. Select the document in SharePoint.\n3. Select the template to use for the workflow.\n4. Confirm the flow and any accounts to be used.\n5. Configure any specific fields for the workflow.\n```\n```markdown\n1. Select the document in SharePoint.\n2. From the ribbon, click Automate > Power Automate > Create a flow.\n3. Configure any specific fields for the workflow.\n4. Select the template to use for the workflow.\n5. Confirm the flow and any accounts to be used.\n```",
         "options": [
             "A",
             "kdown",
@@ -340,7 +340,7 @@
         "_ps": -1
     },
     {
-        "question": "Q35. A SharePoint site document library has become disorganized with numerous folders. How can you disable folder creation without modifying any permissions?",
+        "question": "Q35. A SharePoint site document library has become disorganized with numerous folders. How can you disable folder creation without modifying any permissions?\n```\n1. Library Settings\n2. Advanced Settings\n```\n```\n1. Site Settings\n2. Manage Site Features\n```\n```\n1. Library Settings\n2. Audience Targeting Settings\n```",
         "options": [
             "",
             "",

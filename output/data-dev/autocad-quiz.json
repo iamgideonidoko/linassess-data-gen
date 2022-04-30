@@ -210,7 +210,7 @@
         "_ps": 2
     },
     {
-        "question": "Q22. Dimensions in a drawing can be spaced automatically with the Adjust Space (DIMSPACE) command. You can specify a distance between spaced dimensions or you can use the Auto option. What does Auto do to the dimensions being spaced?",
+        "question": "Q22. Dimensions in a drawing can be spaced automatically with the Adjust Space (DIMSPACE) command. You can specify a distance between spaced dimensions or you can use the Auto option. What does Auto do to the dimensions being spaced?\n#### Q23. There is often a need to hide or isolate selected objects, especially in complex drawings when detailing geometry. Where would you find the Isolate menu option—which is not on the ribbon?",
         "options": [
             "calculates the Auto space as one and a half times (1.5x) the text height of the text in the dimension style being used",
             "calculates the Auto space as twice the distance between the first and second dimensions selected for spacing",
@@ -300,7 +300,7 @@
         "_ps": -1
     },
     {
-        "question": "Q31. Single-line text can be added anywhere in a drawing. If middle-center justified text with height of 0 was required in model space that was 300 millimeters high, what workflow would you use?",
+        "question": "Q31. Single-line text can be added anywhere in a drawing. If middle-center justified text with height of 0 was required in model space that was 300 millimeters high, what workflow would you use?\n1. Right-click and select Justify.\n2. Select MC.\n3. Pick a middle point.\n4. Type text.\n5. Specify the height.\n6. Specify the rotation angle.\n1. Right-click and select Justify.\n2. Select MC.\n3. Specify the height.\n4. Specify the rotation angle.\n5. Pick a middle point.\n6. Type text.\n1. Right-click and select Justify.\n2. Select MC.\n3. Specify the height.\n4. Specify the rotation angle.\n5. Pick a middle point.\n6. Type text.",
         "options": [
             "",
             "ht-click and select Justify.",
@@ -410,7 +410,7 @@
         "_ps": 1
     },
     {
-        "question": "Q42. When working with objects in your drawings, you normally define their properties via their respective layers. However, you can define individual object properties with the Properties panel on the Home tab of the AutoCAD ribbon. Individual color and linetype can be defined there, along with what other typical object property?",
+        "question": "Q42. When working with objects in your drawings, you normally define their properties via their respective layers. However, you can define individual object properties with the Properties panel on the Home tab of the AutoCAD ribbon. Individual color and linetype can be defined there, along with what other typical object property?\n![q42](images/q42_autocad.png)",
         "options": [
             "(images/q42_autocad.png)",
             "description",
@@ -740,7 +740,7 @@
         "_ps": 3
     },
     {
-        "question": "Q75. When using the POLYGON command in AutoCAD, you can create an inscribed polygon and a circumscribed polygon. What other type of polygon is available?",
+        "question": "Q75. When using the POLYGON command in AutoCAD, you can create an inscribed polygon and a circumscribed polygon. What other type of polygon is available?\n![q75](images/q75_autocad.png)",
         "options": [
             "(images/q75_autocad.png)",
             "side polygon",
@@ -750,7 +750,7 @@
         "_ps": -1
     },
     {
-        "question": "Q76. When using blocks in a drawing, a selected block displays only one grip: the insertion point. How would you get a block to display all of its associated grips?",
+        "question": "Q76. When using blocks in a drawing, a selected block displays only one grip: the insertion point. How would you get a block to display all of its associated grips?\n![q76](images/q76_autocad.png)",
         "options": [
             "(images/q76_autocad.png)",
             "Change the GRIPBLOCK system variable to 1.",

@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. A dataset that includes \\_ can be used to create a map visualization. (Select all that apply.)",
+        "question": "Q1. A dataset that includes \\_ can be used to create a map visualization. (Select all that apply.)\n    A. house numbers, street names\n    B. geospatial data\n    C. city names, country names\n    D. longitude, latitude",
         "options": [
             " house numbers, street names",
             " geospatial data",
@@ -10,7 +10,7 @@
         "_ps": -1
     },
     {
-        "question": "Q2. How do you create a chart visual in Power BI Desktop Report view? (Select all that apply.)",
+        "question": "Q2. How do you create a chart visual in Power BI Desktop Report view? (Select all that apply.)\n    A. Click New Visual on the Home tab.\n    B. Select a chart visual in the Visualizations pane.\n    C. Click New Visual on the Data Tools tab.\n    D. Select a field that contains values.",
         "options": [
             " Click New Visual on the Home tab.",
             " Select a chart visual in the Visualizations pane.",
@@ -20,7 +20,7 @@
         "_ps": -1
     },
     {
-        "question": "Q3. What daily sales number does this DAX measure formula calculate?",
+        "question": "Q3. What daily sales number does this DAX measure formula calculate?\n`CALCULATE(SUM([Sales]) ,DATESMTD([Date] ))`",
         "options": [
             "LATE(SUM([Sales]) ,DATESMTD([Date] ))`",
             "running total sales in each month that starts over each month",
@@ -90,7 +90,7 @@
         "_ps": 0
     },
     {
-        "question": "Q10. Power BI's Publish to Web option allows you to embed visualizations within **\\_**. (Select all that apply.)",
+        "question": "Q10. Power BI's Publish to Web option allows you to embed visualizations within **\\_**. (Select all that apply.)\n    A. blog posts\n    B. email messages\n    C. web sites\n    D. text messages",
         "options": [
             " blog posts",
             " email messages",
@@ -100,7 +100,7 @@
         "_ps": -1
     },
     {
-        "question": "Q11. What can you do within the Power BI Desktop #### Query Settings pane? (Select all that apply.)",
+        "question": "Q11. What can you do within the Power BI Desktop #### Query Settings pane? (Select all that apply.)\n    A. Rename a query step.\n    B. Delete a query step.\n    C. Delete from one query step to the end.\n    D. Reorder the steps.",
         "options": [
             " Rename a query step.",
             " Delete a query step.",
@@ -140,7 +140,7 @@
         "_ps": 2
     },
     {
-        "question": "Q15. When you are creating a formula in the Power Query Editor, what does IntelliSense provide a list of? (Select all that apply.)",
+        "question": "Q15. When you are creating a formula in the Power Query Editor, what does IntelliSense provide a list of? (Select all that apply.)\n    A. columns\n    B. tables\n    C. functions\n    D. data sources",
         "options": [
             " columns",
             " tables",
@@ -340,7 +340,7 @@
         "_ps": 0
     },
     {
-        "question": "Q35. You want to combine several CSV files into a single data file after you connect a folder. What must be true about these CSV data files? (Select all that apply.)",
+        "question": "Q35. You want to combine several CSV files into a single data file after you connect a folder. What must be true about these CSV data files? (Select all that apply.)\nA. They must be stored in the same folder.\nB. They must have the same schema.\nC. They must have the same file type.\nD. They must have no duplicate data rows.",
         "options": [
             "y must be stored in the same folder.",
             "y must have the same schema.",
@@ -470,7 +470,7 @@
         "_ps": 2
     },
     {
-        "question": "Q48. What is the purpose of this code?",
+        "question": "Q48. What is the purpose of this code?\n`ProductCount = COUNT(Products[ProductID])`",
         "options": [
             "ctCount = COUNT(Products[ProductID])`",
             "It is part of the documentation",
@@ -510,7 +510,7 @@
         "_ps": 2
     },
     {
-        "question": "Q52. Bookmarks capture the state of a page. What does this capture state include?",
+        "question": "Q52. Bookmarks capture the state of a page. What does this capture state include?\n    A. sorting\n    B. filtering\n    C. current selection\n    D. properties of visuals",
         "options": [
             " sorting",
             " filtering",
@@ -520,7 +520,7 @@
         "_ps": -1
     },
     {
-        "question": "Q53. Your company's national maintenance team is divided into 12 regions, and the Issues report they use is filtered by the user's region. What report modification would help technicians while using the mobile app on the road? (Select all that apply.)",
+        "question": "Q53. Your company's national maintenance team is divided into 12 regions, and the Issues report they use is filtered by the user's region. What report modification would help technicians while using the mobile app on the road? (Select all that apply.)\n    A. Add a geographic filter to City.\n    B. Add a geographic filter to State.\n    C. Add a geographic filter to Street Address.\n    D. Add a geographic filter to Country.",
         "options": [
             " Add a geographic filter to City.",
             " Add a geographic filter to State.",
@@ -530,7 +530,7 @@
         "_ps": -1
     },
     {
-        "question": "Q54. What does the usage metric \"Most Consumed Dashboards by Users\" include? (Select all that apply.)",
+        "question": "Q54. What does the usage metric \"Most Consumed Dashboards by Users\" include? (Select all that apply.)\n    A. the person who built the dashboard\n    B. other people who share the dashboard\n    C. users who consume the dashboard in a content pack\n    D. individual user downloads of the dashboard",
         "options": [
             " the person who built the dashboard",
             " other people who share the dashboard",
@@ -590,7 +590,7 @@
         "_ps": 2
     },
     {
-        "question": "Q60. Your data model includes a Members data table and ten other tables, including these the lookup tables with unique IDs: City, State, and Country. How can you improve your data model for Power BI?",
+        "question": "Q60. Your data model includes a Members data table and ten other tables, including these the lookup tables with unique IDs: City, State, and Country. How can you improve your data model for Power BI?\n    A. Combine City, State, and Country into one lookup table\n    B. Move City, State, and Country to the Member table\n    C. Combine City and State into one lookup table and remove the Country table\n    D. Leave the model as it is.",
         "options": [
             " Combine City, State, and Country into one lookup table",
             " Move City, State, and Country to the Member table",
@@ -640,7 +640,7 @@
         "_ps": 2
     },
     {
-        "question": "Q65. What are benefits of modifying your Excel data source in the Power Query Editor rather than in Excel?",
+        "question": "Q65. What are benefits of modifying your Excel data source in the Power Query Editor rather than in Excel?\n    A. You can track the changes you make.\n    B. It is less error prone than manual editing.\n    C. It will not affect other users of the spreadsheet.\n    D. It \"locks down\" the spreadsheet columns in Excel.",
         "options": [
             " You can track the changes you make.",
             " It is less error prone than manual editing.",
@@ -650,7 +650,7 @@
         "_ps": -1
     },
     {
-        "question": "Q66. Your report is based on imported data from Excel. What is a valid reason to use a slicer rather than a report-lever filter?",
+        "question": "Q66. Your report is based on imported data from Excel. What is a valid reason to use a slicer rather than a report-lever filter?\n    A. A slicer makes it easier for users to filter\n    B. Users should be able to see both filtered and nonfiltered values.",
         "options": [
             " A slicer makes it easier for users to filter",
             " Users should be able to see both filtered and nonfiltered values.",

@@ -10,7 +10,7 @@
         "_ps": 3
     },
     {
-        "question": "Q2. What value does this code return?",
+        "question": "Q2. What value does this code return?\n```scala\nval m1 = Map(\"a\"->1,\"b\"->2,\"c\"->3)\nm1(\"a\")\n```",
         "options": [
             "la",
             " = Map(\"a\"->1,\"b\"->2,\"c\"->3)",
@@ -50,7 +50,7 @@
         "_ps": 3
     },
     {
-        "question": "Q6. After defining a function in the interpreter, Scala returns the following. What does the `()` indicate?",
+        "question": "Q6. After defining a function in the interpreter, Scala returns the following. What does the `()` indicate?\n```\nmyfnc: ()Unit\n```",
         "options": [
             "",
             " ()Unit",
@@ -80,7 +80,7 @@
         "_ps": 3
     },
     {
-        "question": "Q9. What type of object does this code create?",
+        "question": "Q9. What type of object does this code create?\n```\nval x = (1234, \"Active\")\n```",
         "options": [
             "",
             "= (1234, \"Active\")",
@@ -120,7 +120,7 @@
         "_ps": -1
     },
     {
-        "question": "Q13. What is the value of z after executing this code?",
+        "question": "Q13. What is the value of z after executing this code?\n```\nval y = List('a','b')\nval z = y::List('c')\n```",
         "options": [
             "",
             "= List('a','b')",
@@ -150,7 +150,7 @@
         "_ps": 3
     },
     {
-        "question": "Q16. What is the data type of y after this code is executed?",
+        "question": "Q16. What is the data type of y after this code is executed?\n```\nval y = (math floor 3.1415 * 2)\n```",
         "options": [
             "",
             "= (math floor 3.1415 * 2)",
@@ -180,7 +180,7 @@
         "_ps": 0
     },
     {
-        "question": "Q19. What is the output of this function?",
+        "question": "Q19. What is the output of this function?\n```scala\ndef main () {\n     var a = 0\n     for (a<-1 until 5){println(a)}\n```",
         "options": [
             "la",
             "in () {",
@@ -220,7 +220,7 @@
         "_ps": 1
     },
     {
-        "question": "Q23. Which statement returns a success or a failure indicator when you execute this code?",
+        "question": "Q23. Which statement returns a success or a failure indicator when you execute this code?\n`val MyFuture = Future {runBackgroundFunction() }`",
         "options": [
             "yFuture = Future {runBackgroundFunction() }`",
             "myFuture.onComplete",
@@ -290,7 +290,7 @@
         "_ps": 1
     },
     {
-        "question": "Q30. What is the code below equivalent to?",
+        "question": "Q30. What is the code below equivalent to?\n```scala\nmyClass.foreach(println _)\n```",
         "options": [
             "la",
             "s.foreach(println _)",
@@ -470,7 +470,7 @@
         "_ps": 2
     },
     {
-        "question": "Q48. What would you change in this code to make it execute in parallel?",
+        "question": "Q48. What would you change in this code to make it execute in parallel?\n```\n val myNums = (1 to 500).toList\n list.map(_ + 1)\n```",
         "options": [
             "",
             "yNums = (1 to 500).toList",
@@ -510,7 +510,7 @@
         "_ps": 3
     },
     {
-        "question": "Q53. What value does this code return?",
+        "question": "Q53. What value does this code return?\n```scala\nx= List(1,2,4); x(1)?\n```",
         "options": [
             "la",
             "t(1,2,4); x(1)?",

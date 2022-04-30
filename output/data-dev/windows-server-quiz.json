@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. You need to create a file share for your company that must be accessible from all branch offices and its share path must have the name Work Share. Which server role do you install?",
+        "question": "Q1. You need to create a file share for your company that must be accessible from all branch offices and its share path must have the name Work Share. Which server role do you install?\n![Windows Server Q01](images/windows-server_Q01.jpg)",
         "options": [
             "ows Server Q01](images/windows-server_Q01.jpg)",
             "BranchCache for Network Files",
@@ -80,7 +80,7 @@
         "_ps": 1
     },
     {
-        "question": "Q9. You deployed a Windows Server 2012 R2 virtual machine and configured the File and Storage Services server role. Where do you begin configuring the use of Previous Versions for restoring files?",
+        "question": "Q9. You deployed a Windows Server 2012 R2 virtual machine and configured the File and Storage Services server role. Where do you begin configuring the use of Previous Versions for restoring files?\n![Windows Server Q10A](images/windows-server_Q10A.jpg)\n![Windows Server Q10B](images/windows-server_Q10B.jpg)\n![Windows Server Q10C](images/windows-server_Q10C.jpg)",
         "options": [
             "A",
             "ows Server Q10A](images/windows-server_Q10A.jpg)",
@@ -310,7 +310,7 @@
         "_ps": 2
     },
     {
-        "question": "Q32. You are preparing a Windows Server 2016 server image for deployment. You want to further customize your server by adding applications and device drivers, and to test your computer in Windows environment. What sysprep.exe parameters would you select when customizing your server image?",
+        "question": "Q32. You are preparing a Windows Server 2016 server image for deployment. You want to further customize your server by adding applications and device drivers, and to test your computer in Windows environment. What sysprep.exe parameters would you select when customizing your server image?\n![Windows Server Q32](images/windows-server_Q32.jpg)",
         "options": [
             "ows Server Q32](images/windows-server_Q32.jpg)",
             "A",
@@ -340,7 +340,7 @@
         "_ps": 2
     },
     {
-        "question": "Q35. As you create a new share, you are unable to configure the default classification of data on the folder. Why would the New Share Wizard prevent this configuration?",
+        "question": "Q35. As you create a new share, you are unable to configure the default classification of data on the folder. Why would the New Share Wizard prevent this configuration?\n![Windows Server Q35](images/windows-server_Q35.jpg)",
         "options": [
             "ows Server Q35](images/windows-server_Q35.jpg)",
             "The File Resource Manager must be installed.",
@@ -400,7 +400,7 @@
         "_ps": 3
     },
     {
-        "question": "Q41. In the image below, what is being installed on the server?",
+        "question": "Q41. In the image below, what is being installed on the server?\n![Windows Server Q41](images/windows-server_Q41.jpg)",
         "options": [
             "ows Server Q41](images/windows-server_Q41.jpg)",
             "AD CS",
@@ -620,7 +620,7 @@
         "_ps": 0
     },
     {
-        "question": "Q60. What type of CAs must be domain members and are typically online to issue certificates or certificate policies?",
+        "question": "Q60. What type of CAs must be domain members and are typically online to issue certificates or certificate policies?\n[reference](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn786436(v=ws.11)>)\n#### Q58. Windows Server 2012 R2 server has two network adapters. You are required to configure load balancing on a pair of network adapters. Which management console would you use to accomplish this task?",
         "options": [
             "Enterprise",
             "Root",
@@ -670,7 +670,7 @@
         "_ps": 3
     },
     {
-        "question": "Q62. In the Server Manager window shown, how can you manage more servers?",
+        "question": "Q62. In the Server Manager window shown, how can you manage more servers?\n![Q62](images/windows-server_Q62.png)",
         "options": [
             "(images/windows-server_Q62.png)",
             "Click **Server**, above **Volumes**.",

@@ -90,7 +90,7 @@
         "_ps": 1
     },
     {
-        "question": "Q10. What color is the paragraph nested within the div?",
+        "question": "Q10. What color is the paragraph nested within the div?\n```<html>\n<head>\n        <style>\n                body { color: black; }\n                p { color: blue; }\n                div { color: green; }\n                p { color: red; }\n        </style>\n</head>\n<body>\n        <div>\n                <p>This is a paragraph inside a div.</p>\n        </div>\n</body>\n</html>\n```",
         "options": [
             "ml>",
             "",
@@ -210,7 +210,7 @@
         "_ps": 3
     },
     {
-        "question": "Q22. Which of these snippets represents a wrapper that calls jQuery safely and doesn't require repetitive use of the word \"jQuery\"?",
+        "question": "Q22. Which of these snippets represents a wrapper that calls jQuery safely and doesn't require repetitive use of the word \"jQuery\"?\n```\n$.ready(function() {\n// do stuff\n});\n```\n```\n(function($) {\n// do stuff\n})( jQuery );\n```\n```\n$(function() {\n// do stuff\n});\n```",
         "options": [
             ".",
             "",
@@ -240,7 +240,7 @@
         "_ps": 1
     },
     {
-        "question": "Q25. You might see this code in a WordPress plugin. What does it do?",
+        "question": "Q25. You might see this code in a WordPress plugin. What does it do?\n```\nif ( ! defined( 'ABSPATH' ) ) {\n   die;\n}\n```",
         "options": [
             "",
             " defined( 'ABSPATH' ) ) {",
@@ -410,7 +410,7 @@
         "_ps": 2
     },
     {
-        "question": "Q42. How can you add a custom script that needs to run only on the contact page of a site? The slug of the page is contact.",
+        "question": "Q42. How can you add a custom script that needs to run only on the contact page of a site? The slug of the page is contact.\n```\nLink to the script directly from a template named page-contact.php using the get_header() template tag, like this:\nget_header( '<script src=\"/my-script.js\"></script>' );\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\nfunction load_scripts() {\n    if ( is_page( 'contact' ) ) {\n    echo '<script src=\"/my-script.js\"></script>';\n    }\n}\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\n    function load_scripts() {\n        if ( is_page( 'contact' ) ) {\n        wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js' );\n        }\n    }\n```",
         "options": [
             "",
             "o the script directly from a template named page-contact.php using the get_header() template tag, like this:",
@@ -540,7 +540,7 @@
         "_ps": 0
     },
     {
-        "question": "Q55. In your wp-config.php file, you've added the following line of code. What does it do?",
+        "question": "Q55. In your wp-config.php file, you've added the following line of code. What does it do?\n`define( 'DISALLOW_FILE_EDIT', true );`",
         "options": [
             "e( 'DISALLOW_FILE_EDIT', true );`",
             "prevents any non-admin user from directly editing theme or plugin files",
@@ -580,7 +580,7 @@
         "_ps": 1
     },
     {
-        "question": "Q59 Review of the HTML on line1. The goal of the PHP on line 2 is to extract the field value and assign it to a variable prior to inserting into the database. What is wrong with this PHP code?",
+        "question": "Q59 Review of the HTML on line1. The goal of the PHP on line 2 is to extract the field value and assign it to a variable prior to inserting into the database. What is wrong with this PHP code?\n```\n<input type=\"text\" id=\"title\" name=\"title\" />\n$title = $_POST[ 'title' ];\n```",
         "options": [
             "",
             " type=\"text\" id=\"title\" name=\"title\" />",
@@ -680,7 +680,7 @@
         "_ps": 3
     },
     {
-        "question": "Q69. Wordpress core and many plugins store data in the database in a special format as represented by the sample below. What format is this called?",
+        "question": "Q69. Wordpress core and many plugins store data in the database in a special format as represented by the sample below. What format is this called?\n`a:2:{i:0;s:27:\"ari-adminer/ari-adminer.php\";i:1;s:30:\"atomic-blocks/atomicblocks.php\";}`",
         "options": [
             "i:0;s:27:\"ari-adminer/ari-adminer.php\";i:1;s:30:\"atomic-blocks/atomicblocks.php\";}`",
             "value",
@@ -690,7 +690,7 @@
         "_ps": 2
     },
     {
-        "question": "Q70. What is this code sample an example of?",
+        "question": "Q70. What is this code sample an example of?\n```\n<?php\nif ( have_posts() ) : while ( have_posts() ) : the_post();\n        the_content();\nendwhile;\nelse :\n        _e( 'Sorry, no posts matched your criteria.', 'textdomain' );\nendif;\n```",
         "options": [
             "",
             "",
@@ -770,7 +770,7 @@
         "_ps": 3
     },
     {
-        "question": "Q78. JavaScript variables can hold many data types. Which data type does the following variable represent?",
+        "question": "Q78. JavaScript variables can hold many data types. Which data type does the following variable represent?\n`var x = \"16\"`",
         "options": [
             " = \"16\"`",
             "Boolean",

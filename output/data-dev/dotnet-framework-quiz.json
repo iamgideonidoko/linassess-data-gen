@@ -430,7 +430,7 @@
         "_ps": 0
     },
     {
-        "question": "Q45. How can you recieve form data without a model binder in a controller action?",
+        "question": "Q45. How can you recieve form data without a model binder in a controller action?\n> Note: The differences are `IFormResult`/`IActionResult` and `Forms`/`Form`\n      {\n      string theName = Request.Forms[\"theName\"];\n      return View();\n      }\n      {\n      string theName = Request.Forms[\"theName\"];\n      return View();\n      }\n      {\n      string theName = Request.Form[\"theName\"];\n      return View();\n      }",
         "options": [
             ": The differences are `IFormResult`/`IActionResult` and `Forms`/`Form`",
             "public IFormResult ReceivedDataByRequest()",
@@ -530,7 +530,7 @@
         "_ps": 3
     },
     {
-        "question": "Q55. In the code below, what is the difference between RenderPartial and RenderAction?",
+        "question": "Q55. In the code below, what is the difference between RenderPartial and RenderAction?\n```cs\n@{\n  Html.RenderAction(\"Add\");\n  Html.RenderPartial(\"Add\");\n}\n```",
         "options": [
             "",
             "",

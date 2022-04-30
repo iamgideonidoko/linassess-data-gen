@@ -100,7 +100,7 @@
         "_ps": -1
     },
     {
-        "question": "Q11. What properties are added to a 3D layer? (Select three items.)",
+        "question": "Q11. What properties are added to a 3D layer? (Select three items.)\nA. Z Rotation\nB. Anchor Point\nC. Material Options\nD. Position\nE. Geometry Options\n#### Q12. You want to include controls from an After Effects composition in the Essential Graphics panel. What is one way to do this?",
         "options": [
             "otation",
             "hor Point",

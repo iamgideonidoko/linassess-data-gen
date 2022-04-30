@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. Where was this `Lock` icon applied?",
+        "question": "Q1. Where was this `Lock` icon applied?\n![Q1](images/001.jpg)",
         "options": [
             "images/001.jpg)",
             "in the `Components` panel",
@@ -10,7 +10,7 @@
         "_ps": 2
     },
     {
-        "question": "Q2. In this figure, which value represents the bottom margin of the layout grid?",
+        "question": "Q2. In this figure, which value represents the bottom margin of the layout grid?\n![Q2](images/002.jpg)",
         "options": [
             "images/002.jpg)",
             "30",
@@ -20,7 +20,7 @@
         "_ps": 2
     },
     {
-        "question": "Q3. What does clicking the circled icon enable you to do?",
+        "question": "Q3. What does clicking the circled icon enable you to do?\n![Q3](images/003.jpg)",
         "options": [
             "images/003.jpg)",
             "Change the trigger.",
@@ -120,7 +120,7 @@
         "_ps": -1
     },
     {
-        "question": "13. What does this wire attached to a component indicate?",
+        "question": "13. What does this wire attached to a component indicate?\n![Q13](images/004.jpg)",
         "options": [
             "(images/004.jpg)",
             "destination.",
@@ -130,7 +130,7 @@
         "_ps": 2
     },
     {
-        "question": "14. What happens when you click this circled icon in the design preview?",
+        "question": "14. What happens when you click this circled icon in the design preview?\n![Q14](images/005.jpg)",
         "options": [
             "(images/005.jpg)",
             "The preview switches to the artboard view.",

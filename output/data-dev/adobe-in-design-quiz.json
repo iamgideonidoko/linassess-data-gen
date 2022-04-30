@@ -20,7 +20,7 @@
         "_ps": 1
     },
     {
-        "question": "Q3. In the image shown, what do you know about the Body Text paragraph style?",
+        "question": "Q3. In the image shown, what do you know about the Body Text paragraph style?\n![Q3](images/Q3.jpg)",
         "options": [
             "images/Q3.jpg)",
             "The selected text was not formatted using the style definition.",
@@ -90,7 +90,7 @@
         "_ps": 2
     },
     {
-        "question": "Q10. In the image shown, the text is on a path. You want to move the text farther to the right along the path. How can you accomplish this?",
+        "question": "Q10. In the image shown, the text is on a path. You want to move the text farther to the right along the path. How can you accomplish this?\n![Q10](images/q10.png)",
         "options": [
             "(images/q10.png)",
             "Drag the blue square D.",
@@ -140,7 +140,7 @@
         "_ps": -1
     },
     {
-        "question": "Q15. Which feature would you use to create the effect shown, where the grouped circles blend with each other but not the object behind them?",
+        "question": "Q15. Which feature would you use to create the effect shown, where the grouped circles blend with each other but not the object behind them?\n![Q15](images/Q15.png)",
         "options": [
             "(images/Q15.png)",
             "Global Light",
@@ -150,7 +150,7 @@
         "_ps": -1
     },
     {
-        "question": "Q16. In the image shown, what do the colored frame edges indicate?",
+        "question": "Q16. In the image shown, what do the colored frame edges indicate?\n![Q16](images/Q16.png)",
         "options": [
             "(images/Q16.png)",
             "which layer each object is on",
@@ -170,7 +170,7 @@
         "_ps": -1
     },
     {
-        "question": "Q18. In the image shown, what can you infer about how this document will print?",
+        "question": "Q18. In the image shown, what can you infer about how this document will print?\n![Q18](images/Q18.png)",
         "options": [
             "(images/Q18.png)",
             "The page wil be scaled to fit the paper.",

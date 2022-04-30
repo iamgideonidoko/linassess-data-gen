@@ -20,7 +20,7 @@
         "_ps": 2
     },
     {
-        "question": "Q3. Given the following definitions, which of these expression will **NOT** evaluate to true?",
+        "question": "Q3. Given the following definitions, which of these expression will **NOT** evaluate to true?\n`boolean b1 = true, b2 = false; int i1 = 1, i2 = 2;`",
         "options": [
             "an b1 = true, b2 = false; int i1 = 1, i2 = 2;`",
             "`(i1 | i2) == 3`",
@@ -30,7 +30,7 @@
         "_ps": 2
     },
     {
-        "question": "Q4. What is the output of this code?",
+        "question": "Q4. What is the output of this code?\n```java\n1: class Main {\n2:   public static void main (String[] args) {\n3:     int array[] = {1, 2, 3, 4};\n4:     for (int i = 0; i < array.size(); i++) {\n5:        System.out.print(array[i]);\n6:     }\n7:   }\n8: }\n```",
         "options": [
             "a",
             "ss Main {",
@@ -40,7 +40,7 @@
         "_ps": -1
     },
     {
-        "question": "Q5. Which of the following can replace the CODE SNIPPET to make the code below print \"Hello World\"?",
+        "question": "Q5. Which of the following can replace the CODE SNIPPET to make the code below print \"Hello World\"?\n```java\ninterface Interface1 {\n    static void print() {\n        System.out.print(\"Hello\");\n    }\n}\ninterface Interface2 {\n    static void print() {\n        System.out.print(\"World!\");\n    }\n}\n```",
         "options": [
             "a",
             "ace Interface1 {",
@@ -50,7 +50,7 @@
         "_ps": -1
     },
     {
-        "question": "Q6. What does the following code print?",
+        "question": "Q6. What does the following code print?\n```java\nString str = \"abcde\";\nstr.trim();\nstr.toUpperCase();\nstr.substring(3, 4);\nSystem.out.println(str);\n```",
         "options": [
             "a",
             " str = \"abcde\";",
@@ -60,7 +60,7 @@
         "_ps": -1
     },
     {
-        "question": "Q7. What is the result of this code?",
+        "question": "Q7. What is the result of this code?\n```java\nclass Main {\n    public static void main (String[] args){\n        System.out.println(print(1));\n    }\n    static Exception print(int i){\n        if (i>0) {\n            return new Exception();\n        } else {\n            throw new RuntimeException();\n        }\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -70,7 +70,7 @@
         "_ps": -1
     },
     {
-        "question": "Q8. Which class can compile given these declarations?",
+        "question": "Q8. Which class can compile given these declarations?\n```java\ninterface One {\n    default void method() {\n        System.out.println(\"One\");\n    }\n}\ninterface Two {\n    default void method () {\n        System.out.println(\"One\");\n    }\n}\n```\n```java\nclass Three implements One, Two {\n    public void method() {\n        super.One.method();\n    }\n}\n```\n```java\nclass Three implements One, Two {\n    public void method() {\n        One.method();\n    }\n}\n```\n```java\nclass Three implements One, Two {\n}\n```",
         "options": [
             "a",
             "ace One {",
@@ -80,7 +80,7 @@
         "_ps": -1
     },
     {
-        "question": "Q9. What is the output of this code?",
+        "question": "Q9. What is the output of this code?\n```java\nclass Main {\n    public static void main (String[] args) {\n        List list = new ArrayList();\n        list.add(\"hello\");\n        list.add(2);\n        System.out.print(list.get(0) instanceof Object);\n        System.out.print(list.get(1) instanceof Integer);\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -90,7 +90,7 @@
         "_ps": -1
     },
     {
-        "question": "Q10. Given the following two classes, what will be the output of the Main class?",
+        "question": "Q10. Given the following two classes, what will be the output of the Main class?\n```java\npackage mypackage;\npublic class Math {\n    public static int abs(int num){\n        return num < 0 ? -num : num;\n    }\n}\npackage mypackage.elementary;\npublic class Math {\n    public static int abs (int num) {\n        return -num;\n    }\n}\n```\n```java\nimport mypackage.Math;\nimport mypackage.elementary.*;\nclass Main {\n    public static void main (String args[]){\n        System.out.println(Math.abs(123));\n    }\n}\n```",
         "options": [
             "a",
             "e mypackage;",
@@ -100,7 +100,7 @@
         "_ps": -1
     },
     {
-        "question": "Q11. What is the result of this code?",
+        "question": "Q11. What is the result of this code?\n```java\n1: class MainClass {\n2:  final String message(){\n3:      return \"Hello!\";\n4:  }\n5: }\n6: class Main extends MainClass {\n7:  public static void main(String[] args) {\n8:      System.out.println(message());\n9:  }\n10: String message(){\n11:     return \"World!\";\n12:  }\n13: }\n```",
         "options": [
             "a",
             "ss MainClass {",
@@ -110,7 +110,7 @@
         "_ps": -1
     },
     {
-        "question": "Q12. Given this code, which command will output \"2\"?",
+        "question": "Q12. Given this code, which command will output \"2\"?\n```java\nclass Main {\n    public static void main(String[] args) {\n        System.out.println(args[2]);\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -120,7 +120,7 @@
         "_ps": -1
     },
     {
-        "question": "Q13. What is the output of this code?",
+        "question": "Q13. What is the output of this code?\n```java\nclass Main {\n    public static void main(String[] args){\n        int a = 123451234512345;\n        System.out.println(a);\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -130,7 +130,7 @@
         "_ps": -1
     },
     {
-        "question": "Q14. What is the output of this code?",
+        "question": "Q14. What is the output of this code?\n```java\nclass Main {\n    public static void main (String[] args) {\n        String message = \"Hello world!\";\n        String newMessage = message.substring(6, 12)\n            + message.substring(12, 6);\n        System.out.println(newMessage);\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -150,7 +150,7 @@
         "_ps": 0
     },
     {
-        "question": "Q16. What does this code print?",
+        "question": "Q16. What does this code print?\n```java\nSystem.out.print(\"apple\".compareTo(\"banana\"));\n```",
         "options": [
             "a",
             ".out.print(\"apple\".compareTo(\"banana\"));",
@@ -190,7 +190,7 @@
         "_ps": 2
     },
     {
-        "question": "Q20. Fill in the blank to create a piece of code that will tell whether `int0` is divisible by `5`:",
+        "question": "Q20. Fill in the blank to create a piece of code that will tell whether `int0` is divisible by `5`:\n`boolean isDivisibleBy5 = _____`",
         "options": [
             "an isDivisibleBy5 = _____`",
             "`int0 / 5 ? true: false`",
@@ -200,7 +200,7 @@
         "_ps": 2
     },
     {
-        "question": "Q21. How many times will this code print \"Hello World!\"?",
+        "question": "Q21. How many times will this code print \"Hello World!\"?\n```java\nclass Main {\n    public static void main(String[] args){\n        for (int i=0; i<10; i=i++){\n            i+=1;\n            System.out.println(\"Hello World!\");\n        }\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -220,7 +220,7 @@
         "_ps": 3
     },
     {
-        "question": "Q23. What code would you use in Constructor A to call Constructor B?",
+        "question": "Q23. What code would you use in Constructor A to call Constructor B?\n```java\npublic class Jedi {\n  /* Constructor A */\n  Jedi(String name, String species){}\n  /* Constructor B */\n  Jedi(String name, String species, boolean followsTheDarkSide){}\n  }\n```",
         "options": [
             "a",
             " class Jedi {",
@@ -240,7 +240,7 @@
         "_ps": 1
     },
     {
-        "question": "Q25. What will this program print out to the console when executed?",
+        "question": "Q25. What will this program print out to the console when executed?\n```java\nimport java.util.LinkedList;\npublic class Main {\n    public static void main(String[] args){\n        LinkedList<Integer> list = new LinkedList<>();\n        list.add(5);\n        list.add(1);\n        list.add(10);\n        System.out.println(list);\n    }\n}\n```",
         "options": [
             "a",
             " java.util.LinkedList;",
@@ -250,7 +250,7 @@
         "_ps": -1
     },
     {
-        "question": "Q26. What is the output of this code?",
+        "question": "Q26. What is the output of this code?\n```java\nclass Main {\n    public static void main(String[] args){\n       String message = \"Hello\";\n       for (int i = 0; i<message.length(); i++){\n          System.out.print(message.charAt(i+1));\n       }\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -280,7 +280,7 @@
         "_ps": 3
     },
     {
-        "question": "Q29. What is the output of this code?",
+        "question": "Q29. What is the output of this code?\n```java\nimport java.util.*;\nclass Main {\n\tpublic static void main(String[] args) {\n\t\tList<Boolean> list = new ArrayList<>();\n\t\tlist.add(true);\n\t\tlist.add(Boolean.parseBoolean(\"FalSe\"));\n\t\tlist.add(Boolean.TRUE);\n\t\tSystem.out.print(list.size());\n\t\tSystem.out.print(list.get(1) instanceof Boolean);\n\t}\n}\n```",
         "options": [
             "a",
             " java.util.*;",
@@ -290,7 +290,7 @@
         "_ps": -1
     },
     {
-        "question": "Q30. What is the result of this code?",
+        "question": "Q30. What is the result of this code?\n```java\n1: class Main {\n2: \tObject message(){\n3: \t\treturn \"Hello!\";\n4: \t}\n5: \tpublic static void main(String[] args) {\n6: \t\tSystem.out.print(new Main().message());\n7: \t\tSystem.out.print(new Main2().message());\n8: \t}\n9: }\n10: class Main2 extends Main {\n11: \tString message(){\n12: \t\treturn \"World!\";\n13: \t}\n14: }\n```",
         "options": [
             "a",
             "ss Main {",
@@ -320,7 +320,7 @@
         "_ps": 3
     },
     {
-        "question": "Q33. Which letters will print when this code is run?",
+        "question": "Q33. Which letters will print when this code is run?\n```java\npublic static void main(String[] args) {\n\ttry {\n\t\tSystem.out.println(\"A\");\n\t\tbadMethod();\n\t\tSystem.out.println(\"B\");\n\t} catch (Exception ex) {\n\t\tSystem.out.println(\"C\");\n\t} finally {\n\t\tSystem.out.println(\"D\");\n\t}\n}\npublic static void badMethod() {\n\tthrow new Error();\n}\n```",
         "options": [
             "a",
             " static void main(String[] args) {",
@@ -330,7 +330,7 @@
         "_ps": -1
     },
     {
-        "question": "Q34. What is the output of this code?",
+        "question": "Q34. What is the output of this code?\n```java\nclass Main {\n\tstatic int count = 0;\n\tpublic static void main(String[] args) {\n\t\tif (count < 3) {\n\t\t\tcount++;\n\t\t\tmain(null);\n\t\t} else {\n\t\t\treturn;\n\t\t}\n\t\tSystem.out.println(\"Hello World!\");\n\t}\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -340,7 +340,7 @@
         "_ps": -1
     },
     {
-        "question": "Q35. What is the output of this code?",
+        "question": "Q35. What is the output of this code?\n```java\nimport java.util.*;\nclass Main {\n\tpublic static void main(String[] args) {\n\t\tString[] array = {\"abc\", \"2\", \"10\", \"0\"};\n\t\tList<String> list = Arrays.asList(array);\n\t\tCollections.sort(list);\n\t\tSystem.out.println(Arrays.toString(array));\n\t}\n}\n```",
         "options": [
             "a",
             " java.util.*;",
@@ -350,7 +350,7 @@
         "_ps": -1
     },
     {
-        "question": "Q36. What is the output of this code?",
+        "question": "Q36. What is the output of this code?\n```java\nclass Main {\n\tpublic static void main(String[] args) {\n\t\tString message = \"Hello\";\n\t\tprint(message);\n\t\tmessage += \"World!\";\n\t\tprint(message);\n\t}\n\tstatic void print(String message){\n\t\tSystem.out.print(message);\n\t\tmessage += \" \";\n\t}\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -360,7 +360,7 @@
         "_ps": -1
     },
     {
-        "question": "Q37. What is displayed when this code is compiled and executed?",
+        "question": "Q37. What is displayed when this code is compiled and executed?\n```java\npublic class Main {\n\tpublic static void main(String[] args) {\n\t\tint x = 5;\n\t\tx = 10;\n\t\tSystem.out.println(x);\n\t}\n}\n```",
         "options": [
             "a",
             " class Main {",
@@ -370,7 +370,7 @@
         "_ps": -1
     },
     {
-        "question": "Q38. Which approach cannot be used to iterate over a List named _theList_?",
+        "question": "Q38. Which approach cannot be used to iterate over a List named _theList_?\n```java\nfor (int i = 0; i < theList.size(); i++) {\n    System.out.println(theList.get(i));\n}\n```\n```java\nfor (Object object : theList) {\n    System.out.println(object);\n}\n```\n```java\nIterator it = theList.iterator();\nfor (it.hasNext()) {\n    System.out.println(it.next());\n}\n```",
         "options": [
             "A",
             "a",
@@ -380,7 +380,7 @@
         "_ps": -1
     },
     {
-        "question": "Q39. What method signature will work with this code?",
+        "question": "Q39. What method signature will work with this code?\n`boolean healthyOrNot = isHealthy(\"avocado\");`",
         "options": [
             "an healthyOrNot = isHealthy(\"avocado\");`",
             "public void isHealthy(String avocado)",
@@ -420,7 +420,7 @@
         "_ps": 2
     },
     {
-        "question": "Q43. What is the result of this code?",
+        "question": "Q43. What is the result of this code?\n```java\nchar smooch = 'x';\nSystem.out.println((int) smooch);\n```",
         "options": [
             "a",
             "mooch = 'x';",
@@ -440,7 +440,7 @@
         "_ps": 3
     },
     {
-        "question": "Q45. How would you fix this code so that it compiles?",
+        "question": "Q45. How would you fix this code so that it compiles?\n```java\npublic class Nosey {\n\tint age;\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Your age is: \" + age);\n\t}\n}\n```",
         "options": [
             "a",
             " class Nosey {",
@@ -450,7 +450,7 @@
         "_ps": -1
     },
     {
-        "question": "Q46. Add a Duck called \"Waddles\" to the ArrayList **ducks**.",
+        "question": "Q46. Add a Duck called \"Waddles\" to the ArrayList **ducks**.\n```java\npublic class Duck {\n\tprivate String name;\n\tDuck(String name) {}\n}\n```\n      `ducks.add(waddles);`\n      `ducks.add(waddles);`",
         "options": [
             "a",
             " class Duck {",
@@ -470,7 +470,7 @@
         "_ps": 2
     },
     {
-        "question": "Q48. Given this class, how would you make the code compile?",
+        "question": "Q48. Given this class, how would you make the code compile?\n```java\npublic class TheClass {\n    private final int x;\n}\n```\n```java\npublic TheClass() {\n    x += 77;\n}\n```\n```java\npublic TheClass() {\n    x = null;\n}\n```\n```java\npublic TheClass() {\n    x = 77;\n}\n```",
         "options": [
             "a",
             " class TheClass {",
@@ -480,7 +480,7 @@
         "_ps": -1
     },
     {
-        "question": "Q49. How many times f will be printed?",
+        "question": "Q49. How many times f will be printed?\n```java\npublic class Solution {\n    public static void main(String[] args) {\n        for (int i = 44; i > 40; i--) {\n            System.out.println(\"f\");\n        }\n    }\n}\n```",
         "options": [
             "a",
             " class Solution {",
@@ -490,7 +490,7 @@
         "_ps": -1
     },
     {
-        "question": "Q50. Which statements about `abstract` classes are true?",
+        "question": "Q50. Which statements about `abstract` classes are true?\n```\n1. They can be instantiated.\n2. They allow member variables and methods to be inherited by subclasses.\n3. They can contain constructors.\n```",
         "options": [
             "",
             "y can be instantiated.",
@@ -510,7 +510,7 @@
         "_ps": 1
     },
     {
-        "question": "Q52. What is the result of this code?",
+        "question": "Q52. What is the result of this code?\n```java\n  1: int a = 1;\n  2: int b = 0;\n  3: int c = a/b;\n  4: System.out.println(c);\n```",
         "options": [
             "a",
             "nt a = 1;",
@@ -560,7 +560,7 @@
         "_ps": 2
     },
     {
-        "question": "Q57. Use the magic power to cast a spell",
+        "question": "Q57. Use the magic power to cast a spell\n```java\npublic class MagicPower {\n    void castSpell(String spell) {}\n}\n```\n      `magicPower.castSpell();`",
         "options": [
             "a",
             " class MagicPower {",
@@ -580,7 +580,7 @@
         "_ps": 2
     },
     {
-        "question": "Q59. What does this code print?",
+        "question": "Q59. What does this code print?\n```java\npublic static void main(String[] args) {\n    int x=5,y=10;\n    swapsies(x,y);\n    System.out.println(x+\" \"+y);\n}\nstatic void swapsies(int a, int b) {\n    int temp=a;\n    a=b;\n    b=temp;\n}\n```",
         "options": [
             "a",
             " static void main(String[] args) {",
@@ -590,7 +590,7 @@
         "_ps": -1
     },
     {
-        "question": "Q60. What is the result of this code?",
+        "question": "Q60. What is the result of this code?\n```java\ntry {\n    System.out.println(\"Hello World\");\n} catch (Exception e) {\n    System.out.println(\"e\");\n} catch (ArithmeticException e) {\n    System.out.println(\"e\");\n} finally {\n    System.out.println(\"!\");\n}\n```",
         "options": [
             "a",
             "",
@@ -640,7 +640,7 @@
         "_ps": 2
     },
     {
-        "question": "Q65. Refactor this event handler to a lambda expression:",
+        "question": "Q65. Refactor this event handler to a lambda expression:\n```java\ngroucyButton.addActionListener(new ActionListener() {\n    @Override\n    public void actionPerformed(ActionEvent e) {\n        System.out.println(\"Press me one more time..\");\n    }\n});\n```",
         "options": [
             "a",
             "Button.addActionListener(new ActionListener() {",
@@ -750,7 +750,7 @@
         "_ps": 2
     },
     {
-        "question": "Q76. What method should be added to the Duck class to print the name Moby?",
+        "question": "Q76. What method should be added to the Duck class to print the name Moby?\n```java\npublic class Duck {\n    private String name;\n    Duck(String name) {\n        this.name = name;\n    }\n    public static void main(String[] args) {\n        System.out.println(new Duck(\"Moby\"));\n    }\n}\n```",
         "options": [
             "a",
             " class Duck {",
@@ -770,7 +770,7 @@
         "_ps": 0
     },
     {
-        "question": "Q78. How many times does this loop print \"exterminate\"?",
+        "question": "Q78. How many times does this loop print \"exterminate\"?\n```java\nfor (int i = 44; i > 40; i--) {\n    System.out.println(\"exterminate\");\n}\n```",
         "options": [
             "a",
             "nt i = 44; i > 40; i--) {",
@@ -780,7 +780,7 @@
         "_ps": -1
     },
     {
-        "question": "Q79. What is the value of myCharacter after line 3 is run?",
+        "question": "Q79. What is the value of myCharacter after line 3 is run?\n```java\n1: public class Main {\n2:   public static void main (String[] args) {\n3:     char myCharacter = \"piper\".charAt(3);\n4:   }\n5: }\n```",
         "options": [
             "a",
             "lic class Main {",
@@ -820,7 +820,7 @@
         "_ps": 0
     },
     {
-        "question": "Q83. What is the output of this code?",
+        "question": "Q83. What is the output of this code?\n```java\npublic class Main {\n  public static void main (String[] args) {\n    int[] sampleNumbers = {8, 5, 3, 1};\n    System.out.println(sampleNumbers[2]);\n  }\n}\n```",
         "options": [
             "a",
             " class Main {",
@@ -830,7 +830,7 @@
         "_ps": -1
     },
     {
-        "question": "Q84. Which change will make this code compile successfully?",
+        "question": "Q84. Which change will make this code compile successfully?\n```java\n1: public class Main {\n2:   String MESSAGE =\"Hello!\";\n3:   static void print(){\n4:     System.out.println(message);\n5:   }\n6:   void print2(){}\n7: }\n```",
         "options": [
             "a",
             "lic class Main {",
@@ -840,7 +840,7 @@
         "_ps": -1
     },
     {
-        "question": "Q85. What is the output of this code?",
+        "question": "Q85. What is the output of this code?\n```java\nimport java.util.*;\nclass Main {\n  public static void main(String[] args) {\n    String[] array = new String[]{\"A\", \"B\", \"C\"};\n    List<String> list1 = Arrays.asList(array);\n    List<String> list2 = new ArrayList<>(Arrays.asList(array));\n    List<String> list3 = new ArrayList<>(Arrays.asList(\"A\", new String(\"B\"), \"C\"));\n    System.out.print(list1.equals(list2));\n    System.out.print(list1.equals(list3));\n  }\n}\n```",
         "options": [
             "a",
             " java.util.*;",
@@ -860,7 +860,7 @@
         "_ps": 3
     },
     {
-        "question": "Q87. What is the output of this code?",
+        "question": "Q87. What is the output of this code?\n```java\nclass Main {\n  public static void main(String[] args) {\n    StringBuilder sb = new StringBuilder(\"hello\");\n    sb.deleteCharAt(0).insert(0, \"H\").\" World!\";\n    System.out.println(sb);\n  }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -870,7 +870,7 @@
         "_ps": -1
     },
     {
-        "question": "Q88. How would you use the TaxCalculator to determine the amount of tax on $50?",
+        "question": "Q88. How would you use the TaxCalculator to determine the amount of tax on $50?\n```java\nclass TaxCalculator {\n  static calculate(total) {\n    return total * .05;\n  }\n}\n```",
         "options": [
             "a",
             "TaxCalculator {",
@@ -880,7 +880,7 @@
         "_ps": -1
     },
     {
-        "question": "Q89. What is the output of this code?",
+        "question": "Q89. What is the output of this code?\n```java\n public class Main {\n    public static void main(String[] args) {\n      HashMap<String, Integer> pantry = new HashMap<>();\n      pantry.put(\"Apples\", 3);\n      pantry.put(\"Oranges\", 2);\n      int currentApples = pantry.get(\"Apples\");\n      pantry.put(\"Apples\", currentApples + 4);\n      System.out.println(pantry.get(\"Apples\"));\n    }\n}\n```",
         "options": [
             "a",
             "c class Main {",
@@ -900,7 +900,7 @@
         "_ps": 3
     },
     {
-        "question": "Q91. What is the output?",
+        "question": "Q91. What is the output?\n```java\nimport java.util.*;\npublic class Main {\n\tpublic static void main(String[] args)\n\t{\n\t\tPriorityQueue<Integer> queue = new PriorityQueue<>();\n\t\tqueue.add(4);\n\t\tqueue.add(3);\n\t\tqueue.add(2);\n\t\tqueue.add(1);\n\t\twhile (queue.isEmpty() == false) {\n\t\t\tSystem.out.printf(\"%d\", queue.remove());\n\t\t}\n\t}\n}\n```",
         "options": [
             "a",
             " java.util.*;",
@@ -910,7 +910,7 @@
         "_ps": -1
     },
     {
-        "question": "Q92. What will this code print, assuming it is inside the main method of a class?",
+        "question": "Q92. What will this code print, assuming it is inside the main method of a class?\n`System.out.println(\"hello my friends\".split(\" \")[0]);`",
         "options": [
             "m.out.println(\"hello my friends\".split(\" \")[0]);`",
             "my",
@@ -960,7 +960,7 @@
         "_ps": 2
     },
     {
-        "question": "Q97. What is the correct return type for the `processFunction` method:",
+        "question": "Q97. What is the correct return type for the `processFunction` method:\n```\n____ processFunction(Integer number, Function<Integer, String> lambda) {\n    return lambda.apply(number);\n}\n```",
         "options": [
             "",
             "rocessFunction(Integer number, Function<Integer, String> lambda) {",
@@ -970,7 +970,7 @@
         "_ps": -1
     },
     {
-        "question": "Q98. This code does not compile. What needs to be changed so that it does?",
+        "question": "Q98. This code does not compile. What needs to be changed so that it does?\n```\npublic enum Direction {\n    EAST(\"E\"),\n    WEST(\"W\"),\n    NORTH(\"N\"),\n    SOUTH(\"S\");\n    private final String shortCode;\n    public String getShortCode() {\n        return shortCode;\n    }\n}\n```",
         "options": [
             "",
             " enum Direction {",
@@ -990,7 +990,7 @@
         "_ps": 2
     },
     {
-        "question": "Q100. What code should go in line 3?",
+        "question": "Q100. What code should go in line 3?\n```java\nclass Main {\n    public static void main(String[] args) {\n        array[0] = new int[]{1, 2, 3};\n        array[1] = new int[]{4, 5, 6};\n        array[2] = new int[]{7, 8, 9};\n        for (int i = 0; i < 3; i++)\n            System.out.print(array[i][1]); //prints 258\n    }\n}\n```",
         "options": [
             "a",
             "Main {",
@@ -1000,7 +1000,7 @@
         "_ps": -1
     },
     {
-        "question": "Q101. Is this an example of method overloading or overriding?",
+        "question": "Q101. Is this an example of method overloading or overriding?\n```java\nclass Car {\n    public void accelerate() {}\n}\nclass Lambo extends Car {\n    public void accelerate(int speedLimit) {}\n    public void accelerate() {}\n}\n```",
         "options": [
             "a",
             "Car {",
@@ -1040,7 +1040,7 @@
         "_ps": 2
     },
     {
-        "question": "Q105. What will be printed?",
+        "question": "Q105. What will be printed?\n```java\npublic class Berries{\n    String berry = \"blue\";\n    public static void main( String[] args ) {\n        new Berries().juicy( \"straw\" );\n    }\n    void juicy(String berry){\n        this.berry = \"rasp\";\n        System.out.println(berry + \"berry\");\n    }\n}\n```",
         "options": [
             "a",
             " class Berries{",
@@ -1050,7 +1050,7 @@
         "_ps": -1
     },
     {
-        "question": "Q106. What is the value of `forestCount` after this code executes?",
+        "question": "Q106. What is the value of `forestCount` after this code executes?\n```java\nMap<String, Integer> forestSpecies = new HashMap<>();\nforestSpecies.put(\"Amazon\", 30000);\nforestSpecies.put(\"Congo\", 10000);\nforestSpecies.put(\"Daintree\", 15000);\nforestSpecies.put(\"Amazon\", 40000);\nint forestCount = forestSpecies.size();\n```",
         "options": [
             "a",
             "ring, Integer> forestSpecies = new HashMap<>();",
@@ -1060,7 +1060,7 @@
         "_ps": -1
     },
     {
-        "question": "Q107. What is a problem with this code?",
+        "question": "Q107. What is a problem with this code?\n```java\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\nclass Main {\n    public static void main( String[] args ) {\n        List<String> list = new ArrayList<String>( Arrays.asList( \"a\", \"b\", \"c\" ) );\n        for( String value :list ){\n            if( value.equals( \"a\" ) ) {\n                list.remove( value );\n            }\n        }\n        System.out.println(list); // outputs [b,c]\n    }\n}\n```",
         "options": [
             "a",
             " java.util.ArrayList;",
@@ -1070,7 +1070,7 @@
         "_ps": -1
     },
     {
-        "question": "Q108. How do you convert this method into a lambda expression?",
+        "question": "Q108. How do you convert this method into a lambda expression?\n```java\npublic int square(int x){\n    return x * x;\n}\n```",
         "options": [
             "a",
             " int square(int x){",
@@ -1080,7 +1080,7 @@
         "_ps": -1
     },
     {
-        "question": "Q109. Which choice is a valid implementation of this interface?",
+        "question": "Q109. Which choice is a valid implementation of this interface?\n```java\ninterface MyInterface {\n    int foo(int x);\n}\n```\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public void foo(int x){\n        System.out.println(x);\n    }\n}\n```\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public double foo(int x){\n        return x * 100;\n    }\n}\n```\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public int foo(int x){\n        return x * 100;\n    }\n}\n```",
         "options": [
             "a",
             "ace MyInterface {",
@@ -1090,7 +1090,7 @@
         "_ps": -1
     },
     {
-        "question": "Q110. What is the result of this program?",
+        "question": "Q110. What is the result of this program?\n```java\ninterface Foo{\n    int x = 10;\n}\npublic class Main{\n    public static void main( String[] args ) {\n        Foo.x = 20;\n        System.out.println(Foo.x);\n    }\n}\n```",
         "options": [
             "a",
             "ace Foo{",
@@ -1100,7 +1100,7 @@
         "_ps": -1
     },
     {
-        "question": "Q111. Which statement must be inserted on line 1 to print the value true?",
+        "question": "Q111. Which statement must be inserted on line 1 to print the value true?\n```\n1:\n2: Optional<String> opt = Optional.of(val);\n3: System.out.println(opt.isPresent());\n```",
         "options": [
             "",
             "",
@@ -1110,7 +1110,7 @@
         "_ps": -1
     },
     {
-        "question": "Q112. What will this code print, assuming it is inside the main method of a class?",
+        "question": "Q112. What will this code print, assuming it is inside the main method of a class?\n```java\nSystem.out.println(true && false || true);\nSystem.out.println(false || false && true);\n```",
         "options": [
             "a",
             ".out.println(true && false || true);",
@@ -1120,7 +1120,7 @@
         "_ps": -1
     },
     {
-        "question": "Q113. What will this code print?",
+        "question": "Q113. What will this code print?\n```java\nList<String> list1 = new ArrayList<>();\nlist1.add( \"One\" );\nlist1.add( \"Two\" );\nlist1.add( \"Three\" );\nList<String> list2 = new ArrayList<>();\nlist2.add( \"Two\" );\nlist1.remove( list2 );\nSystem.out.println(list1);\n```",
         "options": [
             "a",
             "tring> list1 = new ArrayList<>();",
@@ -1150,7 +1150,7 @@
         "_ps": 2
     },
     {
-        "question": "Q116. Which keyword would not be allowed here?",
+        "question": "Q116. Which keyword would not be allowed here?\n```java\nclass Unicorn {\n    _____ Unicorn(){}\n}\n```",
         "options": [
             "a",
             "Unicorn {",
@@ -1160,7 +1160,7 @@
         "_ps": -1
     },
     {
-        "question": "Q117. Which OOP concept is this code an example of?",
+        "question": "Q117. Which OOP concept is this code an example of?\n```java\nList[] myLists = {\n    new ArrayList<>(),\n    new LinkedList<>(),\n    new Stack<>(),\n    new Vector<>(),\n};\nfor (List list : myLists){\n    list.clear();\n}\n```",
         "options": [
             "a",
             " myLists = {",
@@ -1170,7 +1170,7 @@
         "_ps": -1
     },
     {
-        "question": "Q118. What does this code print?",
+        "question": "Q118. What does this code print?\n```java\nString a = \"bikini\";\nString b = new String(\"bikini\");\nString c = new String(\"bikini\");\nSystem.out.println(a == b);\nSystem.out.println(b == c);\n```",
         "options": [
             "a",
             " a = \"bikini\";",
@@ -1190,7 +1190,7 @@
         "_ps": 2
     },
     {
-        "question": "Q120. Which is a valid type for this lambda function?",
+        "question": "Q120. Which is a valid type for this lambda function?\n```java\n_____ oddOrEven = x -> {\n    return x % 2 == 0 ? \"even\" : \"odd\";\n};\n```",
         "options": [
             "a",
             "oddOrEven = x -> {",
@@ -1200,7 +1200,7 @@
         "_ps": -1
     },
     {
-        "question": "Q121. What is displayed when this code is compiled and executed?",
+        "question": "Q121. What is displayed when this code is compiled and executed?\n```java\nimport java.util.HashMap;\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> pantry = new HashMap<>();\n        pantry.put(\"Apples\", 3);\n        pantry.put(\"Oranges\", 2);\n        int currentApples = pantry.get(\"Apples\");\n        pantry.put(\"Apples\", currentApples + 4);\n        System.out.println(pantry.get(\"Apples\"));\n    }\n}\n```",
         "options": [
             "a",
             " java.util.HashMap;",
@@ -1210,7 +1210,7 @@
         "_ps": -1
     },
     {
-        "question": "Q122. What variable type should be declared for capitalize?",
+        "question": "Q122. What variable type should be declared for capitalize?\n```shell\nList<String> songTitles = Arrays.asList(\"humble\", \"element\", \"dna\");\n_______ capitalize = (str) -> str.toUpperCase();\nsongTitles.stream().map(capitalize).forEach(System.out::println);\n```",
         "options": [
             "ll",
             "tring> songTitles = Arrays.asList(\"humble\", \"element\", \"dna\");",
@@ -1220,7 +1220,7 @@
         "_ps": -1
     },
     {
-        "question": "Q123. Which is the correct return type for the processFunction method?",
+        "question": "Q123. Which is the correct return type for the processFunction method?\n```java\n_____ processFunction(Integer number, Function<Integer, String> lambda) {\n        return lambda.apply(number);\n    }\n```",
         "options": [
             "a",
             "processFunction(Integer number, Function<Integer, String> lambda) {",
@@ -1230,7 +1230,7 @@
         "_ps": -1
     },
     {
-        "question": "Q124. What function could you use to replace slashes for dashes in a list of dates?",
+        "question": "Q124. What function could you use to replace slashes for dashes in a list of dates?\n```java\nList<String> dates = new ArrayList<String>();\n// missing code\ndates.replaceAll(replaceSlashes);\n```",
         "options": [
             "a",
             "tring> dates = new ArrayList<String>();",
@@ -1250,7 +1250,7 @@
         "_ps": 0
     },
     {
-        "question": "Q126. How do you create and run a Thread for this class?",
+        "question": "Q126. How do you create and run a Thread for this class?\n```java\nimport java.util.date;\npublic class CurrentDateRunnable implements Runnable {\n    @Override\n    public void run () {\n        while (true) {\n            System.out.println(\"Current date: \" + new Date());\n            try {\n                Thread.sleep(5000);\n            } catch (InterruptedException e) {\n                throw new RuntimeException(e);\n            }\n        }\n    }\n}\n```",
         "options": [
             "a",
             " java.util.date;",
@@ -1260,7 +1260,7 @@
         "_ps": -1
     },
     {
-        "question": "Q127. What keyword would _not_ be allowed here?",
+        "question": "Q127. What keyword would _not_ be allowed here?\n```java\nclass Unicorn {\n    ______ Unicorn(){}\n}\n```",
         "options": [
             "a",
             "Unicorn {",
@@ -1270,7 +1270,7 @@
         "_ps": -1
     },
     {
-        "question": "Q128. Which expression is a functional equivalent?",
+        "question": "Q128. Which expression is a functional equivalent?\n```java\nList<Integer> numbers = List.of(1,2,3,4);\nint total = 0;\nfor (Integer x : numbers) {\n    if (x % 2 == 0)\n    total += x * x;\n}\n```\n```java\nint total = numbers.stream()\n                        .transform(x -> x * x)\n                        .filter(x -> x % 2 == 0)\n                        .sum ();\n```\n```java\nint total = numbers.stream()\n                        .filter(x -> x % 2 == 0)\n                        .collect(Collectors.toInt());\n```\n```java\nint total = numbers.stream()\n                        .mapToInt (x -> {if (x % 2 == 0) return x * x;})\n                        .sum();\n```",
         "options": [
             "a",
             "nteger> numbers = List.of(1,2,3,4);",

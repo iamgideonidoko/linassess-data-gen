@@ -20,7 +20,7 @@
         "_ps": 3
     },
     {
-        "question": "Q3. What is the result of this series of statements?",
+        "question": "Q3. What is the result of this series of statements?\n```tsql\nBEGIN TRY\nSELECT 'Foo' AS Result;\nEND TRY\nBEGIN CATCH\nSELECT 'Bar' AS Result;\nEND CATCH\n```",
         "options": [
             "l",
             "TRY",
@@ -50,7 +50,7 @@
         "_ps": 3
     },
     {
-        "question": "Q6. Given the Games table pictured, which query generates the results shown?",
+        "question": "Q6. Given the Games table pictured, which query generates the results shown?\n```tsql\n  SELECT GameType, MaxPlayers, count(*) AS NumberOfGames\n  FROM Games\n  GROUP BY MaxPlayers, GameType\n  ORDER BY MaxPlayers, GameType;\n```\n```tsql\n  SELECT GameType, MaxPlayers, count(*) AS NumberOfGames\n  FROM Games\n  GROUP BY GameType, MaxPlayers\n  ORDER BY GameType;\n```\n```tsql\n  SELECT GameType, count(Players) AS MaxPlayers, NumberOfGames\n  FROM Games\n  GROUP BY GameType, MaxPlayers\n  ORDER BY GameType;\n```",
         "options": [
             "",
             "l",
@@ -60,7 +60,7 @@
         "_ps": -1
     },
     {
-        "question": "Q7. Which answer is a possible result of the sequence of commands below?",
+        "question": "Q7. Which answer is a possible result of the sequence of commands below?\n```tsql\n  DECLARE @UniqueID uniqueidentifier = NEWID();\n  SELECT @UniqueID AS Result;\n```",
         "options": [
             "l",
             "ARE @UniqueID uniqueidentifier = NEWID();",
@@ -70,7 +70,7 @@
         "_ps": -1
     },
     {
-        "question": "Q8. You need to find all students that are not on the \"Chemistry Cats\" team. Which query does NOT work for this task?",
+        "question": "Q8. You need to find all students that are not on the \"Chemistry Cats\" team. Which query does NOT work for this task?\n\tWHERE team NOT 'Chemistry Cats';```\n\tWHERE team <> 'Chemistry Cats';```\n\tWHERE team != 'Chemistry Cats';```",
         "options": [
             "```SELECT * FROM Students",
             " team NOT 'Chemistry Cats';```",
@@ -100,7 +100,7 @@
         "_ps": 2
     },
     {
-        "question": "Q11. What is the result of this statement?",
+        "question": "Q11. What is the result of this statement?\n```tsql\nSELECT FLOOR(-1234.321)\n```",
         "options": [
             "l",
             " FLOOR(-1234.321)",
@@ -140,7 +140,7 @@
         "_ps": 1
     },
     {
-        "question": "Q15. What is the result of this query?",
+        "question": "Q15. What is the result of this query?\n```tsql\nSELECT 1 / 2 AS Result;\n```",
         "options": [
             "l",
             " 1 / 2 AS Result;",
@@ -160,7 +160,7 @@
         "_ps": 2
     },
     {
-        "question": "Q17. What is the result of this query?",
+        "question": "Q17. What is the result of this query?\n```tsql\nSELECT 'abc\\\ndef' AS Result;\n```",
         "options": [
             "l",
             " 'abc\\",
@@ -180,7 +180,7 @@
         "_ps": 0
     },
     {
-        "question": "Q19. What result is returned after executing the following commands?",
+        "question": "Q19. What result is returned after executing the following commands?\n```tsql\nDECLARE @MyVariable int;\nSET @MyVariable = 1;\nGO\nSELECT @MyVariable;\n```",
         "options": [
             "l",
             "E @MyVariable int;",
@@ -210,7 +210,7 @@
         "_ps": 1
     },
     {
-        "question": "Q22. You need to write a query that returns all products that have a SerialNumber ending with \"10_3\". Which `WHERE` clause should you use to fill in the blank in this query?",
+        "question": "Q22. You need to write a query that returns all products that have a SerialNumber ending with \"10_3\". Which `WHERE` clause should you use to fill in the blank in this query?\n```tsql\nSELECT ProductID, ProductName, SerialNumber\nFROM Products______ ;\n```",
         "options": [
             "l",
             " ProductID, ProductName, SerialNumber",
@@ -250,7 +250,7 @@
         "_ps": 3
     },
     {
-        "question": "Q26. You execute the following three queries. What is the result?",
+        "question": "Q26. You execute the following three queries. What is the result?\n```tsql\nCreate table students(id int identity(1000,1), firstname varchar(20),\nlastname varchar(30));\ninsert into students(firstname,lastname)values('mark','twain');\nselect * from students;\n```\n  studentid firstname lastname\n  1 1001 mark twain\n  studentid firstname lastname\n  1 1 mark twain\n      1 1000 mark twain",
         "options": [
             "l",
             " table students(id int identity(1000,1), firstname varchar(20),",
@@ -260,7 +260,7 @@
         "_ps": -1
     },
     {
-        "question": "Q27. Given a table with the following structure, which query returns all student names with the highest grade?",
+        "question": "Q27. Given a table with the following structure, which query returns all student names with the highest grade?\n```tsql\nCREATE TABLE Students (\nStudentName varchar(50),\nGrade int );\n```",
         "options": [
             "l",
             " TABLE Students (",
@@ -270,7 +270,7 @@
         "_ps": -1
     },
     {
-        "question": "Q28. What role does \"inventory\" play?",
+        "question": "Q28. What role does \"inventory\" play?\n```tsql\nselect bookid, boooktitle, bookauthor,quantityonhand from inventory.books;\n```",
         "options": [
             "l",
             " bookid, boooktitle, bookauthor,quantityonhand from inventory.books;",
@@ -300,7 +300,7 @@
         "_ps": 0
     },
     {
-        "question": "Q31. Review the `CREATE TABLE` statement below. Which option, when placed in the blank space, ensures that the BookISBN column will not contain any duplicate values?",
+        "question": "Q31. Review the `CREATE TABLE` statement below. Which option, when placed in the blank space, ensures that the BookISBN column will not contain any duplicate values?\n```tsql\nCREATE TABLE Books (\n    BookID int PRIMARY KEY,\n    BookISBN char(13) NOT NULL _____,\n    BookTitle nvarchar(100) NOT NULL\n);\n```",
         "options": [
             "l",
             " TABLE Books (",
@@ -310,7 +310,7 @@
         "_ps": -1
     },
     {
-        "question": "Q32. Given a table with the following structure, which query will not return the lowest grade earned by any student?",
+        "question": "Q32. Given a table with the following structure, which query will not return the lowest grade earned by any student?\n```tsql\nCREATE TABLE Students (\n    StudentName varchar(50),\n    Grade int\n);\n```\n```tsql\nSELECT StudentName\nFROM Students\nWHERE Grade = (SELECT MIN(Grade) FROM Student);\n```\n```tsql\nSELECT TOP(1) Grade\nFROM Students\nORDER BY Grade;\n```\n```tsql\nSELECT MIN(Grade)\nFROM Students\n```",
         "options": [
             "l",
             " TABLE Students (",
@@ -320,7 +320,7 @@
         "_ps": -1
     },
     {
-        "question": "Q33.",
+        "question": "Q33.\n![T-SQL-Q33](images/Q33.jpg)",
         "options": [
             "L-Q33](images/Q33.jpg)",
             "`UPDATE Students SET last_name='Smith', email = 'dsmith@rouxacademy.com' WHERE id='56295';`",
@@ -340,7 +340,7 @@
         "_ps": 2
     },
     {
-        "question": "Q35. What is the problem with this code?",
+        "question": "Q35. What is the problem with this code?\n```tsql\nDECLARE @Counter int;\nSET @Counter = 1;\nWHILE @Counter > 0\nBEGIN\n\tSET @Counter = @Counter +1;\nEND;\n```",
         "options": [
             "l",
             "E @Counter int;",
@@ -350,7 +350,7 @@
         "_ps": -1
     },
     {
-        "question": "Q36. Which is the right query to change the name of the Philosophy Pandas team to the Philosophy Parrots?",
+        "question": "Q36. Which is the right query to change the name of the Philosophy Pandas team to the Philosophy Parrots?\n![T-SQL-Q36](images/Q36.jpg)",
         "options": [
             "L-Q36](images/Q36.jpg)",
             "`UPDATES Students SET team = 'Philosophy Parrots' WHERE team = 'Philosophy Pandas';`",
@@ -360,7 +360,7 @@
         "_ps": 1
     },
     {
-        "question": "Q37. What is the result of this query?",
+        "question": "Q37. What is the result of this query?\n```tsql\nSELECT 123+'123' AS Result;\n```",
         "options": [
             "l",
             " 123+'123' AS Result;",
@@ -380,7 +380,7 @@
         "_ps": 3
     },
     {
-        "question": "Q39. You run this series of statements. What is the final result?",
+        "question": "Q39. You run this series of statements. What is the final result?\n```tsql\nCREATE TABLE MyTable (MyValue int);\nINSERT INTO MyTable VALUES (1);\nWHILE (SELECT MyValue FROM MyTable) < 5\nBEGIN\n\tUPDATE My Table SET MyValue = MyValue + 1;\nEND;\nSELECT MyValue AS Result FROM MyTable;\n```",
         "options": [
             "l",
             " TABLE MyTable (MyValue int);",
@@ -390,7 +390,7 @@
         "_ps": -1
     },
     {
-        "question": "Q40. Is there an error with this query? If so, which statement best describes the problem?",
+        "question": "Q40. Is there an error with this query? If so, which statement best describes the problem?\n```tsql\nSELECT OrderID, SUM(LineTotal) AS SubTotal\nFROM Sales\nWHERE SUM(LineTotal) > 1000\nGROUP BY OrderID\nORDER BY OrderID;\n```",
         "options": [
             "l",
             " OrderID, SUM(LineTotal) AS SubTotal",
@@ -400,7 +400,7 @@
         "_ps": -1
     },
     {
-        "question": "Q41. You created the two tables below. Later, you decide that you want the database to remove all books from the Books table if the related publisher is deleted from the Publishers table. What command should you run?",
+        "question": "Q41. You created the two tables below. Later, you decide that you want the database to remove all books from the Books table if the related publisher is deleted from the Publishers table. What command should you run?\n```tsql\nCREATE TABLE Books (\n\tBookID int PRIMARY KEY,\n\tBookTitle nvarchar(100) NOT NULL,\n\tPublisherID int NOT NULL\n);\nCREATE TABLE Publishers (\n\tPublisherID int PRIMARY KEY,\n\tPublisherName nvarchar(50)\n);\n```\n\tADD CONSTRAINT FK Books_PublisherID\n\tFOREIGN KEY (PublisherID)\n\tREFERENCES Publishers (PublisherID) ON UPDATE SET NULL```\n\tADD CONSTRAINT FK Books_PublisherID\n\tFOREIGN KEY (PublisherID)\n\tREFERENCES Publishers (PublisherID) ON DELETE CASCADE```\n\tADD CONSTRAINT FK_Books_PublisherID\n\tFOREIGN KEY (PublisherID)\n\tREFERENCES Publishers (PublisherID)```",
         "options": [
             "l",
             " TABLE Books (",
@@ -420,7 +420,7 @@
         "_ps": 0
     },
     {
-        "question": "Q43. Which option—when placed in the blank space—establishes the PersonlD column as the primary key for the table with a nonclustered index?",
+        "question": "Q43. Which option—when placed in the blank space—establishes the PersonlD column as the primary key for the table with a nonclustered index?\n```sql\nCREATE TABLE People (\n\tPersonID int NOT NULL,\n\tPersonName nvarchar(50),\n_______\n);\n```",
         "options": [
             "",
             " TABLE People (",
@@ -430,7 +430,7 @@
         "_ps": -1
     },
     {
-        "question": "Q44. Which statement could you use to select a random student from this table?",
+        "question": "Q44. Which statement could you use to select a random student from this table?\n![T-SQL-Q36](images/Q36.jpg)",
         "options": [
             "L-Q36](images/Q36.jpg)",
             "`SELECT TOP(1) first_name, last_name FROM Students ORDER BY NEWID();`",

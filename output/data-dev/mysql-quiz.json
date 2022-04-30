@@ -50,7 +50,7 @@
         "_ps": 2
     },
     {
-        "question": "Q6. How can you create a stored procedure in MySQL?",
+        "question": "Q6. How can you create a stored procedure in MySQL?\n```\n1 CREATE PROCEDURE P () AS\n2 BEGIN\n3 END;\n```\n```\n1 CREATE PROCEDURE P ()\n2 BEGIN\n3 END\n```\n```\n1 CREATE PROCP\n2 BEGIN\n3 END;\n```",
         "options": [
             "A",
             "",
@@ -70,7 +70,7 @@
         "_ps": 0
     },
     {
-        "question": "Q8. Management has requested that you build an employee database. You start with the employee table. What is the correct syntax?",
+        "question": "Q8. Management has requested that you build an employee database. You start with the employee table. What is the correct syntax?\n```sql\n    CREATE TABLE employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY ON employeeID\n    );\n```\n```sql\n    CREATE TABLE employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY employeeID\n    );\n```\n```sql\n    CREATE TABLE IF EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n```",
         "options": [
             "A",
             "",
@@ -80,7 +80,7 @@
         "_ps": -1
     },
     {
-        "question": "Q9. You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?",
+        "question": "Q9. You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?\n![mysql Q09](images/mysql_q09.jpg)",
         "options": [
             "l Q09](images/mysql_q09.jpg)",
             "LIKE",
@@ -200,7 +200,7 @@
         "_ps": 0
     },
     {
-        "question": "Q21. What does the following SQL statement return?",
+        "question": "Q21. What does the following SQL statement return?\n`SELECT * FROM Employees WHERE EmployeeName LIKE 'a%'`",
         "options": [
             "T * FROM Employees WHERE EmployeeName LIKE 'a%'`",
             "It records in the Employees table where the value in the EmployeeName column doesn't have an \"a\".",
@@ -400,7 +400,7 @@
         "_ps": 1
     },
     {
-        "question": "Q41.Which statement is true for the diagram below",
+        "question": "Q41.Which statement is true for the diagram below\n![mysql Q41](images/mysql_q41.jpg)",
         "options": [
             "l Q41](images/mysql_q41.jpg)",
             "carid is the primary key for purchases",
@@ -420,7 +420,7 @@
         "_ps": 1
     },
     {
-        "question": "Q43. You are working with the tables as shown in this diagram. You need to make sure that any record added to the purchases table consists of a customerID, which already exists in the customers table, and a carID, which already exists in the cars table. You decide to use a trigger to do the validation. Which one do you use?",
+        "question": "Q43. You are working with the tables as shown in this diagram. You need to make sure that any record added to the purchases table consists of a customerID, which already exists in the customers table, and a carID, which already exists in the cars table. You decide to use a trigger to do the validation. Which one do you use?\n![mysql Q43](images/mysql_q43.jpg)",
         "options": [
             "l Q43](images/mysql_q43.jpg)",
             "`AFTER INSERT`",
@@ -430,7 +430,7 @@
         "_ps": 2
     },
     {
-        "question": "Q44. Which is the correct syntax of an extended insert statement?",
+        "question": "Q44. Which is the correct syntax of an extended insert statement?\n      ('Mercedes', 'C', 2003)\n      values ('Mercedes', 'C', 2003)\n      ('Mercedes', 'C', 2003)",
         "options": [
             "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)",
             "('Mercedes', 'C', 2003)",
@@ -570,7 +570,7 @@
         "_ps": 0
     },
     {
-        "question": "Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is _not_ supported by the statement?",
+        "question": "Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is _not_ supported by the statement?\n```mysql\nLOAD XML LOCAL INFILE 'cars.xml'\nINTO TABLE cars\nROWS IDENTIFIED BY `<car>`;\n```\n```xml\n<car>\n   <field name=\"make\"> Lexus </field>\n   <field name=\"model\"> IS300 </field>\n   <field name=\"make\"> 2016 </field>\n</car>\n```\n```xml\n<car name=\"make\"> Dodge </car>\n<car name=\"model\"> Ram </car>\n<car name=\"year\"> 2000 </car>\n```\n```xml\n<car make=\"Ford\" model=\"Mustang\" year=\"2002\"/>\n```",
         "options": [
             "ql",
             "ML LOCAL INFILE 'cars.xml'",
@@ -600,7 +600,7 @@
         "_ps": 1
     },
     {
-        "question": "Q61. You are working with the tables as shown in this diagram. You need to get the number of cars sold per the home state of each customer's residence. How can you accomplish this?",
+        "question": "Q61. You are working with the tables as shown in this diagram. You need to get the number of cars sold per the home state of each customer's residence. How can you accomplish this?\n![mysql Q61](images/mysql_q61.png)",
         "options": [
             "l Q61](images/mysql_q61.png)",
             "`SELECT state, COUNT(*) FROM customers WHERE ID IN (SELECT customerID FROM purchases) GROUP BY state;`",
@@ -670,7 +670,7 @@
         "_ps": 0
     },
     {
-        "question": "Q68. You are working with the table in this diagram. You want to use full-text search to find the customers who live on a street or a drive. What is the command to do that?",
+        "question": "Q68. You are working with the table in this diagram. You want to use full-text search to find the customers who live on a street or a drive. What is the command to do that?\nTable name: customers\n| ID | lastname | firstname | phone | address | city | state | zip |\n| ---- | -------- | --------- | ------------ | ------------------- | ----------- | ----- | ----- |\n| A001 | Smith | Bob | 212-555-1212 | 1001 1st Street | New York | NY | 10001 |\n| A002 | Chang | John | 213-555-5678 | 888 Rodeo Drive | Los Angeles | CA | 90210 |\n| A003 | Smith | Mary | 999-999-9999 | 123 Main Street | Anytown | VA | 12345 |\n| A004 | Johnson | Jack | 312-312-3120 | 1111 Chicago Avenue | Chicago | IL | 60606 |\n| A005 | Lopez | Linda | 737-777-3333 | 123 Main Street | Austin | TX | 73344 |\n```sql\nSELECT *\nFROM customers\nWHERE address MATCH 'Street' OR 'Drive';\n```\n```sql\nSELECT *\nFROM customers\nWHERE MATCH(address) IN ('street, drive');\n```\n```sql\nSELECT *\nFROM customers\nWHERE address MATCH 'Street' OR address MATCH 'Drive';\n```",
         "options": [
             "name: customers",
             " lastname | firstname | phone | address | city | state | zip |",
@@ -790,7 +790,7 @@
         "_ps": 2
     },
     {
-        "question": "Q80. In the diagram below, the price field is declared as type DECIMAL. What would be a more efficient declaration for this field?",
+        "question": "Q80. In the diagram below, the price field is declared as type DECIMAL. What would be a more efficient declaration for this field?\n![mysql picture](images/mysql_q80.png)",
         "options": [
             "l picture](images/mysql_q80.png)",
             "FLOAT",
@@ -810,7 +810,7 @@
         "_ps": 2
     },
     {
-        "question": "Q82. This diagram shows what type of relationship between customers and cars?",
+        "question": "Q82. This diagram shows what type of relationship between customers and cars?\n![mysql picture](images/mysql_q80.png)",
         "options": [
             "l picture](images/mysql_q80.png)",
             "one-to-many",
@@ -840,7 +840,7 @@
         "_ps": 0
     },
     {
-        "question": "Q85. In the diagram below, the ID fields are declared as type CHAR instead of INT . Which is NOT one of the possible reasons behind that decision?",
+        "question": "Q85. In the diagram below, the ID fields are declared as type CHAR instead of INT . Which is NOT one of the possible reasons behind that decision?\n![mysql picture](images/mysql_q85.png)",
         "options": [
             "l picture](images/mysql_q85.png)",
             "The ID field needs to include letters and not just numbers.",
@@ -870,7 +870,7 @@
         "_ps": 3
     },
     {
-        "question": "Q88. What does this SQL statement return?",
+        "question": "Q88. What does this SQL statement return?\n```\nSELECT name FROM students WHERE name REGEXP '^to';\n```",
         "options": [
             "",
             " name FROM students WHERE name REGEXP '^to';",
@@ -880,7 +880,7 @@
         "_ps": 3
     },
     {
-        "question": "Q89. You are working with the tables as shown in the diagram. You need to generate the list of price totals for each make and model of car, with subtotals for each make, and the grand total of all prices. Which SQL clause do you use?",
+        "question": "Q89. You are working with the tables as shown in the diagram. You need to generate the list of price totals for each make and model of car, with subtotals for each make, and the grand total of all prices. Which SQL clause do you use?\n![mysql picture](images/mysql_q92.png)",
         "options": [
             "l picture](images/mysql_q92.png)",
             "UNION",
@@ -960,7 +960,7 @@
         "_ps": 0
     },
     {
-        "question": "Q97. You are working with the tables as shown in this diagram. You need to generate the list of all cars, whether or not they had been sold, with the purchase date of the cars that were sold. Which statement accomplishes that?",
+        "question": "Q97. You are working with the tables as shown in this diagram. You need to generate the list of all cars, whether or not they had been sold, with the purchase date of the cars that were sold. Which statement accomplishes that?\n![mysql picture](images/mysql_q98.png)\n```\nSELECT cars.*, purchases.date\nFROM cars RIGHT JOIN purchases\nON cars.ID = purchases.carID;\n```\n```\nSELECT cars.*, purchases.date\nFROM cars INNER JOIN purchases\nON cars.ID = purchases.carID;\n```\n```\nSELECT cars.*, purchases.date\nFROM cars JOIN purchases\nON cars.ID = purchases.carID;\n```",
         "options": [
             "l picture](images/mysql_q98.png)",
             "A",
@@ -970,7 +970,7 @@
         "_ps": -1
     },
     {
-        "question": "Q98. Which code snippet from a stored procedure should be rewritten as a CASE statement?",
+        "question": "Q98. Which code snippet from a stored procedure should be rewritten as a CASE statement?\n```\n    IF var1 THEN SET varA = var1;\n    ELSEIF var2 THEN SET varA = var2;\n    ELSEIF var3 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n```\n```\n    IF var1 = var2 THEN SET varA = var1;\n    ELSEIF var2 = var3 THEN SET varA = var2;\n    ELSEIF var3 = var4 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n```\n```\n    IF var1 = 1 THEN SET varA = var1;\n    ELSEIF var2 = 2 THEN SET varA = var2;\n    ELSEIF var3 = 3 THEN SET varA = var3;\n    ELSE SET varA = var4;\n    END IF;\n```",
         "options": [
             "A",
             "",
@@ -988,5 +988,15 @@
             "for reusing recurring queries"
         ],
         "_ps": 1
+    },
+    {
+        "question": "Q100. What steps do you need to take to normalize the table from this diagram?\nTable name: superheroes\n| name | alias | power1 | power2 | power3 |\n| ---- | ----- | ------ | ------ | ------ |\n| Superman | Clark Kent | Flight | X-Ray Vision | Super Strength |\n| Wonder Woman | Diana Prince | Force Fields | Reflexes | Telepathy |\n| Spider-man | Peter Parker | Walcrawling | Web-making | Enhanced Senses |\n| Aquaman | Arthur Curry | Underwater Breathing | Enhanced Sight | Stamina |\n| Hulk | Bruce Banner | Super Strength | Radiation Immunity | Invulnerability |",
+        "options": [
+            "name: superheroes",
+            " | alias | power1 | power2 | power3 |",
+            " | ----- | ------ | ------ | ------ |",
+            "rman | Clark Kent | Flight | X-Ray Vision | Super Strength |"
+        ],
+        "_ps": -1
     }
 ]

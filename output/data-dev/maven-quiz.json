@@ -290,7 +290,7 @@
         "_ps": 1
     },
     {
-        "question": "Q30. What does the following command do?",
+        "question": "Q30. What does the following command do?\n    > mvn archetype:generate \\\n    -DgroupID=sample-maven-project \\\n    -DartifactID=com.palmer.bethan.sample \\\n    -Dversion=1.0.0 \\\n    -DinteractiveMode=false",
         "options": [
             "mvn archetype:generate \\",
             "groupID=sample-maven-project \\",
@@ -360,7 +360,7 @@
         "_ps": 0
     },
     {
-        "question": "Q37. Bellow is a definition of the Maven JAR Plugin, where the main class is set to com.palmer.bethan.App. What is the effect of this?",
+        "question": "Q37. Bellow is a definition of the Maven JAR Plugin, where the main class is set to com.palmer.bethan.App. What is the effect of this?\n```\n<configuration>\n    <archive>\n        <manifest>\n            <addClasspath>true</addClasspath>\n            <mainClass>com.palmer.bethan.App</mainClass>\n        </manifest>\n    </archive>\n</configuration>\n```",
         "options": [
             "",
             "guration>",
@@ -420,7 +420,7 @@
         "_ps": 0
     },
     {
-        "question": "Q43. Below is a report generated for a multimodule project with the Checkstyle Plugin. Why might the highlighted links to the two child projects _not_ work?",
+        "question": "Q43. Below is a report generated for a multimodule project with the Checkstyle Plugin. Why might the highlighted links to the two child projects _not_ work?\n![q43](q43.png)",
         "options": [
             "(q43.png)",
             "The Checkstyle Plugin does not work on child modules.",
@@ -540,7 +540,7 @@
         "_ps": 1
     },
     {
-        "question": "Q55. Below is a section of a settings.xml file. How can you use the path to the app home in your POM file?",
+        "question": "Q55. Below is a section of a settings.xml file. How can you use the path to the app home in your POM file?\n```\n<profiles>\n    <profile>\n        <id>set=app-home</id>\n        <properties>maven-people-plugin</artifactId>\n            <application-home>/path/to/application</application-home>\n        </properties>\n    </profile>\n</profiles>\n<activeProfiles>\n    <activeProfile>set-app-home</activeProfile>\n</activeProfiles>\n```",
         "options": [
             "",
             "les>",

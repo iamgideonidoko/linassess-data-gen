@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. Which image matches the flex layout defined in this style rule?",
+        "question": "Q1. Which image matches the flex layout defined in this style rule?\n```css\n.container {\n  display: flex;\n}\n.container div:last-child {\n  margin-left: auto;\n}\n```\n  ![B](images/Q1-B.jpg)",
         "options": [
             "",
             "iner {",
@@ -60,7 +60,7 @@
         "_ps": 1
     },
     {
-        "question": "Q7. What will be the value of selected?",
+        "question": "Q7. What will be the value of selected?\n```javascript\nlet pocket = ['turnip', 'stone', 'log', 'apple'];\nlet selected = pocket[1];\n```",
         "options": [
             "ascript",
             "cket = ['turnip', 'stone', 'log', 'apple'];",
@@ -80,7 +80,7 @@
         "_ps": 3
     },
     {
-        "question": "Q9. In the following code, the variable `fruit` has been assigned a value of apple. How would you change the value to plum?",
+        "question": "Q9. In the following code, the variable `fruit` has been assigned a value of apple. How would you change the value to plum?\n```javascript\nlet fruit = 'apple';\n```",
         "options": [
             "ascript",
             "uit = 'apple';",
@@ -110,7 +110,7 @@
         "_ps": 3
     },
     {
-        "question": "Q12. In this code, what is the term for the h1?",
+        "question": "Q12. In this code, what is the term for the h1?\n```css\nh1 {\n  color: red;\n  font-size: 5em;\n}\n```",
         "options": [
             "",
             "",
@@ -120,7 +120,7 @@
         "_ps": -1
     },
     {
-        "question": "Q13. Which HTML will result in text being highlighted in yellow?",
+        "question": "Q13. Which HTML will result in text being highlighted in yellow?\n```css\n.highlight {\n  background-color: yellow;\n}\n```",
         "options": [
             "",
             "ight {",
@@ -220,7 +220,7 @@
         "_ps": 2
     },
     {
-        "question": "Q23. How many columns will there be, given this code?",
+        "question": "Q23. How many columns will there be, given this code?\n```css\n.container {\n  width: 600px;\n  column-width: 200px;\n  column-gap: 50px;\n}\n```",
         "options": [
             "",
             "iner {",
@@ -230,7 +230,7 @@
         "_ps": -1
     },
     {
-        "question": "Q24. Which style will change the color of the text?",
+        "question": "Q24. Which style will change the color of the text?\n![A](images/Q24.png)\n```html\n<cite>Noam Chomsky</cite>\n```\n```css\ncite {\n  text-color: cyan;\n}\n```\n```css\ncite {\n  font-color: cyan;\n}\n```\n```css\ncite {\n  color: cyan;\n}\n```",
         "options": [
             "mages/Q24.png)",
             "l",
@@ -240,7 +240,7 @@
         "_ps": -1
     },
     {
-        "question": "Q25. You find this code in a stylesheet. What is it being used for?",
+        "question": "Q25. You find this code in a stylesheet. What is it being used for?\n```css\n.cf::after {\n  content: '';\n  display: block;\n  clear: both;\n}\n```",
         "options": [
             "",
             "fter {",
@@ -290,7 +290,7 @@
         "_ps": 3
     },
     {
-        "question": "Q30. What will this loop print?",
+        "question": "Q30. What will this loop print?\n          let max = 3;\n          for (i = 0; i > max; i++) {\n            document.write(\"skrt \");\n          }",
         "options": [
             "    let max = 3;",
             "    for (i = 0; i > max; i++) {",
@@ -340,7 +340,7 @@
         "_ps": 1
     },
     {
-        "question": "Q35. In the context of this code, how would you describe user?",
+        "question": "Q35. In the context of this code, how would you describe user?\n```\nconst user = {\n  given_name: 'Joe',\n  family_name: 'Bloggs',\n  age: 40,\n}\n```",
         "options": [
             "",
             "user = {",
@@ -350,7 +350,7 @@
         "_ps": -1
     },
     {
-        "question": "Q36. A webpage has `rel=\"preconnect\"` added to a link resource. What will this do?",
+        "question": "Q36. A webpage has `rel=\"preconnect\"` added to a link resource. What will this do?\n```\n<link rel=\"preconnect\" href=\"https://example.com\">\n```",
         "options": [
             "",
             "rel=\"preconnect\" href=\"https://example.com\">",
@@ -420,7 +420,7 @@
         "_ps": 3
     },
     {
-        "question": "Q43. Which line would you add to this code to add \"Cosmos\" to the list of currencies using JavaScript?",
+        "question": "Q43. Which line would you add to this code to add \"Cosmos\" to the list of currencies using JavaScript?\n```javascript\nvar currencies = ['Bitcoin', 'Ethereum'];\n/* Missing line */\nconsole.log(currencies);\n```",
         "options": [
             "ascript",
             "rrencies = ['Bitcoin', 'Ethereum'];",
@@ -430,7 +430,7 @@
         "_ps": -1
     },
     {
-        "question": "Q44. How would you change this code to make Vanilla selected by default?",
+        "question": "Q44. How would you change this code to make Vanilla selected by default?\n```javascript\n<input type=\"radio\" value=\"strawberry\">Strawberry\n<input type=\"radio\" value=\"vanilla\">Vanilla\n<input type=\"radio\" value=\"chocolate\">Chocolate\n```",
         "options": [
             "ascript",
             " type=\"radio\" value=\"strawberry\">Strawberry",
@@ -470,7 +470,7 @@
         "_ps": 3
     },
     {
-        "question": "Q48. The image below has float: left applied. Text wraps the float on the right and bottom. How would you force the second paragraph to start underneath the float, leaving a gap after the preceding paragraph?",
+        "question": "Q48. The image below has float: left applied. Text wraps the float on the right and bottom. How would you force the second paragraph to start underneath the float, leaving a gap after the preceding paragraph?\n![CSS clear](images/Q48.png?raw=true)",
         "options": [
             "clear](images/Q48.png?raw=true)",
             "Apply `float: left` to the second paragraph.",
@@ -500,7 +500,7 @@
         "_ps": 0
     },
     {
-        "question": "Q51. You discover that CSS is being loaded on a website using the following code. Why might a web developer have done this?",
+        "question": "Q51. You discover that CSS is being loaded on a website using the following code. Why might a web developer have done this?\n`<link rel=\"preload\" href=\"styles.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><noscript><link rel=\"stylesheet\" href=\"style.css\"></noscript>`",
         "options": [
             " rel=\"preload\" href=\"styles.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><noscript><link rel=\"stylesheet\" href=\"style.css\"></noscript>`",
             "The CSS is being loaded asynchronously in order to prevent render blocking.",
@@ -610,7 +610,7 @@
         "_ps": 1
     },
     {
-        "question": "Q62. Review the CSS below. What color would you expect the background color of the element with a class of .box to be?",
+        "question": "Q62. Review the CSS below. What color would you expect the background color of the element with a class of .box to be?\n```css\n.box {\n  background-color: blue;\n  background: url(images/star.png) no-repeat left top;\n}\n```",
         "options": [
             "",
             "",
@@ -630,7 +630,7 @@
         "_ps": 2
     },
     {
-        "question": "Q64. Which code example would center `.box` inside `.container`?",
+        "question": "Q64. Which code example would center `.box` inside `.container`?\n```hmtl\n<div class=\"container\">\n    <div class=\"box\">what a lovely box, very centered\n    </div>\n</div>\n```\n  ```css\n  .container {\n    display: flex;\n    align-items: center;\n  }\n  ```\n  ```css\n  .container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  ```\n  ```css\n  .box {\n    align-items: center;\n    justify-content: center;\n  }\n  ```",
         "options": [
             "l",
             "lass=\"container\">",
@@ -680,7 +680,7 @@
         "_ps": 1
     },
     {
-        "question": "Q69. The CSS box model describes how the parts of a CSS box fit together and the size of the box. What is the actual width of the following box's visible part under the standard box model?",
+        "question": "Q69. The CSS box model describes how the parts of a CSS box fit together and the size of the box. What is the actual width of the following box's visible part under the standard box model?\n```css\nbox {\n  width: 200px;\n  padding: 10px;\n  margin: 0 15px;\n  border: 2px 5px;\n}\n```",
         "options": [
             "",
             "",

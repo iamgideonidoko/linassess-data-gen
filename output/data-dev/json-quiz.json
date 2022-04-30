@@ -10,7 +10,7 @@
         "_ps": 1
     },
     {
-        "question": "Q2. Which code is the closest JSON equivalent of the data shown?",
+        "question": "Q2. Which code is the closest JSON equivalent of the data shown?\n```\n[\n    'red',\n    'blue',\n    'green'\n]\n```\n```json\n[\"red\", \"blue\", \"green\"]\n```\n```json\n[\"red\", \"blue\", \"green\"]\n```\n```json\n{\n  \"color\": \"red\",\n  \"color\": \"blue\",\n  \"color\": \"green\"\n}\n```",
         "options": [
             "",
             "",
@@ -50,7 +50,7 @@
         "_ps": 1
     },
     {
-        "question": "Q6. Which code uses the correct JSON syntax to encode the key/value pair shown?",
+        "question": "Q6. Which code uses the correct JSON syntax to encode the key/value pair shown?\n`accountNum: '000605802'`",
         "options": [
             "ntNum: '000605802'`",
             "\"accountNum\": \"000605802\"",
@@ -90,7 +90,7 @@
         "_ps": 3
     },
     {
-        "question": "Q10. Which is the valid JSON equivalent of the data shown?",
+        "question": "Q10. Which is the valid JSON equivalent of the data shown?\n```\n{\n\tphoto: {\n\twidth: 1600,\n\theight: 900,\n\tbinaries: {\n\turl: 'https://www.example.com/images/34097349843',\n\tthumbnail: 'https://www.example.com/images/thumbs/34097349843'\n\t},\n\tanimated: false,\n\ttags: [116, 943, 234, 38793],\n\t}\n}\n```\n```json\n{\n  \"photo\": {\n    \"width\": 1600,\n    \"height\": 900,\n    \"binaries\": {\n      \"url\": \"https://www.example.com/images/34097349843\",\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\n    },\n    \"animated\": \"false\",\n    \"tags\": [116, 943, 234, 38793]\n  }\n}\n```\n```json\n{\n  \"photo\": {\n    \"width\": 1600,\n    \"height\": 900,\n    \"binaries\": {\n      \"url\": \"https://www.example.com/images/34097349843\",\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\n    },\n    \"animated\": false,\n    \"tags\": [116, 943, 234, 38793]\n  }\n}\n```\n```json\n{\n  \"photo\": {\n    \"width\": 1600,\n    \"height\": 900,\n    \"binaries\": {\n      \"url\": \"https://www.example.com/images/34097349843\",\n      \"thumbnail\": \"https://www.example.com/images/thumbs/34097349843\"\n    },\n    \"animated\": false,\n    \"tags\": [116, 943, 234, 38793]\n  }\n}\n```",
         "options": [
             "",
             "",
@@ -110,7 +110,7 @@
         "_ps": 0
     },
     {
-        "question": "Q12. What data type is represented by the value of the key/value pair shown?",
+        "question": "Q12. What data type is represented by the value of the key/value pair shown?\n`loggedIn: true`",
         "options": [
             "dIn: true`",
             "string",
@@ -160,7 +160,7 @@
         "_ps": 0
     },
     {
-        "question": "Q17. Transferring JSON information from client to server and back again often includes HTTP requests. Match each method with the best choice describing its use.",
+        "question": "Q17. Transferring JSON information from client to server and back again often includes HTTP requests. Match each method with the best choice describing its use.\n    1.Sends data to specific server to create or update information.\n    2.Sends data to specific server to create or update information without the risk of creating the resource more than once.\n    3.Previews what the GET request response might be without the body of the text.\n    4.Learns the communication channels used by the target source.\n    5.Requests information from a specific source.\n    6.Removes information.",
         "options": [
             "Sends data to specific server to create or update information.",
             "Sends data to specific server to create or update information without the risk of creating the resource more than once.",
@@ -170,7 +170,7 @@
         "_ps": -1
     },
     {
-        "question": "Q18. Which code uses valid JSON syntax for the text \"Centennial Olympics?",
+        "question": "Q18. Which code uses valid JSON syntax for the text \"Centennial Olympics?\n```json\n{\n\"host\": \"Atlanta\",\n\"year\": 1996\n/_ Centennial Olympics _/\n}\n```\n```json\n{\n\"host\": \"Atlanta\",\n\"year\": 1996,\n/_ Centennial Olympics _/\n}\n```\n```json\n{\n  \"host\": \"Atlanta\",\n  \"year\": 1996\n  // Centennial Olympics\n}\n```",
         "options": [
             "",
             "n",
@@ -230,7 +230,7 @@
         "_ps": 1
     },
     {
-        "question": "Q24. What’s wrong with this JavaScript?",
+        "question": "Q24. What’s wrong with this JavaScript?\n`JSON.parse({\"first\": \"Sarah\", \"last\": \"Connor\"}) ;`",
         "options": [
             "parse({\"first\": \"Sarah\", \"last\": \"Connor\"}) ;`",
             "JSON should be wrapped with curly braces.",
@@ -240,7 +240,7 @@
         "_ps": 3
     },
     {
-        "question": "Q25. What does this JavaScript code print?",
+        "question": "Q25. What does this JavaScript code print?\n```js\nprintNullness(JSON.parse('{ \"lemmings\": [] }'));\nprintNullness(JSON.parse('{ \"lemmings\": null }'));\nprintNullness(JSON.parse('{ \"lemmings\": \"null\" }'));\nfunction printNullness(testMe) {\n  if (testMe.lemmings == null) console.log('null');\n  else console.log('not null');\n}\n```\n```\nnot null\nnull\nnot null\n```\n```\nnull\nnull\nnot null\n```\n```\nnot null\nnull\nnull\n```",
         "options": [
             "",
             "ullness(JSON.parse('{ \"lemmings\": [] }'));",
@@ -300,7 +300,7 @@
         "_ps": 2
     },
     {
-        "question": "Q31. You need to assemble a list of members, but your JSON is not parsing correctly. How do you change it?",
+        "question": "Q31. You need to assemble a list of members, but your JSON is not parsing correctly. How do you change it?\n```\n{\n  \"avengers\": [\n    \"iron man\",\n    \"hulk\",\n    \"thor\",\n    \"black widow\",\n    \"ant man\",\n    \"spider man'\n  ]\n}\n```\n```json\n{\n  \"avengers\": [\"iron man\", \"hulk\", \"thor\", \"black widow\", \"ant man\", \"spider man\"]\n}\n```\n```json\n{\n  'avengers': [\n  {'iron man',\n  'hulk',\n  'thor',\n  'black widow',\n  'ant man',\n  'spider man'}\n  ]\n}\n```\n```json\n{\n  \"avengers\": [\"iron man\", \"hulk\", \"thor\", \"black widow\", \"ant man\", \"spider man\"]\n}\n```",
         "options": [
             "",
             "",
@@ -340,7 +340,7 @@
         "_ps": 3
     },
     {
-        "question": "Q35. What data type is encoded in the outermost component of the JSON shown?",
+        "question": "Q35. What data type is encoded in the outermost component of the JSON shown?\n```json\n[\n  {\n    \"year\": 2024\n  },\n  {\n    \"location\": \"unknown\"\n  }\n]\n```",
         "options": [
             "n",
             "",
@@ -500,7 +500,7 @@
         "_ps": 3
     },
     {
-        "question": "Q51. Is the JSON code shown here valid?",
+        "question": "Q51. Is the JSON code shown here valid?\n![JSON object with key \"Vehicles\" containing an array of emojis](images/Q51/Q51.jpeg)",
         "options": [
             " object with key \"Vehicles\" containing an array of emojis](images/Q51/Q51.jpeg)",
             "No, emojis must be escaped with a backslash.",
@@ -540,7 +540,7 @@
         "_ps": 1
     },
     {
-        "question": "Q55. What data type is encoded in the outermost component of the JSON shown?",
+        "question": "Q55. What data type is encoded in the outermost component of the JSON shown?\n```json\n{\n  \"result\": [\n    {\n      \"year\": 2024\n    },\n    {\n      \"location\": \"unknown\"\n    }\n  ]\n}\n```",
         "options": [
             "n",
             "",
@@ -550,7 +550,7 @@
         "_ps": -1
     },
     {
-        "question": "Q56. What's wrong with this JSON object?",
+        "question": "Q56. What's wrong with this JSON object?\n```json\n{\n  \"series\": \"Star Trek\",\n  \"episodes\": \"The Trouble with Tribbles\"\n}\n```",
         "options": [
             "n",
             "",
@@ -570,7 +570,7 @@
         "_ps": 3
     },
     {
-        "question": "Q58. How would you make the following string valid in JSON?",
+        "question": "Q58. How would you make the following string valid in JSON?\n```json\n\"name\": 'bb-8'\n```",
         "options": [
             "n",
             ": 'bb-8'",

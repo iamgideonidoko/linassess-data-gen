@@ -1,6 +1,6 @@
 [
     {
-        "question": "Q1. You are configuring a Wi-Fi base station using DHCP. Which items should you set or change?",
+        "question": "Q1. You are configuring a Wi-Fi base station using DHCP. Which items should you set or change?\n  - Reset administrator password.\n  - Set network name.\n  - Set network security.\n  - Set network password.\n  - Reset administrator password.\n  - Set network name.\n  - Set network password.\n  - Set network name.\n  - Set network password.\n  - Assign DNS servers.",
         "options": [
             "A",
             "set administrator password.",
@@ -50,7 +50,7 @@
         "_ps": 0
     },
     {
-        "question": "Q6. Assuming that the gateway, modem, and switch are separate units, in what order should a small office or home office LAN be restarted?",
+        "question": "Q6. Assuming that the gateway, modem, and switch are separate units, in what order should a small office or home office LAN be restarted?\n  1. Modem\n  2. Gateway\n  3. Switch\n  1. Modem\n  2. Switch\n  3. Gateway\n  1. Gateway\n  2. Switch",
         "options": [
             "A",
             "odem",
@@ -90,7 +90,7 @@
         "_ps": 0
     },
     {
-        "question": "Q10. Which components are typically found on the motherboard?",
+        "question": "Q10. Which components are typically found on the motherboard?\n  basic I/O\n  graphics\n  NIC\n  battery\n  expansion slots\n      cooling\n      NIC\n      graphics\n      expansion slots\n      graphics\n      NIC\n      mass storage\n      expansion slots",
         "options": [
             "",
             "c I/O",
@@ -110,7 +110,7 @@
         "_ps": 2
     },
     {
-        "question": "Q12. To which internal component does the illustrated (P1) connector attach?",
+        "question": "Q12. To which internal component does the illustrated (P1) connector attach?\n![Q12](images/Q12.jpg)",
         "options": [
             "(images/Q12.jpg)",
             "motherboard",
@@ -240,7 +240,7 @@
         "_ps": 1
     },
     {
-        "question": "Q25. Which type of power connector is this?",
+        "question": "Q25. Which type of power connector is this?\n![Q24](images/Q24.PNG)",
         "options": [
             "(images/Q24.PNG)",
             "Edison",

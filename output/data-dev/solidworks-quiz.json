@@ -20,7 +20,7 @@
         "_ps": 1
     },
     {
-        "question": "Q3. Which single feature could you use to create this image?",
+        "question": "Q3. Which single feature could you use to create this image?\n![solidworks image](images/solidworks_q3.jpg)",
         "options": [
             "dworks image](images/solidworks_q3.jpg)",
             "Loft",
@@ -310,7 +310,7 @@
         "_ps": 0
     },
     {
-        "question": "Q32. In the image below, which are the parents and children of the Vertical Boss Feature?",
+        "question": "Q32. In the image below, which are the parents and children of the Vertical Boss Feature?\n![solidworks image](images/solidworks_q32.png)",
         "options": [
             "dworks image](images/solidworks_q32.png)",
             "The parent is Base Feature; the children are Slot Cutout, Sketch3, CBORE Hole, and Fillet2",
@@ -320,7 +320,7 @@
         "_ps": 1
     },
     {
-        "question": "Q33. In this image, which parts are fixed?",
+        "question": "Q33. In this image, which parts are fixed?\n![solidworks image](images/solidworks_q33.png)",
         "options": [
             "dworks image](images/solidworks_q33.png)",
             "BASE",
@@ -330,7 +330,7 @@
         "_ps": 3
     },
     {
-        "question": "Q34. What is this image an example of?",
+        "question": "Q34. What is this image an example of?\n![solidworks image](images/solidworks_q34.png)",
         "options": [
             "dworks image](images/solidworks_q34.png)",
             "a hole table",
@@ -340,7 +340,7 @@
         "_ps": 1
     },
     {
-        "question": "Q35. What type of dimensioning is shown here?",
+        "question": "Q35. What type of dimensioning is shown here?\n![solidworks image](images/solidworks_q35.png)",
         "options": [
             "dworks image](images/solidworks_q35.png)",
             "smart dimensioning",
@@ -350,7 +350,7 @@
         "_ps": 3
     },
     {
-        "question": "Q36. In the image below, what types of hole are A1 and B1 respectively?",
+        "question": "Q36. In the image below, what types of hole are A1 and B1 respectively?\n![solidworks image](images/solidworks_q36.png)",
         "options": [
             "dworks image](images/solidworks_q36.png)",
             "countersink and counterbore",
@@ -360,7 +360,7 @@
         "_ps": 2
     },
     {
-        "question": "Q37. What is this sketch an example of?",
+        "question": "Q37. What is this sketch an example of?\n![solidworks image](images/solidworks_q37.png)",
         "options": [
             "dworks image](images/solidworks_q37.png)",
             "an open contour sketch",
@@ -370,7 +370,7 @@
         "_ps": 1
     },
     {
-        "question": "Q38. Can this skecth be extruded?",
+        "question": "Q38. Can this skecth be extruded?\n![solidworks image](images/solidworks_q37.png)",
         "options": [
             "dworks image](images/solidworks_q37.png)",
             "Yes, you can extrude it using the standard extrude boss option",

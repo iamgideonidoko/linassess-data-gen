@@ -500,7 +500,7 @@
         "_ps": 2
     },
     {
-        "question": "Q51. Which code example completes this statement and creates an index for a MongoDB object named restaurants, sorted ascending by the field name?",
+        "question": "Q51. Which code example completes this statement and creates an index for a MongoDB object named restaurants, sorted ascending by the field name?\n```\nvar indexCollection = function(db) {return co(function*() {...});};\n```",
         "options": [
             "",
             "dexCollection = function(db) {return co(function*() {...});};",
@@ -510,7 +510,7 @@
         "_ps": -1
     },
     {
-        "question": "Q52. Which Cypher code executes the multiquery block?",
+        "question": "Q52. Which Cypher code executes the multiquery block?\n```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```\n```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c, MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nMATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type\n```\n```\nMATCH (c:Company {name: 'Neo4j'}) RETURN c AND MATCH (p:Person) WHERE p.name = 'Jennifer' RETURN p,\nAND MATCH (t:Technology)-[:LIKES]-(a:Person {name: 'Jennifer'}) RETURN t.type;\n```",
         "options": [
             "",
             "",

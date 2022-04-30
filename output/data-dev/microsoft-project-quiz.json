@@ -40,7 +40,7 @@
         "_ps": 0
     },
     {
-        "question": "Q5. What Microsoft Project view is shown in the image below?",
+        "question": "Q5. What Microsoft Project view is shown in the image below?\n![Microsoft Project Q05](images/microsoft-project_Q05.jpg)",
         "options": [
             "osoft Project Q05](images/microsoft-project_Q05.jpg)",
             "Network Diagram",
@@ -300,7 +300,7 @@
         "_ps": 2
     },
     {
-        "question": "Q31. You are assigned the ownership of schedule comprising approximately 12,000 tasks. You need to know exactly, with detail, which tasks have a constraint other than ASAP. The most effective method do this is to create a filter that tests for which set of conditions?",
+        "question": "Q31. You are assigned the ownership of schedule comprising approximately 12,000 tasks. You need to know exactly, with detail, which tasks have a constraint other than ASAP. The most effective method do this is to create a filter that tests for which set of conditions?\n       1\\. does not equal As Soon As Possible.  \n       2\\. equals Yes.  \n       3\\. equals No.  \n       4\\. equals 100%.  \n       5\\. equals Yes.\n       1\\. is less than As Soon As Possible.  \n       2\\. does not equal Yes.  \n       3\\. equals No.  \n       4\\. is equal to 0%.  \n       5\\. equals Yes.\n       1\\. is greater than As Soon As Possible.  \n       2\\. equals Yes.  \n       3\\. equals Yes.  \n       4\\. equals 0d.  \n       5\\. equals Ongoing.",
         "options": [
             "Constraint TypeSummaryRecurring% CompleteActive  ",
             " 1\\. does not equal As Soon As Possible.  ",
@@ -370,7 +370,7 @@
         "_ps": 2
     },
     {
-        "question": "Q38. In the image below, what does the indicator in Task ID 9 represent?",
+        "question": "Q38. In the image below, what does the indicator in Task ID 9 represent?\n![Microsoft Project Q38](images/microsoft-project_Q38.jpg)",
         "options": [
             "osoft Project Q38](images/microsoft-project_Q38.jpg)",
             "subproject",

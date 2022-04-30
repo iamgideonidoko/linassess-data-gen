@@ -100,7 +100,7 @@
         "_ps": 0
     },
     {
-        "question": "Q11. Which three shadow properties can be adjusted in PowerPoint?",
+        "question": "Q11. Which three shadow properties can be adjusted in PowerPoint?\n```\nA. Focal Point\nB. Depth\nC. Blur\nD. Angle\nE. Distance\n```",
         "options": [
             "",
             "al Point",
@@ -670,7 +670,7 @@
         "_ps": 1
     },
     {
-        "question": "Q68. The picture on the left is the original image. The image on the right is smaller, but the flowers are the same size and part of the picture has been removed. What method was used to format this picture?",
+        "question": "Q68. The picture on the left is the original image. The image on the right is smaller, but the flowers are the same size and part of the picture has been removed. What method was used to format this picture?\n![images](images/Q68.png)",
         "options": [
             "es](images/Q68.png)",
             "changing the width and height with aspect ration locked",
@@ -770,7 +770,7 @@
         "_ps": -1
     },
     {
-        "question": "Q78. A few lines of text are overflowing the placeholder on your slide. How can you fix it on your slide?",
+        "question": "Q78. A few lines of text are overflowing the placeholder on your slide. How can you fix it on your slide?\n![Q79](images/Q79.png)",
         "options": [
             "(images/Q79.png)",
             "Delete the overflowing text.",
@@ -790,7 +790,7 @@
         "_ps": 0
     },
     {
-        "question": "Q80. What do the labels Introduction and ProjectsByMonth indicate?",
+        "question": "Q80. What do the labels Introduction and ProjectsByMonth indicate?\n![Q81](images/Q81.png)",
         "options": [
             "(images/Q81.png)",
             "selection names",

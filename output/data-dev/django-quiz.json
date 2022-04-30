@@ -30,7 +30,7 @@
         "_ps": 3
     },
     {
-        "question": "Q4. A client wants their site to be able to load \"Rick & Morty\" episodes by number or by title—e.g., shows/3/3 or shows/picklerick. Which URL pattern do you recommend?",
+        "question": "Q4. A client wants their site to be able to load \"Rick & Morty\" episodes by number or by title—e.g., shows/3/3 or shows/picklerick. Which URL pattern do you recommend?\n```\nurl(r'shows/<int:season>/<int:episode>/', views.episode_number),\nurl(r'shows/<slug:episode_name>/', views.episode_name)\n```\n```\npath('shows/<int:season>/<int:episode>/', views.episode_number),\npath(r'shows/<slug:episode_name>/', views.episode_name)\n```\n```\npath('shows/<int:season>/<int:episode>', views.episode_number),\npath(r'shows/<slug:episode_name>/', views.episode_number)\n```",
         "options": [
             "",
             "",
@@ -150,7 +150,7 @@
         "_ps": 1
     },
     {
-        "question": "Q17. How would you define the relationship between a star and a constellation in a Django model?",
+        "question": "Q17. How would you define the relationship between a star and a constellation in a Django model?\n```\nclass Star(models.Model):\nname = models.CharField(max_length=100)\nclass Constellation(models.Model):\nstars = models.ManyToManyField(Star)\n```\n```\nclass Star(models.Model):\nconstellation = models.ForeignKey(Constellation, on_delete=models.CASCADE)\nclass Constellation(models.Model):\nstars = models.ForeignKey(Star, on_delete=models.CASCADE)\n```\n```\nclass Star(models.Model):\nname = models.CharField(max_length=100)\nclass Constellation(models.Model):\nstars = models.OneToManyField(Star)\n```",
         "options": [
             "",
             "",
@@ -330,7 +330,7 @@
         "_ps": 0
     },
     {
-        "question": "Q35. Which infrastructure do you need:",
+        "question": "Q35. Which infrastructure do you need:\n`title=models.charfield(max_length=100, validators=[validate_spelling])`",
         "options": [
             "=models.charfield(max_length=100, validators=[validate_spelling])`",
             "inizialized array called validators",
@@ -350,7 +350,7 @@
         "_ps": 0
     },
     {
-        "question": "Q37. How would you define the relation between a book and an author - book has only one author.",
+        "question": "Q37. How would you define the relation between a book and an author - book has only one author.\n```\nclass Author (models.model):\nbook=models.foreignkey(Book,on_delete=models.cascade)\nclass Book(models.model):\nname=models.charfield(max_length=100)\n```\n```python\nclass Author (models.model):\nname=models.charfield(max_length=100)\nclass Book(models.model):\nauthor=models.foreignkey(Author,on_delete=models.cascade)\n```\n```\nclass Author (models.model):\nname=models.charfield(max_length=100)\nclass Book(models.model):\nauthor=models.foreignkey(Author)\n```",
         "options": [
             "",
             "",
@@ -400,7 +400,7 @@
         "_ps": 1
     },
     {
-        "question": "Q42. How should the code end?",
+        "question": "Q42. How should the code end?\n```\n{ percentage if spark >= 50 percentage }\nLots of spark\n{percentage elif spark == 42 percentage}\n```",
         "options": [
             "",
             "entage if spark >= 50 percentage }",
@@ -410,7 +410,7 @@
         "_ps": -1
     },
     {
-        "question": "Q43 Which code block will create a serializer?",
+        "question": "Q43 Which code block will create a serializer?\n```\nfrom rest_framework import serializers\nfrom .models import Planet\n```\n```\nclass PlanetSerializer(serializers.ModelSerializer):\nclass Meta:\nmodel=Planet\nfields=('name','position', 'mass', 'rings')\n```\n```\nfrom rest_framework import serializers\nfrom .models import Planet\nclass PlanetSerializer():\nclass Meta:\nfields=('name','position', 'mass', 'rings')\nmodel=Planet\n```\n```\nfrom django.db import serializers\nfrom .models import Planet\nclass PlanetSerializer(serializers.ModelSerializer):\nfields=('name','position', 'mass', 'rings')\nmodel=Sandwich\n```",
         "options": [
             "",
             "est_framework import serializers",
@@ -480,7 +480,7 @@
         "_ps": 3
     },
     {
-        "question": "Q50. What is the result of this template code?",
+        "question": "Q50. What is the result of this template code?\n```\n{{\"live long and prosper\"|truncate:3}}\n```",
         "options": [
             "",
             "e long and prosper\"|truncate:3}}",
@@ -490,7 +490,7 @@
         "_ps": 3
     },
     {
-        "question": "Q51. When does this code load data into memory?",
+        "question": "Q51. When does this code load data into memory?\n```\n1 sandwiches = Sandwich.objects.filter(is_vegan=True)\n2 for sandwich in sandwiches:\n3   print(sandwich.name + \" - \" + sandwich.spice_level)\n```",
         "options": [
             "",
             "wiches = Sandwich.objects.filter(is_vegan=True)",
@@ -590,7 +590,7 @@
         "_ps": 1
     },
     {
-        "question": "Q61. To complete the conditional, what should this block of code end with?",
+        "question": "Q61. To complete the conditional, what should this block of code end with?\n```shell\n% if sparles >= 50 %\n  Lots of sparkles!\n% elif sparkles == 42 %\n  The answer to life, the universe, and everything!\n```",
         "options": [
             "ll",
             "parles >= 50 %",
