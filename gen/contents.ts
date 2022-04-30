@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import axios from 'axios';
-import constants from './constants';
 import { argv } from 'process';
+import { constants } from '../helper';
 
 const contentsDev = 'output/contents-dev.json';
 const contentsProd = 'output/contents-prod.json';
@@ -52,8 +52,7 @@ const contentsProd = 'output/contents-prod.json';
     if (data) {
         fs.writeFile(contentsDev, data, (err) => {
             if (err) {
-                console.error(``, err);
-                console.log('\x1b[41m%s\x1b[0m', 'contents.ts line:56 err', err);
+                console.log('\x1b[41m%s\x1b[0m', 'contents.ts line:55 err', err);
             }
             console.log('\x1b[42m%s\x1b[0m', 'contents.ts line:58 Content fetched & written to file successfully');
         });
