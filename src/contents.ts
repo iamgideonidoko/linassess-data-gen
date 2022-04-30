@@ -47,7 +47,7 @@ const contentsProd = 'output/contents-prod.json';
             Accept: 'application/vnd.github.v3+json',
         },
     });
-    const data: string = JSON.stringify(res.data);
+    const data: string = JSON.stringify(res.data, null, 4);
 
     if (data) {
         fs.writeFile(contentsDev, data, (err) => {
