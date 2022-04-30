@@ -1,0 +1,542 @@
+[
+    {
+        "question": " Q1. Which Code sample will eventually cause the computer to run out of memory?",
+        "options": [
+            "",
+            "",
+            "1)",
+            ""
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q2. What will this code print on the screen?",
+        "options": [
+            "",
+            " (int a, int b)",
+            "",
+            " (a > b)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. What is the name for calling a function inside the same function?",
+        "options": [
+            "recursion",
+            "subfunction",
+            "inner call",
+            "infinite loop"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q4. What does the declaration of variable c2 demonstrate?",
+        "options": [
+            "",
+            "{",
+            "ar c1 ='a';",
+            "ar c2 = c1+10;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. A pointer to void named vptr, has been set to point to a floating point variable named g. What is the valid way to dereference vptr to assign its pointed value to a float variable named f later in this program?",
+        "options": [
+            "",
+            "g;",
+            "vptr=&g;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q6. What is this declaration an example of?",
+        "options": [
+            "",
+            " s {",
+            "t i;",
+            "ruct s *s1;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. A C header file is a file with extension .h that contains function declarations and macro definitons to be shared between several source files. Header files are listed using the preprocessing directive #include, and can have one of the following formats: #include &lt;fileA&gt; or #include \"fileB\". What is the difference between these two formats?",
+        "options": [
+            "The preprocessor will try to locate the fileA in same directory as the source file, and the fileB in a predetermined directory path.",
+            "The preprocessor will try to locate the fileA in the fixed system directory. It will try to locate fileB in the directory path designated by the -l option added to the command line while compiling the source code.",
+            "The file using fileA syntax must be system files, of unlimited number. fileB must be a user file at a maximun of one per source file.",
+            "The preprocessor will try to locate the fileA in a predetermined directory path. It will try to locate fileB in the same directory as the source file along with a custom directory path."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q8. Using a for loop, how could you write a C code to count down from 10 to 1 and display each number on its own line?",
+        "options": [
+            "",
+            "",
+            "nt i = 0; i>=0, i--){",
+            "intf(\"%d\\n\", i);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q9. What is not one of the reserved words in standard C?",
+        "options": [
+            "volatile",
+            "typeof",
+            "register",
+            "typedef"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q10. What does the program shown below return?",
+        "options": [
+            "",
+            "in(){",
+            "t a=1, b=2, c=3, d=4;",
+            "t x = a;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. Using the Union declaration below, how many bytes of memory space will the data of this type occupy?",
+        "options": [
+            "",
+            "Cars {",
+            "ar make[20];",
+            "ar model[30];"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q12. In this code sample, what is not a problem for C compiler?",
+        "options": [
+            "",
+            "{",
+            "nstant int PI = 3.14;",
+            "intf(\"%f\\n\", pi);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q13. Which is the smallest program to compile and run without errors?",
+        "options": [
+            "main()",
+            "int main() {return 0;}",
+            "main() { }",
+            "main() { ; }"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q14. What is optional in a function declaration?",
+        "options": [
+            "data type of parameters",
+            "return type of function",
+            "parameter names",
+            "number of parameters"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q15. C treats all devices, such as the display and the keyboard, as files. Which files opens automatically when a program executes?",
+        "options": [
+            "stdout",
+            "stdio.h",
+            "default.h",
+            "string.h"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q16. In which segment does dynamic memory allocation takes place?",
+        "options": [
+            "BSS Segment",
+            "stack",
+            "heap",
+            "data segment"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q17. Which of the following do you use to deallocate memory?",
+        "options": [
+            "dalloc()",
+            "dealloc()",
+            "release()",
+            "free()"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q18. In C language what are the basic building blocks that are constructed together to write a program?",
+        "options": [
+            "keywords",
+            "identifiers",
+            "tokens",
+            "functions"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q19. When is memory for a variable allocated?",
+        "options": [
+            "during the assigment of the variable",
+            "during the initialization of the variable",
+            "during the declaration of the variable",
+            "during the definition of the variable"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q20. By default c uses the call by value method to pass arguments to functions. How can you invoke the call by reference method?",
+        "options": [
+            "by using pointers",
+            "by declaring functions separately from defining them",
+            "by using recursive functions",
+            "by using global variables"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q21. A union allows you to store different `___` in the same `___`.",
+        "options": [
+            "Objects; Structure",
+            "Variables; Declaration",
+            "Data types; Memory location",
+            "Arrays; Header file"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q22. What is the output of this program?",
+        "options": [
+            "",
+            " {",
+            "ar c1='a' , c2='A';",
+            "t i=c2-c1;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q23. What is the difference between scanf() and sscanf() functions?",
+        "options": [
+            "The scanf() function reads data formatted as a string; The sscanf() function reads string input from the screen.",
+            "The scanf() function reads formatted data from the keyboard; The sscanf() function reads formatted input from a string.",
+            "The scanf() function reads string data from the keyboard; The sscanf() function reads string data from a string.",
+            "The scanf() function reads formatted data from a file; The sscanf() function reads input from a selected string"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q24. What is not a valid command with this declaration?",
+        "options": [
+            "",
+            "string[20] = { \"one\", \"two\", \"three\"};",
+            "",
+            "`printf(\"%c\", string[1][2]);`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q25. What is the expression player->name equivalent to?",
+        "options": [
+            "`player.name`",
+            "`(\\*player).name`",
+            "`\\*player.name`",
+            "`player.\\*name`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q26. Which program will compile and run without errors?",
+        "options": [
+            "",
+            "",
+            " {",
+            "r(i=0; i<10; i++) ;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q27. What does this function call return?",
+        "options": [
+            "",
+            "() { float x = f1(10, 5); }",
+            "t f1(int a, int b) { return (a/b); }",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q28. What does this program create?",
+        "options": [
+            "",
+            "de <stdio.h>",
+            "in() {",
+            "t *p = NULL;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q29. What is an alternative way to write the expression (\\*x).y?",
+        "options": [
+            "There is no equivalent.",
+            "x->y",
+            "\\*x->y",
+            "y->x"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q30. Compile time errors are static errors that can be found where in the code?",
+        "options": [
+            "in declarations and definitions",
+            "in functions and expressions",
+            "in syntax and semantics",
+            "in objects and statements"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q31. File input and output (I/O) in C is heavily based on the way it is done `___`?",
+        "options": [
+            "in Unix",
+            "in C++",
+            "in C#",
+            "in DOS"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q32. What does the strcmp(str1, str2); function return?",
+        "options": [
+            "0 if str1 and str2 are the same, a negative number if str1 is less than str2, a positive number if str1 is greater than str2",
+            "true (1) if str1 and str2 are the same, false (0) if str1 and str2 are not the same",
+            "true (1) if str1 and str2 are the same, NULL if str1 and str2 are not the same",
+            "0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q33. What is the output of this program?",
+        "options": [
+            "",
+            "10, b=20;",
+            "(a) { return(a*b); }",
+            " {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q34. Which is _not_ a correct way to declare a string variable?",
+        "options": [
+            "`char *string = \"Hello World\";`",
+            "`char string = \"Hello World\";`",
+            "`char string[20] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};`",
+            "`char string[] = \"Hello World\";`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q35. Which choice is an include guard for the header file mylib.h?",
+        "options": [
+            "",
+            "",
+            " MYLIB_H",
+            " MYLIB_H"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q36. How many times does the code inside the while loop get executed in this program?",
+        "options": [
+            "",
+            "{",
+            "=1;",
+            "(x++<100){"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q37. File input and output (I/O) in C is done through what?",
+        "options": [
+            "syntax-driven components",
+            "native interfaces",
+            "system objects",
+            "function calls"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q38. Directives are translated by the?",
+        "options": [
+            "Pre-processor",
+            "Compiler",
+            "Linker",
+            "Editor"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q39. The main loop structures in C programming are the for loop, the while loop, and which other loop?",
+        "options": [
+            "do...while",
+            "for...in",
+            "repeat...until",
+            "do...until"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q40. By default, C Functions are what type of functions?",
+        "options": [
+            "global",
+            "static",
+            "library",
+            "system"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q41. You have written a function that you want to include as a member of structure a. How is such as structure member defiened?",
+        "options": [
+            "",
+            "",
+            " a {",
+            "id *f1;"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q42. A Stack data structure allows all data operations at one end only, making it what kind of an implementation?",
+        "options": [
+            "FIFO",
+            "LIFO",
+            "LILO",
+            "LOLI"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q43. What does this program display?",
+        "options": [
+            "",
+            "{",
+            "ar *p = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";",
+            "t i;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q44. Describe the relationship between lvalue and rvalue.",
+        "options": [
+            "An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear only on the right-hand side.",
+            "An lvalue may appear only on the left-hand side of an assignment; an rvalue may appear on either the left-hand or right-hand side.",
+            "An lvaue and an rvalue may appear on either left-hand or right-hand side of an assignment.",
+            "An lvalue may appear on the left-hand or right-hand side of an assignment; an rvalue may appear only on the right-hand side."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q45. Which operator is used to access the address of a variable?",
+        "options": [
+            "`%`",
+            "`**`",
+            "`*`",
+            "`&`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q46. Which add function properly returns the updated value of result?",
+        "options": [
+            "",
+            "",
+            "dd (int a, int b, int *result)",
+            ""
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q47. Consider the number of the Fibonacci series below 100: 0,1,1,2,3,5,8,13,21,34,55,89. Which piece of code outputs the sequence?",
+        "options": [
+            "",
+            "",
+            "ibonacci(int a, int b)",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q48. Which is _not_ a storage class specifier?",
+        "options": [
+            "`intern`",
+            "`extern`",
+            "`register`",
+            "`static`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q49. Which line of code, after execution, results in `i` having the value of 1?",
+        "options": [
+            "`for(i=1; i<=1; i++);`",
+            "`for(i=1; i=10; i++);`",
+            "`for(i=1; i==10; i++);`",
+            "`for(i=10; i>=1; i--);`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q50. What is the value of variable c at the end of this program?",
+        "options": [
+            "",
+            "() {",
+            "t a, b, c;",
+            "10; b=50;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q53. What standard data type provides the smallest storage size and can be used in computations?",
+        "options": [
+            "char",
+            "float",
+            "int",
+            "short"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q54. what does the ctype tolower() function do?",
+        "options": [
+            "It returns TRUE for lowercase letters of the alphabet.",
+            "It ensures that text output uses only ASCII values (0 through 127).",
+            "It returns FALSE for lowercase letters of the alphabet.",
+            "It converts an uppercase letter of the alphabet to lowercase."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q55. Void pointer _vptr_ is assigned the address of float variable _g_. What is a valid way to dereference _vptr_ to assign its pointed value to a float variable named _f_ later in the program?",
+        "options": [
+            "",
+            "g;",
+            "vptr=&g;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q56. Using a _for_ loop, how would you write C code to count down from 10 to 1 and display each number on its own line?",
+        "options": [
+            "",
+            "",
+            "t i=10;1>0;) {",
+            "intf(\"%d\\n\", i);"
+        ],
+        "_ps": -1
+    }
+]

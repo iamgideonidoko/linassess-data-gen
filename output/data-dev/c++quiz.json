@@ -1,0 +1,782 @@
+[
+    {
+        "question": "Q1. What is printed from this code?",
+        "options": [
+            "",
+            "<int> v(22);",
+            " = (v[6]);",
+            "(\"%d\", !b);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q2. Which of the following is a reason why using this line is considered a bad practice? (_Alternative_: Why is using this line considered a bad practice?)",
+        "options": [
+            "",
+            "namespace std;",
+            "",
+            "The compiled code is always bigger because of all of the imported symbols."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. What is the smallest size a variable of the type child_t may occupy in memory?",
+        "options": [
+            "",
+            "f struct{",
+            "signed int  age    : 4;",
+            "signed char gender : 1;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q4. Which of the following shows the contents of vector v1 and v2 after running this code?",
+        "options": [
+            "",
+            "ector<int> v1{1,2,3},v2;",
+            "",
+            "h_back(4);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. Which of the following is a true statement about the difference between pointers and iterators?",
+        "options": [
+            "While pointers are variable that hold memory address, iterators are generic functions used to traverse containers. These function allows the programmer to implement read and write code as the container is traversed.",
+            "Incrementing an iterator always means access the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element.",
+            "Pointers are variables that hold memory address where as iterator are unsigned integers that refers to offsets in arrays.",
+            "All iterator are implemented with pointers so all iterators are pointers but not all pointers are iterators."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q6. What's a benefit of declaring the parameter as a const reference instead of declaring it as a regular object?",
+        "options": [
+            "",
+            "dian(const my_array& a);",
+            "",
+            "The argument is passed as a reference, so the function receives a copy that can be modified without affecting the original value."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. What's the storage occupied by u1?",
+        "options": [
+            "",
+            "{",
+            "it16_t a;",
+            "it32_t b;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q8. Which of the following operators is overloadable?",
+        "options": [
+            "`?:`",
+            "`new`",
+            "`::`",
+            "`.`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q9. Which of the following shows the contents of vector pointed by v1 and v2 after running this code?",
+        "options": [
+            "",
+            "vector<int> *v1 = new std::vector<int>({1,2,3});",
+            "vector<int> *v2;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q10. Which of the following is not a difference between a class and a struct?",
+        "options": [
+            "Because structs are part of the C programming language, there are some complexity between C and C++ structs. This is not the case with classes.",
+            "Classes may have member functions; structs are private.",
+            "The default access specifier for members of struct is public, whereas for member of class, it is private.",
+            "Template type parameters can be declared with classes, but not with the struct keyword."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q11. Suppose you need to keep a data struct with permission to access some resource based on the days of the week, but you can't use a bool variable for each day. You need to use one bit per day of the week. Which of the following is a correct implementation of a structure with bit fields for this application?",
+        "options": [
+            "A",
+            "",
+            "f struct {",
+            "t sunday:1;"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q12. What is an lvalue?",
+        "options": [
+            "It's a constant expression, meaning an expression composed of constants and operations.",
+            "It's an expression that represents an object with an address.",
+            "It's an expression suitable for the left-hand side operand in a binary operation.",
+            "It's a location value, meaning a memory address suitable for assigning to a pointer or reference."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. What does auto type specifier do in this line of code (since C++11)?",
+        "options": [
+            "",
+            " = 4000.22;",
+            "",
+            "It specifies that the type of x will be deduced from the initializer - in this case, double."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q14. A class template is a **\\_**?",
+        "options": [
+            "class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type.",
+            "blank superclass intended for inheritance and polymorphism.",
+            "lass that only consists of member variable, with no constructor, destructor nor member functions.",
+            "skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q15. What is the ternary operator equivalent to this code snippet?",
+        "options": [
+            "",
+            "",
+            "a;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q16. What is the output of this code?",
+        "options": [
+            "",
+            "de <iostream>",
+            "in(){",
+            "t x=10, y=20;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q17. What is the meaning of the two parts specified between parentheses in a range-based for loop, separated by a colon?",
+        "options": [
+            "The first is a variable declaration that will hold an element in a sequence. The second is the sequence to traverse.",
+            "The first is an iterator, and the second is the increment value to be added to the iterator.",
+            "The first is the iterating variable. The second is an `std::pair` that specifies the range (start and end) in which the variable will iterate.",
+            "The first is a container object. The second is an `std::pair` that specifies the range (start and end) in which the elements will be accessed within the loop."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q18. What is the output of this piece of code?",
+        "options": [
+            "",
+            " a=200;",
+            "t b=100;",
+            ")"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q19. What results from executing this code snippet?",
+        "options": [
+            "",
+            "5, y=2;",
+            " y) {",
+            "_part A_*/"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q20. What is a valid definition for the `get_length` function, which returns the length of a null-terminated string?",
+        "options": [
+            "A",
+            "",
+            "t_length(char *str) {",
+            "t count=0;"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q21. Which STL class is the best fit for implementing a collection of data that is always ordered so that the pop operation always gets the greatest of the elements? Suppose you are interested only in push and pop operations.",
+        "options": [
+            "`std::list`",
+            "`std::vector`",
+            "`std::priority_queue`",
+            "`std::map`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q22. What is the meaning of the three sections specified between parentheses in a for loop separated by semicolons?",
+        "options": [
+            "The first is the iterating variable name, the second is the number of times to iterate, and the third is the desired increment or decrement (specified with a signed integer).",
+            "The first is the initialization block, the second is the condition to iterate, and the third is the increment block.",
+            "The first is the iterating variable, the second is the container in which it should operate, and the third is an exit condition to abort at any time.",
+            "The first is the iterating variable name, the second is the starting value for the iterating variable, and the third is the stop value (the last value plus one)."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q23. What is printed from this code?",
+        "options": [
+            "",
+            "= 0;",
+            "(\"%d\", i++);",
+            "(\"%d\", i--);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q24. What is true about the variable named `ptr`?",
+        "options": [
+            "",
+            "ptr;",
+            "",
+            "It is a pointer initialized at NULL."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q25. What is the output of this code?",
+        "options": [
+            "",
+            "3; char d='A';",
+            "rintf(\"c is %d and d is %c\",c,d);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q26. What is the output of this code?",
+        "options": [
+            "",
+            "(\"1/2 = %f\",(float)(1/2));",
+            "",
+            "1/2 = 0.499999"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q27. What is the difference between a public and a private class member?",
+        "options": [
+            "Public members are the same as global variables, so every part of the code has access to them. Private members are the same as automatic variables, so only their class has access to them.",
+            "Public members are made accessible to any running application. Private members are made accessible only to the application where the object is instantiated.",
+            "Public members will be compiled as shared variables in a multithreaded environment. Private members will be compiled as Thread-local variables.",
+            "Public members can be accessed by any function. Private members can be accessed only by the same class's member functions and the friends of the class."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q28. What is the value of `x` after running this code?",
+        "options": [
+            "",
+            "10, a=-3;",
+            "",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q29. Which statement is true?",
+        "options": [
+            "Only classes can have member variables and methods.",
+            "C++ supports multiple inheritance.",
+            "C++ supports only single inheritance.",
+            "Only structs can inherit."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q30. Consider a pointer to void, named `ptr`, which has been set to point to a floating point variable `g`. Which choice is a valid way to dereference `ptr` to assign its pointed value to a float variable `f` later in the program?",
+        "options": [
+            "",
+            "g;",
+            "ptr=&g;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q31. What is the `.*` operator and what does it do?",
+        "options": [
+            "It is the same as the class member access operator, or arrow operator `(->)`, which allows you to access a member of an object through a pointer to the object.",
+            "It is the pointer to member operator, and it allows you to access a member of an object through a pointer to that specific class member.",
+            "It is the member access with address of operator, which returns the address of a class or struct member.",
+            "It is a combination of the member access operator `(.)` and the dereference operator `(*)`, so it allows you to access the object that a member pointer points to."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q32. For these declarations, which choice shows four equivalent ways to assign the character \"y\" in the string to a char variable c?",
+        "options": [
+            "",
+            "uff[50] = \"strings as arrays of characters are fun!\"",
+            "str = buff+11;",
+            ";"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q33. Which choice is the correct declaration for the class named Dog, derived from the Animal class?",
+        "options": [
+            "",
+            "Animal{",
+            "....",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q34. What is the output of this code?",
+        "options": [
+            "",
+            "de <cstdio>",
+            "namespace std;",
+            "in(){"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q35. How can C++ code call a C function?",
+        "options": [
+            "by simply calling the C code",
+            "there is no way for C++ to call a C function",
+            "by using extern \"C\"",
+            "by importing the source C code"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q36. Which choice is _not_ a valid type definition of a structure that contains x and y coordinates as integers, and that can be used exactly as shown for the variable named `center`?",
+        "options": [
+            "",
+            "center;",
+            ".x = 5;",
+            ".y = 3;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q37. Which choice does _not_ produce the same output as this code snippet? Assume the variable `i` will not be used anywhere else in the code.",
+        "options": [
+            "",
+            "=1;i<10;i++){",
+            "ut<<i<<endl;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q38. What does this part of a main.cpp file do?",
+        "options": [
+            "",
+            "de \"library.h\"",
+            "",
+            "It causes the toolchain to compile all the contents of library.h so that its executable code is available when needed by the final application."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q39. Consider this function declaration of `is_even`, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?",
+        "options": [
+            "",
+            "s_even(int);",
+            "",
+            "A"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q40. Which choice is an include guard for the header file `my_library.h`?",
+        "options": [
+            "A",
+            "",
+            " MY_LIBRARY_H",
+            "e MY_LIBRARY_H"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q41. What's wrong with this definition when using a pre-C++11 compiler?",
+        "options": [
+            "",
+            "ector<std::vector<int>> thematrix;",
+            "",
+            "There's nothing wrong with it."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q42. What is the statement below equivalent to?",
+        "options": [
+            "",
+            "->x",
+            "",
+            "`sprite.x`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q43. Consider a class named `complexNumber`. Which code will result in an equivalent object?",
+        "options": [
+            "",
+            "xNumber(float real, float im)",
+            "_part(real),",
+            "rt(im){}"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q44. What is the result from executing this code snippet?",
+        "options": [
+            "",
+            "=true, y=false;",
+            "|| y){",
+            "part A*/"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q45. What would be the output of this code?",
+        "options": [
+            "",
+            "t nums[3]={2,4,3};",
+            "out << ( nums[0] << nums[1] << nums[2] );",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q46. What is the output of this code?",
+        "options": [
+            "",
+            "values[5]={0.54f, 2.71828f, 3.14159f, 5.499999f, 10.0f};",
+            "to f:values)",
+            "intf(\"%i \",(int)(f+0.5f));"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q47. Which of the following STL classes is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have lookup by name.",
+        "options": [
+            "`std::priority_queue`",
+            "`std::list`",
+            "`std::vector`",
+            "`std::map`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q48. What does this program do?",
+        "options": [
+            "",
+            "de <iostream>",
+            "de <fstream>",
+            "namespace std;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q49. Which of the following is _not_ a consequence of declaring the member variable count of my_class as static?",
+        "options": [
+            "",
+            "my_class {",
+            "blic: static int count;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q50. What is the assumed type of a constant represented in the source code as `0.44`?",
+        "options": [
+            "double",
+            "long float",
+            "long double",
+            "float"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q51. What is the output of this piece of code?",
+        "options": [
+            "",
+            " a=200;",
+            "t b=100;",
+            "out<<\"a=\"<<(int)a;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q52. What is an appropriate way of removing `my_object` as shown below?",
+        "options": [
+            "",
+            "ss *my_object = new my_class();",
+            "",
+            "`delete(my_object);`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q53. What is the correct way to call the `count` member function for the object pointer called `grades`?",
+        "options": [
+            "",
+            "my_array{",
+            "blic:",
+            "  int count();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q54. What would be the output of this code?",
+        "options": [
+            "",
+            "=4, i1=6, i2=8;",
+            "ums[3]={i2,i0,i1};",
+            "out<<nums[0]<<nums[1]<<nums[2];"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q55. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?",
+        "options": [
+            "",
+            "f struct{",
+            "signed int  age    : 4;",
+            "signed char gender : 1;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q56. What is this expression equivalent to?",
+        "options": [
+            "",
+            "C->D",
+            "",
+            "`A.B.C.D`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q57. What does this function do?",
+        "options": [
+            "",
+            "uff = new char[50];",
+            "emset(buff,20,50);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q58. Consider a class named `CustomData`. Which choice is a correct declaration syntax to overload the postfix `++` operator as a class member?",
+        "options": [
+            "`CustomData& operator++();`",
+            "`void operator++(CustomData);`",
+            "`CustomData operator++(CustomData);`",
+            "`CustomData operator++(int);`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q59. You want to sort my_array, declared below. Which choice is the correct call to std::sort, using a lambda expression as the comparison function?",
+        "options": [
+            "",
+            "rray<uint32_t, 50> my_array;",
+            "",
+            "A"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q60. Which choice is the most reasonable implementation of the function std::mutex::lock() by using std::mutex::try_lock()?",
+        "options": [
+            "A",
+            "",
+            "td::mutex::lock(){",
+            "ile(!this->try_lock());"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q61. What is the purpose of a destructor?",
+        "options": [
+            "It allows the programmer to write the necessary code to free the resources acquired by the object prior to deleting the object itself.",
+            "It deletes an object. One example of a destructor is the `delete()` function.",
+            "It terminates a program. This may be achieved as a regular function call or as an exception.",
+            "There are no destructors in C++."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q62. Which STL class is the best fit for implementing a phonebook? Suppose each entry contains a name and a phone number, with no duplicates, and you want to have lookup by name.",
+        "options": [
+            "`std::priority_queue`",
+            "`std::map`",
+            "`std::vector`",
+            "`std::list`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q63. What is the main difference between these two Functions?",
+        "options": [
+            "",
+            "utex::lock()",
+            "utex::try_lock()",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q64. What is one benefit of declaring the parameter as a `const` reference instead of declaring it as a regular object?",
+        "options": [
+            "",
+            "dian(const my_array& a)",
+            "",
+            "Actually, objects cannot be passed as regular variables, because they require a constructor call. Therefore, a `const` reference is the only way to pass class instances to functions."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q65. What is an include guard?",
+        "options": [
+            "a preprocessor directive that prevents inconsistent behaviors in lines that contain the #ifdef, #ifndef, or #elif directives",
+            "a compiler option that prevents the user code from including additional libraries",
+            "a preprocessor statement that prevents a source file from being included more than once in a project",
+            "a library that adds safety features such as mutexes, watchdog timers, and assertions to the project"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q66. What would be the correct declaration of a default constructor for a class named Sprite?",
+        "options": [
+            "",
+            "pp",
+            "ic:",
+            "Sprite();"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q67. What is the purpose of this line in a header file?",
+        "options": [
+            "",
+            "a once",
+            "",
+            "to restrict the use of its contents to only one source file"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q68. What is a variable of type double?",
+        "options": [
+            "a 2-tuple",
+            "an integer number",
+            "a floating point number",
+            "a string with more than 255 characters"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q69. Consider this function declaration of is_even, which takes in an integer and returns true if the argument is an even number and false otherwise. Which declarations are correct for overloaded versions of that function to support floating point numbers and string representations of numbers?",
+        "options": [
+            "",
+            "s_even(int);",
+            "",
+            "bool is_even(float f); bool is_even(char \\*str);"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q70. Other than shifting bits to the left, what is the << oprator used for ?",
+        "options": [
+            "shifting characters to the left in a string.",
+            "inserting characters into an output stream like std::cout.",
+            "comparing floating point numbers as less-than.",
+            "assigning a variable to a reference."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q71. Does this code cause a compiler error? If so, why, and if not, what is `child_t`?",
+        "options": [
+            "",
+            "f struct{",
+            "signed int  age    : 4;",
+            "signed char gender : 1;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q72. Which choice is a reason to specify the type of a pointer instead of using `void *`, which works as a pointer ro any type?",
+        "options": [
+            "The compiler needs the dara type to make sure that the pointer is not going to be used on illegal non-pointable types such as functions, labels, pointers, and reference.",
+            "`void *` does not work for any type. The language does not allow assigning anything other than `void` to a pointer to `void *`.",
+            "The compiler needs the data type to know how much memory to allocate for the pointer, because different data types require different pointer lengths.",
+            "Yes, it causes a compiler error because one field is defined as having a size of 0."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q74. What is this expression equivalent to?",
+        "options": [
+            "",
+            "",
+            "",
+            "`*(A.B)`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q75. Which statement is true when declaring the member variable `count` as static?",
+        "options": [
+            "",
+            "my_class{",
+            "blic: static int count;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q76. When placed in a valid execution context, which statement will dynamically allocate memory from the heap for an integer of value 11?",
+        "options": [
+            "`int anInt = new int(11);`",
+            "`int* anInt = new int[11];`",
+            "`int anInt = new int[11];`",
+            "`int* anInt = new int(11);`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q77. Which choice best describes the type `long`?",
+        "options": [
+            "an integer number of at least 32 bits",
+            "a string with more than 255 characters",
+            "a pointer",
+            "a 64-bit floating point number"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q78. Which of the following types has the closest functionality to a class?",
+        "options": [
+            "`struct`",
+            "`union`",
+            "`enum`",
+            "`namespace`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q79. Given these records in a map, how will you update the value for the key \"Sinead\" to 22?",
+        "options": [
+            "e](images/Q79.png)",
+            "`marks[\"Sinead\"] = 22`",
+            "`marks[\"Sinead\"].22`",
+            "`marks[\"Sinead\"] -> 22`"
+        ],
+        "_ps": 1
+    }
+]

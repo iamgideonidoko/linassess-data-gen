@@ -1,0 +1,622 @@
+[
+    {
+        "question": "Q1. How can you open a file selected in Lightroom CC for retouching in Photoshop CC?",
+        "options": [
+            "Double-click the file",
+            "Choose File > Edit in Photoshop",
+            "Choose File > Save to Photoshop",
+            "Press Cmd/Ctrl+E"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q2. How can you undo one or more changes just made to an image?",
+        "options": [
+            "Use the keyboard shortcut Cmd/Ctrl+Z",
+            "Click a state in the history panel",
+            "Choose File > Undo",
+            "Press Cmd/Ctrl+U"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q3. How can you select a specific layer? (find all that apply)",
+        "options": [
+            "Click the eye icon in the layers panel",
+            "Use the Move tool with auto-select enabled",
+            "Right-click the image and select layer",
+            "Press Cmd/Ctrl and click the layer"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q4. How can you avoid having transparent edges along the edge of a panoramic photo while retaining the largest image size?",
+        "options": [
+            "can you avoid having transparent edges along the edge of a panoramic photo while retaining the largest image size?](images/007.png?raw=true)",
+            "Choose the Cylindrical method.",
+            "Choose the Perspective method.",
+            "Adjust the Boundary Warp slider."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. How do you crop a document without permanently discarding pixels along the edge?",
+        "options": [
+            "Clear the Delete Cropped Pixels box.",
+            "Select the Delete Cropped Pixels box.",
+            "Use the Smart Crop tool.",
+            "Hold the Alt (Windows) or Option (Mac) key."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q6. What feature should you use to simulate the in-camera development recipes applied by manufacturers with your own raw files?",
+        "options": [
+            "presets",
+            "Camera Matching profiles",
+            "calibration",
+            "snapshots"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q7. When working in an RGB document, which option is **NOT** a method for the Select Color Range command?",
+        "options": [
+            "Sampled Colors",
+            "Skin Tones",
+            "Key (Blacks)",
+            "Out of Gamut"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q8. How do you access the Auto Color Correction Options dialog box?",
+        "options": [
+            "Select Image > Auto Tone.",
+            "Select Image > Auto Color.",
+            "Alt-click (Option-click) the Auto button in the Properties panel when you have a Levels or Curves adjustment layer targeted in the Layers panel.",
+            "Hold down the Alt (Option) key and select Image > Auto Color."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q9. Which options are available when using the Free Transform command on a Smart Object?",
+        "options": [
+            " Content-Aware Scale",
+            " Scale",
+            " Warp",
+            " Distort"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q10. What is considered the minimum DPI for photographic-quality inkjet printing?",
+        "options": [
+            "300",
+            "100",
+            "1,000",
+            "72"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q11. Which scanner type is capable of producing the highest resolution scans?",
+        "options": [
+            "flatbed scanner",
+            "slide scanner",
+            "all-in-one unit",
+            "drum scanner"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q12. Which format does NOT support an alpha channel?",
+        "options": [
+            "PSD",
+            "PNG",
+            "TIFF",
+            "BMP"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. What is the best way to save multiple images into a single PDF?",
+        "options": [
+            "Save each PDF separately first and then combine them.",
+            "Check to see if you have Acrobat Professional installed.",
+            "Use the PDF Presentation command.",
+            "Click File > Export > Export Layers to Files."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q14. What option cannot be adjusted with the Print command directly in the Print window?",
+        "options": [
+            "size of the image",
+            "position on the page",
+            "paper quality",
+            "color management policies"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q15. Which statement best describes the Quick Mask feature?",
+        "options": [
+            "It allows you to use the Pen tool to edit a selection",
+            "It allows you to use the Brush tool to create or refine a selection",
+            "It allows you to duplicate a mask quickly.",
+            "It allows you to convert a vector mask to a layer mask."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q16. What Photoshop feature was used to convert this image to black and white?",
+        "options": [
+            " Photoshop feature was used to convert this image to black and white?](images/008.png?raw=true)",
+            "Black and White adjustment layer",
+            "Posterize",
+            "Threshold"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q17. In the image shown, why is Sharpen Edges grayed out?",
+        "options": [
+            "he image shown, why is Sharpen Edges grayed out?](images/009.png?raw=true)",
+            "The filter doesn't work on a 16-bit image.",
+            "The filer is not correctly installed.",
+            "The filter doesn't work on a 32-bit image."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q18. In the image shown, which Camera Raw feature was used to restrict the graduated filter to avoid the statue?",
+        "options": [
+            "he image shown, which Camera Raw feature was used to restrict the graduated filter to avoid the statue?](images/010.png?raw=true)",
+            "Adjustment Brush",
+            "Depth Range Mask",
+            "Luminance Range Mask"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q19. What can you use to save a common crop size?",
+        "options": [
+            "tool sets",
+            "preferences",
+            "modifier keys",
+            "tool presets"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q20. Which Camera Raw Transform method is being used in the example shown?",
+        "options": [
+            "h Camera Raw Transform method is being used in the example shown?](images/011.png?raw=true)",
+            "Guided",
+            "Vertical",
+            "Level"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q21. To reduce the file size of a PDF, what should you do?",
+        "options": [
+            "Upsample large images",
+            "Convert 8-bit images to 16-bit",
+            "Apply compression to the document",
+            "all of these answers"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q22. Which image adjustment is **not** available as an adjustment layer?",
+        "options": [
+            "Levels",
+            "Shadows/Highlights",
+            "Curves",
+            "Hue/Saturation"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q23. With default Essentials settings, where would you find the Red Eye tool?",
+        "options": [
+            "grouped with the Eyedropper tool",
+            "Image > Mode > Red Eye",
+            "Edit > Red Eye",
+            "grouped with the Spot Healing Brush tool"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q24. Which option was **not** selected in the Magic Wand tool to create a selection like the one shown below?",
+        "options": [
+            "h option was not selected in the Magic Wand tool to create a selection like the one shown below?](images/012.png?raw=true)",
+            "Contiguous",
+            "Anti-alias",
+            "Auto-Enhance"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q25. Where should you click to open a dialog box in which you can then choose to open a raw file as a Smart Object?",
+        "options": [
+            "e should you click to open a dialog box in which you can then choose to open a raw file as a Smart Object?](images/013.png?raw=true)",
+            "A",
+            "B",
+            "C"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q26. Which option would you use to clone while respecting perspective planes?",
+        "options": [
+            "Patch",
+            "Vanishing Point",
+            "Clone Stamp",
+            "Healing Brush"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q27. In order to run a filter on an entire video file, what must you do first?",
+        "options": [
+            "Convert the video file to an image sequence.",
+            "Convert the video file to a Smart Object.",
+            "Actually, you cannot use filters on video files.",
+            "Convert the video file to an animated gif."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q28. Which file format does **not** support layers?",
+        "options": [
+            "Photoshop EPS",
+            "Photoshop PDF",
+            "Large Document Format",
+            "Photoshop PSD"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q29. Of these formats, which supports 16-bit images?",
+        "options": [
+            "JPEG",
+            "GIF",
+            "PNG",
+            "Photoshop EPS"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q30. What does the small black triangle in the lower-right corner of a tool indicate?",
+        "options": [
+            "that the tool is currently deselected",
+            "tool options",
+            "that the tool is currently selected",
+            "grouped or hidden tools"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. Which command makes it easier to adjust selected areas of color in two images in order to make them similar?",
+        "options": [
+            "Match Color",
+            "Replace Color",
+            "Hue/Saturation",
+            "Levels"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q32. If you scan a film or slide negative, which command turns it into a positive?",
+        "options": [
+            "Reverse",
+            "Threshold",
+            "Invert",
+            "Inverse"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q33. A filter recipe can be saved as an action and set to your desktop for drag-and-drop usage by converting the filter recipe into a `___`.",
+        "options": [
+            "droplet",
+            "batch",
+            "scriptlet",
+            "image process"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q34. Which tool is not found in the Select and Mask taskspace?",
+        "options": [
+            "Refine Edge",
+            "Quick Select",
+            "Magic Wand",
+            "Lasso"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q35. To use blending modes with a filter, choose the `___` command.",
+        "options": [
+            "Mix",
+            "Fade",
+            "Smooth",
+            "Blend"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q36. Which image adjustment is optimized for 32-bit images?",
+        "options": [
+            "Exposure",
+            "Color Lookup",
+            "Brightness/Contrast",
+            "Curves"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q37. To hide the white borders around pixels that are viewed at a high magnification, which option do you disable?",
+        "options": [
+            "ide the white borders around pixels that are viewed at a high magnification, which option do you disable?](images/005.png?raw=true)",
+            "Window > Workspace > Grid",
+            "View > Show > Slices",
+            "View > Show > Selection Edges"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q38. To save a panel layout arrangement, what should you create?",
+        "options": [
+            "A tool set",
+            "A layer set",
+            "A keyboard shortcut",
+            "A workspace"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q39. Which filter should you use to create photorealistic blurs?",
+        "options": [
+            "Gaussian Blur",
+            "Lens Blur",
+            "Shape Blur",
+            "Surface Blur"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q40. When using the Type tool, what do you call the space between lines?",
+        "options": [
+            "Vertical scale",
+            "Kerning",
+            "Leading",
+            "Tracking"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q41. If you want the most control over color when inkjet printing, which option should you select?",
+        "options": [
+            "Color Handling: Photoshop Manages Colors",
+            "Separations",
+            "Color Handling: Printer Manages Colors",
+            "Hard Proofing"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q42. You have an RGB image that you want to convert to a duotone, but in the image > Mode menu, the Duotone option in grayed out. Why is this happening?",
+        "options": [
+            "You must add a spot color channel first",
+            "You must remove all existing color by Image > Adjustments > Desaturate first",
+            "Duotones require a single channel, so you must convert to grayscale first",
+            "Duotones require two channels, so you must delete one of RGB channels in the Channels panel first"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q43. For smoother, curved edges on a selection, be sure to enable the `___` option.",
+        "options": [
+            "anti-alias",
+            "fade",
+            "blend",
+            "curve"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q44. Which web-ready format supports transparency and is optimized for continuous tone images such as photos?",
+        "options": [
+            "GIF",
+            "PNG-8",
+            "PNG-24",
+            "JPEG"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q45. You're trying to use the Healing Brush tool, but don't see results. What is the problem?",
+        "options": [
+            "re trying to use the Healing Brush tool, but don't see results. What is the problem?](images/006.png?raw=true)",
+            "You forgot to Shift-click to set the source point for the tool",
+            "You forgot to Alt-click (Windows) or Option-click (Mac) to set the source point for the tool",
+            "You forgot to double-click to set the source point for the tool"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q46. Which color space is best for web graphics?",
+        "options": [
+            "Adobe RGB",
+            "ProPhoto RGB",
+            "RGB",
+            "sRGB"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q47. Which option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?",
+        "options": [
+            "h option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?](images/001.png?raw=true)",
+            "Sample All Layers",
+            "Protect Tones",
+            "Use Pressure for Size"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q48. Which command in the **Smart Objects** submenu would you see to save the original file for the selected layer?",
+        "options": [
+            "h command in the Smart Objects submenu would you see to save the original file for the selected layer?](images/002.png?raw=true)",
+            "Edit Contents",
+            "Replace Contents",
+            "Relink to File"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q49. In the image shown, which Blur method is being used to control focus with a series of pins?",
+        "options": [
+            "he image shown, which Blur method is being used to control focus with a series of pins?](images/003.png?raw=true)",
+            "Path Blur",
+            "Tilt-Shift Blur",
+            "Iris Blur"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q50. In the image shown, what do the blue areas represent?",
+        "options": [
+            "he image shown, what do the blue areas represent?](images/004.png?raw=true)",
+            "Color cast",
+            "Clipped shadow detail",
+            "Overexposed details"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q51. What does the grayscale image in this figure show?",
+        "options": [
+            " does the grayscale image in this figure show?](images/014.png?raw=true)",
+            "the edges affected by the Sharpen command as refined by the Masking slider",
+            "the edges affected by the Sharpen command as refined by the Radius slider",
+            "the edges affected by the Sharpen command as refined by the Detail slider"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q52. Where do you click to adjust the blending mode for a Smart Filter?",
+        "options": [
+            "e do you click to adjust the blending mode for a Smart Filter?](images/015.png?raw=true)",
+            "A",
+            "C",
+            "D"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q53. Where do you find natural media brushes?",
+        "options": [
+            "Photoshop does not have natural media brushes.",
+            "In the **Brushes** panel, select a brush and then select **Convert to natural media**.",
+            "In the **Brushes** panel, select **Legacy Brushes**.",
+            "in the **Tool Presents** panel."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q54. The option bar, which is normally above the canvas, is not visible. Where would you go to reopen it?",
+        "options": [
+            "View > Show > Show Extra Options",
+            "Window > Tool Presets",
+            "Window > Options",
+            "Edit > Toolbar"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q55. What would you use to create a vector path for the purpose of altering a letter or shape?",
+        "options": [
+            "Pencil tool",
+            "Vanishing Point",
+            "Pen tool",
+            "Trace Contour filter"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q56. How do you browse images on your hard drive using the companion application that is included with the Adobe Creative Cloud plans?",
+        "options": [
+            "Click `File > Browse in Bridge`",
+            "Click `File > Browse in Lightroom Classic CC.`",
+            "Use the Creative Cloud application.",
+            "Click `File > Browse in Lightroom CC`."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q57. Which command allows you to combine multiple channels into a new selection channel?",
+        "options": [
+            "Flatten",
+            "Calculations",
+            "Multiply",
+            "Merge"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q58. How do you nondestructively crop an image without permanently discarding pixels?",
+        "options": [
+            "Make a selection and click **Image > Crop**.",
+            "Clear the **Deleted Cropped Pixels** check box.",
+            "Click **Image > Trim** and select **Transparent Pixels**.",
+            "Select the **Delete Cropped Pixels** check box."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q59. Which step is the most effective at making one image show through another to emulate a traditional double-exposure from film photography effect?",
+        "options": [
+            "Apply the Multiply blend mode to the bottom image.",
+            "Apply the Screen blend mode to the top image.",
+            "Apply the Hue blend mode to the top imagee.",
+            "Apply the Saturation blend mode to the top image."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q60. Which special layer type applies nondestructive color corrections to all of the layers below it?",
+        "options": [
+            "layer company",
+            "fill layer",
+            "adjustment Layer",
+            "layer Mask"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q61. Why can you nondestructively scale a smart object?",
+        "options": [
+            "It converts the image from a raster image to a vector infographics",
+            "It uses Adobe Sensei technology to reconstruct pixels that have been interpolated.",
+            "It references an image in a separate file that retains its resolutions.",
+            "It uses a layer mask for nondestructive editing."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q62. Which **Select and Mask** workspace tool allows you to select fine hairs?",
+        "options": [
+            "Brush",
+            "Object Selection",
+            "Refine Edge",
+            "Quick selection"
+        ],
+        "_ps": -1
+    }
+]

@@ -1,0 +1,992 @@
+[
+    {
+        "question": "Q1. When you have a subquery inside of the main query, which query is executed first?",
+        "options": [
+            "The subquery is never executed. Only the main query is executed.",
+            "They are executed at the same time",
+            "the main query",
+            "the subquery"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q2. You need to export the entire database, including the database objects, in addition to the data. Which command-line tool do you use?",
+        "options": [
+            "mysqlexport",
+            "mysqladmin",
+            "mysqldump",
+            "mysqld"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q3. You must ensure the accuracy and reliability of the data in your database. You assign some constraints to limit the type of data that can go into a table. What type of constraints are you assigning?",
+        "options": [
+            "row level",
+            "database level",
+            "column level",
+            "function level"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q4. Which option of most MySQL command-line programs can be used to get a description of the program's different options?",
+        "options": [
+            "--options",
+            "?",
+            "--help",
+            "-h"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q5. MySQL uses environment variables in some of the programs and command-line operations. Which variable is used by the shell to find MySQL programs?",
+        "options": [
+            "DIR",
+            "HOME",
+            "PATH",
+            "MYSQL_HOME"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q6. How can you create a stored procedure in MySQL?",
+        "options": [
+            "A",
+            "",
+            "TE PROCEDURE P () AS",
+            "N"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. If you were building a table schema to store student grades as a letter (A, B, C, D, or F) which column type would be the best choice?",
+        "options": [
+            "ENUM",
+            "OTEXT",
+            "VARCHAR",
+            "LONGTEXT"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q8. Management has requested that you build an employee database. You start with the employee table. What is the correct syntax?",
+        "options": [
+            "A",
+            "",
+            "EATE TABLE employee (",
+            "ployeeID char(10),"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q9. You are working with the tables as shown in this diagram. You need to generate the list of customers who purchased certain car models. Which SQL clause do you use?",
+        "options": [
+            "l Q09](images/mysql_q09.jpg)",
+            "LIKE",
+            "IN",
+            "BETWEEN"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q10. Which query would NOT be used to administer a MySQL server?",
+        "options": [
+            "USE db",
+            "SELECT column FROM tbl",
+            "SHOW COLUMNS FROM tbl",
+            "SHOW TABLES"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q11. What is the product of the database designing phase?",
+        "options": [
+            "a list of entities, their relationship, constraints, data types, and cardinalities",
+            "a list of entities, their relationship, and constraints",
+            "all tables and their names, which are needed to implement the logical model",
+            "all tables, columns, data types, indexes and their relationship"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q12. MySQL server can operate in different SQL modes, depending on the value of the sql_mode system variable. Which mode changes syntax and behavior to conform more closely to standard SQL?",
+        "options": [
+            "TRADITIONAL",
+            "ANSI",
+            "MSSQL",
+            "STRICT"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. MySQL programs are a set of command-line utilities that are provided with typical MySQL distributions. MySQL is designed to be a database.",
+        "options": [
+            "database and programming",
+            "user and administrator",
+            "client and server",
+            "syntax and objects"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q14. Which MySQL command shows the structure of a table?",
+        "options": [
+            "INFO table;",
+            "SHOW table;",
+            "STRUCTURE table;",
+            "DESCRIBE table;"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q15. MySQL uses security based on \\_ for all connections, queries, and other operations that users can attempt to perform.",
+        "options": [
+            "administrator schema",
+            "encrypted algorithms",
+            "user settings",
+            "access control lists"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q16. Which MySQL command modifies data records in a table?",
+        "options": [
+            "UPDATE",
+            "MODIFY",
+            "CHANGE",
+            "ALTER"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q17. What is the best type of query for validating the format of an email address in a MySQL table?",
+        "options": [
+            "a SQL query using partitions",
+            "a SQL query using IS NULL",
+            "a SQL query using a regular expression",
+            "a SQL query using LTRIM Or RTRIM"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q18. In MySQL, queries are always followed by what character?",
+        "options": [
+            "line break",
+            "colon",
+            "semicolon",
+            "period"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q19. How can you remove a record using MySQL?",
+        "options": [
+            "DELETE",
+            "DELETE FROM",
+            "REMOVE",
+            "REMOVE FROM"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q20. Which choice is NOT a statement you would use to filter data?",
+        "options": [
+            "GROUP BY",
+            "WHERE",
+            "LIMIT",
+            "LIKE"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q21. What does the following SQL statement return?",
+        "options": [
+            "T * FROM Employees WHERE EmployeeName LIKE 'a%'`",
+            "It records in the Employees table where the value in the EmployeeName column doesn't have an \"a\".",
+            "It records in the Employees table where the value in the EmployeeName column starts with \"a\".",
+            "It records in the Employees table where the value in the EmployeeName column has an \"a\"."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q22. In `SELECT * FROM clients;` what does clients represent?",
+        "options": [
+            "a SQL query",
+            "a SQL statement",
+            "a database",
+            "a table"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. How does MySQL differ from SQL?",
+        "options": [
+            "SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a nonrelational database management system that is used to manage SQL databases.",
+            "SQL is a standard language for retrieving and manipulating data from structured databases. MySQL is a relational database management system that is used to manage SQL databases.",
+            "They are not different. MySQL and SQL refer to the same thing.",
+            "My SQL is a language, and SQL is a software application."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q24. If you need to order a table of movies by name, which query will work?",
+        "options": [
+            "SELECT \\* FROM movies GROUP BY name",
+            "SELECT \\* FROM movies ORDER BY name",
+            "SELECT \\* FROM movies ORDER TABLE by name",
+            "SELECT \\* FROM movies FILTER BY name"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q25. A trigger is a database object that is associated with a table, and that activates when a particular event occurs for the table. Which three events are these?",
+        "options": [
+            "INSERT, UPDATE, DELETE",
+            "CREATE, ALTER, DROP",
+            "OPEN, FETCH, CLOSE",
+            "DECLARE, SET, SELECT"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q26. You are working with very large tables in your database. Which SQL clause do you use to prevent exceedingly large query results?",
+        "options": [
+            "UNIQUE",
+            "LIMIT",
+            "DISTINCT",
+            "CONSTRAINT"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q27. What is the default port for MySQL Server?",
+        "options": [
+            "25",
+            "990",
+            "0",
+            "3306"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q28. How can you filter duplicate data while retrieving records from a table?",
+        "options": [
+            "DISTINCT",
+            "WHERE",
+            "LIMIT",
+            "AS"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q29. What is the difference between DROP and TRUNCATE?",
+        "options": [
+            "They both refer to the same operation of deleting the table completely.",
+            "They both refer to the same operation of clearing the table, but keeping its definition intact.",
+            "TRUNCATE deletes table completely, removing its definition as well. DROP clears the table but does not delete the definition.",
+            "DROP deletes table completely, removing its definition as well. TRUNCATE clears the table but does not delete the definition."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q30. How do you select every row in a given table named \"inventory\"?",
+        "options": [
+            "SELECT all FROM inventory;",
+            "FROM inventory SELECT all;",
+            "FROM inventory SELECT \\*;",
+            "SELECT \\* FROM inventory;"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. In an efficiently designed relational database, what does every table have?",
+        "options": [
+            "set of triggers",
+            "sequential id field",
+            "minimum of three columns",
+            "primary key"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q32. MySQL option files provide a way to specify commonly used options so that they need not be entered on the command line each time you run a program. What is another name for the option files?",
+        "options": [
+            "variable settings",
+            "configuration files",
+            "help files",
+            "default settings"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q33. After installing MySQL, it may be necessary to initialize the \\_ which may be done automatically with some MySQL installation methods.",
+        "options": [
+            "storage engine",
+            "user accounts",
+            "grant tables",
+            "data directory"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q34. You need to export the data in the customers table into a CSV file, with columns headers in the first row. Which clause do you add to your MySQL command?",
+        "options": [
+            "JOIN",
+            "WITH HEADERS",
+            "UNION",
+            "WITH COLUMNS"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q35. One form of backup, replication, enables you to maintain identical data on multiple servers, as a \\_ configuration.",
+        "options": [
+            "remote-local",
+            "parent-child",
+            "master-slave",
+            "logical-physical"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q36. What is the requirement for using a subquery in the SELECT clause?",
+        "options": [
+            "the subquery must use an aggregate function.",
+            "the subquery must refer to the same table as the main query.",
+            "the subquery must return a single value.",
+            "the subquery must return at least one value."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q37. Each time MySQL is upgraded, it is best to execute mysql_upgrade, which looks for incompatibilities with the upgraded MySQL server. What does this command do, upon finding a table with a possible incompatibility?",
+        "options": [
+            "it performs a table check and, if problems are found, attempts a table repair.",
+            "it stops and notifies the server administrator that the upgrade cannot complete until the incompatibility issue are resolved.",
+            "it provides a full report of the table specifications and the incompatibilities to the server administrator.",
+            "it performs a table check and, if problems are found, displays the information for the server administrator to take action."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q38. What mysql statement is used to check which accounts have specific privileges?",
+        "options": [
+            "show grants (displays the privileges and roles that are assigned to a MySQL user account or role)",
+            "show privileges (shows the list of system privileges that the MySQL server supports)",
+            "show access",
+            "show user permissions"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q39. What table cannot have a trigger associated with it?",
+        "options": [
+            "temporary",
+            "system",
+            "large",
+            "new"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q40. later versions of mysql support the native json data type for storing json documents. What is a drawback of json columns?",
+        "options": [
+            "inefficient for storing json documents",
+            "cannot be indexed directly",
+            "documents cannot be validated when stored in json columns",
+            "cannot be normalized"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q41.Which statement is true for the diagram below",
+        "options": [
+            "l Q41](images/mysql_q41.jpg)",
+            "carid is the primary key for purchases",
+            "carid is the foreign key for cars.carid",
+            "customerid is the foreign key for customers.id"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q42.Which statement can you use to load data from a file into the table?",
+        "options": [
+            "cat file|mysql",
+            "load data infile (correct if the file is already on the server)",
+            "load data local infile (also correct but only if the file is from the client)",
+            "extended insert statement"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q43. You are working with the tables as shown in this diagram. You need to make sure that any record added to the purchases table consists of a customerID, which already exists in the customers table, and a carID, which already exists in the cars table. You decide to use a trigger to do the validation. Which one do you use?",
+        "options": [
+            "l Q43](images/mysql_q43.jpg)",
+            "`AFTER INSERT`",
+            "`BEFORE INSERT`",
+            "`CROSS JOIN`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q44. Which is the correct syntax of an extended insert statement?",
+        "options": [
+            "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)",
+            "('Mercedes', 'C', 2003)",
+            "insert into cars (make, model, year) values ('Ford', 'Mustang', 2002)",
+            "values ('Mercedes', 'C', 2003)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q45. You need to make an exact copy of a table, with all columns and indexes. How can you get all of the information needed to accomplish this?",
+        "options": [
+            "create table",
+            "clone table",
+            "insert into",
+            "show create table"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q46. you need to make your mysql system secure against attackers. What are you _not_ supposed to do?",
+        "options": [
+            "Run MySQL server as a normal user.",
+            "Grant PROCESS or SUPER privilege to other users.",
+            "Run MySQL server as the unix root user.",
+            "Use the compressed protocol."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q47. You manage a database with a table \"customers\". You created a temporary table also called \"customers\" with which you are working for the duration of your session. You need to recreate the temporary table with different specs. Which command do you need to run first?",
+        "options": [
+            "`create temporary table customers;`",
+            "`drop temp table customers;`",
+            "`drop table customers;`",
+            "`drop temporary table customers;`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q48. You need to run a complex query with recursive subqueries, but without creating a stored procedure or a function. Which command or clause do you use?",
+        "options": [
+            "COLLATE",
+            "UNION",
+            "FULL JOIN",
+            "WITH"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q49. Which choice is not a processing algorithm for database views?",
+        "options": [
+            "merge",
+            "updatable",
+            "temptable",
+            "undefined"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q50. What is the MySQL `perror` command-line utility used for?",
+        "options": [
+            "to display your version of MySQL",
+            "to display operating system error codes",
+            "to display default settings that are in error",
+            "to display storage error codes"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q51. How can you list all columns for a given table?",
+        "options": [
+            "SHOW table COLUMNS;",
+            "SHOW COLUMNS FROM table;",
+            "LIST table COLUMNS;",
+            "SELECT COLUMNS FROM table;"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q52. How would you list the full set of tables in the currently selected database?",
+        "options": [
+            "SELECT \\* FROM DATABASE;",
+            "SHOW TABLES;",
+            "LIST TABLES;",
+            "SELECT ALL TABLES;"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q53. Which choice is not one of the table maintenance statements?",
+        "options": [
+            "CHECK TABLE;",
+            "CREATE TABLE;",
+            "ANALYZE TABLE;",
+            "OPTIMIZE TABLE;"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q54. In which table does MySQL store passwords for user accounts?",
+        "options": [
+            "mysql.accounts;",
+            "mysql.passwords;",
+            "mysql.admin;",
+            "mysql.user;"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q55. Management has requested that you build an employee database. You need to include each employee's current position and salary, as well as all prior positions and salaries with the company. You decide to use a one-to-many structure: an employee table with the main information such as name and address, and an employment table with position and salary history. You can use the employeeID field to connect them. What is employment.employeeID an example of?",
+        "options": [
+            "primary key;",
+            "secondary key;",
+            "foreign key;",
+            "alternate key;"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q56. In recent versions of MySQL (8.0+), what's the correct syntax to declare a CTE (Common Table Expression)?",
+        "options": [
+            "WITH (SELECT id FROM users) as cte, SELECT ...",
+            "WITH (SELECT id FROM users) as cte SELECT ...",
+            "WITH cte as (SELECT id FROM users), SELECT ...",
+            "WITH cte as (SELECT id FROM users) SELECT ..."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q57. What is one reason to introduce data redundancy into a normalized database design?",
+        "options": [
+            "to reduce corruption in data",
+            "to reduce storage space",
+            "to make the system faster",
+            "to prevent data anomalies"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q58. The code snippet below is used to read data from an XML file into a table. Which XML structure is _not_ supported by the statement?",
+        "options": [
+            "ql",
+            "ML LOCAL INFILE 'cars.xml'",
+            "ABLE cars",
+            "DENTIFIED BY `<car>`;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q59. You are loading data into a table. Which command can you use to make sure that all data is inserted and duplicated rows are discarded?",
+        "options": [
+            "`INSERT IGNORE`",
+            "`INSERT UNIQUE`",
+            "`INSERT INTO`",
+            "`INSERT DISTINCT`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q60. Which statement about the `TRUNCATE TABLE` statement is true?",
+        "options": [
+            "It will stop and issue an error when it encounters a row that is referenced by a row in a child table.",
+            "It always first drops, then re-creates a new table.",
+            "It deletes rows one by one on tables with foreign key constraints.",
+            "It does not invoke the `DELETE` triggers associated with the table."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q61. You are working with the tables as shown in this diagram. You need to get the number of cars sold per the home state of each customer's residence. How can you accomplish this?",
+        "options": [
+            "l Q61](images/mysql_q61.png)",
+            "`SELECT state, COUNT(*) FROM customers WHERE ID IN (SELECT customerID FROM purchases) GROUP BY state;`",
+            "`SELECT state, COUNT(*) FROM customers c LEFT JOIN purchases p ON c.ID = p.customerID GROUP BY state;`",
+            "`SELECT state, COUNT(*) FROM customers c, purchases p WHERE c.ID = p.customerID GROUP BY state;`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q62. In data migration, there is often a need to delete duplicate rows as part of data cleanup. Which statement works best?",
+        "options": [
+            "`DELETE DUPS`",
+            "`DELETE DISTINCT`",
+            "`DELETE JOIN`",
+            "`DELETE WITH`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q63. When working with MySQL cursor, what must you also declare?",
+        "options": [
+            "`DEFAULT` value",
+            "`RETURN` variable",
+            "`SQLEXCEPTION` routine",
+            "`NOT FOUND` handler"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q64. Which type of backup includes all the changes made to the data since the last full backup was performed?",
+        "options": [
+            "snapshot",
+            "logical",
+            "differential",
+            "incremental"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q65. You need to restore a MySQL database from a backup file. Which command-line tool do you use for the actual data import, after re-creating the database?",
+        "options": [
+            "`mysqld`",
+            "`mysql`",
+            "`mysqladmin`",
+            "`mysqldump`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q66. You are importing data as JSON into a new table. You run CREATE TABLE json_data ( city JSON ); and insert rows into this table. What is the correct syntax to see the list of cities?",
+        "options": [
+            "`SELECT city FROM json_data;`",
+            "`SELECT city->>'$.name' city FROM json_data;`",
+            "`SELECT city.name city FROM json_data;`",
+            "`SELECT city->'$.name' city FROM json_data;`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q67. If you want to use MyISAM instead of InnoDB, which option do you need to specify in the CREATE TABLE statement?",
+        "options": [
+            "ENGINE",
+            "PARTITION",
+            "STORAGE",
+            "TABLESPACE"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q68. You are working with the table in this diagram. You want to use full-text search to find the customers who live on a street or a drive. What is the command to do that?",
+        "options": [
+            "name: customers",
+            " lastname | firstname | phone | address | city | state | zip |",
+            " | -------- | --------- | ------------ | ------------------- | ----------- | ----- | ----- |",
+            " | Smith | Bob | 212-555-1212 | 1001 1st Street | New York | NY | 10001 |"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q69. Which query lists the databases on the current server?",
+        "options": [
+            "SHOW DATABASES;",
+            "LIST ALL DATABASES;",
+            "LIST DATABASES;",
+            "SHOW DB;"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q70. What is the product of the database designing phase?",
+        "options": [
+            "all tables, columns, data types, indexes and their relationships",
+            "a list of entities, their relationship, and constraints",
+            "all tables and their names, which are needed to implement the logical model",
+            "a list of entities, their relationship, constraints, data types, and cardinalities"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q71. Which choice is _not_ a valid model for a stored procedure parameter?",
+        "options": [
+            "INOUT",
+            "IN",
+            "OUT",
+            "IN OUT"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q72. What is the advantage of using a temporary table instead of a heap table?",
+        "options": [
+            "The temporary table will be dropped when the database is restarted.",
+            "Temporary tables can be shared among clients, which makes them more usable in group development environments.",
+            "The temporary table will be dropped as soon as your session disconnects.",
+            "Creating a temporary table does not require any special privileges."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q73. Which is a valid constructor for a class named User?",
+        "options": [
+            "`public construct User() {}`",
+            "`public User() {}`",
+            "`public instance User() {}`",
+            "`public init User() {}`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q74. What is the maximum number of columns that can be used by a single table index?",
+        "options": [
+            "2",
+            "4",
+            "8",
+            "16"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q75. Which command will return a list of triggers in the current database?",
+        "options": [
+            "`DISPLAY TRIGGERS;`",
+            "`SHOW TRIGGERS;`",
+            "`SELECT ALL TRIGGERS;`",
+            "`SELECT * FROM information_schema.triggers;`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q76. Which statement is true about TIMESTAMP and DATETIME data types?",
+        "options": [
+            "TIMESTAMP values require more bytes for storage than DATETIME values.",
+            "TIMESTAMP is stored without timezone, and DATETIME is stored in UTC values.",
+            "TIMESTAMP and DATETIME are both stored without time zone.",
+            "TIMESTAMP is stored in UTC values, and DATETIME is stored in without time zone."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q77. What is the equivalent of the mysqladmin reload command?",
+        "options": [
+            "`mysqladmin flush-threads`",
+            "`mysqladmin flush-tables`",
+            "`mysqladmin flush-privileges`",
+            "`mysqladmin flush-all`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q78. Explain the security aspect of stored procedures",
+        "options": [
+            "Stored procedures are not secure, because they can be executed from the command line as the root user",
+            "Stored procedures are secure, because the owner of the stored procedure can decide to whom access is granted",
+            "Stored procedures are secure, because applications can be given access to stored procedures and not any underlying variables",
+            "Stored procedures are not secure, because they can execute statements to drop tables or bulk delete data"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q79. How would you retrieve data on all the customers where no phone number is stored?",
+        "options": [
+            "`SELECT * FROM customers WHERE PhoneNumber = NULL;`",
+            "`SELECT * FROM customers WHERE PhoneNumber IS NOT VALID;`",
+            "`SELECT * FROM customers WHERE PhoneNumber IS NULL;`",
+            "`SELECT * FROM customers WHERE PhoneNumber IS UNKNOWN;`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q80. In the diagram below, the price field is declared as type DECIMAL. What would be a more efficient declaration for this field?",
+        "options": [
+            "l picture](images/mysql_q80.png)",
+            "FLOAT",
+            "DECIMAL(10,2)",
+            "NUMERIC"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q81. Which choice is `not` an available string type for a column?",
+        "options": [
+            "`ENUM`",
+            "`SET`",
+            "`BIT`",
+            "`CHAR`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q82. This diagram shows what type of relationship between customers and cars?",
+        "options": [
+            "l picture](images/mysql_q80.png)",
+            "one-to-many",
+            "parent-child",
+            "many-to-many"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q83. A stored routine is a set of SQL statements stored on the server and takes form as either a procedure or a function. Which statement cannot be used inside stored routines?",
+        "options": [
+            "`SELECT`",
+            "`USE`",
+            "`SET`",
+            "`DECLARE`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q84. When a new student is added to a new database, you want new records to be created in the related tables such as Exam, Score and Attendance. How would you accomplish this?",
+        "options": [
+            "trigger",
+            "regular expression",
+            "view",
+            "index"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q85. In the diagram below, the ID fields are declared as type CHAR instead of INT . Which is NOT one of the possible reasons behind that decision?",
+        "options": [
+            "l picture](images/mysql_q85.png)",
+            "The ID field needs to include letters and not just numbers.",
+            "You can have a consistent format across all of the tables that require ID fields.",
+            "The ID field needs to have leading 0s, which the INT data type would truncate."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q86. Why would you use a common table expression (CTE)?",
+        "options": [
+            "To define queries for later reuse for the duration of the current session",
+            "To create temporary tables that can be used to pre-select often-used result sets.",
+            "To calculate a new single value from a result set and return it to the query parser.",
+            "To break down complex queries and allow reuse within a query."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q87. Which option modifier tells a program not to exit with an error if it does not recognize the option, but instead to issue a warning?",
+        "options": [
+            "--verbose",
+            "--skip",
+            "--skip-error",
+            "--loose"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q88. What does this SQL statement return?",
+        "options": [
+            "",
+            " name FROM students WHERE name REGEXP '^to';",
+            "",
+            "all names starting with \"to,\" such as Tommy or Tony"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q89. You are working with the tables as shown in the diagram. You need to generate the list of price totals for each make and model of car, with subtotals for each make, and the grand total of all prices. Which SQL clause do you use?",
+        "options": [
+            "l picture](images/mysql_q92.png)",
+            "UNION",
+            "SHOW TOTALS",
+            "UNION ALL"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q90. The left and right joins are also known as \\_.",
+        "options": [
+            "Inner Join",
+            "Natural Join",
+            "Outer Join",
+            "Cartesian Join"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q91. What is the valid way to create a database view in MySQL?",
+        "options": [
+            "`CREATE VIEW v1 SELECT * FROM t1 WHERE col1 > 10;`",
+            "`CREATE VIEW v1 AS BEGIN SELECT * FROM t1 END;`",
+            "`CREATE VIEW v1 BEGIN SELECT * FROM t1 END;`",
+            "`CREATE VIEW v1 AS SELECT * FROM t1;`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q92. How are permissions implemented in MySQL?",
+        "options": [
+            "encrypted algorithms",
+            "access control lists",
+            "user settings",
+            "administrator schema"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q93. Inside a transaction, several operations need to be performed. What would you do if an exception happens during that transaction?",
+        "options": [
+            "`UNDO`",
+            "`UNCOMMIT`",
+            "`ROLLBACK`",
+            "`REVERSE`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q94. What function finds the current time or date in MySQL?",
+        "options": [
+            "DATE()",
+            "GETDATE()",
+            "CURDATE()",
+            "CURRENT()"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q95. What is the correct usage of ENUM in MySQL?",
+        "options": [
+            "`Create table size (ENUM ('Small','Medium','Large'));`",
+            "`Create table ENUM (name ('Small','Medium','Large'));`",
+            "`Create table size (name: ENUM['Small','Medium','Large']);`",
+            "`Create table size (name ENUM('Small','Medium','Large'));`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q96. The mysqldump command cannot generate output in **\\_**.",
+        "options": [
+            "JSON",
+            "CSV",
+            "XML",
+            "TXT"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q97. You are working with the tables as shown in this diagram. You need to generate the list of all cars, whether or not they had been sold, with the purchase date of the cars that were sold. Which statement accomplishes that?",
+        "options": [
+            "l picture](images/mysql_q98.png)",
+            "A",
+            "",
+            " cars.*, purchases.date"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q98. Which code snippet from a stored procedure should be rewritten as a CASE statement?",
+        "options": [
+            "A",
+            "",
+            " var1 THEN SET varA = var1;",
+            "SEIF var2 THEN SET varA = var2;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q99. Why would you use stored functions?",
+        "options": [
+            "for formulas and business rules that you want to apply to columns in an SQL query",
+            "for formulas and business rules that should be applied on a specific trigger event like on inserts",
+            "to automatically modify the data of a table based on a query",
+            "for reusing recurring queries"
+        ],
+        "_ps": 1
+    }
+]

@@ -1,0 +1,722 @@
+[
+    {
+        "question": "Q1. When a javaScript function is invoked (called) in Node, where is a new frame placed?",
+        "options": [
+            "the call stack",
+            "the event loop",
+            "the poll phase",
+            "the events queue"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q2. Which of the following is a core module in Node?",
+        "options": [
+            "webpack",
+            "crypto",
+            "request",
+            "chalk"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q3. Which of the following Buffer class methods returns an uninitialized buffer?",
+        "options": [
+            "allocUnsafe",
+            "concat",
+            "from",
+            "alloc"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q4. Which of the following modules is NOT a built-in module in Node?",
+        "options": [
+            "ftp",
+            "events",
+            "dgram",
+            "http2"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q5. Which fs module method can be used to read the content of a file without buffering it in memory?",
+        "options": [
+            "read",
+            "readFile",
+            "createReadStream",
+            "readFileSync"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q6. Which of the following DNS module methods uses the underlying OS facilities and does not necessarily perform any network communication?",
+        "options": [
+            "lookup",
+            "resolve",
+            "resolve4",
+            "reverse"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q7. How do you check that a value is a date object in Node?",
+        "options": [
+            "util.types.isDate(value)",
+            "assert.isDate(value)",
+            "console.isDate(value)",
+            "util.date(value)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q8. Can you create an https web server with Node.js?",
+        "options": [
+            "no, there are no modules supporting it yet",
+            "yes, with the https or http2 modules",
+            "yes, through the path module",
+            "yes, with the http module"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q9. What is the Api that is designed to insulate Addons from changes in the underlying JavaScript engine?",
+        "options": [
+            "A-API",
+            "Z-API",
+            "N-API",
+            "X-API"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q10. Which CLI option can you use to debug a node script in Chrome DevTools?",
+        "options": [
+            "--dev-tools",
+            "--inspect",
+            "--chrome",
+            "--debug"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q11. How can you count the number of logical CPUs on the machine that is running Node?",
+        "options": [
+            "node -p \"process.cpus\"",
+            "node -p \"util.cpus().size\"",
+            "node -p \"process.os.cpus\"",
+            "node -p \"os.cpus().length\""
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q12. Which of the following is a method on the console object?",
+        "options": [
+            "exit",
+            "test",
+            "time",
+            "print"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q13. Which object is used to manage the cache of required modules?",
+        "options": [
+            "global.cache",
+            "module.cache",
+            "process.cache",
+            "require.cache"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q14. What is the command to silence all process warnings?",
+        "options": [
+            "node index.js --trace-warnings",
+            "node --no-warnings",
+            "node -trace-warnings",
+            "node index.js --no-warnings"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q15. How can you use the promise API with a callback-based function such as child_process.exec?",
+        "options": [
+            "new Promise(child_process.exec())",
+            "util.promisify(child_process.exec())",
+            "util.promisify(child_process.exec)",
+            "new Promise(child_process.exec)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q16. Which of the following is NOT a Node repl command?",
+        "options": [
+            ".break",
+            ".history",
+            ".editor",
+            ".save"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q17. Which statement is true when you run the code shown below?",
+        "options": [
+            "re('child_process').fork('script.js');`",
+            "The forked process shares the event loop with the parent process",
+            "A new VM instance is created and the two VM instances will be shared between the forked process and the parent process.",
+            "The forked process will have its own VM instance."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q18. If EventEmitter is in scope, which of the following lines of code will have an event emitter emitting a change event?",
+        "options": [
+            "EventEmitter.emit('change');",
+            "EventEmitter.new().emit('change');",
+            "(new EventEmitter()).emit('change');",
+            "new EventEmitter('change');"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q19. Which of the following objects is a stream",
+        "options": [
+            "process.uptime",
+            "process.stdout",
+            "process",
+            "Buffer"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q20. Which module variable holds the resolved absolute path of the current module file?",
+        "options": [
+            "`__pathname`",
+            "`__location`",
+            "`__flder`",
+            "`__filename`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "21. If the child_process module methods are in scope, what is a current way to execute the command ps -ef using a child process?",
+        "options": [
+            "spawn(\"ps -ef\")",
+            "exec(\"ps -ef\")",
+            "exec(\"ps\", \"-ef\")",
+            "fork(\"ps -ef\")"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q22.Which console method can be used to print the stack trace to the point of its execution?",
+        "options": [
+            "stack",
+            "trace",
+            "debug",
+            "print"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q23.When you run JavaScript in a Node.js application, which of the following elements in a Node.js stack actually executes that JavaScript?",
+        "options": [
+            "the libuv library",
+            "the c-ares library",
+            "the VM (like VS or Chakra)",
+            "the repl module"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q24. Looking at the code below, what does the console show?",
+        "options": [
+            "",
+            "http = require('http');",
+            " hostname = '127.0.0.1'; const port = 3000;",
+            " server = http.createServer((req, res) => {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q25.What is the purpose of the path module?",
+        "options": [
+            "to provide utilities to play with file and directory paths",
+            "to provide utilities to add and remove files",
+            "It is a retiring module.",
+            "to provide utilities to test files"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q26.How do you make an HTTP server object active and listen to requests on certain ports?",
+        "options": [
+            "server. start",
+            "server.activate",
+            "server.listen",
+            "server. run"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q27.What does the code shown below do?",
+        "options": [
+            "",
+            "fs = require('fs'); const os = require('os');",
+            "system = os.platform(); const user = os.userInfo().username;",
+            "endFile('hello.txt', `Hello ${user} on ${system}`, (err) => { if (err) throw err; console.log('The data was appended to file!');}"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q28.How do you start a Node application, if the entry file is indexjs?",
+        "options": [
+            "nodemon start",
+            "start index.js",
+            "node index.js",
+            "node start"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q29.What is the purpose of the file system (fs) module?",
+        "options": [
+            "to provide methods to work with requests and responses",
+            "to provide methods to work with files",
+            "to provide methods to work with databases",
+            "to find new file systems"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q30.What is the Node LTS version?",
+        "options": [
+            "It is the current unstable version and is to be avoided.",
+            "It is the version that will be retired soon.",
+            "It is the version with the latest features.",
+            "It is the safest version for long-term support."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. Which of the following is NOT a valid stream in Node?",
+        "options": [
+            "process. stdinfo",
+            "process. stdin",
+            "process. stdout",
+            "process. stderr"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q32. You have a script.js file with the single line of code shown here. What will be the output of executing script.js with the node command?",
+        "options": [
+            "le.log(arguments);`",
+            "ReferenceError: arguments is not defined",
+            "an empty string",
+            "undefined"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q33. Which choice is not a valid method on event emitters?",
+        "options": [
+            "start",
+            "on",
+            "once",
+            "off"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q34. Which special object is an instance of EventEmitter?Which special object is an instance of null?",
+        "options": [
+            "process",
+            "Buffer",
+            "root",
+            "require"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q35. What is the command to get a list of available commands for Node.js?What is the command to get a list of available commands for Node.js?",
+        "options": [
+            "node index.js -x",
+            "node -v",
+            "node -h",
+            "node index.js -h"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q36. When a request event is received in the HTTP module, what is the type of the first argument passed to that event, usually named req?",
+        "options": [
+            "http.IncomingMessage",
+            "http.ServerRequest",
+            "http.ClientRequest",
+            "http.ServerResponse"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q37. What are the arguments passed to the module wrapper function?",
+        "options": [
+            "`exports, __filename, __dirname`",
+            "`exports, process, require, module, __filename, __dirname`",
+            "`exports, module, __filename, __dirname`",
+            "`exports, require, module, __filename, __dirname`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q38. Which library provides Node.js with the event loop?",
+        "options": [
+            "V8",
+            "c-ares",
+            "libuv",
+            "events"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q39. What does the .node file extension represent?",
+        "options": [
+            "a C++ file that can have a .node extension and that Node will be able to execute directly.",
+            "a C++ Addon file that is built with node-gyp",
+            "a JSON file that can have a .node extension as well as the .json extension",
+            "a JavaScript file that can have a .node extension as well as the .js extension"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q40. What can you export with module.exports?",
+        "options": [
+            "only objects.",
+            "only functions",
+            "only variables and arrays",
+            "functions, objects, arrays, or anything you assign to the module"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q41. Which core module in Node can you use to take advantage of multicore systems?",
+        "options": [
+            "os",
+            "util",
+            "cluster",
+            "net"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q42. Which core Node module has wrappers for OpenSSL methods?",
+        "options": [
+            "SSL",
+            "hash",
+            "crypto",
+            "TLS"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q43. Which line imports a promise-based version of the readFile method?",
+        "options": [
+            "const { readFile } = require(fs).promises",
+            "const { readFile } = require(fs)",
+            "const { readFilePromises: readFile } = require(fs)",
+            "const { readFile } = require(promises)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q44. According to the rules of semantic versioning, what does a release incrementing the third number in an npm version string communicate to users about the release changes?",
+        "options": [
+            "Changes are not backwards compatible.",
+            "Changes might not be backward compatible and might break existing code.",
+            "Changes are just bug fixes and no new features were added.",
+            "Changes will add new functionality but will not break any existing code."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q45. What does REPL stand for?",
+        "options": [
+            "run, examine, put, loop",
+            "read, eval, print, loop",
+            "run, edit, print, loop",
+            "read, extend, print, loop"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q46. Which file does node-gyp use to read the build configuration of a module?",
+        "options": [
+            ".gyprc",
+            "binding.gyp",
+            "gyp.json",
+            "package.gyp"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q47. Which core module in Node can you use for testing?",
+        "options": [
+            "chai",
+            "jest",
+            "assert",
+            "mocha"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q48. Which core module in Node provides an API to register callbacks to track asynchronous resources created inside a Node.js application?",
+        "options": [
+            "cluster",
+            "async_hooks",
+            "dgram",
+            "inspector"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q49. Which Node.js module should you use when you need to decode raw data into strings?",
+        "options": [
+            "buffer",
+            "util",
+            "string_decoder",
+            "string_buffer"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q50. Which global object acts like a bridge between a Node script and the host operating system?",
+        "options": [
+            "v8",
+            "env",
+            "process",
+            "child_process"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q51. Which statement is true about Node.js and threads?",
+        "options": [
+            "Every Node process runs in a single thread, and all the I/O work is run in that same thread.",
+            "Every Node process gets four threads that it can share between its JavaScript VM and the event loop.",
+            "The event loop is single-threaded, but a JavaScript VM can use multiple threads.",
+            "JavaScript execution in Node.js is single-threaded, but I/O operations are executed using multiple threads."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q52. Which statement about event emitters is false?",
+        "options": [
+            "Event names must be camelCase strings.",
+            "The emit method allows a arbitrary set of arguments to be passed to the listener functions.",
+            "Any values returned by the listeners for an emitted events are ignored.",
+            "When an event emitter objeect emits an event, all of the functions attached to that specific event are called synchronously."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q53. Which core module in Node can you use to compile and run JavaScript code in a sandbox environment?",
+        "options": [
+            "sandbox",
+            "buffer",
+            "vm",
+            "v8"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q54. How would you determine the number of cluster instances to start when using the cluster module?",
+        "options": [
+            "const numInstances = cluster.instances().length;",
+            "const numInstances = cluster.instances();",
+            "const numInstances = require('os').cpus().length;",
+            "const numInstances = process.cpus().length;"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q55. You have to read a large text file, replace some words in it, and write it back to a new file. You know that the memory on your target system is limited. What should you do?",
+        "options": [
+            "Use regular expressions directly on the file.",
+            "Use Promises and async/await to offload the task to libuv.",
+            "Copy the file into a database and perform the operations there.",
+            "Use readline together with streams to read and transform and write the file contents line by line."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q56. Which choice is `not` a Node global object?",
+        "options": [
+            "process",
+            "exports",
+            "setTimeout",
+            "Buffer"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q57. What is the correct way to pipe a readable stream and a writable stream?",
+        "options": [
+            "readableStream.pipe(writableStream)",
+            "readableStream.on(pipe, writableStream)",
+            "writableStream.pipe(readableStream)",
+            "writableStream.on(pipe, readableStream)"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q58. How can you convert path segments into a string using the platform-specific separator as a delimiter?",
+        "options": [
+            "path.concat",
+            "path.join",
+            "path.format",
+            "path.parse"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q59. What is the purpose of N-API?",
+        "options": [
+            "to allow users to make requests to the server",
+            "to insulate Addons from changes in the underlying JavaScript engine",
+            "to execute multi-threaded code in the Node environment",
+            "to provide a quick way for users to create REST APIs"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q60. What is a process object and its role?",
+        "options": [
+            "a locally scoped object that provides information about the current node process",
+            "a global object that provides information about files",
+            "a global object that provides information about the database",
+            "a global object that provides information about the current node process"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q61. What will this code log to the console?",
+        "options": [
+            "",
+            "e: person.js",
+            "s.name = \"Jane\";",
+            "e: index.js"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q62. What will this code log to the console?",
+        "options": [
+            "",
+            "e: person.js",
+            "s = \"John\";",
+            "e: index.js"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q63. Is it possible to write tests in Node.js without an external library?",
+        "options": [
+            "yes, through the assert module",
+            "yes, through the debugger module",
+            "yes, through the console module",
+            "no"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q64. Which assert module method is usually used to test the error-first argument in callbacks?",
+        "options": [
+            "fail",
+            "doesNotThrow",
+            "deepStrictEqual",
+            "ifError"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q65. Which choice is not a method on the util module?",
+        "options": [
+            "promisify",
+            "asyncify",
+            "types",
+            "callbackify"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q66. Which choice is not a subclass of the Error class?",
+        "options": [
+            "GlobalError",
+            "TypeError",
+            "RangeError",
+            "AssertionError"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q67. What is Node built on?",
+        "options": [
+            "Python",
+            "V8 JavaScript engine",
+            "PHP",
+            "c"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q68. How does it affect the performance of a web application when an execution path contains a CPU-heavy operation, such as calculating a long Fibonacci sequence?",
+        "options": [
+            "As Node.js is asynchronous, this is handled by a libuv and a threadpool. The performance will not notably degrade.",
+            "As the application code runs asynchronously within a single thread, the execution will block, accepting no more requests until the operation is completed.",
+            "As Node.js is asynchronous, this is handled by a threadpool and the performance will not notably degrade.",
+            "The current thread will block until the executon is completed and the operating system will spawn new threads to handle incoming requests. This can exhaust the number of allowed threads (255) and degrade performance over time."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q69. What is used for parsing and running Javascript in Node.js?",
+        "options": [
+            "EventLoop",
+            "Libuv",
+            "Google V8",
+            "Express.js"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q70. What is the importance of having good practices around status code in your response?",
+        "options": [
+            "It indicates success or failure to the client and helps with testing.",
+            "It is not important to have good practices regarding status codes",
+            "Response codes are the only way you can tell what is happening on the server.",
+            "It contains information about the current performance of the server."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q71. How can ECMAScript modules be used natively in Node?",
+        "options": [
+            "ECMAScript modules cannot be used natively in Node.",
+            "ECMAScript modules can be used natively in Node with the .mjs file extension",
+            "ECMAScript modules can be used natively in Node only by using a compiler like Babel.",
+            "ECMAScript modules can be used natively in Node only by using a bundle like webpack."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q72. When exploring the Node documentation's features, what are the stability ratings?",
+        "options": [
+            "They are an indication of the stability of Nodejs modules and usage recommendations.",
+            "They tell if a feature is ES6 compliant.",
+            "They are a Node command to validate stability of your code.",
+            "They tell if a feature is LTS (Long Term Supported)."
+        ],
+        "_ps": 0
+    }
+]

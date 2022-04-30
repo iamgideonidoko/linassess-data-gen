@@ -1,0 +1,642 @@
+[
+    {
+        "question": "Q1. From what distribution does the `rand()` function return value?",
+        "options": [
+            "normal",
+            "poisson",
+            "binomial",
+            "uniform"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q2. Based on the code below, c is the \\_ of a.",
+        "options": [
+            "",
+            "nd(1, 11);",
+            "rt(a);",
+            "1, ceil(end/2));"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. What does the Profiler track?",
+        "options": [
+            "execution time",
+            "command history",
+            "errors",
+            "the value of variables"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q4. Which code block contains the correct syntax for a `while` loop?",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. What does `b` contain?",
+        "options": [
+            "",
+            "",
+            "    20    12     0     6",
+            "     9    56     0     3"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q6. You have written a function `myfun` and want to measure how long it takes to run. Which code segment will return in `t` the time in seconds it takes `myfun` to run?",
+        "options": [
+            "",
+            "",
+            "utime(myfun());",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. What is `%%` used for?",
+        "options": [
+            "argument placeholder",
+            "block quotes",
+            "code sections",
+            "conversion specifier"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q8. what is the `.` character NOT used for?",
+        "options": [
+            "structure field access",
+            "a decimal point",
+            "cell array access",
+            "element-wise operations"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q9. Which function could you use for multiple linear regression?",
+        "options": [
+            "polyval",
+            "regress",
+            "solve",
+            "polyfit"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q10. For which of these arrays do `mean`, `median`, and `mode` return the same value?",
+        "options": [
+            "[0 1 1 1 2]",
+            "[1 3 5 5 6]",
+            "[0 1 1 1 1]",
+            "[0 0 5 5 5]"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q11. You are in the middle of a long MATLAB session where you have performed many analyses and made many plots. You run the following commands, yet a figure window doesn't pop up on the top of your screen with your plot. What might be the issue?",
+        "options": [
+            "",
+            "1:0.1:1];",
+            "^2;",
+            ", y)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q12. How do you access the value for the field `name` in structure S?",
+        "options": [
+            "S['name']",
+            "S.name",
+            "S('name')",
+            "S{'name'}"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. What built-in definition does i have?",
+        "options": [
+            "basic imaginary unit",
+            "index function",
+            "infinity",
+            "index variable"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q14. Which statement is equivalent to this for loop?",
+        "options": [
+            "",
+            " 2 3; 4 5 6];",
+            "ros(size(a));",
+            "row = 1:size(a, 1)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q15. You have plotted values of cosine from -10 to 10 and want to change the x-axis tick marks to every pi, from -3*pi to 3*pi. Which statement will do that?",
+        "options": [
+            "xticks(-3*pi:3.14:3*pi)",
+            "xticks(-3*pi:pi:3*pi)",
+            "xticks(linespace(-3*pi(), 3*pi(), pi()))",
+            "xticks(linespace(-3*pi, 3*pi, pi)"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q16. What is the value of `c`?",
+        "options": [
+            "",
+            "es(1,3);",
+            "3;",
+            "nv(a,b)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q17. Which function CANNOT be used to randomly sample data?",
+        "options": [
+            "datasample",
+            "randi",
+            "resample",
+            "randperm"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q18. Which choice is correct syntax for a `switch` statement?",
+        "options": [
+            "",
+            "",
+            "",
+            " x"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q19. What is the result of this code?",
+        "options": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q20. What is true of a handle class object?",
+        "options": [
+            "When you pass a handle object to a function, a new object is made that is independent of the original.",
+            "All copies of handle objects refer to the same underlying object.",
+            "Handle object cannot reference one another.",
+            "Handle object do not have a default `eq` function."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q21. Which choice has a different final result in `f10` than the other three?",
+        "options": [
+            "",
+            "",
+            "1;",
+            "= 1:10"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q22. Which choice will NOT give you a 5 x 5 identity matrix?",
+        "options": [
+            "",
+            "",
+            "nd(5);",
+            "a * inv(a))"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q23. Which statement creates this structure?",
+        "options": [
+            "",
+            "",
+            "name: 'Bindy'",
+            "reed: 'border collie'"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q24. `my_func` is a function as follows. What is the value of `a` at the end of the code beneath?",
+        "options": [
+            "",
+            "on a = my_func(a)",
+            "= a + 1;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q25. Which statement could create this cell array?",
+        "options": [
+            "",
+            "",
+            "\"hello world\"]}    {1×1 cell}    {[\"goodbye\"]}    {1×3 double}",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q26. Which choice adds `b` to each row of `a`?",
+        "options": [
+            "",
+            "es(4, 4);",
+            "2 3 4];",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q27. Which choice replaces all `a`s with `o`s?",
+        "options": [
+            "",
+            "",
+            "= 1:length(fruit)",
+            "uit{i}(fruit{i} == a) == o;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q28. Which statement returns the roots for the polynomial `x^2 + 2x - 4`?",
+        "options": [
+            "poly([1 2 -4])",
+            "solve(x^2 + 2x - 4 == 0)",
+            "polyfit(x^2 + 2x - 4 == 0)",
+            "roots([1 2 -4])"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q29. Which choice is the proper syntax to append a new elements `a` to the end of 1x 2 dimensional cell array `C`?",
+        "options": [
+            "C = {C a};",
+            "C = cellcat(C a)",
+            "C = cat(2, {a}, C)",
+            "C{end+1}=a"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q30. You have loaded a dataset of people's heights into a 100 x 1 array called `height`. Which statement will return a 100 x 1 array, `sim_height`, with values from a normal distribution with the same mean and variance as your height data?",
+        "options": [
+            "sim_height = std(height) + mean(height) \\* randn(100, 1);",
+            "sim_height = mean(height) + std(height) \\* randn(100, 1);",
+            "sim_height = randn(std(height), mean(height), [100, 1]);",
+            "sim_height = randn(mean(height), std(height), [100, 1]);"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q31. Which statement returns a cell array of the strings containing '`burger`' from `menu`?",
+        "options": [
+            "= {'hot dog' 'corn dog' 'regular burger' 'cheeseburger' 'veggie burger'}`",
+            "menu{strfind(menu, 'burger')}",
+            "menu(strfind(menu, 'burger'))",
+            "menu{contains(menu, 'burger')}"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q32. What is the set of possible values that `a` may contain?",
+        "options": [
+            "",
+            " = randi(10, [1, 10]);",
+            " = 11;",
+            " = 12;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q33. Which statement is true about the sparse matrices?",
+        "options": [
+            "You can use the `sparse` function to remove empty cells from cell array variables.",
+            "Sparse matrices always use less memory than their associated full matrices.",
+            "Mixtures of sparse and full matrices can be combined in all of MATLAB's built-in arithmetic operations.",
+            "The `sparse` function requires its input to be a full matrix with at least 50% zero elements."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q34. Which statement using logical indices will result in an error?",
+        "options": [
+            ":10;`",
+            "b = a(a ~= 11)",
+            "b = a(a == 1)",
+            "b = a(a>6 && a<9)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q35. Which statement turns `menu` into the variable `menu_string` below?",
+        "options": [
+            "",
+            " {'hot dog' 'corn dog' 'regular burger' 'cheeseburger' 'veggie burger'}",
+            "tring =",
+            "ot dog"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q36. Which code snippet sets a new random seed based on the current time and saves the current settings of the random number generator?",
+        "options": [
+            "",
+            "_settings_curr = rng('shuffle');`",
+            "",
+            ""
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q37. You have a matrix `data` in which each column is mono audio recording from a room in your house. You've noticed that each column has a very different mean and when you plot them all on the same graph, the spread across the y axis make it impossible to see anything. You want to subtract the mean from each column. Which code block will accomplish this?",
+        "options": [
+            "",
+            "a_nomean = data - repmat(median(data), size(data, 1), 1);`",
+            "",
+            "a_nomean = bsxfun(@minus, data, mean(data));`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q38. Which code block results in an array `b` containing the mean values of each array within `C`?",
+        "options": [
+            "",
+            "",
+            "ros(1, size(C, 2));",
+            "C = 1:size(C, 2)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q39. Which statement creates a logical array that is 1 if the element in `passwords` contains a digit and 0 if it does not?",
+        "options": [
+            "ords = {'abcd' '1234' 'qwerty' 'love1'};`",
+            "contains(password, '\\d')",
+            "~isempty(regexp(passwords, '\\d'))",
+            "cellfun(@(x) ~isempty(regexp(x, '\\d')), passwords)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q40. Which is NOT a function that adds text to a plot?",
+        "options": [
+            "title",
+            "text",
+            "label",
+            "legend"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q41. Which code block most likely produced this graph?",
+        "options": [
+            "ab Q39](images/matlab_Q39.jpg)",
+            "",
+            "",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q42. What kind of files are stored with the .mat extension?",
+        "options": [
+            "figure files",
+            "script files",
+            "function files",
+            "stored variable files"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q43. You would like to randomly reorder every element in array a and put the result into another array b. Which code is NOT necessary to do that?",
+        "options": [
+            ":10;`",
+            "",
+            " a(randi(10, 1, 10));`",
+            ""
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q44. Which statement returns **1** (true)?",
+        "options": [
+            "",
+            "tand'",
+            "tand\"",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q45. Which does E contain?",
+        "options": [
+            "",
+            "dog' 'cat' 'mouse'}",
+            "cow' 'piranha' 'mouse'}",
+            "tdiff(C,D)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q46. Where in the UI can you see what variables have been created, their values, and their class?",
+        "options": [
+            "Editor",
+            "command window",
+            "details",
+            "workspace"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q47. Given the following x and y coordinates, which choice calculates a linear regression for the x and y coordinates, and which plots the points of the x,y data and the regression line on the same graph?",
+        "options": [
+            "",
+            "0646 6.4362 7.8266 8.3945 5.6135 4.8186 2.8862 10.9311 1.1908 3.2586",
+            ".4357 11.0923 14.1417 14.9506 8.7687 8.0416 5.1662 20.5005 1.0978",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q48. If you run this piece of code, you will get an error. Why?",
+        "options": [
+            "",
+            " 1 2 3; 4 5 6 7];",
+            "2;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q49. Which command will create a 10-element vector v with values from 1 to 10?",
+        "options": [
+            "v = {1:10}",
+            "v = [1-10]",
+            "v = 1:10",
+            "v = (10)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q50. For a 5 x 5 array, the two subscript index (4,2) indexes the same location as linear index `___`.",
+        "options": [
+            "7",
+            "8",
+            "17",
+            "9"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q51.What is a difference between global variable and persistent variables?",
+        "options": [
+            "Global variables have a higher performance overhead than persistent variables.",
+            "Global variables remain in memory after clear all; persistent variables do not.",
+            "Global variables can be used to cache data in memory; persistent variables cannot.",
+            "Global variables are accessible outside the function scope; persistent variables are not."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q52. How is the random seed for MATLAB's random number generator first initializedin a MATLAB Session?",
+        "options": [
+            "Seed is undefined until it is initialized by the user.",
+            "Seed is set to a value based on the current time when user first calls rand()",
+            "Seed is set to a value based on the current time on startup.",
+            "Seed is set to a static default value on startup."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q53. At what will MATLAB look first for a called function?",
+        "options": [
+            "functions on the path",
+            "built-in functions",
+            "functions within the current file",
+            "functions within the current directory"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q54. Which choice is the correct syntax for declaring a function that returns the input value as the output?",
+        "options": [
+            "",
+            "",
+            "on mystery_func(a) :",
+            "turn a"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q55. What is the state of a at the end of this code?",
+        "options": [
+            "",
+            " 2; 3 4];",
+            ":,2);",
+            "+ 3;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q56. You've just plotted some data and want to change the color behind the lines you've plotted to black. Which code block will accomplish this?",
+        "options": [
+            "`h_f = figure; set(h_f,'Color', [0 0 0]);`",
+            "`h_a = gca; set(h_a,'Color', [0 0 0]);`",
+            "`h_a = axes; set(h_a,'Color', [0 0 0]);`",
+            "`h_f = gcf; set(h_a,'Color', [0 0 0]);`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q57. Which statement will return all the odd numbers from 1 to 9?",
+        "options": [
+            "`2*[1:5]+1`",
+            "`1:2:9`",
+            "`isodd(1:9)`",
+            "`1:odd:9`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q58. In MATLAB, the `imfilter` command performs a convolution operation between an image and a matrix. Suppose you have an image loaded in MATLAB into the variable `img` and you apply the following code. The original image appears slightly blurred because the convolution smoothed out the image (removed noise). Why do you think this happened?",
+        "options": [
+            "",
+            "es(5,5)/25;",
+            "(imfilter(img,h));",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q59. What is the size of `b`?",
+        "options": [
+            "",
+            " 2 3];",
+            "pmat(a,2,3);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q60. Which statement reverses vector `a`?",
+        "options": [
+            "",
+            "1 2 3 4];",
+            "",
+            "reverse(a)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q61. Which command will create a column vector with the values 7, 8, and 9?",
+        "options": [
+            "`c = [7,8,9]`",
+            "`c = [7: 8: 9]`",
+            "`c = [7; 8; 9]`",
+            "`c = [7 8 9]`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q62. What do you call in the **command** window to see all the variables in the workspace and their classes?",
+        "options": [
+            "`who`",
+            "`vars`",
+            "`whos`",
+            "`who all`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q63. You wrote a new function named `snap` in an m-file and when you call it, you're not getting the output you expect. You previously wrote a different function named `snap`, which you think might also be on the search path. Which command can you use to see if the old `snap` function is being called?",
+        "options": [
+            "which",
+            "who",
+            "lookfor",
+            "what"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q64. What is a reason to save a MAT-file using the `-v7.3` flag?",
+        "options": [
+            "to ensure backward compatibility",
+            "to avoid HDF5 overhead in MAT-file",
+            "to include a variable greater that 2GB",
+            "to use compression by default"
+        ],
+        "_ps": 2
+    }
+]

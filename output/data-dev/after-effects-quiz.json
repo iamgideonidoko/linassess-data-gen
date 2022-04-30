@@ -1,0 +1,152 @@
+[
+    {
+        "question": "Q1. What type of light never casts a shadow in a 3D scene?",
+        "options": [
+            "Parallel",
+            "Ambient",
+            "Point",
+            "Spot"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q2. Where do you change the shutter angle for the motion blur in a composition?",
+        "options": [
+            "on the Basic tab of the Composition Settings dialog box",
+            "on the Advanced tab of the Composition Settings dialog box",
+            "on the 3D Renderer tab of the Composition Settings dialog box",
+            "in the File > Project Settings dialog box"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. What is a null object?",
+        "options": [
+            "a special layer used to hold expressions",
+            "an invisible layer that has all the properties of a visible layer so it can be parented to any layer in the composition",
+            "a solid layer with a black background that can be parented to any layer in the composition",
+            "a visible layer that can be parented to any layer in the composition"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q4. What adjustment in the Lumetri Color effect can help restore edge detail to footage?",
+        "options": [
+            "Contrast",
+            "Clarity",
+            "Sharpen",
+            "Intensity"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. Where can you control the settings for footage created from an After Effects composition?",
+        "options": [
+            "Render Queue panel",
+            "Save As dialog box",
+            "Export Queue panel",
+            "Progress panel"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q6. Which blur effect supports the use of a depth matte to define the focal range?",
+        "options": [
+            "Camera Lens Blur",
+            "Bilateral Blur",
+            "Smart BlurS",
+            "Channel Blur"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. How can you create a direct relationship between two layer properties?",
+        "options": [
+            "Use the pick whip to enable Parenting.",
+            "Use grouping.",
+            "Use Value Linking.",
+            "Use the pick whip to enable Connecting."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q8. Which technique is useful for creating slow-motion, fast-motion, freeze frame, or other retiming results for a layer?",
+        "options": [
+            "Time Remapping",
+            "Time Displacement",
+            "Posterize Time",
+            "CC Wide Time"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q9. An image was created on a transparent background in Photoshop using different dimensions to this After Effects composition. Which option was used when importing the PSD file shown below to place the image at its original scale and position?",
+        "options": [
+            "Click Import As > Composition.",
+            "Click Import As > Footage.",
+            "Click Import As > Composition – Retain Layer Size.",
+            "Set the PSD sequence option."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q10. How can you render a file in the background and keep working in After Effects?",
+        "options": [
+            "Click File > Export > Add to Adobe Media Encoder Queue.",
+            "Click File > Watch Folders.",
+            "Click File > Export > Background Render.",
+            "Click File > Export > Add to Render Queue."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. What properties are added to a 3D layer? (Select three items.)",
+        "options": [
+            "otation",
+            "hor Point",
+            "erial Options",
+            "ition"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q12. You want to include controls from an After Effects composition in the Essential Graphics panel. What is one way to do this?",
+        "options": [
+            "Command+click (Mac) or Ctrl+click (Windows) a property in the Timeline to add it to the Essential Graphics panel.",
+            "Select Add Formatting.",
+            "Drag a property from the Timeline into the Essential Graphics panel.",
+            "Double-click a property in the Timeline to add it to the Essential Graphics panel."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q13. You have applied the Auto Levels effect but notice flickering in the results. How can you reduce this?",
+        "options": [
+            "Adjust the Black Clip property.",
+            "Increase the Blend with Original property.",
+            "Increase the Temporal Smoothing property.",
+            "Adjust the White Clip property."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q14. Which type of light is used in this scene?",
+        "options": [
+            "Ambient",
+            "Spot",
+            "Point",
+            "Parallel"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q15. Which effect recovers alpha-channel detail from a scene keyed by a typical keying effect, including recovering detail lost due to compression artifacts?",
+        "options": [
+            "Keying > Advanced Spill Suppressor",
+            "Keying > Key Cleaner",
+            "Keying > Extract",
+            "Keying > Keylight (1.2)"
+        ],
+        "_ps": -1
+    }
+]

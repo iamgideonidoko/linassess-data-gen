@@ -1,0 +1,572 @@
+[
+    {
+        "question": "Q1. Which file contains all the drawing document-specific information, such as specifications for units, drafting standard, font selections, etc?",
+        "options": [
+            "SOLIDWORKS drawing template",
+            "SOLIDWORKS composer file",
+            "SOLIDWORKS part file",
+            "SOLIDWORKS sheet format"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q2. You need to design a steel spring with a pitch diameter of 3 inches, free length of 10 inches, and pitch of 1 inch. How would you accomplish this in SOLIDWORKS?",
+        "options": [
+            "Create a new sketch of a circle with a diameter of 1 inch. Then use the Helix/Spiral curve command and define a height of 10 inches and pitch of 3 inches.",
+            "Create a new sketch of a circle with a diameter of 3 inches. Then use the Helix/Spiral curve command to define a height of 10 inches and pitch of 1 inch.",
+            "First, create a new sketch of a circle of 10 inches. Then use the Helix/Spiral curve command and define by pitch of 1 inch and 3 revolutions.",
+            "Use the Helix/Spiral curve command and define a diameter of 3 inches, height of 10 inches, and pitch of 1 inch."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q3. Which single feature could you use to create this image?",
+        "options": [
+            "dworks image](images/solidworks_q3.jpg)",
+            "Loft",
+            "Extruded Boss/Base",
+            "Sweep"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q4. Which choice is NOT a fillet type in SOLIDWORKS?",
+        "options": [
+            "constant size",
+            "variable size",
+            "face",
+            "angled"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q5. Your sketch is not extruding correctly. It does not seem to be a properly closed contour, although from a simple visual inspection, it looks to be fully closed. You think perhaps there are some very small gaps in your contour that are causing the issue. What tool can you use to find these small gaps?",
+        "options": [
+            "Quick Snaps",
+            "Rebuild",
+            "Repair Sketch",
+            "Show Error"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q6. Which choice is an example of a skected feature?",
+        "options": [
+            "chamfer",
+            "extrusion",
+            "fillet",
+            "shell"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q7. You want to make two circles have the same center point within a SOLIDWORKS sketch. How can you do this?",
+        "options": [
+            "Add a tangent relation between the circles",
+            "Add a concentric relation between the circles",
+            "Add a horizontal relation between the circles",
+            "Add an equal relation between the circles"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q8. Which reference geometry is NOT available in SOLIDWORKS?",
+        "options": [
+            "sphere",
+            "plane",
+            "point",
+            "axis"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q9. Specifying two lines to be perpendicular to each other would be an example of what?",
+        "options": [
+            "feature",
+            "relation",
+            "extrude",
+            "dimension"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q10. You want to focus on a single component within your assembly and hide all the rest. How can you do this?",
+        "options": [
+            "Right-click the component you want to focus on and select Change Transparency",
+            "Right-click the component you want to focus on and select Hide",
+            "Right-click the component you want to focus on and select Isolate",
+            "Right-click the component you want to focus on and select Suppress"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q11. What will Save As do on an existing saved part?",
+        "options": [
+            "It will delete the original part and save the current part with a new name",
+            "It will keep the original part and save the current path with a new name",
+            "It will save both the original part and the new part in the current state",
+            "It will rename the original part"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q12. You want to show a list of the raw materials, subassemblies, intermediate assemblies, subcomponents, and parts, and the quantities of each, needed to manufacture an end product. What would be useful to accomplish this?",
+        "options": [
+            "bill of material",
+            "isometric view",
+            "exploded view",
+            "hole list"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q13. Freezing a portion of a model can be used if you work with complex models with many features. Why",
+        "options": [
+            "Freezing the features helps to show only the critical features of the model",
+            "Freezing the features helps to show the internal features of the model",
+            "Freezing the features helps to reduce the rebuild time and prevent unintentional changes to the model",
+            "Freezing the features helps to show the external features of the model"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q14. Which single features could you use to design a cube, a sphere, and a paperclip, respectively?",
+        "options": [
+            "Revolved Boss/Base, Shell, and Sweep",
+            "Shell, Revolved Boss/Base, and Extruded Boss/Base",
+            "Extruded Boss/Base, Revolved Boss/Base, and Sweep",
+            "Draft, Extruded Boss/Base, and Shell"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q15. Which choice is NOT a standard mate within SOLIDWORKS?",
+        "options": [
+            "parallel",
+            "coindicent",
+            "equal",
+            "concentric"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q16. How would you temporarily remove a feature from a model?",
+        "options": [
+            "Click the feature in the FeatureManager design tree or graphics area, then select Suppress",
+            "Drag the feature to the Suppression folder, located at the top of the FeatureManager design tree",
+            "You cannot remove features temporarily-you can only delete them completely",
+            "Drag the feature to the bottom of the FeatureManager design tree, then drag the Suppression bar above it"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q17. You want to show an assembly's components spread out and positioned to show how they fit together when assembled. How do you accomplish this?",
+        "options": [
+            "Use Assembly Visualization",
+            "Use a bill of materials",
+            "Use isometric view",
+            "Use exploded view"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q18. How would you fix a Lofted Boss/Base feature that appears twisted?",
+        "options": [
+            "Drag the loft connectors to the correct position, or use guide curves",
+            "Reduce the spacing between the loft profiles, then scale the loft body as required",
+            "Loft shapes are driven entirely by the loft profiles, adjust the skecthes to remove any ambiguity in the loft path",
+            "Ensure that the Twist Along Path option is not selected"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q19. When creating a sweep feature, you receive this error: \"Cannot get to a point on the path to start with. For an open path, the path must intersect with the section plane.\" How can you fix this?",
+        "options": [
+            "Ensure that the path sketch touches the profile sketch at some point",
+            "Select the Path Merge option within the sweep feature",
+            "Select the Path Intersection option within the sweep feature",
+            "Edit the path sketch and reduce any areas of tight curvature"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q20. With injection molding, one common manufacturing requirement or preference is applying a taper or angle to faces to help with part removal from the mold. Which feature can help you meet this requirement?",
+        "options": [
+            "Loft",
+            "Draft",
+            "Wrap",
+            "Sweep"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q21. You want to simplify a very large and complex assembly to improve performance while working within it. What should you use?",
+        "options": [
+            "DFMXpress",
+            "SpeedPak",
+            "a flexible subassembly",
+            "Design Checker"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q22. If you are working with ISO standards, which projection method would you most likely be using?",
+        "options": [
+            "second angle projection",
+            "fourth angle projection",
+            "first angle projection",
+            "third angle projection"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q23. You have a single line within a sketch that you would like to split into three separate lines. How can you achieve this?",
+        "options": [
+            "Use the Offset Entities tool",
+            "Use the Split Line tool",
+            "Use the Split Entities tool",
+            "Use the Split tool"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q24. What controls the direction and magnitude of a spline curvature?",
+        "options": [
+            "inflection point",
+            "control point",
+            "spline point",
+            "spline handle"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q25. You want to build a new part within an assembly to ensure in-context relations and dimensions. You also want to save out this part file as its own unique file. After navigating to the Assembly ribbon tab, what do you do next?",
+        "options": [
+            "Under Insert Component, select Part to create a new in-context part. Right-click the new part and select isolate",
+            "Select Insert Component to create a new in-context part. Right-click te new part and select Save Part (in External File)",
+            "Under Insert Components, select New Part to create a new in-context part. Right-click the new part and select Save Selection",
+            "Under Insert Components, select New Part to create a new in-context part. Right-click the new part and select Save Part (in External File)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q26. The ribbon bar at the top of your SOLIDWORKS screen has disappeared. How can you get it back?",
+        "options": [
+            "Click View > Toolbars > CommandManager",
+            "Click View > Toolbars > FeatureManager",
+            "Click View > Toolbars > MotionManager",
+            "Click View > Toolbars > Task Pane"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q27. Representing a three-dimensional object by a number of two-dimensional views is generally called",
+        "options": [
+            "isometric projection",
+            "oblique projection",
+            "object projection",
+            "orthographic projection"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q28. How can you rename a feature?",
+        "options": [
+            "Select the feature name and press F2, or slow-double-click the feature name",
+            "Select the feature name and press F3 key, or right-click the feature name",
+            "Select the feature name and press F7, or quick-double-click the feature name",
+            "Select the feature name and press F5 key, or double-click the feature name"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q29. When using the Fillet tool, what does the Tanget Propagation option do?",
+        "options": [
+            "It creates a fillet that is tanget to the direction of view",
+            "It creates a fillet that varies in size, depending on lcoal tangency",
+            "It creates a constant-size fillet around all selections",
+            "It extends the fillet to all faces that are tangent to the selected face"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q30. You notice that one of the subassemblies in your main assembly is rigid and does not have mobility it should. How can you resolve this issue?",
+        "options": [
+            "Select the subassembly and then select **Make Subassembly Flexible** from the context menu",
+            "Select the subassembly and then select **Set Resolved from LightWeight** from the context menu",
+            "Select the subassembly and then select **Edit Assembly** from the context menu",
+            "Select the subassembly and then select **Make Independent** from the context menu"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q31. You dimension an arc in a drawing and notice that the dimension is coming in as the radius value. You want to show the diameter value. To do this, first you click the dimension to open the dimension PropertyManager. What do you do next?",
+        "options": [
+            "On the **Leaders** tab, select **Diameter**",
+            "On the **Other** tab, select **Diameter**",
+            "On the **Value** tab, and select **Diameter**",
+            "On the **Value** tab, seect **Override Value**"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q32. In the image below, which are the parents and children of the Vertical Boss Feature?",
+        "options": [
+            "dworks image](images/solidworks_q32.png)",
+            "The parent is Base Feature; the children are Slot Cutout, Sketch3, CBORE Hole, and Fillet2",
+            "The parent is Vertical Boss; the childre are Base Feature, Slot Cutout, Sketch3, CBORE Hole, and Fillet2",
+            "The parent is Base Feature; the children are Vertical Boss, Slot Cutout, Sketch3, CBORE Holde, and Fillet2"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q33. In this image, which parts are fixed?",
+        "options": [
+            "dworks image](images/solidworks_q33.png)",
+            "BASE",
+            "LINK 3",
+            "LINK 5"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q34. What is this image an example of?",
+        "options": [
+            "dworks image](images/solidworks_q34.png)",
+            "a hole table",
+            "a revision table",
+            "a tolerance table"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q35. What type of dimensioning is shown here?",
+        "options": [
+            "dworks image](images/solidworks_q35.png)",
+            "smart dimensioning",
+            "angular running dimensioning",
+            "ordinate dimensioning"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q36. In the image below, what types of hole are A1 and B1 respectively?",
+        "options": [
+            "dworks image](images/solidworks_q36.png)",
+            "countersink and counterbore",
+            "counterbore and countersink",
+            "standard and threaded/tapped"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q37. What is this sketch an example of?",
+        "options": [
+            "dworks image](images/solidworks_q37.png)",
+            "an open contour sketch",
+            "a multi-contour or intersecting sketch",
+            "a triple contour sketch"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q38. Can this skecth be extruded?",
+        "options": [
+            "dworks image](images/solidworks_q37.png)",
+            "Yes, you can extrude it using the standard extrude boss option",
+            "Yes, you can extrude it using the Selected Contours option",
+            "No, the sketch is an open contour and this cannot be extruded"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q39. Why is it useful to suppress a feature?",
+        "options": [
+            "Suppressing changes the color of a feature. This is useful to help easily distinguish between different features.",
+            "Suppressing removes a feature from a model, but does not delete it. This is useful if you need that feature back in the future.",
+            "Suppressing removes a feature from a model forever. This is useful if you no longer need that feature.",
+            "Suppressing makes a feature transparent. This is useful if you ever need to see through a feature when modeling."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q40. Which choice is not a standard view orientation in SOLIDWORKS?",
+        "options": [
+            "back",
+            "down",
+            "right",
+            "front"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q41. What type of view is used to show a portion of some parent view, usually at an enlarged scale?",
+        "options": [
+            "detail view",
+            "auxiliary view",
+            "break view",
+            "section view"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q42. How can you create relationships between parts within an assembly?",
+        "options": [
+            "Use mates.",
+            "Use constraints.",
+            "Use relations.",
+            "Use dimensions."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q43. What is required to create a solid using the Swept Boss/Base tool?",
+        "options": [
+            "a profile and a path",
+            "a sketch and an axis of revolution",
+            "atleast two profiles",
+            "a sketch"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q44. Which statement best describes the term \"parametric modeling\"?",
+        "options": [
+            "This type of modeling is often compared to working with modeling clay.",
+            "The dimensions and relations used to create a feature are captured and stored in the model.",
+            "You can simply push and pull the geometry until you arrive at the shape you require.",
+            "Dimensions and relations are not captured or stored within the model."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q45. What is required to create a solid using the Extruded Boss/Base tool?",
+        "options": [
+            "at least two profiles",
+            "a sketch and an axis of revolution",
+            "a sketch",
+            "a profile and a path"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q46. Which choice is an example of an applied feature?",
+        "options": [
+            "extrusion",
+            "revolve",
+            "fillet",
+            "sweep"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q47. How can you change the size of a toolbox screw in an assembly?",
+        "options": [
+            "Right-click the component and select Edit Toolbox Component.",
+            "Toolbox part sizes cannot be changed once added. You have to delete the screw and then readd one of the correct size.",
+            "Edit the screw part and add a scale feature using only the required axes.",
+            "Open the screw part, then manually adjust the dimensions and save as a copy."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q48. Which choice is not a standard 3D view in SOLIDWORKS?",
+        "options": [
+            "dimetric",
+            "trimetric",
+            "isometric",
+            "oblique"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q49. You are designing a robotic arm assembly. You want the first link of the arm to be able to rotate about the base, but only a total of 270 degrees from the start point and no further. How would you achieve this?",
+        "options": [
+            "Use an Angle mate.",
+            "Use a Mechanical mate.",
+            "Use a Limit Angle mate",
+            "Use a Gear mate."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q50. How can you reattach a broken reference in a derived split part?",
+        "options": [
+            "Right-click the filename at the top of the FeatureManager design tree and select Relink Stock Part.",
+            "Once derived part references are broken, they cannot be readded. Consider resplitting the part.",
+            "Locate the child part using SOLIDWORKS Explorer and select Relink Parent.",
+            "Edit the stock feature at the start of the FeatureManager design tree, then adjust the Defining Stock Part option."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q51. You have designed a plastic part that you want to split and save in two separate unique parts. You use the Split tool to split the part in half and create the two bodies. What do you do next?",
+        "options": [
+            "Navigate to the Solid Bodies folder, right-click the body name, and select Isolate to save to a new file. Repeat for the other body.",
+            "Within the Split tool, select Consume Bodies.",
+            "Within the Split tool, select Save as New Files.",
+            "Within the Split tool, click File, double-click the body name, type a name for the new part, and click Save."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q52. What is required to create a new 2D sketch?",
+        "options": [
+            "any existing geometry",
+            "any existing plane or curved face",
+            "any existing plane or planar face",
+            "any planar or curved surface"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q53. You want to enlarge your current design by 3%. What tool would you use?",
+        "options": [
+            "Extrude",
+            "Loft",
+            "Scale",
+            "Truncate"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q54. Earlier within your part design, you created a sketch. Now you want to make a copy of this sketch to use on a different plane or face. You want to ensure that the two sketches will always be the same, so that if you modify the original sketch, the new sketch is updated to reflect the same changes. How can you achieve this?",
+        "options": [
+            "Copy and paste the original sketch.",
+            "Copy and paste the original sketch using Paste Special.",
+            "Create a composite sketch.",
+            "Create a derived sketch."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q55. When creating sketches, small boxes show up next to the sketch lines. What are these boxes called?",
+        "options": [
+            "check boxes",
+            "locks",
+            "statuses",
+            "relations"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q56. You notice your sketch is blue. How can you make your sketch fully defined?",
+        "options": [
+            "Add in any additional required features.",
+            "Add in the additional dimensions or relations.",
+            "Nothing, the sketch is already fully defined.",
+            "Remove any additional dimensions or relations."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q57. Which sketch relation can you NOT apply to a rectangle?",
+        "options": [
+            "coincident",
+            "collinear",
+            "concentric",
+            "fix"
+        ],
+        "_ps": 2
+    }
+]

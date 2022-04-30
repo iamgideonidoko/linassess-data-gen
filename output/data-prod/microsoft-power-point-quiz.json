@@ -1,0 +1,812 @@
+[
+    {
+        "question": "Q1. When you create a new, blank presentation, you begin with one blank slide. What is the layout name of this slide?",
+        "options": [
+            "Blank",
+            "Title slide",
+            "Title and Content",
+            "Title Onty"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q2. What do you use to align objects on a slide to one another?",
+        "options": [
+            "Layout tools",
+            "Arrange tools",
+            "Design Ideas feature",
+            "Picture tools"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q3. Which option must be enabled if you want to manipulate the playback of a video file during a presentation?",
+        "options": [
+            "Record Side Show",
+            "Use Presenter View",
+            "Show Playback Controls",
+            "Show Media Controls"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q4. Which feature analyzes the content of your slides and offers suggested options?",
+        "options": [
+            "Design ideas",
+            "Smartart",
+            "Browse for Themes",
+            "Add-Ins"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q5. Where can you configure advanced PDF options?",
+        "options": [
+            "the Options tab",
+            "the Home tab",
+            "the Print dialog box",
+            "the Share tab"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q6. Which tab is best for adding various types of objects to slides?",
+        "options": [
+            "Animations",
+            "view",
+            "File",
+            "Insert"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q7. Which SmartArt category can you use to make informational graphics out of bullet points?",
+        "options": [
+            "all of these answers",
+            "Pyramid",
+            "List",
+            "Matrix"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q8. What is NOT checked when you run the Accessibility Checker?",
+        "options": [
+            "reading order",
+            "slide titles",
+            "missing alt text",
+            "grammar"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q9. How can you change the appearance of a table in one click?",
+        "options": [
+            "Apply a cell stye.",
+            "Apply a graphic style.",
+            "Apply a table style.",
+            "Right-click a table and choose a new style."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q10. Which option changes a text box so that it automatically changes shape to fit longer text?",
+        "options": [
+            "Resize shape to fit text",
+            "Do not autofit",
+            "none of these answers",
+            "Shrink text on overflow"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q11. Which three shadow properties can be adjusted in PowerPoint?",
+        "options": [
+            "",
+            "al Point",
+            "th",
+            "r"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q12. You want your presentation to play continuously on screen, What option must you set?",
+        "options": [
+            "Use Presenter view",
+            "Advance slides manually",
+            "Advance slides automatically",
+            "Loop continuously until 'Esc'"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q13. Which statement about the Compress Pictures command is true?",
+        "options": [
+            "You can compress all images at the same time.",
+            "You cannot delete cropped areas.",
+            "There are no options for print output.",
+            "You can compress only one image at a time."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q14. You have a Word document you would like to import as an outline into a PowerPoint presentation. How should you format the text in your Word document that you want to be the slide content?",
+        "options": [
+            "Heading Style 2",
+            "Subtitle",
+            "Content Style",
+            "List 2"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q15. In what manner can you filter comments?",
+        "options": [
+            "by length",
+            "by author",
+            "by date",
+            "by urgency"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q16. Which Arrow Options choice will hide the mouse cursor when presenting, except when the cursor is moved?",
+        "options": [
+            "Automatic",
+            "Hidden",
+            "none of these answers",
+            "Visible"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q17. Which chart type is best suited for displaying annual financial data for a 10-year period?",
+        "options": [
+            "donut chart",
+            "line or area chart",
+            "area chart",
+            "pie chart"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q18. If you want to create an organizational chart, which SmartArt category works best?",
+        "options": [
+            "Pyramid",
+            "Relationship",
+            "Hierarchy",
+            "Matrix"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q19. When printing multiple handouts, which option will group multipage documents together and make them easier to distribute?",
+        "options": [
+            "Print on Both Sides",
+            "Uncollated",
+            "Print One-sided",
+            "Collated"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q20. How can you adjust which data in a table is used when working on a chart?",
+        "options": [
+            "Click the Switch Row/Column button.",
+            "Click the Refresh Data button.",
+            "Click the Select Data button.",
+            "Click the Edit Data button."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q21. Which view lets you see additional information on a second monitor when delivering a presentation?",
+        "options": [
+            "Normal view",
+            "Reading view",
+            "Slide Sorter view",
+            "Presenter view"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q22. A picture looks good in your slide show but pixelated when you print it. How can you fix this?",
+        "options": [
+            "Compress the picture and use the Print (220 ppi) resolution setting.",
+            "Select Best scale for slide show, increase the picture resolution and resize the picture to the original size",
+            "Remove picture compression.",
+            "Change the printer property settings to print in a higher resolution."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q23. You have inserted a video on a slide and want the video to automatically start 2 seconds after the associated slide appears. How can you accomplish this?",
+        "options": [
+            "Use playback timings.",
+            "Use animation timings.",
+            "Use animation triggers.",
+            "Use video timings."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q24. When inserting pictures, how can you avoid distorting the pictureif it is resized later?",
+        "options": [
+            "Use best scale for slide show.",
+            "Lock the aspect ratio.",
+            "Compress the picture.",
+            "Set the picture to be relative to the orignal picture size."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q25. Which Protect Presentation option protects a presentation from accidental changes?",
+        "options": [
+            "Always Open Read-Only",
+            "Add a Digital Signature",
+            "Encrypt with Password",
+            "Mark as Final"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q26. How can you change colors in your presentation all at once without changing the design?",
+        "options": [
+            "Apply a Color Template.",
+            "Apply a Color Theme.",
+            "Apply a Color Palette.",
+            "Customize the Color Fills."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q27. What function allows you to borrow slides from a presentation fro an other presentation?",
+        "options": [
+            "Borrow Slides",
+            "There is no special fuction. You must use Copy and Pase",
+            "Reuse Slides",
+            "Find Slides"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q28. What is the term used for the arrangement of elements on a slide, such as Title and Content?",
+        "options": [
+            "theme",
+            "design",
+            "sheme",
+            "layout"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q29. How would you change a list of text to a visual diagram on a slide?",
+        "options": [
+            "Convert to WordArt.",
+            "Convert to Shapes.",
+            "Convert to SmartArt.",
+            "Convert to Picture."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q30. You need to reorder the levels of shapes on a SmartArt diagram. How can this be done",
+        "options": [
+            "Retype the text",
+            "Change the shapes from rifht to left.",
+            "Promote Shapes and/or Demote Shapes.",
+            "Move the shapes up and down."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q31. Why would you trim a video?",
+        "options": [
+            "To crop the video thumbnail.",
+            "To resize the video.",
+            "To remove background noise in the video.",
+            "To remove some of the beginning and/or end of the video."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q32. How would you save your layouts, colors, fonts, effects, background styles and content for others to use with their presentations?",
+        "options": [
+            "Export the file as a template.",
+            "Save the file as a PDF.",
+            "Save the file as a POTX.",
+            "Save the file as a PPTX."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q33. You are creating an industrial presentation of a new software program and would like to include an image of your program. How can you use PowerPoint to do this?",
+        "options": [
+            "Use the Copy command.",
+            "Use the Screenshot command. (Office2019)",
+            "Use the Print key.",
+            "Use the Capture Screen command."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q34. How can you add more layouts to the Layout Gallery?",
+        "options": [
+            "Customize the Layout Gallery.",
+            "Add Slide Layouts to the Slide Master.",
+            "Use the Add Layouts command.",
+            "Use the Insert Layouts command."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q35. Why would you use the Outline view?",
+        "options": [
+            "To see only the text in placeholders.",
+            "To present the slides at a high level.",
+            "To add text from a Word document.",
+            "To organize your slides."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q36. The text on the left and right of the slide are cut off in print preview. How can you fix this in the printer settings?",
+        "options": [
+            "Unselect High Quality.",
+            "Select Scale to Fit Paper.",
+            "Select Frame Slides.",
+            "Select Frame Slides."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q37. In addition to organizing your slides, how else can sections increase your productivity?",
+        "options": [
+            "In addition to organizing your slides, how else can sections increase your productivity?.",
+            "All the slides in a section can be selected at once to apply changes such as transitions, layouts or hiding slides.",
+            "Sections can be exported as a separate presentation.",
+            "You can resize all the slides in a section at once."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q38. You have many slides that you need to reorder. How would you accomplish this?",
+        "options": [
+            "Move the slides in Slide Show view.",
+            "Renumber the slides in Outline view.",
+            "Move the slides in the Slide Sorter view.",
+            "Reset the slide footers."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q39. What can be seen in Presenter view?",
+        "options": [
+            "Timer.",
+            "Notes.",
+            "Side Navigator.",
+            "all of these answers."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q40. How can you format the entire contents of a text box?",
+        "options": [
+            "Click the dashed/dotted border of the text box.",
+            "Right-click the text box and select Select All.",
+            "Click the Fond button on the Home tab.",
+            "Double-click any word in the text box."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q41. You have a large number of objects on your slide. How can you use the selection pane to help you identify the objects quickly?",
+        "options": [
+            "Select the show/hide icons next to the objects.",
+            "Rename the objects with meaningful names.",
+            "Drag and drop the objects.",
+            "Tab through the objects and note each object as it's highlighted."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q42. How would you ensure a consistent appearance and placement across your slides even though the content might be different?",
+        "options": [
+            "Use fonts.",
+            "Use styles.",
+            "Use bullet points.",
+            "Use layouts."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q43. How can you add icons to SmartArt?",
+        "options": [
+            "Select the picture icon in a SmartArt Picture Diagram.",
+            "Select the icon in a SmartArt Icon Diagram.",
+            "Select Insert Icon and place it on top of the SmartArt Diagram.",
+            "Select a SmartArt shape and select Insert Icon."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q44. You are having trouble playing back a presentation smoothly. What should you do?",
+        "options": [
+            "Copy the presentation to your internal hard drive.",
+            "Clear the **Disable hardware graphics acceleration** option.",
+            "all of these answers",
+            "Select the **Show without animation** option."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q45. Which feature lets you configure multiple combinations of specific slides for playback from a larger slideshow?",
+        "options": [
+            "Record Slide Show",
+            "Rehearse Timings",
+            "Custom Slide Show",
+            "Hide Slide"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q46. When working with a mapchart, which options can be drawn?",
+        "options": [
+            "Postal code",
+            "State",
+            "Country",
+            "All of these answers"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q47. You receive feedback from two clients on your presentation. Each person sent you an edited file. What's the best way to review their changes?",
+        "options": [
+            "Review > Accept",
+            "Review > Smart Lookup",
+            "Review > Compare",
+            "Review > Show Comments"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q48. How do you promote subbullets to top-level bullets?",
+        "options": [
+            "Press Shift+Tab.",
+            "Right-click the bulleted text and select Promote.",
+            "Press the Esc key.",
+            "Press the Spacebar."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q49. What is the term used for the arrangement of elements on a slide, such as Title and Content?",
+        "options": [
+            "scheme",
+            "layout",
+            "theme",
+            "design"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q50. After you select the chart icon in a placeholder, what is the next step to create a chart?",
+        "options": [
+            "Select the chart elements.",
+            "Select the chart type.",
+            "Select the chart data in Excel.",
+            "Select the chart style."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q51. How would you show a correlation between the amount of chocolate a city consumes and the number of crimes committed?",
+        "options": [
+            "Use a bar chart.",
+            "Use a column chart.",
+            "Use a line chart.",
+            "Use a scatter chart."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q52. You want to use a morph transition between two slides. How do you set up the slides?",
+        "options": [
+            "The two slides must have multiple objects in common with different names in the Selection pane",
+            "The two slides must have at least one obiect in common that is in a different position on the second slide",
+            "The second slide must have different objects that are in the same position as the objects on the first slide",
+            "The two slides must have at least one obiect in common that is in the same position on the second slide"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q53. Why would you use the Rehearse Timings command?",
+        "options": [
+            "to adiust animation timings",
+            "to record your slide show",
+            "to remove transition timings",
+            "to determine how long it takes to present your slide show"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q54. How can you make an inserted picture look like it has been sketched or painted?",
+        "options": [
+            "Apply a picture effect",
+            "Apply a draw effect",
+            "Apply an artistic effect",
+            "Apply a picture style"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q55. How can you modify your presentations entire set of colors with a single change?",
+        "options": [
+            "Apply a color template",
+            "Customize a color fill",
+            "Apply a color palette",
+            "Apply a color theme"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q56. You want to print full-page slides to fill 8. 5-by-11-inch paper, but they appear too small in the preview. What is the best way to rectify this?",
+        "options": [
+            "Change the slide size to standard",
+            "Repeatedly bump up the scale setting print option until it fills the page in the preview",
+            "Change the scale setting print option to 100%",
+            "Select the **Scale to Fit Paper** print option"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q57. You want to import a Word document as an outline into a Powerpoint presentation. How should you format the Word documents text that you want to be the slide content?",
+        "options": [
+            "List 2",
+            "Content Style",
+            "Subtitle",
+            "Heading Style 2"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q58. What is not reviewed when you check a slide shows accessibility?",
+        "options": [
+            "missing alt text",
+            "slide titles",
+            "grammar",
+            "reading order"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q59. What is the easiest way to change the appearance of a table?",
+        "options": [
+            "Apply a graphic style",
+            "Apply a table style",
+            "Right-click a table and select a new style",
+            "Apply a cell style"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q60. Why would you use Outline view?",
+        "options": [
+            "to quickly edit titles or bulleted text in the Slide pane",
+            "to view the comments on all slides",
+            "to add notes in the Slide pane",
+            "to change the font on all slides"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q61. Before publishing a presentation, which option should you use to scan a presentation and look for issues that may make it difficult for someone with a visual impairment to read?",
+        "options": [
+            "Protect Presentation",
+            "Inspect Document",
+            "Check Compatibility",
+            "Check Accessibility"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q62. How can you filter the series and/or categories in a chart?",
+        "options": [
+            "Edit the data to remove the data for the series or category.",
+            "Switch the rows and columns.",
+            "Use a filter so the data series or category does not display.",
+            "Change the chart type."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q63. You have an object that needs to follow a specific motion path - including curves, straight lines, and loops - on the slide. Which animation gives the capability to draw this?",
+        "options": [
+            "Loops",
+            "Arc",
+            "Turns",
+            "Custom Path."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q64. When you add encryption to a PowerPoint presentation, what does it do?",
+        "options": [
+            "scrambles the text so it is unreadable when opened.",
+            "shares the file in cloud-based platform.",
+            "protects the file with a password.",
+            "requires the user to log in to their Office 365 account."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q65. Which type of shape allows you to add text that can be moved around, formatted with styles and effects, or grouped with other objects?",
+        "options": [
+            "screenshot",
+            "text box.",
+            "icon",
+            "3D model"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q66. You need to apply a special effect that will display as the presentation moves from one slide to the next slide. Which should you apply?",
+        "options": [
+            "theme",
+            "transition",
+            "animation",
+            "design ideas"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q67. Which option can be used to import selected slides from a previously created presentation into a new presention without manually copying and pasting them?",
+        "options": [
+            "Slide Zoom",
+            "Reuse Slide",
+            "Slides from Outline",
+            "Add Section"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q68. The picture on the left is the original image. The image on the right is smaller, but the flowers are the same size and part of the picture has been removed. What method was used to format this picture?",
+        "options": [
+            "es](images/Q68.png)",
+            "changing the width and height with aspect ration locked",
+            "drapping a corner sizing handle",
+            "using the **Crop to Shape** tool"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q69. Which view allows you to see additional information on a second monitor when delivering a presentation?",
+        "options": [
+            "Normal",
+            "Presenter View",
+            "Slide Sorter",
+            "Reading"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q70. You are copying and pasting slides from another presentation into your presentation. How will you ensure the new slides are consistent in appearance with your existing slides?",
+        "options": [
+            "Select **Keep Source Formatting** when pasting the slides.",
+            "Select **Use Destination Theme** when pasting the slides.",
+            "Change both presentations to the same theme before copying and pasting.",
+            "Select **Picture** when pasting the slides."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q71. What happens when you press the Esc key while playing a **From Current Slide** or **From Beginning** slide show?",
+        "options": [
+            "The current slide is temporary hidden.",
+            "The slide show ends and you return to your previous view.",
+            "The next slide appears.",
+            "Nothing happens."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q72. When you save a presentation with a `.potx` file extension, which type of Powerpoint file is created?",
+        "options": [
+            "macro-eanbled presentation",
+            "template",
+            "show",
+            "theme"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q73. You are presenting with two monitors. Which view displays a preview of next slide and speaker notes on the second monitor?",
+        "options": [
+            "Presenter view",
+            "Master view",
+            "Normal view",
+            "Reading view"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q74. Which effect can a presenter use to add motion to an object on a slide?",
+        "options": [
+            "Add-in",
+            "Zoom",
+            "Animation",
+            "Transition"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q75. When you copy data from an Excel worksheet into a slide to create a table, which Paste option will allow you to edit the table data in Excel?",
+        "options": [
+            "Keep Formatting",
+            "Embed",
+            "Keep Text Only",
+            "Picture"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q76. You created a photo album with transitions and want to send it to friends, but the file size is too large for email. How can you use one command to fix this?",
+        "options": [
+            "Click **Export** in Backstage view and embed the presentation in an email.",
+            "Compress all the pictures to the **Email (96 ppi) resolution**.",
+            "Use the Share feature in Backstage view and petty email to automatically compress the pictures.",
+            "Use the Share feature in Backstage view to create a pdf to send as an attachment."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q77. In a presentation about voter turnout, you are illustrating various data with charts. Which type of information would you present in a pie chart?",
+        "options": [
+            "the decline of voter turnout by county",
+            "trends in voter turnout over the part 10 years",
+            "what percentage of the whole population voted",
+            "how many people voted in various geographic regions on a map"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q78. A few lines of text are overflowing the placeholder on your slide. How can you fix it on your slide?",
+        "options": [
+            "(images/Q79.png)",
+            "Delete the overflowing text.",
+            "Select **Stop Fitting Text to This Placeholder**.",
+            "Select **Autofit Text to Placeholder**."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q79. If you want to create an organizational chart that illustrates the reporting relationships within the organization, which SmartArt category would you use?",
+        "options": [
+            "Hierarchy",
+            "Matrix",
+            "Pyramid",
+            "Relationship"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q80. What do the labels Introduction and ProjectsByMonth indicate?",
+        "options": [
+            "(images/Q81.png)",
+            "selection names",
+            "layouts",
+            "hidden slides"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q81. There are objects and text hidden behind an image on your slide. With the image selected, what could you adjust to make the objects and text appear \"through\" the image?",
+        "options": [
+            "Compress Picture",
+            "Transparency",
+            "Corrections",
+            "Artistic Effects"
+        ],
+        "_ps": -1
+    }
+]

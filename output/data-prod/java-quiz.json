@@ -1,0 +1,1282 @@
+[
+    {
+        "question": "Q1. Given the string \"strawberries\" saved in a variable called fruit, what would `fruit.substring(2, 5)` return?",
+        "options": [
+            "rawb",
+            "raw",
+            "awb",
+            "traw"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q2. How can you achieve runtime polymorphism in Java?",
+        "options": [
+            "method overloading",
+            "method overrunning",
+            "method overriding",
+            "method calling"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q3. Given the following definitions, which of these expression will **NOT** evaluate to true?",
+        "options": [
+            "an b1 = true, b2 = false; int i1 = 1, i2 = 2;`",
+            "`(i1 | i2) == 3`",
+            "`i2 && b1`",
+            "`b1 || !b2`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q4. What is the output of this code?",
+        "options": [
+            "a",
+            "ss Main {",
+            "ublic static void main (String[] args) {",
+            " int array[] = {1, 2, 3, 4};"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. Which of the following can replace the CODE SNIPPET to make the code below print \"Hello World\"?",
+        "options": [
+            "a",
+            "ace Interface1 {",
+            "atic void print() {",
+            "  System.out.print(\"Hello\");"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q6. What does the following code print?",
+        "options": [
+            "a",
+            " str = \"abcde\";",
+            "im();",
+            "UpperCase();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. What is the result of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main (String[] args){",
+            "  System.out.println(print(1));"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q8. Which class can compile given these declarations?",
+        "options": [
+            "a",
+            "ace One {",
+            "fault void method() {",
+            "  System.out.println(\"One\");"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q9. What is the output of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main (String[] args) {",
+            "  List list = new ArrayList();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q10. Given the following two classes, what will be the output of the Main class?",
+        "options": [
+            "a",
+            "e mypackage;",
+            " class Math {",
+            "blic static int abs(int num){"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. What is the result of this code?",
+        "options": [
+            "a",
+            "ss MainClass {",
+            "nal String message(){",
+            "  return \"Hello!\";"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q12. Given this code, which command will output \"2\"?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main(String[] args) {",
+            "  System.out.println(args[2]);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q13. What is the output of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main(String[] args){",
+            "  int a = 123451234512345;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q14. What is the output of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main (String[] args) {",
+            "  String message = \"Hello world!\";"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q15. How do you write a foreach loop that will iterate over ArrayList\\<Pencil\\>pencilCase?",
+        "options": [
+            "`for (Pencil pencil : pencilCase) {}`",
+            "`for (pencilCase.next()) {}`",
+            "`for (Pencil pencil : pencilCase.iterator()) {}`",
+            "`for (pencil in pencilCase) {}`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q16. What does this code print?",
+        "options": [
+            "a",
+            ".out.print(\"apple\".compareTo(\"banana\"));",
+            "",
+            "`0`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q17. You have an ArrayList of names that you want to sort alphabetically. Which approach would **NOT** work?",
+        "options": [
+            "`names.sort(Comparator.comparing(String::toString))`",
+            "`Collections.sort(names)`",
+            "`names.sort(List.DESCENDING)`",
+            "`names.stream().sorted((s1, s2) -> s1.compareTo(s2)).collect(Collectors.toList())`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q18. By implementing encapsulation, you cannot directly access the class's \\_ properties unless you are writing code inside the class itself.",
+        "options": [
+            "private",
+            "protected",
+            "no-modifier",
+            "public"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q19. Which is the most up-to-date way to instantiate the current date?",
+        "options": [
+            "`new SimpleDateFormat(\"yyyy-MM-dd\").format(new Date())`",
+            "`new Date(System.currentTimeMillis())`",
+            "`LocalDate.now()`",
+            "`Calendar.getInstance().getTime()`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q20. Fill in the blank to create a piece of code that will tell whether `int0` is divisible by `5`:",
+        "options": [
+            "an isDivisibleBy5 = _____`",
+            "`int0 / 5 ? true: false`",
+            "`int0 % 5 == 0`",
+            "`int0 % 5 != 5`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q21. How many times will this code print \"Hello World!\"?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main(String[] args){",
+            "  for (int i=0; i<10; i=i++){"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q22. The runtime system starts your program by calling which function first?",
+        "options": [
+            "print",
+            "iterative",
+            "hello",
+            "main"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. What code would you use in Constructor A to call Constructor B?",
+        "options": [
+            "a",
+            " class Jedi {",
+            "onstructor A */",
+            "(String name, String species){}"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q24. Which statement is **NOT** true?",
+        "options": [
+            "An anonymous class may specify an abstract base class as its base type.",
+            "An anonymous class does not require a zero-argument constructor.",
+            "An anonymous class may specify an interface as its base type.",
+            "An anonymous class may specify both an abstract class and interface as base types."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q25. What will this program print out to the console when executed?",
+        "options": [
+            "a",
+            " java.util.LinkedList;",
+            " class Main {",
+            "blic static void main(String[] args){"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q26. What is the output of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main(String[] args){",
+            " String message = \"Hello\";"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q27. Object-oriented programming is a style of programming where you organize your program around \\_ rather than \\_ and data rather than logic.",
+        "options": [
+            "functions; actions",
+            "objects; actions",
+            "actions; functions",
+            "actions; objects"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q28. What statement returns true if \"nifty\" is of type String?",
+        "options": [
+            "`\"nifty\".getType().equals(\"String\")`",
+            "`\"nifty\".getType() == String`",
+            "`\"nifty\".getClass().getSimpleName() == \"String\"`",
+            "`\"nifty\" instanceof String`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q29. What is the output of this code?",
+        "options": [
+            "a",
+            " java.util.*;",
+            "Main {",
+            "c static void main(String[] args) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q30. What is the result of this code?",
+        "options": [
+            "a",
+            "ss Main {",
+            "ject message(){",
+            "eturn \"Hello!\";"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q31. What method can be used to create a new instance of an object?",
+        "options": [
+            "another instance",
+            "field",
+            "constructor",
+            "private method"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q32. Which is the most reliable expression for testing whether the values of two string variables are the same?",
+        "options": [
+            "string1 == string2",
+            "string1 = string2",
+            "string1.matches(string2)",
+            "string1.equals(string2)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q33. Which letters will print when this code is run?",
+        "options": [
+            "a",
+            " static void main(String[] args) {",
+            "",
+            "em.out.println(\"A\");"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q34. What is the output of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "c int count = 0;",
+            "c static void main(String[] args) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q35. What is the output of this code?",
+        "options": [
+            "a",
+            " java.util.*;",
+            "Main {",
+            "c static void main(String[] args) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q36. What is the output of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "c static void main(String[] args) {",
+            "ng message = \"Hello\";"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q37. What is displayed when this code is compiled and executed?",
+        "options": [
+            "a",
+            " class Main {",
+            "c static void main(String[] args) {",
+            "x = 5;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q38. Which approach cannot be used to iterate over a List named _theList_?",
+        "options": [
+            "A",
+            "a",
+            "nt i = 0; i < theList.size(); i++) {",
+            "stem.out.println(theList.get(i));"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q39. What method signature will work with this code?",
+        "options": [
+            "an healthyOrNot = isHealthy(\"avocado\");`",
+            "public void isHealthy(String avocado)",
+            "boolean isHealthy(String string)",
+            "public isHealthy(\"avocado\")"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q40. Which are valid keywords in a Java module descriptor (module-info.java)?",
+        "options": [
+            "provides, employs",
+            "imports, exports",
+            "consumes, supplies",
+            "requires, exports"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q41. Which type of variable keeps a constant value once it is assigned?",
+        "options": [
+            "non-static",
+            "static",
+            "final",
+            "private"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q42. How does the keyword `volatile` affect how a variable is handled?",
+        "options": [
+            "It will be read by only one thread at a time.",
+            "It will be stored on the hard drive.",
+            "It will never be cached by the CPU.",
+            "It will be preferentially garbage collected."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q43. What is the result of this code?",
+        "options": [
+            "a",
+            "mooch = 'x';",
+            ".out.println((int) smooch);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q44. You get a NullPointerException. What is the most likely cause?",
+        "options": [
+            "A file that needs to be opened cannot be found.",
+            "A network connection has been lost in the middle of communications.",
+            "Your code has used up all available memory.",
+            "The object you are using has not been instantiated."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q45. How would you fix this code so that it compiles?",
+        "options": [
+            "a",
+            " class Nosey {",
+            "ge;",
+            "c static void main(String[] args) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q46. Add a Duck called \"Waddles\" to the ArrayList **ducks**.",
+        "options": [
+            "a",
+            " class Duck {",
+            "te String name;",
+            "String name) {}"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q47. If you encounter `UnsupportedClassVersionError` it means the code was `___` on a newer version of Java than the JRE `___` it.",
+        "options": [
+            "executed; interpreting",
+            "executed; compiling",
+            "compiled; executing",
+            "compiled, translating"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q48. Given this class, how would you make the code compile?",
+        "options": [
+            "a",
+            " class TheClass {",
+            "ivate final int x;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q49. How many times f will be printed?",
+        "options": [
+            "a",
+            " class Solution {",
+            "blic static void main(String[] args) {",
+            "  for (int i = 44; i > 40; i--) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q50. Which statements about `abstract` classes are true?",
+        "options": [
+            "",
+            "y can be instantiated.",
+            "y allow member variables and methods to be inherited by subclasses.",
+            "y can contain constructors."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q51. Which keyword lets you call the constructor of a parent class?",
+        "options": [
+            "parent",
+            "super",
+            "this",
+            "new"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q52. What is the result of this code?",
+        "options": [
+            "a",
+            "nt a = 1;",
+            "nt b = 0;",
+            "nt c = a/b;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q53. Normally, to access a static member of a class such as Math.PI, you would need to specify the class \"Math\". What would be the best way to allow you to use simply \"PI\" in your code?",
+        "options": [
+            "Add a static import.",
+            "Declare local copies of the constant in your code.",
+            "This cannot be done. You must always qualify references to static members with the class form which they came from.",
+            "Put the static members in an interface and inherit from that interface."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q54. Which keyword lets you use an interface?",
+        "options": [
+            "extends",
+            "implements",
+            "inherits",
+            "import"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q55. Why are ArrayLists better than arrays?",
+        "options": [
+            "You don't have to decide the size of an ArrayList when you first make it.",
+            "You can put more items into an ArrayList than into an array.",
+            "ArrayLists can hold more kinds of objects than arrays.",
+            "You don't have to decide the type of an ArrayList when you first make it."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q56. Declare a variable that holds the first four digits of Π",
+        "options": [
+            "int pi = 3.141;",
+            "decimal pi = 3.141;",
+            "double pi = 3.141;",
+            "float pi = 3.141;"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q57. Use the magic power to cast a spell",
+        "options": [
+            "a",
+            " class MagicPower {",
+            "id castSpell(String spell) {}",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q58. What language construct serves as a blueprint containing an object's properties and functionality?",
+        "options": [
+            "constructor",
+            "instance",
+            "class",
+            "method"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q59. What does this code print?",
+        "options": [
+            "a",
+            " static void main(String[] args) {",
+            "t x=5,y=10;",
+            "apsies(x,y);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q60. What is the result of this code?",
+        "options": [
+            "a",
+            "",
+            "stem.out.println(\"Hello World\");",
+            "h (Exception e) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q61. Which is not a java keyword",
+        "options": [
+            "finally",
+            "native",
+            "interface",
+            "unsigned"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q62. Which operator would you use to find the remainder after division?",
+        "options": [
+            "`%`",
+            "`//`",
+            "`/`",
+            "`DIV`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q63. Which choice is a disadvantage of inheritance?",
+        "options": [
+            "Overridden methods of the parent class cannot be reused.",
+            "Responsibilities are not evenly distributed between parent and child classes.",
+            "Classes related by inheritance are tightly coupled to each other.",
+            "The internal state of the parent class is accessible to its children."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q64. Declare and initialize an array of 10 ints.",
+        "options": [
+            "`Array<Integer> numbers = new Array<Integer>(10);`",
+            "`Array[int] numbers = new Array[int](10);`",
+            "`int[] numbers = new int[10];`",
+            "`int numbers[] = int[10];`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q65. Refactor this event handler to a lambda expression:",
+        "options": [
+            "a",
+            "Button.addActionListener(new ActionListener() {",
+            "verride",
+            "blic void actionPerformed(ActionEvent e) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q66. Which functional interfaces does Java provide to serve as data types for lambda expressions?",
+        "options": [
+            "Observer, Observable",
+            "Collector, Builder",
+            "Filter, Map, Reduce",
+            "Consumer, Predicate, Supplier"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q67. What is a valid use of the hashCode() method?",
+        "options": [
+            "encrypting user passwords",
+            "deciding if two instances of a class are equal",
+            "enabling HashMap to find matches faster",
+            "moving objects from a List to a HashMap"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q68. What kind of relationship does \"extends\" denote?",
+        "options": [
+            "uses-a",
+            "is-a",
+            "has-a",
+            "was-a"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q69. How do you force an object to be garbage collected?",
+        "options": [
+            "Set object to null and call Runtime.gc()",
+            "Set object to null and call System.gc()",
+            "Set object to null and call Runtime.getRuntime().runFinalization()",
+            "There is no way to force an object to be garbage collected"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q70. Java programmers commonly use design patterns. Some examples are the **\\_**, which helps create instances of a class, the **\\_**, which ensures that only one instance of a class can be created; and the **\\_**, which allows for a group of algorithms to be interchangeable.",
+        "options": [
+            "static factory method; singleton; strategy pattern",
+            "strategy pattern; static factory method; singleton",
+            "creation pattern; singleton; prototype pattern",
+            "singleton; strategy pattern; static factory method"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q71. Using Java's Reflection API, you can use \\_ to get the name of a class and \\_ to retrieve an array of its methods.",
+        "options": [
+            "this.getClass().getSimpleName(); this.getClass().getDeclaredMethods()",
+            "this.getName(); this.getMethods()",
+            "Reflection.getName(this); Reflection.getMethods(this)",
+            "Reflection.getClass(this).getName(); Reflection.getClass(this).getMethods()"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q72. Which is not a valid lambda expression?",
+        "options": [
+            "`a -> false;`",
+            "`(a) -> false;`",
+            "`String a -> false;`",
+            "`(String a) -> false;`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q73. Which access modifier makes variables and methods visible only in the class where they are declared?",
+        "options": [
+            "public",
+            "protected",
+            "nonmodifier",
+            "private"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q74. What type of variable can be assigned to only once?",
+        "options": [
+            "private",
+            "non-static",
+            "final",
+            "static"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q75. How would you convert a String to an Int?",
+        "options": [
+            "`\"21\".intValue()`",
+            "`String.toInt(\"21\")`",
+            "`Integer.parseInt(\"21\")`",
+            "`String.valueOf(\"21\")`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q76. What method should be added to the Duck class to print the name Moby?",
+        "options": [
+            "a",
+            " class Duck {",
+            "ivate String name;",
+            "ck(String name) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q77. Which operator is used to concatenate Strings in Java",
+        "options": [
+            "`+`",
+            "`&`",
+            "`.`",
+            "`-`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q78. How many times does this loop print \"exterminate\"?",
+        "options": [
+            "a",
+            "nt i = 44; i > 40; i--) {",
+            "stem.out.println(\"exterminate\");",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q79. What is the value of myCharacter after line 3 is run?",
+        "options": [
+            "a",
+            "lic class Main {",
+            "ublic static void main (String[] args) {",
+            " char myCharacter = \"piper\".charAt(3);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q80. When should you use a static method?",
+        "options": [
+            "when your method is related to the object's characteristics",
+            "when you want your method to be available independently of class instances",
+            "when your method uses an object's instance variable",
+            "when your method is dependent on the specific instance that calls it"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q81. What phrase indicates that a function receives a copy of each argument passed to it rather than a reference to the objects themselves?",
+        "options": [
+            "pass by reference",
+            "pass by occurrence",
+            "pass by value",
+            "API call"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q82. In Java, what is the scope of a method's argument or parameter?",
+        "options": [
+            "inside the method",
+            "both inside and outside the method",
+            "neither inside nor outside the method",
+            "outside the method"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q83. What is the output of this code?",
+        "options": [
+            "a",
+            " class Main {",
+            "ic static void main (String[] args) {",
+            "t[] sampleNumbers = {8, 5, 3, 1};"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q84. Which change will make this code compile successfully?",
+        "options": [
+            "a",
+            "lic class Main {",
+            "tring MESSAGE =\"Hello!\";",
+            "tatic void print(){"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q85. What is the output of this code?",
+        "options": [
+            "a",
+            " java.util.*;",
+            "Main {",
+            "ic static void main(String[] args) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q86. Which code snippet is valid?",
+        "options": [
+            "`ArrayList<String> words = new ArrayList<String>(){\"Hello\", \"World\"};`",
+            "`ArrayList words = Arrays.asList(\"Hello\", \"World\");`",
+            "`ArrayList<String> words = {\"Hello\", \"World\"};`",
+            "`ArrayList<String> words = new ArrayList<>(Arrays.asList(\"Hello\", \"World\"));`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q87. What is the output of this code?",
+        "options": [
+            "a",
+            "Main {",
+            "ic static void main(String[] args) {",
+            "ringBuilder sb = new StringBuilder(\"hello\");"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q88. How would you use the TaxCalculator to determine the amount of tax on $50?",
+        "options": [
+            "a",
+            "TaxCalculator {",
+            "ic calculate(total) {",
+            "turn total * .05;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q89. What is the output of this code?",
+        "options": [
+            "a",
+            "c class Main {",
+            "blic static void main(String[] args) {",
+            "HashMap<String, Integer> pantry = new HashMap<>();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q90. Which characteristic does not apply to instances of java.util.HashSet=",
+        "options": [
+            "uses hashcode of objects when inserted",
+            "contains unordred elements",
+            "contains unique elements",
+            "contains sorted elements"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q91. What is the output?",
+        "options": [
+            "a",
+            " java.util.*;",
+            " class Main {",
+            "c static void main(String[] args)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q92. What will this code print, assuming it is inside the main method of a class?",
+        "options": [
+            "m.out.println(\"hello my friends\".split(\" \")[0]);`",
+            "my",
+            "hellomyfriends",
+            "hello"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q93. You have an instance of type Map<String, Integer> named instruments containing the following key-value pairs: guitar=1200, cello=3000, and drum=2000. If you add the new key-value pair cello=4500 to the Map using the put method, how many elements do you have in the Map when you call instruments.size()?",
+        "options": [
+            "2",
+            "When calling the put method, Java will throw an exception",
+            "4",
+            "3"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q94. Which class acts as root class for Java Exception hierarchy?",
+        "options": [
+            "Clonable",
+            "Throwable",
+            "Object",
+            "Serializable"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q95. Which class does not implement the java.util.Collection interface?",
+        "options": [
+            "java.util.Vector",
+            "java.util.ArrayList",
+            "java.util.HashSet",
+            "java.util.HashMap"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q96. You have a variable of named `employees` of type `List<Employee>` containing multiple entries. The `Employee` type has a method `getName()` that returns te employee name. Which statement properly extracts a list of employee names?",
+        "options": [
+            "`employees.collect(employee -> employee.getName());`",
+            "`employees.filter(Employee::getName).collect(Collectors.toUnmodifiableList());`",
+            "`employees.stream().map(Employee::getName).collect(Collectors.toList());`",
+            "`employees.stream().collect((e) -> e.getName());`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q97. What is the correct return type for the `processFunction` method:",
+        "options": [
+            "",
+            "rocessFunction(Integer number, Function<Integer, String> lambda) {",
+            "turn lambda.apply(number);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q98. This code does not compile. What needs to be changed so that it does?",
+        "options": [
+            "",
+            " enum Direction {",
+            "ST(\"E\"),",
+            "ST(\"W\"),"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q99. Which language feature ensures that objects implementing the `AutoCloseable` interface are closed when it completes?",
+        "options": [
+            "try-catch-finally",
+            "try-finally-close",
+            "try-with-resources",
+            "try-catch-close"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q100. What code should go in line 3?",
+        "options": [
+            "a",
+            "Main {",
+            "blic static void main(String[] args) {",
+            "  array[0] = new int[]{1, 2, 3};"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q101. Is this an example of method overloading or overriding?",
+        "options": [
+            "a",
+            "Car {",
+            "blic void accelerate() {}",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q102. Which choice is the best data type for working with money in Java?",
+        "options": [
+            "float",
+            "String",
+            "double",
+            "BigDecimal"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q103. Which statement about constructors is not ture?",
+        "options": [
+            "A class can have multiple constructors with a different parameter list.",
+            "You can call another constructor with `this` or `super`.",
+            "A constructor does not define a return value.",
+            "Every class must explicitly define a constructor without parameters."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q104. What language feature allows types to be parameters on classes, interfaces, and methods in order to reuse the same code for different data types?",
+        "options": [
+            "Regular Expressions",
+            "Reflection",
+            "Generics",
+            "Concurrency"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q105. What will be printed?",
+        "options": [
+            "a",
+            " class Berries{",
+            "ring berry = \"blue\";",
+            "blic static void main( String[] args ) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q106. What is the value of `forestCount` after this code executes?",
+        "options": [
+            "a",
+            "ring, Integer> forestSpecies = new HashMap<>();",
+            "Species.put(\"Amazon\", 30000);",
+            "Species.put(\"Congo\", 10000);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q107. What is a problem with this code?",
+        "options": [
+            "a",
+            " java.util.ArrayList;",
+            " java.util.Arrays;",
+            " java.util.List;"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q108. How do you convert this method into a lambda expression?",
+        "options": [
+            "a",
+            " int square(int x){",
+            "turn x * x;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q109. Which choice is a valid implementation of this interface?",
+        "options": [
+            "a",
+            "ace MyInterface {",
+            "t foo(int x);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q110. What is the result of this program?",
+        "options": [
+            "a",
+            "ace Foo{",
+            "t x = 10;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q111. Which statement must be inserted on line 1 to print the value true?",
+        "options": [
+            "",
+            "",
+            "ional<String> opt = Optional.of(val);",
+            "tem.out.println(opt.isPresent());"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q112. What will this code print, assuming it is inside the main method of a class?",
+        "options": [
+            "a",
+            ".out.println(true && false || true);",
+            ".out.println(false || false && true);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q113. What will this code print?",
+        "options": [
+            "a",
+            "tring> list1 = new ArrayList<>();",
+            "add( \"One\" );",
+            "add( \"Two\" );"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q114. Which code checks whether the characters in two Strings,named `time` and `money`, are the same?",
+        "options": [
+            "`if(time <> money){}`",
+            "`if(time.equals(money)){}`",
+            "`if(time == money){}`",
+            "`if(time = money){}`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q115. An **\\_** is a serious issue thrown by the JVM that the JVM is unlikely to recover from. An **\\_** is an unexpected event that an application may be able to deal with in order to continue execution.",
+        "options": [
+            "exception,assertion",
+            "AbnormalException, AccidentalException",
+            "error, exception",
+            "exception, error"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q116. Which keyword would not be allowed here?",
+        "options": [
+            "a",
+            "Unicorn {",
+            "___ Unicorn(){}",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q117. Which OOP concept is this code an example of?",
+        "options": [
+            "a",
+            " myLists = {",
+            "w ArrayList<>(),",
+            "w LinkedList<>(),"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q118. What does this code print?",
+        "options": [
+            "a",
+            " a = \"bikini\";",
+            " b = new String(\"bikini\");",
+            " c = new String(\"bikini\");"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q119. What keyword is added to a method declaration to ensure that two threads do not simultaneously execute it on the same object instance?",
+        "options": [
+            "native",
+            "volatile",
+            "synchronized",
+            "lock"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q120. Which is a valid type for this lambda function?",
+        "options": [
+            "a",
+            "oddOrEven = x -> {",
+            "turn x % 2 == 0 ? \"even\" : \"odd\";",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q121. What is displayed when this code is compiled and executed?",
+        "options": [
+            "a",
+            " java.util.HashMap;",
+            " class Main {",
+            "blic static void main(String[] args) {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q122. What variable type should be declared for capitalize?",
+        "options": [
+            "ll",
+            "tring> songTitles = Arrays.asList(\"humble\", \"element\", \"dna\");",
+            "_ capitalize = (str) -> str.toUpperCase();",
+            "tles.stream().map(capitalize).forEach(System.out::println);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q123. Which is the correct return type for the processFunction method?",
+        "options": [
+            "a",
+            "processFunction(Integer number, Function<Integer, String> lambda) {",
+            "  return lambda.apply(number);",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q124. What function could you use to replace slashes for dashes in a list of dates?",
+        "options": [
+            "a",
+            "tring> dates = new ArrayList<String>();",
+            "sing code",
+            "replaceAll(replaceSlashes);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q125. From which class do all other classes implicitly extend?",
+        "options": [
+            "`Object`",
+            "`Main`",
+            "`Java`",
+            "`Class`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q126. How do you create and run a Thread for this class?",
+        "options": [
+            "a",
+            " java.util.date;",
+            " class CurrentDateRunnable implements Runnable {",
+            "verride"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q127. What keyword would _not_ be allowed here?",
+        "options": [
+            "a",
+            "Unicorn {",
+            "____ Unicorn(){}",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q128. Which expression is a functional equivalent?",
+        "options": [
+            "a",
+            "nteger> numbers = List.of(1,2,3,4);",
+            "tal = 0;",
+            "nteger x : numbers) {"
+        ],
+        "_ps": -1
+    }
+]

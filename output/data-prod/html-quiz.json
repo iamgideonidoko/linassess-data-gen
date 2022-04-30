@@ -1,0 +1,1102 @@
+[
+    {
+        "question": "Q1. What is the purpose of the `<track>` tag, and when should it be used?",
+        "options": [
+            "The `<track>` tag is used for specifying subtitles. It is typically applied as a child of the `<audio>` and `<video>` tags.",
+            "The `<track>` tag is used for specifying subtitles. It is typically applied as a child of the `<video>` tag.",
+            "The `<track>` tag is used for specifying subtitles, captions, and other types of time-based text. It is typically applied as a child of the `<video>` tag.",
+            "The `<track>` tag is used for specifying subtitles, captions, and other types of time-based text. It is typically applied as a child of the `<audio>` and `<video>` tag."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q2. What are the best examples of void elements?",
+        "options": [
+            "`<link><meta><title>`",
+            "`<br><base><source>`",
+            "`<input><br><p>`",
+            "`<area><embed><strong>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q3. In HTML5, which tag or tags embed a webpage inside of a webpage?",
+        "options": [
+            "`<iframe>, <frame>, and <frameset>`",
+            "`<frame>`",
+            "`<iframe>`",
+            "`<frame> and <frameset>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q4. Where do `<header>` and `<footer>` tags typically occur?",
+        "options": [
+            "as children of `<body>, <article>, <aside>, and <section>` tags",
+            "as children of `<body>, <article>, and <section>` tags",
+            "as children of `<body>, <article>, <aside>, <nav>, and <section>` tags",
+            "as children of `<body>, <article>, <table>, and <section>` tags"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q5. What is the best way to apply bold styling to text?",
+        "options": [
+            "`<strong>`",
+            "Use CSS.",
+            "`<bold>`",
+            "`<b>`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q6. When is the `<link>` tag used?",
+        "options": [
+            "when linking style sheets, JavaScript, and icons for mobile apps",
+            "when linking style sheets, favicons, and preloading assets",
+            "when linking one webpage to another",
+            "when linking style sheets, external URLs, and favicons"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q7. The \"value\" attribute is associated with which set of tags?",
+        "options": [
+            "`<button><input><form>`",
+            "`<input><label><meter>`",
+            "`<input><option><textarea>`",
+            "`<li><input><option>`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q8. What should fill the two blanks in the HTML code below?",
+        "options": [
+            "l",
+            "ss ______ _____>",
+            "n itemprop=\"streetAddress\">6410 Via Real</span><br />",
+            "n itemprop=\"addressLocality\">Carpinteria</span>,"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q9. When should you use the `<aside>` element?",
+        "options": [
+            "when the content can be removed without detracting from the page's message",
+            "for anything you want to move to the side, like a pull quote box, a sidebar, or an image with text wrapping around it",
+            "for anything in parentheses",
+            "for anything in a sidebar"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q10. With which tags is the `<source>` element associated?",
+        "options": [
+            "`<svg>, <picture>, <audio>, and <video>`",
+            "`<picture>, <audio>, and <video>`",
+            "It is interchangeable with the `src` attribute, so any element which uses `src` may use `<source>`",
+            "`<audio> and <video>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q11. What is NOT a valid attribute for the `<textarea>` element?",
+        "options": [
+            "readonly",
+            "max",
+            "form",
+            "spellcheck"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q12. What is the best way to code the sample shown?",
+        "options": [
+            "le text](images/ss-2.png?raw=true)",
+            "A",
+            "l",
+            "ls>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q13. What is the purpose of the `<samp>` element?",
+        "options": [
+            "It connects the web browser to a SA-MP server.",
+            "It identifies enclosed text as a sampler or an example.",
+            "It identifies sample output from a computer program.",
+            "It uses a simple application messaging protocol to connect the browser to a texting device."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q14. When should you use `<ol>` and `<ul>` elements?",
+        "options": [
+            "Use `<ul>` when you want a bulleted list and `<ol>` when you want a numbered list.",
+            "Use `<ul>` when you have a list of items in which the order of the items matters. Use `<ol>` when you have a list of items that could go in any order.",
+            "Use `<ol>` when you want a bulleted list and `<ul>` when you want a numbered list.",
+            "Use `<ol>` when you have a list of items in which the order of the items matters. Use `<ul>` when you have a list of items that could go in any order."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q15. What is the difference between the post and get methods in a form?",
+        "options": [
+            "post is used for sending information to the server. get is used for retrieving form information from the server.",
+            "get is used for sending information to the server. post is used for retrieving form information from the server.",
+            "With get, data is included in the form body when send to the server. With post, the data goes through the URL.",
+            "With post, data is included in the form body when send to the server. With get, the data goes through the URL."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q16. What is the difference between the `<div>` and `<span>` tags?",
+        "options": [
+            "`<div>` is used where a generic block-level tag is needed, while `<span>` is used where a generic inline tag is needed.",
+            "`<div>` is used for major divisions on a page, while `<span>` is used to span across columns.",
+            "`<div>` is the industry-standard default tag, but you could use `<span>` if you prefer.",
+            "`<div>` is used where a generic inline tag is needed, while `<span>` is used where a generic block-level tag is needed."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q17. What should fill the blank in the HTML code bellow?",
+        "options": [
+            "l",
+            "method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>",
+            "",
+            "enctype"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q18. What is the correct markup for `alt` attribute of an image?",
+        "options": [
+            "A",
+            "l",
+            "rc=\"cubism.jpg\" alt=\"Version of \"\"Whistler's Mother\"\" in cubist style\">",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q19. In the code below, what is the purpose of the **id** attribute?",
+        "options": [
+            "l",
+            "\"warning\">Be careful when installing this product.</p>",
+            "",
+            "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q20. What is the best semantic markup for the sentence shown?",
+        "options": [
+            "kdown",
+            "y 21, 1969, Neil Armstrong said, \"One small step for man, one giant leap for mankind.\"",
+            "",
+            "A"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q21. What should fill the blank in this HTML code?",
+        "options": [
+            "l",
+            "f=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>",
+            "",
+            "es"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q22. Review the text in the red box in the image shown. What is the best way to code this in HTML?",
+        "options": [
+            "e of footer](images/ss-3.png?raw=true)",
+            "ordered list",
+            "unordered list inside a nav element",
+            "ordered list inside a nav element"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q23. What is the best way to code three choices within a form so that the user can select only one item?",
+        "options": [
+            "A",
+            "kdown",
+            " for=\"example\">Make a choice:</label>",
+            "ist id=\"example\">"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q24. How do you confirm that a document is written in HTML5?",
+        "options": [
+            "The server wraps the webpage in an HTML5 wrapper.",
+            "Use the `<!DOCTYPE html>` declaration that starts the document.",
+            "The browser receives encoding from the server to display the document with HTML5.",
+            "It is enclosed in a `<html>` tag."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q25. What does the code shown below accomplish?",
+        "options": [
+            "l",
+            "re>",
+            "rce srcset=\"image1.jpg\" media=\"(min-width: 1000px)\" />",
+            "rce srcset=\"image2.jpg\" media=\"(min-width: 750px)\" />"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q26. What code will produce this table?",
+        "options": [
+            "e with yellow background](images/ss-4.png?raw=true)",
+            "A",
+            "kdown",
+            ">"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q27. What is the `<hr>`tag typically used for?",
+        "options": [
+            "This tag is depreciated and should not be used.",
+            "It designates a topic shift within a section at the paragraph level.",
+            "It draws a horizontal line.",
+            "It designates a shift of topic at the section level."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q28. What should fill the two blanks in the HTML code below?",
+        "options": [
+            "kdown",
+            "on itemscope itemtype=\"http://schema.org/Restaurant\">",
+            "itemprop=\"name\">Nadia's Garden</h1>",
+            "temscope ______ ______>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q29. Which HTML snippet links back to the very top of a webpage?",
+        "options": [
+            "A",
+            "kdown",
+            "\"top\"></a>",
+            "laced at the top of the page -->"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q30. Which three tags where deprecated in HTML4 but returned to HTML5?",
+        "options": [
+            "`<rb> <rp> <rt>`",
+            "`<acronym> <code> <wbr>`",
+            "`<hgroup> <q> <wbr>`",
+            "`<b> <i> <u>`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q31. The **\\_** tag is used for marking up a short code snippet, while the **\\_** tag is used for marking up a longer block of code",
+        "options": [
+            "`<kdb>`, `<pre>`",
+            "`<pre>`, `<code>`",
+            "`<kdb>`, `<mark>`",
+            "`<code>`, `<pre>`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q32. What does the `<label>` element do?",
+        "options": [
+            "It labels webpages with important information.",
+            "It creates an ID for a corresponding input element.",
+            "It overrides the name attribute's value on a child input element.",
+            "It programmatically associates a text label with an interface element."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q33. To get a link to open in a new window or tab, use the **\\_** attribute",
+        "options": [
+            "`_blank`",
+            "`_self`",
+            "`_new`",
+            "`_parent`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q34. What is the most semantically accurate way to mark up the sentence shown below? Note: \"TLAs\" stands for \"three-letter acronyms.\"",
+        "options": [
+            "re fond of our TLAs in web design.**",
+            "A",
+            "l",
+            "are fond of our <span title=\"three-letter acronyms\">TLAs</span> in web design.</p>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q35. What is the correctly nested markup for this list?",
+        "options": [
+            "le list](images/ss-6.png?raw=true)",
+            "A",
+            "kdown",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q37. What should fill the blank below?",
+        "options": [
+            "l",
+            "href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />",
+            "",
+            "title"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q38. What is the semantically correct way to mark up this layout?",
+        "options": [
+            "e](images/ss-5.png?raw=true)",
+            "A",
+            "kdown",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q39. Which choice uses the correct terminology in describing this markup: `<p>info</p>`?",
+        "options": [
+            "The element opener is `<p>`, the element closer is `</p>`, and the element information is info.",
+            "The start tag is `<p>`, the end tag is `</p>`, and the enclosed HTML is info.",
+            "The start tag is `<p>`, the end tag is `</p>`, and the element content is info.",
+            "The start element is `<p>`, the end element is `</p>`, and the tag content is info."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q40. What is the difference between `<input type=\"submit\" value=\"click me\">` and `<button type=\"submit\">Click me</button>`?",
+        "options": [
+            "There is no difference. Both will render a button that submits a form.",
+            "Both will submit a form. However, the `<button>` can have content other than text, like an image or nested HTML elements, while the `<input>` cannot.",
+            "`<input type=\"button\">` has been deprecated in HTML5. You should use the `<button>` tag instead.",
+            "Both will submit a form. However, the `<input>` can have content other than text, like an image or nested HTML elements, while the `<button>` cannot."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q41. What is the best semantic way to indicate that text refers to keyboard entry?",
+        "options": [
+            "`<p>Press the <tt>Enter</tt> key to proceed.</p>`",
+            "`<p>Press the <kbd>Enter</kbd> key to proceed.</p>`",
+            "`<p>Press the <samp>Enter</samp> key to proceed.</p>`",
+            "`<p>Press the Enter key to proceed.</p>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q42. What does this code do?",
+        "options": [
+            "kdown",
+            " controls>",
+            "rce src=\"sound.mp3\" type=\"audio/mpeg\" />",
+            "rce src=\"sound.ogg\" type=\"audio/ogg\" />"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q43. What attribute applies a keyboard shortcut hint to the current element?",
+        "options": [
+            "`accesskey`",
+            "`shortcut`",
+            "`keyboard`",
+            "`access`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q44. What is the correct way to code a link that, when clicked, will send an email to `email@example.com` with a subject of \"Hello\"?",
+        "options": [
+            "`<a href=\"mailto:email@example.com&subject=Hello\">Click me</a>`",
+            "`<a href=\"mailto:email@example.com\">Hello</a>`",
+            "`<a href=\"mailto:email@example.com?subject=Hello\">Click me</a>`",
+            "`<a href=\"mailto:email@example.com?&subject=Hello\">Click me</a>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q45. Which tag is the root element of an HTML document?",
+        "options": [
+            "`<DOCTYPE html>`",
+            "`<html>`",
+            "`<body>`",
+            "`<root>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q46. Which code snippet creates the layout shown, starting at `<table>` and ending at `</table>`?",
+        "options": [
+            "e](images/ss-1.png?raw=true 'table')",
+            "A",
+            "kdown",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q47. Which choice is NOT a legal value for the **name** attribute within a `<meta>` tag?",
+        "options": [
+            "charset",
+            "viewport",
+            "generator",
+            "author"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q48. Which form is coded correctly?",
+        "options": [
+            "A",
+            "kdown",
+            "",
+            "end>Title</legend>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q49. What does the **poster** attribute do in the `<video>` tag?",
+        "options": [
+            "It specifies an image that should display while the video downloads and until the video is played.",
+            "It specifies an image that only displays if there is a problem with the video.",
+            "It specifies an image that should display until the video is played.",
+            "It specifies an image that should display while the video downloads."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q50. What does this code do?",
+        "options": [
+            "l",
+            " controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>",
+            "",
+            "The text displays over the audio controls, unless CSS is used to position it elsewhere."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q51. What is the primary purpose of the `<canvas>` tag?",
+        "options": [
+            "It allows raster images to be rendered on the webpage.",
+            "It displays annotated images.",
+            "It allows drawing on a bitmap via JavaScript.",
+            "It allows vector images to be rendered on the webpage."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q52. Which choice contains three valid block-level elements?</li>",
+        "options": [
+            "`<details> <abbr> <figcaption>`",
+            "`<canvas> <select> <noscript>`",
+            "`<dt> <table> <pre>`",
+            "`<kbd> <p> <main>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q53. In the code below, what is the purpose of the **lang** attribute?",
+        "options": [
+            "l",
+            "g=\"en-GB\">Welcome to our wonderful website.</p>",
+            "",
+            "It establishes the language for the website—in this case, English."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q54. Which image formats can be displayed by all web browsers?",
+        "options": [
+            "JPG, GIF, TIF",
+            "JPG, TIF, BMP",
+            "TIF, BMP, GIF",
+            "PNG, GIF, JPG"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q55. Review the code below. What is the absolute URL for a page called **page.html**?",
+        "options": [
+            "l",
+            "href=\"http://www.linkedin.com/dir/\" />",
+            "",
+            "`http://www.linkedin.com/dir/page.html`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q56. What is the correct way to include a stylesheet named **style.css** in the `<head>` of your document?",
+        "options": [
+            "`<style link=\"style.css\">`",
+            "`<link rel=\"stylesheet\" href=\"style.css\">`",
+            "`<style src=\"style.css\"></style>`",
+            "`<link style=\"style.css\">`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q57. You want to have single spacing in between some lines, like in a poem or an address. Which approach should you use?",
+        "options": [
+            "Wrap the text in a box that is the right width so everything wraps correctly. Set the box width with CSS.",
+            "Separate lines with a `<p>`, then use CSS to make single spacing.",
+            "Use the `<pre>` tag to make the line spacing look exactly like you want.",
+            "Separate the lines with the `<br>` tag."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q58.What does the `<wbr>` tag do?",
+        "options": [
+            "It requires the browser to wrap the current line at that point.",
+            "It breaks a word into two pieces, using a hyphen to connect the words.",
+            "It formats a sentence to be easily breakable.",
+            "It presents an opportunity for a break in a very long word, if needed for proper page display."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q59. Review the code below. How do you include subnavigation for Link 2 that includes a link?",
+        "options": [
+            "kdown",
+            "ul>",
+            "<a href=\"#\">Link 1</a></li>",
+            "<a href=\"#\">Link 2</a></li>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q60. What is the correct way to code a comment in HTML?",
+        "options": [
+            "`//this is a comment`",
+            "`/* this is a comment */`",
+            "`<! this is a comment ->`",
+            "`<!-- this is a comment -->`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q61. Which statement is **false**?",
+        "options": [
+            "Inline elements can be nested inside inline elements.",
+            "Block elements can be nested inside block elements.",
+            "Inline elements can be nested inside block elements.",
+            "Block elements can be nested inside inline elements."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q62. What is the best semantic to use Quotes in HTML?",
+        "options": [
+            " Kruz Said: \"He will Win\"`",
+            "`<q>`",
+            "`<quote>`",
+            "`<blockquote>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q63. What is the semantic meaning of the `<hr>` tag?",
+        "options": [
+            "It draws a horizontal line.",
+            "This tag is deprecated and should not be used.",
+            "It designates a separation of sections within an `<article>`.",
+            "It designates a topic shift within a section at the paragraph level."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q64. How will a video look displayed on a fully loaded webpage if the `<video>` tag is used and the **autoplay** attribute is not set?",
+        "options": [
+            "It will display a random frame from a video, unless the **poster** attribute is set.",
+            "It will display the first frame of the video, unless the **poster** attribute is set.",
+            "It will display nothing unless the **poster** attribute is set.",
+            "It will display a black window unless the **poster** attribute is set."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q65. What is the correct way to describe an empty element?",
+        "options": [
+            "It has opening and closing tags but no child content.",
+            "It display nothing on a website.",
+            "It has no child content and no closing tag.",
+            "It has child content but no closing tag."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q66. What is the purpose of async in this code?",
+        "options": [
+            "pt async src=\"myscript.js\"></script>`",
+            "It downloads the script from the server when resources allow.",
+            "It runs the script after HTML parsing is complete.",
+            "It runs the script when the script is ready."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q67. What does this code?",
+        "options": [
+            "o autoplay loop src=\"sound.mp3\" type=\"audio/mpeg\"></audio>`",
+            "When the **play** button is pressed, the browser plays the sounds over and over again until the user stops it.",
+            "The browser plays the sound once automatically in the background. The user has no control over the sound.",
+            "The browser plays the sound automatically and continuously in the background. The user may stop the sound at any tune."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q68. What is the difference between the `<head>` and `<header>` tags?",
+        "options": [
+            "There is only one `<head>` tag per page, while there may be many `<header>` tags.",
+            "The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.",
+            "all of these answers",
+            "The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q69. In this code, what is the purpose of defer?",
+        "options": [
+            "pt defer src=\"myscript.js\"></script>`",
+            "It downloads the script from the server when resources allow.",
+            "It runs the script after HTML parsing is complete.",
+            "It runs the script when the script is ready."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q70. The code below contains some errors. Which choice corrects all of the errors?",
+        "options": [
+            "l",
+            ">",
+            "",
+            "ll 1"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q71. Given the file and directory structure shown here, what is the correct element to place in file profit.html to link to info.html?",
+        "options": [
+            "e of footer](images/ss-7.png?raw=true)",
+            "`<a href=\"../work/info.html\">See Information </a>`",
+            "`<a href=\"../info.html\">See Information </a>`",
+            "`<a href=\"../../info.html\">See Information </a>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q72. When should you use the `<article>` element?",
+        "options": [
+            "For blog posts and other social media items",
+            "For the main content area of your website",
+            "When the content stands alone as a unit, is suitable for syndication, or is reusable",
+            "To associate comments with a blog post"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q73. Which list comprises three empty elements?",
+        "options": [
+            "A",
+            "L",
+            "",
+            ">"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q74. Which snippet of HTML, when clicked, makes a phone call on a mobile device?",
+        "options": [
+            "`<a href=\"tel:802-555-1212\">Call me</a>`",
+            "`<a href=\"phone\">802-555-1212</a>`",
+            "`<a href=\"tel\">802-555-1212</a>`",
+            "`<a href=\"phone:802-555-1212\">Call me</a>`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q75. What is the purpose of the `class` attribute?",
+        "options": [
+            "Classes allow CSS to select specific elements on the page. You may list as many class names within the class attribute as you wish,",
+            "separated by spaces.",
+            "Classes allow CSS and JavaScript to select specific elements on the page. You may list only one class name per class attribute.",
+            "Classes allow CSS to select specific elements on the page. You may list only one class name per class attribute."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q76. Which choice is not a legal type attribute for the `<input>` tag?",
+        "options": [
+            "`<input type=\"color\">`",
+            "`<input type=\"tel\">`",
+            "`<input type=\"week\">`",
+            "`<input type=\"num\">`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q77. What is the most semantic way to mark up this sentence so that \"happy talk must die\" is rendered as an inline quote?",
+        "options": [
+            "ve Krug once said, happy talk must die.",
+            "`<p>`As Steve Krug once said, `<b>`happy talk must die.`</b>` `</p>`",
+            "`<p>`As Steve Krug once said, `<i>`happy talk must die.`</i>` `</p>`",
+            "`<p>`As Steve Krug once said, `<blockquote>`happy talk must die.`</blockquote>` `</p>`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q78. What is the most semantically accurate way to make up a main navigation bar, displayed in a horizontal direction?",
+        "options": [
+            "A",
+            "kdown",
+            "",
+            "ref=\"index.html\">Home</a>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q79. Which choice is the best way to mark up this layout?",
+        "options": [
+            "e of footer](images/ss-8.png?raw=true)",
+            "A",
+            "kdown",
+            "iling Address</h4>"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q80. What is the primary purpose of HTML?",
+        "options": [
+            "HTML structures the webpage, identifying its elements such as paragraphs, headings, and lists.",
+            "HTML structures and provides a rudimentary look to webpages.",
+            "HTML is responsible for the structure, styling, and interactivity of webpages.",
+            "HTML is responsible for the structure and styling of webpages."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q81. What is the correct way to describe an empty element, such as a line break tag?",
+        "options": [
+            "It displays nothing on a website.",
+            "It has opening and closing tags but no child content.",
+            "It has child content but no closing tag.",
+            "It has no child content and no closing tag."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q82. For the HTML code below, when will \"Sample Text\" display to the browser?",
+        "options": [
+            "kdown",
+            "ipt>Sample Text</noscript>",
+            "",
+            "when there is no JavaScript used on this webpage"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q83. How will this code render by default in most web browsers?",
+        "options": [
+            "kdown",
+            "ls>",
+            "Mixed Berry Tart.</h4>",
+            "Raspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.</p4>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q84. In this code, what is _target_?",
+        "options": [
+            "an attribute",
+            "a tag",
+            "content",
+            "an element"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q85. What is the difference between the `<svg>` and `<canvas>`?",
+        "options": [
+            "`<svg>` produces vector graphics, while `<canvas>` produces raster graphics.",
+            "`<svg>` integrates with JavaScript, while `<canvas>` does not.",
+            "`<svg>` produces raster graphics, while `<canvas>` produces vector graphics.",
+            "`<svg>` cannot be used as a background image, while `<canvas>` can be used as a background"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q86. What is the difference between the _readonly_ and _disabled_ attributes for the `<textarea>` element?",
+        "options": [
+            "_readonly_ allows clicking in the `<textarea>` element. _disabled_ prevents all interaction with the control.",
+            "_readonly_ is invalid attribute for `<textarea>`, while _disabled_ is a valid attribute.",
+            "_disabled_ allows clicking in the `<textarea>` element. _readonly_ prevents all interaction with the control.",
+            "_disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q87. In this code, what is _target_?",
+        "options": [
+            "rget=\"_blank\">...</a>`",
+            "an attribute",
+            "a tag",
+            "content"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q88. What is the correct way to add a submit URL to a `button` element?",
+        "options": [
+            "A",
+            "L",
+            "n submit=\"http://example.com/process\">",
+            "ess data"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q89. Which is the best markup to produce this text?",
+        "options": [
+            ">w`",
+            "`<p>x<y&z>w</p>`",
+            "`<p>x\\<y&z\\>w</p>`",
+            "`<p>x<<y&&z>>w`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q90. What is wrong with this code snippet?",
+        "options": [
+            "L",
+            ">Address:</label>",
+            " type=\"text\" name=\"address\" id=\"address-input\" />",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q91. What is the default method for form submission?",
+        "options": [
+            "GET",
+            "POST",
+            "PUT",
+            "SUBMIT"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q92. Which is the most semantically correct markup for a side comment in small print?",
+        "options": [
+            "`<p>` Get 10% discount `<small>`not valid in France`</small></p>`",
+            "`<p>` Get 10% discount `<!--not valid in France--> </p>`",
+            "`<p>` Get 10% discount `<comment>`not valid in France`</comment></p>`",
+            "`<p>` Get 10% discount `<aside>`not valid in France`</aside></p>`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q93. Which choice will produce the spanish word <i>canción</i>?",
+        "options": [
+            "`<p lang=\"es\">canción</p>`",
+            "`<p lang=\"es\">canci&oacuten</p>`",
+            "`<p lang=\"es\">cancio'n</p>`",
+            "`<p lang=\"es\">canci'on</p>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q94. What is the purpose of `<caption>`?",
+        "options": [
+            "`<caption>` provides captions for `<audio>`,`<video>`,`<img>`, and `<table>`.",
+            "`<caption>` provides captions to `<table>`.",
+            "`<caption>` provides captions for `<audio>`, `<video>`, and `<table>`.",
+            "`<caption>` provides captions for `<img>`, `<audio>`, and `<video>`."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q95. The value attribute is associated with which set of tags ?",
+        "options": [
+            "A",
+            "L",
+            "",
+            ">"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q96. What is wrong with this code?",
+        "options": [
+            "src=\"https://source.unsplash.com/random\">`",
+            "`<img>` should be paired with a `<caption>` tag.",
+            "The `<img>` element is missing an alt attribute.",
+            "`<img>` is not a valid HTML element. Instead, use `<image src=\"...\"/>`."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q97. Which choice is the most semantically correct markup for specifying the first definition of a term?",
+        "options": [
+            "`<p>`The `<dl>`focal length`</dl>` of a lens gives the distance from the lens to the image sensor.`</p>`",
+            "`<p>`The `<dfn>`focal length`<dfn>` of a lens gives the distance from the lens to the image sensor.`</p>`",
+            "`<p>`The `<dt>`focal length`</dt>` of a lens gives the distance from the lens to the image sensor.`</p>`",
+            "`<p>`The `<dd>`focal length`</dd>` of a lens gives the distance from the lens to the image sensor.`</p>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q98. Which choice is the best way to code three choices within a form so that the user can select multiple items?",
+        "options": [
+            "<input type=\"radio\" name=\"example\"> Choice 1 <br/>",
+            "<input type=\"radio\" name=\"example\"> Choice 2 <br/>",
+            "<input type=\"radio\" name=\"example\"> Choice 3",
+            "<input type=\"checkbox\" name=\"example\"> Choice 1 <br/>"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q99. How would you mark up a piece of ASCII art (an emoticon) in an accessible way?",
+        "options": [
+            "`<pre role=\"emoticon\" aria-label=\"ASCII emoticon of a shrug\">¯\\_(ツ)_/¯</pre>`",
+            "`<pre role=\"img\" aria-label=\"ASCII emoticon of a shrug\">¯\\_(ツ)_/¯</pre>`",
+            "`<dfn title=\"ASCII emoticon of a shrug\">¯\\_(ツ)_/¯</dfn>`",
+            "`<label for=\"art\">ASCII emoticon of a shrug</label><pre role=\"img\" id=\"art\">¯\\_(ツ)_/¯</pre>`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q100. Which example is a standard way in HTML5 for adding author metadata to a page?",
+        "options": [
+            "`<metadata name=\"author\" content=\"Author Name\">`",
+            "`<meta name=\"author\">Author Name</meta>`",
+            "`<meta name=\"creator\" content=\"Author Name\">`",
+            "`<meta name=\"author\" content=\"Author Name\">`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q101. Given the following requirements, select the correct `input` configuration: An `input` that allows the user to select from a range of integer values between 0 and 100 (inclusive) in increments of 5.",
+        "options": [
+            "`<input type=\"range\" min=\"0\" max=\"100\" by=\"5\" />`",
+            "`<input type=\"range\" min=\"0\" max=\"100\" step=\"5\" />`",
+            "`<input type=\"number\" min=\"0\" max=\"100\" step=\"5\" />`",
+            "`<input type=\"number\" min=\"0\" max=\"100\" by=\"5\" />`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q102. Which choice is valid markup for a `<head>` element?",
+        "options": [
+            "`<head class=\"Page Section Information\" id=\"head\"><title>Page Title</title></head>`",
+            "`<head><title>Page Title</title> <img src=\"favicon.icon\" alt=\"\"></head>`",
+            "`<head><title>Page Title</title> <data value=\"email\">email@example.com</data></head>`",
+            "`<head><title>Page Title</title><address>email@example.com</address></head>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q103. You need to add comments to the company blog. What is the most semantic markup for a list of comments?",
+        "options": [
+            "A",
+            "L",
+            ">",
+            "Comments</h3>"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q104. To make something editable by the user, you need to set the **\\_** attribute to **\\_**.",
+        "options": [
+            "`access`; allow",
+            "`designMode`; true",
+            "`contenteditable`; true",
+            "`contenteditable`; yes"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q105. Which choice is the standard way to include a value in a form without making it visible to or editable by the user?",
+        "options": [
+            "`<input type=\"invisible\" name=\"important\" value=\"information\">`",
+            "`<input type=\"text\" style=\"display: none;\" name=\"important\" value=\"information\">`",
+            "`<input type=\"hidden\" name=\"important\" value=\"information\">`",
+            "`<input type=\"text\" hidden name=\"important\" value=\"information\">`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q106. What is the semantic way to add an identifying title to a table?",
+        "options": [
+            "`<table><label>Heading</label>...</table>`",
+            "`<table><title>Heading</title>...</table>`",
+            "`<table><legend>Heading</legend>...</table>`",
+            "`<table><caption>Heading</caption>...</table>`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q107. Which image file referenced in this `img` element's `srcset` attribute should a browser on a small mobile phone load?",
+        "options": [
+            "l",
+            "",
+            "et=\"medium.jpg 320w, large.jpg 1280w\"",
+            "\"small.jpg\""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q108. Which description is coded correctly?",
+        "options": [
+            "A",
+            "L",
+            "",
+            "Server</dt>"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q109. What is wrong with this code?",
+        "options": [
+            "L",
+            "",
+            "Espresso Drinks</h2>",
+            "Espresso</li>"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q110. A designer gave you CSS code that should run only when the device rendering the page is in dark mode. How would you embed that code?",
+        "options": [
+            "`<style media=\"light-mode: false\">/* CSS code */</style>`",
+            "`<style media=\"color-mode: dark\">/* CSS code */</style>`",
+            "`<style media=\"prefers-color-scheme: dark\">/* CSS code */</style>`",
+            "`<style media=\"color-scheme: dark\">/* CSS code */</style>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q111. How would you mark up a header for a table row?",
+        "options": [
+            "A",
+            "L",
+            ">",
+            "ad scope=\"row\"><th row=\"1\">Header</th></thead>"
+        ],
+        "_ps": 0
+    }
+]

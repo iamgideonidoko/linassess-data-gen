@@ -1,0 +1,362 @@
+[
+    {
+        "question": "Q1. Which type cast preserves the mathematical value in all cases?",
+        "options": [
+            "i64 as i32",
+            "usize as u64",
+            "i32 as i64",
+            "f64 as f32"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q2. What do the vertical bars represent here?",
+        "options": [
+            "t",
+            "hread::spawn(|| {",
+            "intln!(\"LinkedIn\");",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. Which choice is not a scalar data type?",
+        "options": [
+            "integer",
+            "float",
+            "boolean",
+            "tuple"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q4. **\\_** cannot be destructured.",
+        "options": [
+            "Traits",
+            "Tuples",
+            "Enums",
+            "Structs"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q5. Which `cargo` command checks a program for error without creating a binary executable?",
+        "options": [
+            "cargo --version",
+            "cargo init",
+            "cargo build",
+            "cargo check"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q6. The term _box_ and related phrases such as _boxing a value_ are often used when relating to memory layout. What does _box_ refer to?",
+        "options": [
+            "It's creating a pointer on the heap that points to a value on the stack.",
+            "It's creating a pointer on the stack that points to a value on the heap.",
+            "It's creating a memory guard around values to prevent illegal access.",
+            "It's an abstraction that refers to ownership. \"Boxed\" values are clearly labelled."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q7. What is an alternative way of writing `slice` that produces the same result?",
+        "options": [
+            "t",
+            "",
+            "= String::form(\"hello\");",
+            "ice = &s[0..2];"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q8. Using the `?` operator at the end of an expression is equivalent to **\\_**.",
+        "options": [
+            "a match pattern that branches into True or False",
+            "calling ok_error()",
+            "calling panic!()",
+            "a match pattern that may result an early return"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q9. Which is valid syntax for defining an array of i32 values?",
+        "options": [
+            "Array<i32>::with_capacity(10)",
+            "[i32]",
+            "Array<i32>::new(10)",
+            "[i32; 10]"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q10. What syntax is required to take a mutable reference to T, when used within a function argument?",
+        "options": [
+            "t",
+            "rement(i: T) {",
+            " body elided",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. The smart pointers Rc and Arc provide reference counting. What is the API for incrementing a reference count?",
+        "options": [
+            ".add()",
+            ".incr()",
+            ".clone()",
+            ".increment()"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q12. What happens when an error occurs that is being handled by the question mark (?) operator?",
+        "options": [
+            "The error is reported and execution continues.",
+            "An exception is raised. The effect(s) of the exception are defined by the error! macro.",
+            "The program panics immediately.",
+            "Rust attempts to convert the error to the local function's error type and return it as Result::Err. If that fails, the program panics."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q13. Which comment syntax is not legal?",
+        "options": [
+            "`/*`",
+            "`#`",
+            "`//!`",
+            "`//`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q14. In matching patterns, values are ignored with \\_.",
+        "options": [
+            "`.ignore()`",
+            "`an underscore (_)`",
+            "..",
+            "skip"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q15. Defining a \\_ requires a lifetime parameter.",
+        "options": [
+            "function that ends the lifetime of one of its arguments",
+            "struct that contains a reference to a value",
+            "function with a generic argument",
+            "struct that contains a reference to a boxed value"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q16. Which example correctly uses std::collections::HashMap's Entry API to populate counts?",
+        "options": [
+            "t",
+            "d::collections::HashMap;",
+            "n() {",
+            "t mut counts = HashMap::new();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q17. Which fragment does not incur memory allocations while writing to a \"file\" (represented by a Vec<u8>)?",
+        "options": [
+            "t",
+            "d::collections::HashMap;",
+            "n() -> Result<(), Box<dyn std::error::Error>> {",
+            "t mut v = Vec::<u8>::new();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q18. Does the `main` function compile? If so, why? If not, what do you need to change?",
+        "options": [
+            "t",
+            "n() {",
+            "t Some(x) = some_option_value;",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q19. Which statement about lifetimes is false?",
+        "options": [
+            "Lifetimes were redundantly specified in previous version of Rust.",
+            "Lifetimes are specified when a struct is holding a reference to a value.",
+            "Lifetimes are specified when certain values must outlive others.",
+            "Lifetimes are always inferred by the compiler."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q20. When used as a return type, which Rust type plays a similar role to Python's `None`, JavaScript's `null`, or the `void` type in C/C++?",
+        "options": [
+            "`!`",
+            "`None`",
+            "`Null`",
+            "`()`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q21. To convert a `Result` to an `Option`, which method should you use?",
+        "options": [
+            "`.as_option()`",
+            "`.ok()`",
+            "`.to_option()`",
+            "`.into()`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q22. Which statement about the `Clone` and `Copy` traits is false?",
+        "options": [
+            "`Copy` is enabled for primitive, built-in types.",
+            "Without `Copy`, Rust applies move semantics to a type's access.",
+            "When using `Clone`, copying data is explicit.",
+            "Until a type implements either `Copy` or `Clone`, its internal data cannot be copied."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q23. Why does this code _not_ compile?",
+        "options": [
+            "t",
+            "urns_closure() -> dyn Fn(i32) -> i32 {",
+            "| x + 1",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q24. What smart pointer is used to allow multiple ownership of a value in various threads?",
+        "options": [
+            "`Arc<T>`",
+            "`Box<T>`",
+            "Both `Arc<T>` and `Rc<T>` are multithread safe.",
+            "`Rc<T>`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q25. Which types are _not_ allowed within an enum variant's body?",
+        "options": [
+            "zero-sized types",
+            "structs",
+            "trait objects",
+            "floating-point numbers"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q26. Which statement about this code is true?",
+        "options": [
+            "t",
+            "n() {",
+            "t c = 'z';",
+            "t heart_eyed_cat = '😻';"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q27. Your application requires a single copy of some data type T to be held in memory that can be accessed by multiple threads. What is the thread-safe wrapper type?",
+        "options": [
+            "`Mutex<Arc<T>>`",
+            "`Rc<Mutex<T>>`",
+            "`Arc<Mutex<T>>`",
+            "`Mutex<Rc<T>>`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q28. Which idiom can be used to concatenate the strings `a`, `b`, `c`?",
+        "options": [
+            "t",
+            "= \"a\".to_string();",
+            "= \"b\".to_string();",
+            "= \"c\".to_string();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q29. In this function. what level of access is provided to the variable `a`?",
+        "options": [
+            "t",
+            "d::fmt::Debug;",
+            "ort<T:Debug>(a: &T) {",
+            "rintln!(\"info: {:?}\", a);"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q30. Which choice is _not_ valid loop syntax?",
+        "options": [
+            "`loop`",
+            "`for`",
+            "`while`",
+            "`do`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. How do you construct a value of `Status` that is initialized to `Waiting`?",
+        "options": [
+            "t",
+            "tatus {",
+            "iting,",
+            "sy,"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q32. Which statement about enums is false?",
+        "options": [
+            "Enums are useful in matching patterns.",
+            "Option is an enum type.",
+            "Enum variants can have different types with associated data.",
+            "the term _enum_ is short for _enummap_"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q33. What does an underscore (\\_) indicate when used as pattern?",
+        "options": [
+            "It matches everything.",
+            "It matches underscores.",
+            "It matches any value that has a length of 1.",
+            "It matches nothing."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q34. What is a safe operation on a `std::cell:UnsafeCell<T>`?",
+        "options": [
+            "A `&mut T` reference is allowed. However it may not cpexists with any other references. and may be created only in single-threaded code.",
+            "`UnsafeCell<T>` provides thread-safety. Therefore, creating `&T` references from multiple threads is safe.",
+            "The only safe operation is the `.get()` method, which returns only a raw pointer.",
+            "Non. `UnsafeCell<T>` only allows code that would otherwise need unsafe blocks to be written in safe code."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q35. Generics are useful when you **\\_**.",
+        "options": [
+            "need to reduce code duplication by concretizing vales and restricting paramaters in functions",
+            "need to reduce code duplication by abstarting vales further, such as in function paramters",
+            "need a supertait",
+            "are not sure if you need a specific kind of trait"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q36. **\\_** cannot be destructed.",
+        "options": [
+            "Traits",
+            "Enums",
+            "Tuples",
+            "Structs"
+        ],
+        "_ps": 0
+    }
+]

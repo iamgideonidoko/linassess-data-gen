@@ -1,9 +1,13 @@
 import readline from 'readline';
-import fs from 'fs';
+import fs from 'fs-extra';
 import prodContents from '../output/contents-prod.json'; // auto parsed to an object
 import { constants } from '../helper';
 import axios from 'axios';
 import stringToStream from 'string-to-stream';
+import { argv } from 'process';
+
+const dataDev = 'output/data-dev';
+const dataProd = 'output/data-prod';
 
 async function processLineByLine(str: string) {
     const fileStream = stringToStream(str);
@@ -49,12 +53,34 @@ const getQuestions = async (str: string) => {
 };
 
 (async () => {
+    // index of type argument
+    const typeIdx = argv.indexOf('--type');
+    /* type argument not found */
+    if (!typeIdx)
+        return console.log('\x1b[31m%s\x1b[0m', 'data.ts: Your must pass a type argument. Use --type <value>');
+
+    /* type argument value not found */
+    if (!argv[typeIdx + 1])
+        return console.log('\x1b[31m%s\x1b[0m', 'data.ts : type argument has no value. Use --type <value>');
+
+    const typeVal = argv[typeIdx + 1];
+
+    if (typeVal !== 'prod' && typeVal !== 'dev')
+        return console.log('\x1b[31m%s\x1b[0m', 'data.ts: type argument can only have values of prod or dev');
+
+    /* Copy dev to prod if type is prod */
+    if (typeVal === 'prod') {
+        return fs.copy(dataDev, dataProd, { overwrite: true }, function (err) {
+            if (err) return console.log('\x1b[31m%s\x1b[0m', 'data.ts: err', err);
+            console.log('\x1b[42m%s\x1b[0m', 'data.ts: Moved data to prod successfully');
+        });
+    }
     const dirs = prodContents.filter((item) => item.type === 'dir');
     dirs.forEach(async (item) => {
         try {
             const fileName = (() => {
                 if (item.path === 'c++') return `c++quiz`;
-                return item.path.replace('#', 'sharp').replace('-(programming-language)', '') + '-quiz';
+                return item.path.replace('#', '-sharp').replace('-(programming-language)', '') + '-quiz';
             })();
             const res = await axios.get(`${constants.fileBaseUrl}/${item.path.replace('#', '0%23')}/${fileName}.md`);
 
@@ -62,11 +88,11 @@ const getQuestions = async (str: string) => {
                 const questions = await getQuestions(res.data as string);
                 fs.writeFile(`output/data-dev/${fileName}.json`, JSON.stringify(questions, null, 4), function (err) {
                     if (err) throw err;
-                    console.log('\x1b[42m%s\x1b[0m', 'data.ts line:67 Content fetched & written to file successfully');
+                    console.log('\x1b[42m%s\x1b[0m', 'data.ts: Content fetched & written to file successfully');
                 });
             }
         } catch (err) {
-            console.log('\x1b[41m%s\x1b[0m', 'data.ts line:55 err', err);
+            console.log('\x1b[41m%s\x1b[0m', 'data.ts: err', err);
         }
     });
 })();

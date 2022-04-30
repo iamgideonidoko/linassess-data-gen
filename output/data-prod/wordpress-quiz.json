@@ -1,0 +1,802 @@
+[
+    {
+        "question": "Q1. In WordPress, what is the Loop used to do?",
+        "options": [
+            "It displays a single page.",
+            "It displays posts on an archive.",
+            "It displays a single post.",
+            "all of these answers"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q2.Who owns the trademark for WordPress and WordCamp names and logos?",
+        "options": [
+            "WordPress Foundation (The WordPress Foundation owns and oversees the trademarks for the WordPress and WordCamp names and logos.)",
+            "WordPress.com",
+            "Matt Mullenweg",
+            "Automattic"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q3. What is the name of the open-source project that serves as a bug tracker and project management tool for WordPress?",
+        "options": [
+            "HackerOne",
+            "Redmine",
+            "Trac",
+            "GitHub Issues"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q4. The REST API is a simple way to get data in and out of WordPress over HTTP. Applications using the REST API should be written in which programming language?",
+        "options": [
+            "PHP",
+            "any programming language that can make HTTP requests and interpret JSON",
+            "Java",
+            "Node.js"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q5. How many minutes does it take to install WordPress according to the \"Famous X-Minute Installation\" instructions on WordPress.org?",
+        "options": [
+            "5",
+            "30",
+            "15",
+            "10"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q6. In WordPress, what is true of plugins?",
+        "options": [
+            "Plugins are available in free or premium (paid) versions.",
+            "Plugins can extend WordPress core functionality.",
+            "all of these answers",
+            "Plugins add site-specific features."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q7. Akismet is a plugin that comes automatically installed with WordPress. What does it do?",
+        "options": [
+            "It connects your site to Google Analytics.",
+            "It displays a blog feed from websites similar to yours.",
+            "It protects your site from comment spam.",
+            "It hardens site security by enforcing strong passwords."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q8. What would you do to improve your site's performance?",
+        "options": [
+            "Only load scripts and styles on pages where they are needed.",
+            "Minify CSS and JavaScript files.",
+            "all of these answers",
+            "Use a CDN."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q9. The REST API utilizes which data format?",
+        "options": [
+            "YAML",
+            "JSON",
+            "TXT",
+            "XML"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q10. What color is the paragraph nested within the div?",
+        "options": [
+            "ml>",
+            "",
+            "  <style>",
+            "          body { color: black; }"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. Theme developers can take advantage of the Customizer API to give users a way to manipulate basic theme settings. The Customizer API is object-oriented and provides four main objects. What are they?",
+        "options": [
+            "widgets, containers, sections, settings",
+            "containers, hooks, settings, styles",
+            "panels, blocks, controls, settings",
+            "panels, sections, controls, settings"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q12. Which WordPress setting would you use to make page URLs look like `http://example.com/my-page/` instead of the default `http://example.com/?p=21/?`",
+        "options": [
+            "Writing",
+            "Permalinks",
+            "Pretty URLs",
+            "Reading"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. In WordPress, what is the block editor used for?",
+        "options": [
+            "cropping images in the media library",
+            "injecting specialized scripts into the content area",
+            "creating a site layout",
+            "creating and laying out content"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q14. Which of the following file types is NOT involved in translating WordPress?",
+        "options": [
+            ".po",
+            ".pot",
+            ".mot",
+            ".mo"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q15. What is the default priority for an action hook or filter?",
+        "options": [
+            "10",
+            "15",
+            "0",
+            "5"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q16. What's the primary difference between template tags prefaced with the **versus get_the**?",
+        "options": [
+            "Template tags prefaced with the \\_ don't accept arguments.",
+            "Template tags prefaced with the \\_ can be used directly within a template.",
+            "Template tags prefaced with the \\_ display a value. Template tags prefaced with get_the return a value.",
+            "Template tags prefaced with the \\_ return a value. Template tags prefaced with get_the display a value."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q17. WP_Query is the WordPress query class that is used to fetch posts from the database. How would you create a new instance of this class?",
+        "options": [
+            "`$query = new query_posts();`",
+            "`$query = new WP_Query();`",
+            "`$query = query_posts();`",
+            "`$query = get_posts();`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q18. What is a user role that is unique to WordPress Multisite?",
+        "options": [
+            "MU Admin",
+            "Owner",
+            "Super Admin",
+            "Multisite Master"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q19. Within the editor, blocks are rendered as JavaScript. How are blocks rendered on the front end of a site?",
+        "options": [
+            "as plain HTML",
+            "as a React component",
+            "as JavaScript comments",
+            "as HTML comments"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q20. Which of these is NOT a part of the internationalization and localization process?",
+        "options": [
+            "using a gettext function to wrap translatable strings when writing code",
+            "installing/using the WordPress Multilingual Plugin",
+            "using a tool like Poedit to parse source code and extract translatable strings into a POT file",
+            "translators translating the POT file into a PO file, one for each language"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q21. The REST API provides public data, which is accessible to any client anonymously, as well as private data available only after authentication. How could you ensure that no one can anonymously access site data via the REST API?",
+        "options": [
+            "Disable the REST API via the site's wp-config.php file.",
+            "Use the `rest_authentication_errors()` filter along with the `is_user_logged_in()` conditional to limit access to logged in users.",
+            "Use the `rest_authentication_errors()` filter along with cookie authentication to limit access to logged in users.",
+            "Use the Disable REST API plugin."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q22. Which of these snippets represents a wrapper that calls jQuery safely and doesn't require repetitive use of the word \"jQuery\"?",
+        "options": [
+            ".",
+            "",
+            "y(function() {",
+            "stuff"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q23. What is the correct order of parameters for the add_action() function?",
+        "options": [
+            "`add_action( 'example_hook', 'example_function', $accepted_args, $priority )`",
+            "`add_action( 'example_function', 'example_hook', $priority, $accepted_args )`",
+            "`add_action( 'example_hook', 'example_function', $priority, $accepted_args )`",
+            "`add_action( 'example_function', 'example_hook', $priority )`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q24. You have a search bar on your site. You would like to use a `<label>` to make the word \"Search\" visible to screen readers, but you don't want to display the word \"Search\" on the screen. How can you accomplish this?",
+        "options": [
+            "Assign an ARIA state of \"hidden\" to the label, like this: `<label state=\"hidden\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
+            "Use the built-in WordPress CSS class .screen-reader-text to hide the text from screen, like this: `<label class=\"screen-reader-text\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
+            "Create a custom CSS class to set a large negative value to the text-indent property to hide the text off screen, like this: `<label class=\"hide-this\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
+            "The majority of users do not require a screen reader. Remove the label entirely."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q25. You might see this code in a WordPress plugin. What does it do?",
+        "options": [
+            "",
+            " defined( 'ABSPATH' ) ) {",
+            ";",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q26. Which is a best practice for working with WordPress CSS?",
+        "options": [
+            "Use !important next to styles if they don't give you the result you want.",
+            "Use hyphens in class names.",
+            "Use spaces to indent each property.",
+            "Avoid CSS shorthand for proper documentation."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q27. WordPress is translated, at least partially, in more than 200 locales. If you wanted to help translate WordPress into other languages, which contributor group would you join?",
+        "options": [
+            "core",
+            "polyglots",
+            "accessibility",
+            "documentation"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q28. What is the difference between an action and a filter?",
+        "options": [
+            "Actions are used to add custom functions and remove WordPress functions. Filters are used to make strings translatable for localization.",
+            "Actions are used to add or remove code at runtime. Filters are used to modify data before it is either displayed in the browser or saved to the database.",
+            "Actions are used to assign values to variables at runtime. Filters are used to extract data from actions and display it in the browser.",
+            "Actions are used to add user-inputted data to the database. Filters are used to validate user-inputted data prior to adding it to the database."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q29. If you activate or update a plugin and it breaks your site so that you cannot manage it via wp-admin, how can you disable the plugin?",
+        "options": [
+            "all of these answers",
+            "Access the WordPress install via WP-CLI. Run the following command: wp plugin deactivate offending-plugin.",
+            "Access site files via FTP and navigate to /wp-content/plugins/. Delete the folder of the plugin that you would like to disable or simply rename it.",
+            "Use phpMyAdmin to change the wp_options table's active_plugins option value to a:0:{}."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q30. The WordPress REST API is designed to receive and respond to particular types of requests using basic HTML methods. For example, a request to upload a PHP file into a particular folder on a server might look like the code POST `/folder/_file.php`. Based on this code, what would you call /folder/\\_file.php (in REST API terms)?",
+        "options": [
+            "schema",
+            "route",
+            "response",
+            "request"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. Which WP-CLI command would you use to manage the capabilities of a user role?",
+        "options": [
+            "wp admin",
+            "wp manage",
+            "wp cap",
+            "wp role"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q32. What technique would you use to secure data before rendering it to a user?",
+        "options": [
+            "escape and sanitize",
+            "validate and escape",
+            "validate and sanitize",
+            "escape and secure"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q33. If your WordPress site is seriously compromised, what is the best course of action to return your site to good health?",
+        "options": [
+            "Determine the date of the attack and restore your site to a backup point prior to that date.",
+            "Hire a third-party service to clean up your site because it is difficult for someone who is not a WordPress security expert to find and remove all traces of an attack.",
+            "Manually delete suspicious files on the server and delete any database tables that are not core WordPress.",
+            "Change your hosting password, your WordPress admin password, and your database password."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q34. If you wanted to register a custom post type, which hook would you use?",
+        "options": [
+            "register_post_type",
+            "add_meta_box",
+            "wp_head",
+            "init"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q35. What is the role of a WordPress theme?",
+        "options": [
+            "controls colors, fonts, and page layouts",
+            "adds accessibility enhancements such as keyboard navigation and skip links",
+            "ensures a site is mobile responsive",
+            "all of these answers"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q36. What is the name of the open-sourse project that serves as a bug tracker and project management tool for WordPress?",
+        "options": [
+            "Redmine",
+            "GitHub Issues",
+            "HakerOne",
+            "Trac"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q37. What is a user role that is unique to WordPress Multisite?",
+        "options": [
+            "Owner",
+            "Super Admin",
+            "MU Admin",
+            "Multisite Master"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q38. How would you write a text string containing \"Hello World!\" in a way that makes it possible for someone else to translate the string into a different language?",
+        "options": [
+            "`apply_filters( 'Hello World!', 'mytextdomain' );`",
+            "`_( 'Hello World!', 'mytextdomain' );`",
+            "`\\$string = \"Hello World!\";`",
+            "`esc_html( 'Hello World!', 'mytextdomain' );`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q39. What is the core mission of WordPress?",
+        "options": [
+            "to make free software",
+            "to democratize publishing and the freedoms that come with open source",
+            "to make money",
+            "to encourage blogging"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q40. Which of the following is NOT a suggested security improvement for your WordPress website?",
+        "options": [
+            "The site should communicate with WordPress.org.",
+            "Remove inactive themes.",
+            "Do not output debug information.",
+            "WordPress updates are accomplished manually only."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q41. What's the primary difference between template tags prefaced with the* versus get_the*?",
+        "options": [
+            "Template tags prefaced with the\\_ can be used directly within a template. Template tags prefaced with get_the are generally reserved for partial templates.",
+            "Template tags prefaced with the\\_ return a value. Template tags prefaced with get_the display a value.",
+            "Template tags prefaced with the\\_ display a value. Template tags prefaced with get_the return a value.",
+            "Template tags prefaced with the\\_ don't accept arguments. Template tags prefaced with get_the do accept arguments."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q42. How can you add a custom script that needs to run only on the contact page of a site? The slug of the page is contact.",
+        "options": [
+            "",
+            "o the script directly from a template named page-contact.php using the get_header() template tag, like this:",
+            "ader( '<script src=\"/my-script.js\"></script>' );",
+            "nctions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q43. Where can you find the official WordPress documentation and usage guide?",
+        "options": [
+            "`support.wordpress.com`",
+            "`developer.wordpress.com`",
+            "`developer.wordpress.org`",
+            "`support.wordpress.org`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q44. How would you use CSS to ensure your theme was mobile responsive?",
+        "options": [
+            "Use CSS grid to create responsive layouts.",
+            "Use media queries to add breakpoints for different screen sizes.",
+            "Use Flexbox to create flexible page layouts.",
+            "all of these answers"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q45. The Block API enables developers to register custom blocks in themes or plugins. How would you register a custom block?",
+        "options": [
+            "Use the registerBlockName() function.",
+            "Use the createGutenBlock() function.",
+            "Use a block template.",
+            "Use the registerBlockType() function."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q46. Which software development principle, often used in WordPress, aims to reduce the repetition of code?",
+        "options": [
+            "RRR",
+            "WET",
+            "DRY",
+            "KISS"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q47. In a standard template file, how often does the WordPress Loop run?",
+        "options": [
+            "It runs once per post in the database.",
+            "It runs once.",
+            "The Loop doesn't run in template files.",
+            "It runs once per fetched post."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q48. Which is NOT a suggested performance improvement for your WordPress website?",
+        "options": [
+            "The site should run the most recent version of WordPress.",
+            "Remove or inactivate unnecessary plugins.",
+            "UTF8 is supported.",
+            "Choose a very recent version of PHP."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q49. On a regular WordPress install, what is the difference between transients and the object cache?",
+        "options": [
+            "Transients are persistent and write to the wp_options. The object cache persists only for the particular page load.",
+            "Transients are stored in the WordPress database. The object cache is stored on the server where the WordPress install is located.",
+            "Transients are available for the duration of a user session and apply to all page components. The object cache is available only for scripts.",
+            "Transients persist only for the particular page load. The object cache is persistent and writes to the wp_options table."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q50. For the majority of modern themes, what is the standard method used to customize various details of site appearance and features, such as changing the site description or adding a logo and favicons?",
+        "options": [
+            "Theme settings",
+            "wp-config.php",
+            "Customizer",
+            "WordPress settings"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q51. You can harden your WordPress site security by adding `__` to your wp-config.php file?",
+        "options": [
+            "database usernames and passwords",
+            "unique keys and salts",
+            "accessibility",
+            "documentation"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q52. According to WordPress PHP coding standards for inline comments, how would you write a single-line comment in a PHP document?",
+        "options": [
+            "`// This is a single line comment`",
+            "`/\\* _ This is a single line comment._/`",
+            "`// This is a single line comment.`",
+            "`<!-- This is a single line comment -->`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q53. If you have pretty permalinks enabled on a WordPress site, the REST API index is exposed by appending what to the end of the site URL? (for example, http://example.com/answer/) Note that the index provides information regarding which routes are available for that particular WordPress install.",
+        "options": [
+            "`http://example.com/wp-json/`",
+            "`http://example.com/wp-admin/`",
+            "`http://example.com/wp-rest/`",
+            "`http://example.com/wp-rest-api/`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q54. What is the process of marking the code you write so that it is ready for translation?",
+        "options": [
+            "internationalization",
+            "localization",
+            "translation",
+            "using GlotPress"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q55. In your wp-config.php file, you've added the following line of code. What does it do?",
+        "options": [
+            "e( 'DISALLOW_FILE_EDIT', true );`",
+            "prevents any non-admin user from directly editing theme or plugin files",
+            "disables the theme and plugin editor in the WordPress admin",
+            "disables the ability to edit core WordPress files from either within the WordPress admin or via direct file access"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q56. Which of the following must have underlined links in order to meet WCAG 2.0 accessibility standards?",
+        "options": [
+            "links on images",
+            "links in user interface controls",
+            "links in a nav bar",
+            "links in paragraph text"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q57. In which of the following ways might you contribute to the WordPress community by testing?",
+        "options": [
+            "user testing",
+            "all of these answers",
+            "beta testing",
+            "automated testing"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q58. WordPress is an open-source software licensed under the GPL. This means that `__`.",
+        "options": [
+            "derivative works must also be licensed as GPL",
+            "all of these answers",
+            "the software is free to use",
+            "the software is free to modify"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q59 Review of the HTML on line1. The goal of the PHP on line 2 is to extract the field value and assign it to a variable prior to inserting into the database. What is wrong with this PHP code?",
+        "options": [
+            "",
+            " type=\"text\" id=\"title\" name=\"title\" />",
+            " = $_POST[ 'title' ];",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q60. Which software development principle, often used in WordPress, aims to reduce the repetition of code?",
+        "options": [
+            "DRY",
+            "RRR",
+            "WET",
+            "KISS"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q61. Which of these CSS classs naming convention is correct according to WordPress CSS Coding Standards?",
+        "options": [
+            "`.selector-name`",
+            "`.selector_name`",
+            "`.selectorName`",
+            "`div.selector_name`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q62. Which folder in a WordPress install is not affected by an automatic WordPress update?",
+        "options": [
+            "`/wp-admin`",
+            "`root`",
+            "`/wp-content`",
+            "`/wp-includes`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q63. What are transients?",
+        "options": [
+            "short database queries",
+            "a way to cache information",
+            "plugins used for quick debugging",
+            "post draft stored in the database"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q64. If you wanted to debug some JavaScript, which method would you use to display data in your browser console?",
+        "options": [
+            "`windows.alert()`",
+            "`console.log()`",
+            "`document.write()`",
+            "`innerHTML`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q65. On a webpage, there are frequently navigation links, a search bar, or other elements that appear before the main content. For keyborad and screen reader users, it can be frustrating to get to the main content of a page because they have to tab through all these elements on every new page load. What can you add to a site to fix this?",
+        "options": [
+            "collapsible menus",
+            "infinite scroll",
+            "skip links",
+            "tabbed navigation"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q66. What user role would you assign to someone so they can write and publish only their posts and no one else's?",
+        "options": [
+            "Contributor",
+            "Author",
+            "Editor",
+            "Subscriber"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q67. When should you edit core WordPress files?",
+        "options": [
+            "when there is no plugin available to make a customization you need",
+            "when you need to add a custom page template",
+            "when you need to add a custom script to the header or footer of every page in a site",
+            "You should never edit WordPress core."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q68. Which Wordpress conditional would you use to determine if you were on a single page?",
+        "options": [
+            "is_archive()",
+            "is_page()",
+            "is_page_template()",
+            "is_single()"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q69. Wordpress core and many plugins store data in the database in a special format as represented by the sample below. What format is this called?",
+        "options": [
+            "i:0;s:27:\"ari-adminer/ari-adminer.php\";i:1;s:30:\"atomic-blocks/atomicblocks.php\";}`",
+            "value",
+            "serialized data",
+            "PHP array"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q70. What is this code sample an example of?",
+        "options": [
+            "",
+            "",
+            "ave_posts() ) : while ( have_posts() ) : the_post();",
+            "  the_content();"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q71. Which of these are the minimum files required to make a child theme?",
+        "options": [
+            "index.php functions.php",
+            "index.php style.css script.js",
+            "functions.php style.css script.js",
+            "functions.php style.css"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q72. You can harden your Wordpress site security by adding **\\_** to your wp-config.php file?",
+        "options": [
+            "hashes and reCAPTCHA",
+            "database username and passwords",
+            "custom action hooks and filters",
+            "unique keys and salts"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q73. In the WordPress template hierarchy, which file could not be used to display an archive?",
+        "options": [
+            "`archive.php`",
+            "`index.php`",
+            "`page.php`",
+            "`category.php`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q74. Why can't you modify the query in a template page?",
+        "options": [
+            "The query can only be run inside the Loop.",
+            "You can modify the query in a template page if you use `pre_get_posts()`.",
+            "According to WordPress best practices, the query should only be modified in `functions.php`.",
+            "Due to execution order, the query has already run by the time a template is loaded."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q75. For the majority of modern themes, what is the standard method used to customize various details of site appearance and features, such as changing the site description or adding a logo and favicons?",
+        "options": [
+            "WordPress settings",
+            "Customizer",
+            "wp-config.php",
+            "Theme settings"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q76. How would you write a text string containing \"Hello World!\" in a way that makes it possible for someone else to translate the string into a different language?",
+        "options": [
+            "`apply_filters( 'Hello World!', 'mytextdomain' );`",
+            "`esc_html( 'Hello World!', 'mytextdomain' );`",
+            "`$string = \"Hello World!\";`",
+            "`__( 'Hello World!', 'mytextdomain' );`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q77. Which of these are best practices in accessibility?",
+        "options": [
+            "Do not skip heading levels.",
+            "Be sure there is proper color contrast between background and text.",
+            "If an activity can be completed with a mouse, it must also be accessible by keyboard.",
+            "all of these answers"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q78. JavaScript variables can hold many data types. Which data type does the following variable represent?",
+        "options": [
+            " = \"16\"`",
+            "Boolean",
+            "Number",
+            "String"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q79. You would use a post instead of a page when the content is **\\_**.",
+        "options": [
+            "for a top-level menu item",
+            "nested (has a parent/child relationship with another piece of content)",
+            "when the content is part of a blog.",
+            "evergreen"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q80. The WordPress block editor contains a number of default blocks, including blocks for paragraphs, images, quotes, and shortcode. Blocks are grouped into categories to help users browse and discover them. Which is not a category provided by WordPress core?",
+        "options": [
+            "formatting",
+            "widgets",
+            "layout",
+            "shortcodes"
+        ],
+        "_ps": 3
+    }
+]

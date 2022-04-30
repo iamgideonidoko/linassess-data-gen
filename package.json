@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "contents:dev": "ts-node gen/contents.ts --type dev",
-    "contents:prod": "ts-node gen/contents.ts --type prod"
+    "contents:prod": "ts-node gen/contents.ts --type prod",
+    "data:dev": "ts-node gen/data.ts --type dev",
+    "data:prod": "ts-node gen/data.ts --type prod"
   },
   "repository": {
     "type": "git",

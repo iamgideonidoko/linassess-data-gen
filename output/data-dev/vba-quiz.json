@@ -1,0 +1,362 @@
+[
+    {
+        "question": "Q1. Which two sets of values are printed by this function and sub?",
+        "options": [
+            "",
+            "on GetVitals(ID As Long, Age As Long, Optional Weight As Long) As String",
+            "tVitals=\"ID=\" & ID &\"Age=\" & Age & \"Weight=\" & Weight",
+            "nction"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q2. This code shows the first statement of CalledSub. Which calling statement will work properly?",
+        "options": [
+            "alledSub(Surname, Age)`",
+            "call Calledsub \"smith\",26",
+            "calledsub (surname=\"smith\", Age = 26)",
+            "calledsub (Surname:=\"Smith\", Age:=26)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. What is the principal difference between a class and an object?",
+        "options": [
+            "There is no meaningful difference. The terms are used interchangeably.",
+            "A dass declares an object's properties. An object completes the declaration by defining events and methods.",
+            "An object is a template for a class.",
+            "A class describes the design of an object. An object is an instance of that design."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q4. What value does the MsgBox statement display?",
+        "options": [
+            "",
+            "Sub(VarA As Long, ParamArray VarB() As Variant)",
+            " VarB(0)",
+            "b"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. What object is needed to put a userform module in a VBA project?",
+        "options": [
+            "associated standard code module",
+            "UserForm",
+            "associated class module",
+            "userForm class"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q6. What is the output?",
+        "options": [
+            "",
+            "eSum()",
+            "stArray() As Integer, Total As Integer",
+            "TestArray(1)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. The Driver subroutine is declared by Sub Driver (Y). Which statement results in a compile error?",
+        "options": [
+            "Driver x",
+            "call Driver(x)",
+            "call Driver x",
+            "Driver (X)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q8. You have several variables to display on a user form, and there are too many variables to display at once. Which control best enables the user to see all the variables?",
+        "options": [
+            "Frame",
+            "multipage",
+            "TabStrip",
+            "ListBox"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q9. Below is a function named SquareIt. Which version of the subroutine named Area results in a compile error?",
+        "options": [
+            "",
+            "on SquareIt(ByRef Basis As Integer) As Long",
+            "It = Basis ^ 2",
+            "nction"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q10. EmailAddress() is an array. It is declared by Dim EmailAddress(10) As String, and option Base 1 is in effect. How many rows and columns are in EmailAddress()?",
+        "options": [
+            "10 rows and 10 columns",
+            "10 rows and 1 column",
+            "10 rows and 0 columns",
+            "1 row and 10 columns"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q11. Which cell is selected if you run this code?",
+        "options": [
+            "(\"E3:312\").Range(\"B3\").Select`",
+            "F5",
+            "F3",
+            "B3"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q12. Which variable name is valid in VBA?",
+        "options": [
+            "`_MyVar`",
+            "`My_Var`",
+            "`My-Var`",
+            "`1MyVar`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. Which is a valid definition of a user-defined data type?",
+        "options": [
+            "",
+            "BC",
+            "s String",
+            "s String"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q14. What is one way to duplicate a user form from one project into a different project?",
+        "options": [
+            "",
+            "e and close the project with the existing user form.",
+            "ck Insert > File.",
+            "wse to the location of the existing project."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q15. The recording of a macro in Word is likely to be an incomplete record of the user's actions. Why?",
+        "options": [
+            "Word's Macro Recorder does not record actions initiated by keyboard shortcuts.",
+            "Word's Macro Recorder does not support Find & Replace edits.",
+            "Word's Macro Recorder does not record actions initiated by clicking a button on the Ribbon's Developer tab.",
+            "Word's Macro Recorder does not record actions that inlove selection of text by pointing with the mouse pointer."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q16. Which statement should precede a subroutuine's error handler?",
+        "options": [
+            "End",
+            "Return",
+            "Exit Sub",
+            "Stop"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q17. How many values can MyArray hold?",
+        "options": [
+            "",
+            " Base 0",
+            "ildArray()",
+            "Array(5) As Integer"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q18. Which statement is true?",
+        "options": [
+            "Set establishes a value in a class; Let returns a value from a class.",
+            "Let establishes a value in a class; Set returns a value from a class.",
+            "Let establishes a value in a class; Get returns a value from a class.",
+            "Get establishes a value in a class; Set returns a value from a class."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q19. A declaration has scope, which has three levels. What are they?",
+        "options": [
+            "Module, Project and Automation",
+            "Procedure, Private Module and Public Module",
+            "Subroutine, Module and Project",
+            "Procedure, Project and Global"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q20. There are two references that must be selected in the Visual Basic Editor in order for any Visual Basic code to run in Excel. What are these two references?",
+        "options": [
+            "MS Excel object library and MS Office object library",
+            "VBA and MS Office object library",
+            "VBA and Excel object library",
+            "MS Excel object library and OLE automation"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q21. Which action will cause your project to reset its variables?",
+        "options": [
+            "Edit the list of arguments of the current routine while in debug mode.",
+            "Click End in a run-time error dialog.",
+            "Add an ActiveXcontrol to a worksheet.",
+            "all of these answers"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q22. Which keyboard shortcut causes VBE to locate the declaration of a procedure?",
+        "options": [
+            "Shift+F3",
+            "Alt+F (Windows) or Option+F (Mac)",
+            "Shift+F2",
+            "Ctrl+F (Windows) or Command+F (Mac)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q23. When you define a new class of object, where do you assign a name to it?",
+        "options": [
+            "in the class module's name",
+            "in the class module's code",
+            "in a standard module's code",
+            "in a standard module's Properties"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q24. How does a class module indicate that it uses a particular interface?",
+        "options": [
+            "The interface itself is part of the class module.",
+            "by means of the Interface keyword and the name of the interface",
+            "by means of the Implements keyword and the name of the interface",
+            "The name of the interface is passed as a parameter."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q25. What is needed for the contents of Module1 to be availble to other modules in a VBA project, but not to any other VBA project?",
+        "options": [
+            "Set Option Global at the top of Module1",
+            "Declare module-level variables as Private",
+            "Set Module Level Scope at the top of Module1",
+            "Set Option Private Module at the top of Module1"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q26. When used with an array named MyArray, what is the preerred way to set beginning and ending values of a loop control variable?",
+        "options": [
+            "For i = 0 To UBound(MyArray,1)",
+            "For i = 1 To UBound(MyArray,1)",
+            "For i = LBound(MyArray,1) To UBound(MyArray,1)",
+            "It depends on whether Option Base 0 or Option Base 1 is in use."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q27. What is the value of Test3?",
+        "options": [
+            "",
+            "estEnum",
+            "st1",
+            "st2"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q28. Which statement declares an array?",
+        "options": [
+            "Dim MyArray() As Integer",
+            "Dim MyArray() As Array",
+            "Dim MyArray As Integer",
+            "Dim MyArray As Array"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q29. To use VBA code to maintain a different VBA project, you can make use of VBA's extensibility. What is needed to enable extensibility?",
+        "options": [
+            "Set Macro Security to Trust Access to the VBA Project Object Model",
+            "The project's workbook should be protected in the Ribbon's Review tab",
+            "Include a reference to Microsoft VBA Extensibility 5.3",
+            "Include a reference to Microsoft VBA Extensibility 5.3 and set Macro Security to Trust Access to the VBA Project Object Model"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q30. How do you add a user form to a VBA project?",
+        "options": [
+            "",
+            "ect the project in the Project window of the Visual Basic Editor",
+            "ck the Design Mode button and select Insert Mode",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q31. Explicit variable declaration is required. MyVar is declared at both the module and the procedure level. What is the value of MyVar after first AAA() and then BBB() are run?",
+        "options": [
+            "",
+            "Var As String",
+            "A()",
+            "Var As String"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q32. Which code block from class modules returns a compile error?",
+        "options": [
+            "",
+            "",
+            " Property Get HDL() As Double",
+            "pHDL"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q33. If VBA code declares FileCount as a constant rather than a variable, the code tends to run faster. Why is this?",
+        "options": [
+            "The scope of constants is limited to the procedure that declares them",
+            "Constants are declared at compile time, but variables are declared at run time",
+            "Once declared in a project, the value of a constant cannot be changed. There is no need to look up the current value of FileCount when it is a constant.",
+            "The Const declaraton specifies the most efficient type given the constant's value"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q34. A VBA project must declare four classes. How many class modules are needed?",
+        "options": [
+            "two (one for the properties and one for the methods)",
+            "one (each class is declared in the same module)",
+            "four (one for each class)",
+            "as many as are required by the variable types that the objects return"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q35. What does this code display?",
+        "options": [
+            "",
+            "keErrors()",
+            "As Variant, Z As Variant",
+            "or Resume Next"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q36. The VBA code block shown in the following four options runs when UserForm1's CommandButton1 button is clicked. Which block of code leaves UserFrom1 loaded but not visible until the FoundErrors function has checked it, and then enables processing to continue if no errors are found?",
+        "options": [
+            "",
+            "",
+            "e Sub CommandButton1_Click()",
+            "ndErrors(Me) Then _"
+        ],
+        "_ps": -1
+    }
+]

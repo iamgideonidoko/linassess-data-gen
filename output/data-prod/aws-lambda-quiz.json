@@ -1,0 +1,482 @@
+[
+    {
+        "question": "Q1. How can you increase the CPU resources for your Lambda?",
+        "options": [
+            "`Increase the configured CPU value`",
+            "`Increase the configured timeout value`",
+            "`Increase the configured memory value`",
+            "`Increase the configured concurrency value`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q2. How can additional code or content be provided for your Lambda?",
+        "options": [
+            "`blocks`",
+            "`layers`",
+            "`aliases`",
+            "`handlers`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q3. How can Step Functions call Lambdas?",
+        "options": [
+            "`in sequence`",
+            "`both of these answers`",
+            "`neither of these answers`",
+            "`in parallel`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q4. Which AWS CLI command invokes a function?",
+        "options": [
+            "`aws lambda invoke --function ReturnBucketName outputfile.txt`",
+            "`aws lambda execute --function-name ReturnBucketName outputfile.txt`",
+            "`aws lambda invoke --function-name ReturnBucketName outputfile.txt`",
+            "`aws lambda execute --function ReturnBucketName outputfile.txt`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q5. What adds tracing capabilities to a Lambda?",
+        "options": [
+            "`AWS Trace`",
+            "`CloudStack`",
+            "`CloudTrail`",
+            "`AWS X-Ray`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q6. You need to build a continuous integration/deployment pipeline for a set of Lambdas. What should you do?",
+        "options": [
+            "`Create configuration files and deploy them using AWS CodePipeline.`",
+            "`Create CloudFormation templates and deploy them using AWS CodeBuild`",
+            "`Create configuration file and deploy using AWS CodeBuild`",
+            "`Create CloudFormation templates and deploy them using AWS CodePipeline.`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q7. What can you use to monitor function invocations?",
+        "options": [
+            "`API Gateway`",
+            "`S3`",
+            "`SAS`",
+            "`CLoudTrail`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q8. It is AWS best practice to enable Lambda logging by which of these methods.",
+        "options": [
+            "`Use S3 metrics and CloudWatch alarms`",
+            "`Create custom metrics within your Lambda code.`",
+            "`Create custom metrics within your CloudWatch code.`",
+            "`Use Lambda metrics and CloudWatch alarms.`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q9. What may be provided for environment variables?",
+        "options": [
+            "`an SSL certificate`",
+            "`a bitmask`",
+            "`an AWS KMS key`",
+            "`an HTTP protocol `"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q10. Lambdas allow for running of what other things?",
+        "options": [
+            "`binaries.`",
+            "`all of these answers`",
+            "`executables`",
+            "`Shell scripts`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q11. In what style must you write Lambda code?",
+        "options": [
+            "`MVC`",
+            "`virtual`",
+            "`stateless`",
+            "`protocol`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q12. How can a developer provide Lambda code?",
+        "options": [
+            "`by uploading a .zip file`",
+            "`all of these answers`",
+            "`by editing inline`",
+            "`from an S3 bucket`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. You are performance-testing your Lambda to verify that you set the memory size adequately. Where do you verify the execution overhead?",
+        "options": [
+            "`CLoudWatch logs`",
+            "`DynamoDB logs`",
+            "`S3 logs`",
+            "`Lambda logs.`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q14. What facilitates continuous delivery of Lambdas?",
+        "options": [
+            "`CodeStack`",
+            "`ElasticStack`",
+            "`Mobile Hub`",
+            "`CodeDeploy`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q15. How are computing resources allocated to Lambdas?",
+        "options": [
+            "`proportionally`",
+            "`equally`",
+            "`periodically`",
+            "`daily`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q16. You can restrict the scope of a user's permissions by specifying which two items in an IAM policy?",
+        "options": [
+            "`resources and users`",
+            "`resources and conditions`",
+            "`events and users`",
+            "`events and conditions`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q17. What does Lambda logging include?",
+        "options": [
+            "`logging streams`",
+            "`rotating streams`",
+            "`logging events`",
+            "`advancing log groups`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q18. What can AWS Amplify NOT do for a Lambda?",
+        "options": [
+            "`create a Lambda`",
+            "`be an event source`",
+            "`assign an IAM role`",
+            "`delete a Lambda`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q19. How do you author a Lambda in a programming language that AWS does not support?",
+        "options": [
+            "`Create a Lambda function with a custom runtime and reference the function in your Lambda`",
+            "`Create a Lambda layer with a custom runtime and reference the layer in your lambda`",
+            "`You cannot use Lambda in this situation`",
+            "`Create a Lambda function with a custom runtime`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q20. What are listed downstream resources based on?",
+        "options": [
+            "`the execution policy`",
+            "`the Lambda configuration`",
+            "`the Lambda nodes`",
+            "`the IAM user`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q21. Which is an equivalent and valid tag for a pair of Lambdas?",
+        "options": [
+            "`department:Sales,department:Sales`",
+            "`department:Sales,department:sales`",
+            "`aws:demo;aws:demo`",
+            "`aws:demo;aws:DEMO`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q22. Outbound connections from Lambdas must be `_`.",
+        "options": [
+            "`neither of these answers`",
+            "`UDP/IP`",
+            "`TCP/IP`",
+            "`both of these answers`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. How are CloudWatch actions configured?",
+        "options": [
+            "`automatically`",
+            "`none of these answers`",
+            "`manually`",
+            "`ad hoc`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q24. You are testing your stream-based application and the associated Lambda. AWS best practice advises you to test by varying what?",
+        "options": [
+            "`stream and record sizes`",
+            "`stream and shard sizes`",
+            "`batch and record sizes`",
+            "`batch and shard sizes`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q25. You need to make your Lambda available to services in multiple VPCs. What do you do?",
+        "options": [
+            "`Place each subnet in a VPC. Associate all subnets to your Lambda.`",
+            "`Place all subnets in a VPC. Associate all subnets to your Lambda.`",
+            "`Configure your Lambda to be available to multiple VPCs.`",
+            "`Configure all application VPCs to be peered.`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q26. How is the cost associated with Lambda function calculated?",
+        "options": [
+            "`number of function calls`",
+            "`amount of code run`",
+            "`compute time`",
+            "`amount of infrastructure used`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q27. What is the fastest way to get started with Lambda?",
+        "options": [
+            "`Author a Lambda from scratch.`",
+            "`Use a blueprint.`",
+            "`Use a .zip deployment package.`",
+            "`Use the serverless app repository.`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q28. Where is the disk space allocated for Lambda functions?",
+        "options": [
+            "`/tmp`",
+            "`/default`",
+            "`/temp`",
+            "`/ds`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q29. How do you stop a running Lambda that is stuck in a recursive loop?",
+        "options": [
+            "`Delete the function.`",
+            "`Set the function concurrent execution limit to 0 while you update the code.`",
+            "`Reset the function.`",
+            "`Set the function concurrent execution limit to 100 while you update the code.`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q30. What is AWS best practice for Lambda configuration?",
+        "options": [
+            "`Overprovision memory to run your functions faster and reduce your costs. Do not overprovision your function timeout settings.`",
+            "`Overprovision memory and your function timeout settings to run your functions faster and reduce your costs.`",
+            "`Do not overprovision memory. Overprovision your function timeout settings to run your functions faster and reduce costs.`",
+            "`Do not overprovision memory. Do not overprovision your function timeout settings to run your functions faster and reduce costs.`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q31. Basic Lambda permissions include permissions for what?",
+        "options": [
+            "`removing log groups`",
+            "`none of these answers`",
+            "`creating log groups`",
+            "`updating log groups`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q32. How are environment variables stored?",
+        "options": [
+            "`DynamoDB tables`",
+            "`key-value pairs`",
+            "`S3 buckets`",
+            "`none of these answers`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q33. You need to use a Lambda to provide backend logic to your website. Which service do you use to make your Lambda available to your website?",
+        "options": [
+            "`S3`",
+            "`API Gateway`",
+            "`X-Ray`",
+            "`DynamoDB`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q34. You are creating a Lambda to trigger on change to files in an S3 bucket. Where should you put the bucket name?",
+        "options": [
+            "`in the Lambda function code`",
+            "`in a Lambda environment variable`",
+            "`in the Lambda tags`",
+            "`in another S3 bucket`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q35. What action is needed before you can test a Lambda?",
+        "options": [
+            "`Deploy the Lambda`",
+            "`Export the function`",
+            "`none of these answers`",
+            "`Configure a test event`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q36. What kind of packages can you use with Node.js for Lambdas?",
+        "options": [
+            "`Fleece`",
+            "`NPM`",
+            "`none of these answers`",
+            "`Pod`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q37. Lambdas are monitored by default using which service?",
+        "options": [
+            "`CloudTrail`",
+            "`CloudWatch`",
+            "`CloudFormation`",
+            "`LogWatch`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q38. What can trigger a Lambda function execution?",
+        "options": [
+            "`a table definition`",
+            "`queue isolation`",
+            "`STS Write`",
+            "`an SNS topic`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q39. You need to set an S3 event trigger on your Lambda to respond when data is added to your bucket from another S3 bucket. Which event type do you configure?",
+        "options": [
+            "`POST`",
+            "`\"All object create events\"`",
+            "`PUT`",
+            "`COPY`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q40. To make Lambdas more testable, it is AWS best practice to separate which of these?",
+        "options": [
+            "`Lambda configuration from logging code`",
+            "`Lambda handler from logging code`",
+            "`Lambda handler from core logic`",
+            "`Lambda configuration from core logic`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q41. What is included in an exported Lambda deployment package?",
+        "options": [
+            "`YAML definition`",
+            "`CloudFormation stack configuration`",
+            "`SAML deployment stack`",
+            "`Zip file of all related files`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q42. When can you change the execution role of a Lambda?",
+        "options": [
+            "`only at creation`",
+            "`only before deployment`",
+            "`never`",
+            "`anytime via configuration`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q43. What is the relationship between SAM template and CloudFormation template files?",
+        "options": [
+            "SAM templates are a superset of CloudFormation templates. SAM templates include additional resource types.",
+            "SAM templates have some overlap with CloudFormation templates. Both SAM and CloudFormation templates include resource types that are not in the other type of template.",
+            "CloudFormation templates are a superset of SAM templates. CloudFormation templates include additional resource types.",
+            "SAM templates are a different name for CloudFormation templates. Both template types include the same resource types."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q44. What service deploys Lambdas regionally?",
+        "options": [
+            "`EdgeCloud`",
+            "`CloudEdge`",
+            "`CloudFront`",
+            "`CloudStack`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q45. What programming language does AWS Lambda support?",
+        "options": [
+            "`custom`",
+            "`all of these answers`",
+            "`Java`",
+            "`Ruby`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q46. You need to setup a mechanism to put controls in place to notify you when you have a spike in Lambda concurrency. What should you do?",
+        "options": [
+            "Deploy a CloudTrail alarm that notifies you when function metrics exceed your threshold. Create an AWS budget to monitor costs.",
+            "Deploy a CloudWatch alarm that notifies you when function metrics exceed your threshold. Create an AWS budget to monitor costs.",
+            "Deploy a CloudWatch alarm that notifies you when function metrics exceed your threshold. Create an AWS CostMonitor to monitor costs.",
+            "Deploy a CloudTrail alarm that notifies you when function metrics exceed your threshold. Create an AWS CostMonitor to monitor costs."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q47. You want to minimize cold start time for your Lambda. What do you do?",
+        "options": [
+            "Add extra code to check if the transient cache, or the /tmp directory, has the data that you stored.",
+            "Add extra code to check if the permanent cache, or the /cache directory, has the data that you stored.",
+            "Do nothing. AWS minimizes cols start time by default.",
+            "Create a warm-up Lambda that calls your Lambda every minute"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q48. When is Lambda code stored encrypted?",
+        "options": [
+            "at rest",
+            "at runtime",
+            "at deployment",
+            "non of these answers"
+        ],
+        "_ps": 0
+    }
+]

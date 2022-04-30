@@ -1,0 +1,762 @@
+[
+    {
+        "question": "Q1. Which of the three methods will copy the directory named \"photo dir\" recursively from the user's home directory to /backups?",
+        "options": [
+            "h",
+            "\"~/photo dir\" /backups #method1",
+            "~\"/photo dir\" /backups #method2",
+            "~/\"photo dir\" /backups #method3"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q2. If script.sh is run in the current directory, it will fail. Why?",
+        "options": [
+            "h",
+            "1",
+            "photo1.jpg",
+            ".jpg"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. To run a copy command in a subshell, which syntax would you use?",
+        "options": [
+            "`( command )`",
+            "`sh command`",
+            "`{ command; }`",
+            "`(( command ))`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q4. Using \"awk\", what would the output of this command string be?",
+        "options": [
+            "h",
+            "1 2 3\" | awk '{for (i=1; i<=NF; i++) s=s+$i};END {print s}'",
+            "",
+            "6"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q5. The command below will search the root filesystem for files named \"finance.db\". In this context, what information is being sent to /dev/null?",
+        "options": [
+            "h",
+            " -name \"finance.db\" 1>results.txt 2>/dev/null",
+            "",
+            "the names of files that do not match finance.db"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q6. To permanently remove empty lines from a file called textfile, which command could you use?",
+        "options": [
+            "`sed -i '/^$/d' textfile`",
+            "`sed '/^$/d' textfile`",
+            "`cat textfile | sed '/^$/d`",
+            "`sed -i 's/^$//' textfile`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q7. Assuming that user1 existed, what would be the result of this command string?",
+        "options": [
+            "h",
+            ": '/user1/{print $1 \"-\" $3 \"-\" $6}' /etc/passwd",
+            "",
+            "It would show the username, UID, and home directory of user1 separated by colons."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q8. What happens if you use the `\"set -e\"` in a Bash script?",
+        "options": [
+            "It will cause Bash to exit if a function or subshell returns a nonzero status code.",
+            "It will cause Bash to exit if a conditional returns a non-zero status code.",
+            "It will cause Bash to exit if local, declare, or typeset assignments return a nonzero status code.",
+            "It will cause Bash to exit if a command, list of commands, compound command, or potentially a pipeline returns a nonzero status code."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q9. The **\\_** keyword pauses the script to get input from standard input.",
+        "options": [
+            "get",
+            "argument",
+            "read",
+            "input"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q10. If file.sql holds SQL statements to be executed, what will be in file.txt?",
+        "options": [
+            "h",
+            "< file.sql > file.txt",
+            "",
+            "a copy of the contents of file.sql"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. How does the SUID or setuid affect executable commands?",
+        "options": [
+            "When the command creates files, they will be owned by the group owner of the command.",
+            "The SUID bit allows anyone to execute the command no matter what other permissions are set.",
+            "When the command is executed, its running privileges elevate to the user owner of the command.",
+            "When the command is executed, its running privileges elevate to the group owner of the command."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q12. In order to extract text from the first column of file called textfile, which command would you use?",
+        "options": [
+            "`cat {$1,textfile}`",
+            "`cat textfile | awk [print $1]`",
+            "`cat textfile | awk '{print $1}'`",
+            "`awk textfile {print $1}`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q13. What is the keyboard shortcut to call up the Bash history search as shown below?",
+        "options": [
+            "h",
+            "se-i-search)`':",
+            "",
+            "Esc + R"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q14. Which arithmetic expression will give the most precise answer?",
+        "options": [
+            "`var=$( expr 10 / 8 )`",
+            "`(( var= 10 /8 ))`",
+            "`var=$(( 10 / 8 ))`",
+            "`var=$(echo 'scale=2; 10 / 8' | bc)`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q15. What is the result of this script?",
+        "options": [
+            "h",
+            "nguins",
+            "t =~ [a-z]{8} ]]; echo $?",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q16. How would you change your Bash shell prompt to the following?",
+        "options": [
+            "h",
+            "",
+            "",
+            "`SHELL=\"HAL\\>\"`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q17. What is the output of this code?",
+        "options": [
+            "h",
+            "var/www/html/website.com/html/\"",
+            "${VAR#*/html}\"",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q18. If prompted for text at the standard input, you can tell the command you're done entering text with what key combination?",
+        "options": [
+            "Ctrl + A (Windows) or Command + A (Mac)",
+            "Ctrl + E (Windows) or Command + E (Mac)",
+            "Ctrl + D (Windows) or Command + D (Mac)",
+            "Ctrl + Z (Windows) or Command + Z (Mac)"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q19. In order for a Bash script to be executed like an OS command, it should start with a shebang line. What does this look like?",
+        "options": [
+            "`#!/usr/bin/env bash`",
+            "`~/usr/bin/env bash`",
+            "`'$!/usr/bin/env bash`",
+            "`#/usr/bin/env bash`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q20. What line of Bash script probably produced the output shown below?",
+        "options": [
+            "h",
+            "te is: Sun Mar 24 12:30:06 CST 2019!",
+            "",
+            "`echo \"The date is: !\"`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q21. Suppose your current working directory is your home directory. How could you run the script demo.sh that is located in your home directory? Find three correct answers.",
+        "options": [
+            "h",
+            "me/demo.sh",
+            "emo.sh",
+            "emo.sh"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q22. How could you get a list of all .html files in your tree?",
+        "options": [
+            "`find . -type html`",
+            "`find . -name *.html`",
+            "`find *.html`",
+            "`find . -name \\*.html -print`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. What would be in out.txt?",
+        "options": [
+            "h",
+            "in.txt > out.txt",
+            "",
+            "The output from the command line. By default STDIN comes from the keyboard."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q24. What does this bash statement do?",
+        "options": [
+            "h",
+            "== $b ))",
+            "?",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q25. What do you use in a case statement to tell Bash that you're done with a specific test?",
+        "options": [
+            "`; ;`",
+            "`: :`",
+            "`done`",
+            "`$$`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q26. What does the asterisk represent in this statement?",
+        "options": [
+            "h",
+            "/usr/bin/env bash</em>",
+            "num in",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q27. What Bash script will correctly create these files?",
+        "options": [
+            "`touch file{1+10}.txt`",
+            "`touch file{1-10}.txt`",
+            "`touch file{1..10}.txt`",
+            "`touch file(1..10).txt`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q28. Which variable would you check to verify that the last command executed successfully?",
+        "options": [
+            "`$$`",
+            "`$?`",
+            "`$!`",
+            "`$@`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q29. What is the output of this script?",
+        "options": [
+            "h",
+            "/bash",
+            "john",
+            "homas"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q30. What will be the output of this script?",
+        "options": [
+            "tion](images/Q30/question.png)",
+            "`A` ![A](images/Q30/A.png)",
+            "`B` ![B](images/Q30/B.png)",
+            "`C` ![C](images/Q30/C.png)"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q31. What is wrong with this script?",
+        "options": [
+            "h",
+            "/bash",
+            "p \"Enter your pet type.\" PET",
+            "PET = dog ] ;then"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q32. How can you gather history together for multiple terminals?",
+        "options": [
+            "It just works by default.",
+            "`history --shared`",
+            "`history --combined`",
+            "`shopt -s histappend`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q33. What is the difference between the $@ and $\\* variables?",
+        "options": [
+            "`$@` treats each quoted argument as a separate entity. `$*` treats the entire argument string as one entity.",
+            "`$*` treats each quoted argument as a separate entity. `$@` treats the entire argument string as one entity.",
+            "`$*` is used to count the arguments passed to a script, `$@` provides all arguments in one string.",
+            "`$*` is the wildcard that includes all arguments with word splitting, `$@` holds the same data but in an array."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q34. Which command is being run in this script to check if file.txt exists?",
+        "options": [
+            "h",
+            "f file.txt ]; then",
+            "ho \"file.txt exists\"",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q35. What will be the output of this script?",
+        "options": [
+            "h",
+            "/bash",
+            "('Debian' 'Redhat' 'Ubuntu' 'Android' 'Fedora' 'Suse')",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q36. Which file allows you to save modifications to the shell environment across sessions?",
+        "options": [
+            "`/etc/bash.conf`",
+            "`~/.profile`",
+            "`/etc/bashprofile`",
+            "`~/profile`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q37. Given the listed permissions on data.txt is it possible that user2 could have read, write, and execute permissions on data.txt?",
+        "options": [
+            "h",
+            "l",
+            "0",
+            "----+ 1 user1 user1 0 Oct 27 10:54 data.txt"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q38. What does this script accomplish?",
+        "options": [
+            "h",
+            "/bash",
+            "e -A ARRAY=([user1]=bob [user2]=ted [user3]=sally)",
+            "${!ARRAY[@]})"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q39. What file would match the code below?",
+        "options": [
+            "h",
+            "lo[[.vertical-line.]]World",
+            "",
+            "Nothing, this is an invalid file glob."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q40. What will be in out.txt?",
+        "options": [
+            "h",
+            "existentfile | grep \"No such file\" > out.txt",
+            "",
+            "No such file"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q41. For the script to print \"Is numeric\" on screen, what would the user have to enter when prompted?",
+        "options": [
+            "h",
+            "/bash",
+            "p \"Enter text \" var",
+            "\"$var\" =~ \"^[0-9]+$\" ]];then"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q42. What will be the difference between the output on the screen and the contents of out.txt",
+        "options": [
+            "h",
+            "< file.sql > out.txt",
+            "",
+            "The output on the screen will be identical to out.txt"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q43. How would you find the last copy command run in your history?",
+        "options": [
+            "history | find cp",
+            "history | grep cp",
+            "grep cp history",
+            "cp history"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q44. In order to write a script that iterates through the files in a directory, which of the following could you use?",
+        "options": [
+            "`bash for i in $(ls); do ... done`",
+            "`bash for $(ls); do ... done`",
+            "`bash for i in $ls; do ... done`",
+            "`bash for $ls; do ... done`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q45 When executing a command and passing the output of that command to another command, which character allows you to chain these commands together?",
+        "options": [
+            "|",
+            "->",
+            "\\#",
+            "@"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q46. In the script shown below, what is **greeting**?",
+        "options": [
+            "h",
+            "/usr/bin/env bash</em>",
+            "ng=\"Hello\"",
+            "greeting, everybody!"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q47. Which statement checks whether the variable num is greater than five?",
+        "options": [
+            "`(( \\$num -gt 5 ))`",
+            "`[[$num -lt 5]]`",
+            "`(( \\$num > 5 ))`",
+            "`\\$num > 5`"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q48. Using Bash extended globbing, what will be the output of this command?",
+        "options": [
+            "h",
+            "l",
+            "",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q49. When used from within a script, which variable contains the name of the script?",
+        "options": [
+            "\\$0",
+            "\\$# // number of positional parameters",
+            "\\$\\$ // pid of the current shell",
+            "\\$@ // array-like construct of all positional parameters"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q50. What does the + signify at the end of the 10-digit file permissions on data.txt?",
+        "options": [
+            "h",
+            "",
+            "----+ 1 user1 u1 0 Oct 1 10:00 data.txt",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q51. In Bash, what does the comment below do?",
+        "options": [
+            "h",
+            "",
+            "",
+            "It moves you to the directory you were previously in."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q52. What does this command do?",
+        "options": [
+            "h",
+            "notes -",
+            "",
+            "Accepts text from standard input and places it in \"notes\""
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q53. What is the output of:",
+        "options": [
+            "h",
+            "his old man came rolling\"",
+            "\\${VAR//man/rolling}\"",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q54. The shell looks at the contents of a particular variable to identify which programs it can run. What is the name of this variable?",
+        "options": [
+            "$INCLUDE",
+            "$PATH",
+            "$PROGRAM",
+            "$PATHS"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q55. What does this command sequence do?",
+        "options": [
+            "h",
+            "otes -",
+            "",
+            "It creates an empty file called \"notes\" and then exits."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q56. What is the output of this code?",
+        "options": [
+            "h",
+            "his old man came rolling\"",
+            "${VAR//man/rolling}\"",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q57. What statement would you use to print this in the console?",
+        "options": [
+            " we play a game? yes\\no`",
+            "`echo \"Shall we play a game? yes/\\no\"`",
+            "`echo \"Shall we play a game\\? yes\\\\no\"`",
+            "`echo \"Shall we play a game? yes\\\\no\"`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q58. Given a directory with these seven files, what would remain after executing these commands?",
+        "options": [
+            "h",
+            "e.tar",
+            ".gif",
+            ".jpg"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q59. The code below seems to work and outputs \"8 is greater than 5\". However, what unexpected result will tell you it is not functioning properly?",
+        "options": [
+            "h",
+            "/bash",
+            "\"",
+            "var > 5 ]; then"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q60. What is the result of this script?",
+        "options": [
+            "tion](images/Q60/question.png)",
+            "It removes the directory 'foo' and the files contained within it.",
+            "It removes all files except those in the current directory.",
+            "It removes all files in the current directory."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q61. Which one is true?",
+        "options": [
+            "SELinux policy rules are checked after DAC rules.",
+            "SELinux policy rules are checked before DAC rules",
+            "SELinux policy rules are never checked after DAC rules.",
+            "None of these"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q62. Which does the below command do?",
+        "options": [
+            "h",
+            "",
+            "",
+            "It doesn't display information about the users currently on the machine."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q63. Which sed options should you use to change the second-to-last instance of variable to rock so it would read:",
+        "options": [
+            "tant is a variable that is a rock that isn't variable",
+            "h",
+            " constant is a variable that is a variable that isn't variable\"",
+            "$var\" | sed _____"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q64. To make a Bash script named script.sh executable, what should you run?",
+        "options": [
+            "exec script.sh",
+            "chmod +x script.sh",
+            "bash script.sh",
+            "source script.sh"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q65. How can you create a shared terminal in a Bash shell?",
+        "options": [
+            "screen",
+            "screen -X",
+            "screen --shared",
+            "terminal -shared"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q66. Wich operator sends the output of ls to a file for later use?",
+        "options": [
+            "ls < filelist.txt",
+            "ls ¦ filelist.txt",
+            "ls > filelist.txt",
+            "ls - filelist.txt"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q67. When comparing items with case, what statement indicates an end to the evaluation block?",
+        "options": [
+            "stop",
+            "esac",
+            "done",
+            "exit"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q68. To run a group of commands without spawning a subshell, which syntax would you use?",
+        "options": [
+            "sh command1; command2",
+            "{ command1; command2; }",
+            "(( command1; command2 ))",
+            "command1; command2 )"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q69. What are the results of the command with a user named jon?",
+        "options": [
+            "h",
+            "Hello, $(whoami)!'",
+            "",
+            "Hello, $(jon)!"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q70. How can you copy a directory to another system with compression?",
+        "options": [
+            "tar -ssh user@192.158.1.1 /bin/newfile",
+            "tar cvzf - /wwwdata | ssh root@192.168.1.201 \"dd of=/backup/wwwdata.tar.gz\"",
+            "You can't compress the stream",
+            "scp -r directory user@192.168.1.1:/tmp"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q71. To assign the command `ls -lah` to the shortcut command `lh`, what command should you use?",
+        "options": [
+            "alias lh='ls -lah'",
+            "link lh='ls -lah'",
+            "alias 'ls -lah'=lh",
+            "lh | ls -lah"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q72. Which statement will print all of the fully qualified .cvs files in the home directory or subdirectories while not displaying any errors?",
+        "options": [
+            "find $USER_DIR -name \"\\*.csv\" 2>/dev/null",
+            "find $HOME -name \"\\*.csv\" 1>/dev/null",
+            "find $HOME -name \"\\*.csv\" 2>/dev/null",
+            "find HOME -name \"\\*.csv\" 1>/dev/null"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q73. In Bash, what does a # at the end of the default prompt string indicate?",
+        "options": [
+            "that the user is acting as root",
+            "that the current working directory is the root of the file system",
+            "that there are updates for the system available",
+            "that the user is unprivileged"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q74. What will be the output of this command?",
+        "options": [
+            "h",
+            "l",
+            ".txt",
+            "txt"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q75. What is the output of this command sequence?",
+        "options": [
+            "h",
+            "EOF",
+            "------------------",
+            "s is line 1."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q76. What would be in out.txt?",
+        "options": [
+            "h",
+            "/bash",
+            "23446789 > out. txt",
+            "<> out. txt"
+        ],
+        "_ps": -1
+    }
+]

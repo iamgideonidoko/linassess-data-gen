@@ -1,0 +1,812 @@
+[
+    {
+        "question": "Q1. By convention, what name is used for the first key in a JSON schema?",
+        "options": [
+            "schema",
+            "\\$schema",
+            "JsonSchema",
+            "JSONschema"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q2. Which code is the closest JSON equivalent of the data shown?",
+        "options": [
+            "",
+            "",
+            "ed',",
+            "lue',"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. Which JavaScript method converts a JavaScript value to Json?",
+        "options": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "JSON.toString()",
+            "JSON.objectify()"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q4. Which data type is NOT part of JSON standard?",
+        "options": [
+            "string",
+            "number",
+            "date",
+            "array"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q5. Which term is commonly used to refer to converting data to JSON?",
+        "options": [
+            "unpacking",
+            "serialization",
+            "deserialization",
+            "parsing"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q6. Which code uses the correct JSON syntax to encode the key/value pair shown?",
+        "options": [
+            "ntNum: '000605802'`",
+            "\"accountNum\": \"000605802\"",
+            "accountNum: \"000605802\"",
+            "\"accountNum\": 000605802"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q7. What character do you specify before a JSON control character when you want to use that control characters as a literal part of a string?",
+        "options": [
+            "`/`",
+            "`\\`",
+            "`:`",
+            "`{`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q8. Which date type is part of the JSON standard?",
+        "options": [
+            "Boolean",
+            "map",
+            "promise",
+            "function"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q9. Which key name is used to specify properties that must be included for JSON to be valid?",
+        "options": [
+            "important",
+            "base",
+            "core",
+            "required"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q10. Which is the valid JSON equivalent of the data shown?",
+        "options": [
+            "",
+            "",
+            ": {",
+            ": 1600,"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. How do you store several paragraphs of text as a string in JSON?",
+        "options": [
+            "Escape all whitespaces expect space characters.",
+            "Escape line breaks.",
+            "Escape paragraphs.",
+            "Remove all whitespaces"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q12. What data type is represented by the value of the key/value pair shown?",
+        "options": [
+            "dIn: true`",
+            "string",
+            "Boolean",
+            "number"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q13. If you need to store the loggedIn status of a user in JSON as a boolean, what is the correct syntax?",
+        "options": [
+            "\"loggedIn\": (true)",
+            "loggedIn: \"true\"",
+            "\"loggedIn\": true",
+            "loggedIn: {true}"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q14. What does JSON with padding (JSON-P) use to make a request?",
+        "options": [
+            "an `<origin>` element",
+            "a header request",
+            "the `<script>` element",
+            "the XMLHttpRequest object"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q15. Which value is supported in the JSON specifications?",
+        "options": [
+            "undefined",
+            "infinity",
+            "NaN",
+            "null"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q16. Which JavaScript method converts JSON to a JavaScript value?",
+        "options": [
+            "JSON.parse()",
+            "JSON.stringify()",
+            "JSON.toString()",
+            "JSON.objectify()"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q17. Transferring JSON information from client to server and back again often includes HTTP requests. Match each method with the best choice describing its use.",
+        "options": [
+            "Sends data to specific server to create or update information.",
+            "Sends data to specific server to create or update information without the risk of creating the resource more than once.",
+            "Previews what the GET request response might be without the body of the text.",
+            "Learns the communication channels used by the target source."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q18. Which code uses valid JSON syntax for the text \"Centennial Olympics?",
+        "options": [
+            "",
+            "n",
+            "",
+            ": \"Atlanta\","
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q19. Can trailing commas be used in objects and arrays?",
+        "options": [
+            "yes",
+            "only if there is more than one item",
+            "no",
+            "only when arrays and objects contain more than 10 items"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q20. Which whitespace characters should be escaped within a string?",
+        "options": [
+            "All whitespace is allowed.",
+            "double quotes, slashes new lines, and carriage returns",
+            "new lines and carriage returns only",
+            "double quotes only"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q21. Which is supported by YAML but not supported by JSON?",
+        "options": [
+            "nested",
+            "comments",
+            "arrays",
+            "null values"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q22. Which is an invalid JSON value?",
+        "options": [
+            "`\"'|=(_)(X 72(_)|\\/||\\*'\"`",
+            "`\"|=(_)(X 72(_)|\\/||\\*\"`",
+            "`\"|=(_)(X\\\" \\\"72(_)|\\/||\\*\"`",
+            "`\"\\s(_)(X 72(_)|\\/||\\*\"`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. How do you encode a date in JSON?",
+        "options": [
+            "Convert the date to UTC and enclose in quotes.",
+            "Encode the date as string using the ISO-8601 date format.",
+            "Wrap the date in double quotes.",
+            "Add a \"date\" key to your object and include the date as string."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q24. What’s wrong with this JavaScript?",
+        "options": [
+            "parse({\"first\": \"Sarah\", \"last\": \"Connor\"}) ;`",
+            "JSON should be wrapped with curly braces.",
+            "JSON.parse() is missing an argument.",
+            "The value supplied to JSON.parse() is not a string."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q25. What does this JavaScript code print?",
+        "options": [
+            "",
+            "ullness(JSON.parse('{ \"lemmings\": [] }'));",
+            "ullness(JSON.parse('{ \"lemmings\": null }'));",
+            "ullness(JSON.parse('{ \"lemmings\": \"null\" }'));"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q26. What tool might you use to validate your JSON?",
+        "options": [
+            "JSONLint",
+            "ValidateJSON",
+            "JSONFiddle",
+            "TextEdit"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q27. What characters denote strings in JSON?",
+        "options": [
+            "double quotes",
+            "smart (curly) quotes",
+            "single or double quotes",
+            "single quotes"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q28. Which code is a valid JSON equivalent of the key/value pair shown that also preserves the data type? `constant: 6.022E23`",
+        "options": [
+            "`\"constant\": \"6.022E23\"`",
+            "`\"constant\": \"6\\.022\\E23\"`",
+            "`constant: 6.022E23`",
+            "`constant: \"6.022E23\"`"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q29. Which element is added to the DOM to create a JSON-P request?",
+        "options": [
+            "`<object>`",
+            "`<script>`",
+            "`<json>`",
+            "`<meta>`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q30. Why do so many APIs use JSON?",
+        "options": [
+            "Because it's object-based.",
+            "Because it's a simple and adaptable format for sharing data.",
+            "Because it's based on JavaScript.",
+            "Because it is derived from SGML."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q31. You need to assemble a list of members, but your JSON is not parsing correctly. How do you change it?",
+        "options": [
+            "",
+            "",
+            "ngers\": [",
+            "ron man\","
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q32. When building dynamic web applications using AJAX, developers originally used the \\_ data format, which has since been replaced by JSON.",
+        "options": [
+            "XML",
+            "GRAPHQL",
+            "REST",
+            "SOAP"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q33. How is a true boolean value represented in JSON?",
+        "options": [
+            "TRUE",
+            "\"true\"",
+            "1",
+            "true"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q34. Which array is valid JSON?",
+        "options": [
+            "['tatooine', 'hoth', 'dagobah']",
+            "[tatooine, hoth, dagobah]",
+            "[\"tatooine\", \"hoth\", \"dagobah\",]",
+            "[\"tatooine\", \"hoth\", \"dagobah\"]"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q35. What data type is encoded in the outermost component of the JSON shown?",
+        "options": [
+            "n",
+            "",
+            "",
+            "ear\": 2024"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q36. Which is ignored by JSON but treated as significant by YAML?",
+        "options": [
+            "trailing commas",
+            "trailing decimals",
+            "whitespace",
+            "leading zeroes"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q37. When you need to set the value of a key in JSON to be blank, what is the correct syntax for the empty value?",
+        "options": [
+            "FALSE",
+            "0",
+            "\"\"",
+            "null"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q38. How do you assign a number value in JSON?",
+        "options": [
+            "Escape the number with a backslash.",
+            "Enclose the number in double quotes.",
+            "Enclose the number in single quotes.",
+            "Leave the number as is."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q39. Which code uses the correct JSON syntax for encoding a key/value pair with a null value?",
+        "options": [
+            "\"lastVisit\": \"null\"",
+            "lastVisit: null",
+            "\"lastVisit\": 0",
+            "\"lastVisit\": undefined"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q40. Which reference to the Unicode character U+1F602 complies with the JSON standard?",
+        "options": [
+            "128514",
+            "d83dde02",
+            "\\uD83D\\uDE02",
+            "\\&#128514;"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q41. Which code uses the correct JSON syntax for a key/Value pair containing a string?",
+        "options": [
+            "\"largest\": \"blue whale\"",
+            "largest: 'blue whale'",
+            "'largest': 'blue whale'",
+            "largest: \"blue whale\""
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q42. Which key name is used to specify data type in a JSON schema?",
+        "options": [
+            "data",
+            "schemadata",
+            "schematype",
+            "type"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q43. Which code is a valid JSON equivalent of the key/value pair shown that also preserves the original value?",
+        "options": [
+            "\"UPC\": \\043875",
+            "UPC: \"043875\"",
+            "\"UPC\": 043875",
+            "UPC: '043875'"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q44. Which data format is a JSON schema written in?",
+        "options": [
+            "markdown",
+            "YAML",
+            "XML",
+            "JSON"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q45. Which code is valid JSON equivalent of the key/value pair shown that also preserves the data type?",
+        "options": [
+            "\"variance\": \"-0.0823\"",
+            "variance: \"-0.0823\"",
+            "\"variance\": \"\\-0.0823\"",
+            "variance: -0.0823"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q46. With what character should key/value pairs be separated?",
+        "options": [
+            "colon",
+            "space",
+            "semicolon",
+            "comma"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q47. What character separates keys from values?",
+        "options": [
+            ":",
+            "->",
+            "::",
+            "."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q48. If a string contains line breaks, what should you do?",
+        "options": [
+            "Wrap line breaks in single quotation marks",
+            "Make no changes, because whitespace is allowed",
+            "Replace any line breaks with `\\r`",
+            "Replace any line breaks with `\\n`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q49. Which number types are available in javascript but not supported in json?",
+        "options": [
+            "Fractional and Transcendental",
+            "Infinity or Rational",
+            "Rational and Irrational",
+            "Infinity or NaN"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q50. How should a date value be stored in JSON?",
+        "options": [
+            "As a string with quotes",
+            "As a string without quotes",
+            "As a string in ISO 8583 format",
+            "As a string in ISO 8601 format"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q51. Is the JSON code shown here valid?",
+        "options": [
+            " object with key \"Vehicles\" containing an array of emojis](images/Q51/Q51.jpeg)",
+            "No, emojis must be escaped with a backslash.",
+            "No, JSON strings are not allowed to use emojis.",
+            "No, emojis should never be enclosed with double quotes."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q52. What data structure do you use to encode ordered information?",
+        "options": [
+            "list",
+            "array",
+            "struct",
+            "indexed hash"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q53. What are valid values in JSON?",
+        "options": [
+            "arrays, strings, numbers, true/false",
+            "hashes, arrays, strings, numbers, booleans, null",
+            "arrays, objects, lists, strings, numbers, booleans",
+            "objects, arrays, strings, numbers, booleans, null"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q54. Which key format is valid JSON?",
+        "options": [
+            "key: \"value\"",
+            "\"key\": \"value\"",
+            "key, \"value\"",
+            "'key': 'value'"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q55. What data type is encoded in the outermost component of the JSON shown?",
+        "options": [
+            "n",
+            "",
+            "ult\": [",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q56. What's wrong with this JSON object?",
+        "options": [
+            "n",
+            "",
+            "ies\": \"Star Trek\",",
+            "sodes\": \"The Trouble with Tribbles\""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q57. How should comments be formatted in JSON?",
+        "options": [
+            "Wrap the comments in single quotes and place it at the bottom of the file.",
+            "Wrap the comments in double parentheses.",
+            "Escape comments by placing two slashes at the start of the comment.",
+            "JSON does not support comments."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q58. How would you make the following string valid in JSON?",
+        "options": [
+            "n",
+            ": 'bb-8'",
+            "",
+            "name: \"bb-8\""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q59. How are values separated in JSON?",
+        "options": [
+            "with brackets",
+            "with colons",
+            "with commas",
+            "with parentheses"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q60. With which programming language is JSON best used?",
+        "options": [
+            "any language, as JSON is language agnostic.",
+            "Ruby",
+            "JavaScript",
+            "Python"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q61. What values can arrays contain?",
+        "options": [
+            "only numbers",
+            "any valid JSON value",
+            "only strings and numbers",
+            "only strings"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q62. What technique can be used to represent complex objects with JSON?",
+        "options": [
+            "reserialization",
+            "nesting",
+            "memorization",
+            "minimization"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q63. What characters are used to enclose an array?",
+        "options": [
+            "[]",
+            "{}",
+            "\"\"",
+            "()"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q64. What is the official MIME type for JSON?",
+        "options": [
+            "text/json",
+            "text/javascript",
+            "application/json",
+            "data/json"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q65. What character cannot be part of string within JSON without additional formatting?",
+        "options": [
+            "/",
+            "\"",
+            "-",
+            ":"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q66. Which data type is part of the JSON standard?",
+        "options": [
+            "function",
+            "promise",
+            "Boolean",
+            "map"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q67. Which data type is not part of the JSON standard?",
+        "options": [
+            "number",
+            "string",
+            "array",
+            "date"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q68. Which character separates keys from values?",
+        "options": [
+            ":",
+            "->",
+            "::",
+            "."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q69. What is the purpose of JSON?",
+        "options": [
+            "to provide a simple way to serialize and deserialize data between different sources",
+            "to provide a way to store data for machine learning",
+            "to provide an archival solution for data warehousing",
+            "to provide a way for JavaScript to run other languages"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q70. Can you assume the order of keys in an object?",
+        "options": [
+            "No, but you can sort the keys with `JSON.sort()`.",
+            "Yes, object keys are always ordered alphabetically.",
+            "Yes, but only when the object is first parsed.",
+            "No, you can never assume object keys will be in order."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q71. With what character should object keys be enclosed?",
+        "options": [
+            "`*`",
+            "`#`",
+            "`^`",
+            "`\"`"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q72. What is the maximum number of key/value pairs that JSON supports?",
+        "options": [
+            "10,000",
+            "1000",
+            "There is no defined limit.",
+            "1 million"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q73. What is the recommended term used to refer to multiple resources?",
+        "options": [
+            "a swarm",
+            "multiple resources",
+            "a collection",
+            "a group"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q74. Does JSON support signed numbers?",
+        "options": [
+            "yes, but only if they are enclosed in quotes",
+            "only with integers",
+            "no",
+            "yes"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q75. What two nonnumerical characters can numbers contain?",
+        "options": [
+            "dash and dot",
+            "dash and comma",
+            "comma and exclamation point",
+            "dot and comma"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q76. What JavaScript method is used to load JSON data?",
+        "options": [
+            "JSON.ingest()",
+            "JSON.convert()",
+            "JSON.read()",
+            "JSON.parse()"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q77. How are the values in an array separated?",
+        "options": [
+            "with right arrows",
+            "with colons",
+            "with semicolons",
+            "with commas"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q78. What is the minimum number of values in an array?",
+        "options": [
+            "zero",
+            "one",
+            "two",
+            "three"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q79. In JSON, a set of brackets ([]) is used to denote **\\_**, whereas curly braces ({}) denote **\\_**.",
+        "options": [
+            "arrays; objects",
+            "objects; functions",
+            "arrays; functions",
+            "key/value pairs; arrays"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q80. How does JSON represent truth, falsity and nullness?",
+        "options": [
+            "true, false, null",
+            "true, false",
+            "TRUE, FALSE, NULL",
+            "true, false, null"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q89. The JSON structure features nested objects and arrays. Sometimes the data containing these features exists in relational databases. How is the relational structure different that JSON?",
+        "options": [
+            "It has a flat architecture.",
+            "It has a rewritable structure.",
+            "It has an array-only structure.",
+            "It has a table structure."
+        ],
+        "_ps": 2
+    }
+]

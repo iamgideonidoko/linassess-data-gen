@@ -1,0 +1,912 @@
+[
+    {
+        "question": "Q1. Teams may encounter the need for \"technical\" user stories. Who decides the priority of these?",
+        "options": [
+            "the Product Owner with help from Operations",
+            "the Tech Lead with help from the Product Owner",
+            "the Product Owner with help from the Tech Lead",
+            "the Tech Lead with help from Operations"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q2. What is the Scrum Master's role during the daily stand-up?",
+        "options": [
+            "Congratulate the team on their great work.",
+            "Stand outside the circle of developers and listen for impediments.",
+            "The Scrum Master should not attend—this meeting is for developers only.",
+            "Ask each developer what they did since the last daily standup."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q3. Which factor should not be considered during Sprint Planning?",
+        "options": [
+            "the team's velocity",
+            "the number of stories in the product backlog",
+            "the stories that are ready",
+            "the team's capacity"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q4. A team member has been showing signs of great personal distress: crying at work, snapping at colleagues, having heated phone conversations. As Team Facilitator, what should you do?",
+        "options": [
+            "Give the team member space and time to deal with their personal issues.",
+            "Tell the others on the team that their teammate needs some emotional support.",
+            "Notify the team member's manager of your observations and ask the manager for help.",
+            "Ask the team member if they would like to talk about what might be going on with them personally."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q5. Which statement describes the flow of work in the Scaled Agile Framework?",
+        "options": [
+            "It is a \"push\" system.",
+            "It is \"push\" at the top and \"pull\" at the bottom.",
+            "It is a \"pull\" system.",
+            "It is neither \"push\" nor \"pull.\""
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q6. What is the Product Owner's role in deciding the priority of work in the sprint backlog?",
+        "options": [
+            "None—the Scrum Master should prioritize the work in the sprint backlog.",
+            "The PO should prioritize the items in the sprint backlog.",
+            "The developers prioritize work unless they cannot complete it, in which case the PO should prioritize the remaining work.",
+            "None—the developers should prioritize the work in the sprint backlog."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q7. The Scaled Agile Framework advocates that, if you measure only one thing, what should you measure?",
+        "options": [
+            "quality",
+            "predictability of delivery",
+            "cost of delay",
+            "return on investment"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q8. Why should you apply Weighted Shortest Job First?",
+        "options": [
+            "to maximize the return on investment",
+            "to determine the economic sequencing of the backlog",
+            "to visualize queue length",
+            "to fulfill a commitment to quality"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q9. You have classified the features in your backlog according to risk and value. Which features should the development team work on first?",
+        "options": [
+            "low-value and high-risk",
+            "high-value and high-risk",
+            "high-value and low-risk",
+            "low-value and low-risk"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q10. In the Scaled Agile Framework, what is the role of Enablers?",
+        "options": [
+            "They help extend the Architectural Runway.",
+            "They connect vision to mission so the organization can be successful.",
+            "They support team building.",
+            "They remove the impediments to quality."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q11. Which outcome is not expected of a Sprint Review?",
+        "options": [
+            "The team demonstrates its completed work.",
+            "The team reflects on how to improve its performance.",
+            "Items in the backlog may be reprioritized.",
+            "Stakeholders give feedback about the work completed."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q12. What is not a technique used for splitting user stories?",
+        "options": [
+            "split by line-of-business",
+            "split compound user stories",
+            "split by alternative paths",
+            "split by interface"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. Who decides what the team will work on?",
+        "options": [
+            "the Scrum Master",
+            "a self-organizing team",
+            "the Product Owner",
+            "the Product Manager"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q14. Which choice is not a Scrum value?",
+        "options": [
+            "focus",
+            "integrity",
+            "courage",
+            "commitment"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q15. What should happen if the Product Owner does not accept a story by the end of the iteration?",
+        "options": [
+            "The team does not get credit for the story's points in its velocity calculation.",
+            "The story should be sliced to reflect the work completed.",
+            "The acceptance criteria should be adjusted to reflect the work completed.",
+            "The story should be shown to stakeholders for their feedback."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q16. Which statement is not true about the product backlog?",
+        "options": [
+            "It is a list of work items that are behind schedule.",
+            "The items are maintained in priority order.",
+            "Anyone on the team can propose an item for it.",
+            "It includes all of the work to be done."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q17. A project has some major risks that the team wants to mitigate. What is the best way to monitor how well this effort is going?",
+        "options": [
+            "risk-based spike",
+            "risk-adjusted backlog",
+            "risk velocity chart",
+            "risk burndown graph"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q18. The VP of Engineering wants to start giving out a \"Team Member of the Sprint\" award to recognize a top performer in each group. What advice should you give this VP?",
+        "options": [
+            "This is unhelpful unless there has been recent employee feedback indicating that people feel underappreciated.",
+            "This is a good idea as long as a different person is recognized in each sprint.",
+            "This is a good idea because awards can motivate people to do their best.",
+            "This is unhelpful because it can destroy the team unity essential to achieving high performance."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q19. What is a difference between a team's task board and a Kanban?",
+        "options": [
+            "A Kanban has an explicit rule to limit WIP.",
+            "A Kanban shows the backlog of work.",
+            "A Kanban does not use a Definition of Done.",
+            "A Kanban shows the status of the work items."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q20. The team complains that \"things have been falling through the cracks lately.\" What should you do?",
+        "options": [
+            "Ask the team's manager to make role assignments so the team can catch up.",
+            "Conduct a workshop to identify all of the things that need to be done and see who can help with each.",
+            "Refer to the team's RACI (Responsible, Accountable, Consulted, Informed) assignments.",
+            "Meet with the Tech Lead and Product Owner to try to identify what can be done."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q21. In Large-Scale Scrum, what is the recommended ratio of Scrum Masters to teams?",
+        "options": [
+            "One Scrum Master can support up to five teams.",
+            "Large teams should have two Scrum Masters.",
+            "There should be one Scrum Master per team.",
+            "One Scrum Master can support one to three teams."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q22. In the Cynefin framework, where are \"best practices\" most appropriate?",
+        "options": [
+            "in the Complex regime",
+            "in the Complicated regime",
+            "in the Chaotic regime",
+            "in the Obvious regime"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q23. A manager informs you that a developer from another team is between assignments, and she wants to place the developer on your team for a few sprints. What should you do?",
+        "options": [
+            "Explain to the manager that this will be disruptive to the team and ask that another assignment be found.",
+            "Explain the situation to the team and ask them to go with the flow.",
+            "Explain the situation to your manager and ask them to resolve it.",
+            "When the temporary developer shows up, assign them to write documentation."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q24. The Product Owner complains to you that the team is not working hard enough and they need to increase their velocity by at least 50%. Which action should you not take?",
+        "options": [
+            "Share the feedback from the PO and challenge the team to increase their velocity.",
+            "Ask the PO to explain the business context to the team.",
+            "Explain the impact of technical debt to the PO and the benefits of devoting some capacity to reducing it.",
+            "Hold a Value Stream Mapping workshop to identify and reduce waste."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q25. What is the name of the practice in which a cross-functional team collaborates intensively to develop a new product idea?",
+        "options": [
+            "Hackathon",
+            "Scrum at Scale",
+            "Innovation and Planning",
+            "Magnum Focus"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q26. The team's manager wants to attend the Sprint Retrospective. What should you do?",
+        "options": [
+            "Agree to the manager's request and notify the team.",
+            "Propose that the manager attend only every other retrospective.",
+            "Propose a different forum for the manager to meet with the team.",
+            "Ask the team if it is okay with them that the manager attend."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q27. Who is responsible for a Scrum team's performance?",
+        "options": [
+            "the team",
+            "the Scrum Master",
+            "the Product Owner",
+            "the Engineering Manager"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q28. Which statement concerning small, frequent releases of software is true?",
+        "options": [
+            "The chance for rollback is high.",
+            "It typically requires a high degree of automation.",
+            "The administrative costs are high.",
+            "Backward compatibility may be jeopardized."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q29. What is the activity of clarifying and expanding user stories called?",
+        "options": [
+            "story point estimating",
+            "Definition of Done",
+            "user story expansion",
+            "backlog refinement"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q30. Which strategy is preferred for development teams?",
+        "options": [
+            "Optimize for most work done.",
+            "Maximize output and maximize outcome.",
+            "Maximize outcome while minimizing output.",
+            "Optimize for resource utilization."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q31. Which statement is true about the actor in a user story?",
+        "options": [
+            "The actor does not have to be a specified role in the solution.",
+            "There must be multiple personas for each actor.",
+            "The actor can be the system itself.",
+            "The system cannot be the actor."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q32. Which statement is true about Agile?",
+        "options": [
+            "Agile requires a high degree of up-front planning.",
+            "Once the requirements are agreed to, the team can complete work.",
+            "Agile requires a high degree of discipline.",
+            "Agile works best when there is no contract."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q33. Which statement about burndown and burnup charts is not true?",
+        "options": [
+            "Burndown charts show the work remaining to be done.",
+            "Burnup charts show the work completed.",
+            "Burndown charts are more useful than burnup charts.",
+            "Agile project management tools can produce these automatically."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q34. What is the name for the practice of going to see a process in use at the point of value delivery?",
+        "options": [
+            "Six Sigma",
+            "Gemba walk",
+            "Total Quality Management",
+            "Kaizen"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q35. When the team needs to make a decision, what is the best course of action?",
+        "options": [
+            "Try to achieve concensus.",
+            "Take a vote and the majority rules.",
+            "Identify the person who is most knowledgeable and ask them to decide.",
+            "Let the most senior member of the team decide."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q36. Which action is something the Team Facillitator should NOT do?",
+        "options": [
+            "Embrace servant leadership.",
+            "Estimate story points.",
+            "Celebrate successes.",
+            "Remove impediments"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q37. A team needs to do research, design, prototyping. What is this type of story called?",
+        "options": [
+            "Exploratory spike",
+            "Backlog refinement",
+            "Functional decomposition",
+            "R&D"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q38. Which statement about technical debt is true?",
+        "options": [
+            "Technical debt is another name for bugs",
+            "It is at the Product Owner's description to allocate effort to reduce technical debt.",
+            "Adding technical debt should be avoided at all costs.",
+            "Technical debt is what the Product Owner owes to the developers if they work a lot of overtime to complete the sprint."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q39. Which statement about estimating is not true?",
+        "options": [
+            "Absolute estimating is more reliable than relative estimating.",
+            "Relative estimating is more reliable than absolute estimating.",
+            "In estimating, accuracy is more important than precision.",
+            "In estimating, the effort is more important than the time required."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q40. Which ceremony should the Product Owner not attend?",
+        "options": [
+            "daily stand-ups",
+            "Sprint Retrospectives",
+            "story point estimating",
+            "code reviews"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q41. Which task is not the Product Owners responsibility?",
+        "options": [
+            "estimating story points",
+            "refining acceptance criteria",
+            "giving feedback to developers about the user stories",
+            "demonstrating the work to stakeholders"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q42. Which choice is `_not_` considered during Sprint Planning?",
+        "options": [
+            "stories that meet the Definition of Done",
+            "team velocity",
+            "stories that meet the Definition of Ready",
+            "team capacity"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q43. You have noticed a pattern that the most interesting stories on the Sprint Backlog get started right away, and the least interesting stories languish or don't get done. What should you do?",
+        "options": [
+            "Use a lottery system assign each story.",
+            "Share your observation with the team and invite them to own and solve the problem.",
+            "During story point estimation increase the points assigned to the least interesting stories so the team can boost their velocity.",
+            "Ask the Tech Lead to assign every story to a developer so they all get done efficiently and with accountability."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q44. What Agile practice best supports this principle: \"At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly\"?",
+        "options": [
+            "Sprint Review",
+            "Sprint Retrospective",
+            "daily stand-up",
+            "Sprint Demo"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q45. On what are personas typically based?",
+        "options": [
+            "a sponsors or team members' personalities and traits",
+            "what the developers think is user friendly",
+            "real people, archetypal users, or composites of multiple users",
+            "descriptions of the product's functionality and use"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q46. Which statement describes Shu Ha Ri?",
+        "options": [
+            "It is a library of coding patterns.",
+            "It is a software testing strategy.",
+            "It is a standard for interface design.",
+            "It is a model for skill development and mastery."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q47. What does the Agile Manifesto indicate?",
+        "options": [
+            "Responding to change is more valuable than following a plan.",
+            "Documenting requirements up front is more valuable than at the end.",
+            "Following the plan is essential for not going over budget.",
+            "Contract negotiation should be used to settle disputes."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q48. What is the main benefit of a working agreement?",
+        "options": [
+            "It specifies core working hours.",
+            "It clarifies the reporting relationships on the team.",
+            "It defines the culture that the team aspires to achieve.",
+            "It compiles everyone's information."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q49. What is the name of the information radiator that has multiple columns used to visualize the flow of work?",
+        "options": [
+            "Work Flow Indicator",
+            "Value Stream Map",
+            "Story Map",
+            "Kanban Board"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q50. Which is the best definition of story points?",
+        "options": [
+            "They are a relative measure of the effort needed to complete a story.",
+            "They a measure of development time only, test time is considered separately.",
+            "They are a relative measure of the value of a story.",
+            "They are a measure of time to complete a story."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q51. What is a Scrum of Scrums?",
+        "options": [
+            "It is technique for two or more teams working together coordinate their efforts.",
+            "It is another name for the Scrum Master Community of Practice.",
+            "It is an information radiator used to compare the velocity of several teams.",
+            "It is the system demo for teams on the same release train."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q52. What is the Product Owner's role regarding the product backlog?",
+        "options": [
+            "The PO must identify the intended users of the features on the backlog.",
+            "The PO is responsible for estimating the size of the total.",
+            "The PO must identify the dependencies that impact the backlog.",
+            "The PO decides what to include in the backlog and what to exclude."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q53. Why should a team do refactoring?",
+        "options": [
+            "It assigns developers to other teams in order to eliminate personality conflicts.",
+            "It improves the functionality of the product,",
+            "It recalibrates the success criteria for the product in the marketplace.",
+            "It improves the design, which can lead improved development efficiency and maintainability."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q54. Which choice is not a benefit generally associated with product demonstrations?",
+        "options": [
+            "Learn about new requirements.",
+            "Learn feature suitability.",
+            "Learn about feature usability.",
+            "Learn about feature estimates."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q55. What is an information radiator?",
+        "options": [
+            "a list of KPIs for the team",
+            "a list of overdue action items",
+            "the task board",
+            "a highly visible display of key performance data"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q56. According to the Agile Manifesto, your highest priority is to \\_.",
+        "options": [
+            "minimize change requests",
+            "satisfy the customer",
+            "get the job done on time",
+            "achieve the desired ROI"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q57. Product development organizations sometimes use descriptions of archetypal users and their values so that developers can design the system to meet their needs and wants. What are these descriptions called?",
+        "options": [
+            "actors",
+            "roles",
+            "agents",
+            "personas"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q58. The Product Owner is focused on testing a new system concept in the marketplace as quickly and inexpensively as possible. What is this first-generation product called?",
+        "options": [
+            "preproduction version",
+            "focus group demonstrator",
+            "Generation 1 product",
+            "minimum viable product"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q59. To whom should the Product Owner report?",
+        "options": [
+            "the Quality Manager",
+            "the Product Manager",
+            "the Scrum Master",
+            "the Engineering Manager"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q60. What happens in Sprint 0?",
+        "options": [
+            "The team delivers no story points in that sprint.",
+            "The team does regression testing prior to release to production.",
+            "The team prepares to work on the product backlog.",
+            "This is the time to inspect and adapt."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q61. What does the Definition of Done mean?",
+        "options": [
+            "The story meets the INVEST criteria.",
+            "The team has completed all of the work in its Sprint.",
+            "The story has been handed off to the DevOps team.",
+            "The team has agreed on the criteria for story completion."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q62. Which element is most important when describing your product?",
+        "options": [
+            "its cost",
+            "its licensing terms and conditions",
+            "its benefits",
+            "its features"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q63. Which choice best describes the Team Facilitator?",
+        "options": [
+            "a meeting scheduler",
+            "a record keeper",
+            "a project manager",
+            "an Agile coach"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q64. What is the name of the technique that divides a story into smaller pieces?",
+        "options": [
+            "mitosis",
+            "story slicing",
+            "disaggregation",
+            "Divide and Conquer"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q65. A team member comes to you with a complaint about another team member. What should you do?",
+        "options": [
+            "Bring the complaint to the other person and try to resolve the issue.",
+            "Ask them to talk to the other person and try to work it.",
+            "Notify HR of the problem and ask them to handle it.",
+            "Invite both people a meeting and try mediate the conflict."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q66. What is the forming-storming-norming, performing model of team development known as?",
+        "options": [
+            "the Tuckman model",
+            "the Standard Team model",
+            "Moore's Team Framework",
+            "the Siebert model"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q67. What is the name of the ceremony in which you inspect the work completed during the sprint?",
+        "options": [
+            "Sprint Retrospective",
+            "Sprint Review",
+            "Next-Sprint Planning",
+            "Velocity Confirmation"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q68. Which choice best describes an Agile Release Train (ART)?",
+        "options": [
+            "continuous delivery",
+            "comprised of the teams within a program",
+            "DevOps Center of Excellence",
+            "Scrum of Scrums"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q69. As an Agile coach, what should be your attitude toward your team members individual goals and motivations?",
+        "options": [
+            "Understand them—try align personal motivations with the team's progress toward the project goals.",
+            "Nurture them-goals are the reason why people want to be at work.",
+            "Disregard them—personal views have no bearing on reaching the project goals.",
+            "Leverage them—use personal goals encourage team members raise their performance levels."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q70. Which phrase best describes an Agile team?",
+        "options": [
+            "self-directed",
+            "self-managed",
+            "self-sustaining",
+            "self-organizing"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q71. Which technique does not help prioritize the backlog?",
+        "options": [
+            "MoSCow",
+            "Kano",
+            "WSJF",
+            "Kaizen"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q72. What does the Definition of Ready mean?",
+        "options": [
+            "The story has been tested end is ready for release to production.",
+            "The story is ready to be brought into a sprint.",
+            "The stakeholders are ready to discuss their requirements for story.",
+            "The team has completed sprint 0 and is ready to work."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q73. Which is NOT a principle of the Scaled Agile Framework?",
+        "options": [
+            "Centralize decision-making",
+            "Apply systems thinking",
+            "Take an economic view",
+            "Unlock the intrinsic motivation of knowledge workers"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q74. Which statement concerning small, frequent releases of software is true?",
+        "options": [
+            "The chance for rollback is high",
+            "It typically requires a high degree of automation",
+            "Backward compatibility may be jeopardized",
+            "The administrative costs are high"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q75. What is the definition of capacity?",
+        "options": [
+            "It is an inventory of the team's knowledge and skills that is used to plan the work that they do.",
+            "It is the number of teams that a Team Facilitator can support concurrently.",
+            "It is an adjustment to velocity, used in Spring Planning, to account for reduced availability of team members during the upcoming sprint.",
+            "It is the maximum number of stories that will be allowed in a sprint."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q76. Which action is something the Team Facilitator should not do?",
+        "options": [
+            "Celebrate Success.",
+            "Embrace servant leadership.",
+            "Remove impediments",
+            "Estimate story points."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q77. The team is complaining that they send request for clarification to the Product Owner, but these requests go unanswered. What action should you take?",
+        "options": [
+            "If there is a question about story, tell the developers to use their best judgement, avoid delay, and discuss the issue in sprint review.",
+            "Send a note to the Product Owner saying the delays in completing the work will be their responsibility, not the team's.",
+            "Develop a service-level agree (SLA) that defines certain response times for different types of request and ask the Product Owner to sign off on it.",
+            "Schedule a problem-solving session with the Product Owner and the other team members."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q78. Which choice is a pillar of Lean?",
+        "options": [
+            "Frequent delivery of working software",
+            "Respect for people and culture",
+            "Courage",
+            "Sustainable pace"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q79. Which statement best describes Agile, Lean, and Six Sigma?",
+        "options": [
+            "They are strategies for delivering customer value.",
+            "They were pioneered by Toyota.",
+            "They are strategies for discovering what the customer wants.",
+            "They are derived from statistical process control."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q80. What is a user story?",
+        "options": [
+            "A description of what an actor wants to do in order to accomplish a goal",
+            "A description of archetypal users so the developers can make the solution user-friendly",
+            "A report from the field about a user's experience with the product",
+            "The Agile term for a requirement"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q81. What is the expected output of a Planning Poker meeting?",
+        "options": [
+            "The stories were discussed and each had a story point estimate assigned.",
+            "The team gave feedback to the Product Owner about the acceptance criteria.",
+            "The team decided what stories should be developed within the same sprint.",
+            "The team made a preliminary plan for which stories will be completed in the next quarter."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q82. What is the definition of velocity?",
+        "options": [
+            "The number of story points delivered during a sprint",
+            "The average waiting time for a story on the sprint backlog",
+            "The average wait time for a story to move from the product backlog to the sprint backlog",
+            "The time it takes a developer to complete a story divided by its relative value"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q83. What is most important for a successful Product Owner to understand?",
+        "options": [
+            "The budget for the product.",
+            "The underlying technology of the product.",
+            "The development team's strengths and weaknesses.",
+            "The business context for the product."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q84. Which statement about the Agile Manifesto is true?",
+        "options": [
+            "It was written via crowdsourcing and its authors are unknown.",
+            "It has been translated into dozens of languages and used around the world.",
+            "It was written in 2001 and is obsolete.",
+            "It was first published as part of Jim Highsmith's doctoral thesis."
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q85. The team is not going to complete its Spring Commitment. As the Team Facilitator, what should you do?",
+        "options": [
+            "Ask the PO to extend the sprint.",
+            "Advise the PO as soon as possible.",
+            "Report this at the Sprint Review.",
+            "Point out the reasons why and collaborate on solutions."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q86. When a user story is further decomposed, what are the elements called?",
+        "options": [
+            "technical tasks",
+            "actors and actions",
+            "Who, What, Why",
+            "threads"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q87. What does collective ownership mean?",
+        "options": [
+            "Every member of the team can make changes to any part of the code as necessary.",
+            "If someone is at fault, then the whole team is at fault.",
+            "The team shares equally in the profits that the product generates.",
+            "The team, not the individuals, receive performance evaluations."
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q88. According to the Agile Manifesto, how often should developers and business people work together?",
+        "options": [
+            "as often as needed",
+            "biweekly",
+            "daily",
+            "weekly"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q89. What do you call the practice of writing a test before the code is written?",
+        "options": [
+            "design for testability",
+            "test-driven development",
+            "unit testing",
+            "test then code"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q90. The team is not going to complete its Sprint Commitment. As the Team Facilitator, what should you do?",
+        "options": [
+            "Ask the PO to extend the sprint.",
+            "Report this at the Sprint Review.",
+            "Point out the reasons why and collaborate on solutions.",
+            "Advise the PO as soon as possible."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q91. What is the term for a team member who is \"T-skilled\"?",
+        "options": [
+            "cross-functional",
+            "jack-of-all-trades",
+            "apprentice developer",
+            "generalizing specialist"
+        ],
+        "_ps": -1
+    }
+]

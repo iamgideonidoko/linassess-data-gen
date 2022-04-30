@@ -1,0 +1,172 @@
+[
+    {
+        "question": "Q1. Suppose you see a color fringe around the edges of your subject. Which control is best for removing the fringe?",
+        "options": [
+            "Color Noise Reduction",
+            "Remove Chromatic Aberration",
+            "Split Toning",
+            "Enable Profile Corrections"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q2. If you want to apply the same editing from one image to another, what should you use?",
+        "options": [
+            "metadata",
+            "Image settings",
+            "Edit settings",
+            "Develop settings"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q3. Which module helps you create a printed photo album?",
+        "options": [
+            "Web",
+            "Book",
+            "Print",
+            "Library"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q4. Review the image shown. What does the exclamation point adjacent to the thumbnail imply?",
+        "options": [
+            "ew the image shown. What does the exclamation point adjacent to the thumbnail imply?](images/Q4.png)",
+            "The image has been edited in Photoshop.",
+            "The photo is marked as picked.",
+            "The photo needs at least one keyword."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q5. Adjusting the exposure of a raw file by -1 is the equivalent of doing what in the camera?",
+        "options": [
+            "opening the aperture one f-stop",
+            "closing the aperture one f-stop",
+            "adjusting the ISO by +400",
+            "adjusting the ISO by -400"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q6. Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?",
+        "options": [
+            "ew the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?](images/Q6.png)",
+            "A",
+            "B",
+            "C"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q7. Suppose you want to migrate a selection of images to another machine. How can you create a new catalog that contains a copy of all the images?",
+        "options": [
+            "Use the Export as Catalog command.",
+            "When you back up the catalog, the images are backed up as well.",
+            "Use the Export command.",
+            "Use the Import from Another Catalog command."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q8. Which Spot Healing Brush mode replaces an imperfection with an exact copy of pixels from another area?",
+        "options": [
+            "Patch mode",
+            "Screen mode",
+            "Healing mode",
+            "Clone mode"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q9. When reviewing images, what task can be accomplished using the number keys?",
+        "options": [
+            "finding images",
+            "printing images",
+            "selecting images",
+            "applying ratings"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q10. What's the easiest way to reuse your most recent custom export settings?",
+        "options": [
+            "Click File > Export with Previous.",
+            "Click File > Export with Preset.",
+            "Click File > Export as Catalog.",
+            "Click File > Export Again."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q11. In the image shown, what do the blue areas indicate?",
+        "options": [
+            "he image shown, what do the blue areas indicate?](images/Q11.png)",
+            "crushed details in the shadows",
+            "a special effect applied to the image",
+            "too little saturation in the image"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q12. When exporting an image, which sharpening method is best for use on displays?",
+        "options": [
+            "Glossy Paper",
+            "Screen",
+            "Internet",
+            "Matte Paper"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q13. Which Develop module panel lets you adjust an image based on a color range?",
+        "options": [
+            "HSL/Color",
+            "Split Toning",
+            "Calibration",
+            "Basic"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q14. Which file type will work with the Enhance Details command?",
+        "options": [
+            "raw files",
+            "PSD",
+            "JPEG",
+            "TIFF"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q15. Suppose that while using the Post Crop Vignetting tool, the Highlights slider is grayed out. What is the most likely cause?",
+        "options": [
+            "You are using the Paint Overlay style.",
+            "You are editing a raw file.",
+            "You are using the Color Priority style.",
+            "You are using the Highlight Priority style."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q16. In the image shown, what is the icon circled in yellow?",
+        "options": [
+            "e with a yellow circle](images/Q16.png)",
+            "Virtual copy",
+            "Synced with Lightroom",
+            "Metadata conflict warning"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q17. Which criteria CANNOT be used with a smart collection?",
+        "options": [
+            "Export Date",
+            "Capture Date",
+            "Rating",
+            "Camera Serial Number"
+        ],
+        "_ps": 0
+    }
+]

@@ -1,0 +1,712 @@
+[
+    {
+        "question": "Q1. What is this code an example of?",
+        "options": [
+            "ft",
+            "l = (Double)6",
+            "",
+            "a syntax issue"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q2. What is the error in this code?",
+        "options": [
+            "ft",
+            "= 5",
+            "x == 5 { return }",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q3. What is the raw/underlying type of this enum?",
+        "options": [
+            "ft",
+            "irection {",
+            " north, south, east, west",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q4. Why is dispatchGroup used in certain situations?",
+        "options": [
+            "It allows multiple synchronous or asynchronous operations to run on different queues.",
+            "It allows track and control execution of multiple operations together.",
+            "It allows operations to wait for each other as desired.",
+            "all of these answers."
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q5. What is this code an example of?",
+        "options": [
+            "ft",
+            "l = 5",
+            "\"value is: \\(val)\")",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q6. What are the contents of `vals` after this code is executed?",
+        "options": [
+            "ft",
+            "ls = [10, 2]",
+            "ort { (s1, s2) -> Bool in",
+            " s2"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q7. What does this code print?",
+        "options": [
+            "ft",
+            "ias Thing = [String:Any]",
+            "uff: Thing",
+            "type(of: stuff))"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q8. What is the value of y?",
+        "options": [
+            "ft",
+            "= [\"1\", \"2\"].dropFirst()",
+            "= x[0]",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q9. What is the value of test in this code?",
+        "options": [
+            "ft",
+            "st = 1 == 1",
+            "",
+            "TRUE"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q10. What is the value of y?",
+        "options": [
+            "ft",
+            " Int?",
+            "= x ?? 5",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q11. What is the type of this function?",
+        "options": [
+            "ft",
+            "dd(a: Int, b: Int) -> Int { return a+b }",
+            "",
+            "Int"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q12. What is the correct way to call this function?",
+        "options": [
+            "ft",
+            "yFunc(_ a: Int, b: Int) -> Int {",
+            "rn a + b",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q13. The Codable protocol is **\\_**?",
+        "options": [
+            "a combination of Encodable and Decodable",
+            "not a true protocol <<<<---Possibly correct as it's a typealias of Encodable and Decodable",
+            "required of all classes",
+            "automatically included in all classes"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q14. What is the type of value1 in this code?",
+        "options": [
+            "ft",
+            "lue1 = \"\\(\"test\".count)\"",
+            "",
+            "String"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q15. When a function takes a closure as a parameter, when do you want to mark is as escaping?",
+        "options": [
+            "when it's executed after the function returns",
+            "when it's scope is undefined",
+            "when it's lazy loaded",
+            "all of these answers"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q16. What's wrong with this code?",
+        "options": [
+            "ft",
+            "Person {",
+            "name: String",
+            "address: String"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q17. What is the value of names after this code is executed?",
+        "options": [
+            "ft",
+            "mes = [\"Bear\", \"Joe\", \"Clark\"]",
+            "map { (s) -> String in",
+            "rn s.uppercased()"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q18. What describes this line of code?",
+        "options": [
+            "ft",
+            "l = 5",
+            "",
+            "a constant named val of type Int"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q19. What is the error in this code?",
+        "options": [
+            "ft",
+            "ion String {",
+            "firstLetter: Character = \"c\" {",
+            "dSet {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q20. didSet and willSet are examples of **\\_**?",
+        "options": [
+            "property observers",
+            "key properties",
+            "all of these answers",
+            "newOld value calls"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q21. What is wrong with this code?",
+        "options": [
+            "ft",
+            "allback = {",
+            ".attempts += 1",
+            ".downloadFailed()"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q22. How many values does vals have after this code is executed?",
+        "options": [
+            "ft",
+            "ls = Set<String> = [\"4\", \"5\", \"6\"]",
+            "nsert(\"5\")",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q23. How can you avoid a strong reference cycle in a closure?",
+        "options": [
+            "Use a capture list to set class instances of weak or unowned.",
+            "You can't, there will always be a danger of strong reference cycles inside a closure.",
+            "Initialize the closure as read-only.",
+            "Declare the closure variable as lazy."
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q24. What is wrong with this code?",
+        "options": [
+            "ft",
+            " s = String.init(\"some string\") {",
+            "t(s)",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q25. Which code snippet correctly creates a typealias closure?",
+        "options": [
+            "typealias CustomClosure: () -> ()",
+            "typealias CustomClosure { () -> () }",
+            "typealias CustomClosure -> () -> ()",
+            "typealias CustomClosure -> () {}"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q26. How do you reference class members from within a class?",
+        "options": [
+            "self",
+            "instance",
+            "class",
+            "this"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q27. All value types in Swift are **\\_** under the hood?",
+        "options": [
+            "structs",
+            "classes",
+            "optionals",
+            "generics"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q28. What is the correct way to add a value to this array?",
+        "options": [
+            "ft",
+            "rings = [1, 2, 3]",
+            "",
+            "all of these answers"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q29. How many times will this loop be executed?",
+        "options": [
+            "ft",
+            "in 0...100 {",
+            "t(i)",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q30. What can AnyObject represent?",
+        "options": [
+            "an instance of any class",
+            "an instance of function type",
+            "all of these answers",
+            "an instance of an optional type"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q31. What does this code print?",
+        "options": [
+            "ft",
+            "ias Thing = [String:Any]",
+            "uff : Thing",
+            "type(of:stuff))"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q32. What is the value of t after this code is executed?",
+        "options": [
+            "ft",
+            "mes = [\"Larry\", \"Sven\", \"Bear\"]",
+            "= names.enumerated().first().offset",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q32. What is the value of test after this code executes?",
+        "options": [
+            "ft",
+            " = (name: \"ABC\", val: 5)",
+            "st = vt.0",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q33. What is the base class in this code?",
+        "options": [
+            "ft",
+            "LSN : MMM {",
+            "",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q34. What does this code print to the console?",
+        "options": [
+            "ft",
+            "erLocation: String = \"Home\" {",
+            "Set(newValue) {",
+            "t(\"About to set userLocation to \\(newValue)...\")"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q35. What must a convenience initializer call?",
+        "options": [
+            "a base class convenience initializer",
+            "either a designated or another convenience initializer",
+            "a designated initializer",
+            "none of these answers"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q36. Which object allows you access to specify that a block of code runs in a background thread?",
+        "options": [
+            "DispatchQueue.visible",
+            "DispatchQueue.global",
+            "errorExample need to be labeled as `throws`.",
+            "DispatchQueue.background"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q37. What is the inferred type of x?",
+        "options": [
+            "ft",
+            "= [\"a\", \"b\", \"c\"]",
+            "",
+            "`String[]`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q38. What is the value of `oThings` after this code is executed?",
+        "options": [
+            "ft",
+            "hings: [Any] = [1, \"2\", \"three\"]",
+            "hings = nThings.reduce(\"\") { \"\\($0)\\($1)\" }",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q39. How would you call a function that throws errors and also returns a value?",
+        "options": [
+            "`!try`",
+            "`try?`",
+            "`try!`",
+            "`?try`"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q40. What is wrong with this code?",
+        "options": [
+            "ft",
+            "ol TUI {",
+            " add(x1 : Int, x2 : Int) -> Int {",
+            "turn x1 + x2"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q41. In this code, what are `wheels` and `doors` examples of?",
+        "options": [
+            "ft",
+            "Car {",
+            "wheels: Int = 4",
+            "doors = 4"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q42. How do you designated a failable initializer?",
+        "options": [
+            "You cannot",
+            "deinit",
+            "`init?`",
+            "init"
+        ],
+        "_ps": 2
+    },
+    {
+        "question": "Q43. What is printed when this code is executed?",
+        "options": [
+            "ft",
+            "l = Double.init(\"5a\")",
+            "dbl ?? \".asString()\")",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q44. In the function below, what are `this` and `toThat` examples of?",
+        "options": [
+            "ft",
+            "dd(this x: Int, toThat y: Int)->{}",
+            "",
+            "none of these answers"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q45. What is wrong with this code?",
+        "options": [
+            "ft",
+            "ey, value) in [1: \"one\", 2: \"two\"]{",
+            "t(key, value)",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q46. Which of these choices is associated with unit testing?",
+        "options": [
+            "XCTest",
+            "all of these answers",
+            "@testable",
+            "XCAssert"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q47. In the code below, what is width an example of?",
+        "options": [
+            "ft",
+            "Square{",
+            "height: Int = 0",
+            "width : Int {"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q48. What data type is this an example of?",
+        "options": [
+            "ft",
+            "ls = (\"val\", 1)",
+            "",
+            "a dictionary"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q49. What is wrong with this code?",
+        "options": [
+            "ft",
+            "= 5",
+            ".0",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q50. What will this code print to the console?",
+        "options": [
+            "ft",
+            "ems = [\"a\":1, \"b\":2, \"c\":\"test\"] as [String: Any]",
+            "\"c\"] = nil",
+            "items[\"c\"] as Any)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q51. What is wrong with this code?",
+        "options": [
+            "ft",
+            "l = 5.0 + 10",
+            "",
+            "There is nothing wrong with this code"
+        ],
+        "_ps": 3
+    },
+    {
+        "question": "Q52. How many parameters does the initializer for Test have?",
+        "options": [
+            "ft",
+            " Test{",
+            "score: Int",
+            "date: Date"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q53. What prints to the console when executing this code?",
+        "options": [
+            "ft",
+            "= try? String.init(\"test\")",
+            "x)",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q54. How can you sort this array?",
+        "options": [
+            "ft",
+            "ls = [1,2,3]",
+            "",
+            "`vals.sort { $0 < $1 }`"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q55. DispatchQueue.main.async takes a block that will be",
+        "options": [
+            "not executed",
+            "executed in the main queue",
+            "none of these answers",
+            "executed on the background thread"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q56. When is deinit called?",
+        "options": [
+            "When a class instance needs memory",
+            "All of these answers",
+            "When the executable code is finished",
+            "When a class instance is being removed from memory"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q57. How do you declare an optional String?",
+        "options": [
+            "String?",
+            "Optional[String]",
+            "[String]?",
+            "?String"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q58. How many times this code will be executed? —OR— How many times will this loop be performed?",
+        "options": [
+            "ft",
+            "in [\"0\", \"1\"]{",
+            "t(i)",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q59. What does this code print?",
+        "options": [
+            "ft",
+            "mes = [\"Bear\", \"Tony\", \"Svante\"]",
+            "names[1]+\"Bear\")",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q60. What is true of this code?",
+        "options": [
+            "ft",
+            "me: String?",
+            "",
+            "name can hold only a string value."
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q61. What is the value of `val` after this code is executed?",
+        "options": [
+            "ft",
+            "= 5",
+            "l = i * 6.0",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q62. What does this code print?",
+        "options": [
+            "ft",
+            "ositions : Int {",
+            " first, second, third, other",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q63. What is printed to the console when this code is executed?",
+        "options": [
+            "ft",
+            "rEach { (char) in",
+            "int(char)",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q64. What prints when this code is executed?",
+        "options": [
+            "ft",
+            " = [\"1\", \"2\", \"3\"]",
+            "ilter { $0 > \"0\" }",
+            "orted { $0 > $1 }"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q65. What enumeration feature allows them to store case-specific data?",
+        "options": [
+            "ion does not make that much sense though. )",
+            "associated values",
+            "integral values",
+            "raw values"
+        ],
+        "_ps": 1
+    },
+    {
+        "question": "Q66. In the code below, AOM must be a(n)?",
+        "options": [
+            "ft",
+            "AmP : MMM, AOM {",
+            "",
+            ""
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q67. What is the value of numbers in the code below?",
+        "options": [
+            "ft",
+            "mbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}",
+            "",
+            "[1,3,5]"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q68. What is the type of `vals` in this code?",
+        "options": [
+            "ft",
+            "ls = [\"a\", 1, \"Hi\"]",
+            "",
+            "Array(char)"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q69. How can you extract val to `x` in tuple `vt`",
+        "options": [
+            "ft",
+            " = (name: \"ABC\", val: 5)",
+            "",
+            "let x = vt.1"
+        ],
+        "_ps": -1
+    },
+    {
+        "question": "Q70. What is wrong with this code?",
+        "options": [
+            "ft",
+            "Person {",
+            "r name: String",
+            "r address: String"
+        ],
+        "_ps": -1
+    }
+]
