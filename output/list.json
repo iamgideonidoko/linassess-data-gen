@@ -1,0 +1,320 @@
+{
+    "quizzes": [
+        {
+            "name": "Accounting",
+            "fileName": "accounting-quiz.json"
+        },
+        {
+            "name": "Adobe Acrobat",
+            "fileName": "adobe-acrobat-quiz.json"
+        },
+        {
+            "name": "Adobe Illustrator",
+            "fileName": "adobe-illustrator-quiz.json"
+        },
+        {
+            "name": "Adobe In Design",
+            "fileName": "adobe-in-design-quiz.json"
+        },
+        {
+            "name": "Adobe Lightroom",
+            "fileName": "adobe-lightroom-quiz.json"
+        },
+        {
+            "name": "Adobe Photoshop",
+            "fileName": "adobe-photoshop-quiz.json"
+        },
+        {
+            "name": "Adobe Premiere Pro",
+            "fileName": "adobe-premiere-pro-quiz.json"
+        },
+        {
+            "name": "Adobe Xd",
+            "fileName": "adobe-xd-quiz.json"
+        },
+        {
+            "name": "After Effects",
+            "fileName": "after-effects-quiz.json"
+        },
+        {
+            "name": "Agile Methodologies",
+            "fileName": "agile-methodologies-quiz.json"
+        },
+        {
+            "name": "Android",
+            "fileName": "android-quiz.json"
+        },
+        {
+            "name": "Angular",
+            "fileName": "angular-quiz.json"
+        },
+        {
+            "name": "Autocad",
+            "fileName": "autocad-quiz.json"
+        },
+        {
+            "name": "Autodesk Fusion 360",
+            "fileName": "autodesk-fusion-360-quiz.json"
+        },
+        {
+            "name": "Aws Lambda",
+            "fileName": "aws-lambda-quiz.json"
+        },
+        {
+            "name": "Aws",
+            "fileName": "aws-quiz.json"
+        },
+        {
+            "name": "Bash",
+            "fileName": "bash-quiz.json"
+        },
+        {
+            "name": "C++",
+            "fileName": "c++quiz.json"
+        },
+        {
+            "name": "C",
+            "fileName": "c-quiz.json"
+        },
+        {
+            "name": "C#",
+            "fileName": "c-sharp-quiz.json"
+        },
+        {
+            "name": "Css",
+            "fileName": "css-quiz.json"
+        },
+        {
+            "name": "Cybersecurity",
+            "fileName": "cybersecurity-quiz.json"
+        },
+        {
+            "name": "Django",
+            "fileName": "django-quiz.json"
+        },
+        {
+            "name": "Dotnet Framework",
+            "fileName": "dotnet-framework-quiz.json"
+        },
+        {
+            "name": "Eclipse",
+            "fileName": "eclipse-quiz.json"
+        },
+        {
+            "name": "Front End Development",
+            "fileName": "front-end-development-quiz.json"
+        },
+        {
+            "name": "Google Cloud Platform",
+            "fileName": "gcp-quiz.json"
+        },
+        {
+            "name": "Git",
+            "fileName": "git-quiz.json"
+        },
+        {
+            "name": "Go",
+            "fileName": "go-quiz.json"
+        },
+        {
+            "name": "Google Ads",
+            "fileName": "google-ads-quiz.json"
+        },
+        {
+            "name": "Google Analytics",
+            "fileName": "google-analytics-quiz.json"
+        },
+        {
+            "name": "Hadoop",
+            "fileName": "hadoop-quiz.json"
+        },
+        {
+            "name": "Html",
+            "fileName": "html-quiz.json"
+        },
+        {
+            "name": "It Operations",
+            "fileName": "it-operations-quiz.json"
+        },
+        {
+            "name": "Java",
+            "fileName": "java-quiz.json"
+        },
+        {
+            "name": "Javascript",
+            "fileName": "javascript-quiz.json"
+        },
+        {
+            "name": "Jquery",
+            "fileName": "jquery-quiz.json"
+        },
+        {
+            "name": "Json",
+            "fileName": "json-quiz.json"
+        },
+        {
+            "name": "Kotlin",
+            "fileName": "kotlin-quiz.json"
+        },
+        {
+            "name": "Linux",
+            "fileName": "linux-assessment.json"
+        },
+        {
+            "name": "Machine Learning",
+            "fileName": "machine-learning-quiz.json"
+        },
+        {
+            "name": "Matlab",
+            "fileName": "matlab-quiz.json"
+        },
+        {
+            "name": "Maven",
+            "fileName": "maven-quiz.json"
+        },
+        {
+            "name": "Microsoft Access",
+            "fileName": "microsoft-access.json"
+        },
+        {
+            "name": "Microsoft Azure",
+            "fileName": "microsoft-azure-quiz.json"
+        },
+        {
+            "name": "Microsoft Excel",
+            "fileName": "microsoft-excel-quiz.json"
+        },
+        {
+            "name": "Microsoft Outlook",
+            "fileName": "microsoft-outlook-quiz.json"
+        },
+        {
+            "name": "Microsoft Power Bi",
+            "fileName": "microsoft-power-bi-quiz.json"
+        },
+        {
+            "name": "Microsoft Power Point",
+            "fileName": "microsoft-power-point-quiz.json"
+        },
+        {
+            "name": "Microsoft Project",
+            "fileName": "microsoft-project-quiz.json"
+        },
+        {
+            "name": "Microsoft Word",
+            "fileName": "microsoft-word-quiz.json"
+        },
+        {
+            "name": "Mongodb",
+            "fileName": "mongodb-quiz.json"
+        },
+        {
+            "name": "Mysql",
+            "fileName": "mysql-quiz.json"
+        },
+        {
+            "name": "Node.js",
+            "fileName": "node.js-quiz.json"
+        },
+        {
+            "name": "Nosql",
+            "fileName": "nosql-quiz.json"
+        },
+        {
+            "name": "OOP",
+            "fileName": "object-oriented-programming-quiz.json"
+        },
+        {
+            "name": "Objective C",
+            "fileName": "objective-c-quiz.json"
+        },
+        {
+            "name": "Php",
+            "fileName": "php-quiz.json"
+        },
+        {
+            "name": "Python",
+            "fileName": "python-quiz.json"
+        },
+        {
+            "name": "Quickbooks",
+            "fileName": "quickbooks-quiz.json"
+        },
+        {
+            "name": "R",
+            "fileName": "r-quiz.json"
+        },
+        {
+            "name": "React",
+            "fileName": "reactjs-quiz.json"
+        },
+        {
+            "name": "Rest Api",
+            "fileName": "rest-api-quiz.json"
+        },
+        {
+            "name": "Revit",
+            "fileName": "revit-quiz.json"
+        },
+        {
+            "name": "Ruby On Rails",
+            "fileName": "ruby-on-rails-quiz.json"
+        },
+        {
+            "name": "Rust",
+            "fileName": "rust-quiz.json"
+        },
+        {
+            "name": "Scala",
+            "fileName": "scala-quiz.json"
+        },
+        {
+            "name": "SEO",
+            "fileName": "search-engine-optimization-quiz.json"
+        },
+        {
+            "name": "Sharepoint",
+            "fileName": "sharepoint-quiz.json"
+        },
+        {
+            "name": "Solidworks",
+            "fileName": "solidworks-quiz.json"
+        },
+        {
+            "name": "Spring Framework",
+            "fileName": "spring-framework-quiz.json"
+        },
+        {
+            "name": "Swift",
+            "fileName": "swift-quiz.json"
+        },
+        {
+            "name": "T Sql",
+            "fileName": "t-sql-quiz.json"
+        },
+        {
+            "name": "Unity",
+            "fileName": "unity-quiz.json"
+        },
+        {
+            "name": "Vba",
+            "fileName": "vba-quiz.json"
+        },
+        {
+            "name": "Visio",
+            "fileName": "visio-quiz.json"
+        },
+        {
+            "name": "Windows Server",
+            "fileName": "windows-server-quiz.json"
+        },
+        {
+            "name": "Wordpress",
+            "fileName": "wordpress-quiz.json"
+        },
+        {
+            "name": "Xml",
+            "fileName": "xml-quiz.json"
+        }
+    ]
+}

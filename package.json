@@ -8,6 +8,7 @@
     "contents:prod": "ts-node gen/contents.ts --type prod",
     "data:dev": "ts-node gen/data.ts --type dev",
     "data:prod": "ts-node gen/data.ts --type prod",
+    "list": "ts-node gen/list.ts",
     "lint": "eslint ./**/*.{js,ts} --max-warnings=0",
     "lint-fix": "eslint ./**/*.{js,ts} --fix",
     "prepare": "husky install"
