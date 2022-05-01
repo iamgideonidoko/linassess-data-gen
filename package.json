@@ -7,7 +7,10 @@
     "contents:dev": "ts-node gen/contents.ts --type dev",
     "contents:prod": "ts-node gen/contents.ts --type prod",
     "data:dev": "ts-node gen/data.ts --type dev",
-    "data:prod": "ts-node gen/data.ts --type prod"
+    "data:prod": "ts-node gen/data.ts --type prod",
+    "lint": "eslint ./**/*.{js,ts} --max-warnings=0",
+    "lint-fix": "eslint ./**/*.{js,ts} --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -32,6 +35,7 @@
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",
     "tslib": "^2.4.0",
