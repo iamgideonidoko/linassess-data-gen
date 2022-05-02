@@ -5,7 +5,7 @@
             "```c\nwhile(1)\n{\n    char *smallString = (char *) malloc(10);\n}\n```",
             "```c\nlong long number = 1;\n    while(1)\n    number *= 2;\n```",
             "```c\nwhile(1)\n{\n    char hugeString[1000000L];\n    memset(hugeString, 0, 1000000L);\n}\n```",
-            "```c\nwhile(1)\n{\n    long *bigArray = (long *) malloc(sizeof(long) * 1000);\n    memset(bigArray, 1000000, 1000);\n    free(bigArray);\n}\n```\n```c\nint f1 (int a, int b)\n{\n    if (a > b)\n    {\n        printf(\"A is greater than B\\n\");\n        return 1;\n    }\n    else\n    {\n        printf(\"B is greater than A\");\n        return 0;\n    }\n}\nmain()\n{\n    if (f1(20,10) || f1(10,20))\n        printf(\"C is fun!\\n\");\n}\n```"
+            "```c\nwhile(1)\n{\n    long *bigArray = (long *) malloc(sizeof(long) * 1000);\n    memset(bigArray, 1000000, 1000);\n    free(bigArray);\n}\n```"
         ],
         "_ps": 0
     },
@@ -25,7 +25,7 @@
             "recursion",
             "subfunction",
             "inner call",
-            "infinite loop\n```c\nmain(){\n    char c1 ='a';\n    char c2 = c1+10;\n}\n```"
+            "infinite loop"
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "character arithmetic",
             "undefined assignment",
             "type conversion",
-            "invalid declaration\n```c\nfloat g;\nvoid *vptr=&g;\n```"
+            "invalid declaration"
         ],
         "_ps": 0
     },
@@ -45,7 +45,7 @@
             "f = _(float _)vptr;",
             "f = (float \\*)vptr;",
             "f = \\*(float \\*)vptr;",
-            "f = \\*(float)vptr;\n```c\nstruct s {\n    int i;\n    struct s *s1;\n    struct s *s2;\n};\n```"
+            "f = \\*(float)vptr;"
         ],
         "_ps": 2
     },
@@ -85,7 +85,7 @@
             "volatile",
             "typeof",
             "register",
-            "typedef\n[Reference](https://www.ibm.com/docs/en/adfz/developer-for-zos/14.2.0?topic=programs-c-reserved-keywords)\n```c\nint main(){\n    int a=1, b=2, c=3, d=4;\n    int x = a;\n    if (a>b)\n    if (b<c) x=b;\n    else x=c;\n    return(x);\n}\n```"
+            "typedef\n[Reference](https://www.ibm.com/docs/en/adfz/developer-for-zos/14.2.0?topic=programs-c-reserved-keywords)"
         ],
         "_ps": 1
     },
@@ -95,7 +95,7 @@
             "1",
             "3",
             "2",
-            "0\n```c\nunion Cars {\n    char make[20];\n    char model[30];\n    short year;\n} car;\n```"
+            "0"
         ],
         "_ps": 0
     },
@@ -105,7 +105,7 @@
             "32",
             "54",
             "30",
-            "52\n```c\nmain(){\n    constant int PI = 3.14;\n    printf(\"%f\\n\", pi);\n}\n```"
+            "52"
         ],
         "_ps": 2
     },
@@ -205,7 +205,7 @@
             "Objects; Structure",
             "Variables; Declaration",
             "Data types; Memory location",
-            "Arrays; Header file\n```c\nmain() {\n    char c1='a' , c2='A';\n    int i=c2-c1;\n    printf(\"%d\", i);\n}\n```"
+            "Arrays; Header file"
         ],
         "_ps": 2
     },
@@ -225,7 +225,7 @@
             "The scanf() function reads data formatted as a string; The sscanf() function reads string input from the screen.",
             "The scanf() function reads formatted data from the keyboard; The sscanf() function reads formatted input from a string.",
             "The scanf() function reads string data from the keyboard; The sscanf() function reads string data from a string.",
-            "The scanf() function reads formatted data from a file; The sscanf() function reads input from a selected string\n```c\nchar *string[20] = { \"one\", \"two\", \"three\"};\n```"
+            "The scanf() function reads formatted data from a file; The sscanf() function reads input from a selected string"
         ],
         "_ps": 1
     },
@@ -255,7 +255,7 @@
             "```c\nmain() {\n    for(i=0; i<10; i++) ;\n}\n```",
             "```c\nmain() {\nint i=0;\n    for(; i<10; i++) ;\n}\n```",
             "```c\nmain() {\n    int i;\n    for(i=0; i<j; i++) ;\n}\n```",
-            "```c\nmain() {\nint i;\n    for (i= 10; i<10; i++)\n}\n```\n```c\n1 main() { float x = f1(10, 5); }\n2 float f1(int a, int b) { return (a/b); }\n```"
+            "```c\nmain() {\nint i;\n    for (i= 10; i<10; i++)\n}\n```"
         ],
         "_ps": 1
     },
@@ -265,7 +265,7 @@
             "2",
             "2.000000",
             "a runtime error",
-            "a compiler error\n```c\n#include <stdio.h>\nint main() {\n    int *p = NULL;\n    return 0;\n}\n```"
+            "a compiler error"
         ],
         "_ps": 3
     },
@@ -315,7 +315,7 @@
             "0 if str1 and str2 are the same, a negative number if str1 is less than str2, a positive number if str1 is greater than str2",
             "true (1) if str1 and str2 are the same, false (0) if str1 and str2 are not the same",
             "true (1) if str1 and str2 are the same, NULL if str1 and str2 are not the same",
-            "0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1\n```c\nint a=10, b=20;\nint f1(a) { return(a*b); }\nmain() {\nprintf(\"%d\", f1(5));\n}\n```"
+            "0 if str1 and str2 are the same, a negative number if str2 is less than str1, a positive number if str2 is greater than str1"
         ],
         "_ps": 0
     },
@@ -345,7 +345,7 @@
             "```c\n#ifdef MYLIB_H\n#undef MYLIB_H\n// mylib.h content\n#endif /* MYLIB_H */\n```",
             "```c\n#ifndef MYLIB_H\n#define MYLIB_H\n// mylib.h content\n#endif /* MYLIB_H */\n```",
             "```c\n#define MYLIB_H\n#include \"mylib.h\"\n#undef MYLIB_H\n```",
-            "```c\n#ifdef MYLIB_H\n#define MYLIB_H\n// mylib.h content\n#endif /* MYLIB_H */\n```\n```c\nmain(){\n int x=1;\n while(x++<100){\n    x*=x;\n    if(x<10) continue;\n    if(x>50) break\n }\n}\n```"
+            "```c\n#ifdef MYLIB_H\n#define MYLIB_H\n// mylib.h content\n#endif /* MYLIB_H */\n```"
         ],
         "_ps": 1
     },
@@ -415,7 +415,7 @@
             "FIFO",
             "LIFO",
             "LILO",
-            "LOLI\n```c\nmain(){\n    char *p = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";\n    int i;\n    for (i=0;i<5;i++) *p++; *p++;\n    printf(\"%c\",*p++);\n}\n```"
+            "LOLI"
         ],
         "_ps": 1
     },
@@ -485,7 +485,7 @@
             "`for(i=1; i<=1; i++);`",
             "`for(i=1; i=10; i++);`",
             "`for(i=1; i==10; i++);`",
-            "`for(i=10; i>=1; i--);`\n```\n1 main() {\n2   int a, b, c;\n3   a=10; b=50;\n4   c=a * b % a;\n5 }\n```"
+            "`for(i=10; i>=1; i--);`"
         ],
         "_ps": 2
     },
@@ -515,7 +515,7 @@
             "It returns TRUE for lowercase letters of the alphabet.",
             "It ensures that text output uses only ASCII values (0 through 127).",
             "It returns FALSE for lowercase letters of the alphabet.",
-            "It converts an uppercase letter of the alphabet to lowercase.\n```c\nfloat g;\nvoid *vptr=&g;\n```"
+            "It converts an uppercase letter of the alphabet to lowercase."
         ],
         "_ps": 3
     },

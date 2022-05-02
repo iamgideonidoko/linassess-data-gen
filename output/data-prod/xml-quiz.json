@@ -5,7 +5,7 @@
             "`doc(\"cars.xml\")/cars/car[year>2000].data`",
             "`doc(\"cars.xml\")/cars/car[xs:integer(year) gt 2000]`",
             "`doc(\"cars.xml\")/cars/car[year gt 2000]`",
-            "`doc(\"cars.xml\")/cars/car[integer(year) > 2000]`\n```xml\n<xs:element name=\"car\">\n    <xs:complexType>\n        <xs:sequence>\n            <xs:element name=\"make\" type=\"xs:string\"/>\n            <xs:element name=\"model\" type=\"xs:string\"/>\n            <xs:element name=\"year\" type=\"xs:string\"/>\n        </xs:sequence>\n        <xs:anyAttribute/>\n    </xs:complexType>\n</xs:element>\n```"
+            "`doc(\"cars.xml\")/cars/car[integer(year) > 2000]`"
         ],
         "_ps": 0
     },
@@ -45,7 +45,7 @@
             "PHP, .NET, and SQL",
             "HTML, CSS, and DOM",
             "Python, Perl, and C++",
-            "Java, ASP, and C#\n```xml\n<x/>\n```"
+            "Java, ASP, and C#"
         ],
         "_ps": 1
     },
@@ -85,7 +85,7 @@
             "processor; complies; process",
             "system; stores; retrieve",
             "non; processes; format",
-            "human; annotates; manipulate\n```xml\n<x a=\"x\" a=\"y\"></x>\n```"
+            "human; annotates; manipulate"
         ],
         "_ps": 3
     },
@@ -245,7 +245,7 @@
             "Frameset",
             "Transitional",
             "Basic",
-            "Strict\n**Explanation**: [XHTML - Doctypes](https://www.tutorialspoint.com/xhtml/xhtml_doctypes.htm)\n```xml\n<cars>\n    <car>\n        <make>Cadillac\n            <model>Escalade</model>\n            <price year=\"2007\">$20,000</price>\n        </make>\n    </car>\n</cars>\n```"
+            "Strict\n**Explanation**: [XHTML - Doctypes](https://www.tutorialspoint.com/xhtml/xhtml_doctypes.htm)"
         ],
         "_ps": 2
     },
@@ -255,7 +255,7 @@
             "Cadillac",
             "Cadillac Escalade",
             "Cadillac Escalade 20000",
-            "Cadillac Escalade $20,000\n```xml\n<cars>\n    <car><make>Cadillac</make> <model>Escalade</model> <year>2007</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1968</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>1999</year></car>\n</cars>\n```"
+            "Cadillac Escalade $20,000"
         ],
         "_ps": 3
     },
@@ -265,7 +265,7 @@
             "`format-number()`",
             "`id()`",
             "`count()`",
-            "`position()`\n**Explanation**: [count()](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/count) returns the total the number of nodes (3), while [position()](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/position) returns the 0-based index of each node.\n```xml\n<cars>\n    <car><make>Cadillac</make> <model>Escalade</model ><year>2007</year></car>\n    <car><make>Cadillac</make> <model>Escalade</model> <year>2011</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1968</year></car>\n    <car><make>Ford</make> <model>Mustang</model> <year>1998</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>1999</year></car>\n    <car><make>Mercedes</make> <model>C-Class</model> <year>2009</year></car>\n</cars>\n```"
+            "`position()`\n**Explanation**: [count()](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/count) returns the total the number of nodes (3), while [position()](https://developer.mozilla.org/en-US/docs/Web/XPath/Functions/position) returns the 0-based index of each node."
         ],
         "_ps": 3
     },
@@ -295,7 +295,7 @@
             "Use the `<any>` element.",
             "Use the `<redefine>` element.",
             "Use `<xs:extension>`.",
-            "Specify the new elements in the schema.\n[reference link:](https://www.w3schools.com/xml/schema_complex_any.asp)\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model>\n        <price year=\"2007\">20000</price></car>\n    <car><make>Ford</make><model>Mustang</model>\n        <price year=\"2008\">17000</price></car>\n    <car><make>Mercedes</make><model>C-Class</model>\n        <price year=\"2009\">24000</price></car>\n</cars>\n```"
+            "Specify the new elements in the schema.\n[reference link:](https://www.w3schools.com/xml/schema_complex_any.asp)"
         ],
         "_ps": 0
     },
@@ -315,7 +315,7 @@
             "Set the type attribute to `xs:required`.",
             "Set the `use` attribute to `required`.",
             "Set the minLength attribute to 1.",
-            "Set the minOccurs attribute to 1.\n**Reference**: [XSD Attributres](https://www.w3schools.com/xml/schema_simple_attributes.asp)\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model>\n        <price year=\"2007\">20000</price></car>\n    <car><make>Ford</make><model>Mustang</model>\n        <price year=\"2008\">17000</price></car>\n    <car><make>Mercedes</make><model>C-Class</model>\n        <price year=\"2009\">24000</price></car>\n</cars>\n```"
+            "Set the minOccurs attribute to 1.\n**Reference**: [XSD Attributres](https://www.w3schools.com/xml/schema_simple_attributes.asp)"
         ],
         "_ps": 1
     },
@@ -375,7 +375,7 @@
             "XML is too flexible and does not have enough reserved keywords.",
             "XML contains only data and not any processing instructions.",
             "XML does not perform any computation or algorithms.",
-            "XML does not have specialized syntax rules.\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Cadillac</make><model>Escalade</model><year>2011</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1998</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>2009</year></car>\n</cars>\n```"
+            "XML does not have specialized syntax rules."
         ],
         "_ps": 1
     },
@@ -385,7 +385,7 @@
             "Elements `<make>` and `<model>` are ancestors of `<year>`.",
             "Elements `<make>` and `<model>` are children of `<cars>`.",
             "Elements `<make>` and `<model>` are siblings.",
-            "Elements `<car>` and `<cars>` are parents of `<make>` and `<model>`.\n```xml\n<cars>\n    <car><make>Cadillac</make><model>Escalade</model><year>2007</year></car>\n    <car><make>Ford</make><model>Mustang</model><year>1968</year></car>\n    <car><make>Mercedes</make><model>C-Class</model><year>1999</year></car>\n</cars>\n```"
+            "Elements `<car>` and `<cars>` are parents of `<make>` and `<model>`."
         ],
         "_ps": 2
     },

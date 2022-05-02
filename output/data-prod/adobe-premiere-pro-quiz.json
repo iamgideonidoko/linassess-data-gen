@@ -55,7 +55,7 @@
             "Narration",
             "SFX",
             "Ambience",
-            "Music\n```markdown\nA. Clarity\nB. Contrast\nC. Saturation\nD. Temperature\nE. Blur\n```"
+            "Music"
         ],
         "_ps": 0
     },
@@ -75,7 +75,7 @@
             "Program Monitor panel",
             "Source Monitor panel",
             "Timeline panel",
-            "Media Browser panel\n![image](images/001.png)"
+            "Media Browser panel"
         ],
         "_ps": 2
     },
@@ -135,7 +135,7 @@
             "container",
             "format",
             "compressor",
-            "codec\n![image](images/002.png)"
+            "codec"
         ],
         "_ps": 3
     },
@@ -165,7 +165,7 @@
             "Effects panel",
             "Project panel",
             "Effect Controls panel",
-            "Program Monitor panel\n![image](images/003.png)"
+            "Program Monitor panel"
         ],
         "_ps": 2
     },
@@ -185,7 +185,7 @@
             "Library",
             "Effects",
             "Project",
-            "Media Browser\nReference : https://helpx.adobe.com/in/premiere-pro/how-to/import-with-media-browser.html#:~:text=The%20Media%20Browser%20panel%20should,with%20fragmented%20media%20file%20types.&text=To%20import%20selected%20clips%20into,on%20them%20and%20choose%20Import.\n![image](images/004.png)"
+            "Media Browser\nReference : https://helpx.adobe.com/in/premiere-pro/how-to/import-with-media-browser.html#:~:text=The%20Media%20Browser%20panel%20should,with%20fragmented%20media%20file%20types.&text=To%20import%20selected%20clips%20into,on%20them%20and%20choose%20Import."
         ],
         "_ps": 3
     },
@@ -225,7 +225,7 @@
             "audio",
             "template",
             "transition",
-            "preset\n![image](images/005.png)"
+            "preset"
         ],
         "_ps": 3
     },
@@ -265,7 +265,7 @@
             "Use Previews",
             "Use Frame Blending",
             "Use Maximum Render Quality",
-            "Match Sequence Settings\n![image](images/006.png)"
+            "Match Sequence Settings"
         ],
         "_ps": 0
     },
@@ -275,7 +275,7 @@
             "Trim In",
             "Trim Out",
             "Ripple Trim In",
-            "Ripple Trim Out\n```markdown\nA. GIF\nB. DCP\nC. QuickTime\nD. HEVC\nE. FLV\n```"
+            "Ripple Trim Out"
         ],
         "_ps": 1
     },
@@ -285,7 +285,7 @@
             "A, B, C",
             "A, C, E",
             "B, C, D",
-            "B, D, E\n```markdown\nA. AVCHD\nB. HEVC\nC. Animated GIF\nD. MXF OP1a\nE. M4A\n```"
+            "B, D, E"
         ],
         "_ps": 2
     },
@@ -315,7 +315,7 @@
             "The default brightness is the halfway position between darker and lighter.",
             "You can set the top bar of windows to a custom accent color.",
             "You can adjust the intensity of the Focus Indicator to help easily identify which window is active.",
-            "You can change the highlight color.\n![image](images/007.png)"
+            "You can change the highlight color."
         ],
         "_ps": 3
     },
@@ -345,7 +345,7 @@
             "Select the clip in the Timeline and choose File > Adobe Dynamic Link > Import After Effects Composition.",
             "Select the clip in the Timeline and choose File > Adobe Dynamic Link > Replace with After Effects Composition.",
             "Select the clip in the Timeline and choose File > Adobe Dynamic Link > New After Effects Composition.",
-            "Select the clip in the Timeline and choose Edit > Copy. Switch to After Effects and choose Edit > Paste.\n![image](images/008.png)"
+            "Select the clip in the Timeline and choose Edit > Copy. Switch to After Effects and choose Edit > Paste."
         ],
         "_ps": -1
     },
@@ -355,7 +355,7 @@
             "Hue vs. Saturation",
             "RGB Curves",
             "Luma vs. Saturation",
-            "Hue vs. Luma\n```markdown\nA. Logo\nB. Text\nC. Rectangle\nD. Circle\nE. Ellipse\n```"
+            "Hue vs. Luma"
         ],
         "_ps": -1
     },
@@ -365,7 +365,7 @@
             "A, B, C",
             "A, C, E",
             "B, C, E",
-            "B, D, E\n![image](images/009.png)"
+            "B, D, E"
         ],
         "_ps": -1
     },
@@ -385,7 +385,7 @@
             "Shadows",
             "Contrast",
             "Midtones",
-            "Blacks\n![image](images/010.png)"
+            "Blacks"
         ],
         "_ps": -1
     },
@@ -445,7 +445,7 @@
             "Convert Image Sequences to Clips",
             "Convert After Effects Compositions to Clips",
             "Include Preview Files",
-            "Consolidate and Transcode\n![image](images/011.png)"
+            "Consolidate and Transcode"
         ],
         "_ps": -1
     },

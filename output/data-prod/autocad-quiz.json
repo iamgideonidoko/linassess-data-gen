@@ -405,7 +405,7 @@
             "polar—relative to the last center point selected",
             "absolute—relative to the origin 0,0",
             "relative—relative to the last point selected",
-            "angled—relative to the last angle of the last object selected\n![q42](images/q42_autocad.png)"
+            "angled—relative to the last angle of the last object selected"
         ],
         "_ps": 1
     },
@@ -735,7 +735,7 @@
             "C (clockwise)",
             "Alt",
             "D (direction)",
-            "Ctrl\n![q75](images/q75_autocad.png)"
+            "Ctrl"
         ],
         "_ps": 3
     },
@@ -745,7 +745,7 @@
             "side polygon",
             "polyline polygon",
             "line polygon",
-            "edge polygon\n![q76](images/q76_autocad.png)"
+            "edge polygon"
         ],
         "_ps": 3
     },

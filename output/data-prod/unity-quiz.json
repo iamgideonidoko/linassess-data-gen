@@ -5,7 +5,7 @@
             "The object inspector",
             "Handles",
             "Gizmos",
-            "Play mode tint\n`GameObject[] MyEnemies = GameObject.FindGameObjectsWithTag(“Enemy”);`"
+            "Play mode tint"
         ],
         "_ps": 3
     },
@@ -225,7 +225,7 @@
             "Group static UI elements on one canvas, and dynamic elements on a separate canvas",
             "Position all canvas objects to the world origin",
             "Group as many UI elements as possible onto only one canvas",
-            "Divide the screen into multiple canvas objects, each sized to a quarter of the screen size\nEvery time an element on a canvas is updated, the whole canvas is redrawn. If elements are never being updated, keeping them on a single canvas is ideal.\n[Reference](https://unity.com/how-to/unity-ui-optimization-tips)\n    [Space(20)]\n    Public string PlayerName;"
+            "Divide the screen into multiple canvas objects, each sized to a quarter of the screen size\nEvery time an element on a canvas is updated, the whole canvas is redrawn. If elements are never being updated, keeping them on a single canvas is ideal.\n[Reference](https://unity.com/how-to/unity-ui-optimization-tips)"
         ],
         "_ps": 0
     },
@@ -335,7 +335,7 @@
             "It restricts the variable value using a slider widget",
             "It validates the variable values through a text box widget",
             "It restricts the variable values using a color picker widget",
-            "It presents valid options in a drop down list\n```\n    public Animator avatar;\n    public Transform lookAtObj;\n    void OnAnimatorIK(int layerIndex)\n    {\n        avatar.SetLookAtPosition(lookAtObj).position;\n        avatar.SetLookAtWeight(If);\n    }\n```"
+            "It presents valid options in a drop down list"
         ],
         "_ps": 0
     },
@@ -375,7 +375,7 @@
             "Avatars define parameter sets for facial muscle blendshapes",
             "Avatar facilitate animation retargeting across different humanoid characters",
             "Avatar define IK data for animated characters",
-            "Avatars describe how textures map on deforming objects during animation\n![Vertex](images/Q39.png?raw=true)"
+            "Avatars describe how textures map on deforming objects during animation"
         ],
         "_ps": 1
     },

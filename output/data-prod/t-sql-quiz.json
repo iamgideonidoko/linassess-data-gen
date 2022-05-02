@@ -15,7 +15,7 @@
             "joining operations",
             "linking operations",
             "criteria operations",
-            "logical operations\n```tsql\nBEGIN TRY\nSELECT 'Foo' AS Result;\nEND TRY\nBEGIN CATCH\nSELECT 'Bar' AS Result;\nEND CATCH\n```"
+            "logical operations"
         ],
         "_ps": 3
     },
@@ -55,7 +55,7 @@
             "\n```tsql\n  SELECT GameType, MaxPlayers, count(*) AS NumberOfGames\n  FROM Games\n  GROUP BY MaxPlayers, GameType\n  ORDER BY MaxPlayers, GameType;\n```",
             "```tsql\n  SELECT GameType, MaxPlayers, count(*) AS NumberOfGames\n  FROM Games\n  GROUP BY GameType, MaxPlayers\n  ORDER BY GameType;\n```",
             "```tsql\n  SELECT GameType, count(Players) AS MaxPlayers, NumberOfGames\n  FROM Games\n  GROUP BY GameType, MaxPlayers\n  ORDER BY GameType;\n```",
-            "\n```tsql \n  SELECT GameType, MaxPlayers, count(*) AS NumberOfGames\n  FROM Games\n  GROUP BY GameType\n  ORDER BY MaxPlayers;\n```\n```tsql\n  DECLARE @UniqueID uniqueidentifier = NEWID();\n  SELECT @UniqueID AS Result;\n```"
+            "\n```tsql \n  SELECT GameType, MaxPlayers, count(*) AS NumberOfGames\n  FROM Games\n  GROUP BY GameType\n  ORDER BY MaxPlayers;\n```"
         ],
         "_ps": 1
     },
@@ -95,7 +95,7 @@
             "`SELECT LIMIT(2) first_name, department, team FROM Students ORDER BY points ASC;`",
             "`SELECT TOP(2) first_name, deprtment, team FROM Students ORDER BY points DESC;`",
             "`SELECT TOP(2) WITH TIES first_name, department, team FROM Students ORDER BY points;`",
-            "`SELECT BOTTOM(2) first_name, department, team FROM Students ORDER BY points ASC;`\n> the picture of table is important here and there it can be seen that there are only two value with min points. Secondly, the previous answer was wrong because order by `DESC` will put highest points into the beginning of result list and `TOP(2)` will take first two highest points, and we need the lowest points.\n```tsql\nSELECT FLOOR(-1234.321)\n```"
+            "`SELECT BOTTOM(2) first_name, department, team FROM Students ORDER BY points ASC;`\n> the picture of table is important here and there it can be seen that there are only two value with min points. Secondly, the previous answer was wrong because order by `DESC` will put highest points into the beginning of result list and `TOP(2)` will take first two highest points, and we need the lowest points."
         ],
         "_ps": 2
     },
@@ -135,7 +135,7 @@
             "`TRUNCATE FROM Products *;`",
             "`DELETE FROM Products;`",
             "`DELETE * FROM Products;`",
-            "`TRUNCATE TABLE Products;`\n```tsql\nSELECT 1 / 2 AS Result;\n```"
+            "`TRUNCATE TABLE Products;`"
         ],
         "_ps": 1
     },
@@ -155,7 +155,7 @@
             "`float`",
             "`int`",
             "`tinyint`",
-            "`bigint`\n```tsql\nSELECT 'abc\\\ndef' AS Result;\n```"
+            "`bigint`"
         ],
         "_ps": 2
     },
@@ -175,7 +175,7 @@
             "`SELECT TOP(1) first_name, last_name FROM Students ORDER BY NEWID();`",
             "`SELECT TOP(1) RAND(first_name, last_name) FROM Student;`",
             "`SELECT TOP(1) first_name, last_name FROM Student;`",
-            "`SELECT TOP(1) first_name, last_name FROM RAND(Student);`\n[https://www.petefreitag.com/item/466.cfm](https://www.petefreitag.com/item/466.cfm)\n```tsql\nDECLARE @MyVariable int;\nSET @MyVariable = 1;\nGO\nSELECT @MyVariable;\n```"
+            "`SELECT TOP(1) first_name, last_name FROM RAND(Student);`\n[https://www.petefreitag.com/item/466.cfm](https://www.petefreitag.com/item/466.cfm)"
         ],
         "_ps": 0
     },
@@ -205,7 +205,7 @@
             "1024",
             "20",
             "0",
-            "9\n```tsql\nSELECT ProductID, ProductName, SerialNumber\nFROM Products______ ;\n```"
+            "9"
         ],
         "_ps": 1
     },
@@ -245,7 +245,7 @@
             "that only records from the rightmost table will be displayed",
             "that no records from the rightmost table are displayed if the records dont have corresponding records in the left table",
             "that records from the rightmost table will be displayed only if the records have a corresponding value in the leftmost table",
-            "that all records from the rightmost table are represented in the result, even if there are no corresponding records in the left table\n```tsql\nCreate table students(id int identity(1000,1), firstname varchar(20),\nlastname varchar(30));\ninsert into students(firstname,lastname)values('mark','twain');\nselect * from students;\n```"
+            "that all records from the rightmost table are represented in the result, even if there are no corresponding records in the left table"
         ],
         "_ps": 3
     },
@@ -255,7 +255,7 @@
             "  studentid firstname lastname\n  1 1001 mark twain",
             "  studentid firstname lastname\n  1 1 mark twain",
             "studentid firstname lastname\n      1 1000 mark twain",
-            "  studentid firstname lastname\n  1 null mark twain\n```tsql\nCREATE TABLE Students (\nStudentName varchar(50),\nGrade int );\n```"
+            "  studentid firstname lastname\n  1 null mark twain"
         ],
         "_ps": 2
     },
@@ -265,7 +265,7 @@
             "`SELECT StudentName FROM Students WHERE Grade = MAX(Grade);`",
             "`SELECT TOP(1) StudentName FROM Students ORDER BY Grade;`",
             "`SELECT TOP(1) WITH TIES StudentName FROM Students ORDER BY Grade DESC;`",
-            "`SELECT StudentName, MAX(Grade) FROM Students ORDER BY Grade DESC;`\n> `top(1)` with ties will take the highest grade and all other students with the same grade (because they are order by grade) and matches the highest grade.\n```tsql\nselect bookid, boooktitle, bookauthor,quantityonhand from inventory.books;\n```"
+            "`SELECT StudentName, MAX(Grade) FROM Students ORDER BY Grade DESC;`\n> `top(1)` with ties will take the highest grade and all other students with the same grade (because they are order by grade) and matches the highest grade."
         ],
         "_ps": 2
     },
@@ -295,7 +295,7 @@
             "`TRUNCATE TABLE Students;`",
             "`TRUNCATE * FROM Students;`",
             "`DROP TABLE Students;`",
-            "`REMOVE * FROM Students;`\n```tsql\nCREATE TABLE Books (\n    BookID int PRIMARY KEY,\n    BookISBN char(13) NOT NULL _____,\n    BookTitle nvarchar(100) NOT NULL\n);\n```"
+            "`REMOVE * FROM Students;`"
         ],
         "_ps": 0
     },
@@ -305,7 +305,7 @@
             "`NO DUPLICATES`",
             "`UNIQUE CONSTRAINT AK_Books_BookISBN`",
             "D`UPLICATE CONSTRAINT (AK_Books_BookISBN)`",
-            "`CONSTRAINT AK_Books_BookISBN UNIQUE`\n```tsql\nCREATE TABLE Students (\n    StudentName varchar(50),\n    Grade int\n);\n```"
+            "`CONSTRAINT AK_Books_BookISBN UNIQUE`"
         ],
         "_ps": 3
     },
@@ -335,7 +335,7 @@
             "You should create a DML trigger on the server.",
             "You should create a DDL trigger on the database.",
             "You should create a DML trigger on TableA.",
-            "You should create a DML trigger on TableB.\n```tsql\nDECLARE @Counter int;\nSET @Counter = 1;\nWHILE @Counter > 0\nBEGIN\n\tSET @Counter = @Counter +1;\nEND;\n```"
+            "You should create a DML trigger on TableB."
         ],
         "_ps": 2
     },
@@ -345,7 +345,7 @@
             "There is no END WHILE statement;",
             "The local varaible is not available to the WHILE block.",
             "The query causes an infinite loop.",
-            "\"Counter\" is an invalid variable name.\n![T-SQL-Q36](images/Q36.jpg)"
+            "\"Counter\" is an invalid variable name."
         ],
         "_ps": 2
     },
@@ -355,7 +355,7 @@
             "`UPDATES Students SET team = 'Philosophy Parrots' WHERE team = 'Philosophy Pandas';`",
             "`UPDATES Students SET team = `Philosophy Parrots` WHERE team = `Philosophy Pandas`;`",
             "`UPDATES Students SET team = \"Philosophy Parrots\" WHERE team = \"Philosophy Pandas\";`",
-            "`UPDATES Students SET team = Philosophy Parrots WHERE team = Philosophy Pandas;`\n```tsql\nSELECT 123+'123' AS Result;\n```"
+            "`UPDATES Students SET team = Philosophy Parrots WHERE team = Philosophy Pandas;`"
         ],
         "_ps": 0
     },
@@ -375,7 +375,7 @@
             "DEDUPE",
             "SELECT",
             "MERGE",
-            "UNION\n```tsql\nCREATE TABLE MyTable (MyValue int);\nINSERT INTO MyTable VALUES (1);\nWHILE (SELECT MyValue FROM MyTable) < 5\nBEGIN\n\tUPDATE My Table SET MyValue = MyValue + 1;\nEND;\nSELECT MyValue AS Result FROM MyTable;\n```"
+            "UNION"
         ],
         "_ps": 3
     },
@@ -385,7 +385,7 @@
             "5",
             "error",
             "1",
-            "6\n```tsql\nSELECT OrderID, SUM(LineTotal) AS SubTotal\nFROM Sales\nWHERE SUM(LineTotal) > 1000\nGROUP BY OrderID\nORDER BY OrderID;\n```"
+            "6"
         ],
         "_ps": -1
     },
@@ -395,7 +395,7 @@
             "Yes, a `WHERE` clause cannot be used with an aggregate function.",
             "Yes, you cannot `GROUP BY` and `ORDER BY` the same field.",
             "No, there is nothing wrong with this query.",
-            "Yes, the `WHERE` clause should use the `SubTotal` alias.\n```tsql\nCREATE TABLE Books (\n\tBookID int PRIMARY KEY,\n\tBookTitle nvarchar(100) NOT NULL,\n\tPublisherID int NOT NULL\n);\nCREATE TABLE Publishers (\n\tPublisherID int PRIMARY KEY,\n\tPublisherName nvarchar(50)\n);\n```"
+            "Yes, the `WHERE` clause should use the `SubTotal` alias."
         ],
         "_ps": -1
     },
@@ -415,7 +415,7 @@
             "`ALTER SCHEMA Products TRANSFER Warehouse.Inventory;`",
             "`ALTER TABLE Warehouse.Inventory TRANSFER Products.Inventory;`",
             "`ALTER TABLE Warehouse.Inventory ADD SCHEMA Products;`",
-            "`ALTER SCHEMA Warehouse ADD TABLE Inventory;`\n```sql\nCREATE TABLE People (\n\tPersonID int NOT NULL,\n\tPersonName nvarchar(50),\n_______\n);\n```"
+            "`ALTER SCHEMA Warehouse ADD TABLE Inventory;`"
         ],
         "_ps": 0
     },
@@ -425,7 +425,7 @@
             "`INDEX ON PersonID (PRIMARY KEY PK_People)`",
             "`ADD NONCLUSTERED PRIMARY KEY CONSTRAINT PK_People ON PersonID`",
             "`CONSTRAINT PK_People PRIMARY KEY NONCLUSTERED (PersonID)`",
-            "`PRIMARY KEY CONSTRAINT (PersonID) NONCLUSTERED INDEX`\n![T-SQL-Q36](images/Q36.jpg)"
+            "`PRIMARY KEY CONSTRAINT (PersonID) NONCLUSTERED INDEX`"
         ],
         "_ps": -1
     },

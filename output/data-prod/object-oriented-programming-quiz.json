@@ -335,7 +335,7 @@
             "It is called initially when an object is created and called with every new object instance.",
             "It is called when an object is destroyed and only one time.",
             "It is called initially when an object is created and only one time.",
-            "It is created at time when the object is discarded.\n```cpp\n   static void Multiply(int num1, int num2) {};\n   static void Multiply(double num1, double num2, double num3) {};\n   static void Multiply(float num1, float num2) {};\n```"
+            "It is created at time when the object is discarded."
         ],
         "_ps": 2
     },
@@ -835,7 +835,7 @@
             "Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface",
             "Interfaces can contain code or data. Abstract classes do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interface",
             "Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from only one abstract class but can implement an unlimited number of interfaces",
-            "Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface\n`Here they haven't mentioned any specific language so let's consider all languages.`"
+            "Abstract classes can contain code or data. Interface do not contain code or data. A class can inherit from more than one abstract class but can only implement one interface"
         ],
         "_ps": 2
     },

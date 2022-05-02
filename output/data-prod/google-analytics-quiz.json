@@ -35,7 +35,7 @@
             "one",
             "three",
             "two",
-            "four\n[Reference](https://support.google.com/analytics/answer/7084499)\n![Google Analytics Icons](https://i.imgur.com/LZzFesL.png)"
+            "four\n[Reference](https://support.google.com/analytics/answer/7084499)"
         ],
         "_ps": 2
     },
@@ -295,7 +295,7 @@
             "Configure calculated metrics.",
             "Use a custom import.",
             "This functionality is not possible.",
-            "Create a search and replace filter.\n![Tree map](https://i.imgur.com/CJFjxxD.png)"
+            "Create a search and replace filter."
         ],
         "_ps": 2
     },

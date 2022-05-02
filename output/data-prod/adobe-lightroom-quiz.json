@@ -25,7 +25,7 @@
             "Web",
             "Book",
             "Print",
-            "Library\n![Review the image shown. What does the exclamation point adjacent to the thumbnail imply?](images/Q4.png)"
+            "Library"
         ],
         "_ps": 1
     },
@@ -45,7 +45,7 @@
             "opening the aperture one f-stop",
             "closing the aperture one f-stop",
             "adjusting the ISO by +400",
-            "adjusting the ISO by -400\n![Review the image below. Which option lets you manually straighten a photo by drawing a vertical or horizontal line?](images/Q6.png)"
+            "adjusting the ISO by -400"
         ],
         "_ps": 1
     },
@@ -95,7 +95,7 @@
             "Click File > Export with Previous.",
             "Click File > Export with Preset.",
             "Click File > Export as Catalog.",
-            "Click File > Export Again.\n![In the image shown, what do the blue areas indicate?](images/Q11.png)"
+            "Click File > Export Again."
         ],
         "_ps": 0
     },
@@ -145,7 +145,7 @@
             "You are using the Paint Overlay style.",
             "You are editing a raw file.",
             "You are using the Color Priority style.",
-            "You are using the Highlight Priority style.\n![Image with a yellow circle](images/Q16.png)"
+            "You are using the Highlight Priority style."
         ],
         "_ps": 0
     },

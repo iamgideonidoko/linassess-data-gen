@@ -55,7 +55,7 @@
             "reflection",
             "serialization",
             "abstraction",
-            "dependency injection\n[Official documentation: Reflection ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)\n    private static object objA;\n    private static object objB;\n    private static void performTaskA()\n    {\n        lock (objB)\n        {\n            Thread.Sleep(1000);\n            lock (objA) { }\n        }\n    }\n    private static void PerformTaskB()\n    {\n        lock (objA)\n        {\n            lock (objB) { }\n        }\n    }\n```"
+            "dependency injection\n[Official documentation: Reflection ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)"
         ],
         "_ps": 0
     },
@@ -145,7 +145,7 @@
             "nothing",
             "a Boolean",
             "a string variable",
-            "an integer\n[Official documentation: void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/void)\nstring[] employees = { \"Joe\", \"Bob\", \"Carol\", \"Alice\", \"Will\" };\nIEnumerable<string> employeeQuery = from person in employees\n                                    orderby person\n                                    select person;\nforeach(string employee in employeeQuery)\n{\n    Console.WriteLine(employee);\n}\n```"
+            "an integer\n[Official documentation: void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/void)"
         ],
         "_ps": 0
     },
@@ -315,7 +315,7 @@
             "d",
             "\\a",
             "\\b",
-            "\\w\n[regular-expressions: Word Boundaries](https://www.regular-expressions.info/wordboundaries.html)\n[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\npublic interface INameble\n{\n    string FirstName { get; set; }\n    string LastName { get; }\n}\n```"
+            "\\w\n[regular-expressions: Word Boundaries](https://www.regular-expressions.info/wordboundaries.html)\n[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)"
         ],
         "_ps": 2
     },
@@ -365,7 +365,7 @@
             "to increase code performance",
             "all of these answers",
             "when code reuse is a priority",
-            "when type safety is important\n[Official documentation: Generic classes and methods](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)\npublic delegate void AuthCallback(bool validUser);\npublic static AuthCallback loginCallback = Login;\npublic static void Login()\n{\n    Console.WriteLine(\"Valid user!\");\n}\npublic static void Main(string[] args)\n{\n    loginCallback(true);\n}\n```"
+            "when type safety is important\n[Official documentation: Generic classes and methods](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)"
         ],
         "_ps": 1
     },

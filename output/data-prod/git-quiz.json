@@ -15,7 +15,7 @@
             "git remote add new",
             "git remote add origin",
             "git remote new origin",
-            "git remote origin\nThe command is git remote add. The new added connection can be named origin or new. The only constraints, although it is not documented AFAIK, is that the connection name needs to be acceptable to git-check-ref-format, and it cannot be repeated.\nIf the LinkedIn assessment asks this and you can choose just one option, then leave feedback.\n```bash\ngit reset --hard HEAD~5\ngit merge --squash HEAD@{1}\n```"
+            "git remote origin\nThe command is git remote add. The new added connection can be named origin or new. The only constraints, although it is not documented AFAIK, is that the connection name needs to be acceptable to git-check-ref-format, and it cannot be repeated.\nIf the LinkedIn assessment asks this and you can choose just one option, then leave feedback."
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "Checkout the push-notifications branch and run git merge beta",
             "Checkout the master branch and run git merge beta -> push-notification",
             "Delete the push-notification branch and it will be committed to the master branch automatically",
-            "Checkout the beta branch and run git merge push-notification\n`git add -A`"
+            "Checkout the beta branch and run git merge push-notification"
         ],
         "_ps": 3
     },
@@ -45,7 +45,7 @@
             "All new and updated files are staged",
             "Files are staged in alphabetical order.",
             "All new files are staged",
-            "Only updated files are staged\n`git remote -v`"
+            "Only updated files are staged"
         ],
         "_ps": 0
     },
@@ -55,7 +55,7 @@
             "A list of remote repositories and their URLs",
             "The current git version you're running",
             "An inline editor for modifying remote repositories",
-            "The last 5 git versions you've installed\n```bash\ngit checkout feature-user-location\ngit cherry-pick kj2342134sdf090093f0sdgasdf99sdfo992mmmf9921231\n```"
+            "The last 5 git versions you've installed"
         ],
         "_ps": 0
     },
@@ -85,7 +85,7 @@
             "Manually backtrack through your commit history.",
             "Use git search -diff to compare all commits in your repository history.",
             "Run a git rebase to find the buggy commit.",
-            "Use git bisect to compare the buggy commit to an early commit that works as expected.\n`git rebase -i HEAD~10`"
+            "Use git bisect to compare the buggy commit to an early commit that works as expected."
         ],
         "_ps": 3
     },
@@ -145,7 +145,7 @@
             "Find the commit in the remote repository, as that's the only place that kind of information is stored.",
             "Use the `diff-tree` command with the commit hash.",
             "Run `git commit --info` with the commit hash.",
-            "Access the commit stash data with `git stash`.\n```shell\n#.swift\nbuild/\n*.txt\n*.metadata\n```"
+            "Access the commit stash data with `git stash`."
         ],
         "_ps": 1
     },
@@ -155,7 +155,7 @@
             "All files with a .swift, .txt, or metadata file extension, as well as the entire build directory",
             "Only the build directory",
             "All files in the build directory, as well as files ending with .txt or .metadata",
-            "Only files with .swift and .txt extensions.\nA line starting with `#` serves as a comment. Hence `# .swift` does not do anything. See `man gitignore`.\n`git commit -a -m \"Refactor code base\"`"
+            "Only files with .swift and .txt extensions.\nA line starting with `#` serves as a comment. Hence `# .swift` does not do anything. See `man gitignore`."
         ],
         "_ps": 2
     },
@@ -165,7 +165,7 @@
             "Nothing, you can't use multiple options in the same command",
             "Adds all new files to the staging area",
             "Commits all new files with a message",
-            "Adds all modified files to the staging area, then commits them with a message\n```shell\nChange to be committed:\n(use \"git reset HEAD <file>...\" to unstage)\nmodified: beta-notes.js\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout --<file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```"
+            "Adds all modified files to the staging area, then commits them with a message"
         ],
         "_ps": 3
     },
@@ -225,7 +225,7 @@
             "git rebase -log",
             "git rebase -i",
             "git rebase -verbose",
-            "git rebase -all\n```\ngit bisect start\ngit bisect bad 5d41402abc4b2a76b9719d911017c592\ngit bisect good 69faab6268350295550de7d587bc323d\n```"
+            "git rebase -all"
         ],
         "_ps": 1
     },
@@ -255,7 +255,7 @@
             "By default a push doesn't send tags to the remote repository.",
             "Commits can only be tagged when they are created.",
             "Tags are pushed to the remote repository with their respective commits.",
-            "Only annotated tags are automatically pushed to the remote repository with a commit.\n[Reference](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_sharing_tags)\n```bash\ngit push -u origin master\n```"
+            "Only annotated tags are automatically pushed to the remote repository with a commit.\n[Reference](https://git-scm.com/book/en/v2/Git-Basics-Tagging#_sharing_tags)"
         ],
         "_ps": 0
     },
@@ -275,7 +275,7 @@
             "Run git hotfix with the shortcut name.",
             "Assign a shortcut or command using git options file.",
             "Use the git custom-key command.",
-            "Create an alias usin the git config command.\n```shell\nChanges not staged for commit:\n(use \"git add <file>...\" to update what will be committed)\n(use \"git checkout -- <file>...\" to discard changes in working directory)\nmodified: beta-notes.js\n```"
+            "Create an alias usin the git config command."
         ],
         "_ps": 3
     },
@@ -305,7 +305,7 @@
             "Data array",
             "Data log",
             "Data snapshot",
-            "Data dictionary\n`git rm --cached testfile.js`"
+            "Data dictionary"
         ],
         "_ps": 1
     },
@@ -615,7 +615,7 @@
             "Use git reset HEAD^.",
             "Use git reset myFile.txt.",
             "Use git -rm myFile.txt.",
-            "Use git reset.\n```bash\ngit checkout -b beta-test\n```"
+            "Use git reset."
         ],
         "_ps": 1
     },
@@ -745,7 +745,7 @@
             "The remote master branch could have existing changes overwritten.",
             "The origin URL will be reset to its default value.",
             "The current HEAD will be deleted and can't be reinstated.",
-            "Nothing, it's common practice to force a push after rebasing.\n`git reset --soft HEAD^`"
+            "Nothing, it's common practice to force a push after rebasing."
         ],
         "_ps": 0
     },
@@ -765,7 +765,7 @@
             "Git works only on Linux, while SVN works on all operating systems.",
             "SVN works only on Linux, while Git works on all operating systems.",
             "SVN is a centralized system, while Git is a distributed system.",
-            "Git a centralized system, while SVN is a distributed system.\n`git tag -a v1.4 -m \"ABCD v1.5\"`"
+            "Git a centralized system, while SVN is a distributed system."
         ],
         "_ps": 2
     },
@@ -785,7 +785,7 @@
             "A soft reset only changes the commit that HEAD points to, while a hard reset resets the index and working tree to match the specified commit, discarding any changes.",
             "A soft reset caches the old HEAD pointer, while a hard reset deletes it entirely.",
             "A hard reset changes only where the HEAD is pointing, while a soft reset changes the HEAD and index.",
-            "A hard reset caches the old HEAD pointer, while a soft reset deletes it entirely.\n![image](images/Git-WorkFlow.png)\nWhich of the following options is correct ?"
+            "A hard reset caches the old HEAD pointer, while a soft reset deletes it entirely."
         ],
         "_ps": 0
     },
@@ -1005,7 +1005,7 @@
             "It cannot be recovered.",
             "Find the hash of the branch with the `log` command, then execute `git checkout -b <branchname> <hash>`.",
             "Find the hash of the branch with the `reflog` command, then execute `git checkout -b <branchname> <hash>`.",
-            "Execute `git checkout -b <branchname>`.\n[Reference](https://stackoverflow.com/questions/1992364/git-recover-deleted-remote-branch)\n```bash\nChanges to be committed:\n (use \"git reset HEAD <file>...\" to unstage)\n  modified: beta-notes.js\nChanges not staged for commit:\n (use \"git add <file>...\" to update what will be committed)\n (use \"git checkout -- <file>...\" to discard changes in working directory)\n  modified: beta-notes.js\n```"
+            "Execute `git checkout -b <branchname>`.\n[Reference](https://stackoverflow.com/questions/1992364/git-recover-deleted-remote-branch)"
         ],
         "_ps": 2
     },
@@ -1065,7 +1065,7 @@
             "`git commit -u origin`",
             "`git checkout origin`",
             "`git pull origin master`",
-            "`git push origin master`\n```bash\nerror: failed to push some refs to 'https://github.com/myrepo/simple.git'\nhint: Updates were rejected because the remote contains work that you do not hint: not have locally.\n```"
+            "`git push origin master`"
         ],
         "_ps": 2
     },

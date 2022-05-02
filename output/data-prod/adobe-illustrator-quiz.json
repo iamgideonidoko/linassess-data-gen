@@ -5,7 +5,7 @@
             "The fill color would be converted to CMYK values",
             "The fill color would be unchanged.",
             "Illustrator would display an error because you can't paste an object with RGB colors into a CMYK file.",
-            "The fill color would remain RGB but its appearance would change.\n![Add stars](images/006.png?raw=true)"
+            "The fill color would remain RGB but its appearance would change."
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "clicking or dragging the first point in the path",
             "choosing Object > Path > Join",
             "pressing Return (Mac) or Enter (Windows)",
-            "switching to a different tool\n`A map of California has a light beige main color and a small dark shadow.`"
+            "switching to a different tool"
         ],
         "_ps": 0
     },
@@ -55,7 +55,7 @@
             "Hold down the Option (Mac) or Alt (Windows) key and click the object you want to deselect.",
             "Use the Lasso tool to deselect the unwanted object.",
             "Shift-click the object you want to deselect",
-            "Press Command+Shift+A (Mac) or Ctrl+Shift+A (Windows) and click the object you want to deselect.\n`A map of Southern California includes many info circles shaded in light blue.`"
+            "Press Command+Shift+A (Mac) or Ctrl+Shift+A (Windows) and click the object you want to deselect."
         ],
         "_ps": 2
     },
@@ -65,7 +65,7 @@
             "Recolor Artwork",
             "Select > Same > Appearance",
             "Edit Colors",
-            "Live Paint\n`A red lines spirals clockwise in, towards the center. Arrows along the line point in that direction.`"
+            "Live Paint"
         ],
         "_ps": -1
     },
@@ -75,7 +75,7 @@
             "Select Object > Path > Reverse Path Direction.",
             "Select Effect > 3D > Rotate.",
             "Use the Flip Horizontal and Flip Vertical commands in the Transform panel menu.",
-            "Drag the path with the Reshape tool.\n![Make symmetrical](images/005.png?raw=true)"
+            "Drag the path with the Reshape tool."
         ],
         "_ps": 0
     },
@@ -215,7 +215,7 @@
             "Select Show Pattern Brushes from the Brushes panel menu.",
             "Select Persistent from the library's panel menu.",
             "Open the library and save a custom workspace.",
-            "Select all the brushes in the Pattern Arrows brush library and choose Add to Brushes from the library's panel menu.\n![Overlapping circles](images/009.png?raw=true)"
+            "Select all the brushes in the Pattern Arrows brush library and choose Add to Brushes from the library's panel menu."
         ],
         "_ps": 1
     },
@@ -245,7 +245,7 @@
             "An Inner Radius of a Star cannot be modified and would have to be redrawn.",
             "Use the Scale tool while holding down Option+Shift (Mac) or Alt+Shift (Windows).",
             "Select the inner points, then use the Scale tool to uniformly change the radius.",
-            "Double-click the Star tool and change the Inner Radius option.\n![Cloud icon](images/007.png?raw=true)"
+            "Double-click the Star tool and change the Inner Radius option."
         ],
         "_ps": 2
     },
@@ -255,7 +255,7 @@
             "The Alana fonts are deactivated.",
             "The Alana fonts are for web-only use.",
             "The Alana fonts are currently being activated.",
-            "Not all the fonts in the Alana family are activated.\n`A yellow rectangle has a circular selection in the center.`"
+            "Not all the fonts in the Alana family are activated."
         ],
         "_ps": 2
     },
@@ -295,7 +295,7 @@
             "when you want to create simpler meshes so the performance of Illustrator is not negatively affected",
             "when you want to place a highlight at the edge of the object",
             "when you want to create mesh lines at equally spaced intervals within the object",
-            "when you want to create mesh lines at one or more specific locations within the object\n![Outline mode](images/008.png?raw=true)"
+            "when you want to create mesh lines at one or more specific locations within the object"
         ],
         "_ps": 3
     },
@@ -385,7 +385,7 @@
             "to reduce the number of points that must be represented in the code",
             "to remove invisible points and lines",
             "to reduce the output resolution so it's appropriate for web graphics",
-            "to combine redundant objects\n![Label](images/003.png?raw=true)"
+            "to combine redundant objects"
         ],
         "_ps": 1
     },
@@ -415,7 +415,7 @@
             "set the Export Type to Movie Clip",
             "delete the symbol and expand all instances",
             "convert the symbol to a static symbol",
-            "break the link to the symbol\n![Gift card](images/004.png?raw=true)"
+            "break the link to the symbol"
         ],
         "_ps": 2
     },
@@ -515,7 +515,7 @@
             "Curves",
             "Shadows/Highlights",
             "Levels",
-            "Hue/Saturation\n![white arrow](images/001.png?raw=true)"
+            "Hue/Saturation"
         ],
         "_ps": 1
     },
@@ -645,7 +645,7 @@
             "A",
             "V",
             "S",
-            "T\n![yellow star](images/010.png?raw=true)"
+            "T"
         ],
         "_ps": 1
     },
@@ -745,7 +745,7 @@
             "Scale",
             "Viewing Distance",
             "Viewing Angle",
-            "Gridling every\n`<img width=\"400\" alt=\"011\" src=\"https://user-images.githubusercontent.com/13102859/135642887-d7dc854e-0eab-42cc-922e-1f3c04ce55c3.png\">`"
+            "Gridling every"
         ],
         "_ps": -1
     },

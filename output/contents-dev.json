@@ -2,16 +2,16 @@
     {
         "name": ".all-contributorsrc",
         "path": ".all-contributorsrc",
-        "sha": "f623a656b03bba2a8c261020196899e70dbe2da8",
-        "size": 230083,
+        "sha": "1211b1452bca3dddc819ad8c34b761ead5111ec0",
+        "size": 230608,
         "url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/.all-contributorsrc?ref=master",
         "html_url": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/master/.all-contributorsrc",
-        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/f623a656b03bba2a8c261020196899e70dbe2da8",
+        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/1211b1452bca3dddc819ad8c34b761ead5111ec0",
         "download_url": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/master/.all-contributorsrc",
         "type": "file",
         "_links": {
             "self": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/.all-contributorsrc?ref=master",
-            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/f623a656b03bba2a8c261020196899e70dbe2da8",
+            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/1211b1452bca3dddc819ad8c34b761ead5111ec0",
             "html": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/master/.all-contributorsrc"
         }
     },
@@ -146,16 +146,16 @@
     {
         "name": "README.md",
         "path": "README.md",
-        "sha": "8b2a29074b618e2df49d19362c2059f5684f7650",
-        "size": 361549,
+        "sha": "32b99c4e7c0b9ecdbd76ae05020df3eed56dce02",
+        "size": 362308,
         "url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/README.md?ref=master",
         "html_url": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/master/README.md",
-        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/8b2a29074b618e2df49d19362c2059f5684f7650",
+        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/32b99c4e7c0b9ecdbd76ae05020df3eed56dce02",
         "download_url": "https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/master/README.md",
         "type": "file",
         "_links": {
             "self": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/README.md?ref=master",
-            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/8b2a29074b618e2df49d19362c2059f5684f7650",
+            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/blobs/32b99c4e7c0b9ecdbd76ae05020df3eed56dce02",
             "html": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/master/README.md"
         }
     },
@@ -498,16 +498,16 @@
     {
         "name": "cybersecurity",
         "path": "cybersecurity",
-        "sha": "16f8dffee2429b12a48917cbe49bb54d1cd76569",
+        "sha": "e687e664ffb220e89a396d871771dbc1238380a0",
         "size": 0,
         "url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/cybersecurity?ref=master",
         "html_url": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/cybersecurity",
-        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/16f8dffee2429b12a48917cbe49bb54d1cd76569",
+        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/e687e664ffb220e89a396d871771dbc1238380a0",
         "download_url": null,
         "type": "dir",
         "_links": {
             "self": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/cybersecurity?ref=master",
-            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/16f8dffee2429b12a48917cbe49bb54d1cd76569",
+            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/e687e664ffb220e89a396d871771dbc1238380a0",
             "html": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/cybersecurity"
         }
     },
@@ -578,16 +578,16 @@
     {
         "name": "git",
         "path": "git",
-        "sha": "735ca1429223484353d1cfe02e1bcaa18b81f914",
+        "sha": "8be16725399f7d344840641a29a7a10801b95114",
         "size": 0,
         "url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/git?ref=master",
         "html_url": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/git",
-        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/735ca1429223484353d1cfe02e1bcaa18b81f914",
+        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/8be16725399f7d344840641a29a7a10801b95114",
         "download_url": null,
         "type": "dir",
         "_links": {
             "self": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/git?ref=master",
-            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/735ca1429223484353d1cfe02e1bcaa18b81f914",
+            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/8be16725399f7d344840641a29a7a10801b95114",
             "html": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/git"
         }
     },
@@ -1010,16 +1010,16 @@
     {
         "name": "mysql",
         "path": "mysql",
-        "sha": "1bdac0001107f74ead39fd61ebb1e7ad29508b2d",
+        "sha": "5fc6e8325f88bf94035dd3aacf6749dff47f695e",
         "size": 0,
         "url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/mysql?ref=master",
         "html_url": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/mysql",
-        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/1bdac0001107f74ead39fd61ebb1e7ad29508b2d",
+        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/5fc6e8325f88bf94035dd3aacf6749dff47f695e",
         "download_url": null,
         "type": "dir",
         "_links": {
             "self": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/mysql?ref=master",
-            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/1bdac0001107f74ead39fd61ebb1e7ad29508b2d",
+            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/5fc6e8325f88bf94035dd3aacf6749dff47f695e",
             "html": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/mysql"
         }
     },
@@ -1234,16 +1234,16 @@
     {
         "name": "rust",
         "path": "rust",
-        "sha": "56aa1b48fd48368bcb414b0d0325faab3b2d00b2",
+        "sha": "80a7e471d10e44357f68f7d5f7f293ceb57c1bb0",
         "size": 0,
         "url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/rust?ref=master",
         "html_url": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/rust",
-        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/56aa1b48fd48368bcb414b0d0325faab3b2d00b2",
+        "git_url": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/80a7e471d10e44357f68f7d5f7f293ceb57c1bb0",
         "download_url": null,
         "type": "dir",
         "_links": {
             "self": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/contents/rust?ref=master",
-            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/56aa1b48fd48368bcb414b0d0325faab3b2d00b2",
+            "git": "https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes/git/trees/80a7e471d10e44357f68f7d5f7f293ceb57c1bb0",
             "html": "https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/tree/master/rust"
         }
     },

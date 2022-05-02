@@ -85,7 +85,7 @@
             "YAML",
             "JSON",
             "TXT",
-            "XML\n```<html>\n<head>\n        <style>\n                body { color: black; }\n                p { color: blue; }\n                div { color: green; }\n                p { color: red; }\n        </style>\n</head>\n<body>\n        <div>\n                <p>This is a paragraph inside a div.</p>\n        </div>\n</body>\n</html>\n```"
+            "XML"
         ],
         "_ps": 1
     },
@@ -235,7 +235,7 @@
             "Assign an ARIA state of \"hidden\" to the label, like this: `<label state=\"hidden\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
             "Use the built-in WordPress CSS class .screen-reader-text to hide the text from screen, like this: `<label class=\"screen-reader-text\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
             "Create a custom CSS class to set a large negative value to the text-indent property to hide the text off screen, like this: `<label class=\"hide-this\">Search</label> <input type=\"text\" name=\"search\" id=\"search\" />`",
-            "The majority of users do not require a screen reader. Remove the label entirely.\n```\nif ( ! defined( 'ABSPATH' ) ) {\n   die;\n}\n```"
+            "The majority of users do not require a screen reader. Remove the label entirely."
         ],
         "_ps": 1
     },
@@ -405,7 +405,7 @@
             "Template tags prefaced with the\\_ can be used directly within a template. Template tags prefaced with get_the are generally reserved for partial templates.",
             "Template tags prefaced with the\\_ return a value. Template tags prefaced with get_the display a value.",
             "Template tags prefaced with the\\_ display a value. Template tags prefaced with get_the return a value.",
-            "Template tags prefaced with the\\_ don't accept arguments. Template tags prefaced with get_the do accept arguments.\n```\nLink to the script directly from a template named page-contact.php using the get_header() template tag, like this:\nget_header( '<script src=\"/my-script.js\"></script>' );\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\nfunction load_scripts() {\n    if ( is_page( 'contact' ) ) {\n    echo '<script src=\"/my-script.js\"></script>';\n    }\n}\nUse functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:\nadd_action( 'wp_enqueue_scripts', 'load_scripts' );\n    function load_scripts() {\n        if ( is_page( 'contact' ) ) {\n        wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js' );\n        }\n    }\n```"
+            "Template tags prefaced with the\\_ don't accept arguments. Template tags prefaced with get_the do accept arguments."
         ],
         "_ps": 2
     },
@@ -535,7 +535,7 @@
             "internationalization",
             "localization",
             "translation",
-            "using GlotPress\n**Explanation**: Localization and translation are synonyms for submitting language-specific translation. GlotPress is just a Wordpress plugin.\n`define( 'DISALLOW_FILE_EDIT', true );`"
+            "using GlotPress\n**Explanation**: Localization and translation are synonyms for submitting language-specific translation. GlotPress is just a Wordpress plugin."
         ],
         "_ps": 0
     },
@@ -575,7 +575,7 @@
             "derivative works must also be licensed as GPL",
             "all of these answers",
             "the software is free to use",
-            "the software is free to modify\n```\n<input type=\"text\" id=\"title\" name=\"title\" />\n$title = $_POST[ 'title' ];\n```"
+            "the software is free to modify"
         ],
         "_ps": 1
     },
@@ -675,7 +675,7 @@
             "is_archive()",
             "is_page()",
             "is_page_template()",
-            "is_single()\n[Ref](https://developer.wordpress.org/reference/functions/is_single/)\n`a:2:{i:0;s:27:\"ari-adminer/ari-adminer.php\";i:1;s:30:\"atomic-blocks/atomicblocks.php\";}`"
+            "is_single()\n[Ref](https://developer.wordpress.org/reference/functions/is_single/)"
         ],
         "_ps": 3
     },
@@ -685,7 +685,7 @@
             "value",
             "serialized data",
             "PHP array",
-            "text array\n[Ref](https://wpengine.com/support/wordpress-serialized-data/)\n```\n<?php\nif ( have_posts() ) : while ( have_posts() ) : the_post();\n        the_content();\nendwhile;\nelse :\n        _e( 'Sorry, no posts matched your criteria.', 'textdomain' );\nendif;\n```"
+            "text array\n[Ref](https://wpengine.com/support/wordpress-serialized-data/)"
         ],
         "_ps": 1
     },
@@ -765,7 +765,7 @@
             "Do not skip heading levels.",
             "Be sure there is proper color contrast between background and text.",
             "If an activity can be completed with a mouse, it must also be accessible by keyboard.",
-            "all of these answers\n`var x = \"16\"`"
+            "all of these answers"
         ],
         "_ps": 3
     },

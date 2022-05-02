@@ -15,7 +15,7 @@
             "ISNUMBER and ISTEXT",
             "ISNUMBER and ISALPHA",
             "ISVALUE AND ISNUMBER",
-            "ISVALUE and ISTEXT\n![Jan](images/003.png?raw=true)"
+            "ISVALUE and ISTEXT"
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "the death of chivalry",
             "The death of Chivalry",
             "THE DEATH OF CHIVALRY",
-            "The Death Of Chivalry\n![Subtotal](images/001.png?raw=true)"
+            "The Death Of Chivalry"
         ],
         "_ps": 3
     },
@@ -95,7 +95,7 @@
             "three inputs",
             "four inputs",
             "two inputs",
-            "one input\n![Tabular form](images/004.png?raw=true)"
+            "one input"
         ],
         "_ps": 3
     },
@@ -165,7 +165,7 @@
             "pie chart",
             "line chart",
             "XY scatter chart",
-            "bar chart\n![AutoSum formula](images/006.png?raw=true)"
+            "bar chart"
         ],
         "_ps": 1
     },
@@ -175,7 +175,7 @@
             "The AutoSum formulas refer to the column to the left of their cells.",
             "The AutoSum formulas exclude the bottom row of data.",
             "The AutoSum formulas include the year at the top of each column in the calculation.\n      `The formula bar clearly shows it's the dates (top row) included, along with the total (bottom) row. Thus, the bottom row of data is not excluded.`",
-            "The AutoSum formulas include their own cells, creating a circular reference.\n![text filter](images/007.png?raw=true)"
+            "The AutoSum formulas include their own cells, creating a circular reference."
         ],
         "_ps": 2
     },
@@ -245,7 +245,7 @@
             "XY chart",
             "clustered column",
             "bubble chart",
-            "combo chart\n![Select all](images/008.png?raw=true)"
+            "combo chart"
         ],
         "_ps": 0
     },
@@ -265,7 +265,7 @@
             "=MySheet!A1",
             "=MySheet_A1",
             "=MySheet&A1",
-            "=MySheet@A1\n![Copy formatting](images/005.png?raw=true)"
+            "=MySheet@A1"
         ],
         "_ps": 0
     },
@@ -315,7 +315,7 @@
             "Protect Workbook",
             "Watch Window",
             "Data Validation",
-            "Filter\n![Subtotal](images/001.png?raw=true)"
+            "Filter"
         ],
         "_ps": 2
     },
@@ -355,7 +355,7 @@
             ":",
             "=",
             "(",
-            "-\n|     | A              | B               | C                 |\n| --- | -------------- | --------------- | ----------------- |\n| 1   | 8.5%           | 2018 Commission |                   |\n| 2   | Sales Rep      | 2018 Sales      | Commission Earned |\n| 3   | Jordan Hinton  | \\$123,938.00    |                   |\n| 4   | Lilah Douglas  | \\$5594,810.00   |                   |\n| 5   | Karyn Reese    | \\$235,954.00    |                   |\n| 6   | Chiquita Walsh | \\$684,760.00    |                   |"
+            "-"
         ],
         "_ps": 1
     },
@@ -415,7 +415,7 @@
             "Fill color",
             "Font Color",
             "Pattern Style",
-            "Cell Style\n![Charts](images/002.png?raw=true)"
+            "Cell Style"
         ],
         "_ps": 1
     },
@@ -525,7 +525,7 @@
             "Cut and Fill",
             "Cut and Paste",
             "Copy and Transpose",
-            "Copy and Paste\n![image](images/Q54.png)"
+            "Copy and Paste"
         ],
         "_ps": 1
     },
@@ -535,7 +535,7 @@
             "Add a new PivotTable field.",
             "Add a calculated item",
             "Add a new Summarize Value By field.",
-            "Add a calculated field.\n![image](images/Q55.png)"
+            "Add a calculated field."
         ],
         "_ps": 3
     },
@@ -585,7 +585,7 @@
             "cell values only",
             "cell values and formats",
             "cell values and formulas",
-            "cell value, formats, and formulas\n![image](images/Q60.png)"
+            "cell value, formats, and formulas"
         ],
         "_ps": 0
     },
@@ -595,7 +595,7 @@
             "`=SUMIF(G2:G6,\">17\",F2:F6)`",
             "`=SUM(G2:G6,\">=18,F2:F6)`",
             "`=SUMIF(F2:F6,\">=18\",G2:G6)`",
-            "`=SUM(F2:F6,\"18+\",G2:G6)`\n![image](images/Q61.png)"
+            "`=SUM(F2:F6,\"18+\",G2:G6)`"
         ],
         "_ps": 2
     },
@@ -605,7 +605,7 @@
             "`=RIGHT(E2,LEN(E2)-27)`",
             "`=LEN(E2,MID(E2)-27)`",
             "`=LEFT(E2,LEN(E2)-27)`",
-            "`=RIGHT(E2,MID(E2)-27)`\n`=SUMIFS(Colors[Inventory],Colors[Colors],\"Orange\")`"
+            "`=RIGHT(E2,MID(E2)-27)`"
         ],
         "_ps": 0
     },
@@ -615,7 +615,7 @@
             "the Inventory worksheet in the Colors workbook",
             "the Inventory column in the Colors table",
             "the Colors worksheet in the Inventory workbook",
-            "the named range Colors[Inventory], which does not use Format as Table Feature\nTable[Column] can be used instead of cell references (C2:C7).\n[Reference](https://support.microsoft.com/en-us/office/using-structured-references-with-excel-tables-f5ed2452-2337-4f71-bed3-c8ae6d2b276e)\n![image](images/Q63.png)"
+            "the named range Colors[Inventory], which does not use Format as Table Feature\nTable[Column] can be used instead of cell references (C2:C7).\n[Reference](https://support.microsoft.com/en-us/office/using-structured-references-with-excel-tables-f5ed2452-2337-4f71-bed3-c8ae6d2b276e)"
         ],
         "_ps": 1
     },
@@ -635,7 +635,7 @@
             "`=SUBTOTAL(C1:Y15)`",
             "`=SUM(15L:15Z)`",
             "`=SUM(C15:Y15)`",
-            "`=SUM(C11:C35)`\n`the sum of columns C to Y for the same row 15`\n![image](images/Q65.png)"
+            "`=SUM(C11:C35)`\n`the sum of columns C to Y for the same row 15`"
         ],
         "_ps": 2
     },
@@ -645,7 +645,7 @@
             "4",
             "5",
             "3",
-            "2\n![image](images/Q66.png)"
+            "2"
         ],
         "_ps": 1
     },
@@ -665,7 +665,7 @@
             "`=RIGHT(A1)-LEFT(A1)+1`",
             "`=LEN(A1)`",
             "`=EXACT(A1)`",
-            "`=CHARS(A1)`\n![image](images/Q68.png)"
+            "`=CHARS(A1)`"
         ],
         "_ps": 1
     },
@@ -675,7 +675,7 @@
             "`=B$2*C$2`",
             "`=$C$2/$B$2`",
             "`=C2/B2`",
-            "`=B2*C2`\n![image](images/Q69.png)"
+            "`=B2*C2`"
         ],
         "_ps": 3
     },
@@ -745,7 +745,7 @@
             "cell",
             "selection",
             "element",
-            "scalar\n![Excel-Q77](images/Q77.png?raw=true)"
+            "scalar"
         ],
         "_ps": 0
     },
@@ -765,7 +765,7 @@
             "Select the cell into which you want to drill down, right-click, and select _Show Summary_.",
             "Select the cell into which you want to drill down, right-click and select _Drill-down_.",
             "Select the cell into which you want to drill down and double-click.",
-            "Select the cell into which you want to drill down, right-click and select _Show Details > Summary Page_\n![Excel-Q79](images/Q79.png?raw=true)"
+            "Select the cell into which you want to drill down, right-click and select _Show Details > Summary Page_"
         ],
         "_ps": 2
     },
@@ -775,7 +775,7 @@
             "0",
             "1",
             "FALSE",
-            "TRUE\n![Excel-Q80](images/Q80.png?raw=true)"
+            "TRUE"
         ],
         "_ps": 2
     },
@@ -785,7 +785,7 @@
             "Right-click D2 and select _Fill Down_.",
             "Click D2's fill handle and drag it down to D501.",
             "On the ribbon's _Data_ tab, select _Flash fill_.",
-            "Double-click D2's fill handle.\n![Excel-Q81](images/Q81.png?raw=true)"
+            "Double-click D2's fill handle."
         ],
         "_ps": 3
     },
@@ -885,7 +885,7 @@
             "An Excel file is a workbook. A workbook contains one or more worksheets.",
             "Nothing-these two terms mean the same thing.",
             "A workbook contains only data. A worksheet contains both data and formulas.",
-            "An Excel file is a worksheet. A worksheet contains one or more workbooks.\n![PivotTable](images/Q92.png?raw=true)"
+            "An Excel file is a worksheet. A worksheet contains one or more workbooks."
         ],
         "_ps": 0
     },
@@ -905,7 +905,7 @@
             "`=B7*$G$3`",
             "`=(B7)*G3`",
             "`=B7*$[G3]`",
-            "`=B7$*G3`\n![image](images/Q94.png)"
+            "`=B7$*G3`"
         ],
         "_ps": 0
     },
@@ -915,7 +915,7 @@
             "AutoSum shows the total in the bottom-right of the page",
             "AutoSum will total the numbers in cells B4:G8",
             "AutoSum will total the numbers in cells B4:G4",
-            "AutoSum will return a **#VALUE!** error.\n![image](images/Q95.png)"
+            "AutoSum will return a **#VALUE!** error."
         ],
         "_ps": 2
     },
@@ -935,7 +935,7 @@
             "`=SELECT(A1, \"Banana\", \"Orange\", \"Apple\", \"Mango\")`",
             "`=CHOOSE(A1, \"Banana\", \"Orange\", \"Apple\", \"Mango\")`",
             "`=CHOOSE(A1,\"Banana\",\"Orange\",\"Apple\",\"Mango\")`",
-            "`=MATCH(A1,{\"Banana\",\"Orange\",\"Apple\",\"Mango\"})`\n![image](images/Q97.png)"
+            "`=MATCH(A1,{\"Banana\",\"Orange\",\"Apple\",\"Mango\"})`"
         ],
         "_ps": 1
     },
@@ -955,7 +955,7 @@
             "On the **Home** tab, click **Find & Select > Find > Options** (Windows) or **Find & Select > Find** (Mac). Change the **Within** drop-down to **Workbook**.",
             "On the **Home** tab, click **Find & Select > Find > Options** (Windows) or **Find & Select > Find** (Mac). Change the **Look in** drop-down to **Workbook**.",
             "On the **Home** tab, click **Find & Select > Find > Options** (Windows) or **Find & Select > Find** (Mac). Change the **Search** drop-down to **All**.",
-            "You cannot search an entire workbook - you must search the worksheets individually.\n![image](images/Q99.png)"
+            "You cannot search an entire workbook - you must search the worksheets individually."
         ],
         "_ps": 0
     },
@@ -975,7 +975,7 @@
             "Text control > Merge cells",
             "Horizontal > Center across selection",
             "Vertical > Center across selection",
-            "Data tab > Text to columns\n![image](images/Q101.png)"
+            "Data tab > Text to columns"
         ],
         "_ps": 0
     },
@@ -985,7 +985,7 @@
             "The dates are erroneous, such as October 39, 2015.",
             "The columns aren't wide enough to show the full date.",
             "The time are incorrectly formatted as dates.",
-            "The text is incorrectly formatted as dates.\n![image](images/Q102.png)"
+            "The text is incorrectly formatted as dates."
         ],
         "_ps": 1
     },
@@ -1005,7 +1005,7 @@
             "Use Print Titles on the Page Layout tab.",
             "Use Page Setup from the Backstage View.",
             "Use Freeze Panes on the View tab.",
-            "Format your data as a table; the header prints automatically.\nhttps://support.microsoft.com/en-us/office/print-headings-or-titles-on-every-page-96719bd4-b93e-4237-8f97-d2cabb1b196a\n![Shift Code](images/Q104.jpg)"
+            "Format your data as a table; the header prints automatically.\nhttps://support.microsoft.com/en-us/office/print-headings-or-titles-on-every-page-96719bd4-b93e-4237-8f97-d2cabb1b196a"
         ],
         "_ps": 0
     },
@@ -1025,7 +1025,7 @@
             "Conditional Formatting",
             "Format",
             "Cell Styles",
-            "Fill\n![image](images/Q106.png)"
+            "Fill"
         ],
         "_ps": 0
     },
@@ -1035,7 +1035,7 @@
             "Cells A2:D2 are comments relating to the formula in cell C4.",
             "Cells A2:D2 are the source of an error in the formula in cell C4.",
             "Cells A2:D2 are precedents of the formula in cell C4.",
-            "Cells A2:D2 are dependents of the formula in cell C4.\n![image](images/Q107.png)"
+            "Cells A2:D2 are dependents of the formula in cell C4."
         ],
         "_ps": 2
     },
@@ -1115,7 +1115,7 @@
             "input range",
             "list",
             "custom",
-            "database\n[reference](https://www.extendoffice.com/documents/excel/3830-excel-only-allow-certain-values.html)\n![image](https://user-images.githubusercontent.com/1056999/159387628-9f960f22-9b50-4764-b4d9-31b5914b164a.png)"
+            "database\n[reference](https://www.extendoffice.com/documents/excel/3830-excel-only-allow-certain-values.html)"
         ],
         "_ps": 1
     },
@@ -1135,7 +1135,7 @@
             "NEXT",
             "MAX",
             "LARGE",
-            "MATCH\n![image](https://user-images.githubusercontent.com/1056999/159387970-6ff9d57c-adb2-452b-83af-66d9f3fdc908.png)"
+            "MATCH"
         ],
         "_ps": 2
     },
@@ -1145,7 +1145,7 @@
             "Close the workbook without saving and reopen it.",
             "Turn off conditional formatting.",
             "On the Home tab of the ribbon, select Fit to Column.",
-            "Expand the width of its column.\n![image](https://user-images.githubusercontent.com/1056999/159388193-743a1393-d61f-47b1-a4ae-346f36fb3160.png)"
+            "Expand the width of its column."
         ],
         "_ps": 2
     },
@@ -1155,7 +1155,7 @@
             "#VALUE!",
             "a blank cell",
             "#REF!",
-            "0\n![image](https://user-images.githubusercontent.com/1056999/159388456-054ba0ae-c595-4aaa-8d38-351f726885ca.png)"
+            "0"
         ],
         "_ps": 2
     },
@@ -1185,7 +1185,7 @@
             "Click the **Decrease Decimal** button once.",
             "Click the **Decrease Decimal** button twice.",
             "Use the ROUND() function.",
-            "In the **Cells** group on the **Home** tab, click **Format > Format Cells**. Then click the **Alignment** tab and select **Right Indent**.\n[Reference](https://support.microsoft.com/en-us/office/round-a-number-to-the-decimal-places-i-want-49b936f9-6904-425d-aa98-02ffb7f9a17b)\n![image](https://user-images.githubusercontent.com/35125965/161691848-4c888572-c649-457c-b7a0-58c64947ff7f.png)"
+            "In the **Cells** group on the **Home** tab, click **Format > Format Cells**. Then click the **Alignment** tab and select **Right Indent**.\n[Reference](https://support.microsoft.com/en-us/office/round-a-number-to-the-decimal-places-i-want-49b936f9-6904-425d-aa98-02ffb7f9a17b)"
         ],
         "_ps": 1
     },

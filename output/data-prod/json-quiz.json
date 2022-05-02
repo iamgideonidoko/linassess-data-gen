@@ -5,7 +5,7 @@
             "schema",
             "\\$schema",
             "JsonSchema",
-            "JSONschema\n```\n[\n    'red',\n    'blue',\n    'green'\n]\n```"
+            "JSONschema"
         ],
         "_ps": 1
     },
@@ -45,7 +45,7 @@
             "unpacking",
             "serialization",
             "deserialization",
-            "parsing\n`accountNum: '000605802'`"
+            "parsing"
         ],
         "_ps": 1
     },
@@ -85,7 +85,7 @@
             "important",
             "base",
             "core",
-            "required\n```\n{\n\tphoto: {\n\twidth: 1600,\n\theight: 900,\n\tbinaries: {\n\turl: 'https://www.example.com/images/34097349843',\n\tthumbnail: 'https://www.example.com/images/thumbs/34097349843'\n\t},\n\tanimated: false,\n\ttags: [116, 943, 234, 38793],\n\t}\n}\n```"
+            "required"
         ],
         "_ps": 3
     },
@@ -105,7 +105,7 @@
             "Escape all whitespaces expect space characters.",
             "Escape line breaks.",
             "Escape paragraphs.",
-            "Remove all whitespaces\n`loggedIn: true`"
+            "Remove all whitespaces"
         ],
         "_ps": 0
     },
@@ -155,7 +155,7 @@
             "JSON.parse()",
             "JSON.stringify()",
             "JSON.toString()",
-            "JSON.objectify()\n    1.Sends data to specific server to create or update information.\n    2.Sends data to specific server to create or update information without the risk of creating the resource more than once.\n    3.Previews what the GET request response might be without the body of the text.\n    4.Learns the communication channels used by the target source.\n    5.Requests information from a specific source.\n    6.Removes information."
+            "JSON.objectify()"
         ],
         "_ps": 0
     },
@@ -225,7 +225,7 @@
             "Convert the date to UTC and enclose in quotes.",
             "Encode the date as string using the ISO-8601 date format.",
             "Wrap the date in double quotes.",
-            "Add a \"date\" key to your object and include the date as string.\n`JSON.parse({\"first\": \"Sarah\", \"last\": \"Connor\"}) ;`"
+            "Add a \"date\" key to your object and include the date as string."
         ],
         "_ps": 1
     },
@@ -235,7 +235,7 @@
             "JSON should be wrapped with curly braces.",
             "JSON.parse() is missing an argument.",
             "The value supplied to JSON.parse() is not a string.",
-            "Nothing is wrong with it.\n```js\nprintNullness(JSON.parse('{ \"lemmings\": [] }'));\nprintNullness(JSON.parse('{ \"lemmings\": null }'));\nprintNullness(JSON.parse('{ \"lemmings\": \"null\" }'));\nfunction printNullness(testMe) {\n  if (testMe.lemmings == null) console.log('null');\n  else console.log('not null');\n}\n```"
+            "Nothing is wrong with it."
         ],
         "_ps": 2
     },
@@ -295,7 +295,7 @@
             "Because it's object-based.",
             "Because it's a simple and adaptable format for sharing data.",
             "Because it's based on JavaScript.",
-            "Because it is derived from SGML.\n```\n{\n  \"avengers\": [\n    \"iron man\",\n    \"hulk\",\n    \"thor\",\n    \"black widow\",\n    \"ant man\",\n    \"spider man'\n  ]\n}\n```"
+            "Because it is derived from SGML."
         ],
         "_ps": 2
     },
@@ -335,7 +335,7 @@
             "['tatooine', 'hoth', 'dagobah']",
             "[tatooine, hoth, dagobah]",
             "[\"tatooine\", \"hoth\", \"dagobah\",]",
-            "[\"tatooine\", \"hoth\", \"dagobah\"]\n```json\n[\n  {\n    \"year\": 2024\n  },\n  {\n    \"location\": \"unknown\"\n  }\n]\n```"
+            "[\"tatooine\", \"hoth\", \"dagobah\"]"
         ],
         "_ps": 3
     },
@@ -495,7 +495,7 @@
             "As a string with quotes",
             "As a string without quotes",
             "As a string in ISO 8583 format",
-            "As a string in ISO 8601 format\n![JSON object with key \"Vehicles\" containing an array of emojis](images/Q51/Q51.jpeg)"
+            "As a string in ISO 8601 format"
         ],
         "_ps": 3
     },
@@ -535,7 +535,7 @@
             "key: \"value\"",
             "\"key\": \"value\"",
             "key, \"value\"",
-            "'key': 'value'\n```json\n{\n  \"result\": [\n    {\n      \"year\": 2024\n    },\n    {\n      \"location\": \"unknown\"\n    }\n  ]\n}\n```"
+            "'key': 'value'"
         ],
         "_ps": 1
     },
@@ -545,7 +545,7 @@
             "number",
             "array",
             "string",
-            "object\n```json\n{\n  \"series\": \"Star Trek\",\n  \"episodes\": \"The Trouble with Tribbles\"\n}\n```"
+            "object"
         ],
         "_ps": 3
     },
@@ -565,7 +565,7 @@
             "Wrap the comments in single quotes and place it at the bottom of the file.",
             "Wrap the comments in double parentheses.",
             "Escape comments by placing two slashes at the start of the comment.",
-            "JSON does not support comments.\n```json\n\"name\": 'bb-8'\n```"
+            "JSON does not support comments."
         ],
         "_ps": 3
     },

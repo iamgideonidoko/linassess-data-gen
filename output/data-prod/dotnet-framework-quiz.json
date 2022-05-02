@@ -425,7 +425,7 @@
             "`var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 19);`",
             "`var primes = Tuple.Create(2, 3, 5, 7, 11, 13, 17, 21);`",
             "`var primes = Tuple.Make(2, 3, 5, 7, 11, 13, 17, 20);`",
-            "`var primes = Tuple.Make(2, 3, 5, 7, 11, 13, 17, 19);`\n> Note: The differences are `IFormResult`/`IActionResult` and `Forms`/`Form`"
+            "`var primes = Tuple.Make(2, 3, 5, 7, 11, 13, 17, 19);`"
         ],
         "_ps": 0
     },
@@ -525,7 +525,7 @@
             "host an ASP.NET Code app inside of the IIS worker process, called the out-of-process hosting model, or forward web requests to a backend ASP.NET Core app running the Kesrel server, called the in-process hosting model",
             "create IIS code the server needs in a file with the extension required, or run the IIS server in a mode compatible for ASP.NET Core",
             "package up your C# application and C# packages into .NET modules, or specify which of its packages should be visible to other .NET modules",
-            "host an ASP.NET Code app inside of the IIS workes process, called the in-process hosting model, or forward web requests to a backend ASP.NET Core app running the Kestrel server, called the out-of-process hosting model\n[ASP.NET Core Module](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-5.0)\n```cs\n@{\n  Html.RenderAction(\"Add\");\n  Html.RenderPartial(\"Add\");\n}\n```"
+            "host an ASP.NET Code app inside of the IIS workes process, called the in-process hosting model, or forward web requests to a backend ASP.NET Core app running the Kestrel server, called the out-of-process hosting model\n[ASP.NET Core Module](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/aspnet-core-module?view=aspnetcore-5.0)"
         ],
         "_ps": 3
     },

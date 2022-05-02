@@ -25,7 +25,7 @@
             "Use the \"clearfix hack\" on the floated element and add a float to the parent element.",
             "Use the overflow property on the floated element or the \"clearfix hack\" on either the floated or parent element.",
             "Use the \"clearfix hack\" on the floated element or the overflow property on the parent element.",
-            "Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\"\n```css\n1) .nav {\n  ...;\n}\n2) nav {\n  ...;\n}\n3) #nav {\n  ...;\n}\n```"
+            "Use the \"clearfix hack\" on the parent element or use the overflow property with a value other than \"visible.\""
         ],
         "_ps": 3
     },
@@ -55,7 +55,7 @@
             "By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.",
             "By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.",
             "A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.",
-            "A `<span>` is an example of a block element. `<div>` is an example of an inline element.\n```css\n.grid {\n  display: grid;\n  width: 500px;\n  grid-template-columns: 50px 1fr 2fr;\n}\n```"
+            "A `<span>` is an example of a block element. `<div>` is an example of an inline element."
         ],
         "_ps": 1
     },
@@ -95,7 +95,7 @@
             "position",
             "flexbox",
             "grid",
-            "float\n```css\nbackground: blue url(image.jpg) no-repeat scroll 0px 0px;\n```"
+            "float"
         ],
         "_ps": 0
     },
@@ -105,7 +105,7 @@
             "  ```css\n  background-color: blue;\n  background-image: url(image.jpg);\n  background-repeat: no-repeat;\n  background-attachment: scroll;\n  background-position: 0px 0px;\n  ```",
             "  ```css\n  background-color: blue;\n  background-img: url(image.jpg);\n  background-position: no-repeat;\n  background-scroll: scroll;\n  background-size: 0px 0px;\n  ```",
             "  ```css\n  background-color: blue;\n  background-src: url(image.jpg);\n  background-repeat: no-repeat;\n  background-wrap: scroll;\n  background-position: 0px 0px;\n  ```",
-            "  ```css\n  background-color: blue;\n  background-src: url(image.jpg);\n  background-repeat: no-repeat;\n  background-scroll: scroll;\n  background-position: 0px 0px;\n  ```\n```css\n.example {\n  color: yellow;\n}\nul li a {\n  color: blue;\n}\nul a {\n  color: green;\n}\na {\n  color: red;\n}\n```\n```html\n<ul>\n  <li><a href=\"#\" class=\"example\">link</a></li>\n  <li>list item</li>\n  <li>list item</li>\n</ul>\n```"
+            "  ```css\n  background-color: blue;\n  background-src: url(image.jpg);\n  background-repeat: no-repeat;\n  background-scroll: scroll;\n  background-position: 0px 0px;\n  ```"
         ],
         "_ps": 0
     },
@@ -125,7 +125,7 @@
             "Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.",
             "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.",
             "Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.",
-            "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.\n```css\nline-height: 20px;\nline-height: 2;\n```"
+            "Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements."
         ],
         "_ps": 0
     },
@@ -135,7 +135,7 @@
             "The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.",
             "The value of 20px will set the line-height to 20px. The value of 2 is not valid.",
             "The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.",
-            "The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.\n```html\n<section>\n  <p>paragraph one</p>\n</section>\n<p>paragraph two</p>\n```\n```css\nsection p {\n  color: red;\n}\nsection + p {\n  color: blue;\n}\n```"
+            "The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value."
         ],
         "_ps": 0
     },
@@ -165,7 +165,7 @@
             "CSS can be applied to SVGs but JavaScript cannot be.",
             "SVGs work best for creating 3D graphics.",
             "SVGs can be created as a vector graphic or coded using SVG specific elements such as &#x3C;svg&#x3E;, &#x3C;line&#x3E;, and &#x3C;ellipse&#x3E;.",
-            "SVGs are a HAML-based markup language for creating vector graphics.\n```css\na:active {\n  color: pink;\n}\n```"
+            "SVGs are a HAML-based markup language for creating vector graphics."
         ],
         "_ps": 2
     },
@@ -225,7 +225,7 @@
             "p::first-letter { color: red; }",
             "p:first-letter { color: red; }",
             "first-letter::p { color: red; }",
-            "first-letter:p { color: red; }\n```css\np {\n  color: #000000;\n}\n```"
+            "first-letter:p { color: red; }"
         ],
         "_ps": 0
     },
@@ -255,7 +255,7 @@
             "`corner-radius: 10px;`",
             "`border-corner: 10px;`",
             "`corner-curve: 10px;`",
-            "`border-radius: 10px;`\n[Official doc:](https://www.w3schools.com/css/css3_borders.asp)\n```css\n@media (min-width: 1024px), screen and (orientation: landscape) { … }\n```"
+            "`border-radius: 10px;`\n[Official doc:](https://www.w3schools.com/css/css3_borders.asp)"
         ],
         "_ps": 3
     },
@@ -285,7 +285,7 @@
             "`color: #000`",
             "`color: rgb(0,0,0)`",
             "`color: #000000`",
-            "`color: 000000`\n```html\n<div style=\"margin-bottom: 2rem;\">Div 1</div>\n<div style=\"margin-top: 2rem;\">Div 2</div>\n```"
+            "`color: 000000`"
         ],
         "_ps": 3
     },
@@ -315,7 +315,7 @@
             "any declarations in user-agent stylesheets",
             "important declarations in user stylesheets",
             "normal declarations in author stylesheets",
-            "important declarations in author stylesheets\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-1.png)"
+            "important declarations in author stylesheets"
         ],
         "_ps": 1
     },
@@ -325,7 +325,7 @@
             "  - Example 1: `flex-direction: row;`\n  - Example 2: `flex-direction: row-reverse;`\n  - Example 3: `flex-direction: column;`\n  - Example 4: `flex-direction: column-reverse;`",
             "  - Example 1: `flex-direction: row-reverse;`\n  - Example 2: `flex-direction: row;`\n  - Example 3: `flex-direction: column-reverse;`\n  - Example 4: `flex-direction: column;`",
             "  - Example 1: `flex-direction: row;`\n  - Example 2: `flex-direction: row-reverse;`\n  - Example 3: `flex-direction: column;`\n  - Example 4: `flex-direction: reverse-column;`",
-            "  - Example 1: `flex-direction: column;`\n  - Example 2: `flex-direction: column-reverse;`\n  - Example 3: `flex-direction: row;`\n  - Example 4: `flex-direction: row-reverse;`\nNote: Examples seem to be missing.\n```css\nh2 ~ p {\n  color: blue;\n}\nh2 + p {\n  background: beige;\n}\n```\n```html\n<section>\n  <p>paragraph 1</p>\n  <h2>Heading</h2>\n  <p>paragraph 2</p>\n  <p>paragraph 3</p>\n</section>\n```"
+            "  - Example 1: `flex-direction: column;`\n  - Example 2: `flex-direction: column-reverse;`\n  - Example 3: `flex-direction: row;`\n  - Example 4: `flex-direction: row-reverse;`\nNote: Examples seem to be missing."
         ],
         "_ps": 0
     },
@@ -334,8 +334,7 @@
         "options": [
             "Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.",
             "Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.",
-            "Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.\n![quote](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-2.png)",
-            "justify-content: space-around;"
+            "Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background."
         ],
         "_ps": 1
     },
@@ -385,7 +384,7 @@
             "Icon fonts can be inserted only using JavaScript.",
             "Icon fonts are inserted as inline images.",
             "Icon fonts require browser extensions.",
-            "Icon fonts can be styled with typography-related properties such as font-size and color.\n```css\nfont-weight: 400;\nfont-weight: 700;\n```"
+            "Icon fonts can be styled with typography-related properties such as font-size and color."
         ],
         "_ps": 3
     },
@@ -395,7 +394,7 @@
             "bold; normal",
             "normal; bold",
             "light; normal",
-            "normal; bolder\n`.grid { display: grid; grid-template-columns: 50px 1fr 2fr; }`"
+            "normal; bolder"
         ],
         "_ps": 1
     },
@@ -455,7 +454,7 @@
             "padding: 10px 10px 0px 0px;",
             "padding: 10px 0px;",
             "padding: 10px 0;",
-            "padding: 10px 0px 10px 0px;\n```css\n@font-face {\n  font-family: 'Avenir', sans-serif;\n  src: url('avenir.woff2') format('woff2'), url('avenir.woff') format('woff');\n}\n```"
+            "padding: 10px 0px 10px 0px;"
         ],
         "_ps": 0
     },
@@ -475,7 +474,7 @@
             "position: absolute;",
             "display: flex;",
             "display: block;",
-            "float: left;\n```css\n.example {\n  margin-left: calc(5% + 5px);\n}\n```"
+            "float: left;"
         ],
         "_ps": 0
     },
@@ -505,7 +504,7 @@
             "`.logo { position: absolute; left: 100px; top: 150px; }`",
             "`.logo { position: absolute; margin-left: 100px; margin-top: 150px; }`",
             "`.logo { position: absolute; padding-left: 100px; padding-top: 150px; }`",
-            "`.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`\n```css\np:first-of-type {\n  color: red;\n}\np {\n  color: blue;\n}\n.container {\n  color: yellow;\n}\np:first-child {\n  color: green;\n}\n```\n```html\n<div class=\"container\">\n  <h1>Heading</h1>\n  <p>Paragraph1</p>\n  <p>Paragraph2</p>\n</div>\n```"
+            "`.logo { position: absolute; left-padding: 100px; top-padding: 150px; }`"
         ],
         "_ps": 0
     },
@@ -625,7 +624,7 @@
             "Proposed Recommendation",
             "Working Draft",
             "Recommendation",
-            "Candidate Recommendation\n```css\ncolor: red; /* declaration A */\nfont-size: 1em; /* declaration B */\npadding: 10px 0; /* declaration C */\n```"
+            "Candidate Recommendation"
         ],
         "_ps": 2
     },
@@ -655,7 +654,7 @@
             "`div.sidebar {}`",
             "`* {}`",
             "`div#sidebar2 p {}`",
-            "`.sidebar p {}`\n```css\nbody {\n  background: #ffffff; /* white */\n}\nsection {\n  background: #0000ff; /* blue */\n  height: 200px;\n}\n```"
+            "`.sidebar p {}`"
         ],
         "_ps": 2
     },
@@ -715,7 +714,7 @@
             "\"h1\" string",
             "\"a\" character",
             "\"p\" character",
-            "\"\\*\" character\n```css\nh1 {\n  color: red;\n}\n```"
+            "\"\\*\" character"
         ],
         "_ps": 3
     },
@@ -725,7 +724,7 @@
             "property; declaration",
             "declaration; rule",
             "\"p\" character",
-            "selector; property\n```css\nfont-weight: bold;\n```"
+            "selector; property"
         ],
         "_ps": 3
     },
@@ -765,7 +764,7 @@
             "by using an HTML link element referring to a Google-provided CSS",
             "by embedding the font file directly into the project's master JavaScript",
             "by using a Google-specific CSS syntax that directly links to the desired font file",
-            "by using a standard font-face CSS definition sourcing a font file on Google's servers\n```css\nhtml {\n  font-size: 10px;\n}\nbody {\n  font-size: 2rem;\n}\n.rem {\n  font-size: 1.5rem;\n}\n.em {\n  font-size: 2em;\n}\n```\n```html\n<body>\n  <p class=\"rem\"></p>\n  <p class=\"em\"></p>\n</body>\n```"
+            "by using a standard font-face CSS definition sourcing a font file on Google's servers"
         ],
         "_ps": 0
     },
@@ -795,7 +794,7 @@
             "`.element {cursor: pointer;}`",
             "`.element {cursor: hand;}`",
             "`.element {cursor: move-hand;}`",
-            "`.element {cursor: pointer-hand;}`\n```css\nbackground-position: 10% 50%;\n```"
+            "`.element {cursor: pointer-hand;}`"
         ],
         "_ps": 0
     },
@@ -805,7 +804,7 @@
             "The background image is placed 10% from the left and 50% from the top of its container",
             "The background image is placed 10% from the bottom and 50% from the left of its container",
             "The background image is placed 10% from the right and 50% from the bottom of its container",
-            "The background image is placed 10% from the top and 50% from the left of its container\n```css\ngrid-template-columns: 2fr 1fr;\n```"
+            "The background image is placed 10% from the top and 50% from the left of its container"
         ],
         "_ps": 0
     },
@@ -815,7 +814,7 @@
             "The first column is twice the height of the second column and will be as wide as the content",
             "The first column is half the size of the container and the second column will absorb the remaining space",
             "The first column is twice as wide as the second column and will fit proportionally within the grid container",
-            "The first column is twice the width and height of the second column, and will fit proportionally within the grid container\n```html\n<img id=\"photo\" alt=\"\" src=\"...\" />\n```"
+            "The first column is twice the width and height of the second column, and will fit proportionally within the grid container"
         ],
         "_ps": 2
     },
@@ -825,7 +824,7 @@
             "img#photo:hover {scale: 0.5;}",
             "img#photo:hover {transform: scale(0.5);}",
             "img#photo {hover-scale: 0.5;}",
-            "img#photo:hover {size: smaller;}\n```css\nA. border-radius: 10px 10px 0 0;\nB. border-top-left-radius: 10px; and border-top-right-radius: 10px;\nC. border-radius: 10px 0;\nD. border-top-radius: 10px;\n```"
+            "img#photo:hover {size: smaller;}"
         ],
         "_ps": 1
     },
@@ -835,7 +834,7 @@
             "A and C",
             "C and D",
             "B and C",
-            "A and B\n```html\n<section>\n  <p class=\"example\">...</p>\n</section>\n```"
+            "A and B"
         ],
         "_ps": 3
     },
@@ -875,7 +874,7 @@
             "`background-color: hsl(0, 0, 0, 0.5);`",
             "`background-color: rgbx(0, 0, 0, 0.5);`",
             "`background-color: rgba(0, 0, 0, 0.5);`",
-            "`background-color: rgba(0, 0, 0, 1);`\n`rgba` is a funtion in css. rgba stands for red, green, blue and alpha. The value of alpha can be between 0 and 1 both inclusive with 0 being fully transparent and 1 being fully opaque.\n[Reference link-rgba](https://www.w3schools.com/cssref/func_rgba.asp)\n```html\n<header>\n  <hl>Heading 1</h1>\n  <h2>Heading 2</h2>\n</header>\n<h2>Heading 2</h2>\n```"
+            "`background-color: rgba(0, 0, 0, 1);`\n`rgba` is a funtion in css. rgba stands for red, green, blue and alpha. The value of alpha can be between 0 and 1 both inclusive with 0 being fully transparent and 1 being fully opaque.\n[Reference link-rgba](https://www.w3schools.com/cssref/func_rgba.asp)"
         ],
         "_ps": 2
     },
@@ -885,7 +884,7 @@
             "`header h1, header h2 {...}`",
             "`header h1 + header h2 {...}`",
             "`header h1, h2 {...}`",
-            "`h1, h2 {...}`\n```css\n.container {\n  display: flex;\n}\n.item {\n  border: 1px solid red;\n  flex-direction: row-reverse;\n}\n```"
+            "`h1, h2 {...}`"
         ],
         "_ps": 0
     },
@@ -905,7 +904,7 @@
             "`transition: margin 1000ms ease-in-out;`",
             "`transition: color 1.3s ease-in;`",
             "`transition: position 400ms linear;`",
-            "`transition: opacity 1s ease-in;`\n```css\narticle p {\n  color: blue;\n}\narticle > p {\n  color: green;\n}\n```\n```html\n<article>\n  <p>Paragraph 1</p>\n  <aside>\n    <p>Paragraph 2</p>\n  </aside>\n</article>\n```"
+            "`transition: opacity 1s ease-in;`"
         ],
         "_ps": 0
     },
@@ -915,7 +914,7 @@
             "Paragraph 1 will be blue. Paragraph 2 will be green.",
             "Both paragraphs will be green.",
             "Paragraph 1 will be green. Paragraph 2 will be blue.",
-            "Both paragraphs will be blue.\n```css\nborder: 1px solid red;\n```"
+            "Both paragraphs will be blue."
         ],
         "_ps": 2
     },
@@ -935,7 +934,7 @@
             "style the state of the selected element",
             "insert presentational content",
             "style a specific part of the selected element",
-            "style the elements using class selectors\n```css\nsection {\n  color: gray;\n}\n```\n```html\n<section>\n  <p>paragraph</p>\n  <a href=\"#\">link</a>\n</section>\n```"
+            "style the elements using class selectors"
         ],
         "_ps": 0
     },
@@ -975,7 +974,7 @@
             "`section * p`",
             "`section + p`",
             "`section ~ p`",
-            "`section > p`\n[Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)\n```css\nul {\n  --color: red;\n}\np {\n  color: var(--color);\n}\na {\n  color: var(--color, orange);\n}\n```\n```html\n<p>Paragraph</p>\n<ul>\n  <li>\n    <a href=\"#\">list item a link </a>\n  </li>\n  <li>list item</li>\n</ul>\n```"
+            "`section > p`\n[Child combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)"
         ],
         "_ps": 3
     },
@@ -995,7 +994,7 @@
             "Specificity determines which CSS rule is applied by the browsers.",
             "When two selectors apply to the same element, the one with lower specificity wins.",
             "The last rule defined overrides all previous rules and even conflicting rules.",
-            "Rules with more specific selectors have greater specificity.\n[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)\n```css\n.example {\n  width: 800px;\n  margin: 0 auto;\n}\n```"
+            "Rules with more specific selectors have greater specificity.\n[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)"
         ],
         "_ps": 1
     },
@@ -1005,7 +1004,7 @@
             "The example element will have 0 margin space around the whole element. The auto value will center align the element horizontally and vertically within its container.",
             "The example element will have 0 margin space on the left and right. It will be sized automatically on the top and bottom, which will center align the element within its container.",
             "The example element will have 0 margin space on the top and bottom. The margin will be sized automatically on the left and right, which may center align the element within its container.",
-            "The margin value is invalid because its missing a unit measurement after the 0.\n[Source: SOW](https://stackoverflow.com/questions/3170772/what-does-auto-do-in-margin-0-auto)\n```css\n10vw = ?px\n10vh = ?px\n10vmin = ?px\n10vmax = ?px\n```"
+            "The margin value is invalid because its missing a unit measurement after the 0.\n[Source: SOW](https://stackoverflow.com/questions/3170772/what-does-auto-do-in-margin-0-auto)"
         ],
         "_ps": 2
     },
@@ -1015,7 +1014,7 @@
             "10vw = 80px\n      10vh = 60px\n      10vmin = 60px\n      10vmax = 80px",
             "10vw = 60px\n      10vh = 80px\n      10vmin = 80px\n      10vmax = 60px",
             "10vw = 8px\n      10vh = 6px\n      10vmin = 6px\n      10vmax = 8px",
-            "10vw = 6px\n      10vh = 8px\n      10vmin = 8px\n      10vmax = 6px\n```css\nh2 ~ p {\n  color: blue;\n}\n```\n```html\n<section>\n  <p>P1</p>\n  <h2>H2</h2>\n  <p>P3</p>\n  <p>P4</p>\n</section>\n```"
+            "10vw = 6px\n      10vh = 8px\n      10vmin = 8px\n      10vmax = 6px"
         ],
         "_ps": 0
     },
@@ -1025,7 +1024,7 @@
             "P3P3",
             "P1P1",
             "P1, P3, and P4P1, P3, and P4",
-            "P3 and P4\n```css\np:first-of-type:first-letter {\n  color: red;\n}\n```\n```html\n<body>\n  <p>Paragraph 1.</p>\n  <p>Paragraph 2.</p>\n  <article>\n    <h1>Heading</h1>\n    <p>Paragraph 3.</p>\n    <p>paragraph 4.</p>\n  </article>\n  <section>\n    <p>Paragraph 5.</p>\n    <p>Paragraph 6.</p>\n  </section>\n</body>\n```"
+            "P3 and P4"
         ],
         "_ps": 3
     },
@@ -1045,7 +1044,7 @@
             "margin, padding, border, width, height",
             "width, height, z-index, overflow, font size",
             "margin, padding, font size, line height, border",
-            "font size, line height, letter spacing, width, height\n```css\n[] a[href$='domain.com'] {\n  color: pink;\n}\n[x] a[href='*domain.com'] {\n  color: pink;\n}\n[] a[href*='domain.com'] {\n  color: rgb(255, 155, 155);\n}\n[] a[href*='domain.com'] {\n  color: pink;\n}\n```\n[Reference](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)\n```css\n[x] `background: linear-gradient(#648880, #293f50);`\n[ ] `background-image: linear(#648880, #293f50);`\n[ ] `background: gradient(linear, #648880, #293f50);`\n[ ] `background-color: linear-gradient(#648880, #293f50);`\n```\n```css\n[] .glyphicon-bgcircle {\n  circle-radius: 50%;\n  margins: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] glyphicon-bgcircle {\n  border-circle: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[x] .glyphicon-bgcircle {\n  border-radius: 50%;\n  padding: 50px;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n[] .glyphicon-bgcircle {\n  radius-rounded: 50%;\n  margins: auto;\n  background-color: #fdadc6;\n  color: rgba(255, 255, 255, 1);\n  font-size: 24px;\n}\n```"
+            "font size, line height, letter spacing, width, height"
         ],
         "_ps": 0
     },
@@ -1055,7 +1054,7 @@
             "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
             "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
             "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
-            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
+            "The first value is the first choice, followed by a maximum of three alternatives."
         ],
         "_ps": 0
     },
@@ -1065,7 +1064,7 @@
             "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
             "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
             "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
-            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
+            "The first value is the first choice, followed by a maximum of three alternatives."
         ],
         "_ps": 0
     },
@@ -1075,7 +1074,7 @@
             "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
             "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
             "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
-            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
+            "The first value is the first choice, followed by a maximum of three alternatives."
         ],
         "_ps": 0
     },
@@ -1085,7 +1084,7 @@
             "The first value is the first choice, followed by alternative options, ordered by preference. The last option should be a generic font.",
             "The first value is the first choice. The order of the alternative options does not matter. It depends on what is available on the user's computer.",
             "The first value is the first choice, and must be followed by at least one alternative option before adding the generic font.",
-            "The first value is the first choice, followed by a maximum of three alternatives.\n```css\nA. font-size: xsmall\nB. font-size: 50%\nC. font-size: 1em\nD. font-size: 20px\n```"
+            "The first value is the first choice, followed by a maximum of three alternatives."
         ],
         "_ps": 0
     },
@@ -1095,7 +1094,7 @@
             "C, D",
             "B, C, D",
             "A, C",
-            "A, B, C, D\n![Sample text](https://raw.githubusercontent.com/ram-sah/LinkedIn-Assessments/master/CSS/images/rm-3.png)"
+            "A, B, C, D"
         ],
         "_ps": 1
     },
@@ -1105,7 +1104,7 @@
             "Floating the blue box increased its height.",
             "Floating the blue box on the left also moves it down.",
             "Floating the blue box actually shifts it to the right and down.",
-            "Floating the blue box took it out of document flow and the container is sized only to the sample text.\n```css\n<style>\n.container {\n  position: relative;\n  height: 200px;\n  width: 200px;\n  border: 1px solid black;\n}\n</style>\n<div class=\"container\"><div class=\"overlay\"></div></div>\n```"
+            "Floating the blue box took it out of document flow and the container is sized only to the sample text."
         ],
         "_ps": 3
     },
@@ -1115,7 +1114,7 @@
             "```css\n.overlay {\n  position: static;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```",
             "```css\n.overlay {\n  position: absolute;\n  top: 200px;\n  bottom: 200px;\n  right: 200px;\n  left: 200px;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```",
             "```css\n.overlay {\n  position: static;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```",
-            "```css\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```\n```js\n<div class=\"container\">\n  <img src=\"grumpy-cat.gif\" />\n  <p>The z-index property is cool!</p>\n</div>\n```\n```css\nimg {\n  position: absolute;\n  left: 0px;\n  top: 0px;\n  // Missing line\n}\n```"
+            "```css\n.overlay {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n```"
         ],
         "_ps": 3
     },
@@ -1135,7 +1134,7 @@
             "`font-size: reduce;`",
             "`font-size: 8px;`",
             "`font-size: -1em;`",
-            "`font-size: smaller;`\n```js\n<span class=\"highlight\">#BLM</span>\n```"
+            "`font-size: smaller;`"
         ],
         "_ps": 3
     },
@@ -1175,7 +1174,7 @@
             "`background-image: file('wood.png');`",
             "`background-image: url('wood.png');`",
             "`background-image: wood.png;`",
-            "`image: wood.png`\n```js\n<section><p>paragraph one</p></section><p>paragraph two</p>\n```"
+            "`image: wood.png`"
         ],
         "_ps": 1
     },
@@ -1195,7 +1194,7 @@
             "`transform: translateX(-100px)`",
             "`transform: translateY(-100px)`",
             "`transform: translateY(100px)`",
-            "`transform: translateX(100px)`\n```js\n<div id=\"outer\">\n  <div id=\"inner\">Center Me!</div>\n</div>\n```"
+            "`transform: translateX(100px)`"
         ],
         "_ps": 1
     },
@@ -1205,7 +1204,7 @@
             "```css\n#inner {\n  width: 50%;\n}\n#outer {\n  width: 100%;\n}\n```",
             "```css\n#inner {\n  left: 0;\n  right: 0;\n  position: center;\n}\n```",
             "```css\n#inner {\n  text-align: center;\n}\n```",
-            "```css\n#inner {\n  width: 50%;\n  margin: 0 auto;\n}\n```\n```css\n.pen {\n  height: 100px;\n  width: 100px;\n  border: 2px dashed brown;\n  position: relative;\n}\n#puppy {\n  position: absolute;\n  right: 80px;\n  bottom: 0px;\n}\n```\n```html\n<div class=\"pen\">\n  <span id=\"puppy\">🐶</span>\n</div>\n```"
+            "```css\n#inner {\n  width: 50%;\n  margin: 0 auto;\n}\n```"
         ],
         "_ps": 3
     },
@@ -1225,7 +1224,7 @@
             "`a:hover {...}`",
             "`a :hover {...}`",
             "`a.hover {...}`",
-            "`a hover {...}`\n[Reference](https://stackoverflow.com/questions/1935820/set-ahover-based-on-class)\n```css\n  <style>\n    #cellar-door {\n      box-shadow: 3px 5px 10px #000;\n    }\n    .text-shadow {\n      text-shadow: 3px 5px 10px #000;\n    }\n  </style>\n  <h1 _____> Cellar Door</h1>\n```"
+            "`a hover {...}`\n[Reference](https://stackoverflow.com/questions/1935820/set-ahover-based-on-class)"
         ],
         "_ps": 0
     },

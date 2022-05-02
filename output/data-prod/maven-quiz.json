@@ -285,7 +285,7 @@
             "WAR",
             "JAR",
             "EAR",
-            "POM\n    > mvn archetype:generate \\\n    -DgroupID=sample-maven-project \\\n    -DartifactID=com.palmer.bethan.sample \\\n    -Dversion=1.0.0 \\\n    -DinteractiveMode=false"
+            "POM"
         ],
         "_ps": 1
     },
@@ -355,7 +355,7 @@
             "install",
             "test",
             "compile",
-            "package\n```\n<configuration>\n    <archive>\n        <manifest>\n            <addClasspath>true</addClasspath>\n            <mainClass>com.palmer.bethan.App</mainClass>\n        </manifest>\n    </archive>\n</configuration>\n```"
+            "package"
         ],
         "_ps": 0
     },
@@ -415,7 +415,7 @@
             "all of these answers",
             "dependencies",
             "groupId",
-            "version\n![q43](q43.png)"
+            "version"
         ],
         "_ps": 0
     },
@@ -535,7 +535,7 @@
             "Use -Dtest=skip",
             "Use -DskipTests=true",
             "Use -Dtests=pass",
-            "Use a plugin that can be configured to skip tests\n```\n<profiles>\n    <profile>\n        <id>set=app-home</id>\n        <properties>maven-people-plugin</artifactId>\n            <application-home>/path/to/application</application-home>\n        </properties>\n    </profile>\n</profiles>\n<activeProfiles>\n    <activeProfile>set-app-home</activeProfile>\n</activeProfiles>\n```"
+            "Use a plugin that can be configured to skip tests"
         ],
         "_ps": 1
     },

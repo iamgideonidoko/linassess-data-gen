@@ -105,7 +105,7 @@
             "It's a transaction attribute configured by `spring.security.transactions.xml` config file that uses Spring's transaction implementation and validation code.",
             "It's a transaction that must actively validate by the bytecode of a transaction using Spring's `TransactionBytecodeValidator` class. Default Transaction behavior rolls back on validation exception but commits on proper validation",
             "It creates a proxy that implements the same interface(s) as the annotated class, allowing Spring to inject behaviors before, after, or around method calls into the object being proxied.",
-            "It's a transaction that must be actively validated by Spring's `TransactionValidator` class using Spring's transaction validation code. Default Transaction behavior rolls back on validation exception.\n```java\n@SpringBootApplication\npublic class App {\n     public static void main(String args[]) {\n          SpringApplication.run(App.class, args);\n          System.out.println(\"startup\");\n     }\n}\npublic class Print implements InitializingBean {\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(\"init\");\n     }\n}\n```"
+            "It's a transaction that must be actively validated by Spring's `TransactionValidator` class using Spring's transaction validation code. Default Transaction behavior rolls back on validation exception."
         ],
         "_ps": 2
     },
@@ -115,7 +115,7 @@
             "Nothing will print",
             "startup\n      init",
             "init",
-            "startup\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     @Autowired\n     static SimpleDateFormat formatter;\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(context.containsBean(\"formatter\") + \" \");\n          System.out.println(context.getBean(\"formatter\").getClass());\n          System.out.println(formatter.getClass());\n          System.out.println(context.getClass());\n     }\n}\n@Configuration\nclass TestConfig {\n     @Bean\n     public SimpleDateFormat formatter() {\n          return new SimpleDateFormat();\n     }\n}\n```"
+            "startup"
         ],
         "_ps": 0
     },
@@ -145,7 +145,7 @@
             "@Secured",
             "@RequiresRole",
             "@RestrictedTo",
-            "@SecurePath\n```java\n@RestController\npublic class SampleController {\n     @RequestMapping(\"/map\")\n     public String map(@RequestParam(\"bar\") String foo, @RequestParam(\"foo\") String bar) {\n          return bar + foo;\n     }\n}\n```"
+            "@SecurePath"
         ],
         "_ps": 0
     },
@@ -395,7 +395,7 @@
             "any of these answers",
             "Annotate a Setter method with the @Autowired annotation.",
             "Specify parameters in the constructor with an optional @Autowired annotation.",
-            "Use field injection.\n```java\nmy.property=Test\n```"
+            "Use field injection."
         ],
         "_ps": 0
     },
@@ -425,7 +425,7 @@
             "application properties located in an application.properties file outside the application.jar",
             "@PropertySource annotations on configuration classes",
             "profile-specific application-{profile}.properties files",
-            "application properties located in an application.properties file inside the application.jar\n![Alt text](https://usaupload.com/cache/plugins/filepreviewer/69009/c5e6eedce33819dd3b16bff7590d244b0fedf52561323c444b4b63e19e61e2e8/1100x800_cropped.jpg 'Spring bean lifecycle')"
+            "application properties located in an application.properties file inside the application.jar"
         ],
         "_ps": 2
     },
@@ -475,7 +475,7 @@
             "It ensures that transactions that are commited to the database are propagated to all the shards of a clustered database system.",
             "None of these answers is correct.",
             "It guarantees that transactions that are submitted to the database cluster are propagated to all the nodes of a clustered database cloud.",
-            "It enforces that a logical transaction scope is created for each method that determines rollback-only status, with an outer transaction scope being logically independent from the inner transaction scope.\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     private TestService service;\n     public void setService(TestService service) {\n          this.service = service;\n     }\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.print(context.containsBean(\"testService\") + \" \");\n          System.out.println(service.getClass());\n     }\n}\n@Service\nclass TestService {}\n```"
+            "It enforces that a logical transaction scope is created for each method that determines rollback-only status, with an outer transaction scope being logically independent from the inner transaction scope."
         ],
         "_ps": 3
     },
@@ -495,7 +495,7 @@
             "@RequestMapping; WebRequest",
             "@Controller; URLFilter",
             "@WebFilter; ServletContextInitializer",
-            "@Component; FilterRegistrationBean\n1. A predicate that matches join points.\n2. A point during the execution of a program, such as the execution of a method or the handling of an exception.\n3. An action taken by an aspect at a particular join point."
+            "@Component; FilterRegistrationBean"
         ],
         "_ps": 3
     },
@@ -515,7 +515,7 @@
             "Passwords should be hashed using an adaptive one-way function such as bcrypt.",
             "Passwords can be stored in a BASE64 encoded format if they are stored in a private database.",
             "Passwords should be salted and hashed using the MD5 algorithm.",
-            "Passwords should be hashed using the SHA-1 algorithm, then salted to provide defence against rainbow table attacks.\nExplanation: sha-1 is not considered secure anymore: https://en.wikipedia.org/wiki/SHA-1#Attacks . With bcrypt you can select more complex hashes https://en.wikipedia.org/wiki/Bcrypt\n`@target(com.linkedin.annotation.Loggable)`"
+            "Passwords should be hashed using the SHA-1 algorithm, then salted to provide defence against rainbow table attacks.\nExplanation: sha-1 is not considered secure anymore: https://en.wikipedia.org/wiki/SHA-1#Attacks . With bcrypt you can select more complex hashes https://en.wikipedia.org/wiki/Bcrypt"
         ],
         "_ps": 0
     },
@@ -525,7 +525,7 @@
             "any join point where the target object has a @Loggable annotation",
             "any join point where the executing method has a @Loggable annotation",
             "any method that implements Loggable",
-            "any method that extends Loggable\n[Difference between @target and @within (Spring AOP)](https://stackoverflow.com/questions/51124771/difference-between-target-and-within-spring-aop)\n```java\n@Component\npublic class Test implements InitializingBean {\n     @Autowired\n     ApplicationContext context;\n     @Autowired\n     SimpleDateFormat formatter;\n     @Override\n     public void afterPropertiesSet() throws Exception {\n          System.out.println(context.containsBean(\"formatter\"));\n          System.out.println(formatter.getClass());\n     }\n}\n@Configuration\nclass TestConfig2 {\n    @Bean\n    public final SimpleDateFormat formatter() {\n        return new SimpleDateFormat();\n    }\n}\n```"
+            "any method that extends Loggable\n[Difference between @target and @within (Spring AOP)](https://stackoverflow.com/questions/51124771/difference-between-target-and-within-spring-aop)"
         ],
         "_ps": 0
     },
@@ -605,7 +605,7 @@
             "Annotate a Controller class with `@Controller`. Then, using a specific naming convention for the methods, the `RequestMappingHandlerAdapter` will automatically configure your endpoints with the proper HTTP verb and URI.",
             "Register a controller as a bean. Then, using a specific naming convention for the methods, the `RequestMappingHandlerAdapter` will automatically configure your endpoints based on values from the YAML config file.",
             "Annotate a controller method with `@RequestMapping`, or a HTTP verb-specific annotation with a String URI pattern parameter (and other params as needed), which is supported through a `RequestMappingHandlerMapping/Adapter`.",
-            "Register a controller as a bean. Then, using a specific naming convention for the methods, the RequestMappingHandlerAdapter will automatically configure your endpoints based on values passed into the bean definition.\n[Spring RequestMapping](https://www.baeldung.com/spring-requestmapping). Spring does not use naming conventions for web requests (unlike e.g. for the Data Repositories)\n`execution(* setter*(..))`"
+            "Register a controller as a bean. Then, using a specific naming convention for the methods, the RequestMappingHandlerAdapter will automatically configure your endpoints based on values passed into the bean definition.\n[Spring RequestMapping](https://www.baeldung.com/spring-requestmapping). Spring does not use naming conventions for web requests (unlike e.g. for the Data Repositories)"
         ],
         "_ps": 2
     },
@@ -625,7 +625,7 @@
             "Front Controller",
             "Facade",
             "Reactive Chain",
-            "Observer\n`within(com.linkedin.service..*)`"
+            "Observer"
         ],
         "_ps": 0
     },
@@ -635,7 +635,7 @@
             "any join point only within the service package",
             "This is not valid Pointcut expression",
             "any method in a class that autowires a service bean",
-            "any join point within the service package or one of its subpackages\n`/shutdown`"
+            "any join point within the service package or one of its subpackages"
         ],
         "_ps": 3
     },
@@ -665,7 +665,7 @@
             "FilePath",
             "MultipartFile",
             "File",
-            "MvcFile\n```java\n@GetMapping(\"api/v1/domain/resource/{id}\")\npublic Pojo getPojo(@PathVariable(\"id\") String id) {\n  return testService.getPojo(id);\n}\n```"
+            "MvcFile"
         ],
         "_ps": 1
     },

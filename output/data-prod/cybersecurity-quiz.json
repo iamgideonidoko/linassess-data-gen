@@ -105,7 +105,7 @@
             "rainbow table attack",
             "pass-the-hash attack",
             "password spray attack",
-            "brute force attack\nA rainbow table attack is a more efficient and effective way of cracking many hashed passwords, whereas brute-forcing would take much longer and may not complete in a reasonable amount of time.\n[Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1002/brute-force-attacks-3).\n![image](https://user-images.githubusercontent.com/50566479/136518616-8712a45f-8ba5-48bd-ac60-5a96ddf754ae.png)"
+            "brute force attack\nA rainbow table attack is a more efficient and effective way of cracking many hashed passwords, whereas brute-forcing would take much longer and may not complete in a reasonable amount of time.\n[Professor Messer](https://www.professormesser.com/free-a-plus-training/220-1002/brute-force-attacks-3)."
         ],
         "_ps": 0
     },
@@ -845,7 +845,7 @@
             "always",
             "only when assessing regulatory compliance",
             "only if following the Agile model",
-            "never\n[Explanation:](https://www.synopsys.com/glossary/what-is-sast.html)\n    Control of security required for regulatory compliance\n    Legacy application and database support\n    Scalability to meet seasonal increases in demand\nWhich cloud model is the best option for these requirements?"
+            "never\n[Explanation:](https://www.synopsys.com/glossary/what-is-sast.html)"
         ],
         "_ps": 0
     },
@@ -865,7 +865,7 @@
             "Give up on the current target network and move on to the next one.",
             "Switch to another network scanning tool. Resort to more resource-intensive probing, like launching random attacks to all open ports.",
             "Turn on the stealth mode in your network scanning tool. Check whether you missed any other active ports associated with web servers.",
-            "Turn on additional options in your network scanning tool to further investigate the details (type and version) of applications running on the rest of the active ports.\nWhat are the primary goals of the digital signature in this scenario? (Choose the best answer.)"
+            "Turn on additional options in your network scanning tool to further investigate the details (type and version) of applications running on the rest of the active ports."
         ],
         "_ps": 3
     },
@@ -1005,7 +1005,7 @@
             "a stateful packet inspection firewall",
             "a web application firewall (WAF)",
             "an Intrusion Detection and Prevention System (IDPS) appliance",
-            "Security Information Event Management (SIEM)\nWhat is the next step you should take to best fulfill your responsibilities and meet the needs of the business?"
+            "Security Information Event Management (SIEM)"
         ],
         "_ps": -1
     },

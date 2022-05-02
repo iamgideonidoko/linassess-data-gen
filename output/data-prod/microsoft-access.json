@@ -25,7 +25,7 @@
             "`&`",
             "`!`",
             "`#`",
-            "`-`\n[Caveat:](https://support.microsoft.com/en-us/office/string-functions-and-how-to-use-them-965efa84-7009-4603-9765-2eb4a099ec72)\n\"In a desktop database, you can also use the ampersand operator (&) for concatentation. In an Access app, you must use the plus sign (+).\"\\_\n`<p align=\"center\"><img src=\"./images/question_4.png\"></p>`"
+            "`-`\n[Caveat:](https://support.microsoft.com/en-us/office/string-functions-and-how-to-use-them-965efa84-7009-4603-9765-2eb4a099ec72)\n\"In a desktop database, you can also use the ampersand operator (&) for concatentation. In an Access app, you must use the plus sign (+).\"\\_"
         ],
         "_ps": 0
     },
@@ -135,7 +135,7 @@
             "a group header",
             "nothing",
             "a group header and footer",
-            "a group footer\n[Reference](https://support.microsoft.com/en-us/office/create-a-grouped-or-summary-report-f23301a1-3e0a-4243-9002-4a23ac0fdbf3#__add_or_modify)\n| General         | Lookup                          |\n| --------------- | ------------------------------- |\n| Display Control | Combo Box                       |\n| Raw Source Type | Value List                      |\n| Raw Source      | 1:\"High\"; 2 :\"Normal\"; 3: \"Low\" |\n| Bound Column    | 1                               |\n| Column Count    | 2                               |\n| Column Heads    | No                              |\n| Column Widths   | 0; 1                            |\n| List Rows       | 16                              |\n| List Width      | Auto                            |"
+            "a group footer\n[Reference](https://support.microsoft.com/en-us/office/create-a-grouped-or-summary-report-f23301a1-3e0a-4243-9002-4a23ac0fdbf3#__add_or_modify)"
         ],
         "_ps": 0
     },

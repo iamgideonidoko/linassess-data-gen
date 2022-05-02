@@ -265,7 +265,7 @@
             "Open the commit in the Git Staging view.",
             "Open the commit in the Git Reflog view.",
             "Double-click a commit in the History view.",
-            "Right-click the file in the Package Explorer and select Team > Show in History.\n![image Q28](https://github.com/Beziu/linkedin-skill-assessments-quizzes/blob/master/eclipse/images/Eclipse-Q28.jpg)"
+            "Right-click the file in the Package Explorer and select Team > Show in History."
         ],
         "_ps": 3
     },

@@ -495,7 +495,7 @@
             "ADD mystream \\* sensor-id 1234 temperature 19.8 1518951480106-1",
             "UPDATE mystream \\* sensor-id 1234 temperature 19.8 1518951480106-3",
             "XADD mystream \\* sensor-id 1234 temperature 9.8 1518951480106-0",
-            "INSERT mystream \\* sensor-d 1234 temperature 19.8 15181480106-2\n```\nvar indexCollection = function(db) {return co(function*() {...});};\n```"
+            "INSERT mystream \\* sensor-d 1234 temperature 19.8 15181480106-2"
         ],
         "_ps": 2
     },

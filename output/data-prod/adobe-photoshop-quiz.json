@@ -25,7 +25,7 @@
             "Click the eye icon in the layers panel",
             "Use the Move tool with auto-select enabled",
             "Right-click the image and select layer",
-            "Press Cmd/Ctrl and click the layer\n[Reference](https://helpx.adobe.com/uk/photoshop/using/selecting-grouping-linking-layers.html#select_layers_in_the_document_window)\n![How can you avoid having transparent edges along the edge of a panoramic photo while retaining the largest image size?](images/007.png?raw=true)"
+            "Press Cmd/Ctrl and click the layer\n[Reference](https://helpx.adobe.com/uk/photoshop/using/selecting-grouping-linking-layers.html#select_layers_in_the_document_window)"
         ],
         "_ps": 1
     },
@@ -75,7 +75,7 @@
             "Select Image > Auto Tone.",
             "Select Image > Auto Color.",
             "Alt-click (Option-click) the Auto button in the Properties panel when you have a Levels or Curves adjustment layer targeted in the Layers panel.",
-            "Hold down the Alt (Option) key and select Image > Auto Color.\n    A. Content-Aware Scale\n    B. Scale\n    C. Warp\n    D. Distort\n    E. Perspective Warp"
+            "Hold down the Alt (Option) key and select Image > Auto Color."
         ],
         "_ps": 1
     },
@@ -145,7 +145,7 @@
             "It allows you to use the Pen tool to edit a selection",
             "It allows you to use the Brush tool to create or refine a selection",
             "It allows you to duplicate a mask quickly.",
-            "It allows you to convert a vector mask to a layer mask.\n![What Photoshop feature was used to convert this image to black and white?](images/008.png?raw=true)"
+            "It allows you to convert a vector mask to a layer mask."
         ],
         "_ps": 1
     },
@@ -155,7 +155,7 @@
             "Black and White adjustment layer",
             "Posterize",
             "Threshold",
-            "Image > Mode > Grayscale\n![In the image shown, why is Sharpen Edges grayed out?](images/009.png?raw=true)"
+            "Image > Mode > Grayscale"
         ],
         "_ps": 2
     },
@@ -165,7 +165,7 @@
             "The filter doesn't work on a 16-bit image.",
             "The filer is not correctly installed.",
             "The filter doesn't work on a 32-bit image.",
-            "The filter requires a selection to be made first.\n![In the image shown, which Camera Raw feature was used to restrict the graduated filter to avoid the statue?](images/010.png?raw=true)"
+            "The filter requires a selection to be made first."
         ],
         "_ps": 3
     },
@@ -185,7 +185,7 @@
             "tool sets",
             "preferences",
             "modifier keys",
-            "tool presets\n![Which Camera Raw Transform method is being used in the example shown?](images/011.png?raw=true)"
+            "tool presets"
         ],
         "_ps": 3
     },
@@ -225,7 +225,7 @@
             "grouped with the Eyedropper tool",
             "Image > Mode > Red Eye",
             "Edit > Red Eye",
-            "grouped with the Spot Healing Brush tool\n![Which option was not selected in the Magic Wand tool to create a selection like the one shown below?](images/012.png?raw=true)"
+            "grouped with the Spot Healing Brush tool"
         ],
         "_ps": 3
     },
@@ -235,7 +235,7 @@
             "Contiguous",
             "Anti-alias",
             "Auto-Enhance",
-            "Sample All Layers\n![Where should you click to open a dialog box in which you can then choose to open a raw file as a Smart Object?](images/013.png?raw=true)"
+            "Sample All Layers"
         ],
         "_ps": 0
     },
@@ -355,7 +355,7 @@
             "Exposure",
             "Color Lookup",
             "Brightness/Contrast",
-            "Curves\n![To hide the white borders around pixels that are viewed at a high magnification, which option do you disable?](images/005.png?raw=true)"
+            "Curves"
         ],
         "_ps": 1
     },
@@ -435,7 +435,7 @@
             "GIF",
             "PNG-8",
             "PNG-24",
-            "JPEG\n[Reference](https://helpx.adobe.com/photoshop-elements/using/optimizing-images-png-24-format.html)\n![You're trying to use the Healing Brush tool, but don't see results. What is the problem?](images/006.png?raw=true)"
+            "JPEG\n[Reference](https://helpx.adobe.com/photoshop-elements/using/optimizing-images-png-24-format.html)"
         ],
         "_ps": 2
     },
@@ -455,7 +455,7 @@
             "Adobe RGB",
             "ProPhoto RGB",
             "RGB",
-            "sRGB\n[Reference](https://helpx.adobe.com/ca/photoshop/using/color-settings.html#:~:text=sRGB%20is%20recommended%20when%20you,as%20their%20default%20color%20space.)\n![Which option do you use with the Dodge and Burn tools to prevent unwanted color changes like those shown in the image?](images/001.png?raw=true)"
+            "sRGB\n[Reference](https://helpx.adobe.com/ca/photoshop/using/color-settings.html#:~:text=sRGB%20is%20recommended%20when%20you,as%20their%20default%20color%20space.)"
         ],
         "_ps": 3
     },
@@ -465,7 +465,7 @@
             "Sample All Layers",
             "Protect Tones",
             "Use Pressure for Size",
-            "Protect Colors\n[Reference](https://helpx.adobe.com/photoshop/using/dodge-burn-image-areas.html)\n![Which command in the Smart Objects submenu would you see to save the original file for the selected layer?](images/002.png?raw=true)"
+            "Protect Colors\n[Reference](https://helpx.adobe.com/photoshop/using/dodge-burn-image-areas.html)"
         ],
         "_ps": 1
     },
@@ -475,7 +475,7 @@
             "Edit Contents",
             "Replace Contents",
             "Relink to File",
-            "Export Contents\n![In the image shown, which Blur method is being used to control focus with a series of pins?](images/003.png?raw=true)"
+            "Export Contents"
         ],
         "_ps": 3
     },
@@ -485,7 +485,7 @@
             "Path Blur",
             "Tilt-Shift Blur",
             "Iris Blur",
-            "Field Blur\n![In the image shown, what do the blue areas represent?](images/004.png?raw=true)"
+            "Field Blur"
         ],
         "_ps": 3
     },
@@ -495,7 +495,7 @@
             "Color cast",
             "Clipped shadow detail",
             "Overexposed details",
-            "Clipped highlight detail\n![What does the grayscale image in this figure show?](images/014.png?raw=true)"
+            "Clipped highlight detail"
         ],
         "_ps": 2
     },
@@ -505,7 +505,7 @@
             "the edges affected by the Sharpen command as refined by the Masking slider",
             "the edges affected by the Sharpen command as refined by the Radius slider",
             "the edges affected by the Sharpen command as refined by the Detail slider",
-            "the edges affected by the Sharpen command as refined by the Amount slider\n![Where do you click to adjust the blending mode for a Smart Filter?](images/015.png?raw=true)"
+            "the edges affected by the Sharpen command as refined by the Amount slider"
         ],
         "_ps": 0
     },

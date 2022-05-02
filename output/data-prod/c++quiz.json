@@ -5,7 +5,7 @@
             "False",
             "0",
             "1",
-            "This code has an error.\n```cpp\nUsing namespace std;\n```"
+            "This code has an error."
         ],
         "_ps": 2
     },
@@ -15,7 +15,7 @@
             "The compiled code is always bigger because of all of the imported symbols.",
             "If the code uses a function defined in two different libraries with the same prototype but possibly with different implementations, there will be a compilation error due to ambiguity.",
             "It automatically includes all header files in the standard library (cstdint, cstdlib, cstdio, iostream, etc).",
-            "It causes the compiler to enforce the exclusive inclusion of header files belonging to the standard library, generating compilation error when a different header file is included.\n[Reference](https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/)\n```cpp\ntypedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    unsigned int  size   : 2;\n}child_t;\n```"
+            "It causes the compiler to enforce the exclusive inclusion of header files belonging to the standard library, generating compilation error when a different header file is included.\n[Reference](https://www.geeksforgeeks.org/using-namespace-std-considered-bad-practice/)"
         ],
         "_ps": 1
     },
@@ -25,7 +25,7 @@
             "7 bits.",
             "25 bytes.",
             "1 bit.",
-            "1 byte.\n[Reference](https://en.cppreference.com/w/cpp/language/bit_field)\n```cpp\nstd::vector<int> v1{1,2,3},v2;\nv2=v1;\nv1.push_back(4);\nv2.push_back(5);\n```"
+            "1 byte.\n[Reference](https://en.cppreference.com/w/cpp/language/bit_field)"
         ],
         "_ps": 0
     },
@@ -45,7 +45,7 @@
             "While pointers are variable that hold memory address, iterators are generic functions used to traverse containers. These function allows the programmer to implement read and write code as the container is traversed.",
             "Incrementing an iterator always means access the next element in the container(if any), no matter the container. Incrementing the pointer means pointing to the next element in memory, not always the next element.",
             "Pointers are variables that hold memory address where as iterator are unsigned integers that refers to offsets in arrays.",
-            "All iterator are implemented with pointers so all iterators are pointers but not all pointers are iterators.\n[Reference](https://stackoverflow.com/a/31128162)\n```cpp\nint median(const my_array& a);\n```"
+            "All iterator are implemented with pointers so all iterators are pointers but not all pointers are iterators.\n[Reference](https://stackoverflow.com/a/31128162)"
         ],
         "_ps": 1
     },
@@ -55,7 +55,7 @@
             "The argument is passed as a reference, so the function receives a copy that can be modified without affecting the original value.",
             "The argument is passed as a reference, so if the passed my_array object is large, the program will require less time and memory.",
             "Actually objects can't be passed as regular variables because they require a constructor call. Therefore a const reference is the only way to pass class instances to functions.",
-            "There are no benefits because a reference and an object are treated as the same thing.\n[Reference](https://stackoverflow.com/a/2627179/10773894)\n```cpp\nunion {\n    unit16_t a;\n    unit32_t b;\n    int8_t c;\n} u1;\n```"
+            "There are no benefits because a reference and an object are treated as the same thing.\n[Reference](https://stackoverflow.com/a/2627179/10773894)"
         ],
         "_ps": 1
     },
@@ -75,7 +75,7 @@
             "`?:`",
             "`new`",
             "`::`",
-            "`.`\n[Reference](https://www.tutorialspoint.com/operators-that-cannot-be-overloaded-in-cplusplus)\n```cpp\nstd:: vector<int> *v1 = new std::vector<int>({1,2,3});\nstd:: vector<int> *v2;\nv2=v1;\nv1->push_back(4);\nv2->push_back(5);\n```"
+            "`.`\n[Reference](https://www.tutorialspoint.com/operators-that-cannot-be-overloaded-in-cplusplus)"
         ],
         "_ps": 1
     },
@@ -115,7 +115,7 @@
             "It's a constant expression, meaning an expression composed of constants and operations.",
             "It's an expression that represents an object with an address.",
             "It's an expression suitable for the left-hand side operand in a binary operation.",
-            "It's a location value, meaning a memory address suitable for assigning to a pointer or reference.\n```cpp\nauto x = 4000.22;\n```"
+            "It's a location value, meaning a memory address suitable for assigning to a pointer or reference."
         ],
         "_ps": 1
     },
@@ -135,7 +135,7 @@
             "class written with the generic programming paradigm, specifying behavior in terms of type parameter rather than specific type.",
             "blank superclass intended for inheritance and polymorphism.",
             "lass that only consists of member variable, with no constructor, destructor nor member functions.",
-            "skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used.\n[Reference](https://www.mygreatlearning.com/blog/templates-in-cpp/)\n```cpp\nif(x)\n    y=a;\nelse\n    y=b;\n```"
+            "skeleton source code for a class where the programmer has to fill in specific parts to define the data types and algorithms used.\n[Reference](https://www.mygreatlearning.com/blog/templates-in-cpp/)"
         ],
         "_ps": 0
     },
@@ -145,7 +145,7 @@
             "`y=a?b:x;`",
             "`y=if(x?a:b);`",
             "`y=(x&a)?a:(x&b)?b:0;`",
-            "`y=x?a:b;`\n[Reference](https://www.w3schools.com/cpp/cpp_conditions_shorthand.asp)\n```cpp\n#include <iostream>\nint main(){\n    int x=10, y=20;\n    std::cout << \"x = \" << x++ << \" and y = \" << --y << std::endl;\n    std::cout << \"x = \" << x-- << \" and y = \" << ++y << std::endl;\n    return(0);\n}\n```"
+            "`y=x?a:b;`\n[Reference](https://www.w3schools.com/cpp/cpp_conditions_shorthand.asp)"
         ],
         "_ps": 3
     },
@@ -165,7 +165,7 @@
             "The first is a variable declaration that will hold an element in a sequence. The second is the sequence to traverse.",
             "The first is an iterator, and the second is the increment value to be added to the iterator.",
             "The first is the iterating variable. The second is an `std::pair` that specifies the range (start and end) in which the variable will iterate.",
-            "The first is a container object. The second is an `std::pair` that specifies the range (start and end) in which the elements will be accessed within the loop.\n```cpp\nint8_t a=200;\nuint8_t b=100;\nif(a>b)\n    std::cout<<\"greater\";\nelse\n    std::cout<<\"less\";\n```"
+            "The first is a container object. The second is an `std::pair` that specifies the range (start and end) in which the elements will be accessed within the loop."
         ],
         "_ps": 0
     },
@@ -175,7 +175,7 @@
             "There is no output because there is an exception when comparing an int8_t with a uint8_t.",
             "greater",
             "less",
-            "There is no output because there is a compiler error.\n```cpp\nint x=5, y=2;\nif(x & y) {\n    /*_part A_*/\n}\nelse {\n    /*_part B_*/\n}\n```"
+            "There is no output because there is a compiler error."
         ],
         "_ps": 2
     },
@@ -215,7 +215,7 @@
             "The first is the iterating variable name, the second is the number of times to iterate, and the third is the desired increment or decrement (specified with a signed integer).",
             "The first is the initialization block, the second is the condition to iterate, and the third is the increment block.",
             "The first is the iterating variable, the second is the container in which it should operate, and the third is an exit condition to abort at any time.",
-            "The first is the iterating variable name, the second is the starting value for the iterating variable, and the third is the stop value (the last value plus one).\n```cpp\nint i = 0;\nprintf(\"%d\", i++);\nprintf(\"%d\", i--);\nprintf(\"%d\", ++i);\nprintf(\"%d\", --i);\n```"
+            "The first is the iterating variable name, the second is the starting value for the iterating variable, and the third is the stop value (the last value plus one)."
         ],
         "_ps": 1
     },
@@ -225,7 +225,7 @@
             "0,1,1,0",
             "0,1,0,1",
             "0,0,1,0",
-            "1,0,1,0\n```cpp\nvoid *ptr;\n```"
+            "1,0,1,0"
         ],
         "_ps": 0
     },
@@ -235,7 +235,7 @@
             "It is a pointer initialized at NULL.",
             "It is a pointer to a void function.",
             "That declaration causes a compiler error, as pointers must specify a type.",
-            "It is a pointer to a value with no specific type, so it may be cast to point to any type.\n[Reference](https://en.cppreference.com/w/cpp/language/pointer)\n```cpp\nint c=3; char d='A';\nstd::printf(\"c is %d and d is %c\",c,d);\n```"
+            "It is a pointer to a value with no specific type, so it may be cast to point to any type.\n[Reference](https://en.cppreference.com/w/cpp/language/pointer)"
         ],
         "_ps": 3
     },
@@ -245,7 +245,7 @@
             "c is d and d is c",
             "c is A and d is 3",
             "c is 3 and d is A",
-            "c is c and d is d\n```cpp\nprintf(\"1/2 = %f\",(float)(1/2));\n```"
+            "c is c and d is d"
         ],
         "_ps": 2
     },
@@ -265,7 +265,7 @@
             "Public members are the same as global variables, so every part of the code has access to them. Private members are the same as automatic variables, so only their class has access to them.",
             "Public members are made accessible to any running application. Private members are made accessible only to the application where the object is instantiated.",
             "Public members will be compiled as shared variables in a multithreaded environment. Private members will be compiled as Thread-local variables.",
-            "Public members can be accessed by any function. Private members can be accessed only by the same class's member functions and the friends of the class.\n```cpp\nint x=10, a=-3;\nx=+a;\n```"
+            "Public members can be accessed by any function. Private members can be accessed only by the same class's member functions and the friends of the class."
         ],
         "_ps": 3
     },
@@ -285,7 +285,7 @@
             "Only classes can have member variables and methods.",
             "C++ supports multiple inheritance.",
             "C++ supports only single inheritance.",
-            "Only structs can inherit.\n```cpp\nfloat g;\nvoid *ptr=&g;\n```"
+            "Only structs can inherit."
         ],
         "_ps": 1
     },
@@ -305,7 +305,7 @@
             "It is the same as the class member access operator, or arrow operator `(->)`, which allows you to access a member of an object through a pointer to the object.",
             "It is the pointer to member operator, and it allows you to access a member of an object through a pointer to that specific class member.",
             "It is the member access with address of operator, which returns the address of a class or struct member.",
-            "It is a combination of the member access operator `(.)` and the dereference operator `(*)`, so it allows you to access the object that a member pointer points to.\n[Reference](https://en.cppreference.com/w/cpp/language/operator_member_access)\n```cpp\nchar buff[50] = \"strings as arrays of characters are fun!\"\nchar *str = buff+11;\nchar c;\n```"
+            "It is a combination of the member access operator `(.)` and the dereference operator `(*)`, so it allows you to access the object that a member pointer points to.\n[Reference](https://en.cppreference.com/w/cpp/language/operator_member_access)"
         ],
         "_ps": 1
     },
@@ -315,7 +315,7 @@
             "A\n```cpp\nc = buff[16];\nc = str[5];\nc = *(buff+16);\nc = *(str+5);\n```",
             "B\n```cpp\nc = *(buff[15]);\nc = *(str[4]);\nc = buff+15;\nc = str+4;\n```",
             "C\n```cpp\nc = buff[15];\nc = str[4];\nc = *(buff+15);\nc = *(str+4);\n```",
-            "D\n```cpp\nc = *(buff[16]);\nc = *(str[5]);\nc = buff+16;\nc = str+5;\n```\n```cpp\nclass Animal{\n    //....\n}\n```"
+            "D\n```cpp\nc = *(buff[16]);\nc = *(str[5]);\nc = buff+16;\nc = str+5;\n```"
         ],
         "_ps": 2
     },
@@ -325,7 +325,7 @@
             "A\n```cpp\nclass Dog :: public Animal {\n   //....\n};\n```",
             "B\n```cpp\nclass Dog : public Animal {\n   //....\n};\n```",
             "C\n```cpp\npublic class Animal :: Dog {\n   //....\n};\n```",
-            "D\n```cpp\npublic class Dog extends Animal {\n   //....\n};\n```\n```cpp\n#include <cstdio>\nusing namespace std;\nint main(){\n    char c = 255;\n    if(c>10)\n        printf(\"c = %i, which is greater than 10\", c);\n    else\n        printf(\"c = %i, which is less than 10\", c);\n    return 0;\n}\n```"
+            "D\n```cpp\npublic class Dog extends Animal {\n   //....\n};\n```"
         ],
         "_ps": 1
     },
@@ -345,7 +345,7 @@
             "by simply calling the C code",
             "there is no way for C++ to call a C function",
             "by using extern \"C\"",
-            "by importing the source C code\n```\ncoord center;\ncenter.x = 5;\ncenter.y = 3;\n```"
+            "by importing the source C code"
         ],
         "_ps": 2
     },
@@ -355,7 +355,7 @@
             "A\n```cpp\ntypedef struct coord {\n    int x;\n    int y;\n};\n```",
             "B\n```cpp\ntypedef struct coord {\n    int x;\n    int y;\n} coord;\n```",
             "C\n```cpp\ntypedef struct {\n    int x;\n    int y;\n} coord;\n```",
-            "D\n```cpp\nstruct coord {\n    int x;\n    int y;\n};\ntypedef struct coord coord;\n```\n```cpp\nfor (i=1;i<10;i++){\n    cout<<i<<endl;\n}\n```"
+            "D\n```cpp\nstruct coord {\n    int x;\n    int y;\n};\ntypedef struct coord coord;\n```"
         ],
         "_ps": 0
     },
@@ -365,7 +365,7 @@
             "A\n```cpp\ni=1;\nwhile(i<10){\n    cout<<++i<<endl;\n}\n```",
             "B\n```cpp\nfor (int i:{1,2,3,4,5,6,7,8,9}) {\n    cout<<i<<endl;\n}\n```",
             "C\n```cpp\ni = 1;\ndo {\n    cout<<i++<<endl;\n} while(i<10);\n```",
-            "D\n```cpp\ni = 1;\nloop:\n    cout<<i++<<endl;\n    if(i<10) goto loop;\n```\n```cpp\n#include \"library.h\"\n```"
+            "D\n```cpp\ni = 1;\nloop:\n    cout<<i++<<endl;\n    if(i<10) goto loop;\n```"
         ],
         "_ps": 0
     },
@@ -375,7 +375,7 @@
             "It causes the toolchain to compile all the contents of library.h so that its executable code is available when needed by the final application.",
             "It cherry picks library.h for the declarations and definitions of all data and functions used in the remainder of the source file main.cpp, finally replacing the `#include` directive by those declarations and definitions.",
             "It informs the linker that some functions or data used in the source file main.cpp are contained in library.h, so that they can be called in run time. This is also known as dynamic linking.",
-            "It causes the replacement of the `#include` directive by the entire contents of the source file library.h. This is similar to a Copy-Paste operation of library.h into main.cpp.\n```cpp\nbool is_even(int);\n```"
+            "It causes the replacement of the `#include` directive by the entire contents of the source file library.h. This is similar to a Copy-Paste operation of library.h into main.cpp."
         ],
         "_ps": 3
     },
@@ -395,7 +395,7 @@
             "A\n```cpp\n#ifdef MY_LIBRARY_H\n#define MY_LIBRARY_H\n// my_library.h content\n#endif /* MY_LIBRARY_H */\n```",
             "B\n```cpp\n#ifndef MY_LIBRARY_H\n#define MY_LIBRARY_H\n// my_library.h content\n#endif /* MY_LIBRARY_H */\n```",
             "C\n```cpp\n#ifdef MY_LIBRARY_H\n#undef MY_LIBRARY_H\n// my_library.h content\n#endif /* MY_LIBRARY_H */\n```",
-            "D\n```cpp\n#define MY_LIBRARY_H\n#include MY_LIBRARY_H\n// my_library.h content\n#undef MY_LIBRARY_H\n```\n```cpp\nstd::vector<std::vector<int>> thematrix;\n```"
+            "D\n```cpp\n#define MY_LIBRARY_H\n#include MY_LIBRARY_H\n// my_library.h content\n#undef MY_LIBRARY_H\n```"
         ],
         "_ps": 1
     },
@@ -405,7 +405,7 @@
             "There's nothing wrong with it.",
             "An `std::vector` cannot contain more `std::vector` containers as its elements.",
             "The correct syntax should be: `std::vector[std::vector[int]] thematrix;`",
-            "`>>` is parsed as the shift-right operator, and thus results in a compile error.\n```cpp\nsprite->x\n```"
+            "`>>` is parsed as the shift-right operator, and thus results in a compile error."
         ],
         "_ps": 3
     },
@@ -415,7 +415,7 @@
             "`sprite.x`",
             "`sprite.*x`",
             "`(*sprite).x`",
-            "`*sprite.x`\n```cpp\ncomplexNumber(float real, float im)\n: real_part(real),\n im_part(im){}\n```"
+            "`*sprite.x`"
         ],
         "_ps": 2
     },
@@ -425,7 +425,7 @@
             "A\n```cpp\ncomplexNumber(float real, float im) {\n    this->real = real_part;\n    this->im = im_part;\n}\n```",
             "B\n```cpp\ncomplexNumber(float real, float im) {\n    this->real_part(real);\n    this->im_part(im);\n}\n```",
             "C\n```cpp\ncomplexNumber(float real, float im) {\n    this->real_part = real;\n    this->im_part = im;\n}\n```",
-            "D\n```cpp\ncomplexNumber(float real, float im) {\n    this->real_part = &real;\n    this->im_part = &im;\n}\n```\n```cpp\nbool x=true, y=false;\nif(~x || y){\n    /*part A*/\n}\nelse{\n    /*part B*/\n}\n```"
+            "D\n```cpp\ncomplexNumber(float real, float im) {\n    this->real_part = &real;\n    this->im_part = &im;\n}\n```"
         ],
         "_ps": 2
     },
@@ -435,7 +435,7 @@
             "Part A executes because the expression `(~x || y)` always results in true if `y==false`.",
             "Part B executes because the statement `(~x || y)` is invalid, thus false.",
             "Part A executes because `~x` is not zero, meaning true.",
-            "Part B executes because `~x` is false and `y` is false, thus the `OR` operation evaluates as false.\n```cpp\nint32_t nums[3]={2,4,3};\nstd::cout << ( nums[0] << nums[1] << nums[2] );\n```"
+            "Part B executes because `~x` is false and `y` is false, thus the `OR` operation evaluates as false."
         ],
         "_ps": 3
     },
@@ -445,7 +445,7 @@
             "The output is the addresses of `nums[0]`, `nums[1]`, and `nums[2]`, in that order, with no spaces.",
             "`256`",
             "`0`",
-            "`243`\n```cpp\nfloat values[5]={0.54f, 2.71828f, 3.14159f, 5.499999f, 10.0f};\nfor(auto f:values)\n    printf(\"%i \",(int)(f+0.5f));\n```"
+            "`243`"
         ],
         "_ps": 1
     },
@@ -465,7 +465,7 @@
             "`std::priority_queue`",
             "`std::list`",
             "`std::vector`",
-            "`std::map`\n[Reference](https://en.cppreference.com/w/cpp/container/map)\n```cpp\n#include <iostream>\n#include <fstream>\nusing namespace std;\nint main(){\n    ifstream file1(\"text1.txt\", ios::binary);\n    ofstream file2(\"text2.txt\", ios::binary);\n    file2 << file1.rdbuf();\n}\n```"
+            "`std::map`\n[Reference](https://en.cppreference.com/w/cpp/container/map)"
         ],
         "_ps": 3
     },
@@ -475,7 +475,7 @@
             "It renames text1.txt to text2.txt.",
             "It makes a directory called text2.txt and moves text1.txt there.",
             "It copies the contents of text1.txt into text2.txt - i.e., it makes a copy of text1.txt, named text2.txt.",
-            "It appends the contents of text1.txt into text2.txt - i.e., replaces the contents of text2.txt by the concatenation of text2.txt and text1.txt.\n[Reference](https://en.cppreference.com/w/cpp/header/fstream)\n```cpp\nclass my_class {\n    public: static int count;\n}\n```"
+            "It appends the contents of text1.txt into text2.txt - i.e., replaces the contents of text2.txt by the concatenation of text2.txt and text1.txt.\n[Reference](https://en.cppreference.com/w/cpp/header/fstream)"
         ],
         "_ps": 2
     },
@@ -495,7 +495,7 @@
             "double",
             "long float",
             "long double",
-            "float\n```cpp\nint8_t a=200;\nuint8_t b=100;\nstd::cout<<\"a=\"<<(int)a;\nstd::cout<<\", b=\"<<(int)b;\n```"
+            "float"
         ],
         "_ps": 0
     },
@@ -505,7 +505,7 @@
             "a=-56, b=100",
             "a=-55, b=100",
             "a=200, b=-156",
-            "a=200, b=100\n```cpp\nmy_class *my_object = new my_class();\n```"
+            "a=200, b=100"
         ],
         "_ps": 0
     },
@@ -515,7 +515,7 @@
             "`delete(my_object);`",
             "`free(my_object);`",
             "The garbage collector will destroy the object eventually.",
-            "Exiting the scope will destroy the object.\n```cpp\nclass my_array{\n    public:\n        int count();\n};  // ... more members above\nint main(){\n    my_array *grades = new my_array();\n};  // ... more code above\n```"
+            "Exiting the scope will destroy the object."
         ],
         "_ps": 0
     },
@@ -525,7 +525,7 @@
             "`grades.count();`",
             "`my_array->count();`",
             "`grades->count();`",
-            "`my_array.count();`\n[Reference](https://en.cppreference.com/w/c/language/operator_member_access)\n```cpp\nint i0=4, i1=6, i2=8;\nint& nums[3]={i2,i0,i1};\nstd::cout<<nums[0]<<nums[1]<<nums[2];\n```"
+            "`my_array.count();`\n[Reference](https://en.cppreference.com/w/c/language/operator_member_access)"
         ],
         "_ps": 2
     },
@@ -535,7 +535,7 @@
             "There is no output. The code causes a compiler error because `nums` is an array of references, which is illegal.",
             "846",
             "The output is the addresses of `i2`, `i0`, and `i1`, in that order, with no spaces.",
-            "468\n[Reference](https://en.cppreference.com/w/cpp/language/array)\n```cpp\ntypedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    char                 : 0;\n    unsigned int  size   : 2;\n}child_t;\n```"
+            "468\n[Reference](https://en.cppreference.com/w/cpp/language/array)"
         ],
         "_ps": 0
     },
@@ -545,7 +545,7 @@
             "Yes, it causes a compiler error because the colon character is not allowed in struct definitions.",
             "and `child_t` is a type defined as a structure with bit fields. It has 4 bits for age and 1 bit for gender in the first byte, and 2 bits for size in the second byte.",
             "Yes, it causes a compiler error because there is an unnamed field.",
-            "Yes, it causes a compiler error because one field is defined as having a size of 0.\n[Reference](https://en.cppreference.com/w/cpp/language/bit_field)\n```cpp\nA->B->C->D\n```"
+            "Yes, it causes a compiler error because one field is defined as having a size of 0.\n[Reference](https://en.cppreference.com/w/cpp/language/bit_field)"
         ],
         "_ps": 1
     },
@@ -555,7 +555,7 @@
             "`A.B.C.D`",
             "`*A.*B.*C.*D`",
             "`&A.&B.&C.&D`",
-            "`*(*((*A).B).C).D`\n```cpp\nauto buff = new char[50];\nstd::memset(buff,20,50);\n```"
+            "`*(*((*A).B).C).D`"
         ],
         "_ps": 3
     },
@@ -575,7 +575,7 @@
             "`CustomData& operator++();`",
             "`void operator++(CustomData);`",
             "`CustomData operator++(CustomData);`",
-            "`CustomData operator++(int);`\n[Reference](https://en.cppreference.com/w/cpp/language/operators)\n```cpp\nstd::array<uint32_t, 50> my_array;\n```"
+            "`CustomData operator++(int);`\n[Reference](https://en.cppreference.com/w/cpp/language/operators)"
         ],
         "_ps": 3
     },
@@ -615,7 +615,7 @@
             "`std::priority_queue`",
             "`std::map`",
             "`std::vector`",
-            "`std::list`\n```cpp\nstd::mutex::lock()\nstd::mutex::try_lock()\n```"
+            "`std::list`"
         ],
         "_ps": 1
     },
@@ -625,7 +625,7 @@
             "`lock()` has a higher privilege over `try_lock()`. This means that you have a better chance of acquiring a mutex `with lock()`.",
             "Both attempt to acquire a lock, but `lock()` blocks if the mutex is not available, whereas `try_lock()` returns whether the mutex is available or not.",
             "`lock()` enforces preemption, whereas `try_lock()` suggests preemption.",
-            "If the mutex is not available, `try_lock()` returns with a corresponding code, whereas `lock()` snatches the mutex from the thread that currently has it.\n[Reference](https://en.cppreference.com/w/cpp/thread/mutex/try_lock)\n```cpp\nint median(const my_array& a)\n```"
+            "If the mutex is not available, `try_lock()` returns with a corresponding code, whereas `lock()` snatches the mutex from the thread that currently has it.\n[Reference](https://en.cppreference.com/w/cpp/thread/mutex/try_lock)"
         ],
         "_ps": 1
     },
@@ -655,7 +655,7 @@
             "  ```cpp\n  public:\n    \t\tSprite();\n  ```",
             "  ```cpp\n  private:\n    \t\tvoid Sprite();\n  ```",
             "  ```cpp\n  public:\n    \t\tvoid Sprite();\n  ```",
-            "  ```cpp\n     private:\n    \t\tSprite();\n  ```\n```cpp\n#pragma once\n```"
+            "  ```cpp\n     private:\n    \t\tSprite();\n  ```"
         ],
         "_ps": 0
     },
@@ -675,7 +675,7 @@
             "a 2-tuple",
             "an integer number",
             "a floating point number",
-            "a string with more than 255 characters\n[Reference](https://www.educba.com/c-plus-plus-double/)\n```cpp\nbool is_even(int);\n```"
+            "a string with more than 255 characters\n[Reference](https://www.educba.com/c-plus-plus-double/)"
         ],
         "_ps": 2
     },
@@ -695,7 +695,7 @@
             "shifting characters to the left in a string.",
             "inserting characters into an output stream like std::cout.",
             "comparing floating point numbers as less-than.",
-            "assigning a variable to a reference.\n```cpp\ntypedef struct{\n    unsigned int  age    : 4;\n    unsigned char gender : 1;\n    char                 : 0;\n    unsigned int  size   : 2;\n}child_t;\n```"
+            "assigning a variable to a reference."
         ],
         "_ps": 1
     },
@@ -725,7 +725,7 @@
             "`*(A.B)`",
             "`B=A`",
             "`(*A).B`",
-            "`&A.B`\n```cpp\nclass my_class{\n    public: static int count;\n};\n```"
+            "`&A.B`"
         ],
         "_ps": 2
     },
@@ -765,7 +765,7 @@
             "`struct`",
             "`union`",
             "`enum`",
-            "`namespace`\n[Reference](https://en.cppreference.com/w/c/language/struct)\n![image](images/Q79.png)"
+            "`namespace`\n[Reference](https://en.cppreference.com/w/c/language/struct)"
         ],
         "_ps": 0
     },

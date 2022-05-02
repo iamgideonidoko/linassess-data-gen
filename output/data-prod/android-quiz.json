@@ -125,7 +125,7 @@
             "when you need to have the app's strings present in multiple lanuages",
             "when you have to provide different versions of your app based on the physical device size",
             "when you want to provide different versions of your app based on the device screen density",
-            "when you want to provide different version of your app with custom configuration and resources\n```\n    private lateinit var textView: TextView\n    override fun onCreateView(...): View? {\n        val root = inflator.inflator(R>layout.fragment_home, container, false)\n        textView = ??\n        return root\n    }\n```"
+            "when you want to provide different version of your app with custom configuration and resources"
         ],
         "_ps": 3
     },
@@ -135,7 +135,7 @@
             "root.getById(R.id.text_home)",
             "findViewByID(R.id.text_home)",
             "root.findViewById(R.id.text_home)",
-            "root.find(R.id.text_home)\nNotice: AndroidJUnitRunner lets us run JUnit3/4-style tests on Android Devices"
+            "root.find(R.id.text_home)"
         ],
         "_ps": 2
     },
@@ -205,7 +205,7 @@
             "list devices",
             "adb devices",
             "list avd",
-            "dir devices\n![img](image/shape.png)"
+            "dir devices"
         ],
         "_ps": 1
     },
@@ -265,7 +265,7 @@
             "fr-land-drawable",
             "drawable-fr-land",
             "drawable-french-land",
-            "french-land-drawable\n`android.permission.ACCESS_NETWORK_STATE`"
+            "french-land-drawable"
         ],
         "_ps": 1
     },
@@ -275,7 +275,7 @@
             "to monitor the location of the devices so that you don't attempt to make network calls when the user is stationary",
             "to request the ability to make network calls from your app",
             "to monitor the network state of the device so that you can display an in-app banner to the user",
-            "to monitor the network state of the devices so that you don't attempt to make network calls when the network is unavailable\n```\n    xml\n    <LinearLayout\n        android:layout_width=\"match_parent\"\n\tandroid:layout_height=\"match_parent\"\n\tandroid:orientation=\"horizontal\"\n\tandroid:gravity=\"center\">\n\t<Button\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:text=\"Button\" />\n\t<Button\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\"\n            android:text=\"Button\" />\n        </LinearLayout>\n```"
+            "to monitor the network state of the devices so that you don't attempt to make network calls when the network is unavailable"
         ],
         "_ps": 3
     },
@@ -285,7 +285,7 @@
             "A\n      ![img](image/00.jpeg)",
             "B\n      ![img](image/01.jpeg)",
             "C\n      ![img](image/02.jpeg)",
-            "D\n      ![img](image/03.jpeg)\n```\nval dialerIntent = Intent()\nval et = findViewById(R.id.some_edit_text)\ndialerIntent.action = Intent.ACTION_DIAL\ndialerIntent.data = Uri.parse(\"tel:\" + et.getText()?.toString())\nstartActivity(dialerIntent)\n```"
+            "D\n      ![img](image/03.jpeg)"
         ],
         "_ps": 1
     },
@@ -355,7 +355,7 @@
             "checking whether `ProGuard` -keepclassmembers have been added to the network data transfer objects (DTOs) in question",
             "using the profiler tools in Android Studio to detect anomalies in CPU, memory, and network usage",
             "checking for exceptions in the server logs or server console",
-            "checking that the network data transfer object has `@SerizlizedName` applied to its member properties\n![img](image/04.jpeg)"
+            "checking that the network data transfer object has `@SerizlizedName` applied to its member properties"
         ],
         "_ps": 1
     },
@@ -445,7 +445,7 @@
             "/drawable",
             "/icon",
             "/mipmap",
-            "/launcher\n![img](image/43.jpeg)"
+            "/launcher"
         ],
         "_ps": 2
     },
@@ -455,7 +455,7 @@
             "```\nxml\n\t<shape xmlns:android-\"http://schemas.android.com/apk/res/android\"\n\t    android:shape-\"oval\">\n\t    <gradient\n               android:startColor-\"@android:color/white\"\n               android:endColor-\"@android:color/black\"\n               android:angle-\"45\"/>\n\t</shape>\n```",
             "```\nxml\n\t<rectangle xmlns:android-\"http://schemas.android.com/apk/res/android\">\n\t   <gradient\n\t      android:startColor-\"@android:color/white\"\n\t      android:endColor-\"android:color/black\"\n\t      android:angle-\"135\"/>\n\t</rectangle>\n```",
             "```\nxml\n\t<shape xmlns:android-\"http://schemas.android.com/apk/res/android\"\n\t   android:shape-\"rectangle\">\n\t   <gradient\n\t      android:startColor-\"@android:color/white\"\n\t      android:endColor-\"@android:color/black\"\n\t      android:angle-\"135\"/>\n\t</shape>\n```",
-            "```\nxml\n\t<shape xmlns:android-\"http://schemas.android.com/apk/res/android\"\n\t   android:shape-\"rectangle\">\n\t   <gradient\n\t      android:startColor-\"@android:color/white\"\n\t      android:endColor-\"@android:color/black\"\n\t      android:angle-\"98\"/>\n\t</shape>\n```\n![img](image/44.jpeg)"
+            "```\nxml\n\t<shape xmlns:android-\"http://schemas.android.com/apk/res/android\"\n\t   android:shape-\"rectangle\">\n\t   <gradient\n\t      android:startColor-\"@android:color/white\"\n\t      android:endColor-\"@android:color/black\"\n\t      android:angle-\"98\"/>\n\t</shape>\n```"
         ],
         "_ps": 2
     },
@@ -465,7 +465,7 @@
             "View B is not horizontally constrained.",
             "View C has too many constraints.",
             "View B is not vertically constrained.",
-            "View C is constrained to the parent.\n    android {\n        ...\n        defaultConfig{...}\n        buildTypes{\n        debug{...}\n        releasae{...}\n    }\n      flavorDimensions \"environment\"\n      productFlavors {\n         producation {...}\n         staging {...}\n      }\n    }"
+            "View C is constrained to the parent."
         ],
         "_ps": 2
     },
@@ -495,7 +495,7 @@
             "This APK is created on a developer machine from the debug product flavor.",
             "This APK is created from the internalDebug product flavor.",
             "This APK created from the debug product flavor and internal build type.",
-            "This APK is created from the debug build type and internal product flavor.\n`Conversion to Dalvik format filed: Unable to execute dex: method ID not in [0, 0xffff]: 65536`"
+            "This APK is created from the debug build type and internal product flavor."
         ],
         "_ps": 3
     },
@@ -515,7 +515,7 @@
             "apply plugin: 'com.module.library'",
             "apply plugin: 'com.android.library'",
             "apply plugin: 'com.module.library'",
-            "include plugin: 'com.module.library'\n```\n<?xml version=1.0 encoding=\"utf-8\"?>\n<resources>\n    <dimen name=\"spacing_medium\">8dp</dimen>\n    <dimen name=\"spacing_large\">12dp</dimen>\n</resources>\n```"
+            "include plugin: 'com.module.library'"
         ],
         "_ps": 1
     },
@@ -535,7 +535,7 @@
             "It allows Android to choose the appropriate resource based on the current configuration during runtime.",
             "It allows you to have more performant applications because the code and resources are separated.",
             "It allows you to provide a different Ul experience based on the user's language settings.",
-            "It allows you to provide a different Ul experience based on the user's device size.\n```\noverride fun onCreate(savedInstanceState: Bundle?) { super.onCreate(savedInstanceState) setContentView(R.layout.activity_post_create)\n\tif (savedInstanceState != null) return\n\tval fragment = CreatePostFragment()\n\t\tsupportFragmentManager\n\t\t.beginTransaction()\n\t\t.add(R.id. fragment_container, fragment)\n\t\t.commit()\n}\n```"
+            "It allows you to provide a different Ul experience based on the user's device size."
         ],
         "_ps": 1
     },

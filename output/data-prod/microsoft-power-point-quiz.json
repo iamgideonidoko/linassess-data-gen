@@ -95,7 +95,7 @@
             "Resize shape to fit text",
             "Do not autofit",
             "none of these answers",
-            "Shrink text on overflow\n```\nA. Focal Point\nB. Depth\nC. Blur\nD. Angle\nE. Distance\n```"
+            "Shrink text on overflow"
         ],
         "_ps": 0
     },
@@ -665,7 +665,7 @@
             "Slide Zoom",
             "Reuse Slide",
             "Slides from Outline",
-            "Add Section\n![images](images/Q68.png)"
+            "Add Section"
         ],
         "_ps": 1
     },
@@ -765,7 +765,7 @@
             "the decline of voter turnout by county",
             "trends in voter turnout over the part 10 years",
             "what percentage of the whole population voted",
-            "how many people voted in various geographic regions on a map\n![Q79](images/Q79.png)"
+            "how many people voted in various geographic regions on a map"
         ],
         "_ps": -1
     },
@@ -785,7 +785,7 @@
             "Hierarchy",
             "Matrix",
             "Pyramid",
-            "Relationship\n![Q81](images/Q81.png)"
+            "Relationship"
         ],
         "_ps": 0
     },

@@ -105,7 +105,7 @@
             "Repeating Architecture for Internal Drives",
             "Recoverable Advanced Integration and Duplication",
             "Redundant Array of Independent Disks",
-            "Replicated Array of Internal Devices\n![Q12](images/Q12.jpg)"
+            "Replicated Array of Internal Devices"
         ],
         "_ps": 2
     },
@@ -235,7 +235,7 @@
             "DRAM is failing.",
             "A program has a memory leak.",
             "There is no problem. It's normal for available memory to decrease the longer you use the system.",
-            "Another user has signed into the system\n![Q24](images/Q24.PNG)"
+            "Another user has signed into the system"
         ],
         "_ps": 1
     },
