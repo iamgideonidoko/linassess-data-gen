@@ -55,7 +55,7 @@
             "reflection",
             "serialization",
             "abstraction",
-            "dependency injection\n[Official documentation: Reflection ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)\n```cs\n    private static object objA;\n    private static object objB;\n    private static void performTaskA()\n    {\n        lock (objB)\n        {\n            Thread.Sleep(1000);\n            lock (objA) { }\n        }\n    }\n    private static void PerformTaskB()\n    {\n        lock (objA)\n        {\n            lock (objB) { }\n        }\n    }\n```"
+            "dependency injection\n[Official documentation: Reflection ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)\n    private static object objA;\n    private static object objB;\n    private static void performTaskA()\n    {\n        lock (objB)\n        {\n            Thread.Sleep(1000);\n            lock (objA) { }\n        }\n    }\n    private static void PerformTaskB()\n    {\n        lock (objA)\n        {\n            lock (objB) { }\n        }\n    }\n```"
         ],
         "_ps": 0
     },
@@ -135,7 +135,7 @@
             "`var<<!---->T> userData = new <<!---->T> { name = \"John\", age = 32 };`",
             "`var userData = new { name = \"John\", age = 32 };`",
             "`AType userData = new AType { name = \"John\", age = 32 };`",
-            "`Anonymous<T> userData = new Anonymous<T> { name = \"John\", age = 32 };`\n[Official documentation: Anonymous Types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types)\n`public void userInput(string charParamters) { }`"
+            "`Anonymous<T> userData = new Anonymous<T> { name = \"John\", age = 32 };`\n[Official documentation: Anonymous Types](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/anonymous-types)"
         ],
         "_ps": 1
     },
@@ -145,7 +145,7 @@
             "nothing",
             "a Boolean",
             "a string variable",
-            "an integer\n[Official documentation: void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/void)\n```cs\nstring[] employees = { \"Joe\", \"Bob\", \"Carol\", \"Alice\", \"Will\" };\nIEnumerable<string> employeeQuery = from person in employees\n                                    orderby person\n                                    select person;\nforeach(string employee in employeeQuery)\n{\n    Console.WriteLine(employee);\n}\n```"
+            "an integer\n[Official documentation: void](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/void)\nstring[] employees = { \"Joe\", \"Bob\", \"Carol\", \"Alice\", \"Will\" };\nIEnumerable<string> employeeQuery = from person in employees\n                                    orderby person\n                                    select person;\nforeach(string employee in employeeQuery)\n{\n    Console.WriteLine(employee);\n}\n```"
         ],
         "_ps": 0
     },
@@ -295,7 +295,7 @@
             "unordered collections of numerc values",
             "key-value pairs of any C# supported type",
             "class and struct instances",
-            "multiple variables, or collections, of the same type\n[Official documentation: Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/)\n`enum AppState { OffLine, Loading, Ready }`"
+            "multiple variables, or collections, of the same type\n[Official documentation: Arrays](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/)"
         ],
         "_ps": 3
     },
@@ -315,7 +315,7 @@
             "d",
             "\\a",
             "\\b",
-            "\\w\n[regular-expressions: Word Boundaries](https://www.regular-expressions.info/wordboundaries.html)\n[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\n```cs\npublic interface INameble\n{\n    string FirstName { get; set; }\n    string LastName { get; }\n}\n```"
+            "\\w\n[regular-expressions: Word Boundaries](https://www.regular-expressions.info/wordboundaries.html)\n[Official documentation: Regular Expression Language - Quick Reference](https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference)\npublic interface INameble\n{\n    string FirstName { get; set; }\n    string LastName { get; }\n}\n```"
         ],
         "_ps": 2
     },
@@ -365,7 +365,7 @@
             "to increase code performance",
             "all of these answers",
             "when code reuse is a priority",
-            "when type safety is important\n[Official documentation: Generic classes and methods](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)\n```cs\npublic delegate void AuthCallback(bool validUser);\npublic static AuthCallback loginCallback = Login;\npublic static void Login()\n{\n    Console.WriteLine(\"Valid user!\");\n}\npublic static void Main(string[] args)\n{\n    loginCallback(true);\n}\n```"
+            "when type safety is important\n[Official documentation: Generic classes and methods](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)\npublic delegate void AuthCallback(bool validUser);\npublic static AuthCallback loginCallback = Login;\npublic static void Login()\n{\n    Console.WriteLine(\"Valid user!\");\n}\npublic static void Main(string[] args)\n{\n    loginCallback(true);\n}\n```"
         ],
         "_ps": 1
     },
@@ -405,7 +405,7 @@
             "non-static classes need to be initialized before use, while static classes do not",
             "non-static classes are accessible only from an interface while static classes are accessible from anywhere",
             "non-static classes need to initialize all class members at runtime, while static classes do not",
-            "non-static classes do not need to be initialized while static classes do\n[stackoverflow](https://stackoverflow.com/questions/20451554/whats-the-function-of-a-static-constructor-in-a-non-static-class)\n[Official documentation: Static Constructors](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors)\n`public int age=\"28\"`"
+            "non-static classes do not need to be initialized while static classes do\n[stackoverflow](https://stackoverflow.com/questions/20451554/whats-the-function-of-a-static-constructor-in-a-non-static-class)\n[Official documentation: Static Constructors](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-constructors)"
         ],
         "_ps": 0
     },
@@ -415,7 +415,7 @@
             "type safety",
             "single inheritance",
             "dependency injection",
-            "multiple inheritance\n[c-sharpcorner: Type Safety in .NET](https://www.c-sharpcorner.com/UploadFile/vikie4u/type-safety-in-net/)\n`public class User {}`"
+            "multiple inheritance\n[c-sharpcorner: Type Safety in .NET](https://www.c-sharpcorner.com/UploadFile/vikie4u/type-safety-in-net/)"
         ],
         "_ps": 0
     },

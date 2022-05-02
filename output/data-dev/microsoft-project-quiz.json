@@ -35,7 +35,7 @@
             "Subprojects will have critical paths calculated individually.",
             "Individual resources will have critical paths calculated.",
             "Milestones will have critical paths fixed.",
-            "Only one critical path will be calculated for a linked project.\n![Microsoft Project Q05](images/microsoft-project_Q05.jpg)"
+            "Only one critical path will be calculated for a linked project."
         ],
         "_ps": 0
     },
@@ -365,7 +365,7 @@
             "The **Switch Window** lists the hidden file.",
             "The **Switch Window** command does not list the hidden file.",
             "To unhide the file, select **Switch Window**.",
-            "To view a hidden file, on the **View** tab, click **Arrange Windows**.\n![Microsoft Project Q38](images/microsoft-project_Q38.jpg)"
+            "To view a hidden file, on the **View** tab, click **Arrange Windows**."
         ],
         "_ps": 2
     },

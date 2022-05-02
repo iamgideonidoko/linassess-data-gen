@@ -5,7 +5,7 @@
             "i64 as i32",
             "usize as u64",
             "i32 as i64",
-            "f64 as f32\n```rust\nstr::thread::spawn(|| {\n    println!(\"LinkedIn\");\n});\n```"
+            "f64 as f32"
         ],
         "_ps": 2
     },
@@ -55,7 +55,7 @@
             "It's creating a pointer on the heap that points to a value on the stack.",
             "It's creating a pointer on the stack that points to a value on the heap.",
             "It's creating a memory guard around values to prevent illegal access.",
-            "It's an abstraction that refers to ownership. \"Boxed\" values are clearly labelled.\n```rust\n...\nlet s = String::form(\"hello\");\nlet slice = &s[0..2];\n```"
+            "It's an abstraction that refers to ownership. \"Boxed\" values are clearly labelled."
         ],
         "_ps": 1
     },
@@ -85,7 +85,7 @@
             "Array<i32>::with_capacity(10)",
             "[i32]",
             "Array<i32>::new(10)",
-            "[i32; 10]\n```rust\nfn increment(i: T) {\n    // body elided\n}\n```"
+            "[i32; 10]"
         ],
         "_ps": 3
     },
@@ -145,7 +145,7 @@
             "function that ends the lifetime of one of its arguments",
             "struct that contains a reference to a value",
             "function with a generic argument",
-            "struct that contains a reference to a boxed value\n[Rust book reference](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html#lifetime-annotations-in-struct-definitions)\n```rust\nuse std::collections::HashMap;\nfn main() {\n    let mut counts = HashMap::new();\n    let text = \"LinkedIn Learning\";\n    for c in text.chars() {\n        // Complete this block\n    }\n    println!(\"{:?}\", counts);\n}\n```"
+            "struct that contains a reference to a boxed value\n[Rust book reference](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html#lifetime-annotations-in-struct-definitions)"
         ],
         "_ps": 1
     },
@@ -155,7 +155,7 @@
             "```rust\nfor c in text.chars() {\n    if let Some(count) = &mut counts.get(&c) {\n        counts.insert(c, *count + 1);\n    } else {\n        counts.insert(c, 1);\n    };\n}\n```",
             "```rust\nfor c in text.chars() {\n    let count = counts.entry(c).or_insert(0);\n    *count += 1;\n}\n```",
             "```rust\nfor c in text.chars() {\n    let count = counts.entry(c);\n    *count += 1;\n}\n```",
-            "```rust\nfor c in text.chars() {\n    counts.entry(c).or_insert(0).map(|x| x + 1);\n}\n```\n[reference](https://doc.rust-lang.org/std/collections/hash_map/struct.HashMap.html#method.entry)\n```rust\nuse std::collections::HashMap;\nfn main() -> Result<(), Box<dyn std::error::Error>> {\n    let mut v = Vec::<u8>::new();\n    let a = \"LinkedIn\";\n    let b = 123;\n    let c = '🧀';\n    // replace this line\n    println!(\"{:?}\", v);\n    Ok(())\n}\n```"
+            "```rust\nfor c in text.chars() {\n    counts.entry(c).or_insert(0).map(|x| x + 1);\n}\n```\n[reference](https://doc.rust-lang.org/std/collections/hash_map/struct.HashMap.html#method.entry)"
         ],
         "_ps": 1
     },
@@ -165,7 +165,7 @@
             "```rust\nwrite!(&mut v, \"{}{}{}\", a, b, c)?;\n```",
             "```rust\nv.write(a)?;\nv.write(b)?;\nv.write(c)?;\n```",
             "```rust\nv.write(a, b, c)?;\n```",
-            "```rust\nv.write_all(a.as_bytes())?;\nv.write_all(&b.to_string().as_bytes())?;\nc.encode_utf8(&mut v);\n```\n1. [Answered in rust user forum](https://users.rust-lang.org/t/formatting-and-writing-to-a-file-without-malloc-or-locks/52295/9)\n2. [reference](https://doc.rust-lang.org/std/macro.write.html)\n```rust\nfn main() {\n    let Some(x) = some_option_value;\n}\n```"
+            "```rust\nv.write_all(a.as_bytes())?;\nv.write_all(&b.to_string().as_bytes())?;\nc.encode_utf8(&mut v);\n```\n1. [Answered in rust user forum](https://users.rust-lang.org/t/formatting-and-writing-to-a-file-without-malloc-or-locks/52295/9)\n2. [reference](https://doc.rust-lang.org/std/macro.write.html)"
         ],
         "_ps": 0
     },
@@ -215,7 +215,7 @@
             "`Copy` is enabled for primitive, built-in types.",
             "Without `Copy`, Rust applies move semantics to a type's access.",
             "When using `Clone`, copying data is explicit.",
-            "Until a type implements either `Copy` or `Clone`, its internal data cannot be copied.\n[ref from stack overflow](https://stackoverflow.com/questions/41413336/do-all-primitive-types-implement-the-copy-trait)\n```rust\nfn returns_closure() -> dyn Fn(i32) -> i32 {\n    |x| x + 1\n}\n```"
+            "Until a type implements either `Copy` or `Clone`, its internal data cannot be copied.\n[ref from stack overflow](https://stackoverflow.com/questions/41413336/do-all-primitive-types-implement-the-copy-trait)"
         ],
         "_ps": 0
     },
@@ -245,7 +245,7 @@
             "zero-sized types",
             "structs",
             "trait objects",
-            "floating-point numbers\n[Reference](https://doc.rust-lang.org/reference/types/trait-object.html)\n```rust\nfn main() {\n    let c = 'z';\n    let heart_eyed_cat = '😻';\n}\n```"
+            "floating-point numbers\n[Reference](https://doc.rust-lang.org/reference/types/trait-object.html)"
         ],
         "_ps": 2
     },
@@ -265,7 +265,7 @@
             "`Mutex<Arc<T>>`",
             "`Rc<Mutex<T>>`",
             "`Arc<Mutex<T>>`",
-            "`Mutex<Rc<T>>`\n[Rust book reference](https://doc.rust-lang.org/book/ch16-03-shared-state.html#atomic-reference-counting-with-arct)\n```rust\nlet a = \"a\".to_string();\nlet b = \"b\".to_string();\nlet c = \"c\".to_string();\n```"
+            "`Mutex<Rc<T>>`\n[Rust book reference](https://doc.rust-lang.org/book/ch16-03-shared-state.html#atomic-reference-counting-with-arct)"
         ],
         "_ps": 2
     },
@@ -275,7 +275,7 @@
             "`String::from(a,b,c)`",
             "`format!(\"{}{}{}\", a, b, c)`",
             "`concat(a,b,c)`",
-            "`a + b + c`\n```rust\nuse std::fmt::Debug;\nfn report<T:Debug>(a: &T) {\n    eprintln!(\"info: {:?}\", a);\n}\n```"
+            "`a + b + c`"
         ],
         "_ps": 1
     },
@@ -295,7 +295,7 @@
             "`loop`",
             "`for`",
             "`while`",
-            "`do`\n```rust\nenum Status {\n    Waiting,\n    Busy,\n    Error(String),\n}\n```"
+            "`do`"
         ],
         "_ps": 3
     },
@@ -342,9 +342,9 @@
     {
         "question": "Q35. Generics are useful when you **\\_**.",
         "options": [
-            "need to reduce code duplication by concretizing vales and restricting paramaters in functions",
-            "need to reduce code duplication by abstarting vales further, such as in function paramters",
-            "need a supertait",
+            "need to reduce code duplication by concretizing values and restricting parameters in functions",
+            "need to reduce code duplication by abstracting values further, such as in function parameters",
+            "need a supertrait",
             "are not sure if you need a specific kind of trait"
         ],
         "_ps": 1
@@ -354,7 +354,17 @@
         "options": [
             "Traits",
             "Enums",
-            "Tuples"
+            "Tuples",
+            "Structs"
+        ],
+        "_ps": 0
+    },
+    {
+        "question": "Q37. How do you create a Rust project on the command-line?",
+        "options": [
+            "cargo new",
+            "rustup init",
+            "cargo start"
         ],
         "_ps": 0
     }

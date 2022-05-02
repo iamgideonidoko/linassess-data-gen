@@ -135,7 +135,7 @@
             "Use the billing dashboard to create a cost budget. Input the max amount you want to be charged each month. Any charges that occur over this amount will cause AWS to automatically suspend those resources",
             "Using the root AWS account, activate IAM access to the billing information for the account. Make sure your IAM users have the Billing FullAccessGroup policy. Then from the billing dashboard, check the accrued charges once a day.",
             "If you are using the AWS free tier, you will have to confirm the usage of any service that goes over the AWS free tier limits.",
-            "Using the root AWS account enable Billing Alerts in the user preferences. Then use CloudWatch to create a billing alarm and set a threshold to a specific dollar amount for your estimated monthly charges.\n```json\n{\n  \"title\": \"The Avengers\",\n  \"year\": 2012,\n  \"cast\": [\"Mark Ruffalo\", \"Robert Downey, Jr.\"],\n  \"genres\": [\"Action\"]\n}\n```"
+            "Using the root AWS account enable Billing Alerts in the user preferences. Then use CloudWatch to create a billing alarm and set a threshold to a specific dollar amount for your estimated monthly charges."
         ],
         "_ps": 3
     },
@@ -205,7 +205,7 @@
             "Check the routing tables for the VPC.",
             "Verify that the assigned security groups allow TCP port 1433 traffic from your current IP address.",
             "Check the policies within Windows Firewall.",
-            "Verify that you are connecting to the instance using a user that is not sa.\n![image](images/001.png)"
+            "Verify that you are connecting to the instance using a user that is not sa."
         ],
         "_ps": 1
     },
@@ -265,7 +265,7 @@
             "Create a security group rule that allows all traffic from 0.0.0.0/0. This will verify whether or not another rule is denying the traffic.",
             "Verify that the assigned security groups allow traffic from your IP address to port 5432. Verify that PostgreSQL is configured to listen to external traffic and is bound to the public interface.",
             "Make sure that you are using an Elastic IP and that it is included within the `postgresql.conf` configuration file.",
-            "Stop and start the instance. New security group rules will only take effect after a restart.\n```json\n{\n  \"Sid\": \"bucketpolicy1\",\n  \"Effect\": \"Allow\",\n  \"Principal\": \"*\",\n  \"Action\": \"s3:GetObject\",\n  \"Resource\": \"arn:aws:s3:::userreports/*\",\n  \"Condition\": {\n    \"IpAddress\": { \"aws:SourceIp\": \"68.249.108.0/24\" },\n    \"NotIpAddress\": { \"aws:SourceIp\": \"68.249.108.128/32\" }\n  }\n}\n```"
+            "Stop and start the instance. New security group rules will only take effect after a restart."
         ],
         "_ps": 1
     },
@@ -305,7 +305,7 @@
             "Use Sysprep to shut down the instance during a maintenance window. Create an AMI image and place both servers behind Application Load Balancer with sticky sessions.",
             "Launch a new EC2 with the latest version of Windows Server and install the application again. Use Application Load Balancer and sticky sessions to balance between both servers.",
             "Create a clone of the server using an AMI image and user Application Load Balancer to balance the traffic between both instances using sticky sessions.",
-            "Horizontal scaling is not the best practice in this situation. Increase the size of the existing EC2 instance and vertically scale the application.\n```yaml\nFlowLog:\n  Type: AWS::EC2::FlowLog\n  Properties:\n    DeliverLogsPermissionArn: !GetAtt IamRole.Arn\n    LogGroupName: FlowLogsGroup\n    ResourceId: !Ref LogVpcId\n    ResourceType: VPC\n    TrafficType: ALL\n```"
+            "Horizontal scaling is not the best practice in this situation. Increase the size of the existing EC2 instance and vertically scale the application."
         ],
         "_ps": 0
     },
@@ -455,7 +455,7 @@
             "Lightsail",
             "Elastic Container Service (ECS)",
             "Elastic Compute Cloud (EC2)",
-            "All of these services can host a Docker container.\n![image](images/002.png)"
+            "All of these services can host a Docker container."
         ],
         "_ps": 3
     },
@@ -535,7 +535,7 @@
             "Use a Network Load Balancer to distribute the traffic across your servers. Use UDP health checks to determine if the server is available to receive traffic.",
             "Use Route 53 with HTTP health checks. Create an application on the server to report the readiness status of the vendor-provided server software to Route 53 via HTTP.",
             "Use Route 53 with UDP health checks. As you scale up, Route 53 wiwll route the traffic to the new servers if they pass the health checks.",
-            "Use Application Load Balancer to distribute the traffic across your servers.\n![image](https://user-images.githubusercontent.com/8637045/112515574-c077e780-8d6c-11eb-96a6-11f27a0547cf.png)"
+            "Use Application Load Balancer to distribute the traffic across your servers."
         ],
         "_ps": 1
     },
@@ -645,7 +645,7 @@
             "All traffic on all ports is being denied into this instance, which overwrites the HTTP rule and makes it redundant.",
             "The instance was launched with the default security group, but there is no way for an administrator to SSH into the instance.\n      Add another rule that allows for SSH access from a secured source, such as a single IP or a range of managed IP addresses.",
             "There is nothing wrong with this security group rule. Assuming that sg-269afc5e is applied to other resources that are properly\n      secured, this rule allows all traffic to pass through that is also assigned security group sg-269afc5e.",
-            "All traffic on all ports are allowed into this instance. This exposes the instance to all public internet traffic and\n      overwrites the incoming HTTP rule.\n![image](images/003.png)"
+            "All traffic on all ports are allowed into this instance. This exposes the instance to all public internet traffic and\n      overwrites the incoming HTTP rule."
         ],
         "_ps": 1
     },
@@ -695,7 +695,7 @@
             "Launch an AMI image from the marketplace containing a preconfigured MySQL server.",
             "Aurora",
             "RDS for MySQL",
-            "Redshift\n![image](images/004.png)"
+            "Redshift"
         ],
         "_ps": 1
     },
@@ -715,7 +715,7 @@
             "S3",
             "Elastic BeanStalk",
             "ElasticCache",
-            "CloudFront\n```\naws ecs create-service \\\n --cluster production \\\n --service-name rest-api \\\n --task-definition rest-api:1 \\\n --desired-count 2 \\\n --launch-type \"FARGATE\" \\\n --network-configuration \\\n \"awsvpcConfiguration={subnets=[subnet-0b29129ab],securityGroups=[sg-0b29129ab]}\"\n```"
+            "CloudFront"
         ],
         "_ps": 1
     },
@@ -795,7 +795,7 @@
             "Stop the instance and create an AMI image. Launch the image using a new key pair.",
             "Contact AWS support. A support specialist can remotely restore access to your instance and send you a new key pair.",
             "You can not connect to this EC2 instance. The key pair is displayed only one time. If you lose it, you have lost all access to this instance. Connect the EBS volume to another instance to recover your files.",
-            "Attach the EBS volume to a temporary instance launched with a new key pair, and overwrite ~/.ssh.authorized_keys using the same file from the new instance.\n[Reference](https://medium.com/the-10x-dev/how-to-recover-access-login-to-your-aws-instance-after-losing-your-pem-keypair-file-e0d31bae2da4)\n![image](images/Q80.png)"
+            "Attach the EBS volume to a temporary instance launched with a new key pair, and overwrite ~/.ssh.authorized_keys using the same file from the new instance.\n[Reference](https://medium.com/the-10x-dev/how-to-recover-access-login-to-your-aws-instance-after-losing-your-pem-keypair-file-e0d31bae2da4)"
         ],
         "_ps": 3
     },

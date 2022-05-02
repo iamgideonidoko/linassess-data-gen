@@ -85,7 +85,7 @@
             "a data entry system",
             "a data warehouse system",
             "a massive data repository",
-            "a product recommendation system\n![Machine Learning Q10](images/machine-learning_Q10.jpg)"
+            "a product recommendation system"
         ],
         "_ps": 3
     },
@@ -125,7 +125,7 @@
             "It naively assumes that you will have no data.",
             "It does not even try to create accurate predictions.",
             "It naively assumes that the predictors are independent from one another.",
-            "It naively assumes that all the predictors depend on one another.\n![Machine Learning Q14](images/machine-learning_Q14.jpg)"
+            "It naively assumes that all the predictors depend on one another."
         ],
         "_ps": 2
     },
@@ -165,7 +165,7 @@
             "Create an artificial neural network that would host the company directory.",
             "Use machine learning to better predict risk.",
             "Create an algorithm that consolidates all of your Excel spreadsheets into one data lake.",
-            "Use machine learning and big data to research salary requirements.\n![Machine Learning Q18](images/machine-learning_Q18.jpg)"
+            "Use machine learning and big data to research salary requirements."
         ],
         "_ps": 1
     },
@@ -245,7 +245,7 @@
             "unsupervised machine learning",
             "binary classification",
             "supervised machine learning",
-            "reinforcement learning\n![Machine Learning Q26](images/machine-learning_Q26.jpg)"
+            "reinforcement learning"
         ],
         "_ps": 0
     },
@@ -455,7 +455,7 @@
             "statistics",
             "structured data",
             "availability",
-            "algorithms\n![Machine Learning Q45](images/machine-learning_Q45.jpg)"
+            "algorithms"
         ],
         "_ps": 3
     },
@@ -595,7 +595,7 @@
             "good fitting",
             "overfitting",
             "underfitting",
-            "all of the above\n![Machine Learning Q58](images/machine-learning_Q58.jpg)"
+            "all of the above"
         ],
         "_ps": 2
     },
@@ -695,7 +695,7 @@
             "kullback-leibler (KL) loss",
             "Binary Crossentropy",
             "Mean Squared Error (MSE)",
-            "Any L2 loss\n![image](images/machine-learning_Q67.png)\n| no. | Red | Blue | Green |\n| --- | --- | --- | --- |\n| **1.** | Validation error | Training error | Test error |\n| **2.** | Training error | Test error | Validation error |\n| **3.** | Optimal error | Validation error | Test error |\n| **4.** | Validation error | Training error | Optimal error |"
+            "Any L2 loss"
         ],
         "_ps": 1
     },
@@ -725,7 +725,7 @@
             "Set up a cluster of machines to label the images",
             "Create a subset of the images and label then yourself",
             "Use naive Bayes to automatically generate labels.",
-            "Hire people to manually label the images\n![image](images/machine-learning_Q70.png)"
+            "Hire people to manually label the images"
         ],
         "_ps": 2
     },

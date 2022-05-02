@@ -15,7 +15,7 @@
             "`$encrypted = shal($password);`",
             "`$encrypted = crypt($password, \\$salt);`",
             "`$encrypted = md5($password);`",
-            "`$encrypted = password_hash($password, PASSWORD_DEFAULT);`\n```php\n$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);\nif ($email === false) {\n    $emailErr = \"Please re-enter valid email\";\n}\n```"
+            "`$encrypted = password_hash($password, PASSWORD_DEFAULT);`"
         ],
         "_ps": 3
     },
@@ -25,7 +25,7 @@
             "It makes sure the email address is a good and functioning address",
             "It makes an email safe to input into a database",
             "It assigns an email to a variable and then removes all illegal characters from the \\$email variable",
-            "It verifies that an email address is well formed.\n```\n1 <?php\n2       $count = 0;\n3       $_xval = 5;\n4       $_yval = 1.0;\n5       $some_string = \"Hello there!\";\n6       $some_string = \"How are you?\";\n7       $will i work = 6;\n8       $3blindmice = 3;\n9 ?>\n```"
+            "It verifies that an email address is well formed."
         ],
         "_ps": 3
     },
@@ -95,7 +95,7 @@
             "0",
             "NULL",
             "''",
-            "-1\n```php\n1 $string_name = \"testcookie\";\n2 $string_value = \"This is a test cookie\";\n3 $expiry_info = info()+259200;\n4 $string_domain = \"localhost.localdomain\";\n```"
+            "-1"
         ],
         "_ps": 3
     },
@@ -105,7 +105,7 @@
             "The `$_REQUEST` is missing.",
             "The `$_COOKIES` array is missing.",
             "The cookie session is missing.",
-            "The call to `setcookie()` is missing.\n`$total = 2 + 5 * 20 - 6 / 3`"
+            "The call to `setcookie()` is missing."
         ],
         "_ps": 3
     },
@@ -135,7 +135,7 @@
             "`$dog = new Pet;`",
             "all of these answers",
             "`$horse = (new Pet);`",
-            "`$cat = new Pet();`\n```php\n1 if (!$_SESSION['myusername'])\n2 {\n3   header('locaton: /login.php');\n4   exit;\n5 }\n```"
+            "`$cat = new Pet();`"
         ],
         "_ps": 1
     },
@@ -235,7 +235,7 @@
             "/",
             "%",
             "//",
-            "DIV\n```php\nfunction process(...$vals) {\n        // do some processing\n }\n```"
+            "DIV"
         ],
         "_ps": 1
     },
@@ -295,7 +295,7 @@
             "private, public",
             "object,primitive",
             "non-static,static",
-            "concrete,abstract\n```php\n$mathe=array('archi','euler','pythagoras');\narray_push($mathe,'hypatia');\narray_push($mathe,'fibonacci');\narray_pop($mathe);\necho array_pop($mathe);\necho sizeof($mathe);\n```"
+            "concrete,abstract"
         ],
         "_ps": 2
     },
@@ -305,7 +305,7 @@
             "euler3",
             "hypatia5",
             "hypatia3",
-            "fibonacci4\n`isset ($_GET['fav_band'])`"
+            "fibonacci4"
         ],
         "_ps": 2
     },
@@ -365,7 +365,7 @@
             "`php -h`",
             "`php info`",
             "`php -v`",
-            "`php -m`\n```php\nif (!empty($_POST[\"mail\"])) {\necho \"Yes, mail is set\";\n} else {\necho \"No, mail is not set\";\n} (correct)\n```\n`$result = 25 % 6;`"
+            "`php -m`"
         ],
         "_ps": 3
     },
@@ -395,7 +395,7 @@
             "The controller handles data passed to it by the view, and also passes data to the view. It interprets data sent by the view and disperses that data to the approrpiate models awaiting results to pass back to the view.",
             "The controller is a mechanism that allows you to create reusable code in languages such as PHP, where multiple inheritance is not supported.",
             "The controller presents content through the user interface, after communicating directly with the database.",
-            "The controller handles specific tasks related to a specific area of functionality, handles business logic related to the results, and communicates directly with the database.\n`$string = 'Shylock in a Shakespeare's \"Merchant of Venice\" demands his pound of flesh.';`"
+            "The controller handles specific tasks related to a specific area of functionality, handles business logic related to the results, and communicates directly with the database."
         ],
         "_ps": 0
     },
@@ -435,7 +435,7 @@
             "  ```php\n  class Cow extends Animal {\n      private $milk;\n  }\n  ```",
             "  ```php\n  class Cow {\n      public $milk;\n  }\n  $daisy = new Cow();\n  $daisy->milk = \"creamy\";\n  ```",
             "  ```php\n  class Cow {\n      public $milk;\n      function getMilk() {`\n          return $this->milk;\n      }\n  }\n  ```",
-            "  ```php\n  class Cow {\n      private $milk;\n      public function getMilk() {\n          return $this->milk;\n      }\n  }\n  ```\n```xml\n<books>\n    <book>\n        <title>A Tale of Two Cities</title>\n        <author>Charles Dickens</author>\n        <categories>\n            <category>Classics</category>\n            <category>Historical</category>\n        </categories>\n    </book>\n    <book>\n        <title>Then There Were None</title>\n        <author>Agatha Christies</author>\n        <categories>\n            <category>Mystery</category>\n        </categories>\n    </book>\n</books>\n```"
+            "  ```php\n  class Cow {\n      private $milk;\n      public function getMilk() {\n          return $this->milk;\n      }\n  }\n  ```"
         ],
         "_ps": 3
     },
@@ -455,7 +455,7 @@
             "NULL is a blank value; empty is the lack of a value.",
             "A NULL value has an allocated address in memory; empty does not.",
             "NULL referes to the lack of a value for an integer; empty refers to the lack of a value for a string.",
-            "NULL is the lack of a value; empty is a blank value.\n```php\nfunction doStuff($haystack, $needle) {\n      $length = strlen($needle)\n      if (substr($haystack, 0, $length) == $needle)\n        return true;\n      else\n        return false;\n}\n```"
+            "NULL is the lack of a value; empty is a blank value."
         ],
         "_ps": 3
     },
@@ -475,7 +475,7 @@
             "request; response",
             "response; request",
             "session; request",
-            "request; session\n```php\nisset($_POST['submit'])\n```"
+            "request; session"
         ],
         "_ps": 3
     },
@@ -555,7 +555,7 @@
             "`__RESOURCE__`",
             "`__FUNCTION__`",
             "`__CLASS__`",
-            "`__TRAIT__`\n[Reference](https://www.php.net/manual/en/language.constants.magic.php)\n```php\n  if( 1 == true){\n        echo \"1\";\n  }\n  if( 1 === true){\n      echo \"2\";\n  }\n  if(\"php\" == true){\n      echo \"3\";\n  }\n  if(\"php\" === false){\n      echo \"4\";\n  }\n```"
+            "`__TRAIT__`\n[Reference](https://www.php.net/manual/en/language.constants.magic.php)"
         ],
         "_ps": 0
     },
@@ -565,7 +565,7 @@
             "134",
             "13",
             "1",
-            "123\n```php\n$secret_word = 'if i ate spinach';\nsetcookie('login', $_REQUEST['username']. ','. md5($_REQUEST['username'].$secret_word));\n```"
+            "123"
         ],
         "_ps": 1
     },
@@ -575,7 +575,7 @@
             "when a user goes to pay for an item online",
             "when items are placed in a cart",
             "at first registration",
-            "at every login, for security\n```php\nCat\nDog\nDog\n```"
+            "at every login, for security"
         ],
         "_ps": 3
     },
@@ -615,7 +615,7 @@
             "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". max($dates).\"\\n\";\n        echo \"Earliest Date: \". min($dates).\"\\n\";\n        ?>\n```",
             "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". min($dates).\"\\n\";\n        echo \"Earliest Date: \". max($dates).\"\\n\";\n        ?>\n```",
             "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \". ($dates).\"\\n\";\n        echo \"Earliest Date: \". ($dates).\"\\n\";\n        ?>\n```",
-            "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \" max($dates).\"\\n\";\n        echo \"Earliest Date: \" min($dates).\"\\n\";\n        ?>\n```\n```php\n$kilometers = 1;\nfor (;;) {\n    if ($kilometers > 5) break;\n       echo \"$kilometers kilometers = \".$kilometers*0.62140. \" miles. <br />\";\n    $kilometers++;\n}\n```"
+            "```php\n        <?php\n        $dates = array('2018-02-01', '2017-02-02', '2015-02-03');\n        echo \"Latest Date: \" max($dates).\"\\n\";\n        echo \"Earliest Date: \" min($dates).\"\\n\";\n        ?>\n```"
         ],
         "_ps": 0
     },
@@ -665,7 +665,7 @@
             "`$_SERVER`",
             "`$SERVER_VARIABLES`",
             "`$_ENV`",
-            "`$GLOBALS`\n[reference](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/php_superglobals.asp.html)\n```php\n$capitals = ['UK' => 'London', 'France' => 'Paris'];\necho \"$capitals['france'] is the capital of France.\";\n```"
+            "`$GLOBALS`\n[reference](http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/php_superglobals.asp.html)"
         ],
         "_ps": 0
     },
@@ -705,7 +705,7 @@
             "Make sure the user has the proper permissions.",
             "Keep a count of upload file sizes and log them.",
             "Change the `upload_max_filesize` configuration parameter.",
-            "Be sure to use chunked transfer encoding.\n```php\n$my_text = 'The quick grey [squirrel].';\npreg_match('#\\[(.*?)\\]#', $my_text, $match);\nprint $match[1].\"\\n\";\n```"
+            "Be sure to use chunked transfer encoding."
         ],
         "_ps": 2
     },
@@ -715,7 +715,7 @@
             "squirrel",
             "The quick grey [squirrel].",
             "[squirrel]",
-            "The quick grey squirrel.\n`$fruits = ['apple', 'orange', 'pear', 'mango', 'papaya'];`\n`$i = 0;`\n`echo $fruits[$i+=3];`"
+            "The quick grey squirrel."
         ],
         "_ps": 0
     },
@@ -775,7 +775,7 @@
             "`$statement->bindValue(':name', '%' . $_GET['name'] . '%');`",
             "`$statement->bindValue('%' . $_GET['name'] . '%', ':name');`",
             "`$statement->bindParam(':name', '%' . $_GET['name'] . '%');`",
-            "`$statement->bindParam('%' . $_GET['name'] . '%', ':name');`\n`$array1 = ['country', 'capital', 'language'];`\n`$array2 = ['France', 'Paris', 'French'];`"
+            "`$statement->bindParam('%' . $_GET['name'] . '%', ':name');`"
         ],
         "_ps": 0
     },
@@ -845,7 +845,7 @@
             "`die`",
             "`return`",
             "`throw`",
-            "`break`\n```php\n$numbers = array(4,6,2,22,11);\nsort($numbers);\n$arrlength = count($numbers);\nfor($x = 0; $x < $arrlength; $x++){\n    echo $numbers[$x];\n    echo \"<br />\";\n    }\n```"
+            "`break`"
         ],
         "_ps": 0
     },

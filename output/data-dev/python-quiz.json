@@ -45,7 +45,7 @@
             "Attributes are long-form version of an `if/else` statement, used when testing for equality between objects.",
             "Attributes are a way to hold data or describe a state for a class or an instance of a class.",
             "Attributes are strings that describe characteristics of a class.",
-            "Function arguments are called \"attributes\" in the context of class methods and instance methods.\n**Explanation**\nAttributes defined under the class, arguments goes under the functions. arguments usually refer as parameter, whereas attributes are the constructor of the class or an instance of a class.\n`count, fruit, price = (2, 'apple', 3.5)`"
+            "Function arguments are called \"attributes\" in the context of class methods and instance methods.\n**Explanation**\nAttributes defined under the class, arguments goes under the functions. arguments usually refer as parameter, whereas attributes are the constructor of the class or an instance of a class."
         ],
         "_ps": 1
     },
@@ -265,7 +265,7 @@
             "The runtime is O(n) because in the worst case, the node you are searching for is the last node, and every node in the linked list must be visited.",
             "The runtime is O(nk), with n representing the number of nodes and k representing the amount of time it takes to access each node in memory.",
             "The runtime cannot be determined unless you know how many nodes are in the singly linked list.",
-            "The runtime is O(1) because you can index directly to a node in a singly linked list.\n```python\nfruits = ['Apples', 'Oranges', 'Bananas']\nquantities = [5, 3, 4]\nprices = [1.50, 2.25, 0.89]\n#Desired output\n[('Apples', 5, 1.50),\n('Oranges', 3, 2.25),\n('Bananas', 4, 0.89)]\n```"
+            "The runtime is O(1) because you can index directly to a node in a singly linked list."
         ],
         "_ps": 0
     },
@@ -285,7 +285,7 @@
             "The `all()` function returns a Boolean value that answers the question \"Are all the items in this list the same?",
             "The `all()` function returns True if all the items in the list can be converted to strings. Otherwise, it returns False.",
             "The `all()` function will return all the values in the list.",
-            "The `all()` function returns True if all items in the list evaluate to True. Otherwise, it returns False.\n**Explanation** - `all()` returns true if all in the list are True, see example below\n```python\ntest = [True,False,False,False]\nif all(test) is True:\n    print('Yeah all are True')\nelse:\n    print('There is an imposter')\n>>> 'There is an imposter'\n```\n_(Answer format may vary. Game and roll (or dice_roll) should each be called with no parameters.)_"
+            "The `all()` function returns True if all items in the list evaluate to True. Otherwise, it returns False.\n**Explanation** - `all()` returns true if all in the list are True, see example below\n```python\ntest = [True,False,False,False]\nif all(test) is True:\n    print('Yeah all are True')\nelse:\n    print('There is an imposter')\n>>> 'There is an imposter'\n```"
         ],
         "_ps": 3
     },
@@ -335,7 +335,7 @@
             "Abstraction means that a different style of code can be used, since many details are already known to the program behind the scenes.",
             "Abstraction means the implementation is hidden from the user, and only the relevant data or information is shown.",
             "Abstraction means that the data and the functionality of a class are combined into one entity.",
-            "Abstraction means that a class can inherit from more than one parent class.\n```python\ndef print_alpha_nums(abc_list, num_list):\n    for char in abc_list:\n        for num in num_list:\n            print(char, num)\n    return\nprint_alpha_nums(['a', 'b', 'c'], [1, 2, 3])\n```"
+            "Abstraction means that a class can inherit from more than one parent class."
         ],
         "_ps": 1
     },
@@ -385,7 +385,7 @@
             "`&&`",
             "`=`",
             "`==`",
-            "`||`\n```python\nfruit_info = {\n  'fruit': 'apple',\n  'count': 2,\n  'price': 3.5\n}\n```"
+            "`||`"
         ],
         "_ps": 2
     },
@@ -395,7 +395,7 @@
             "`fruit_info ['price'] = 1.5`",
             "`my_list [3.5] = 1.5`",
             "`1.5 = fruit_info ['price]`",
-            "`my_list['price'] == 1.5`\n`5 != 6`"
+            "`my_list['price'] == 1.5`"
         ],
         "_ps": 0
     },
@@ -435,7 +435,7 @@
             "`fruit_info = {'fruit': 'apple', 'count': 2, 'price': 3.5}`",
             "`fruit_info =('fruit': 'apple', 'count': 2,'price': 3.5 ).dict()`",
             "`fruit_info = ['fruit': 'apple', 'count': 2,'price': 3.5 ].dict()`",
-            "`fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)`\n`fruits = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}`"
+            "`fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)`"
         ],
         "_ps": 0
     },
@@ -735,7 +735,7 @@
             "`-- This is a comment`",
             "`# This is a comment`",
             "`/_ This is a comment _\\`",
-            "`// This is a comment`\n```python\nmy_list = ['kiwi', 'apple', 'banana']\n```"
+            "`// This is a comment`"
         ],
         "_ps": 1
     },
@@ -815,7 +815,7 @@
             "<br>\n```python\ndef __init__(self, attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```",
             "<br>\n```python\ndef __init__(attr1, attr2):\n    attr1 = attr1\n    attr2 = attr2\n```",
             "<br>\n```python\ndef __init__(self, attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n```",
-            "<br>\n```python\ndef __init__(attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n```\n**Explanation**: When instantiating a new object from a given class, the `__init__()` method will take both `attr1` and `attr2`, and set its values to their corresponding object attribute, that's why the need of using `self.attr1 = attr1` instead of `attr1 = attr1`.\n```python\ndef count_recursive(n=1):\n    if n > 3:\n        return\n    print(n)\n    count_recursive(n + 1)\n```"
+            "<br>\n```python\ndef __init__(attr1, attr2):\n    self.attr1 = attr1\n    self.attr2 = attr2\n```\n**Explanation**: When instantiating a new object from a given class, the `__init__()` method will take both `attr1` and `attr2`, and set its values to their corresponding object attribute, that's why the need of using `self.attr1 = attr1` instead of `attr1 = attr1`."
         ],
         "_ps": 2
     },
@@ -835,7 +835,7 @@
             "`Intersect`; `union`",
             "`|`; `&`",
             "`&`; `|`",
-            "`&&`; `||`\n```python\nimport numpy as np\nnp.ones([1,2,3,4,5])\n```"
+            "`&&`; `||`"
         ],
         "_ps": 2
     },
@@ -855,7 +855,7 @@
             "Make sure the file is on the system PATH",
             "Create a symbolic link to allow better access to the file",
             "Copy the file to the same directory as where the script is running from",
-            "Add the path to the file to the PYTHONPATH environment variable\n```python\n{x for x in range(100) if x%3 == 0}\n```"
+            "Add the path to the file to the PYTHONPATH environment variable"
         ],
         "_ps": 2
     },
@@ -875,7 +875,7 @@
             "Perform integer division",
             "Perform operations on exponents",
             "Find the remainder of a division operation",
-            "Perform floating point division\n```python\nnum_list = [21,13,19,3,11,5,18]\nnum_list.sort()\nnum_list[len(num_list)//2]\n```"
+            "Perform floating point division"
         ],
         "_ps": 0
     },
@@ -925,7 +925,7 @@
             "`my_game = Game(self) self.my_game.roll_dice()`",
             "`my_game = Game() self.my_game.roll_dice()`",
             "`my_game = Game() my_game.roll_dice()`",
-            "`my_game = Game(self) my_game.roll_dice(self)`\n```python\na = np.array([1,2,3,4])\nprint(a[[False, True, False, False]])\n```"
+            "`my_game = Game(self) my_game.roll_dice(self)`"
         ],
         "_ps": 2
     },
@@ -935,7 +935,7 @@
             "`{0,2}`",
             "`[2]`",
             "`{2}`",
-            "`[0,2,0,0]`\n```python\nz = y.split(‘;’)\nlen(z)\n```"
+            "`[0,2,0,0]`"
         ],
         "_ps": 1
     },
@@ -945,7 +945,7 @@
             "17",
             "4",
             "0",
-            "3\n**Explanation**:\n```\ny=”stuff;thing;junk”\n\tlen(z) ==> 3\ny=”stuff;thing;junk;”\n\tlen(z) ==> 4\n```\n```python\nnum_list = [1,2,3,4,5]\nnum_list.remove(2)\nprint(num_list)\n```"
+            "3\n**Explanation**:\n```\ny=”stuff;thing;junk”\n\tlen(z) ==> 3\ny=”stuff;thing;junk;”\n\tlen(z) ==> 4\n```"
         ],
         "_ps": 1
     },
@@ -965,7 +965,7 @@
             "def get_next_card(): # method body goes here",
             "def self.get_next_card(): # method body goes here",
             "def get_next_card(self): # method body goes here",
-            "def self.get_next_card(self): # method body goes here\n`[10,9,8,7,6,5,4,3,2,1]`"
+            "def self.get_next_card(self): # method body goes here"
         ],
         "_ps": 2
     },
@@ -975,7 +975,7 @@
             "`reversed(list(range(1,11)))`",
             "`list(reversed(range(1,10)))`",
             "`list(range(10,1,-1))`",
-            "`list(reversed(range(1,11)))`\n[Reference](https://www.w3schools.com/python/python_tuples.asp)\n```python\nimport math\nprint(math.pow(2,10)) # prints 2 elevated to the 10th power\n```"
+            "`list(reversed(range(1,11)))`\n[Reference](https://www.w3schools.com/python/python_tuples.asp)"
         ],
         "_ps": 3
     },
@@ -995,7 +995,7 @@
             "sets only; lists or dictionaries; tuples",
             "lists; sets only; tuples",
             "tuples; sets or lists; dictionaries",
-            "lists; dictionaries or sets; tuples\n[Reference](https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/)\n```python\ntable = np.array([\n    [1,3],\n    [2,4]])\nprint(table.max(axis=1))\n```"
+            "lists; dictionaries or sets; tuples\n[Reference](https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/)"
         ],
         "_ps": 3
     },
@@ -1005,7 +1005,7 @@
             "`[2, 4]`",
             "`[3, 4]`",
             "`[4]`",
-            "`[1,2]`\n[Reference](https://colab.research.google.com/drive/1PRGf7Wgcr_gQk7snnxxuc5rL9O1ky9Xg?usp=sharing)\n```python\nnumber = 3\nprint (f\"The number is {number}\")\n```"
+            "`[1,2]`\n[Reference](https://colab.research.google.com/drive/1PRGf7Wgcr_gQk7snnxxuc5rL9O1ky9Xg?usp=sharing)"
         ],
         "_ps": 1
     },
@@ -1075,7 +1075,7 @@
             "`sys.exc_info()`",
             "`os.system()`",
             "`os.getcwd()`",
-            "`sys.executable`\n```python\nmy_dictionary = {\n    'A': 1,\n    'B': 2,\n    'C': 3,\n    'D': 4,\n    'E': 5\n}\n```"
+            "`sys.executable`"
         ],
         "_ps": 1
     },
@@ -1125,7 +1125,7 @@
             "sys.stdout",
             "traceback",
             "warnings",
-            "exceptions\n```python\nx = {1,2,3,4,5}\nx.add(5)\nx.add(6)\n```"
+            "exceptions"
         ],
         "_ps": 2
     },
@@ -1145,7 +1145,7 @@
             "The function will enter an infinite loop because it will not know when to stop executing its code.",
             "If `return` keyword is absent, the function will return `True`.",
             "If `return` keyword is absent, the function will return `None`.",
-            "The function will return a `RuntimeError` if you do not return a value.\n```python\nfruit_info = {\n    'fruit': 'apple',\n    'count': 2,\n    'price': 3.5\n}\n```"
+            "The function will return a `RuntimeError` if you do not return a value."
         ],
         "_ps": 2
     },
@@ -1155,7 +1155,7 @@
             "`my_keys = fruit_info.to_keys()`",
             "`my_keys = fruit_info.all_keys()`",
             "`my_keys = fruit_info.keys`",
-            "`my_keys = fruit_info.keys()`\n```python\ndef be_friendly(greet = \"How are you!\", name):\n    pass\n```"
+            "`my_keys = fruit_info.keys()`"
         ],
         "_ps": 3
     },
@@ -1185,7 +1185,7 @@
             "`// This is a comment`",
             "`# This is a comment`",
             "`-- This is a comment`",
-            "`/* This is a comment *\\`\n```python\nimport numpy as np\na = np.array([1,2,3])\nb = np.array([4,5,6])\nc = a*b\nd = np.dot(a,b)\n```"
+            "`/* This is a comment *\\`"
         ],
         "_ps": 1
     },
@@ -1215,7 +1215,7 @@
             "`my_list = (2, 'apple', 3.5)`",
             "`my_list = [2, 'apple', 3.5]`",
             "`my_list = [2, 'apple', 3.5].to_list()`",
-            "`my_list = to_list(2, 'apple', 3.5)`\n[Reference](https://www.tutorialspoint.com/python/python_lists.htm)\n```python\nnum_list = [21, 13, 19, 3, 11, 5, 18]\nnum_list.sort()\nnum_list[len(num_list) // 2]\n```"
+            "`my_list = to_list(2, 'apple', 3.5)`\n[Reference](https://www.tutorialspoint.com/python/python_lists.htm)"
         ],
         "_ps": 1
     },
@@ -1265,7 +1265,7 @@
             "Anonymous Class",
             "Parent Class",
             "Nested Class",
-            "Abstract Class\n[Reference](https://www.scaler.com/topics/python/data-abstraction-in-python/)\n![Q129](images/Q129.png)"
+            "Abstract Class\n[Reference](https://www.scaler.com/topics/python/data-abstraction-in-python/)"
         ],
         "_ps": 3
     },
@@ -1275,7 +1275,7 @@
             "`sum(titanic['Survived'])`",
             "`[x for x in titanic['Survived'] if x == 1]`",
             "`len(titanic[\"Survived\"])`",
-            "`sum(titanic['Survived']==0)`\n**Explanation:** The `titanic['Survived']` returns a `pandas.Series` object, which contains the `Survived` column of the `DataFrame`.\nAdding the values of this column (i.e. `sum(titanic['Survived'])`) returns the total number of survivors since a survivor is represented by a 1 and a loss by 0.\n```python\ncharacters = [\"Iron Man\", \"Spider Man\", \"Captain America\"]\nactors = [\"Downey\", \"Holland\", \"Evans\"]\n# example output : [(\"IronMan\", \"Downey\"), (\"Spider Man\", \"Holland\"), (\"Captain America\", \"Evans\")]\n```"
+            "`sum(titanic['Survived']==0)`\n**Explanation:** The `titanic['Survived']` returns a `pandas.Series` object, which contains the `Survived` column of the `DataFrame`.\nAdding the values of this column (i.e. `sum(titanic['Survived'])`) returns the total number of survivors since a survivor is represented by a 1 and a loss by 0."
         ],
         "_ps": 0
     },
@@ -1285,7 +1285,7 @@
             "`[(x,y)] for x in characters for y in actors]`",
             "`list(zip(characters, actors))`",
             "<br>\n```python\nd = {}\nfor x in range(1, len(characters)):\n    d[x] = actors[x]\n```",
-            "`{x:y for x in characters for y in actors}`\n```python\n{x : x*x for x in range(1,100)}\n```"
+            "`{x:y for x in characters for y in actors}`"
         ],
         "_ps": 1
     },
@@ -1295,7 +1295,7 @@
             "a dictionary with x as a key, and x squared as its value; from 1 to 100",
             "a dictionary with x as a key, and x squared as its value; from 1 to 99",
             "a set of tuples, consisting of (x, x squared); from 1 to 99",
-            "a list with all numbers squared from 1 to 99\n![Q132](images/Q132.png)"
+            "a list with all numbers squared from 1 to 99"
         ],
         "_ps": 1
     },

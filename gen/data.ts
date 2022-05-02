@@ -66,7 +66,16 @@ const getQuestions = async (str: string) => {
                     }
                 } else {
                     if (currentOption) {
-                        currentOption += `\n${fileLines[idx + i]}`;
+                        if (
+                            fileLines[idx + i - 1] &&
+                            fileLines[idx + i - 1] !== fileLines[idx] &&
+                            fileLines[idx + i - 1]?.startsWith('####')
+                        ) {
+                            options.push(currentOption);
+                            break;
+                        } else {
+                            currentOption += `\n${fileLines[idx + i]}`;
+                        }
                     }
                 }
             }

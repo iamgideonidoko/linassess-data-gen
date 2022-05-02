@@ -155,7 +155,7 @@
             "cover page",
             "blank page",
             "master page",
-            "table of contents page\n![image](images/001.png)"
+            "table of contents page"
         ],
         "_ps": 0
     },
@@ -165,7 +165,7 @@
             "The boxes resize to maintain the same overall height.",
             "The object is deleted and a hole is left behind.",
             "The text merges with the second box.",
-            "The gaps between the boxes close and the boxes remain the same size.\n![image](images/001.png)"
+            "The gaps between the boxes close and the boxes remain the same size."
         ],
         "_ps": 0
     },
@@ -245,7 +245,7 @@
             "Replace All",
             "AutoFormat As You Type",
             "Find and Replace",
-            "AutoCorrect Options\n**Explanation:** The keyword here is creating a \"shortcut\" which is set with the Autocorrect Options by navigating to File -> Options -> Proofing -> AutoCorrect Options -> Replace text as you type.\n![image](images/003.png)"
+            "AutoCorrect Options\n**Explanation:** The keyword here is creating a \"shortcut\" which is set with the Autocorrect Options by navigating to File -> Options -> Proofing -> AutoCorrect Options -> Replace text as you type."
         ],
         "_ps": 3
     },
@@ -325,7 +325,7 @@
             "Footnotes use Arabic numerals and endnotes use letters.",
             "A footnote is placed in the page footer, and an endnote is placed on a blank page at the end of the document.",
             "A footnote is placed at the bottom of the page, and an endnote is placed at the end of the document.",
-            "An endnote always appears on the bottom of the same page that it references.\n![image](images/004.png)"
+            "An endnote always appears on the bottom of the same page that it references."
         ],
         "_ps": 2
     },
@@ -345,7 +345,7 @@
             "table of contents",
             "page break",
             "cover page",
-            "index\n```\nA. Display for Review is set to No Markup.\nB. Track changes has been turned off.\nC. Display for Review is set to Original.\nD. Inserts and Deletions and Formatting are turned off in Show Markup.\n```"
+            "index"
         ],
         "_ps": 0
     },
@@ -375,7 +375,7 @@
             "You can reformat all headings by changing style sets.",
             "You can navigate from heading to heading in the Navigation pane.",
             "all of these answers",
-            "You can easily generate a table of contents.\n```\n A. Type \"(TM)\".\n B. On the **Insert** tab, in the **Symbols** group, select **Symbol**. From the symbols gallery, select the trademark symbol, then click **Insert**.\n C. On the **Insert** Tab, in the **Illustrations** group, select **Icons**. From the icons gallery, select the **Signs and Symbols** category. Then select the trademark symbol and click **Insert**.\n D. Type \"(R)\".\n```"
+            "You can easily generate a table of contents."
         ],
         "_ps": 2
     },
@@ -485,7 +485,7 @@
             "Share the document with others.",
             "Assume ownership of the document.",
             "Remove access from another user.",
-            "Coauthor the document with your colleague.\n![image](images/002.png)"
+            "Coauthor the document with your colleague."
         ],
         "_ps": 0
     },
@@ -545,7 +545,7 @@
             "Click the Select Data button.",
             "Click the Refresh Data button.",
             "Click the Switch Row/Column button.",
-            "Click the Edit Data button.\nA. OneDrive\nB. SharePoint document library\nC. Google Drive\nD. DropBox"
+            "Click the Edit Data button."
         ],
         "_ps": 3
     },
@@ -575,7 +575,7 @@
             "You can restrict printing for specific document sections.",
             "You can apply unique formatting to each section.",
             "You can collaborate on specific sections with other authors.",
-            "You can restrict access to each section individually.\n[Reference](https://support.microsoft.com/en-us/office/insert-delete-or-change-a-section-break-0eeae2d6-b906-42d3-a1bd-7e77ca8ea1f3)\n```markdown\nA. Colleague's name appears in the Share panel.\nB. Colleague's picture appears in the upper-right corner of the ribbon.\nC. A banner notification pops up as the colleague edits the document.\nD. A flag icon with the colleague's name appears where their edit is being made.\n```"
+            "You can restrict access to each section individually.\n[Reference](https://support.microsoft.com/en-us/office/insert-delete-or-change-a-section-break-0eeae2d6-b906-42d3-a1bd-7e77ca8ea1f3)"
         ],
         "_ps": 1
     },
@@ -655,7 +655,7 @@
             "Pie",
             "Column",
             "Line",
-            "Bar\nDuplicated with Q33."
+            "Bar"
         ],
         "_ps": 0
     },
@@ -665,7 +665,7 @@
             "An endnote always appears on the bottom of the same page that it references",
             "Footnote use Arabic numerals and endnotes use letters.",
             "A footnote is placed at the bottom of the page, and an endnote is placed at the end of the document",
-            "A footnote is placed in teh page footer and an endnote is placed on a blank page at the end of the document\n![image](https://i.imgur.com/JjdzceL.png)"
+            "A footnote is placed in teh page footer and an endnote is placed on a blank page at the end of the document"
         ],
         "_ps": 2
     },
@@ -765,7 +765,7 @@
             "Insert Footnote",
             "Insert Citation",
             "Insert Caption",
-            "Insert Table of Figures\nDuplicated with Q50.\n![image](https://i.imgur.com/JUbaoyO.png)"
+            "Insert Table of Figures"
         ],
         "_ps": 2
     },

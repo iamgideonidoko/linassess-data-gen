@@ -65,7 +65,7 @@
             "`<button><input><form>`",
             "`<input><label><meter>`",
             "`<input><option><textarea>`",
-            "`<li><input><option>`\n```html\n<address ______ _____>\n  <span itemprop=\"streetAddress\">6410 Via Real</span><br />\n  <span itemprop=\"addressLocality\">Carpinteria</span>,\n  <span itemprop=\"addressRegion\">CA</span>\n  <span itemprop=\"addressCode\">93013</span>\n</address>\n```"
+            "`<li><input><option>`"
         ],
         "_ps": 3
     },
@@ -105,7 +105,7 @@
             "readonly",
             "max",
             "form",
-            "spellcheck\n![Sample text](images/ss-2.png?raw=true)"
+            "spellcheck"
         ],
         "_ps": 1
     },
@@ -155,7 +155,7 @@
             "`<div>` is used where a generic block-level tag is needed, while `<span>` is used where a generic inline tag is needed.",
             "`<div>` is used for major divisions on a page, while `<span>` is used to span across columns.",
             "`<div>` is the industry-standard default tag, but you could use `<span>` if you prefer.",
-            "`<div>` is used where a generic inline tag is needed, while `<span>` is used where a generic block-level tag is needed.\n```html\n<form method=\"post\" action=\"mailto:info@linkedin.com\" ____=\"text/plain\"></form>\n```"
+            "`<div>` is used where a generic inline tag is needed, while `<span>` is used where a generic block-level tag is needed."
         ],
         "_ps": 0
     },
@@ -175,7 +175,7 @@
             "A\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \"\"Whistler's Mother\"\" in cubist style\">\n```",
             "B\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \"Whistler's Mother\" in cubist style\">\n```",
             "C\n```html\n<img src=\"cubism.jpg\" alt='Version of \"Whistler\\'s Mother\" in cubist style'>\n```",
-            "D\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \\\"Whistler's Mother\\\" in cubist style\">\n```\n```html\n<p id=\"warning\">Be careful when installing this product.</p>\n```"
+            "D\n```html\n<img src=\"cubism.jpg\" alt=\"Version of \\\"Whistler's Mother\\\" in cubist style\">\n```"
         ],
         "_ps": 2
     },
@@ -185,7 +185,7 @@
             "It establishes that id is a unique identifier in the document, used for styling CSS, scripting, and linking within a webpage.",
             "It establishes that id is a unique identifier in the document, used for styling CSS and with Javascript code.",
             "It establishes that id may be used for styling CSS several times per page.",
-            "It establishes that id is a unique identifier in the website, used for styling CSS, scripting, and linking within a webpage.\n```markdown\nOn July 21, 1969, Neil Armstrong said, \"One small step for man, one giant leap for mankind.\"\n```"
+            "It establishes that id is a unique identifier in the website, used for styling CSS, scripting, and linking within a webpage."
         ],
         "_ps": 0
     },
@@ -195,7 +195,7 @@
             "A\n```markdown\n<p>\n  On <time datetime=\"1969-07-21\">July 21, 1969</time>, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```",
             "B\n```markdown\n<p>\n  On July 21, 1969, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```",
             "C\n```markdown\n<p>\n  On July 21, 1969, Neil Armstrong said, <q>One small step for man, one giant leap for mankind.</q>\n</p>\n```",
-            "D\n```markdown\n<p>\n  On <time datetime=\"07-21-1969\">July 21, 1969</time>, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```\n```html\n<a href=\"https://es.yahoo.com/\" hreflang=\"____\" target=\"_blank\">Visita Yahoo</a>\n```"
+            "D\n```markdown\n<p>\n  On <time datetime=\"07-21-1969\">July 21, 1969</time>, Neil Armstrong said,\n  <q cite=\"https://www.hq.nasa.gov/alsj/a11l/a11.html\"\n    >One small step for man, one giant leap for mankind.</q\n  >\n</p>\n```"
         ],
         "_ps": 0
     },
@@ -205,7 +205,7 @@
             "es",
             "es-spanish",
             "es-es",
-            "spanish\n![Image of footer](images/ss-3.png?raw=true)"
+            "spanish"
         ],
         "_ps": 2
     },
@@ -235,7 +235,7 @@
             "The server wraps the webpage in an HTML5 wrapper.",
             "Use the `<!DOCTYPE html>` declaration that starts the document.",
             "The browser receives encoding from the server to display the document with HTML5.",
-            "It is enclosed in a `<html>` tag.\n```html\n<picture>\n  <source srcset=\"image1.jpg\" media=\"(min-width: 1000px)\" />\n  <source srcset=\"image2.jpg\" media=\"(min-width: 750px)\" />\n  <img src=\"image3.jpg\" />\n</picture>\n```"
+            "It is enclosed in a `<html>` tag."
         ],
         "_ps": 1
     },
@@ -245,7 +245,7 @@
             "It displays image1.jpg at 1000px and higher, image2.jpg at 750-999px, and image3.jpg at 749px and lower.",
             "It displays image1.jps at 1000px and higher and image2.jpg at 750-999px, image3.jpg is a default in case `<picture>` is not supported.",
             "It displays image1.jpg at 1000px and higher and image2.jpg at 750px and higher, image3.jpg is a default in case `<picture>` is not supported.",
-            "It displays image1.jpg, image2.jpg and image3.jpg at 1000px and higher.\n[Source: HTML &lt;picture> Tag](https://www.w3schools.com/tags/tag_picture.asp)\n![Table with yellow background](images/ss-4.png?raw=true)"
+            "It displays image1.jpg, image2.jpg and image3.jpg at 1000px and higher.\n[Source: HTML &lt;picture> Tag](https://www.w3schools.com/tags/tag_picture.asp)"
         ],
         "_ps": 0
     },
@@ -265,7 +265,7 @@
             "This tag is depreciated and should not be used.",
             "It designates a topic shift within a section at the paragraph level.",
             "It draws a horizontal line.",
-            "It designates a shift of topic at the section level.\nThis is a confusing question and there can be an arguments for both the second and the third options being correct.\n[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HTML `<hr>` element represents a thematic break between paragraph-level elements. Historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS.\n```markdown\n<section itemscope itemtype=\"http://schema.org/Restaurant\">\n  <h1 itemprop=\"name\">Nadia's Garden</h1>\n  <p itemscope ______ ______>\n    <span itemprop=\"ratingValue\">4.5</span> stars - based on\n    <span itemprop=\"reviewCount\">120</span> reviews\n  </p>\n</section>\n```"
+            "It designates a shift of topic at the section level.\nThis is a confusing question and there can be an arguments for both the second and the third options being correct.\n[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr): The HTML `<hr>` element represents a thematic break between paragraph-level elements. Historically, this has been presented as a horizontal rule or line. While it may still be displayed as a horizontal rule in visual browsers, this element is now defined in semantic terms, rather than presentational terms, so if you wish to draw a horizontal line, you should do so using appropriate CSS."
         ],
         "_ps": 1
     },
@@ -325,7 +325,7 @@
             "`_blank`",
             "`_self`",
             "`_new`",
-            "`_parent`\n**We are fond of our TLAs in web design.**"
+            "`_parent`"
         ],
         "_ps": 0
     },
@@ -335,7 +335,7 @@
             "A\n```html\n<p>We are fond of our <span title=\"three-letter acronyms\">TLAs</span> in web design.</p>\n```",
             "B\n```html\n<p>We are fond of our TLAs in web design.</p>\n```",
             "C\n```html\n<p>we are fond of our <abbr title=\"three-letter acronyms\">TLAs</abbr> in web design.</p>\n```",
-            "D\n```html\n<p>we are fond of our <acronym title=\"three-letter acronym\">TLAs</acronym> in web design.</p>\n```\n`<acronym>` has been removed in HTML5 and shouldn't be used anymore. Instead web developers should use the `<abbr>` element.\n![Sample list](images/ss-6.png?raw=true)"
+            "D\n```html\n<p>we are fond of our <acronym title=\"three-letter acronym\">TLAs</acronym> in web design.</p>\n```\n`<acronym>` has been removed in HTML5 and shouldn't be used anymore. Instead web developers should use the `<abbr>` element."
         ],
         "_ps": 2
     },
@@ -344,8 +344,7 @@
         "options": [
             "A\n```markdown\n<ul>\n  <li>\n    office\n    <ol style=\"circle\">\n      <li>staple</li>\n      <li>paper</li>\n    </ol>\n  </li>\n  <li>\n    groceries\n    <ol style=\"circle\">\n      <li>milk</li>\n    </ol>\n  </li>\n</ul>\n```",
             "B\n```markdown\n<ul>\n  <li>Office Supplies\n    <ul>\n      <li>Stapler</li>\n      <li>Paper clips</li>\n    </ul>\n  </li>\n  <li>Groceries\n    <ul>\n      <li>Milk</li>\n    </ul>\n  </li>\n</ul>\n```",
-            "C\n```markdown\n<ul>\n  <li>office</li>\n  <li>staple</li>\n  <li>paper</li>\n  <li>groceries</li>\n  <li>milk</li>\n</ul>\n```\n```html\n<link href=\"phone.css\" rel=\"stylesheet\" _____=\"print\" />\n```",
-            "title"
+            "C\n```markdown\n<ul>\n  <li>office</li>\n  <li>staple</li>\n  <li>paper</li>\n  <li>groceries</li>\n  <li>milk</li>\n</ul>\n```"
         ],
         "_ps": 1
     },
@@ -355,7 +354,7 @@
             "title",
             "type",
             "device",
-            "media\n![quote](images/ss-5.png?raw=true)"
+            "media"
         ],
         "_ps": 3
     },
@@ -395,7 +394,7 @@
             "`<p>Press the <tt>Enter</tt> key to proceed.</p>`",
             "`<p>Press the <kbd>Enter</kbd> key to proceed.</p>`",
             "`<p>Press the <samp>Enter</samp> key to proceed.</p>`",
-            "`<p>Press the Enter key to proceed.</p>`\n```markdown\n<audio controls>\n  <source src=\"sound.mp3\" type=\"audio/mpeg\" />\n  <source src=\"sound.ogg\" type=\"audio/ogg\" />\n  <source src=\"sound.wav\" type=\"audio/wav\" />\n</audio>\n```"
+            "`<p>Press the Enter key to proceed.</p>`"
         ],
         "_ps": 1
     },
@@ -435,7 +434,7 @@
             "`<DOCTYPE html>`",
             "`<html>`",
             "`<body>`",
-            "`<root>`\n![Table](images/ss-1.png?raw=true 'table')"
+            "`<root>`"
         ],
         "_ps": 1
     },
@@ -475,7 +474,7 @@
             "It specifies an image that should display while the video downloads and until the video is played.",
             "It specifies an image that only displays if there is a problem with the video.",
             "It specifies an image that should display until the video is played.",
-            "It specifies an image that should display while the video downloads.\n```html\n<audio controls src=\"sound.mp3\" type=\"audio/mpeg\">When does this text display?</audio>\n```"
+            "It specifies an image that should display while the video downloads."
         ],
         "_ps": 0
     },
@@ -505,7 +504,7 @@
             "`<details> <abbr> <figcaption>`",
             "`<canvas> <select> <noscript>`",
             "`<dt> <table> <pre>`",
-            "`<kbd> <p> <main>`\n```html\n<p lang=\"en-GB\">Welcome to our wonderful website.</p>\n```"
+            "`<kbd> <p> <main>`"
         ],
         "_ps": 2
     },
@@ -525,7 +524,7 @@
             "JPG, GIF, TIF",
             "JPG, TIF, BMP",
             "TIF, BMP, GIF",
-            "PNG, GIF, JPG\n```html\n<base href=\"http://www.linkedin.com/dir/\" />\n```"
+            "PNG, GIF, JPG"
         ],
         "_ps": 3
     },
@@ -565,7 +564,7 @@
             "It requires the browser to wrap the current line at that point.",
             "It breaks a word into two pieces, using a hyphen to connect the words.",
             "It formats a sentence to be easily breakable.",
-            "It presents an opportunity for a break in a very long word, if needed for proper page display.\n```markdown\n<nav><ul>\n  <li><a href=\"#\">Link 1</a></li>\n  <li><a href=\"#\">Link 2</a></li>\n  <li><a href=\"#\">Link 3</a></li>\n</ul></nav>\n```"
+            "It presents an opportunity for a break in a very long word, if needed for proper page display."
         ],
         "_ps": 3
     },
@@ -595,7 +594,7 @@
             "Inline elements can be nested inside inline elements.",
             "Block elements can be nested inside block elements.",
             "Inline elements can be nested inside block elements.",
-            "Block elements can be nested inside inline elements.\n`Steve Kruz Said: \"He will Win\"`"
+            "Block elements can be nested inside inline elements."
         ],
         "_ps": 3
     },
@@ -635,7 +634,7 @@
             "It has opening and closing tags but no child content.",
             "It display nothing on a website.",
             "It has no child content and no closing tag.",
-            "It has child content but no closing tag.\n[Reference (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element)\n`<script async src=\"myscript.js\"></script>`"
+            "It has child content but no closing tag.\n[Reference (MDN Web Docs)](https://developer.mozilla.org/en-US/docs/Glossary/Empty_element)"
         ],
         "_ps": 2
     },
@@ -645,7 +644,7 @@
             "It downloads the script from the server when resources allow.",
             "It runs the script after HTML parsing is complete.",
             "It runs the script when the script is ready.",
-            "It pauses the parsing of HTML code while the script runs.\n`<audio autoplay loop src=\"sound.mp3\" type=\"audio/mpeg\"></audio>`"
+            "It pauses the parsing of HTML code while the script runs."
         ],
         "_ps": 2
     },
@@ -665,7 +664,7 @@
             "There is only one `<head>` tag per page, while there may be many `<header>` tags.",
             "The `<head>` tag may contain CSS and Javascript links, while the `<header>` tag may contain headings and navigational links.",
             "all of these answers",
-            "The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content.\n`<script defer src=\"myscript.js\"></script>`"
+            "The `<head>` tag contains meta information, while the `<header>` tag contains navigation, logos, and other page identifying content."
         ],
         "_ps": 2
     },
@@ -675,7 +674,7 @@
             "It downloads the script from the server when resources allow.",
             "It runs the script after HTML parsing is complete.",
             "It runs the script when the script is ready.",
-            "It pauses the parsing of HTML code while the script runs.\n```html\n<table>\n  <tr>\n    Cell 1\n  </tr>\n  <td>Cell 2</td>\n  <caption>\n    A table\n  </caption>\n</table>\n```"
+            "It pauses the parsing of HTML code while the script runs."
         ],
         "_ps": 1
     },
@@ -685,7 +684,7 @@
             "A\n```HTML\n<caption>A table</caption>\n  <table>\n    <td>\n      <tr>Cell 1</tr>\n      <tr>Cell 2</tr>\n    </td>\n  </table>\n```",
             "B\n```HTML\n<caption>A table</caption>\n<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>\n```",
             "C\n```HTML\n<table>\n  <caption>A table</caption>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n</table>\n```",
-            "D\n```HTML\n<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n  <caption>A table</caption>\n</table>\n```\n![Image of footer](images/ss-7.png?raw=true)"
+            "D\n```HTML\n<table>\n  <tr>\n    <td>Cell 1</td>\n    <td>Cell 2</td>\n  </tr>\n  <caption>A table</caption>\n</table>\n```"
         ],
         "_ps": 2
     },
@@ -745,7 +744,7 @@
             "`<input type=\"color\">`",
             "`<input type=\"tel\">`",
             "`<input type=\"week\">`",
-            "`<input type=\"num\">`\n[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)\nAs Steve Krug once said, happy talk must die."
+            "`<input type=\"num\">`\n[Reference (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)"
         ],
         "_ps": 3
     },
@@ -765,7 +764,7 @@
             "A\n```markdown\n<p>\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"contact.html\">Contact</a>\n</p>\n```",
             "B\n```markdown\n<nav>\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"contact.html\">Contact</a>\n</nav>\n```",
             "C\n```markdown\n <nav>\n    <ol>\n      <li><a href=\"index.html\">Home</a></li>\n      <li><a href=\"about.html\">About</a></li>\n      <li><a href=\"contact.html\">Contact</a></li>\n     </ol>\n  </nav>\n```",
-            "D\n```markdown\n <nav>\n   <ul>\n     <li><a href=\"index.html\">Home</a></li>\n     <li><a href=\"about.html\">About</a></li>\n     <li><a href=\"contact.html\">Contact</a></li>\n    </ul>\n  </nav>\n```\n![Image of footer](images/ss-8.png?raw=true)"
+            "D\n```markdown\n <nav>\n   <ul>\n     <li><a href=\"index.html\">Home</a></li>\n     <li><a href=\"about.html\">About</a></li>\n     <li><a href=\"contact.html\">Contact</a></li>\n    </ul>\n  </nav>\n```"
         ],
         "_ps": 3
     },
@@ -795,7 +794,7 @@
             "It displays nothing on a website.",
             "It has opening and closing tags but no child content.",
             "It has child content but no closing tag.",
-            "It has no child content and no closing tag.\n```markdown\n<noscript>Sample Text</noscript>\n```"
+            "It has no child content and no closing tag."
         ],
         "_ps": 3
     },
@@ -805,7 +804,7 @@
             "when there is no JavaScript used on this webpage",
             "when JavaScript is not supported by the browser or if JavaScript is disabled in the browser",
             "when JavaScript is disabled in the web browser",
-            "when JavaScript is not supported by the web browser\n[Reference (MDN)](https://www.w3schools.com/tags/tag_noscript.asp)\n```markdown\n<details>\n  <h4>Mixed Berry Tart.</h4>\n  <p4>Raspberries, blueberries, and strawberries on top of a creamy filling served in a crispy tart.</p4>\n</details>\n```"
+            "when JavaScript is not supported by the web browser\n[Reference (MDN)](https://www.w3schools.com/tags/tag_noscript.asp)"
         ],
         "_ps": 1
     },
@@ -845,7 +844,7 @@
             "_readonly_ allows clicking in the `<textarea>` element. _disabled_ prevents all interaction with the control.",
             "_readonly_ is invalid attribute for `<textarea>`, while _disabled_ is a valid attribute.",
             "_disabled_ allows clicking in the `<textarea>` element. _readonly_ prevents all interaction with the control.",
-            "_disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute.\n[Source: readonly](https://www.w3schools.com/tags/att_readonly.asp)\n[Source: disabled](https://www.w3schools.com/tags/att_disabled.asp)\n`<a target=\"_blank\">...</a>`"
+            "_disabled_ is invalid attribute for `<textarea>`, while _readonly_ is a valid attribute.\n[Source: readonly](https://www.w3schools.com/tags/att_readonly.asp)\n[Source: disabled](https://www.w3schools.com/tags/att_disabled.asp)"
         ],
         "_ps": 0
     },
@@ -865,7 +864,7 @@
             "A\n```HTML\n<button submit=\"http://example.com/process\">\n  Process data\n</button>\n```",
             "B\n```HTML\n<button action=\"http://example.com/process\">\n  Process data\n</button>\n```",
             "C\n```HTML\n<button formaction=\"http://example.com/process\">\n  Process data\n</button>\n```",
-            "D\n```HTML\n<button method=\"http://example.com/process\">\n  Process data\n</button>\n```\n`formaction — The URL that processes the information submitted by the button. Overrides the action attribute of the button's form owner. Does nothing if there is no form owner.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-formaction)\n`x<y&z>w`"
+            "D\n```HTML\n<button method=\"http://example.com/process\">\n  Process data\n</button>\n```\n`formaction — The URL that processes the information submitted by the button. Overrides the action attribute of the button's form owner. Does nothing if there is no form owner.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button#attr-formaction)"
         ],
         "_ps": 2
     },
@@ -875,7 +874,7 @@
             "`<p>x<y&z>w</p>`",
             "`<p>x\\<y&z\\>w</p>`",
             "`<p>x<<y&&z>>w`",
-            "`<p>x<y&z>w</p>`\n`This question has an issue, however this answer will count as correct`\n`It's too strange question because all of that methods doesn't work. The good method is &amp, &lt, &gt using.`\n```HTML\n<label>Address:</label>\n<input type=\"text\" name=\"address\" id=\"address-input\" />\n```"
+            "`<p>x<y&z>w</p>`\n`This question has an issue, however this answer will count as correct`\n`It's too strange question because all of that methods doesn't work. The good method is &amp, &lt, &gt using.`"
         ],
         "_ps": 1
     },
@@ -935,7 +934,7 @@
             "A\n```HTML\n<li>\n<input>\n<option>\n```",
             "B\n```HTML\n<input>\n<option>\n<textarea>\n```",
             "C\n```HTML\n<button>\n<input>\n<form>\n```",
-            "D\n```HTML\n<input>\n<label>\n<meter>\n```\n`<img src=\"https://source.unsplash.com/random\">`"
+            "D\n```HTML\n<input>\n<label>\n<meter>\n```"
         ],
         "_ps": 0
     },
@@ -1045,7 +1044,7 @@
             "`<table><label>Heading</label>...</table>`",
             "`<table><title>Heading</title>...</table>`",
             "`<table><legend>Heading</legend>...</table>`",
-            "`<table><caption>Heading</caption>...</table>`\n`The <caption> HTML element specifies the caption (or title) of a table.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)\n```html\n<img\n  srcset=\"medium.jpg 320w, large.jpg 1280w\"\n  src=\"small.jpg\"\n  alt=\"Our favorite image\"\n  sizes=\"(min-width: 1200px) 640px, 100vw\"\n/>\n```"
+            "`<table><caption>Heading</caption>...</table>`\n`The <caption> HTML element specifies the caption (or title) of a table.` [Source](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)"
         ],
         "_ps": 3
     },
@@ -1065,7 +1064,7 @@
             "A\n```HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dd> Hardware used to provide data to other computers.</dd>\n  <!-- Other terms and descriptions -->\n</dl>\n```",
             "B\n```HTML\n<dt>\n  <dl>Server</dl>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dd> Hardware used to provide data to other computers.</dd>\n  <!-- Other terms and descriptions -->\n</dt>\n```",
             "C\n```HTML\n<dl>\n  <dt>Server</dt>\n  <dd>Software used to serve webpages, like Apache.</dd>\n  <dt> Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n```",
-            "D\n```HTML\n<dl>\n  <dd>Server</dd>\n  <dt>Software used to serve webpages, like Apache.</dt>\n  <dt> Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n```\n[Source 1](https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element)\n[Source 2](https://www.w3schools.com/tags/tag_dl.asp)\n```HTML\n<ul>\n  <h2>Espresso Drinks</h2>\n  <li>Espresso</li>\n  <li>Latte</li>\n  <li>Cappuccino</li>\n  <li>Mocha</li>\n</ul>\n```"
+            "D\n```HTML\n<dl>\n  <dd>Server</dd>\n  <dt>Software used to serve webpages, like Apache.</dt>\n  <dt> Hardware used to provide data to other computers.</dt>\n  <!-- Other terms and descriptions -->\n</dl>\n```\n[Source 1](https://html.spec.whatwg.org/multipage/grouping-content.html#the-dl-element)\n[Source 2](https://www.w3schools.com/tags/tag_dl.asp)"
         ],
         "_ps": 0
     },

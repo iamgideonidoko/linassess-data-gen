@@ -5,7 +5,7 @@
             "123456",
             "123",
             "456",
-            "This code contains an error.\n```\nNSString *str = nil;\nNSInteger i = str.integerValue;\n```"
+            "This code contains an error."
         ],
         "_ps": 0
     },
@@ -15,7 +15,7 @@
             "nil",
             "0 (technically `nil` == 0 but i will have a literal value of `0` and not the `void*` value of `nil`)",
             "-1",
-            "This code crashes.\n`NSString str = \"test\" + \" \" + \"more\";`"
+            "This code crashes."
         ],
         "_ps": 1
     },
@@ -25,7 +25,7 @@
             "This code contains an error",
             "test",
             "nil",
-            "test more\n```\n    NSPredicate *p2 = [NSPredicate predicateWithBlock:^BOOL(NSString*  evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {\n      return evaluatedObject.intValue % 2 == 0;\n    }];\n    NSArray *vals = @[@\"1\", @\"2\", @\"3\"];\n    NSArray *n2 = [vals filteredArrayUsingPredicate:p2];\n    NSLog(@\"%@\", n2.firstObject);\n```"
+            "test more"
         ],
         "_ps": 0
     },
@@ -55,7 +55,7 @@
             "NSMutableDictionary's values can change",
             "NSMutableDictionary has not initializers.",
             "NSDictionary can't be copied.",
-            "NSDictionary's values can change.\n`-(float)foo;`"
+            "NSDictionary's values can change."
         ],
         "_ps": 0
     },
@@ -65,7 +65,7 @@
             "A function with a return type of float.",
             "This code contains an error.",
             "A variable declaration of type float.",
-            "A property of type float.\n`#import \"NSString+NameHelper.h\"`"
+            "A property of type float."
         ],
         "_ps": 0
     },
@@ -75,7 +75,7 @@
             "NameHelper is a category of NSString.",
             "NameHelper is a subclass of NSString.",
             "NSString implements the NameHelper protocol.",
-            "NSString has a helper class.\n`float x = 5.;`"
+            "NSString has a helper class."
         ],
         "_ps": 0
     },
@@ -85,7 +85,7 @@
             "Nothing is wrong with this code.",
             "Declarations do not need semicolons.",
             "x=5 is an invalid float.",
-            "Variables can't be declared and initialized in the same state.\n```\nfor (int x=0; x<100; x++) {\n  x = x + 1;\n}\n```"
+            "Variables can't be declared and initialized in the same state."
         ],
         "_ps": 0
     },
@@ -95,7 +95,7 @@
             "50",
             "99",
             "100",
-            "This code contains an error.\n`[self addObserver: self forKeyPath: @\"val\" options:0 context: nil];`"
+            "This code contains an error."
         ],
         "_ps": 0
     },
@@ -115,7 +115,7 @@
             "Automatic Reference Counting",
             "Automatic Retain Checking",
             "Async Retain Cycles",
-            "Automatic Release Code\n```\nint val = 0;\nval = 1.5;\nprintf(\"%d\", val);\n```"
+            "Automatic Release Code"
         ],
         "_ps": 0
     },
@@ -135,7 +135,7 @@
             "single inheritance but multiple protocol implementation",
             "Objective-C doesn't support inheritance",
             "dual class inheritance",
-            "unlimited class inheritance and protocol adherence\n`NSDictionary *dict = [[NSDictionary alloc] initWithObjectsAndKeys: @\"b\", @\"e\", @\"a\", @\"r\", nil];`"
+            "unlimited class inheritance and protocol adherence"
         ],
         "_ps": 0
     },
@@ -145,7 +145,7 @@
             "2",
             "4",
             "5",
-            "This code contains an error.\n```\nNSMutableDictionary *dict1 = [NSMutableDictionary dictionaryWithCapacity:5];\n[dict1 setValue:@\"key\" forKey:@\"value\"];\n```"
+            "This code contains an error."
         ],
         "_ps": 0
     },
@@ -155,7 +155,7 @@
             "The key and value items are mixed",
             "Nothing is wrong with it",
             "You can't set the capacity of a dictionary",
-            "NSMutableDictionary doesn't have a :setValue:forKey function.\n```\nNSData *data = [@\"print\" dataUsingEncoding:NSASCIIStringEncoding];\nNSLog(@\"%@\", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);\n```"
+            "NSMutableDictionary doesn't have a :setValue:forKey function."
         ],
         "_ps": 1
     },
@@ -165,7 +165,7 @@
             "print",
             "This code is invalid",
             "Nothing is printed from this code.",
-            "nil\n`+(void)doSomething;`"
+            "nil"
         ],
         "_ps": 0
     },
@@ -185,7 +185,7 @@
             "functions",
             "initializers",
             "fields",
-            "all of these answers\n```\n@interface MyClass : NSObject\n    @property (strong, nonatomic, readonly) NSString *name;\n  @end\n```"
+            "all of these answers"
         ],
         "_ps": 2
     },
@@ -195,7 +195,7 @@
             "There is nothing wrong with this code.",
             "There is not read-only directive.",
             "MyClass doesn't implement NSObject.",
-            "Properties are declared in the implementation.\n`typedef enum { Foo1, Foo2} Foo;`"
+            "Properties are declared in the implementation."
         ],
         "_ps": 0
     },
@@ -225,7 +225,7 @@
             "to extend other classes",
             "to manage access control",
             "to coordinate objects",
-            "to group classes\n```\nif ([keyPath isInstanceOf:[NSString class]]) {\n}\n```"
+            "to group classes"
         ],
         "_ps": 0
     },
@@ -235,7 +235,7 @@
             "This code contains an error",
             "if keyPath is an instance of NSString",
             "if keyPath's baseclass is the same as NSString's baseclass",
-            "if keyPath implements the same methods as NSString\n`int(^foo)(int);`"
+            "if keyPath implements the same methods as NSString"
         ],
         "_ps": 0
     },
@@ -245,7 +245,7 @@
             "an Extension",
             "a Generic",
             "a block of code",
-            "an abstract class\n```\n1. _val = 1;\n2. self.val= 100;\n```"
+            "an abstract class"
         ],
         "_ps": 2
     },
@@ -255,7 +255,7 @@
             "Statement 2, since it calls the auto-created setter on the property.",
             "Statement 1, since it uses the property directly.",
             "Statement 2, since it specifies the class instance to use.",
-            "Statement 1, since it calls the auto-created setter on the property.\n```\nfloat x = 2.0;\nint(^foo)(int) = ^(int n1) {\n  return (int)(n1*x);\n};\nfoo(5);\n```"
+            "Statement 1, since it calls the auto-created setter on the property."
         ],
         "_ps": 0
     },
@@ -285,7 +285,7 @@
             "nothing, as they're never used in Objective-C",
             "function calls only",
             "property getter/setter",
-            "parameter delimiters\n```\n    NSArray *vals = @[@\"1\", @\"2\", @\"3\"];\n    NSPredicate *pred = [NSPredicate predicateWithFormat:@\"SELF.intValue > 1\"];\n    NSArray *newVals = [vals filteredArrayUsingPredicate:pred];\n```"
+            "parameter delimiters"
         ],
         "_ps": 2
     },
@@ -295,7 +295,7 @@
             "2,3",
             "nil",
             "This code contains an error",
-            "2,\"3\"\n`-(int)foo:(int)a b:(int)c;`"
+            "2,\"3\""
         ],
         "_ps": 0
     },
@@ -305,7 +305,7 @@
             "self.foo(5, b:10);",
             "This code contains an error.",
             "[self foo:5:10:20];",
-            "[self foo:5 b:10];\n```\n    NSError *error;\n    NSData *data;\n    id json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];\n```"
+            "[self foo:5 b:10];"
         ],
         "_ps": 3
     },
@@ -315,7 +315,7 @@
             "NSString",
             "NSArray",
             "id",
-            "NSDictionary\n```\n    -(void)testFunc:(NSString**)str;\n```"
+            "NSDictionary"
         ],
         "_ps": -1
     },
@@ -325,7 +325,7 @@
             "The parameter is passed by value and can not be changed",
             "\\*\\* is not allowed on a parameter",
             "The parameter may be nil",
-            "The parameter is passed by reference and may be changed\n```\n    typedef enum {\n        thing1,\n        thing2,\n        thing3\n    } Thing;\n    -(void) enumStuff {\n        NSLog(@\"%d\", thing2);\n    }\n```"
+            "The parameter is passed by reference and may be changed"
         ],
         "_ps": 3
     },
@@ -345,7 +345,7 @@
             "non-atomic",
             "strong",
             "weak",
-            "atomic\n```\nint temp = 1==1;\n```"
+            "atomic"
         ],
         "_ps": 3
     },
@@ -355,7 +355,7 @@
             "`temp` is a keyword.",
             "1==1 is invalid.",
             "1==1 evaluates to a Boolean.",
-            "Nothing is wrong with it.\n```\ndispatch_async(dispatch_get_main_queue(), ^{\n// code\n});\n```"
+            "Nothing is wrong with it."
         ],
         "_ps": 3
     },
@@ -365,7 +365,7 @@
             "It executes on the main queue.",
             "It is the last code to run before the app goes inactive.",
             "It executes on a background thread.",
-            "It is queued to execute in the background.\n```\nNSMutableSet *set1 = [NSMutableSet setWithObjects: @1,@2, @3, @4, @5, nil];\n[set1 add0bject:@3];\n```"
+            "It is queued to execute in the background."
         ],
         "_ps": 0
     },
@@ -375,7 +375,7 @@
             "zero",
             "six",
             "one",
-            "five\n```\nNSDictionary *d1 = @[@\"v1\", @4, @\"v2\", @5.6, @\"v3\"];\nNSlog(@\"d1: %@\", d1);\n```"
+            "five"
         ],
         "_ps": 3
     },
@@ -385,7 +385,7 @@
             "NSDictionary cannot be printed this way.",
             "The last key is missing a value.",
             "Dictionaries cannot have mixed types as values.",
-            "d1 is assigned an NSArray of values.\n```\n@property (nonatomic, readonly) int val;\n```"
+            "d1 is assigned an NSArray of values."
         ],
         "_ps": 1
     },

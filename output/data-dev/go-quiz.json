@@ -25,7 +25,7 @@
             "`do { ... } while i < 5`",
             "`for _,c := range \"hello\" { ... }`",
             "`for i := 1; i < 5; i++ { ... }`",
-            "`for i < 5 { ... }`\nExplanation: Go has only `for`-loops\n`values := []int{1, 1, 2}`"
+            "`for i < 5 { ... }`\nExplanation: Go has only `for`-loops"
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "`values.append(3)`",
             "`values.insert(3, 3)`",
             "`append(values, 3)`",
-            "`values = append(values, 3)`\nExplanation: slices in GO are immutable, so calling `append` does not modify the slice\n```go\nconst (\n  Write = iota\n  Read\n  Execute\n)\n```"
+            "`values = append(values, 3)`\nExplanation: slices in GO are immutable, so calling `append` does not modify the slice"
         ],
         "_ps": 3
     },
@@ -55,7 +55,7 @@
             "`import \"github/gin-gonic/gin\"`",
             "`import \"https://github.com/gin-gonic/gin\"`",
             "`import \"../template\"`",
-            "`import \"github.com/gin-gonic/gin\"`\n[Import in GoLang](https://golangdocs.com/import-in-golang)\n```go\npackage main\nvar GlobalFlag string\nfunc main() {\n  print(\"[\"+GlobalFlag+\"]\")\n}\n```"
+            "`import \"github.com/gin-gonic/gin\"`\n[Import in GoLang](https://golangdocs.com/import-in-golang)"
         ],
         "_ps": 3
     },
@@ -85,7 +85,7 @@
             "`go test`",
             "`go test -x`",
             "`go test --verbose`",
-            "`go test -v`\n[test package](https://pkg.go.dev/cmd/go/internal/test)\n```go\ntype Point struct {\n  x int\n  y int\n}\nfunc main() {\n  data := []byte(`{\"x\":1, \"y\": 2}`)\n  var p Point\n  if err := json.Unmarshal(data, &p); err != nil {\n    fmt.Println(\"error: \", err)\n  } else {\n    fmt.Println(p)\n  }\n}\n```"
+            "`go test -v`\n[test package](https://pkg.go.dev/cmd/go/internal/test)"
         ],
         "_ps": 3
     },
@@ -135,7 +135,7 @@
             "executing a function concurrently",
             "executing a different case based on the type of a variable",
             "executing a different case based on the value of a variable",
-            "executing a different case based on which channel returns first\n```go\nfunc Add(a, b int) {\n  return a + b\n}\n```"
+            "executing a different case based on which channel returns first"
         ],
         "_ps": 3
     },
@@ -175,7 +175,7 @@
             "Check runtime.GOOS.",
             "Add a // +build windows comment anywhere in the file.",
             "Add a \\_ prefix to the file name.",
-            "Add a // +build windows comment at the top of the file.\n[How to use conditional compilation with the go build tool, Oct 2013](https://dave.cheney.net/2013/10/12/how-to-use-conditional-compilation-with-the-go-build-tool)\n```go\ndata := \"A group of Owls is called a parliament\"\n```"
+            "Add a // +build windows comment at the top of the file.\n[How to use conditional compilation with the go build tool, Oct 2013](https://dave.cheney.net/2013/10/12/how-to-use-conditional-compilation-with-the-go-build-tool)"
         ],
         "_ps": 3
     },
@@ -345,7 +345,7 @@
             "any that starts with `test`",
             "any files that include the word `test`",
             "only files in the root directory that end in `_test.go`",
-            "any that ends in `_test.go`\n```\nch := make(chan int)\nch <- 7\nval := <-ch\nfmt.Println(val)\n```"
+            "any that ends in `_test.go`"
         ],
         "_ps": 3
     },
@@ -355,7 +355,7 @@
             "0",
             "It will deadlock",
             "It will not compile",
-            "2.718\n```\nch := make(chan int)\nclose(ch)\nval := <-ch\nfmt.Println(val)\n```"
+            "2.718"
         ],
         "_ps": 1
     },
@@ -365,7 +365,7 @@
             "It will deadlock",
             "It will panic",
             "0",
-            "NaN\n```\nvar stocks map[string]float64 // stock -> price\nprice := stocks[\"MSFT\"]\nfmt.Println(\"%f\\n\", price)\n```"
+            "NaN"
         ],
         "_ps": 2
     },

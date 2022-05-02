@@ -55,7 +55,7 @@
             "top",
             "opacity",
             "width",
-            "height\n```javascript\nlet pocket = ['turnip', 'stone', 'log', 'apple'];\nlet selected = pocket[1];\n```"
+            "height"
         ],
         "_ps": 1
     },
@@ -75,7 +75,7 @@
             "It sets one variable equal to another in both value and type",
             "It tests for equality of type only",
             "It tests for equality of value only",
-            "It tests for equality of value and type\n```javascript\nlet fruit = 'apple';\n```"
+            "It tests for equality of value and type"
         ],
         "_ps": 3
     },
@@ -105,7 +105,7 @@
             "The page will not display",
             "An error message will be displayed",
             "The browser will not load the stylesheet",
-            "The browser will ignore the unknown CSS\n```css\nh1 {\n  color: red;\n  font-size: 5em;\n}\n```"
+            "The browser will ignore the unknown CSS"
         ],
         "_ps": 3
     },
@@ -115,7 +115,7 @@
             "selector",
             "combinator",
             "declarator",
-            "markup\n```css\n.highlight {\n  background-color: yellow;\n}\n```"
+            "markup"
         ],
         "_ps": 0
     },
@@ -215,7 +215,7 @@
             "sharing JavaScript code with other people",
             "making JavaScript-reliant sites accessible to users who do not have JavaScript turned on",
             "bundling individual JavaScript files for use in your website",
-            "source control\n```css\n.container {\n  width: 600px;\n  column-width: 200px;\n  column-gap: 50px;\n}\n```"
+            "source control"
         ],
         "_ps": 2
     },
@@ -225,7 +225,7 @@
             "one",
             "three",
             "four",
-            "two\n![A](images/Q24.png)\n```html\n<cite>Noam Chomsky</cite>\n```"
+            "two"
         ],
         "_ps": 3
     },
@@ -235,7 +235,7 @@
             "A\n```css\ncite {\n  text-color: cyan;\n}\n```",
             "B\n```css\ncite {\n  font-color: cyan;\n}\n```",
             "C\n```css\ncite {\n  color: cyan;\n}\n```",
-            "D\n```css\ncite {\n  text: cyan;\n}\n```\n```css\n.cf::after {\n  content: '';\n  display: block;\n  clear: both;\n}\n```"
+            "D\n```css\ncite {\n  text: cyan;\n}\n```"
         ],
         "_ps": 2
     },
@@ -285,7 +285,7 @@
             "The webapge is using a DOCTYPE, which renders it incapable of displayed video in addition to other web content.",
             "Your browser does not support HTML5 video.",
             "The video is from a source that cannot be displayed in your location for legal reasons.",
-            "The page is loaded via HTTPS, but the video is being served insecurely as HTTP and the browser is blocking it.\n          let max = 3;\n          for (i = 0; i > max; i++) {\n            document.write(\"skrt \");\n          }"
+            "The page is loaded via HTTPS, but the video is being served insecurely as HTTP and the browser is blocking it."
         ],
         "_ps": 3
     },
@@ -335,7 +335,7 @@
             "performance",
             "UX design",
             "accessibility",
-            "SEO\n```\nconst user = {\n  given_name: 'Joe',\n  family_name: 'Bloggs',\n  age: 40,\n}\n```"
+            "SEO"
         ],
         "_ps": 1
     },
@@ -345,7 +345,7 @@
             "function",
             "array",
             "variable",
-            "object\n```\n<link rel=\"preconnect\" href=\"https://example.com\">\n```"
+            "object"
         ],
         "_ps": 3
     },
@@ -415,7 +415,7 @@
             "ul, li, a",
             "p, b, h3",
             "div, p, em",
-            "div, main, h1\n```javascript\nvar currencies = ['Bitcoin', 'Ethereum'];\n/* Missing line */\nconsole.log(currencies);\n```"
+            "div, main, h1"
         ],
         "_ps": 3
     },
@@ -425,7 +425,7 @@
             "`currencies.push(\"Cosmos\");`",
             "`Array.append(\"Cosmos\", currencies);`",
             "`currencies.add(\"Cosmos\");`",
-            "`currencies(2) = \"Cosmos\";`\n```javascript\n<input type=\"radio\" value=\"strawberry\">Strawberry\n<input type=\"radio\" value=\"vanilla\">Vanilla\n<input type=\"radio\" value=\"chocolate\">Chocolate\n```"
+            "`currencies(2) = \"Cosmos\";`"
         ],
         "_ps": 0
     },
@@ -465,7 +465,7 @@
             "every()",
             "map()",
             "forEach()",
-            "filter()\n![CSS clear](images/Q48.png?raw=true)"
+            "filter()"
         ],
         "_ps": 3
     },
@@ -495,7 +495,7 @@
             "`<nav>`",
             "`<navigation>`",
             "`<main>`",
-            "`<ul>`\n[Source: W3Schools](https://www.w3schools.com/tags/tag_nav.asp)\n`<link rel=\"preload\" href=\"styles.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\"><noscript><link rel=\"stylesheet\" href=\"style.css\"></noscript>`"
+            "`<ul>`\n[Source: W3Schools](https://www.w3schools.com/tags/tag_nav.asp)"
         ],
         "_ps": 0
     },
@@ -605,7 +605,7 @@
             "The screen reader will not notify the user of changes to live regions.",
             "The screen reader will wait until there is a pause to announce changes.",
             "The screen reader will announce all changes immediately.",
-            "The screen reader will use a polite voice when announcing changes.\n[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live)\n```css\n.box {\n  background-color: blue;\n  background: url(images/star.png) no-repeat left top;\n}\n```"
+            "The screen reader will use a polite voice when announcing changes.\n[Source: MDN Docs](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-live)"
         ],
         "_ps": 1
     },
@@ -625,7 +625,7 @@
             "`list-tem: none`",
             "`bullets: hidden`",
             "`list-style-type: none`",
-            "`list-bullet: none`\n```hmtl\n<div class=\"container\">\n    <div class=\"box\">what a lovely box, very centered\n    </div>\n</div>\n```"
+            "`list-bullet: none`"
         ],
         "_ps": 2
     },
@@ -675,7 +675,7 @@
             "Set `object-fit: contain` on the images.",
             "Set `max-width: 100%` on the images.",
             "Set `width: 100%` on the images.",
-            "Set `resize: true` on the images.\n```css\nbox {\n  width: 200px;\n  padding: 10px;\n  margin: 0 15px;\n  border: 2px 5px;\n}\n```"
+            "Set `resize: true` on the images."
         ],
         "_ps": 1
     },

@@ -15,7 +15,7 @@
             "Wrap it in the `React.memo` higher-order component.",
             "Implement the `useReducer` Hook.",
             "Implement the `useMemo` Hook.",
-            "Implement the `shouldComponentUpdate` lifecycle method.\n```javascript\nconst person =(firstName, lastName) =>\n{\n  first: firstName,\n  last: lastName\n}\nconsole.log(person(\"Jill\", \"Wilson\"))\n```"
+            "Implement the `shouldComponentUpdate` lifecycle method."
         ],
         "_ps": 0
     },
@@ -25,7 +25,7 @@
             "Wrap the object in parentheses.",
             "Call the function from another file.",
             "Add a return statement before the first curly brace.",
-            "Replace the object with an array.\n`import React, {useState} from 'react';`"
+            "Replace the object with an array."
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "React Hooks",
             "stateful components",
             "math",
-            "class components\n```javascript\nconst name = 'Rachel';\nconst age = 31;\nconst person = { name, age };\nconsole.log(person);\n```"
+            "class components"
         ],
         "_ps": 0
     },
@@ -55,7 +55,7 @@
             "Mocha",
             "Chai",
             "Sinon",
-            "Jest\n```javascript\nconst topics = ['cooking', 'art', 'history'];\n```"
+            "Jest"
         ],
         "_ps": 3
     },
@@ -75,7 +75,7 @@
             "React Send",
             "React Pinpoint",
             "React Router",
-            "React Context\n```javascript\nconst [, , animal] = ['Horse', 'Mouse', 'Cat'];\nconsole.log(animal);\n```"
+            "React Context"
         ],
         "_ps": 3
     },
@@ -105,7 +105,7 @@
             "when you want to replace Redux",
             "when you need to manage more complex state in an app",
             "when you want to improve performance",
-            "when you want to break your production app\n```javascript\n<Message {...props} />\n```"
+            "when you want to break your production app"
         ],
         "_ps": 1
     },
@@ -115,7 +115,7 @@
             "any that have not changed",
             "all of them",
             "child props",
-            "any that have changed\n```javascript\n<Route path=\"/:id\" />\n```"
+            "any that have changed"
         ],
         "_ps": 1
     },
@@ -125,7 +125,7 @@
             "This is a route modal",
             "This is a route parameter",
             "This is a route splitter",
-            "This is a route link\n```javascript\nfunction Dish() {\n  return <h1>Mac and Cheese</h1>;\n}\nReactDOM.render(<Dish />, document.getElementById('root'));\n```"
+            "This is a route link"
         ],
         "_ps": 1
     },
@@ -135,7 +135,7 @@
             "`div`",
             "section",
             "component",
-            "`h1`\n```javascript\nReact.createElement('h1', null, \"What's happening?\");\n```"
+            "`h1`"
         ],
         "_ps": 3
     },
@@ -145,7 +145,7 @@
             "`<h1 props={null}>What's happening?</h1>`",
             "`<h1>What's happening?</h1>`",
             "`<h1 id=\"component\">What's happening?</h1>`",
-            "`<h1 id=\"element\">What's happening?</h1>`\n```javascript\nfunction MyComponent() {\n  return (\n    <Suspense>\n      <div>\n        <Message />\n      </div>\n    </Suspense>\n  );\n}\n```"
+            "`<h1 id=\"element\">What's happening?</h1>`"
         ],
         "_ps": 1
     },
@@ -155,7 +155,7 @@
             "lazy",
             "loading",
             "fallback",
-            "spinner\n```javascript\nconst message = 'Hi there';\nconst element = <p>{message}</p>;\n```"
+            "spinner"
         ],
         "_ps": 2
     },
@@ -185,7 +185,7 @@
             "to optimize for all devices",
             "to complete the update",
             "to change the layout of the screen",
-            "when you need the browser to paint before the effect runs\n```javascript\nA. <button onClick={this.handleClick}>Click Me</button>\nB. <button onClick={event => this.handleClick(event)}>Click Me</button>\n```"
+            "when you need the browser to paint before the effect runs"
         ],
         "_ps": 3
     },
@@ -195,7 +195,7 @@
             "Button A will not have access to the event object on click of the button.",
             "Button B will not fire the handler this.handleClick successfully.",
             "Button A will not fire the handler this.handleClick successfully.",
-            "There is no difference.\n```javascript\nfunction Dish(props) {\n  return (\n    <h1>\n      {props.name} {props.cookingTime}\n    </h1>\n  );\n}\n```"
+            "There is no difference."
         ],
         "_ps": 3
     },
@@ -275,7 +275,7 @@
             "virtual DOM",
             "DOM",
             "virtual elements",
-            "shadow DOM\n```javascript\nconst Heading = () => {\n  <h1>Hello!</h1>;\n};\n```"
+            "shadow DOM"
         ],
         "_ps": 0
     },
@@ -345,7 +345,7 @@
             "to directly access the DOM node",
             "to refer to another JS file",
             "to call a function",
-            "to bind the function\n```javascript\nhandleChange(e) {\n  this.setState({ [e.target.id]: e.target.value })\n}\n```"
+            "to bind the function"
         ],
         "_ps": 0
     },
@@ -355,7 +355,7 @@
             "a computed property name",
             "a set value",
             "a dynamic key",
-            "a JSX code string\n```javascript\nclass Clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n```"
+            "a JSX code string"
         ],
         "_ps": 2
     },
@@ -405,7 +405,7 @@
             "Use the `value` property.",
             "Use the `defaultValue` property.",
             "Use the `default` property.",
-            "It assigns one automatically.\n```js\nclass clock extends React.Component {\n  render() {\n    return <h1>Look at the time: {this.props.time}</h1>;\n  }\n}\n```"
+            "It assigns one automatically."
         ],
         "_ps": 1
     },
@@ -435,7 +435,7 @@
             "`React.fallback`",
             "`React.split`",
             "`React.lazy`",
-            "`React.memo`\n```javascript\nfunction MyComponent(props) {\n  const [done, setDone] = useState(false);\n  return <h1>Done: {done}</h1>;\n}\n```"
+            "`React.memo`"
         ],
         "_ps": 2
     },
@@ -445,7 +445,7 @@
             "`useEffect(() => { setDone(true); });`",
             "`useEffect(() => { setDone(true); }, []);`",
             "`useEffect(() => { setDone(true); }, [setDone]);`",
-            "`useEffect(() => { setDone(true); }, [done, setDone]);`\n```javascript\nclass Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n  render() {\n    let name = \"kitteh\";\n    let button = // Missing Code\n    return button;\n  }\n}\n```"
+            "`useEffect(() => { setDone(true); }, [done, setDone]);`"
         ],
         "_ps": 1
     },
@@ -455,7 +455,7 @@
             "`<button onClick={(name) => this.hug(name)}>Hug Button</button>`",
             "`<button onClick={this.hug(e, name)}>Hug Button</button>`",
             "`<button onClick={(e) => hug(e, name)}>Hug Button</button>`",
-            "`<button onClick={(e) => this.hug(name,e)}>Hug Button</button>`\n```javascript\n<button onClick={this.handleClick()}>Click this</button>\n```"
+            "`<button onClick={(e) => this.hug(name,e)}>Hug Button</button>`"
         ],
         "_ps": 3
     },
@@ -485,7 +485,7 @@
             "FetchJS",
             "ReactDOM",
             "No library. `fetch()` is supported by most browsers.",
-            "React\n```javascript\nuseEffect(() => {\n  setName('John');\n}, [name]);\n```"
+            "React"
         ],
         "_ps": 2
     },
@@ -505,7 +505,7 @@
             "if the component calls `this.setState(...)`",
             "the value of one of the component's props changes",
             "if the component calls `this.forceUpdate()`",
-            "one of the component's siblings rerenders\n```javascript\nclass Button extends React.Component{\n  constructor(props) {\n    super(props);\n    // Missing line\n  }\n  handleClick() {...}\n}\n```"
+            "one of the component's siblings rerenders"
         ],
         "_ps": 3
     },
@@ -515,7 +515,7 @@
             "`this.handleClick.bind(this);`",
             "`props.bind(handleClick);`",
             "`this.handleClick.bind();`",
-            "`this.handleClick = this.handleClick.bind(this);`\n```javascript\n<React.Fragment>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</React.Fragment>\n```"
+            "`this.handleClick = this.handleClick.bind(this);`"
         ],
         "_ps": 3
     },
@@ -525,7 +525,7 @@
             "A\n```javascript\n<...>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</...>\n```",
             "B\n```javascript\n<//>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n<///>\n```",
             "C\n```javascript\n<>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</>\n```",
-            "D\n```javascript\n<Frag>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</Frag>\n```\n```javascript\nclass Ticker extends React.component {\n  constructor(props) {\n    super(props);\n    this.state = { count: 0 };\n  }\n  render() {\n    return <h1>{}</h1>;\n  }\n}\n```"
+            "D\n```javascript\n<Frag>\n  <h1>Our Staff</h1>\n  <p>Our staff is available 9-5 to answer your questions</p>\n</Frag>\n```"
         ],
         "_ps": 2
     },
@@ -535,7 +535,7 @@
             "this.state.count",
             "count",
             "state",
-            "state.count\n```javascript\nconst greeting = isLoggedIn ? <Hello /> : null;\n```"
+            "state.count"
         ],
         "_ps": 0
     },
@@ -545,7 +545,7 @@
             "never",
             "when `isLoggedIn` is true",
             "when a user logs in",
-            "when the Hello function is called\n```javascript\nReactDOM.render(<Message orderNumber=\"16\" />, document.getElementById('root'));\n```"
+            "when the Hello function is called"
         ],
         "_ps": 1
     },
@@ -555,7 +555,7 @@
             "string",
             "boolean",
             "object",
-            "number\n```javascript\nconst element = <h1 style={ backgroundColor: \"blue\" }>Hi</h1>;\n```"
+            "number"
         ],
         "_ps": 0
     },
@@ -575,7 +575,7 @@
             "`replaceState`",
             "`refreshState`",
             "`updateState`",
-            "`setState`\n```javascript\nconst Star = ({ selected = false }) => <Icon color={selected ? 'red' : 'grey'} />;\n```"
+            "`setState`"
         ],
         "_ps": 3
     },
@@ -595,7 +595,7 @@
             "`FetchJS`",
             "`ReactDOM`",
             "`No library. fetch() is supported by most browsers.`",
-            "`React`\n```javascript\n  A. <button onClick=this.handleClick>Click Me</button>\n  B. <button onClick={event => this.handleClick(event)}>Click Me</button>\n```"
+            "`React`"
         ],
         "_ps": 2
     },
@@ -605,7 +605,7 @@
             "`Button A will not have access to the event object on click of the button`",
             "`Button A will not fire the handler this.handleClick successfully`",
             "`There is no difference`",
-            "`Button B will not fire the handler this.handleClick successfully`\n```javascript\nuseEffect(() => {\n  setName('John');\n}, [name]);\n```"
+            "`Button B will not fire the handler this.handleClick successfully`"
         ],
         "_ps": 1
     },
@@ -615,7 +615,7 @@
             "`It will cause an error immediately.`",
             "`It will execute the code inside the function, but only after waiting to ensure that no other component is accessing the name variable.`",
             "`It will update the value of name once and not run again until name is changed from the outside.`",
-            "`It will cause an infinite loop.`\n```javascript\n<Route path=\"/:id\" />\n```"
+            "`It will cause an infinite loop.`"
         ],
         "_ps": 2
     },
@@ -625,7 +625,7 @@
             "A\n```javascript\n<Route path=\"/:id\">\n  {' '}\n  <About />\n</Route>\n```",
             "B\n```javascript\n<Route path=\"/tid\" about={Component} />\n```",
             "C\n```javascript\n<Route path=\"/:id\" route={About} />\n```",
-            "D\n```javascript\n<Route>\n  <About path=\"/:id\" />\n</Route>\n```\n```javascript\nconst Greeting ({ name }) > <h1>Hello {name}!</h1>;\n```"
+            "D\n```javascript\n<Route>\n  <About path=\"/:id\" />\n</Route>\n```"
         ],
         "_ps": 0
     },
@@ -635,7 +635,7 @@
             "A\n```javascript\nclass Greeting extends React.Component {\n  constructor() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\n```",
             "B\n```javascript\nclass Greeting extends React.Component {\n  <h1>Hello {this.props.name}!</h1>;\n}\n```",
             "C\n```javascript\nclass Greeting extends React.Component {\n  render() {\n    return <h1>Hello {this.props.name}!</h1>;\n  }\n}\n```",
-            "D\n```javascript\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}\n```\n```javascript\nReactDOM.render(\n  <h1>Hi<h1>,\n    document.getElementById('root')\n)\n```"
+            "D\n```javascript\nclass Greeting extends React.Component {\n  render({ name }) {\n    return <h1>Hello {name}!</h1>;\n  }\n}\n```"
         ],
         "_ps": 2
     },
@@ -655,7 +655,7 @@
             "The link component allows the user to use the browser's `Back` button.",
             "There is no difference--the `Link` component is just another name for the `<a>` tag.",
             "The `<a>` tag will cause an error when used in React.",
-            "The `<a>` tag triggers a full page reload, while the `Link` component does not.\n```javascript\nReact.createElement(x, y, z);\n```"
+            "The `<a>` tag triggers a full page reload, while the `Link` component does not."
         ],
         "_ps": 3
     },
@@ -665,7 +665,7 @@
             "the element that should be created",
             "the order in which this element should be placed on the page",
             "the properties of the element",
-            "data that should be displayed in the element\n```javascript\nuseEffect(() => {\n  // do things\n}, []);\n```"
+            "data that should be displayed in the element"
         ],
         "_ps": 0
     },
@@ -675,7 +675,7 @@
             "componentWillUnmount",
             "componentDidMount",
             "render",
-            "componentDidUpdate\n```javascript\nReactDOM.render(<h1>Hi</h1>, document.getElementById('root'));\n```"
+            "componentDidUpdate"
         ],
         "_ps": 1
     },
@@ -685,7 +685,7 @@
             "where the React element should be added to the DOM",
             "where to call the function",
             "where the root component is",
-            "where to create a new JavaScript file\n`React.createElement(x,y,z);`"
+            "where to create a new JavaScript file"
         ],
         "_ps": 0
     },
@@ -695,7 +695,7 @@
             "the element that should be created",
             "the order in which this element should be placed on the page",
             "the properties of the element",
-            "data that should be displayed in the element.\n```javascript\nclass Comp extends React.Component {\n  render() {\n    return <h1>Look at the time: {time}</h1>;\n  }\n}\n```"
+            "data that should be displayed in the element."
         ],
         "_ps": 0
     },
@@ -705,7 +705,7 @@
             "Comp",
             "h1",
             "React.Component",
-            "Component\nThis question might be an updated version of Q37.\n```javascript\nReactDOM.createPortal(x, y);\n```"
+            "Component\nThis question might be an updated version of Q37."
         ],
         "_ps": 0
     },
@@ -715,7 +715,7 @@
             "the current state",
             "the element to render",
             "the App component",
-            "the page\n**Explanation:**\nFrom official docs: [Portals](https://reactjs.org/docs/portals.html)\n```javascript\nconst [count, setCount] = useState(0);\n```"
+            "the page\n**Explanation:**\nFrom official docs: [Portals](https://reactjs.org/docs/portals.html)"
         ],
         "_ps": 1
     },
@@ -725,7 +725,7 @@
             "the initial state value",
             "a variable",
             "a state object",
-            "a function to update the state\n**Reference:**\nFrom official docs: [Hooks-State](https://reactjs.org/docs/hooks-state.html#:~:text=If%20we%20want%20to%20update%20the%20current)\n```javascript\nconst database = [user1:{},user2:{},user3:{}];\ndatabase.map((user)=><h1>user.data</h1>);\n```"
+            "a function to update the state\n**Reference:**\nFrom official docs: [Hooks-State](https://reactjs.org/docs/hooks-state.html#:~:text=If%20we%20want%20to%20update%20the%20current)"
         ],
         "_ps": 3
     },
@@ -735,7 +735,7 @@
             "gives a map of all the entries in database",
             "returns a heading tag for every entry in the database containing it's data",
             "returns one heading tag for all the entries in database",
-            "checks which entry in the database is suitable for heading tag\n```javascript\nconst { name: firstName } = person;\n```"
+            "checks which entry in the database is suitable for heading tag"
         ],
         "_ps": 1
     },
@@ -745,7 +745,7 @@
             "It is creating a new object that contains the same name property as the person object.",
             "It is assigning the value of the person object's firstName property to a constant called name.",
             "It is retrieving the value of person.name.firstName.",
-            "It is assigning the value of the person object's name property to a constant called firstName.\n```javascript\nconst MyComponent = ({ names }) => (\n  <h1>Hello</h1>\n  <p>Hello again</p>\n);\n```"
+            "It is assigning the value of the person object's name property to a constant called firstName."
         ],
         "_ps": 3
     },
@@ -755,7 +755,7 @@
             "React components cannot be defined using functions.",
             "React does not allow components to return more than one element.",
             "The component needs to use the return keyword.",
-            "String literals must be surrounded by quotes.\n```javascript\nReactDOM.createPortal(x, y);\n```"
+            "String literals must be surrounded by quotes."
         ],
         "_ps": 1
     },
@@ -765,7 +765,7 @@
             "the App component",
             "the page",
             "the current state",
-            "the DOM element that exists outside of the parent component\n```javascript\nconst MyComponent = ({ children }) => (\n  <h1>{children.length}</h1>\n);\n...\n<MyComponent>\n<p>Hello</p>\n<p>Goodbye</p>\n</MyComponent>\n```"
+            "the DOM element that exists outside of the parent component"
         ],
         "_ps": 3
     },
@@ -775,7 +775,7 @@
             "It will produce an error saying \"cannot read property \"length\" of undefined.\"",
             "1",
             "undefined",
-            "2\n```javascript\nconst [count, setCount] = useState(0);\n```"
+            "2"
         ],
         "_ps": 3
     },
@@ -795,7 +795,7 @@
             "src/App.js",
             "src/index.js",
             "public/manifest.json",
-            "public/index.html\n```javascript\nimport React from 'react';\nimport { render } from 'react-dom';\nconst element = <h1>Hi</h1>;\nReactDOM.render(element, document.getElementById('root'));\n```"
+            "public/index.html"
         ],
         "_ps": 3
     },
@@ -805,7 +805,7 @@
             "`render(element, document.getElementById(\"root\"));`",
             "`ReactDOM(element, document.getElementById(\"root\"));`",
             "`renderDOM(element, document.getElementById(\"root\"));`",
-            "`DOM(element, document.getElementById(\"root\"));`\n```javascript\nrender() {\n  const isLoggedIn = this.state.isLoggedIn;\n  return (\n    <div>\n      The user is:\n    </div>\n  );\n}\n```"
+            "`DOM(element, document.getElementById(\"root\"));`"
         ],
         "_ps": 0
     },
@@ -835,7 +835,7 @@
             "npm create-react-app collect-underpants",
             "npx start-app collect-underpants",
             "react new collect-underpants",
-            "npx create-react-app collect-underpants\n[Source: React Docs](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)\n```javascript\nclass StarTrekkin extends React.Component {\n  firePhotonTorpedoes(e) {\n    console.log('pew pew');\n  }\n  render() {\n    return; // Missing code\n  }\n}\n```"
+            "npx create-react-app collect-underpants\n[Source: React Docs](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)"
         ],
         "_ps": 3
     },
@@ -915,7 +915,7 @@
             "Check Manually.",
             "Use `prop-helper`.",
             "use `prop-types`.",
-            "user `checker-types`.\n`let dish = <h1>Mac and Cheese</h1>; `"
+            "user `checker-types`."
         ],
         "_ps": 2
     },
@@ -925,7 +925,7 @@
             "`let dish = <h1 id={heading}>Mac and Cheese</h1>;`",
             "`let dish = <h1 id=\"heading\">Mac and Cheese</h1>;`",
             "`let dish = <h1 id:\"heading\">Mac and Cheese</h1>;`",
-            "`let dish = <h1 class=\"heading\">Mac and Cheese</h1>;`\n```\nclass Huggable extends React.Component {\n  hug(id) {\n    console.log(\"hugging \" + id);\n  }\n  render() {\n    let name = \"kitten\";\n    let button = // Missing code\n    return button;\n  }\n}\n```"
+            "`let dish = <h1 class=\"heading\">Mac and Cheese</h1>;`"
         ],
         "_ps": 1
     },
@@ -955,7 +955,7 @@
             "onBlur",
             "onPress",
             "defaultValue",
-            "disabled\n```\nfunction Dish() {\n  return (\n    <>\n      <Ingredient />\n      <Ingredient />\n    </>\n  );\n}\n```"
+            "disabled"
         ],
         "_ps": 3
     },
@@ -995,7 +995,7 @@
             "You are using the development build of React.",
             "You are using the production build of React.",
             "You are using webpack.",
-            "You are using Create React App.\n[Reference](https://teamtreehouse.com/community/hey-why-the-logo-of-react-developer-tools-appears-in-red)\n```\nclass TransIsBeautiful extends React.Component {\n  constructor(props){\n  // Missing line\n  console.log(this) ;\n  }\n  ...\n}\n```"
+            "You are using Create React App.\n[Reference](https://teamtreehouse.com/community/hey-why-the-logo-of-react-developer-tools-appears-in-red)"
         ],
         "_ps": 0
     },
@@ -1015,7 +1015,7 @@
             "Swift.",
             "JSX.",
             "Javascipt.",
-            "TypeScript.\n```javascript\nconstructor(props) {\n    super(props);\n    this.state = {\n        pokeDex: []\n    };\n}\n```"
+            "TypeScript."
         ],
         "_ps": 0
     },
@@ -1025,7 +1025,7 @@
             "console.log(props.pokeDex);",
             "console.log(this.props.pokeDex);",
             "console.log(pokeDex);",
-            "console.log(this.state.pokeDex);\n[Reference](https://www.digitalocean.com/community/tutorials/how-to-manage-state-on-react-class-components#step-3-setting-state-from-a-static-value)\n```javascript\nfunction add(x = 1, y = 2) {\n  return x + y;\n}\nadd();\n```"
+            "console.log(this.state.pokeDex);\n[Reference](https://www.digitalocean.com/community/tutorials/how-to-manage-state-on-react-class-components#step-3-setting-state-from-a-static-value)"
         ],
         "_ps": 3
     },

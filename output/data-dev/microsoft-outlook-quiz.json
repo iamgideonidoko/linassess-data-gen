@@ -35,7 +35,7 @@
             "all of these answers",
             "Archive messages you are done with.",
             "Save and then remove large attachments from messages",
-            "Sort by size and then delete large messages.\n```\nA. Users can change their email settings to ignore requests for read receipts.\nB. Users can decline individual requests for read receipts.\nC. Read receipts are expensive, so some organizations turn them off.\n```"
+            "Sort by size and then delete large messages."
         ],
         "_ps": 0
     },
@@ -315,7 +315,7 @@
             "Asking your supervisor to prioritize a list of tasks",
             "Sending customers a three-question survey about a recent service experience",
             "Asking your colleagues to choose their favorite lunch spot from a list",
-            "All of these answers\n```\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 PM and send an update\nB. Double click the meeting to open it, change the start time to 1 PM abd send an update\nC. Some people have already accepted, so you must cancel this meeting and create a new meeting\n```"
+            "All of these answers"
         ],
         "_ps": 2
     },
@@ -415,7 +415,7 @@
             "Export your contacts to Excel, which ash lots of columns; add the data; and then import the contacts back to Outlook",
             "Use the Field Chooser to create two new columns of type Date in the folder",
             "Create a custom contacts form that includes two text boxes to collect this data",
-            "All of these answers\n```\nA. To easily see when you have a new message related to Project A\nB. To audit the rule\nC. Because the unread messages count for the Inbox folder will not include Project A\nD. Because you cannot create a search folder for a subfolder\n```"
+            "All of these answers"
         ],
         "_ps": -1
     },
@@ -795,7 +795,7 @@
             "Create a Ccd folder, and then create a rule to move all messages where you are on the cc line to that folder.",
             "Create a rule to move all messages where you are in the Cc line to the Deleted items folder.",
             "Turn on Focused Inbox.",
-            "Create a rule to apply conditional formatting to all messages where you are in the Cc line.\nA. Open the calendar in Day, Week, or Work Week view. Drag the start time to 1 p.m. and send an update.  \nB. Double-click the meeting to open it, change the start time to 1 p.m., and send an update.  \nC. Some people have already accepted, so you must cancel this meeting and create a new meeting."
+            "Create a rule to apply conditional formatting to all messages where you are in the Cc line."
         ],
         "_ps": 0
     },

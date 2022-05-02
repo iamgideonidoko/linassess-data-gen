@@ -15,7 +15,7 @@
             "Create a new sketch of a circle with a diameter of 1 inch. Then use the Helix/Spiral curve command and define a height of 10 inches and pitch of 3 inches.",
             "Create a new sketch of a circle with a diameter of 3 inches. Then use the Helix/Spiral curve command to define a height of 10 inches and pitch of 1 inch.",
             "First, create a new sketch of a circle of 10 inches. Then use the Helix/Spiral curve command and define by pitch of 1 inch and 3 revolutions.",
-            "Use the Helix/Spiral curve command and define a diameter of 3 inches, height of 10 inches, and pitch of 1 inch.\n![solidworks image](images/solidworks_q3.jpg)"
+            "Use the Helix/Spiral curve command and define a diameter of 3 inches, height of 10 inches, and pitch of 1 inch."
         ],
         "_ps": 1
     },
@@ -305,7 +305,7 @@
             "On the **Leaders** tab, select **Diameter**",
             "On the **Other** tab, select **Diameter**",
             "On the **Value** tab, and select **Diameter**",
-            "On the **Value** tab, seect **Override Value**\n![solidworks image](images/solidworks_q32.png)"
+            "On the **Value** tab, seect **Override Value**"
         ],
         "_ps": 0
     },
@@ -315,7 +315,7 @@
             "The parent is Base Feature; the children are Slot Cutout, Sketch3, CBORE Hole, and Fillet2",
             "The parent is Vertical Boss; the childre are Base Feature, Slot Cutout, Sketch3, CBORE Hole, and Fillet2",
             "The parent is Base Feature; the children are Vertical Boss, Slot Cutout, Sketch3, CBORE Holde, and Fillet2",
-            "The parents are Vertical Boss and Base Feature; the children are Slot Cutout, Sketch3, CBORE Hole, and Fillet2\n![solidworks image](images/solidworks_q33.png)"
+            "The parents are Vertical Boss and Base Feature; the children are Slot Cutout, Sketch3, CBORE Hole, and Fillet2"
         ],
         "_ps": 0
     },
@@ -325,7 +325,7 @@
             "BASE",
             "LINK 3",
             "LINK 5",
-            "LINK 1\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/t_Fixing_the_Position_of_a_Component.htm)\n![solidworks image](images/solidworks_q34.png)"
+            "LINK 1\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/t_Fixing_the_Position_of_a_Component.htm)"
         ],
         "_ps": 2
     },
@@ -335,7 +335,7 @@
             "a hole table",
             "a revision table",
             "a tolerance table",
-            "a punch table\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/c_hole_tables.htm)\n![solidworks image](images/solidworks_q35.png)"
+            "a punch table\n[Reference](https://help.solidworks.com/2022/English/SolidWorks/sldworks/c_hole_tables.htm)"
         ],
         "_ps": 0
     },
@@ -345,7 +345,7 @@
             "smart dimensioning",
             "angular running dimensioning",
             "ordinate dimensioning",
-            "chain dimensioning\n![solidworks image](images/solidworks_q36.png)"
+            "chain dimensioning"
         ],
         "_ps": 2
     },
@@ -355,7 +355,7 @@
             "countersink and counterbore",
             "counterbore and countersink",
             "standard and threaded/tapped",
-            "threaded/tapped and standard\n![solidworks image](images/solidworks_q37.png)"
+            "threaded/tapped and standard"
         ],
         "_ps": 1
     },
@@ -365,7 +365,7 @@
             "an open contour sketch",
             "a multi-contour or intersecting sketch",
             "a triple contour sketch",
-            "a closed contour sketch\n![solidworks image](images/solidworks_q37.png)"
+            "a closed contour sketch"
         ],
         "_ps": 0
     },

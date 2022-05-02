@@ -5,7 +5,7 @@
             "One is a Java object, the other is a Scala object.",
             "clone() will copy class structures but not the data, while copy() will also copy data into new objects.",
             "There is no difference.",
-            "copy() allows you to change values during the copying process; clone() does not.\n```scala\nval m1 = Map(\"a\"->1,\"b\"->2,\"c\"->3)\nm1(\"a\")\n```"
+            "copy() allows you to change values during the copying process; clone() does not."
         ],
         "_ps": 3
     },
@@ -45,7 +45,7 @@
             "Array",
             "ImmutableCollection",
             "List",
-            "Tuple\n```\nmyfnc: ()Unit\n```"
+            "Tuple"
         ],
         "_ps": 3
     },
@@ -75,7 +75,7 @@
             "`List[(String, String)]`",
             "`List[(Array, Array)]`",
             "`List[(Collection, Collection)]`",
-            "`List`\n```\nval x = (1234, \"Active\")\n```"
+            "`List`"
         ],
         "_ps": 3
     },
@@ -115,7 +115,7 @@
             "using regex",
             "using monads",
             "using string matching",
-            "using case classes\nNote: ambiguous question, it's not clear what kind of [pattern matching](https://docs.scala-lang.org/tour/pattern-matching.html) is meant here.\n```\nval y = List('a','b')\nval z = y::List('c')\n```"
+            "using case classes\nNote: ambiguous question, it's not clear what kind of [pattern matching](https://docs.scala-lang.org/tour/pattern-matching.html) is meant here."
         ],
         "_ps": -1
     },
@@ -145,7 +145,7 @@
             "`scala.util.ExceptionHandling`",
             "`scala.Catch.Throw`",
             "`scala.exception.TryFinally`",
-            "`scala.util.Try`\n[scala.util.Try](https://www.scala-lang.org/api/current/scala/util/Try.html)\n```\nval y = (math floor 3.1415 * 2)\n```"
+            "`scala.util.Try`\n[scala.util.Try](https://www.scala-lang.org/api/current/scala/util/Try.html)"
         ],
         "_ps": 3
     },
@@ -175,7 +175,7 @@
             "Yes, the reference to the array is immutable, so the location that the array points to is immutable. The values in the array are mutable.",
             "The 0th element is immutable and cannot be modified. All other elements can be modified.",
             "Yes, val does not make arrays immutable.",
-            "No, val makes the array and values of the array immutable.\n**Explanation**:\n```scala\nval a1 = Array(1, 2, 3)\na1{1} = 3 // OK\na1 = Array(1, 3, 3) // error: reassignment to val\n```\n```scala\ndef main () {\n     var a = 0\n     for (a<-1 until 5){println(a)}\n```"
+            "No, val makes the array and values of the array immutable.\n**Explanation**:\n```scala\nval a1 = Array(1, 2, 3)\na1{1} = 3 // OK\na1 = Array(1, 3, 3) // error: reassignment to val\n```"
         ],
         "_ps": 0
     },
@@ -215,7 +215,7 @@
             "4",
             "an error",
             "6",
-            "3\n`val MyFuture = Future {runBackgroundFunction() }`"
+            "3"
         ],
         "_ps": 1
     },
@@ -285,7 +285,7 @@
             "`_`",
             "`*`",
             "`%`",
-            "`&`\n[Repeated Parameters in Scala](https://www.baeldung.com/scala/repeated-parameters)\n```scala\nmyClass.foreach(println _)\n```"
+            "`&`\n[Repeated Parameters in Scala](https://www.baeldung.com/scala/repeated-parameters)"
         ],
         "_ps": 1
     },
@@ -465,7 +465,7 @@
             "a constraint on where a method may be called from",
             "a constraint on values passed to a methode constructor",
             "a class of predifined error messages",
-            "a class of Boolean operators\n```\n val myNums = (1 to 500).toList\n list.map(_ + 1)\n```"
+            "a class of Boolean operators"
         ],
         "_ps": 2
     },
@@ -505,7 +505,7 @@
             "AltThread",
             "AltFuture",
             "AltProcess",
-            "Future\n```scala\nx= List(1,2,4); x(1)?\n```"
+            "Future"
         ],
         "_ps": 3
     },

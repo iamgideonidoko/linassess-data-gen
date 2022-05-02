@@ -25,7 +25,7 @@
             "route -ipv6",
             "route",
             "ip -6 route show",
-            "ip route show\n```bash\nfind / -size +10M -exec ls -l {} ;\n```"
+            "ip route show"
         ],
         "_ps": 2
     },
@@ -35,7 +35,7 @@
             "It finds all files using ls -l and hands them off to the find command to display.",
             "It finds all files older than 10 minutes and long lists them using the ls command.",
             "It finds all files larger than 10 MB and long lists them using the ls command.",
-            "It uses the ls command to find all files in the filesystem matching the {} wildcard.\n```bash\nlocate --regexp '^/usr.*pixmaps.*jpg$'\n```"
+            "It uses the ls command to find all files in the filesystem matching the {} wildcard."
         ],
         "_ps": 2
     },
@@ -85,7 +85,7 @@
             "Create a text file including all names and use the -f option of dig.",
             "Type in each query manually.",
             "Write a shell script to send multiple dig queries to the DNS server.",
-            "Save the DNS names in an SQL database and process it with dig.\n```\nps -e --format uid,pid,ppid,%cpu,cmd\n```"
+            "Save the DNS names in an SQL database and process it with dig."
         ],
         "_ps": 0
     },
@@ -155,7 +155,7 @@
             "priority of one DNS server over another",
             "per network interface DNS server configuration",
             "alternative DNS services",
-            "sources for name service information\n```bash\necho \\$myNumber | sed -e 's/^[[:digit:]][[:digit:]][[:digit:]]/(&)/g'\n```"
+            "sources for name service information"
         ],
         "_ps": 3
     },
@@ -175,7 +175,7 @@
             "None of these answers. yum does not support downloading packages without installing them.",
             "--downloaddir",
             "-d",
-            "--downloadonly\n`[0-9]`"
+            "--downloadonly"
         ],
         "_ps": 3
     },
@@ -215,7 +215,7 @@
             "vgadd",
             "vgresize",
             "vgappend",
-            "vgextend\n`0 1 \\* \\* \\*`"
+            "vgextend"
         ],
         "_ps": 3
     },
@@ -345,7 +345,7 @@
             "no_admin_squash",
             "no_root_squash",
             "allow_root_access",
-            "all_squash\n```bash\ndate | mail -s \"This is a remote test\" user1@rhhost1.localnet.com\n```"
+            "all_squash"
         ],
         "_ps": 2
     },
@@ -435,7 +435,7 @@
             "It prepares the filesystem for use by defragmenting it.",
             "It resizes the filesystem to match the volume group size.",
             "It does nothing.",
-            "It remounts the filesystem with the new size.\n```bash\nsed -E 's/[a-Z]{4}/(&)/'  textfile.txt\n```"
+            "It remounts the filesystem with the new size."
         ],
         "_ps": 2
     },
@@ -465,7 +465,7 @@
             "bonding.",
             "team.",
             "netbond.",
-            "bond.\n```bash\nfind / -size -10K -exec ls -l {} \\;\n```"
+            "bond."
         ],
         "_ps": 0
     },
@@ -535,7 +535,7 @@
             "enter the root user's password",
             "enter their own password",
             "enter the sudo user's password",
-            "change to the root group\n[A Cloud Guru's Blog](https://acloudguru.com/blog/engineering/linux-commands-for-beginners-sudo#:~:text=Sudo%20asks%20for%20your%20user%20password.%C2%A0%20Note%20that%20it%20is%20asking%20for%20your%20password%2C%20not%20the%20root%20password.)\n`0 22 * * 1-5`"
+            "change to the root group\n[A Cloud Guru's Blog](https://acloudguru.com/blog/engineering/linux-commands-for-beginners-sudo#:~:text=Sudo%20asks%20for%20your%20user%20password.%C2%A0%20Note%20that%20it%20is%20asking%20for%20your%20password%2C%20not%20the%20root%20password.)"
         ],
         "_ps": 1
     },
@@ -565,7 +565,7 @@
             "They can execute files in it.",
             "They can traverse it.",
             "They can read files in it.",
-            "They can delete files in it.\n**Note:** This is correct because of the keyword \"directory\". More info at: https://www.tutorialspoint.com/unix/unix-file-permission.htm\n`echo \"Thu Jun 4 15:45:45 PDT 2020\" | cut -f3 -d\" \"`"
+            "They can delete files in it.\n**Note:** This is correct because of the keyword \"directory\". More info at: https://www.tutorialspoint.com/unix/unix-file-permission.htm"
         ],
         "_ps": 1
     },
@@ -575,7 +575,7 @@
             "It will print nothing.",
             "Thu Jun 4 15:45:45 PDT 2020",
             "0.6567708333333333",
-            "4\n```\nif ls /etc/passwd &> /dev/null\nthen\n    echo \"exists\"\nfi\n```"
+            "4"
         ],
         "_ps": 3
     },
@@ -695,7 +695,7 @@
             "The `==` operator performs a string comparison; `=~` performs a regex comparison.",
             "The `==` operator performs a string comparison; `=~` performs a glob pattern comparison.",
             "The `=~` operator performs a string comparison; `==` performs a regex comparison.",
-            "There is no `=~` operator in BASH `if` conditionals.\n```shell\n   echo \"data\" | tee -a file.txt\n   echo \"data\" >> file.txt\n```"
+            "There is no `=~` operator in BASH `if` conditionals."
         ],
         "_ps": 0
     },
@@ -705,7 +705,7 @@
             "The first line will append the word `data` to file.txt and output it on the screen. The second line will append the word `data` only to file.txt.",
             "They are the same.",
             "The first line will append the word `data` to file.txt and there will be no output on the screen. The second line will output the word `data` on the screen and append it to `file.txt`",
-            "Both lines will overwrite file.txt with the word data.\n```shell\n(ss).*\\1\n```"
+            "Both lines will overwrite file.txt with the word data."
         ],
         "_ps": 0
     },
@@ -735,7 +735,7 @@
             "`firewall-cmd --permanent --add-nat`",
             "`firewall-cmd --permanent --add-masquerade`",
             "`firewall-cmd --zone=default --add-nat`",
-            "`firewall-cmd --zone=default --add-masquerade`\n[reference here](https://www.rootusers.com/how-to-use-firewalld-rich-rules-and-zones-for-filtering-and-nat)\n```\nif [[ $FILE == $GLOB ]] ;then\n```"
+            "`firewall-cmd --zone=default --add-masquerade`\n[reference here](https://www.rootusers.com/how-to-use-firewalld-rich-rules-and-zones-for-filtering-and-nat)"
         ],
         "_ps": 1
     },
@@ -805,7 +805,7 @@
             "`/proc/partitions` represents the disk partition table more accurately than `fdisk -l`",
             "`/proc/partitions` shows only mounted drives. `fdisk -l` shows all drivers.",
             "There is no difference between the two, and both lists contain the same data.",
-            "`/proc/partitions` is the kernel's list of partitions held in ram. `fdisk -l` reads the partition table from the drive itself.\n    cat < in.txt > out.txt"
+            "`/proc/partitions` is the kernel's list of partitions held in ram. `fdisk -l` reads the partition table from the drive itself."
         ],
         "_ps": 3
     },
@@ -815,7 +815,7 @@
             "the content of in.txt.",
             "the output from the command line.",
             "Nothing, because you cannot redirect from a file (in.txt) to another file (out.txt). You can redirect only from a command to a file.",
-            "Nothing, The redirect will create a new empty file, but there will not be any output from the cat command to redirect.\n```\n^(([0-9][0-9]?)|(2[0-9][0-9]))$\n```"
+            "Nothing, The redirect will create a new empty file, but there will not be any output from the cat command to redirect."
         ],
         "_ps": 0
     },

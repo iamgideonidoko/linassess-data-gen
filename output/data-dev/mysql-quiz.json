@@ -75,7 +75,7 @@
             "A\n```sql\n    CREATE TABLE employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY ON employeeID\n    );\n```",
             "B\n```sql\n    CREATE TABLE employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY employeeID\n    );\n```",
             "C\n```sql\n    CREATE TABLE IF EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n```",
-            "D\n```sql\n    CREATE TABLE IF NOT EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n```\n![mysql Q09](images/mysql_q09.jpg)"
+            "D\n```sql\n    CREATE TABLE IF NOT EXISTS employee (\n    employeeID char(10),\n    firstName varchar(50),\n    lastName varchar(50),\n    phone varchar(20),\n    address varchar(50),\n    PRIMARY KEY (employeeID)\n    );\n```"
         ],
         "_ps": 3
     },
@@ -195,7 +195,7 @@
             "GROUP BY",
             "WHERE",
             "LIMIT",
-            "LIKE\n`SELECT * FROM Employees WHERE EmployeeName LIKE 'a%'`"
+            "LIKE"
         ],
         "_ps": 0
     },
@@ -395,7 +395,7 @@
             "inefficient for storing json documents",
             "cannot be indexed directly",
             "documents cannot be validated when stored in json columns",
-            "cannot be normalized\n![mysql Q41](images/mysql_q41.jpg)"
+            "cannot be normalized"
         ],
         "_ps": 1
     },
@@ -415,7 +415,7 @@
             "cat file|mysql",
             "load data infile (correct if the file is already on the server)",
             "load data local infile (also correct but only if the file is from the client)",
-            "extended insert statement\n![mysql Q43](images/mysql_q43.jpg)"
+            "extended insert statement"
         ],
         "_ps": 1
     },
@@ -565,7 +565,7 @@
             "to reduce corruption in data",
             "to reduce storage space",
             "to make the system faster",
-            "to prevent data anomalies\nNote: \"to make the system faster\" can also be correct. For example we can calculate some heavy query in advance and store its result in some column (use it as a cache). So if \"system\" means \"application which uses mysql\" then it's correct too.\n```mysql\nLOAD XML LOCAL INFILE 'cars.xml'\nINTO TABLE cars\nROWS IDENTIFIED BY `<car>`;\n```"
+            "to prevent data anomalies\nNote: \"to make the system faster\" can also be correct. For example we can calculate some heavy query in advance and store its result in some column (use it as a cache). So if \"system\" means \"application which uses mysql\" then it's correct too."
         ],
         "_ps": 0
     },
@@ -595,7 +595,7 @@
             "It will stop and issue an error when it encounters a row that is referenced by a row in a child table.",
             "It always first drops, then re-creates a new table.",
             "It deletes rows one by one on tables with foreign key constraints.",
-            "It does not invoke the `DELETE` triggers associated with the table.\nNote: both answers are correct - see [TRUNCATE TABLE Statement](https://dev.mysql.com/doc/refman/8.0/en/truncate-table.html) in MySQL manual\n![mysql Q61](images/mysql_q61.png)"
+            "It does not invoke the `DELETE` triggers associated with the table.\nNote: both answers are correct - see [TRUNCATE TABLE Statement](https://dev.mysql.com/doc/refman/8.0/en/truncate-table.html) in MySQL manual"
         ],
         "_ps": 1
     },
@@ -665,7 +665,7 @@
             "ENGINE",
             "PARTITION",
             "STORAGE",
-            "TABLESPACE\nTable name: customers\n| ID | lastname | firstname | phone | address | city | state | zip |\n| ---- | -------- | --------- | ------------ | ------------------- | ----------- | ----- | ----- |\n| A001 | Smith | Bob | 212-555-1212 | 1001 1st Street | New York | NY | 10001 |\n| A002 | Chang | John | 213-555-5678 | 888 Rodeo Drive | Los Angeles | CA | 90210 |\n| A003 | Smith | Mary | 999-999-9999 | 123 Main Street | Anytown | VA | 12345 |\n| A004 | Johnson | Jack | 312-312-3120 | 1111 Chicago Avenue | Chicago | IL | 60606 |\n| A005 | Lopez | Linda | 737-777-3333 | 123 Main Street | Austin | TX | 73344 |"
+            "TABLESPACE"
         ],
         "_ps": 0
     },
@@ -785,7 +785,7 @@
             "`SELECT * FROM customers WHERE PhoneNumber = NULL;`",
             "`SELECT * FROM customers WHERE PhoneNumber IS NOT VALID;`",
             "`SELECT * FROM customers WHERE PhoneNumber IS NULL;`",
-            "`SELECT * FROM customers WHERE PhoneNumber IS UNKNOWN;`\n![mysql picture](images/mysql_q80.png)"
+            "`SELECT * FROM customers WHERE PhoneNumber IS UNKNOWN;`"
         ],
         "_ps": 2
     },
@@ -805,7 +805,7 @@
             "`ENUM`",
             "`SET`",
             "`BIT`",
-            "`CHAR`\nExplnation: BIT is not a string type\n![mysql picture](images/mysql_q80.png)"
+            "`CHAR`\nExplnation: BIT is not a string type"
         ],
         "_ps": 2
     },
@@ -835,7 +835,7 @@
             "trigger",
             "regular expression",
             "view",
-            "index\n![mysql picture](images/mysql_q85.png)"
+            "index"
         ],
         "_ps": 0
     },
@@ -865,7 +865,7 @@
             "--verbose",
             "--skip",
             "--skip-error",
-            "--loose\nReference: [4.2.2.4 Program Option Modifiers](https://dev.mysql.com/doc/refman/8.0/en/option-modifiers.html)\n```\nSELECT name FROM students WHERE name REGEXP '^to';\n```"
+            "--loose\nReference: [4.2.2.4 Program Option Modifiers](https://dev.mysql.com/doc/refman/8.0/en/option-modifiers.html)"
         ],
         "_ps": 3
     },
@@ -875,7 +875,7 @@
             "all names starting with \"to,\" such as Tommy or Tony",
             "all names with \"to,\" such as Roberto and Tommy",
             "all names without \"to,\" such as Samantha or Kathryn",
-            "all names ending with \"to,\" such as Roberto\n![mysql picture](images/mysql_q92.png)"
+            "all names ending with \"to,\" such as Roberto"
         ],
         "_ps": 0
     },
@@ -955,7 +955,7 @@
             "JSON",
             "CSV",
             "XML",
-            "TXT\n![mysql picture](images/mysql_q98.png)"
+            "TXT"
         ],
         "_ps": 0
     },
@@ -985,7 +985,7 @@
             "for formulas and business rules that you want to apply to columns in an SQL query",
             "for formulas and business rules that should be applied on a specific trigger event like on inserts",
             "to automatically modify the data of a table based on a query",
-            "for reusing recurring queries\nTable name: superheroes\n| name | alias | power1 | power2 | power3 |\n| ---- | ----- | ------ | ------ | ------ |\n| Superman | Clark Kent | Flight | X-Ray Vision | Super Strength |\n| Wonder Woman | Diana Prince | Force Fields | Reflexes | Telepathy |\n| Spider-man | Peter Parker | Walcrawling | Web-making | Enhanced Senses |\n| Aquaman | Arthur Curry | Underwater Breathing | Enhanced Sight | Stamina |\n| Hulk | Bruce Banner | Super Strength | Radiation Immunity | Invulnerability |"
+            "for reusing recurring queries"
         ],
         "_ps": 1
     },

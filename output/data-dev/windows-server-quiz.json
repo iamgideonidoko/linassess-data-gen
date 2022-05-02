@@ -305,7 +305,7 @@
             "Trusted Root Certification Authorities under Local Computer",
             "Trusted Root Certification Authorities under Current User",
             "Personal under Local Computer",
-            "Client Authentication Computer\n![Windows Server Q32](images/windows-server_Q32.jpg)"
+            "Client Authentication Computer"
         ],
         "_ps": 2
     },
@@ -335,7 +335,7 @@
             "Network Load Balancing",
             "EnhancedStorage",
             "iSNS",
-            "Multipath IO\n![Windows Server Q35](images/windows-server_Q35.jpg)"
+            "Multipath IO"
         ],
         "_ps": 2
     },
@@ -395,7 +395,7 @@
             "Click Next and review the Features section.",
             "Click Previous choose a different server.",
             "Click Cancel and restart the server.",
-            "Click Cancel and open the Remove Roles and Features Wizard.\n![Windows Server Q41](images/windows-server_Q41.jpg)"
+            "Click Cancel and open the Remove Roles and Features Wizard."
         ],
         "_ps": 3
     },
@@ -665,7 +665,7 @@
             "multitenancy volumes",
             "storage pools",
             "parity volumes",
-            "storage spaces\n[reference](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/storage-spaces-how-to-configure-storage-tiers-with-windows/ba-p/256700)\n![Q62](images/windows-server_Q62.png)"
+            "storage spaces\n[reference](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/storage-spaces-how-to-configure-storage-tiers-with-windows/ba-p/256700)"
         ],
         "_ps": 3
     },

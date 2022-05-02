@@ -315,7 +315,7 @@
             "Use the pharse \"local accountant\" as a keyword to focus her website on.",
             "Focus on short-tail keywords.",
             "Register her business with a Google My Business account.",
-            "Leave a link to her website in the blog comments of popular accounting websites.\n`<a href=\"catalog/gloves.html\">Blue Gloves</a>`"
+            "Leave a link to her website in the blog comments of popular accounting websites."
         ],
         "_ps": 2
     },
@@ -355,7 +355,7 @@
             "First Meaningful Paint (FMP)",
             "Recalculated Style Timing (RST)",
             "Latent Loading Signal (LLS)",
-            "Cumulative Layout Shift (CLS)\n```<script type=\"application/ld+json\">\n{\n   \"@context\": \"https://schema.org\",\n   \"@type\": \"Organization\",\n   \"url\": \"http://www.domain.com\",\n   \"name\": \"Bradley Corp.\",\n   \"contactPoint\": {\n      \"@type\": \"ContactPoint\",\n      \"telephone\": \"+1-555-555-5555\",\n      \"contactType\": \"Customer service\"\n    }\n}\n</script>\n```"
+            "Cumulative Layout Shift (CLS)"
         ],
         "_ps": 3
     },

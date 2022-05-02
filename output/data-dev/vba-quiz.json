@@ -5,7 +5,7 @@
             "```\nID=5 Age = 20 Weight=\nID=6 Age = 25 Weight=130\n```",
             "```\nID=5 Age = 20 Weight=0\nID=6 Age = 25 Weight=130\n```",
             "```\nID=5 Age = 20 Weight=Null\nID=6 Age = 25 Weight=130\n```",
-            "```\nID=5 Age = 20\nID=6 Age = 25 Weight=130\n```\n`Sub CalledSub(Surname, Age)`"
+            "```\nID=5 Age = 20\nID=6 Age = 25 Weight=130\n```"
         ],
         "_ps": 1
     },
@@ -25,7 +25,7 @@
             "There is no meaningful difference. The terms are used interchangeably.",
             "A dass declares an object's properties. An object completes the declaration by defining events and methods.",
             "An object is a template for a class.",
-            "A class describes the design of an object. An object is an instance of that design.\n```\nSub MySub(VarA As Long, ParamArray VarB() As Variant)\nMsgBox VarB(0)\nEnd Sub\nSub ShowValue()\nCall MySub(10, \"First arg\", 2, 3.1416)\nEnd Sub\n```"
+            "A class describes the design of an object. An object is an instance of that design."
         ],
         "_ps": 3
     },
@@ -45,7 +45,7 @@
             "associated standard code module",
             "UserForm",
             "associated class module",
-            "userForm class\n```\nSub UseSum()\nDim TestArray() As Integer, Total As Integer\nReDim TestArray(1)\nTestArray(1) = 6\nReDim TestArray(2)\nTestArray(2) = 3\nTotal = WorksheetFunction.Sum(TestArray)\nEnd Sub\n```"
+            "userForm class"
         ],
         "_ps": -1
     },
@@ -75,7 +75,7 @@
             "Frame",
             "multipage",
             "TabStrip",
-            "ListBox\n```\nFunction SquareIt(ByRef Basis As Integer) As Long\nSquareIt = Basis ^ 2\nEnd Function\n```"
+            "ListBox"
         ],
         "_ps": 3
     },
@@ -95,7 +95,7 @@
             "10 rows and 10 columns",
             "10 rows and 1 column",
             "10 rows and 0 columns",
-            "1 row and 10 columns\n`Range(\"E3:312\").Range(\"B3\").Select`"
+            "1 row and 10 columns"
         ],
         "_ps": 1
     },
@@ -155,7 +155,7 @@
             "End",
             "Return",
             "Exit Sub",
-            "Stop\n```\nOption Base 0\nSub BuildArray()\nDim MyArray(5) As Integer\n```"
+            "Stop"
         ],
         "_ps": 2
     },
@@ -255,7 +255,7 @@
             "For i = 0 To UBound(MyArray,1)",
             "For i = 1 To UBound(MyArray,1)",
             "For i = LBound(MyArray,1) To UBound(MyArray,1)",
-            "It depends on whether Option Base 0 or Option Base 1 is in use.\n```\nEnum TestEnum\n    Test1\n    Test2\n    Test3\nEnd Enum\n```"
+            "It depends on whether Option Base 0 or Option Base 1 is in use."
         ],
         "_ps": 2
     },
@@ -295,7 +295,7 @@
             "1. Select the project in the Project window of the Visual Basic Editor\n2. Click the Design Mode button and select Insert Mode",
             "1. Select the project in the Project window of the Visual Basic Editor\n2. Click the Toolbox button and select UserForm",
             "1. Select the project in the Project window of the Visual Basic Editor\n2. Right-click the Run menu and select Customize",
-            "1. Select the project in the Project window of the Visual Basic Editor\n2. Click Insert > UserForm\n```\nDim MyVar As String\nSub AAA()\nDim MyVar As String\nMyVar = \"Procedure AAA Scope\"\nEnd Sub\nSub BBB()\nMyVar = \"Procedure BBB Scope\"\nEnd Sub\n```"
+            "1. Select the project in the Project window of the Visual Basic Editor\n2. Click Insert > UserForm"
         ],
         "_ps": 3
     },
@@ -335,7 +335,7 @@
             "two (one for the properties and one for the methods)",
             "one (each class is declared in the same module)",
             "four (one for each class)",
-            "as many as are required by the variable types that the objects return\n```\nSub MakeErrors()\nDim Y As Variant, Z As Variant\nOn Error Resume Next\nY = 1 / 0\nMsgBox \"Y = \" & Y\nOn Error GoTo 0\nZ - (0 - 3) ^ 0.5\nMsgBox \"Z = \" & Z\nEnd Sub\n```"
+            "as many as are required by the variable types that the objects return"
         ],
         "_ps": 3
     },

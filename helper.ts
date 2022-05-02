@@ -8,6 +8,6 @@ type Constant = {
 };
 
 export const constants: Constant = {
-    fileBaseUrl: process.env.FILE_BASE_URL as string,
-    dirBaseUrl: process.env.DIR_BASE_URL as string,
+    fileBaseUrl: 'https://raw.githubusercontent.com/Ebazhanov/linkedin-skill-assessments-quizzes/master',
+    dirBaseUrl: 'https://api.github.com/repos/Ebazhanov/linkedin-skill-assessments-quizzes',
 };

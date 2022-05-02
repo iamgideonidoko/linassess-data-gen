@@ -15,7 +15,7 @@
             "Effects",
             "Stroke",
             "Transform",
-            "Pathfinder\n[Ref.](https://helpx.adobe.com/in/indesign/using/applying-line-stroke-settings.html#:~:text=Use%20the%20Start%20and%20End,the%20Start%20and%20End%20menus.)\n![Q3](images/Q3.jpg)"
+            "Pathfinder\n[Ref.](https://helpx.adobe.com/in/indesign/using/applying-line-stroke-settings.html#:~:text=Use%20the%20Start%20and%20End,the%20Start%20and%20End%20menus.)"
         ],
         "_ps": 1
     },
@@ -85,7 +85,7 @@
             "Objects on master page A are not visible.",
             "Objects on master page A must always appear behind objects from master page B.",
             "Objects on master page A cannot be selected unless you override the objects.",
-            "Objects on master page A cannot be selected or changed.\n![Q10](images/q10.png)"
+            "Objects on master page A cannot be selected or changed."
         ],
         "_ps": 2
     },
@@ -135,7 +135,7 @@
             "Tables are always anchored in a story in a text frame.",
             "To edit text in a table, you should first click **Table>Convert Table to Text**",
             "Tables must contain more than one cell.",
-            "Tables cannot be anchored in a story in a text frame\n![Q15](images/Q15.png)"
+            "Tables cannot be anchored in a story in a text frame"
         ],
         "_ps": -1
     },
@@ -145,7 +145,7 @@
             "Global Light",
             "the Screen blending mode",
             "Isolate Blending",
-            "Knockout Group\n![Q16](images/Q16.png)"
+            "Knockout Group"
         ],
         "_ps": -1
     },
@@ -165,7 +165,7 @@
             "Ctrl (Windows) or Command (Mac)",
             "Alt+Shift (Windows) or Option+Shift (Mac)",
             "Ctrl+Shift (Windows) or Command+Shift (Mac)",
-            "Alt+Spacebar (Windows) or Options+Spacebar (Mac)\n![Q18](images/Q18.png)"
+            "Alt+Spacebar (Windows) or Options+Spacebar (Mac)"
         ],
         "_ps": -1
     },

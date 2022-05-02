@@ -15,7 +15,7 @@
             "method overloading",
             "method overrunning",
             "method overriding",
-            "method calling\n`boolean b1 = true, b2 = false; int i1 = 1, i2 = 2;`"
+            "method calling"
         ],
         "_ps": 2
     },
@@ -25,7 +25,7 @@
             "`(i1 | i2) == 3`",
             "`i2 && b1`",
             "`b1 || !b2`",
-            "`(i1 ^ i2) < 4`\n```java\n1: class Main {\n2:   public static void main (String[] args) {\n3:     int array[] = {1, 2, 3, 4};\n4:     for (int i = 0; i < array.size(); i++) {\n5:        System.out.print(array[i]);\n6:     }\n7:   }\n8: }\n```"
+            "`(i1 ^ i2) < 4`"
         ],
         "_ps": 1
     },
@@ -35,7 +35,7 @@
             "It will not compile because of line 4.",
             "It will not compile because of line 3.",
             "123",
-            "1234\n```java\ninterface Interface1 {\n    static void print() {\n        System.out.print(\"Hello\");\n    }\n}\ninterface Interface2 {\n    static void print() {\n        System.out.print(\"World!\");\n    }\n}\n```"
+            "1234"
         ],
         "_ps": 0
     },
@@ -45,7 +45,7 @@
             "`super1.print(); super2.print();`",
             "`this.print();`",
             "`super.print();`",
-            "`Interface1.print(); Interface2.print();`\n```java\nString str = \"abcde\";\nstr.trim();\nstr.toUpperCase();\nstr.substring(3, 4);\nSystem.out.println(str);\n```"
+            "`Interface1.print(); Interface2.print();`"
         ],
         "_ps": 3
     },
@@ -55,7 +55,7 @@
             "CD",
             "CDE",
             "D",
-            "\"abcde\"\n```java\nclass Main {\n    public static void main (String[] args){\n        System.out.println(print(1));\n    }\n    static Exception print(int i){\n        if (i>0) {\n            return new Exception();\n        } else {\n            throw new RuntimeException();\n        }\n    }\n}\n```"
+            "\"abcde\""
         ],
         "_ps": 3
     },
@@ -65,7 +65,7 @@
             "It will show a stack trace with a runtime exception.",
             "\"java.lang.Exception\"",
             "It will run and throw an exception.",
-            "It will not compile.\n```java\ninterface One {\n    default void method() {\n        System.out.println(\"One\");\n    }\n}\ninterface Two {\n    default void method () {\n        System.out.println(\"One\");\n    }\n}\n```"
+            "It will not compile."
         ],
         "_ps": 1
     },
@@ -75,7 +75,7 @@
             "A\n```java\nclass Three implements One, Two {\n    public void method() {\n        super.One.method();\n    }\n}\n```",
             "B\n```java\nclass Three implements One, Two {\n    public void method() {\n        One.method();\n    }\n}\n```",
             "C\n```java\nclass Three implements One, Two {\n}\n```",
-            "D\n```java\nclass Three implements One, Two {\n    public void method() {\n        One.super.method();\n    }\n}\n```\n```java\nclass Main {\n    public static void main (String[] args) {\n        List list = new ArrayList();\n        list.add(\"hello\");\n        list.add(2);\n        System.out.print(list.get(0) instanceof Object);\n        System.out.print(list.get(1) instanceof Integer);\n    }\n}\n```"
+            "D\n```java\nclass Three implements One, Two {\n    public void method() {\n        One.super.method();\n    }\n}\n```"
         ],
         "_ps": 3
     },
@@ -85,7 +85,7 @@
             "The code does not compile.",
             "truefalse",
             "truetrue",
-            "falsetrue\n```java\npackage mypackage;\npublic class Math {\n    public static int abs(int num){\n        return num < 0 ? -num : num;\n    }\n}\npackage mypackage.elementary;\npublic class Math {\n    public static int abs (int num) {\n        return -num;\n    }\n}\n```\n```java\nimport mypackage.Math;\nimport mypackage.elementary.*;\nclass Main {\n    public static void main (String args[]){\n        System.out.println(Math.abs(123));\n    }\n}\n```"
+            "falsetrue"
         ],
         "_ps": 2
     },
@@ -95,7 +95,7 @@
             "Lines 1 and 2 generate compiler errors due to class name conflicts.",
             "\"-123\"",
             "It will throw an exception on line 5.",
-            "\"123\"\n**Explanation:** The answer is \"123\". The `abs()` method evaluates to the one inside mypackage.Math class, because The import statements of the form:\n`import packageName.subPackage.*`\nis [Type-Import-on-Demand Declarations](https://docs.oracle.com/javase/specs/jls/se7/html/jls-7.html#jls-7.5.2), which [never causes any other declaration to be shadowed](https://docs.oracle.com/javase/specs/jls/se7/html/jls-6.html#jls-6.4.1).\n```java\n1: class MainClass {\n2:  final String message(){\n3:      return \"Hello!\";\n4:  }\n5: }\n6: class Main extends MainClass {\n7:  public static void main(String[] args) {\n8:      System.out.println(message());\n9:  }\n10: String message(){\n11:     return \"World!\";\n12:  }\n13: }\n```"
+            "\"123\"\n**Explanation:** The answer is \"123\". The `abs()` method evaluates to the one inside mypackage.Math class, because The import statements of the form:\n`import packageName.subPackage.*`\nis [Type-Import-on-Demand Declarations](https://docs.oracle.com/javase/specs/jls/se7/html/jls-7.html#jls-7.5.2), which [never causes any other declaration to be shadowed](https://docs.oracle.com/javase/specs/jls/se7/html/jls-6.html#jls-6.4.1)."
         ],
         "_ps": 3
     },
@@ -105,7 +105,7 @@
             "It will not compile because of line 10.",
             "\"Hello!\"",
             "It will not compile because of line 2.",
-            "\"World!\"\n**Explanation:** Compilation error at line 10 because of final methods cannot be overridden, and here message() is a final method, and also note that Non-static method message() cannot be referenced from a static context.\n```java\nclass Main {\n    public static void main(String[] args) {\n        System.out.println(args[2]);\n    }\n}\n```"
+            "\"World!\"\n**Explanation:** Compilation error at line 10 because of final methods cannot be overridden, and here message() is a final method, and also note that Non-static method message() cannot be referenced from a static context."
         ],
         "_ps": 0
     },
@@ -115,7 +115,7 @@
             "`java Main 1 2 \"3 4\" 5`",
             "`java Main 1 \"2\" \"2\" 5`",
             "`java Main.class 1 \"2\" 2 5`",
-            "`java Main 1 \"2\" \"3 4\" 5`\n```java\nclass Main {\n    public static void main(String[] args){\n        int a = 123451234512345;\n        System.out.println(a);\n    }\n}\n```"
+            "`java Main 1 \"2\" \"3 4\" 5`"
         ],
         "_ps": 1
     },
@@ -125,7 +125,7 @@
             "\"123451234512345\"",
             "Nothing - this will not compile.",
             "a negative integer value",
-            "\"12345100000\"\n**Reasoning:** The int type in Java can be used to represent any whole number from -2147483648 to 2147483647. Therefore, this code will not compile as the number assigned to 'a' is larger than the int type can hold.\n```java\nclass Main {\n    public static void main (String[] args) {\n        String message = \"Hello world!\";\n        String newMessage = message.substring(6, 12)\n            + message.substring(12, 6);\n        System.out.println(newMessage);\n    }\n}\n```"
+            "\"12345100000\"\n**Reasoning:** The int type in Java can be used to represent any whole number from -2147483648 to 2147483647. Therefore, this code will not compile as the number assigned to 'a' is larger than the int type can hold."
         ],
         "_ps": 1
     },
@@ -145,7 +145,7 @@
             "`for (Pencil pencil : pencilCase) {}`",
             "`for (pencilCase.next()) {}`",
             "`for (Pencil pencil : pencilCase.iterator()) {}`",
-            "`for (pencil in pencilCase) {}`\n```java\nSystem.out.print(\"apple\".compareTo(\"banana\"));\n```"
+            "`for (pencil in pencilCase) {}`"
         ],
         "_ps": 0
     },
@@ -185,7 +185,7 @@
             "`new SimpleDateFormat(\"yyyy-MM-dd\").format(new Date())`",
             "`new Date(System.currentTimeMillis())`",
             "`LocalDate.now()`",
-            "`Calendar.getInstance().getTime()`\n**Explanation**: LocalDate is the newest class added in java 8\n`boolean isDivisibleBy5 = _____`"
+            "`Calendar.getInstance().getTime()`\n**Explanation**: LocalDate is the newest class added in java 8"
         ],
         "_ps": 2
     },
@@ -195,7 +195,7 @@
             "`int0 / 5 ? true: false`",
             "`int0 % 5 == 0`",
             "`int0 % 5 != 5`",
-            "`Math.isDivisible(int0, 5)`\n```java\nclass Main {\n    public static void main(String[] args){\n        for (int i=0; i<10; i=i++){\n            i+=1;\n            System.out.println(\"Hello World!\");\n        }\n    }\n}\n```"
+            "`Math.isDivisible(int0, 5)`"
         ],
         "_ps": 1
     },
@@ -215,7 +215,7 @@
             "print",
             "iterative",
             "hello",
-            "main\n```java\npublic class Jedi {\n  /* Constructor A */\n  Jedi(String name, String species){}\n  /* Constructor B */\n  Jedi(String name, String species, boolean followsTheDarkSide){}\n  }\n```"
+            "main"
         ],
         "_ps": 3
     },
@@ -235,7 +235,7 @@
             "An anonymous class may specify an abstract base class as its base type.",
             "An anonymous class does not require a zero-argument constructor.",
             "An anonymous class may specify an interface as its base type.",
-            "An anonymous class may specify both an abstract class and interface as base types.\n```java\nimport java.util.LinkedList;\npublic class Main {\n    public static void main(String[] args){\n        LinkedList<Integer> list = new LinkedList<>();\n        list.add(5);\n        list.add(1);\n        list.add(10);\n        System.out.println(list);\n    }\n}\n```"
+            "An anonymous class may specify both an abstract class and interface as base types."
         ],
         "_ps": 1
     },
@@ -245,7 +245,7 @@
             "[5, 1, 10]",
             "[10, 5, 1]",
             "[1, 5, 10]",
-            "[10, 1, 5]\n```java\nclass Main {\n    public static void main(String[] args){\n       String message = \"Hello\";\n       for (int i = 0; i<message.length(); i++){\n          System.out.print(message.charAt(i+1));\n       }\n    }\n}\n```"
+            "[10, 1, 5]"
         ],
         "_ps": 0
     },
@@ -275,7 +275,7 @@
             "`\"nifty\".getType().equals(\"String\")`",
             "`\"nifty\".getType() == String`",
             "`\"nifty\".getClass().getSimpleName() == \"String\"`",
-            "`\"nifty\" instanceof String`\n```java\nimport java.util.*;\nclass Main {\n\tpublic static void main(String[] args) {\n\t\tList<Boolean> list = new ArrayList<>();\n\t\tlist.add(true);\n\t\tlist.add(Boolean.parseBoolean(\"FalSe\"));\n\t\tlist.add(Boolean.TRUE);\n\t\tSystem.out.print(list.size());\n\t\tSystem.out.print(list.get(1) instanceof Boolean);\n\t}\n}\n```"
+            "`\"nifty\" instanceof String`"
         ],
         "_ps": 3
     },
@@ -285,7 +285,7 @@
             "A runtime exception is thrown.",
             "3false",
             "2true",
-            "3true\n```java\n1: class Main {\n2: \tObject message(){\n3: \t\treturn \"Hello!\";\n4: \t}\n5: \tpublic static void main(String[] args) {\n6: \t\tSystem.out.print(new Main().message());\n7: \t\tSystem.out.print(new Main2().message());\n8: \t}\n9: }\n10: class Main2 extends Main {\n11: \tString message(){\n12: \t\treturn \"World!\";\n13: \t}\n14: }\n```"
+            "3true"
         ],
         "_ps": 3
     },
@@ -315,7 +315,7 @@
             "string1 == string2",
             "string1 = string2",
             "string1.matches(string2)",
-            "string1.equals(string2)\n```java\npublic static void main(String[] args) {\n\ttry {\n\t\tSystem.out.println(\"A\");\n\t\tbadMethod();\n\t\tSystem.out.println(\"B\");\n\t} catch (Exception ex) {\n\t\tSystem.out.println(\"C\");\n\t} finally {\n\t\tSystem.out.println(\"D\");\n\t}\n}\npublic static void badMethod() {\n\tthrow new Error();\n}\n```"
+            "string1.equals(string2)"
         ],
         "_ps": 3
     },
@@ -325,7 +325,7 @@
             "A, B, and D",
             "A, C, and D",
             "C and D",
-            "A and D\n**Explanation**: `Error` is not inherited from `Exception`\n```java\nclass Main {\n\tstatic int count = 0;\n\tpublic static void main(String[] args) {\n\t\tif (count < 3) {\n\t\t\tcount++;\n\t\t\tmain(null);\n\t\t} else {\n\t\t\treturn;\n\t\t}\n\t\tSystem.out.println(\"Hello World!\");\n\t}\n}\n```"
+            "A and D\n**Explanation**: `Error` is not inherited from `Exception`"
         ],
         "_ps": 3
     },
@@ -335,7 +335,7 @@
             "It will throw a runtime exception.",
             "It will not compile.",
             "It will print \"Hello World!\" three times.",
-            "It will run forever.\n```java\nimport java.util.*;\nclass Main {\n\tpublic static void main(String[] args) {\n\t\tString[] array = {\"abc\", \"2\", \"10\", \"0\"};\n\t\tList<String> list = Arrays.asList(array);\n\t\tCollections.sort(list);\n\t\tSystem.out.println(Arrays.toString(array));\n\t}\n}\n```"
+            "It will run forever."
         ],
         "_ps": 2
     },
@@ -345,7 +345,7 @@
             "`[abc, 0, 2, 10]`",
             "The code does not compile.",
             "`[abc, 2, 10, 0]`",
-            "`[0, 10, 2, abc]`\n**Explanation**: The `java.util.Arrays.asList(T... a)` returns a fixed-size list backed by the specified array. (Changes to the returned list \"write through\" to the array.)\n```java\nclass Main {\n\tpublic static void main(String[] args) {\n\t\tString message = \"Hello\";\n\t\tprint(message);\n\t\tmessage += \"World!\";\n\t\tprint(message);\n\t}\n\tstatic void print(String message){\n\t\tSystem.out.print(message);\n\t\tmessage += \" \";\n\t}\n}\n```"
+            "`[0, 10, 2, abc]`\n**Explanation**: The `java.util.Arrays.asList(T... a)` returns a fixed-size list backed by the specified array. (Changes to the returned list \"write through\" to the array.)"
         ],
         "_ps": 3
     },
@@ -355,7 +355,7 @@
             "Hello World!",
             "HelloHelloWorld!",
             "Hello Hello World!",
-            "Hello HelloWorld!\n```java\npublic class Main {\n\tpublic static void main(String[] args) {\n\t\tint x = 5;\n\t\tx = 10;\n\t\tSystem.out.println(x);\n\t}\n}\n```"
+            "Hello HelloWorld!"
         ],
         "_ps": 1
     },
@@ -375,7 +375,7 @@
             "A\n```java\nfor (int i = 0; i < theList.size(); i++) {\n    System.out.println(theList.get(i));\n}\n```",
             "B\n```java\nfor (Object object : theList) {\n    System.out.println(object);\n}\n```",
             "C\n```java\nIterator it = theList.iterator();\nfor (it.hasNext()) {\n    System.out.println(it.next());\n}\n```",
-            "D\n```java\ntheList.forEach(System.out::println);\n```\n**Explanation:** `for (it.hasNext())` should be `while (it.hasNext())`.\n`boolean healthyOrNot = isHealthy(\"avocado\");`"
+            "D\n```java\ntheList.forEach(System.out::println);\n```\n**Explanation:** `for (it.hasNext())` should be `while (it.hasNext())`."
         ],
         "_ps": 2
     },
@@ -415,7 +415,7 @@
             "It will be read by only one thread at a time.",
             "It will be stored on the hard drive.",
             "It will never be cached by the CPU.",
-            "It will be preferentially garbage collected.\n```java\nchar smooch = 'x';\nSystem.out.println((int) smooch);\n```"
+            "It will be preferentially garbage collected."
         ],
         "_ps": 2
     },
@@ -435,7 +435,7 @@
             "A file that needs to be opened cannot be found.",
             "A network connection has been lost in the middle of communications.",
             "Your code has used up all available memory.",
-            "The object you are using has not been instantiated.\n```java\npublic class Nosey {\n\tint age;\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Your age is: \" + age);\n\t}\n}\n```"
+            "The object you are using has not been instantiated."
         ],
         "_ps": 3
     },
@@ -445,7 +445,7 @@
             "Make age static.",
             "Make age global.",
             "Make age public.",
-            "Initialize age to a number.\n```java\npublic class Duck {\n\tprivate String name;\n\tDuck(String name) {}\n}\n```"
+            "Initialize age to a number."
         ],
         "_ps": 0
     },
@@ -465,7 +465,7 @@
             "executed; interpreting",
             "executed; compiling",
             "compiled; executing",
-            "compiled, translating\n```java\npublic class TheClass {\n    private final int x;\n}\n```"
+            "compiled, translating"
         ],
         "_ps": 2
     },
@@ -475,7 +475,7 @@
             "A\n```java\npublic TheClass() {\n    x += 77;\n}\n```",
             "B\n```java\npublic TheClass() {\n    x = null;\n}\n```",
             "C\n```java\npublic TheClass() {\n    x = 77;\n}\n```",
-            "D\n```java\nprivate void setX(int x) {\n    this.x = x;\n}\npublic TheClass() {\n    setX(77);\n}\n```\n**Explanation:** `final` class members are allowed to be assigned only in three places: declaration, constructor or an instance-initializer block.\n```java\npublic class Solution {\n    public static void main(String[] args) {\n        for (int i = 44; i > 40; i--) {\n            System.out.println(\"f\");\n        }\n    }\n}\n```"
+            "D\n```java\nprivate void setX(int x) {\n    this.x = x;\n}\npublic TheClass() {\n    setX(77);\n}\n```\n**Explanation:** `final` class members are allowed to be assigned only in three places: declaration, constructor or an instance-initializer block."
         ],
         "_ps": 2
     },
@@ -485,7 +485,7 @@
             "4",
             "3",
             "5",
-            "A Runtime exception will be thrown\n```\n1. They can be instantiated.\n2. They allow member variables and methods to be inherited by subclasses.\n3. They can contain constructors.\n```"
+            "A Runtime exception will be thrown"
         ],
         "_ps": 0
     },
@@ -505,7 +505,7 @@
             "parent",
             "super",
             "this",
-            "new\n```java\n  1: int a = 1;\n  2: int b = 0;\n  3: int c = a/b;\n  4: System.out.println(c);\n```"
+            "new"
         ],
         "_ps": 1
     },
@@ -555,7 +555,7 @@
             "int pi = 3.141;",
             "decimal pi = 3.141;",
             "double pi = 3.141;",
-            "float pi = 3.141;\n**Reasoning:**\n```java\npublic class TestReal {\n    public static void main (String[] argv)\n    {\n      double pi = 3.14159265;       //accuracy up to 15 digits\n      float pi2 = 3.141F;           //accuracy up to 6-7 digits\n      System.out.println (\"Pi=\" + pi);\n      System.out.println (\"Pi2=\" + pi2);\n    }\n  }\n```\n```\nThe default Java type which Java will be using for a float variable will be double.\nSo, even if you declare any variable as float, what the compiler has to actually do is to assign a double value to a float variable,\nwhich is not possible. So, to tell the compiler to treat this value as a float, that 'F' is used.\n```\n```java\npublic class MagicPower {\n    void castSpell(String spell) {}\n}\n```"
+            "float pi = 3.141;\n**Reasoning:**\n```java\npublic class TestReal {\n    public static void main (String[] argv)\n    {\n      double pi = 3.14159265;       //accuracy up to 15 digits\n      float pi2 = 3.141F;           //accuracy up to 6-7 digits\n      System.out.println (\"Pi=\" + pi);\n      System.out.println (\"Pi2=\" + pi2);\n    }\n  }\n```\n```\nThe default Java type which Java will be using for a float variable will be double.\nSo, even if you declare any variable as float, what the compiler has to actually do is to assign a double value to a float variable,\nwhich is not possible. So, to tell the compiler to treat this value as a float, that 'F' is used.\n```"
         ],
         "_ps": 2
     },
@@ -575,7 +575,7 @@
             "constructor",
             "instance",
             "class",
-            "method\n```java\npublic static void main(String[] args) {\n    int x=5,y=10;\n    swapsies(x,y);\n    System.out.println(x+\" \"+y);\n}\nstatic void swapsies(int a, int b) {\n    int temp=a;\n    a=b;\n    b=temp;\n}\n```"
+            "method"
         ],
         "_ps": 2
     },
@@ -585,7 +585,7 @@
             "10 10",
             "5 10",
             "10 5",
-            "5 5\n```java\ntry {\n    System.out.println(\"Hello World\");\n} catch (Exception e) {\n    System.out.println(\"e\");\n} catch (ArithmeticException e) {\n    System.out.println(\"e\");\n} finally {\n    System.out.println(\"!\");\n}\n```"
+            "5 5"
         ],
         "_ps": 1
     },
@@ -635,7 +635,7 @@
             "`Array<Integer> numbers = new Array<Integer>(10);`",
             "`Array[int] numbers = new Array[int](10);`",
             "`int[] numbers = new int[10];`",
-            "`int numbers[] = int[10];`\n```java\ngroucyButton.addActionListener(new ActionListener() {\n    @Override\n    public void actionPerformed(ActionEvent e) {\n        System.out.println(\"Press me one more time..\");\n    }\n});\n```"
+            "`int numbers[] = int[10];`"
         ],
         "_ps": 2
     },
@@ -745,7 +745,7 @@
             "`\"21\".intValue()`",
             "`String.toInt(\"21\")`",
             "`Integer.parseInt(\"21\")`",
-            "`String.valueOf(\"21\")`\n```java\npublic class Duck {\n    private String name;\n    Duck(String name) {\n        this.name = name;\n    }\n    public static void main(String[] args) {\n        System.out.println(new Duck(\"Moby\"));\n    }\n}\n```"
+            "`String.valueOf(\"21\")`"
         ],
         "_ps": 2
     },
@@ -765,7 +765,7 @@
             "`+`",
             "`&`",
             "`.`",
-            "`-`\n[Reference](https://www.techiedelight.com/concatenate-two-strings-java/)\n```java\nfor (int i = 44; i > 40; i--) {\n    System.out.println(\"exterminate\");\n}\n```"
+            "`-`\n[Reference](https://www.techiedelight.com/concatenate-two-strings-java/)"
         ],
         "_ps": 0
     },
@@ -775,7 +775,7 @@
             "two",
             "four",
             "three",
-            "five\n```java\n1: public class Main {\n2:   public static void main (String[] args) {\n3:     char myCharacter = \"piper\".charAt(3);\n4:   }\n5: }\n```"
+            "five"
         ],
         "_ps": 1
     },
@@ -815,7 +815,7 @@
             "inside the method",
             "both inside and outside the method",
             "neither inside nor outside the method",
-            "outside the method\n```java\npublic class Main {\n  public static void main (String[] args) {\n    int[] sampleNumbers = {8, 5, 3, 1};\n    System.out.println(sampleNumbers[2]);\n  }\n}\n```"
+            "outside the method"
         ],
         "_ps": 0
     },
@@ -825,7 +825,7 @@
             "5",
             "8",
             "1",
-            "3\n```java\n1: public class Main {\n2:   String MESSAGE =\"Hello!\";\n3:   static void print(){\n4:     System.out.println(message);\n5:   }\n6:   void print2(){}\n7: }\n```"
+            "3"
         ],
         "_ps": 3
     },
@@ -835,7 +835,7 @@
             "Change line 2 to `public static final String message`",
             "Change line 6 to `public void print2(){}`",
             "Remove the body of the `print2` method and add a semicolon.",
-            "Remove the body of the `print` method.\n**Explanation**: Changing line 2 to `public static final String message` raises the error `message not initialized in the default constructor`\n```java\nimport java.util.*;\nclass Main {\n  public static void main(String[] args) {\n    String[] array = new String[]{\"A\", \"B\", \"C\"};\n    List<String> list1 = Arrays.asList(array);\n    List<String> list2 = new ArrayList<>(Arrays.asList(array));\n    List<String> list3 = new ArrayList<>(Arrays.asList(\"A\", new String(\"B\"), \"C\"));\n    System.out.print(list1.equals(list2));\n    System.out.print(list1.equals(list3));\n  }\n}\n```"
+            "Remove the body of the `print` method.\n**Explanation**: Changing line 2 to `public static final String message` raises the error `message not initialized in the default constructor`"
         ],
         "_ps": 3
     },
@@ -855,7 +855,7 @@
             "`ArrayList<String> words = new ArrayList<String>(){\"Hello\", \"World\"};`",
             "`ArrayList words = Arrays.asList(\"Hello\", \"World\");`",
             "`ArrayList<String> words = {\"Hello\", \"World\"};`",
-            "`ArrayList<String> words = new ArrayList<>(Arrays.asList(\"Hello\", \"World\"));`\n```java\nclass Main {\n  public static void main(String[] args) {\n    StringBuilder sb = new StringBuilder(\"hello\");\n    sb.deleteCharAt(0).insert(0, \"H\").\" World!\";\n    System.out.println(sb);\n  }\n}\n```"
+            "`ArrayList<String> words = new ArrayList<>(Arrays.asList(\"Hello\", \"World\"));`"
         ],
         "_ps": 3
     },
@@ -865,7 +865,7 @@
             "A runtime exception is thrown.",
             "\"HelloWorld!\"",
             "\"hello\"",
-            "????\n```java\nclass TaxCalculator {\n  static calculate(total) {\n    return total * .05;\n  }\n}\n```"
+            "????"
         ],
         "_ps": 0
     },
@@ -875,7 +875,7 @@
             "TaxCalculator.calculate(50);",
             "new TaxCalculator.calculate(50);",
             "calculate(50);",
-            "new TaxCalculator.calculate($50);\n**Note:** This code won't compile, broken code sample\n[Reference](https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/)\n[Code sample](https://replit.com/@mattheweller/EverlastingShadyBraces#TaxCalculator.java)\n```java\n public class Main {\n    public static void main(String[] args) {\n      HashMap<String, Integer> pantry = new HashMap<>();\n      pantry.put(\"Apples\", 3);\n      pantry.put(\"Oranges\", 2);\n      int currentApples = pantry.get(\"Apples\");\n      pantry.put(\"Apples\", currentApples + 4);\n      System.out.println(pantry.get(\"Apples\"));\n    }\n}\n```"
+            "new TaxCalculator.calculate($50);\n**Note:** This code won't compile, broken code sample\n[Reference](https://www.geeksforgeeks.org/static-methods-vs-instance-methods-java/)\n[Code sample](https://replit.com/@mattheweller/EverlastingShadyBraces#TaxCalculator.java)"
         ],
         "_ps": 0
     },
@@ -895,7 +895,7 @@
             "uses hashcode of objects when inserted",
             "contains unordred elements",
             "contains unique elements",
-            "contains sorted elements\n**Explanation**: HashSet makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time.\n[Reference](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html)\n```java\nimport java.util.*;\npublic class Main {\n\tpublic static void main(String[] args)\n\t{\n\t\tPriorityQueue<Integer> queue = new PriorityQueue<>();\n\t\tqueue.add(4);\n\t\tqueue.add(3);\n\t\tqueue.add(2);\n\t\tqueue.add(1);\n\t\twhile (queue.isEmpty() == false) {\n\t\t\tSystem.out.printf(\"%d\", queue.remove());\n\t\t}\n\t}\n}\n```"
+            "contains sorted elements\n**Explanation**: HashSet makes no guarantees as to the iteration order of the set; in particular, it does not guarantee that the order will remain constant over time.\n[Reference](https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html)"
         ],
         "_ps": 3
     },
@@ -905,7 +905,7 @@
             "1 3 2 4",
             "4 2 3 1",
             "1 2 3 4",
-            "4 3 2 1\n`System.out.println(\"hello my friends\".split(\" \")[0]);`"
+            "4 3 2 1"
         ],
         "_ps": 2
     },
@@ -955,7 +955,7 @@
             "`employees.collect(employee -> employee.getName());`",
             "`employees.filter(Employee::getName).collect(Collectors.toUnmodifiableList());`",
             "`employees.stream().map(Employee::getName).collect(Collectors.toList());`",
-            "`employees.stream().collect((e) -> e.getName());`\n```\n____ processFunction(Integer number, Function<Integer, String> lambda) {\n    return lambda.apply(number);\n}\n```"
+            "`employees.stream().collect((e) -> e.getName());`"
         ],
         "_ps": 2
     },
@@ -965,7 +965,7 @@
             "Function<Integer, String>",
             "Integer",
             "String",
-            "Consumer\n```\npublic enum Direction {\n    EAST(\"E\"),\n    WEST(\"W\"),\n    NORTH(\"N\"),\n    SOUTH(\"S\");\n    private final String shortCode;\n    public String getShortCode() {\n        return shortCode;\n    }\n}\n```"
+            "Consumer"
         ],
         "_ps": 2
     },
@@ -985,7 +985,7 @@
             "try-catch-finally",
             "try-finally-close",
             "try-with-resources",
-            "try-catch-close\n```java\nclass Main {\n    public static void main(String[] args) {\n        array[0] = new int[]{1, 2, 3};\n        array[1] = new int[]{4, 5, 6};\n        array[2] = new int[]{7, 8, 9};\n        for (int i = 0; i < 3; i++)\n            System.out.print(array[i][1]); //prints 258\n    }\n}\n```"
+            "try-catch-close"
         ],
         "_ps": 2
     },
@@ -995,7 +995,7 @@
             "`int[][] array = new int[][];`",
             "`int[][] array = new int[3][3];`",
             "`int[][] array = new int[2][2];`",
-            "`int[][] array = [][];`\n```java\nclass Car {\n    public void accelerate() {}\n}\nclass Lambo extends Car {\n    public void accelerate(int speedLimit) {}\n    public void accelerate() {}\n}\n```"
+            "`int[][] array = [][];`"
         ],
         "_ps": 1
     },
@@ -1035,7 +1035,7 @@
             "Regular Expressions",
             "Reflection",
             "Generics",
-            "Concurrency\n```java\npublic class Berries{\n    String berry = \"blue\";\n    public static void main( String[] args ) {\n        new Berries().juicy( \"straw\" );\n    }\n    void juicy(String berry){\n        this.berry = \"rasp\";\n        System.out.println(berry + \"berry\");\n    }\n}\n```"
+            "Concurrency"
         ],
         "_ps": 2
     },
@@ -1045,7 +1045,7 @@
             "raspberry",
             "strawberry",
             "blueberry",
-            "rasp\n```java\nMap<String, Integer> forestSpecies = new HashMap<>();\nforestSpecies.put(\"Amazon\", 30000);\nforestSpecies.put(\"Congo\", 10000);\nforestSpecies.put(\"Daintree\", 15000);\nforestSpecies.put(\"Amazon\", 40000);\nint forestCount = forestSpecies.size();\n```"
+            "rasp"
         ],
         "_ps": 1
     },
@@ -1055,7 +1055,7 @@
             "3",
             "4",
             "2",
-            "When calling the put method, Java will throw an exception\n```java\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\nclass Main {\n    public static void main( String[] args ) {\n        List<String> list = new ArrayList<String>( Arrays.asList( \"a\", \"b\", \"c\" ) );\n        for( String value :list ){\n            if( value.equals( \"a\" ) ) {\n                list.remove( value );\n            }\n        }\n        System.out.println(list); // outputs [b,c]\n    }\n}\n```"
+            "When calling the put method, Java will throw an exception"
         ],
         "_ps": 0
     },
@@ -1065,7 +1065,7 @@
             "String should be compared using == method instead of equals.",
             "Modifying a collection while iterating through it can throw a ConcurrentModificationException.",
             "The List interface does not allow an argument of type String to be passed to the remove method.",
-            "ArrayList does not implement the List interface.\n```java\npublic int square(int x){\n    return x * x;\n}\n```"
+            "ArrayList does not implement the List interface."
         ],
         "_ps": 1
     },
@@ -1075,7 +1075,7 @@
             "`Function<Integer, Integer> squareLambda = (int x) -> { x * x };`",
             "`Function<Integer, Integer> squareLambda = () -> { return x * x };`",
             "`Function<Integer, Integer> squareLambda = x -> x * x;`",
-            "`Function<Integer, Integer> squareLambda = x -> return x * x;`\n```java\ninterface MyInterface {\n    int foo(int x);\n}\n```"
+            "`Function<Integer, Integer> squareLambda = x -> return x * x;`"
         ],
         "_ps": 2
     },
@@ -1085,7 +1085,7 @@
             "A\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public void foo(int x){\n        System.out.println(x);\n    }\n}\n```",
             "B\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public double foo(int x){\n        return x * 100;\n    }\n}\n```",
             "C\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public int foo(int x){\n        return x * 100;\n    }\n}\n```",
-            "D\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public int foo(){\n        return 100;\n    }\n}\n```\n```java\ninterface Foo{\n    int x = 10;\n}\npublic class Main{\n    public static void main( String[] args ) {\n        Foo.x = 20;\n        System.out.println(Foo.x);\n    }\n}\n```"
+            "D\n```java\npublic class MyClass implements MyInterface {\n    // ....\n    public int foo(){\n        return 100;\n    }\n}\n```"
         ],
         "_ps": 2
     },
@@ -1095,7 +1095,7 @@
             "10",
             "20",
             "null",
-            "An error will occur when compiling.\n```\n1:\n2: Optional<String> opt = Optional.of(val);\n3: System.out.println(opt.isPresent());\n```"
+            "An error will occur when compiling."
         ],
         "_ps": 3
     },
@@ -1105,7 +1105,7 @@
             "`Integer val = 15;`",
             "`String val = \"Sam\";`",
             "`String val = null;`",
-            "`Optional<String> val = Optional.empty();`\n```java\nSystem.out.println(true && false || true);\nSystem.out.println(false || false && true);\n```"
+            "`Optional<String> val = Optional.empty();`"
         ],
         "_ps": 1
     },
@@ -1115,7 +1115,7 @@
             "false </br> true",
             "true </br> true",
             "true </br> false",
-            "false </br> false\n```java\nList<String> list1 = new ArrayList<>();\nlist1.add( \"One\" );\nlist1.add( \"Two\" );\nlist1.add( \"Three\" );\nList<String> list2 = new ArrayList<>();\nlist2.add( \"Two\" );\nlist1.remove( list2 );\nSystem.out.println(list1);\n```"
+            "false </br> false"
         ],
         "_ps": 2
     },
@@ -1145,7 +1145,7 @@
             "exception,assertion",
             "AbnormalException, AccidentalException",
             "error, exception",
-            "exception, error\n```java\nclass Unicorn {\n    _____ Unicorn(){}\n}\n```"
+            "exception, error"
         ],
         "_ps": 2
     },
@@ -1155,7 +1155,7 @@
             "static",
             "protected",
             "public",
-            "void\n```java\nList[] myLists = {\n    new ArrayList<>(),\n    new LinkedList<>(),\n    new Stack<>(),\n    new Vector<>(),\n};\nfor (List list : myLists){\n    list.clear();\n}\n```"
+            "void"
         ],
         "_ps": 0
     },
@@ -1165,7 +1165,7 @@
             "composition",
             "generics",
             "polymorphism",
-            "encapsulation\n**Explanation:** switch between different implementations of the `List` interface\n```java\nString a = \"bikini\";\nString b = new String(\"bikini\");\nString c = new String(\"bikini\");\nSystem.out.println(a == b);\nSystem.out.println(b == c);\n```"
+            "encapsulation\n**Explanation:** switch between different implementations of the `List` interface"
         ],
         "_ps": 2
     },
@@ -1185,7 +1185,7 @@
             "native",
             "volatile",
             "synchronized",
-            "lock\n[Java Documentation: Synchronized methods](https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html)\n```java\n_____ oddOrEven = x -> {\n    return x % 2 == 0 ? \"even\" : \"odd\";\n};\n```"
+            "lock\n[Java Documentation: Synchronized methods](https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html)"
         ],
         "_ps": 2
     },
@@ -1195,7 +1195,7 @@
             "`Function<Integer, Boolean>`",
             "`Function<String>`",
             "`Function<Integer, String>`",
-            "`Function<Integer>`\n[Explaination](https://github.com/0nyr/java/tree/main/examples/lambda_function), [Reference](https://www.geeksforgeeks.org/function-interface-in-java-with-examples/)\n```java\nimport java.util.HashMap;\npublic class Main {\n    public static void main(String[] args) {\n        HashMap<String, Integer> pantry = new HashMap<>();\n        pantry.put(\"Apples\", 3);\n        pantry.put(\"Oranges\", 2);\n        int currentApples = pantry.get(\"Apples\");\n        pantry.put(\"Apples\", currentApples + 4);\n        System.out.println(pantry.get(\"Apples\"));\n    }\n}\n```"
+            "`Function<Integer>`\n[Explaination](https://github.com/0nyr/java/tree/main/examples/lambda_function), [Reference](https://www.geeksforgeeks.org/function-interface-in-java-with-examples/)"
         ],
         "_ps": 2
     },
@@ -1205,7 +1205,7 @@
             "6",
             "3",
             "4",
-            "7\n[Explanation](https://github.com/0nyr/java/tree/main/training/linkedin_assessment/what_is_displayed_0)\n```shell\nList<String> songTitles = Arrays.asList(\"humble\", \"element\", \"dna\");\n_______ capitalize = (str) -> str.toUpperCase();\nsongTitles.stream().map(capitalize).forEach(System.out::println);\n```"
+            "7\n[Explanation](https://github.com/0nyr/java/tree/main/training/linkedin_assessment/what_is_displayed_0)"
         ],
         "_ps": 3
     },
@@ -1215,7 +1215,7 @@
             "`Function<String, String>`",
             "`Stream<String>`",
             "`String<String, String>`",
-            "`Map<String, String>`\n[Explanation](https://github.com/0nyr/java/tree/main/training/linkedin_assessment/what_variable_type_0), [Reference](https://www.geeksforgeeks.org/function-interface-in-java-with-examples/)\n```java\n_____ processFunction(Integer number, Function<Integer, String> lambda) {\n        return lambda.apply(number);\n    }\n```"
+            "`Map<String, String>`\n[Explanation](https://github.com/0nyr/java/tree/main/training/linkedin_assessment/what_variable_type_0), [Reference](https://www.geeksforgeeks.org/function-interface-in-java-with-examples/)"
         ],
         "_ps": 0
     },
@@ -1225,7 +1225,7 @@
             "`Integer`",
             "`String`",
             "`Consumer`",
-            "`Function<Integer, String>`\n[Explanation](https://github.com/0nyr/java/tree/main/training/linkedin_assessment/which_return_type_0)\n```java\nList<String> dates = new ArrayList<String>();\n// missing code\ndates.replaceAll(replaceSlashes);\n```"
+            "`Function<Integer, String>`\n[Explanation](https://github.com/0nyr/java/tree/main/training/linkedin_assessment/which_return_type_0)"
         ],
         "_ps": 1
     },
@@ -1245,7 +1245,7 @@
             "`Object`",
             "`Main`",
             "`Java`",
-            "`Class`\n[Explanation](https://stackoverflow.com/questions/17187218/default-class-that-is-extended-by-all-classes-in-java)\n```java\nimport java.util.date;\npublic class CurrentDateRunnable implements Runnable {\n    @Override\n    public void run () {\n        while (true) {\n            System.out.println(\"Current date: \" + new Date());\n            try {\n                Thread.sleep(5000);\n            } catch (InterruptedException e) {\n                throw new RuntimeException(e);\n            }\n        }\n    }\n}\n```"
+            "`Class`\n[Explanation](https://stackoverflow.com/questions/17187218/default-class-that-is-extended-by-all-classes-in-java)"
         ],
         "_ps": 0
     },
@@ -1255,7 +1255,7 @@
             "`Thread thread = new Thread(new CurrentDateRunnable()); thread.start();`",
             "`new Thread(new CurrentDateRunnable()).join();`",
             "`new CurrentDateRunnable().run();`",
-            "`new CurrentDateRunnable().start();`\n[Reference](https://www.w3schools.com/java/java_threads.asp)\n```java\nclass Unicorn {\n    ______ Unicorn(){}\n}\n```"
+            "`new CurrentDateRunnable().start();`\n[Reference](https://www.w3schools.com/java/java_threads.asp)"
         ],
         "_ps": 0
     },
@@ -1265,7 +1265,7 @@
             "`public`",
             "`void`",
             "`static`",
-            "`protected`\n```java\nList<Integer> numbers = List.of(1,2,3,4);\nint total = 0;\nfor (Integer x : numbers) {\n    if (x % 2 == 0)\n    total += x * x;\n}\n```"
+            "`protected`"
         ],
         "_ps": 2
     },

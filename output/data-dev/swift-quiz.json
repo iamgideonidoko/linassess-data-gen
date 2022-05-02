@@ -5,7 +5,7 @@
             "a syntax issue",
             "typecasting",
             "assignment",
-            "initialization\n```swift\nlet x = 5\nguard x == 5 { return }\n```"
+            "initialization"
         ],
         "_ps": 0
     },
@@ -15,7 +15,7 @@
             "The guard is missing the else.",
             "Nothing is wrong.",
             "The guard is missing a then.",
-            "The comparison is wrong.\n```swift\nenum Direction {\n  case north, south, east, west\n}\n```"
+            "The comparison is wrong."
         ],
         "_ps": 0
     },
@@ -35,7 +35,7 @@
             "It allows multiple synchronous or asynchronous operations to run on different queues.",
             "It allows track and control execution of multiple operations together.",
             "It allows operations to wait for each other as desired.",
-            "all of these answers.\n```swift\nlet val = 5\nprint(\"value is: \\(val)\")\n```"
+            "all of these answers."
         ],
         "_ps": 3
     },
@@ -45,7 +45,7 @@
             "string interpolation",
             "string compilation",
             "method chaining",
-            "string concatenation\n```swift\nvar vals = [10, 2]\nvals.sort { (s1, s2) -> Bool in\n  s1 > s2\n}\n```"
+            "string concatenation"
         ],
         "_ps": 0
     },
@@ -55,7 +55,7 @@
             "[10, 2]",
             "[2, 10]",
             "nil",
-            "This code contains an error\n```swift\ntypealias Thing = [String:Any]\nvar stuff: Thing\nprint(type(of: stuff))\n```"
+            "This code contains an error"
         ],
         "_ps": 0
     },
@@ -65,7 +65,7 @@
             "Dictionary<String, Any>",
             "Dictionary",
             "ERROR",
-            "Thing\n```swift\nlet x = [\"1\", \"2\"].dropFirst()\nlet y = x[0]\n```"
+            "Thing"
         ],
         "_ps": 0
     },
@@ -75,7 +75,7 @@
             "This code contains an error",
             "1",
             "2",
-            "nil\n```swift\nvar test = 1 == 1\n```"
+            "nil"
         ],
         "_ps": 0
     },
@@ -85,7 +85,7 @@
             "TRUE",
             "YES",
             "1",
-            "This code contains an error\n```swift\nvar x: Int?\nlet y = x ?? 5\n```"
+            "This code contains an error"
         ],
         "_ps": 0
     },
@@ -95,7 +95,7 @@
             "5",
             "0",
             "nil",
-            "This code contains an error\n```swift\nfunc add(a: Int, b: Int) -> Int { return a+b }\n```"
+            "This code contains an error"
         ],
         "_ps": 0
     },
@@ -105,7 +105,7 @@
             "Int",
             "(Int, Int) -> Int",
             "Int<Optional>",
-            "Functions don't have types.\n```swift\nfunc myFunc(_ a: Int, b: Int) -> Int {\n  return a + b\n}\n```"
+            "Functions don't have types."
         ],
         "_ps": 1
     },
@@ -125,7 +125,7 @@
             "a combination of Encodable and Decodable",
             "not a true protocol <<<<---Possibly correct as it's a typealias of Encodable and Decodable",
             "required of all classes",
-            "automatically included in all classes\n```swift\nlet value1 = \"\\(\"test\".count)\"\n```"
+            "automatically included in all classes"
         ],
         "_ps": 0
     },
@@ -145,7 +145,7 @@
             "when it's executed after the function returns",
             "when it's scope is undefined",
             "when it's lazy loaded",
-            "all of these answers\n```swift\nclass Person {\n  var name: String\n  var address: String\n}\n```"
+            "all of these answers"
         ],
         "_ps": 0
     },
@@ -155,7 +155,7 @@
             "Person has no initializers.",
             "Person has no base class.",
             "var name is not formatted corrrectly.",
-            "address is a keyword.\n```swift\nlet names = [\"Bear\", \"Joe\", \"Clark\"]\nnames.map { (s) -> String in\n  return s.uppercased()\n}\n```"
+            "address is a keyword."
         ],
         "_ps": 0
     },
@@ -165,7 +165,7 @@
             "[\"BEAR\", \"JOE\", \"CLARK\"]",
             "[\"B\", \"J\", \"C\"]",
             "[\"Bear\", \"Joe\", \"Clark\"]",
-            "This code contains an error.\n```swift\nlet val = 5\n```"
+            "This code contains an error."
         ],
         "_ps": 2
     },
@@ -175,7 +175,7 @@
             "a constant named val of type Int",
             "a variable named val of type item",
             "a constant named val of type Number",
-            "a variable named val of type Int\n```swift\nextension String {\n  var firstLetter: Character = \"c\" {\n    didSet {\n      print(\"new value\")\n    }\n  }\n}\n```"
+            "a variable named val of type Int"
         ],
         "_ps": 0
     },
@@ -195,7 +195,7 @@
             "property observers",
             "key properties",
             "all of these answers",
-            "newOld value calls\n```swift\nself.callback = {\n  self.attempts += 1\n  self.downloadFailed()\n}\n```"
+            "newOld value calls"
         ],
         "_ps": 0
     },
@@ -205,7 +205,7 @@
             "Use of self inside the closure causes retain cycle.",
             "You cannot assign a value to closure in this manner.",
             "You need to define the type of closure explicitly.",
-            "There is nothing wrong with this code.\n```swift\nvar vals = Set<String> = [\"4\", \"5\", \"6\"]\nvals.insert(\"5\")\n```"
+            "There is nothing wrong with this code."
         ],
         "_ps": 0
     },
@@ -225,7 +225,7 @@
             "Use a capture list to set class instances of weak or unowned.",
             "You can't, there will always be a danger of strong reference cycles inside a closure.",
             "Initialize the closure as read-only.",
-            "Declare the closure variable as lazy.\n```swift\nif let s = String.init(\"some string\") {\n  print(s)\n}\n```"
+            "Declare the closure variable as lazy."
         ],
         "_ps": 0
     },
@@ -265,7 +265,7 @@
             "structs",
             "classes",
             "optionals",
-            "generics\n```swift\nvar strings = [1, 2, 3]\n```"
+            "generics"
         ],
         "_ps": 0
     },
@@ -275,7 +275,7 @@
             "all of these answers",
             "strings.append(4)",
             "strings.insert(5, at: 1)",
-            "strings += [5]\n```swift\nfor i in 0...100 {\n  print(i)\n}\n```"
+            "strings += [5]"
         ],
         "_ps": 0
     },
@@ -295,7 +295,7 @@
             "an instance of any class",
             "an instance of function type",
             "all of these answers",
-            "an instance of an optional type\n```swift\ntypealias Thing = [String:Any]\nvar stuff : Thing\nprint(type(of:stuff))\n```"
+            "an instance of an optional type"
         ],
         "_ps": 2
     },
@@ -305,7 +305,7 @@
             "Dictionary",
             "ERROR",
             "Thing",
-            "Dictionary<String, Any>\n```swift\nlet names = [\"Larry\", \"Sven\", \"Bear\"]\nlet t = names.enumerated().first().offset\n```"
+            "Dictionary<String, Any>"
         ],
         "_ps": 3
     },
@@ -325,7 +325,7 @@
             "ABC",
             "0",
             "5",
-            "name\n```swift\nclass LSN : MMM {\n}\n```"
+            "name"
         ],
         "_ps": 0
     },
@@ -335,7 +335,7 @@
             "MMM",
             "LSN",
             "There is no base class.",
-            "This code is invalid.\n```swift\nvar userLocation: String = \"Home\" {\n  willSet(newValue) {\n  print(\"About to set userLocation to \\(newValue)...\")\n  }\n  didSet {\n  if userLocation != oldValue {\n  print(\"userLocation updated with new value!\")\n  } else {\n  print(\"userLocation already set to that value...\")\n  }\n  }\n }\n userLocation = \"Work\"\n```"
+            "This code is invalid."
         ],
         "_ps": 0
     },
@@ -365,7 +365,7 @@
             "DispatchQueue.visible",
             "DispatchQueue.global",
             "errorExample need to be labeled as `throws`.",
-            "DispatchQueue.background\n```swift\nlet x = [\"a\", \"b\", \"c\"]\n```"
+            "DispatchQueue.background"
         ],
         "_ps": 1
     },
@@ -375,7 +375,7 @@
             "`String[]`",
             "`Array<String>`",
             "`Set<String>`",
-            "`Array<Character>`\n```swift\nlet nThings: [Any] = [1, \"2\", \"three\"]\nlet oThings = nThings.reduce(\"\") { \"\\($0)\\($1)\" }\n```"
+            "`Array<Character>`"
         ],
         "_ps": 1
     },
@@ -395,7 +395,7 @@
             "`!try`",
             "`try?`",
             "`try!`",
-            "`?try`\n```swift\nprotocol TUI {\n  func add(x1 : Int, x2 : Int) -> Int {\n    return x1 + x2\n  }\n}\n```"
+            "`?try`"
         ],
         "_ps": 1
     },
@@ -405,7 +405,7 @@
             "Protocol functions cannot have return types.",
             "Protocol functions cannot have implementations.",
             "Nothing is wrong with it.",
-            "`add` is a reserved keyword.\n```swift\nclass Car {\n  var wheels: Int = 4\n  let doors = 4\n}\n```"
+            "`add` is a reserved keyword."
         ],
         "_ps": 1
     },
@@ -425,7 +425,7 @@
             "You cannot",
             "deinit",
             "`init?`",
-            "init\n```swift\nlet dbl = Double.init(\"5a\")\nprint(dbl ?? \".asString()\")\n```"
+            "init"
         ],
         "_ps": 2
     },
@@ -435,7 +435,7 @@
             "five",
             "5a",
             "`.asString()`",
-            "5\n```swift\nfunc add(this x: Int, toThat y: Int)->{}\n```"
+            "5"
         ],
         "_ps": 2
     },
@@ -445,7 +445,7 @@
             "none of these answers",
             "local terms",
             "argument labels",
-            "parameters names\n```swift\nfor (key, value) in [1: \"one\", 2: \"two\"]{\n  print(key, value)\n}\n```"
+            "parameters names"
         ],
         "_ps": 2
     },
@@ -465,7 +465,7 @@
             "XCTest",
             "all of these answers",
             "@testable",
-            "XCAssert\n```swift\nclass Square{\n  var height: Int = 0\n  var width : Int {\n    return height\n  }\n}\n```"
+            "XCAssert"
         ],
         "_ps": 1
     },
@@ -475,7 +475,7 @@
             "This code contains error",
             "a closure",
             "a computed property",
-            "lazy loading\n```swift\nlet vals = (\"val\", 1)\n```"
+            "lazy loading"
         ],
         "_ps": 2
     },
@@ -485,7 +485,7 @@
             "a dictionary",
             "a tuple",
             "an optional",
-            "This code contains error\n```swift\nvar x = 5\nx = 10.0\n```"
+            "This code contains error"
         ],
         "_ps": 1
     },
@@ -495,7 +495,7 @@
             "You cannot assign a Double to a variable of type Int",
             "x is undefined",
             "x is a constant",
-            "x has no type\n```swift\nvar items = [\"a\":1, \"b\":2, \"c\":\"test\"] as [String: Any]\nitems[\"c\"] = nil\nprint(items[\"c\"] as Any)\n```"
+            "x has no type"
         ],
         "_ps": 0
     },
@@ -505,7 +505,7 @@
             "Any",
             "test",
             "1,2,3",
-            "nil\n```swift\nlet val = 5.0 + 10\n```"
+            "nil"
         ],
         "_ps": 3
     },
@@ -515,7 +515,7 @@
             "There is nothing wrong with this code",
             "val is a constant and cannot be changed",
             "5.0 and 10 are different types",
-            "There is no semicolon\n```swift\nstruct Test{\n  var score: Int\n  var date: Date\n}\n```"
+            "There is no semicolon"
         ],
         "_ps": 0
     },
@@ -525,7 +525,7 @@
             "zero",
             "This code contains an error",
             "two",
-            "Structs do not have initializers\n```swift\nlet x = try? String.init(\"test\")\nprint(x)\n```"
+            "Structs do not have initializers"
         ],
         "_ps": 2
     },
@@ -535,7 +535,7 @@
             "nil",
             "Nothing - this code contains an error",
             "Optional(\"test\")",
-            "test\n```swift\nvar vals = [1,2,3]\n```"
+            "test"
         ],
         "_ps": 2
     },
@@ -575,7 +575,7 @@
             "String?",
             "Optional[String]",
             "[String]?",
-            "?String\n```swift\nfor i in [\"0\", \"1\"]{\n  print(i)\n}\n```"
+            "?String"
         ],
         "_ps": 0
     },
@@ -585,7 +585,7 @@
             "one",
             "two",
             "three",
-            "This code does not compile\n```swift\nlet names = [\"Bear\", \"Tony\", \"Svante\"]\nprint(names[1]+\"Bear\")\n```"
+            "This code does not compile"
         ],
         "_ps": 1
     },
@@ -595,7 +595,7 @@
             "1Bear",
             "BearBear",
             "TonyBear",
-            "Nothing, this code is invalid\n```swift\nlet name: String?\n```"
+            "Nothing, this code is invalid"
         ],
         "_ps": 2
     },
@@ -605,7 +605,7 @@
             "name can hold only a string value.",
             "name can hold either a string or nil value.",
             "Optional values cannot be `let` constants.",
-            "Only non-empty string variables can be stored in name.\n```swift\nlet i = 5\nlet val = i * 6.0\n```"
+            "Only non-empty string variables can be stored in name."
         ],
         "_ps": 1
     },
@@ -615,7 +615,7 @@
             "This code is invalid.",
             "6",
             "30",
-            "0\n```swift\nenum Positions : Int {\n  case first, second, third, other\n}\nprint (Positions.other.rawValue)\n```"
+            "0"
         ],
         "_ps": 0
     },
@@ -625,7 +625,7 @@
             "3",
             "0",
             "other",
-            "nil\n```swift\n\"t\".forEach { (char) in\n    print(char)\n}\n```"
+            "nil"
         ],
         "_ps": 0
     },
@@ -635,7 +635,7 @@
             "nil",
             "Nothing, since the code contains an error",
             "t",
-            "zero\n```swift\nlet s1 = [\"1\", \"2\", \"3\"]\n    .filter { $0 > \"0\" }\n    .sorted { $0 > $1 }\nprint(s1)\n```"
+            "zero"
         ],
         "_ps": 2
     },
@@ -645,7 +645,7 @@
             "[]",
             "[\"3\", \"2\", \"1\"]",
             "[321]",
-            "[\"1\", \"2\", \"3\"]\n(Question does not make that much sense though. )"
+            "[\"1\", \"2\", \"3\"]"
         ],
         "_ps": 1
     },
@@ -655,7 +655,7 @@
             "associated values",
             "integral values",
             "raw values",
-            "custom values\n```swift\nclass AmP : MMM, AOM {\n  }\n```"
+            "custom values"
         ],
         "_ps": 0
     },
@@ -665,7 +665,7 @@
             "class",
             "protocol",
             "enumeration",
-            "struct\n```swift\nlet numbers = [1,2,3,4,5,6].filter{ $0 % 2 == 0}\n```"
+            "struct"
         ],
         "_ps": 1
     },
@@ -675,7 +675,7 @@
             "[1,3,5]",
             "[]",
             "[2,4,6]",
-            "nil\n```swift\nlet vals = [\"a\", 1, \"Hi\"]\n```"
+            "nil"
         ],
         "_ps": 2
     },
@@ -685,7 +685,7 @@
             "Array(char)",
             "[Any]",
             "Array<char>",
-            "[Generic]\n```swift\nlet vt = (name: \"ABC\", val: 5)\n```"
+            "[Generic]"
         ],
         "_ps": 1
     },
@@ -695,7 +695,7 @@
             "let x = vt.1",
             "all of these answers",
             "let x = vt.val",
-            "let (`_`, x) = vt\n```swift\nclass Person {\n    var name: String\n    var address: String\n}\n```"
+            "let (`_`, x) = vt"
         ],
         "_ps": 1
     },
